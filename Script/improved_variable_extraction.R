@@ -1,7 +1,3 @@
-# Improved Variable Extraction Script for Crime Location Choice Studies
-# Author: Kuralarasan Kumar
-# Date: July 7, 2025
-
 # Load required libraries
 library(tidyverse)
 library(stringr)
@@ -166,6 +162,7 @@ for (i in 1:nrow(elicit_data)) {
   # Create metadata row
   study_row <- data.frame(
     study_id = i,
+    filename = elicit_data$Filename[i],
     original_title = elicit_data$Title[i],
     extracted_title = ifelse(is.na(metadata$title), elicit_data$Title[i], metadata$title),
     authors = ifelse(is.na(metadata$authors), elicit_data$Authors[i], metadata$authors),
@@ -232,7 +229,46 @@ if (!dir.exists(here("Output"))) {
   dir.create(here("Output"), recursive = TRUE)
 }
 
-# Save dataframes
+# Create comprehensive combined dataset
+print("Creating comprehensive combined dataset...")
+
+# 1. Combine metadata with variable counts
+combined_metadata <- studies_metadata %>%
+  left_join(var_counts, by = "study_id")
+
+# 2. Create a summary of all variables per study as a single text field
+variables_summary <- variables_long %>%
+  group_by(study_id) %>%
+  summarise(
+    all_variables = paste(variable_name, collapse = "; "),
+    total_variables_count = n(),
+    .groups = "drop"
+  )
+
+# 3. Create category-specific variable lists
+variables_by_category <- variables_long %>%
+  group_by(study_id, variable_category) %>%
+  summarise(variables = paste(variable_name, collapse = "; "), .groups = "drop") %>%
+  pivot_wider(names_from = variable_category, 
+              values_from = variables, 
+              names_prefix = "vars_",
+              values_fill = "")
+
+# 4. Combine all data into one comprehensive dataset
+comprehensive_dataset <- combined_metadata %>%
+  left_join(variables_summary, by = "study_id") %>%
+  left_join(variables_by_category, by = "study_id")
+
+# Fill NA values with 0 for count columns and "" for variable lists
+count_cols <- names(comprehensive_dataset)[str_detect(names(comprehensive_dataset), "^(demographic|economic|land_use|infrastructure|distance_access|crime_opportunity|social_behavioral|environmental|temporal_control|other)$")]
+var_cols <- names(comprehensive_dataset)[str_detect(names(comprehensive_dataset), "^vars_")]
+
+comprehensive_dataset <- comprehensive_dataset %>%
+  mutate(across(all_of(count_cols), ~replace_na(., 0))) %>%
+  mutate(across(all_of(var_cols), ~replace_na(., "")))
+
+# Save all datasets
+write_csv(comprehensive_dataset, here("Output", "comprehensive_studies_dataset.csv"))
 write_csv(studies_metadata, here("Output", "studies_metadata.csv"))
 write_csv(variables_long, here("Output", "variables_extracted.csv"))
 write_csv(var_counts, here("Output", "variable_counts_by_study.csv"))
@@ -241,6 +277,7 @@ write_csv(common_variables, here("Output", "common_variables.csv"))
 
 print("Variable extraction completed!")
 print("Files saved:")
+print("- comprehensive_studies_dataset.csv: MAIN FILE - All metadata, variable counts, and variable lists combined")
 print("- studies_metadata.csv: Basic information about each study")
 print("- variables_extracted.csv: All variables in long format")
 print("- variable_counts_by_study.csv: Count of variables by category for each study")
@@ -251,5 +288,9 @@ print("- common_variables.csv: Most frequently used variables")
 print("\nSummary:")
 print(paste("Total studies processed:", nrow(studies_metadata)))
 print(paste("Total variables extracted:", nrow(variables_long)))
+print(paste("Comprehensive dataset columns:", ncol(comprehensive_dataset)))
 print("\nVariable categories and counts:")
 print(var_frequency)
+print("\nComprehensive dataset preview:")
+print("Columns in comprehensive dataset:")
+print(names(comprehensive_dataset))
