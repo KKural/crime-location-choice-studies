@@ -1,0 +1,8 @@
+country,n_studies,min_size,median_size,max_size,typical_type
+Belgium,3,1.36e-4,8.4491e-4,0.79,Micro-environmental
+United States,8,0.01968,0.216,1.36,Neighborhood
+United Kingdom,6,0.0284,0.385,2.04,Neighborhood
+New Zealand,3,1.2,1.41,1.962,Administrative district
+China,8,0.958,1.62,2.81,Administrative district
+Netherlands,17,1.4227e-4,2.63,2.96,Administrative district
+Australia,3,6.7,8.48,8.48,Macro-area

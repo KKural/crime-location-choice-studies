@@ -1,0 +1,10 @@
+variable_category,total_variables,unique_variables,studies_using
+demographic,90,57,38
+distance_access,76,55,46
+economic,32,26,22
+environmental,13,13,9
+infrastructure,36,28,20
+land_use,52,42,20
+other,118,96,38
+social_behavioral,41,39,19
+temporal_control,10,9,9

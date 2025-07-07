@@ -838,7 +838,114 @@ A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION
 - The study tests several hypotheses related to residential history and crime location choice, including the home hypothesis and the history hypothesis.
 - The findings support the hypotheses, indicating that offenders are more likely to commit crimes in areas where they live or have lived.
 - The study provides detailed tables with results from the discrete choice model, which are crucial for understanding the findings."
-Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,"Luzi Xiao, Stijn Ruiter, Lin Liu, Guangwen Song, Suhong Zhou",-,-,"Computers, Environment and Urban Systems",12,2021,40_burglars_blocked_by_barriers.pdf,Complete structured extraction provided above,"  - ""Based on an offender spatial decision-making perspective, this burglary target location choice study aims to understand how physical and social barriers affect why residential burglars commit their crimes at particular locations in a major Chinese city.""
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,"Luzi Xiao, Stijn Ruiter, Lin Liu, Guangwen Song, Suhong Zhou",-,-,"Computers, Environment and Urban Systems",12,2021,40_burglars_blocked_by_barriers.pdf,"## STUDY IDENTIFICATION
+**Title:** Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China  
+**Year:** 2021  
+**Authors:** Luzi Xiao; Stijn Ruiter; Lin Liu; Guangwen Song; Suhong Zhou  
+**Journal:** Not mentioned  
+**DOI:** Not mentioned  
+**Filename:** Not mentioned  
+
+---
+
+## STUDY CONTEXT
+**Country:** China  
+**City/Region:** ZG city  
+**Study Area Size:** Not explicitly mentioned, but communities have an average size of 2.74 km²  
+**Study Area Description:** A major Chinese city with 2643 communities, each with a relatively homogeneous population  
+**Crime Type:** Residential burglary  
+**Crime Types (All):** Residential burglary  
+**Study Period:** January 2012 to June 2016  
+**Data Sources:** Municipal Public Security Bureau of ZG city  
+
+---
+
+## SPATIAL UNIT OF ANALYSIS (SUoA)
+**SUoA Type:** Community  
+**SUoA Size:** Average size is 2.74 km²  
+**SUoA Description:** Communities with a relatively homogeneous population  
+**Number of Units:** 2643 communities  
+**Population per Unit:** Not explicitly mentioned  
+**Justification for SUoA Choice:** Communities are used as they have a relatively homogeneous population and are a common unit in crime location choice studies  
+
+---
+
+## METHODOLOGY
+**Study Design:** Cross-sectional  
+**Statistical Method:** Conditional logit model  
+**Model Type:** Conditional logit model  
+**Software Used:** Stata/MP version 15  
+**Sampling Approach:** Random sampling for burglaries with multiple offenders  
+**Sample Size:** 3860 burglaries  
+**Choice Set Definition:** All 2643 communities in ZG city were considered as potential targets  
+**Estimation Method:** Weighted exogenous sample maximum likelihood (WESML)  
+
+---
+
+## COMPLETE INDIVIDUAL VARIABLE LIST
+
+**DEMOGRAPHIC VARIABLES:**
+1. Hukou status | Local or nonlocal resident status | Categorical | Census data
+
+**ECONOMIC VARIABLES:**
+1. Proportion of houses built after 2000 | Indicator of community affluence | Proportion | Census data
+2. Rent price category | Indicator of community affluence | Categorical (no rent, low, medium, high) | Census data
+
+**LAND USE VARIABLES:**
+1. Proportion of high-rise buildings | Indicator of community structure | Proportion | Census data
+
+**INFRASTRUCTURE VARIABLES:**
+1. Major roads with access control | Physical barrier | Binary | RITU electronic map
+2. Major roads without access control | Physical barrier | Binary | RITU electronic map
+3. Rivers | Physical barrier | Binary | RITU electronic map
+
+**DISTANCE/ACCESSIBILITY VARIABLES:**
+1. -log(Distance) | Distance from offender's home to target community | Logarithmic transformation of Euclidean distance | GIS calculation
+
+**CRIME OPPORTUNITY VARIABLES:**
+1. Number of households | Indicator of opportunity for burglary | Logarithmic transformation | Census data
+
+**SOCIAL/BEHAVIORAL VARIABLES:**
+1. Community type based on Hukou status | Social barrier | Categorical (local majority, mixed, nonlocal majority) | Census data
+
+**ENVIRONMENTAL VARIABLES:**
+- None explicitly mentioned
+
+**TEMPORAL/CONTROL VARIABLES:**
+- None explicitly mentioned
+
+**OTHER VARIABLES:**
+- None explicitly mentioned
+
+---
+
+## VARIABLE SUMMARY COUNTS
+**Total Independent Variables:** 10  
+**Demographic Variables:** 1  
+**Economic Variables:** 2  
+**Land Use Variables:** 1  
+**Infrastructure Variables:** 3  
+**Distance/Accessibility Variables:** 1  
+**Crime Opportunity Variables:** 1  
+**Social/Behavioral Variables:** 1  
+**Environmental Variables:** 0  
+**Temporal/Control Variables:** 0  
+**Other Variables:** 0  
+
+---
+
+## KEY FINDINGS
+**Main Results:** Residential burglars are less likely to target areas requiring crossing physical barriers, especially multiple rivers. Local burglars prefer communities with a majority of local residents, while nonlocal burglars do not show a strong preference for nonlocal majority communities.  
+**Significant Predictors:** Distance from home, physical barriers (rivers and roads), social barriers (Hukou status), proportion of houses built after 2000, rent price category, proportion of high-rise buildings, number of households.  
+**Model Performance:** Pseudo-R² = 0.3280 for the full model with both physical and social barriers.  
+**Scale Effects:** Not explicitly mentioned  
+
+---
+
+## DATA QUALITY NOTES
+**Variable Information Quality:** Complete  
+**Missing Information:** Journal name, DOI, filename, and some specific details about the population per unit and study area size.  
+**Extraction Confidence:** High","  - ""Based on an offender spatial decision-making perspective, this burglary target location choice study aims to understand how physical and social barriers affect why residential burglars commit their crimes at particular locations in a major Chinese city.""
   - ""Using data on 3860 residential burglaries committed by 3772 burglars between January 2012 and June 2016 in ZG city, China, conditional logit (discrete choice) models were estimated to assess residential burglars' target location choice preferences.""
   - ""Three types of physical barriers were distinguished: major roads with access control, major roads without access control, and major rivers.""
   - ""Social barriers were constructed based on the Hukou system to reflect how local and nonlocal residents live segregated lives.""
@@ -2988,7 +3095,115 @@ Not mentioned
 - The study finds that proximity to the offender's home, racial and ethnic similarity, and the presence of crime attractors like drug markets and retail activities increase the likelihood of a tract being chosen for robbery.
 - Collective efficacy is found to have a deterrent effect on robbery, although the effect is small.
 - The study uses a sample size of 6,000 robberies for the final testing."
-Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,"Alyssa W Chamberlain, Lyndsay N Boggess",-,-,,30,2016,24_relative_difference_and_burglary_location.pdf,Complete extraction provided above,"  - ""Objectives: Neighborhood characteristics predict burglary targets, but target attractiveness may be colored by the conditions in which a potential offender resides.""
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,"Alyssa W Chamberlain, Lyndsay N Boggess",-,-,,30,2016,24_relative_difference_and_burglary_location.pdf,"## STUDY IDENTIFICATION
+**Title:** Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?
+**Year:** 2016
+**Authors:** Alyssa W Chamberlain; Lyndsay N Boggess
+**Journal:** Not mentioned
+**DOI:** Not mentioned
+**Filename:** Not mentioned
+
+---
+
+## STUDY CONTEXT
+**Country:** United States
+**City/Region:** Tampa, Florida
+**Study Area Size:** Not explicitly mentioned
+**Study Area Description:** The study focuses on the City of Tampa, Florida, analyzing neighborhood characteristics and their influence on burglary locations.
+**Crime Type:** Burglary
+**Crime Types (All):** Burglary
+**Study Period:** January 2000 through September 2012
+**Data Sources:** Tampa Police Department; U.S. Census data
+
+---
+
+## SPATIAL UNIT OF ANALYSIS (SUoA)
+**SUoA Type:** Census block group
+**SUoA Size:** Not explicitly mentioned
+**SUoA Description:** The study uses census block groups to minimize within-neighborhood heterogeneity and ensure availability of neighborhood contextual data.
+**Number of Units:** 334 block groups
+**Population per Unit:** Not mentioned
+**Justification for SUoA Choice:** To account for social and demographic characteristics of neighborhoods that likely influence target selection.
+
+---
+
+## METHODOLOGY
+**Study Design:** Cross-sectional
+**Statistical Method:** Discrete choice modeling
+**Model Type:** Conditional logit model
+**Software Used:** Stata 14.0
+**Sampling Approach:** All arrests for burglaries in Tampa during the study period were included.
+**Sample Size:** 5,182 incidents committed by 6,846 suspects
+**Choice Set Definition:** Each incident has a separate row for each choice alternative among the 334 neighborhoods.
+**Estimation Method:** Maximum likelihood
+
+---
+
+## COMPLETE INDIVIDUAL VARIABLE LIST
+
+**DEMOGRAPHIC VARIABLES:**
+1. Percentage of Black | Percentage of Black residents in the neighborhood | Percentage | U.S. Census
+2. Percentage of Latino | Percentage of Latino residents in the neighborhood | Percentage | U.S. Census
+
+**ECONOMIC VARIABLES:**
+1. Concentrated disadvantage | Index of poverty impact including percentage below poverty, unemployment, median income, and home value | Index | U.S. Census
+
+**LAND USE VARIABLES:**
+- Not mentioned
+
+**INFRASTRUCTURE VARIABLES:**
+- Not mentioned
+
+**DISTANCE/ACCESSIBILITY VARIABLES:**
+1. Distance (centered) | Distance from suspect's home to target neighborhood | Miles | GIS calculation
+2. Distance squared (centered) | Squared distance from suspect's home to target neighborhood | Miles squared | GIS calculation
+
+**CRIME OPPORTUNITY VARIABLES:**
+- Not mentioned
+
+**SOCIAL/BEHAVIORAL VARIABLES:**
+1. Residential stability | Index including average length of residence, percentage of recent movers, and percentage of homeowners | Index | U.S. Census
+2. Ethnic heterogeneity | Herfindahl Index of racial/ethnic diversity | Index | U.S. Census
+
+**ENVIRONMENTAL VARIABLES:**
+- Not mentioned
+
+**TEMPORAL/CONTROL VARIABLES:**
+- Not mentioned
+
+**OTHER VARIABLES:**
+1. Percentage of occupied housing | Percentage of occupied housing units in the neighborhood | Percentage | U.S. Census
+2. Single-parent households | Percentage of single-parent households in the neighborhood | Percentage | U.S. Census
+
+---
+
+## VARIABLE SUMMARY COUNTS
+**Total Independent Variables:** 8
+**Demographic Variables:** 2
+**Economic Variables:** 1
+**Land Use Variables:** 0
+**Infrastructure Variables:** 0
+**Distance/Accessibility Variables:** 2
+**Crime Opportunity Variables:** 0
+**Social/Behavioral Variables:** 2
+**Environmental Variables:** 0
+**Temporal/Control Variables:** 0
+**Other Variables:** 2
+
+---
+
+## KEY FINDINGS
+**Main Results:** Neighborhood characteristics, particularly those related to social disorganization, influence burglary target selection beyond geographic distance.
+**Significant Predictors:** Concentrated disadvantage, residential stability, ethnic heterogeneity, percentage of Black residents, and distance.
+**Model Performance:** BIC and log likelihood values are provided in tables.
+**Scale Effects:** Not explicitly discussed.
+
+---
+
+## DATA QUALITY NOTES
+**Variable Information Quality:** Complete
+**Missing Information:** Journal name, DOI, study area size, population per unit.
+**Extraction Confidence:** High","  - ""Objectives: Neighborhood characteristics predict burglary targets, but target attractiveness may be colored by the conditions in which a potential offender resides.""
   - ""We test whether relative differences in concentrated disadvantage, racial/ethnic composition, and ethnic heterogeneity influence where burglars offend, controlling for distance.""
   - ""The current study examines the relative differences between where offenders live and where they choose to offend above and beyond the effect of distance.""
   - ""We utilize discrete choice modeling on all arrests for burglaries in the City of Tampa, Florida, from January 2000 through September 2012.""
@@ -4856,7 +5071,124 @@ Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test 
 - The methodology involves estimating separate models for each two-hour time block and each day of the week to assess temporal differences in location preferences.
 - The study includes a range of variables such as demographic, economic, land use, infrastructure, distance/accessibility, crime opportunity, social/behavioral, environmental, and temporal/control variables.
 - The findings indicate that most location attributes do not significantly vary by time of day or day of the week, except for high schools which are more attractive during school hours."
-Go where the money is: modeling street robbers' location choices,"Wim Bernasco, Richard Block, Stijn Ruiter",-,-,-,-,-,05_go_where_the_money_is_modeling_street_robbers_lo.pdf,Complete structured extraction as provided above,"  - ""This article analyzes how street robbers decide on where to attack their victims.""
+Go where the money is: modeling street robbers' location choices,"Wim Bernasco, Richard Block, Stijn Ruiter",-,-,-,-,-,05_go_where_the_money_is_modeling_street_robbers_lo.pdf,"## STUDY IDENTIFICATION
+**Title:** Go where the money is: modeling street robbers' location choices
+**Year:** Not explicitly mentioned, but likely around 2011 based on references
+**Authors:** Wim Bernasco; Richard Block; Stijn Ruiter
+**Journal:** Not mentioned
+**DOI:** Not mentioned
+**Filename:** Not provided
+
+---
+
+## STUDY CONTEXT
+**Country:** USA
+**City/Region:** Chicago
+**Study Area Size:** Not explicitly mentioned in km², but involves 24,594 census blocks
+**Study Area Description:** The study focuses on the city of Chicago, analyzing nearly 25,000 census blocks.
+**Crime Type:** Street robbery
+**Crime Types (All):** Street robbery
+**Study Period:** 1996-1998
+**Data Sources:** Chicago Police Department; US 2000 Census; Claritas marketing information
+
+---
+
+## SPATIAL UNIT OF ANALYSIS (SUoA)
+**SUoA Type:** Census block
+**SUoA Size:** Approximately 140 m x 140 m (460 ft x 460 ft)
+**SUoA Description:** Census blocks in Chicago, with an average population of 118 residents.
+**Number of Units:** 24,594 census blocks
+**Population per Unit:** Average of 118 residents per block
+**Justification for SUoA Choice:** Allows for detailed analysis of location choices at a fine-grained spatial level.
+
+---
+
+## METHODOLOGY
+**Study Design:** Cross-sectional
+**Statistical Method:** Discrete choice framework
+**Model Type:** Multinomial logit model; Universal logit model
+**Software Used:** Stata/MP version 11
+**Sampling Approach:** Random sampling of 6000 census blocks per robbery
+**Sample Size:** 12,938 cleared robberies; 18,114 offenders
+**Choice Set Definition:** Census blocks in Chicago
+**Estimation Method:** Weighted exogenous sample maximum likelihood (WESML)
+
+---
+
+## COMPLETE INDIVIDUAL VARIABLE LIST
+
+**DEMOGRAPHIC VARIABLES:**
+1. Age | Age group of offenders | Years | Chicago Police Department
+2. Gender | Gender of offenders | Male/Female | Chicago Police Department
+3. Race/Ethnicity | Racial/ethnic background of offenders | Categories | Chicago Police Department
+
+**ECONOMIC VARIABLES:**
+1. Bars, clubs | Presence of bars and clubs | Count | Claritas
+2. Restaurants, food stands | Presence of restaurants and food stands | Count | Claritas
+3. Barbers, beauty salons | Presence of barbers and beauty salons | Count | Claritas
+4. Liquor stores | Presence of liquor stores | Count | Claritas
+5. Grocers | Presence of grocery stores | Count | Claritas
+6. General merchandise stores | Presence of general merchandise stores | Count | Claritas
+7. Gas stations | Presence of gas stations | Count | Claritas
+8. Laundromats | Presence of laundromats | Count | Claritas
+9. Currency exchange, pawn shops | Presence of currency exchange and pawn shops | Count | Claritas
+
+**LAND USE VARIABLES:**
+1. Total population | Total population in census block | Count | US 2000 Census
+
+**INFRASTRUCTURE VARIABLES:**
+1. Main streets | Whether block is along main streets | Indicator | GIS data
+2. El stations | Presence of El stations | Indicator | GIS data
+
+**DISTANCE/ACCESSIBILITY VARIABLES:**
+1. Distance from home | Distance from offender's home to crime location | Kilometers | GIS calculation
+
+**CRIME OPPORTUNITY VARIABLES:**
+1. Drug dealing activities | Drug-related incidents in block | Count | Chicago Police Department
+2. Prostitution soliciting | Prostitution-related incidents in block | Count | Chicago Police Department
+3. Gambling activities | Gambling-related incidents in block | Count | Chicago Police Department
+
+**SOCIAL/BEHAVIORAL VARIABLES:**
+1. Racial/ethnic composition | Racial/ethnic composition of block population | Categories | US 2000 Census
+
+**ENVIRONMENTAL VARIABLES:**
+- None explicitly mentioned
+
+**TEMPORAL/CONTROL VARIABLES:**
+- None explicitly mentioned
+
+**OTHER VARIABLES:**
+- None explicitly mentioned
+
+---
+
+## VARIABLE SUMMARY COUNTS
+**Total Independent Variables:** 17
+**Demographic Variables:** 3
+**Economic Variables:** 9
+**Land Use Variables:** 1
+**Infrastructure Variables:** 2
+**Distance/Accessibility Variables:** 1
+**Crime Opportunity Variables:** 3
+**Social/Behavioral Variables:** 1
+**Environmental Variables:** 0
+**Temporal/Control Variables:** 0
+**Other Variables:** 0
+
+---
+
+## KEY FINDINGS
+**Main Results:** Street robbers prefer locations near their homes, with accessible blocks and cash economies, both legal and illegal.
+**Significant Predictors:** Distance from home, presence of cash economies, accessibility indicators, racial/ethnic composition.
+**Model Performance:** Not explicitly mentioned
+**Scale Effects:** Spatial spillover effects observed, but limited to adjacent blocks.
+
+---
+
+## DATA QUALITY NOTES
+**Variable Information Quality:** Complete
+**Missing Information:** No explicit mention of publication year or journal name.
+**Extraction Confidence:** High","  - ""This article analyzes how street robbers decide on where to attack their victims.""
   - ""Using data on nearly 13,000 robberies, on the approximately 18,000 offenders involved in these robberies, and on the nearly 25,000 census blocks in the city of Chicago,""
   - ""we utilize the discrete choice framework to assess which criteria motivate the location decisions of street robbers.""
   - ""We demonstrate that they attack near their own homes, on easily accessible blocks, where legal and illegal cash economies are present, and that these effects spill over to adjacent blocks.""

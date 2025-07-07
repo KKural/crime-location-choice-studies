@@ -1,0 +1,22 @@
+sampling_approach_clean,n_studies,mean_unit_size,median_unit_size
+Case-control sampling,1,1.4227e-4,1.4227e-4
+Systematic Social Observation (SSO),1,8.4491e-4,8.4491e-4
+Interviews and systematic observations,1,0.001545,0.001545
+Random sampling of 6000 census blocks per robbery,1,0.01968,0.01968
+Random partition into training and test sets,1,0.032,0.032
+Two-wave panel study,1,0.04,0.04
+All detected residential burglaries in The Hague,1,0.65,0.65
+Random sample of robbery cases,1,0.7,0.7
+All arrests for burglaries in Tampa during the study period were included.,1,0.88,0.88
+Stratified importance sampling,1,1.2,1.2
+All suspects arrested for burglary over a 13-year period,1,1.36,1.36
+Stratified importance sampling approach,1,1.41,1.41
+Solitary offending cases selected,1,1.62,1.62
+Importance sampling and simple random sampling,1,1.962,1.962
+Online self-report survey,1,2.63,2.63
+Online survey,1,2.63,2.63
+Random sampling for burglaries with multiple offenders,1,2.74,2.74
+Not explicitly mentioned,4,2.9025000000000003,1.345
+Based on postal code areas,1,2.96,2.96
+"Random sample of 4,410 persons arrested in 2004 or 2005",1,2.96,2.96
+Selection of solitary offenders,1,2.96,2.96

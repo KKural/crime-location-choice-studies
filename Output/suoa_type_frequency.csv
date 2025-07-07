@@ -1,0 +1,37 @@
+suoa_type,n,percentage
+Four-digit postal code areas,4,7.8
+Community,3,5.9
+Grid cell,3,5.9
+Neighborhoods (NL); Super Output Areas (UK); Statistical Local Areas (AU),3,5.9
+Neighbourhoods,3,5.9
+Census block group,2,3.9
+Neighborhoods,2,3.9
+Postal code areas,2,3.9
+Street segments,2,3.9
+Block group,1,2
+Census block,1,2
+Census blocks,1,2
+Census tract,1,2
+Census unit,1,2
+Communities,1,2
+Communities (juweihui or cunweihui),1,2
+Four-digit postal code area,1,2
+Grid cells,1,2
+Individual residential properties,1,2
+NZ Census Statistical Area 2 (SA2),1,2
+Neighborhood,1,2
+Neighborhood units,1,2
+Neighbourhood,1,2
+Neighbourhoods (output areas),1,2
+Postal code area,1,2
+Residential properties,1,2
+Residential suburbs,1,2
+Small areas,1,2
+Statistical Area 2 (SA2),1,2
+Statistical Area 2 (SA2) Census Units,1,2
+Statistical Local Area (SLA),1,2
+Street segment,1,2
+U.K. census Lower Super Output Areas (LSOAs),1,2
+UK Census Lower Level Super Output Area (LSOA),1,2
+UK census Lower Super Output Area (LSOA),1,2
+Wards,1,2

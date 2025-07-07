@@ -24,7 +24,7 @@ df_data_clean <- df_raw_data %>%
   )
 
 # Save results with UTF-8 encoding - now includes Elicit data
-write.csv(df_data_clean, "20250704_standardized_unit_sizes.csv", row.names = FALSE, fileEncoding = "UTF-8")
+write.csv(df_data_clean, "Data/20250707_standardized_unit_sizes.csv", row.names = FALSE, fileEncoding = "UTF-8")
 
 str(df_data_clean)
 
@@ -57,4 +57,4 @@ df_data_clean <- df_data_clean %>%
 print(table(df_data_clean$Size_group))
 
 # Optionally, save the updated data with the new column and Elicit data
-write.csv(df_data_clean, "20250704_standardized_unit_sizes_with_groups.csv", row.names = FALSE, fileEncoding = "UTF-8")
+write.csv(df_data_clean, "Data/20250707_standardized_unit_sizes_with_groups.csv", row.names = FALSE, fileEncoding = "UTF-8")

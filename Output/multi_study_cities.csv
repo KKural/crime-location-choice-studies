@@ -1,0 +1,9 @@
+city,country,n_studies,mean_size_km2,median_size_km2,sd_size_km2,min_size_km2,max_size_km2,crime_types
+ZG City,China,8,1.826,1.62,0.6289737673385115,0.958,2.81,"Burglary, Theft from the person, Street robbery, Residential burglary, Street theft crime (snatching, pickpocketing, theft from the person)"
+The Hague,Netherlands,7,0.8000203242857143,0.65,0.9977451566197667,1.4227e-4,2.96,"Residential burglary, Theft, burglary, assault, robbery, drug dealing, public order offences, Other"
+Greater The Hague,Netherlands,6,2.7466666666666666,2.96,0.5225578117937447,1.68,2.96,"Any-crime-type, violence, property crimes, Burglary; robbery; assault; theft from a vehicle, Other, Robberies, residential burglaries, thefts from vehicles, assaults, Burglary"
+Chicago,United States,3,0.24645333333333333,0.01968,0.39278293513508616,0.01968,0.7,"Street robbery, Robbery"
+Richmond,United States,2,0.047,0.047,0.021213203435596427,0.032,0.062,"Breaking and entering, Residential breaking and entering"
+Ghent,Belgium,2,0.395422455,0.395422455,0.5580169155468803,8.4491e-4,0.79,"Graffiti writing, Residential burglary"
+Tampa,United States,2,1.12,1.12,0.3394112549695429,0.88,1.36,Burglary
+Brisbane,Australia,2,8.48,8.48,0,8.48,8.48,Residential burglary

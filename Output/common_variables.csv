@@ -1,0 +1,366 @@
+variable_name,variable_category,frequency
+Proximity,distance_access,9
+Age,demographic,7
+Residential mobility,demographic,7
+Ethnic heterogeneity,demographic,6
+Bus stops,other,5
+Population density,demographic,5
+Residential units,infrastructure,5
+Subway stations,other,5
+Number of households,demographic,4
+Proximity to city center,distance_access,4
+Real estate value,other,4
+Schools,land_use,4
+Bars and clubs,land_use,3
+Collective efficacy,social_behavioral,3
+Concentrated disadvantage,demographic,3
+Demographic variables,other,3
+Gender,demographic,3
+Malls and supermarkets,other,3
+Median income,economic,3
+Proximity to offender's home,distance_access,3
+Sex,demographic,3
+Single-family dwellings,infrastructure,3
+Transportation hubs,distance_access,3
+Accessibility,distance_access,2
+Affluence,economic,2
+Bars,land_use,2
+Cybercafés,other,2
+Distance,distance_access,2
+Distance from home,distance_access,2
+Distance of journey to crime,distance_access,2
+Distance/accessibility variables,distance_access,2
+Economic variables,economic,2
+Ethnic diversity,demographic,2
+Grocers,other,2
+High schools,land_use,2
+Hospitals,land_use,2
+Log distance,distance_access,2
+None explicitly mentioned,other,2
+None mentioned,other,2
+Number of business units,land_use,2
+Number of residential units,infrastructure,2
+Population turnover,demographic,2
+Presence of businesses,land_use,2
+Proportion of single-family dwellings,infrastructure,2
+Racial/ethnic composition,demographic,2
+Residential density,other,2
+Residential stability,other,2
+Socioeconomic heterogeneity,economic,2
+Socioeconomic heterogeneity (10%),economic,2
+Temporal variables,temporal_control,2
+Wholesale markets,other,2
+-log(Distance),distance_access,1
+ATM and banks,land_use,1
+ATMs and banks,land_use,1
+ATMs and banks (#),land_use,1
+"Access to tap water, bath, and kitchen",distance_access,1
+Activity space,other,1
+"Age group (juvenile, young adult, adult)",demographic,1
+Age structure,demographic,1
+"Ambient population (/10,000)",demographic,1
+Annual income per person,economic,1
+Area (km²),other,1
+Auto-network density,other,1
+Average house price,demographic,1
+Average real estate value,demographic,1
+Average rent price,demographic,1
+Banks,land_use,1
+"Barbers, beauty salons",other,1
+Barrier — River,infrastructure,1
+Barrier — Road,infrastructure,1
+Bars and clubs (#),land_use,1
+"Bars, clubs",land_use,1
+Basic stores,land_use,1
+"Building type (detached, semi-detached, terraced, apartment)",infrastructure,1
+Built surface area,infrastructure,1
+Burglary rate,other,1
+Bus stops (#),other,1
+Business,land_use,1
+Business presence,land_use,1
+Car parks,environmental,1
+Carparks,environmental,1
+Carparks (#),environmental,1
+Central heating/AC,infrastructure,1
+Cinemas,other,1
+Commercial area,land_use,1
+Community type based on Hukou status,demographic,1
+Connectivity,other,1
+Connector — Train,distance_access,1
+Construction type,infrastructure,1
+Contagion (previous unrest),social_behavioral,1
+Country of birth,other,1
+Cultural facilities,land_use,1
+"Currency exchange, pawn shops",land_use,1
+Current and former residential areas of offenders,economic,1
+Current home location,economic,1
+Current residence duration,economic,1
+Cybercafés (#),other,1
+D.HIGHWAY | Distance to highway | kilometers | Calculated distance values,distance_access,1
+D.HOSPITAL | Distance to hospital | kilometers | Calculated distance values,distance_access,1
+Day of week,temporal_control,1
+Dealers' perceptions of social control,social_behavioral,1
+Density of road network,infrastructure,1
+Density of road network (km/km²),infrastructure,1
+Deprivation (Index of Multiple Deprivation),economic,1
+Detection rate,other,1
+Distance (centered),distance_access,1
+Distance from burglar's home (log),distance_access,1
+Distance from city center,distance_access,1
+Distance from home location,distance_access,1
+Distance from offender's home,distance_access,1
+Distance from offender's home to crime location,distance_access,1
+Distance from offender's residence,distance_access,1
+Distance from offender's residence to crime location,distance_access,1
+Distance of journey to prior robbery,distance_access,1
+Distance squared (centered),distance_access,1
+Distance to activity nodes,distance_access,1
+Distance to burglar's residence,distance_access,1
+Distance to city center,distance_access,1
+Distance to city center (log km),distance_access,1
+Distance to current area of residence,distance_access,1
+Distance to current residence,distance_access,1
+Distance to current residential area of offender,distance_access,1
+Distance to former area of residence,distance_access,1
+Distance to house,distance_access,1
+Distance to offender's home,distance_access,1
+Distance to offender’s home (log km),distance_access,1
+Distance to potential customers,distance_access,1
+Distance to prior offense,distance_access,1
+Distance to target neighborhood,distance_access,1
+Distance to the city centre,distance_access,1
+Distance to the nearest highway ramp,distance_access,1
+Distance to transit stops,distance_access,1
+Distance — Adults,distance_access,1
+Distance — Juveniles,distance_access,1
+Drug Use,other,1
+Drug arrests,other,1
+Drug dealing activities,other,1
+Duration and recency of residence,social_behavioral,1
+Ease of escape,distance_access,1
+Education,other,1
+El stations,other,1
+Employment,economic,1
+Environmental quality,other,1
+Ethnic background,demographic,1
+FAM.DENSITY | Family density per unit area | persons/unit area | Census data,demographic,1
+Former residence duration,temporal_control,1
+Gambling activities,other,1
+Gang territorial dissimilarity,other,1
+Garage present,infrastructure,1
+Gas stations,other,1
+Gender of offender and family members,demographic,1
+Gender ratios,demographic,1
+General merchandise stores,land_use,1
+Gini coefficient,other,1
+Grocers (#),other,1
+Group crime rate,social_behavioral,1
+Guard stations,other,1
+Health-care facilities,other,1
+High school presence,other,1
+High schools (#),land_use,1
+Home ownership,other,1
+"Hotels, restaurants, and bars",land_use,1
+House type,infrastructure,1
+Household composition,demographic,1
+Hukou status,demographic,1
+Income,economic,1
+Indigenous status,demographic,1
+Laundromats,other,1
+Level of urbanization,other,1
+Liquor stores,land_use,1
+Low educational attainment (high school or lower),other,1
+Main streets,environmental,1
+Major roads with access control,infrastructure,1
+Major roads without access control,infrastructure,1
+Malls and supermarkets (#),other,1
+Marital Status,other,1
+Markets,other,1
+Mean housing repayment,economic,1
+Mean value of residential property,other,1
+Middle schools,land_use,1
+Migrants proportion,demographic,1
+Mixed land-use,land_use,1
+Night shops,land_use,1
+Non-local proportion,other,1
+None specified,other,1
+Not being arrested in the act of prior robbery,social_behavioral,1
+Number of addresses per 10 years,other,1
+Number of bars,land_use,1
+Number of bars/restaurants/hotels,land_use,1
+Number of bus stops,other,1
+Number of car parks,environmental,1
+Number of cars and vans,other,1
+Number of dwellings,other,1
+Number of employees,other,1
+Number of entertainment venues,land_use,1
+Number of parks,environmental,1
+Number of past residential burglaries,other,1
+Number of people on the street,environmental,1
+Number of potential targets,other,1
+Number of prior offenses,social_behavioral,1
+Number of properties,other,1
+"Number of residential units (single-unit, multi-unit)",infrastructure,1
+Number of schools,land_use,1
+Number of shopping outlets,other,1
+Number of subway stations,other,1
+Number of transit stops,other,1
+Observed physical disorder,social_behavioral,1
+Offender residence location,social_behavioral,1
+Overcrowding,other,1
+Owner-occupied property,other,1
+P.CARE.PH | Personal care expenditure per household | dollars | Census data,demographic,1
+Past residential burglary rate,other,1
+Pedestrian-network density,other,1
+Perceived physical disorder,social_behavioral,1
+Percent Black residents,other,1
+Percent Latino residents,other,1
+Percent fence,infrastructure,1
+Percent grass,environmental,1
+Percent low-rent houses,economic,1
+Percent migrants,demographic,1
+Percent occupied housing units,other,1
+Percent plant,environmental,1
+Percent sidewalk,environmental,1
+Percent wall,infrastructure,1
+Percent window,environmental,1
+Percentage of Black,demographic,1
+Percentage of Latino,demographic,1
+Percentage of occupied housing,demographic,1
+Percentage of single-family dwellings,infrastructure,1
+Percentage single-person households,demographic,1
+Physical disorder,social_behavioral,1
+Police cars,other,1
+Police officers on foot or bike,other,1
+Police stations,other,1
+Population (# 1000),demographic,1
+Population (log),demographic,1
+Population ages 15-25,demographic,1
+Population churn rate,demographic,1
+Population nonnative,demographic,1
+Population per census unit,demographic,1
+Population size,demographic,1
+Population turnover (10%),demographic,1
+Potential customer density,other,1
+Poverty,economic,1
+Poverty level,economic,1
+Presence of El stations,other,1
+Presence of cash-intensive businesses,land_use,1
+Presence of crime generators and attractors,social_behavioral,1
+Presence of high schools,land_use,1
+Presence of high-rise buildings (9 floors or higher),infrastructure,1
+Presence of illegal markets,other,1
+Presence of main streets,environmental,1
+Presence of major road,infrastructure,1
+Presence of military base or police station,other,1
+Presence of police CCTV cameras,other,1
+Presence of post-2000 newer buildings,other,1
+Presence of retail and entertainment businesses,land_use,1
+Presence of retail facilities,land_use,1
+Presence of school(s),other,1
+Presence of schools,land_use,1
+Presence of train station(s),distance_access,1
+Presence of underground stations,other,1
+Previous crime location,social_behavioral,1
+Previous crime locations,social_behavioral,1
+Previous home location,social_behavioral,1
+Previous offence location,infrastructure,1
+Previous offenses in the area,social_behavioral,1
+Previously chosen areas,social_behavioral,1
+Primary schools,land_use,1
+Prior burglary activity in neighborhood,social_behavioral,1
+Prior burglary in same LSOA,social_behavioral,1
+Prior burglary in same MSOA,social_behavioral,1
+Prior crime locations,social_behavioral,1
+Prior offending locations,social_behavioral,1
+Prior offenses,social_behavioral,1
+Prior snatching offenses in the location,social_behavioral,1
+Property value,economic,1
+Proportion non-Belgians,other,1
+Proportion of foreigners,demographic,1
+Proportion of high-rise buildings,infrastructure,1
+Proportion of houses built after 2000,other,1
+Proportion of migrants,demographic,1
+Proportion of migrants (%),demographic,1
+Proportion of newcomers,other,1
+Proportion of non-Western residents,other,1
+Proportion of single-person households,demographic,1
+Proportion of youngsters,other,1
+Proportion of youngsters (%),other,1
+Proportion rental units,economic,1
+Prostitution arrests,other,1
+Prostitution soliciting,other,1
+Proximity (distance from offender's residence),distance_access,1
+Proximity city center,distance_access,1
+Proximity home neighbourhood,distance_access,1
+Proximity to burglar's home,distance_access,1
+Proximity to central business district,distance_access,1
+Proximity to city centre,distance_access,1
+Race/Ethnicity,demographic,1
+Racial/Ethnic Origin,demographic,1
+Racial/ethnic heterogeneity,demographic,1
+Recency of prior burglary,social_behavioral,1
+Recency of prior offenses,social_behavioral,1
+Relative mobility flow,demographic,1
+Relevance (similarity),other,1
+Reliability (familiarity),other,1
+Rent price category,economic,1
+Rental status (renter-occupied vs. owner-occupied),economic,1
+Residential area of family,demographic,1
+Residential area of offender,social_behavioral,1
+"Residential areas of family members (parents, siblings, children)",demographic,1
+Residential churn,demographic,1
+Residential history (duration and recency),social_behavioral,1
+Restaurants,land_use,1
+"Restaurants, food stands",land_use,1
+Retail businesses,land_use,1
+Retail employment,economic,1
+River Lagan (natural barrier),infrastructure,1
+Rivers,infrastructure,1
+Routine activities,other,1
+SEIFA index,economic,1
+SWEBER,other,1
+Share of non-locals,other,1
+Share of renters,economic,1
+Single family properties,demographic,1
+Single-parent households,demographic,1
+Social cohesion,social_behavioral,1
+Social control,social_behavioral,1
+Social disorganization,social_behavioral,1
+Solo crime rate,social_behavioral,1
+Spatial knowledge (mobility flows),demographic,1
+Spatial lag,other,1
+Sport and leisure facilities,land_use,1
+Sports stadiums,land_use,1
+Sports stadiums (#),land_use,1
+Street network centrality,distance_access,1
+Subway stations (#),other,1
+Success — Ethnic heterogeneity,demographic,1
+Success — Rent,economic,1
+Success — Transience,demographic,1
+Supermarkets,other,1
+Surveillability,social_behavioral,1
+Surveillance cameras,social_behavioral,1
+Surveillance cameras (#),social_behavioral,1
+Target density,other,1
+Terminal markets (#),other,1
+Terraced property,infrastructure,1
+Time interval between two robberies,temporal_control,1
+Time of day,temporal_control,1
+Time of day (not explicitly mentioned but implied in the context of the study),temporal_control,1
+Time of day for observations,temporal_control,1
+Time period,temporal_control,1
+Time since last residence change,temporal_control,1
+Time since prior burglary,social_behavioral,1
+Total floor area of retail businesses,infrastructure,1
+Total population,demographic,1
+Train station presence,distance_access,1
+Transportation hubs (#),distance_access,1
+Trees along the street,environmental,1
+Type of prior offenses,social_behavioral,1
+Unemployment rate,economic,1
+Value properties,other,1
+Wealth,economic,1
+Whether the offender ever has lived in the area before,social_behavioral,1
+Whether the offender lives in the area,social_behavioral,1
+Young adults proportion,other,1

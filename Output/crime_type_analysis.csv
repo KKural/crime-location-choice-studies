@@ -1,0 +1,28 @@
+Crime_Type,n_studies,mean_size_km2,median_size_km2,sd_size_km2,min_size_km2,max_size_km2
+Graffiti writing,1,8.4491e-4,8.4491e-4,NA,8.4491e-4,8.4491e-4
+Illicit drug dealing,1,0.001545,0.001545,NA,0.001545,0.001545
+Breaking and entering,1,0.032,0.032,NA,0.032,0.032
+"Theft, burglary, assault, robbery, drug dealing, public order offences",1,0.04,0.04,NA,0.04,0.04
+Residential breaking and entering,1,0.062,0.062,NA,0.062,0.062
+Terrorist attacks,1,0.15,0.15,NA,0.15,0.15
+TFV,1,0.2,0.2,NA,0.2,0.2
+Riot-related incidents,1,0.33,0.33,NA,0.33,0.33
+Group crime,1,0.37,0.37,NA,0.37,0.37
+Residential burglary; robbery; theft of and from vehicles,1,0.44,0.44,NA,0.44,0.44
+Robbery,1,0.7,0.7,NA,0.7,0.7
+Street robbery,6,1.08656,1.62,0.8264016944803538,0.01968,1.62
+Burglary,6,1.111356,0.919,1.0151641311709156,1.36e-4,2.96
+Residential burglary; Non-residential burglary; Commercial robbery; Personal robbery; Extra-familial sex offenses,1,1.2,1.2,NA,1.2,1.2
+Residential burglaries; Non-residential burglaries; Commercial robberies; Personal robberies; Extra-familial sex offences,1,1.41,1.41,NA,1.41,1.41
+Theft from the person,1,1.62,1.62,NA,1.62,1.62
+"Any-crime-type, violence, property crimes",1,1.68,1.68,NA,1.68,1.68
+"Residential burglary, non-residential burglary, commercial robbery, personal robbery, extra-familial sex offenses",1,1.962,1.962,NA,1.962,1.962
+Snatching,1,2.18,2.18,NA,2.18,2.18
+Residential burglary,13,2.4525801746153846,0.65,3.221006415086326,1.4227e-4,8.48
+"Residential burglary, theft of/from a bicycle, car or other (motor) vehicle, theft from a shop/shoplifting, theft (of an object) from a person, robbery, assault, vandalism",1,2.63,2.63,NA,2.63,2.63
+"Violent offences, thefts, vandalism, drug trafficking, burglaries, robberies, weapons trafficking",1,2.63,2.63,NA,2.63,2.63
+"Street theft crime (snatching, pickpocketing, theft from the person)",1,2.81,2.81,NA,2.81,2.81
+Burglary; robbery; assault; theft from a vehicle,1,2.96,2.96,NA,2.96,2.96
+Commercial robberies,1,2.96,2.96,NA,2.96,2.96
+Other,3,2.96,2.96,0,2.96,2.96
+"Robberies, residential burglaries, thefts from vehicles, assaults",1,2.96,2.96,NA,2.96,2.96

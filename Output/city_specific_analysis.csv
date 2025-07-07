@@ -1,0 +1,24 @@
+city,country,n_studies,mean_size_km2,median_size_km2,sd_size_km2,min_size_km2,max_size_km2,crime_types
+East Flanders,Belgium,1,1.36e-4,1.36e-4,NA,1.36e-4,1.36e-4,Burglary
+Amsterdam,Netherlands,1,0.001545,0.001545,NA,0.001545,0.001545,Illicit drug dealing
+Sendai City,Japan,1,0.025,0.025,NA,0.025,0.025,Residential burglary
+High Wycombe area,United Kingdom,1,0.0284,0.0284,NA,0.0284,0.0284,Residential burglary
+Richmond,United States,2,0.047,0.047,0.021213203435596427,0.032,0.062,"Breaking and entering, Residential breaking and entering"
+Belfast,Northern Ireland,1,0.15,0.15,NA,0.15,0.15,Terrorist attacks
+Dorset,United Kingdom,1,0.2,0.2,NA,0.2,0.2,TFV
+Chicago,United States,3,0.24645333333333333,0.01968,0.39278293513508616,0.01968,0.7,"Street robbery, Robbery"
+London,United Kingdom,1,0.33,0.33,NA,0.33,0.33,Riot-related incidents
+Baltimore,United States,1,0.37,0.37,NA,0.37,0.37,Group crime
+Ghent,Belgium,2,0.395422455,0.395422455,0.5580169155468803,8.4491e-4,0.79,"Graffiti writing, Residential burglary"
+York,United Kingdom,1,0.44,0.44,NA,0.44,0.44,Residential burglary; robbery; theft of and from vehicles
+West Midlands,United Kingdom,1,0.51,0.51,NA,0.51,0.51,Burglary
+The Hague,Netherlands,7,0.8000203242857143,0.65,0.9977451566197667,1.4227e-4,2.96,"Residential burglary, Theft, burglary, assault, robbery, drug dealing, public order offences, Other"
+Tampa,United States,2,1.12,1.12,0.3394112549695429,0.88,1.36,Burglary
+ZG City,China,8,1.826,1.62,0.6289737673385115,0.958,2.81,"Burglary, Theft from the person, Street robbery, Residential burglary, Street theft crime (snatching, pickpocketing, theft from the person)"
+Birmingham,United Kingdom,1,2.04,2.04,NA,2.04,2.04,Residential burglary
+Chennai City,India,1,2.18,2.18,NA,2.18,2.18,Snatching
+Entire Netherlands,Netherlands,1,2.63,2.63,NA,2.63,2.63,"Violent offences, thefts, vandalism, drug trafficking, burglaries, robberies, weapons trafficking"
+The Hague and North-Holland,Netherlands,1,2.63,2.63,NA,2.63,2.63,"Residential burglary, theft of/from a bicycle, car or other (motor) vehicle, theft from a shop/shoplifting, theft (of an object) from a person, robbery, assault, vandalism"
+Greater The Hague,Netherlands,6,2.7466666666666666,2.96,0.5225578117937447,1.68,2.96,"Any-crime-type, violence, property crimes, Burglary; robbery; assault; theft from a vehicle, Other, Robberies, residential burglaries, thefts from vehicles, assaults, Burglary"
+Perth,Australia,1,6.7,6.7,NA,6.7,6.7,Residential burglary
+Brisbane,Australia,2,8.48,8.48,0,8.48,8.48,Residential burglary
