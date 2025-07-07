@@ -1,0 +1,10 @@
+group,term
+int,choice model
+out,crime location choice
+out,pattern
+int,discrete choice
+int,discrete spatial choice
+out,location choice
+int,rational choice
+int,spatial choice
+out,target selection

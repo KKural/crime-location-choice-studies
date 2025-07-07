@@ -1,0 +1,9 @@
+,group,term
+1,int,choice model
+2,int,discrete choice
+3,int,discrete spatial choice
+4,int,rational choice
+5,int,spatial choice
+6,out,location choice
+7,out,target selection
+8,out,pattern

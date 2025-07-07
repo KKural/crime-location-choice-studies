@@ -1,0 +1,47 @@
+﻿S. No,Citation,"Size of the unit
+(km)",No of units,No of incidents,Unit of analysis
+1,"(Bernasco & Luykx, 2003)",0.65,89,26,Neighborhood
+2,"(Bernasco & Nieuwbeerta, 2005)",0.65,89,548,Neighborhood
+3,"(Bernasco, 2006)",0.65,89,1.174,Neighborhood
+4,"(Clare et al., 2009)",6.7,291,1.761,Residential suburb
+5,"(Bernasco & Block, 2009)",,844,12.872,Census tract
+6,"(Bernasco, 2010a)",< 0.805 (urban)< 3.219 (rural) ,4,7.179,Postal code area
+7,"(Bernasco & Kooistra, 2010)",,4.006,1.539,Postal code area
+8,"(Bernasco, 2010b)",0.017,23.984,1.311,Postal code area
+9,"(Bernasco et al., 2013)",19.68,24.594,12.938,Census block
+10,"(Baudains et al., 2013)",,4.765,2.299,LSOA
+11,"(Townsley et al., 2015)",8.48,158,889,Other administrative unit
+12,"(Lammers et al., 2015)",2.96,142,12.639,Postal code area
+13,"(Townsley et al., 2015)",2.04,131,398,Other administrative unit
+14,"(Townsley et al., 2015)",0.65,89,1.835,Neighborhood
+15,"(Bernasco et al., 2015)",0.51,1.687,3.337,LSOA
+16,"(Bernasco & Jacques, 2015)",0.103,262,50,Street segment
+17,"(Johnson & Summers, 2015)",,198,721,LSOA
+18,"(Vandeviver et al., 2015)",,503.589,4.308,Residential property
+19,"(Townsley et al., 2016)",8.48,158,2.844,statistical local areas
+20,"(Menting et al., 2016)",2.96,142,19.42,Postal code area
+21,"(A. W. Chamberlain & Boggess, 2016)",,334,5.182,Neighborhood
+22,"(Bernasco et al., 2017)",19.68,24.594,12.938,Census block
+23,"(Lammers, 2017)",2.96,142,3.037,Postal code area
+24,"(Frith et al., 2017)",,5.286,459,Street segment
+25,"(Langton & Steenbeek, 2017)",,51.378,2.911,Residential property
+26,"(S. E. M. van Sleeuwen et al., 2018)",2.96,142,12.639,Postal code area
+27,"(Menting, 2018)",1.68,76,13.088,Postal code area
+28,"(Long et al., 2018)",1.62,1.973,527,Community
+29,"(Hanayama et al., 2018)",0.5,1.134,369,Grid cell
+30,"(Song et al., 2019)",1.62,1.616,3.436,Census unit
+31,"(Frith, 2019)",0.44,616,1.105,Other administrative unit
+32,"(Bernasco, 2019)",0.2,4.558,5.092,Grid cell
+33,"(Marchment & Gill, 2019)",,890,150,Small areas
+34,"(Vandeviver & Bernasco, 2020)",0.79,193,679,Neighborhood
+35,"(Menting et al., 2020)",0.68,12.821,140,Neighborhood
+36,"(Xiao et al., 2021)",2.74,2.643,3.86,Community
+37,"(Long et al., 2021)",1.62,1.971,4.358,Community
+38,"(Long & Liu, 2021)",1.62,1.971,4.358,Neighborhood
+39,"(S. van Sleeuwen et al., 2021)",0.66,71,13.305,Neighborhood
+40,"(Kuralarasan & Bernasco, 2022)",2.18,201,1.573,Other administrative unit
+41,"(Long & Liu, 2022)",1.62,1.971,4.358,Neighborhood
+42,"(A. Chamberlain et al., 2022)",,304,4.92,Neighborhood
+43,"(Curtis-Ham et al., 2022b)",,2153,4.5 million,Census Statistical Area
+44,"(Curtis-Ham et al., 2022a)",1.2,2.153,38.57,Census unit statistical area
+45,"(Yue et al., 2023)",1.558,2643,1540,Community

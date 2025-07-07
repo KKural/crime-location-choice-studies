@@ -1,0 +1,11 @@
+group,term
+key,choice model
+key,crime location
+key,crime location choice
+key,crime pattern
+key,discrete spatial
+key,discrete spatial choice
+key,discrete spatial choice model
+key,location choice
+key,spatial choice
+key,spatial choice model

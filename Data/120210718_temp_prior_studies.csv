@@ -1,0 +1,34 @@
+id;title;location_size;size_unit;locations;crimes;unit_label
+1;Where offenders choose to attack: A discrete choice model of robberies in Chicago;;;844;12.872;census tract
+2;Go where the money is: Modeling street robbers' location choices;19680;m;24.594;12.938;census block
+3;Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves’ Target Location Choices;1.62;km;1.616;3.436;census unit
+4;Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago;19680;m;24.594;12.938;census block
+5;Assessing the influence of prior on subsequent street robbery location choices: A case study in ZG City, China;1.62;km;1.973;527;community
+6;How do residential burglars select target areas? : A new approach to the analysis of criminal location choice;0.65;km;89;548;neighborhood
+7;Co-offending and the Choice of Target Areas in Burglary;0.65;km;89;1.174;neighborhood
+8;Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar’s Home Neighborhood Predict Offense Location?;;;334;5.182;neighborhood
+9;The Influence of Activity Space and Visiting Frequency on Crime Location Choice: Findings from an Online Self-Report Survey;0.68;km;12.821;140;neighborhood
+10;Burglar Target Selection: A Cross-national Comparison (NL);0.65;km;89;1.835;neighborhood
+11;Right place, right time? Making crime pattern theory time-specific;0.66;km;71;13.305;neighborhood
+12;Location, Location, Location”: Effects of Neighborhood and House Attributes on Burglars’ Target Selection';0.79;km;193;679;neighborhood
+13;A Sentimental Journey To Crime : Effects of Residential History on Crime Location Choice;;;4.000;7.179;postal code area
+14;Modeling micro-level crime location choice: Application of the discrete choice framework to crime at places ;;;23.984;1.311;postal code area
+15;Effects of Residential history on Commercial Robbers' Crime Location Choices;;;4.006;1.539;postal code area
+16;Biting Once, Twice: the Influence of Prior on Subsequent Crime Location Choice;2.96;km;142;12.639;postal code area
+17;Co-offenders' crime location choice: Do co-offending groups commit crimes in their shared awareness space?;2.96;km;142;3.037;postal code area
+18;Family Matters: Effects of Family Members’ Residential Areas on Crime Location Choice*;2.96;km;142;19.420;postal code area
+19;A Time for a Crime: Temporal Aspects of Repeat Offenders’ Crime Location Choices;2.96;km;142;12.639;postal code area
+20;Awareness×Opportunity: Testing Interactions Between Activity Nodes and Criminal Opportunity in Predicting Crime Location Choice;1.68;km;76;13.088;postal code area
+21;Where Do Dealers Solicit Customers and Sell Them Drugs;103;m;262;50;street segment
+22;Role of the Street Network in Burglars' Spatial Decision-Making;;;5.286;459;street segment
+23;Target Choice During Extreme Events: A Discrete Spatial Choice Model of the 2011 London Riots (LSOA);;;4.765;2.299;LSOA
+24;Learning where to offend: Effects of past on future burglary locations (UK Census Lower Level Super Output Area (LSOA);0.51;km;1.687;3.337;LSOA
+25;Modelling taste heterogeneity regarding offence location choices (Census output area);0.44;km;616;1.105;other administrative unit
+26;Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model (LSOA);;;198;721;LSOA
+27;Location Choice of Snatching Offenders in Chennai City (Wards);2.18;km;201;1.573;other administrative unit
+28;Burglar Target Selection: A Cross-national Comparison (Super Output Areas - UK);2.04;km;131;398;other administrative unit
+29;Burglar Target Selection: A Cross-national Comparison (Statistical Local Areas - AU);8.48;km;158;889;other administrative unit
+30;Formal evaluation of the impact of barriers and connectors on residential burglars' macro-level offending location choices;;;291;1.761;residential suburb
+31;A discrete spatial choice model of burglary target selection at the house-level;;;503.589;4.308;residential property
+32;Residential burglary target selection: An analysis at the property-level using Google Street View;;;51.378;2.911;residential property
+33;The usefulness of past crime data as an attractiveness index for residential burglars;250000;m;1.134;369;grid cell
