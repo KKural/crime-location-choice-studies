@@ -1,0 +1,8 @@
+Research_Question,Key_Finding,Statistical_Evidence,Significance
+RQ1: Distribution,6 orders of magnitude variation,Robust correlations,Descriptive
+RQ2: Temporal,No temporal trend,Mixed-effects model,Non-significant
+RQ3: Jurisdiction,Anglo-Saxon smaller,Multivariate controls,p < 0.05
+RQ4: Crime Type,Crime-specific hierarchy,ANOVA with effect sizes,p < 0.001
+RQ5: Study Area,Strong area relationship,Interaction effects,p < 0.001
+RQ6: Methods,Method-scale adaptation,Complexity analysis,p < 0.05
+RQ7: Variables,Variable independence,Controlled regression,Non-significant
