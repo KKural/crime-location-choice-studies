@@ -7,7 +7,7 @@ library(stringr)
 library(readr)
 
 # Load the data
-input_file <- "Output/clean_combined_dataset.csv"
+input_file <- "Output/clean_combined_dataset_recreated.csv"
 df <- read_csv(input_file, show_col_types = FALSE)
 
 cat("Original dataset dimensions:", nrow(df), "rows,", ncol(df), "columns\n")

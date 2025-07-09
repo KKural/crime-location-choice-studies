@@ -1,6 +1,55 @@
 # Standardize spatial unit sizes to km²
 rm(list=ls())
 library(dplyr)
+library(here)
+
+# Workspace setup - Reproducible output folder creation --------------------
+
+# Function to create a folder with a date argument
+make_folder <- function(date = Sys.Date(), subfolder = NULL) {
+  # Convert the provided date to "YYYYMMDD" format
+  folder_name <- format(as.Date(date), "%Y%m%d")
+  
+  # Define the main folder name
+  main_folder_name <- paste0(folder_name, "_Analysis & Results")
+  
+  # If a subfolder is specified, append it to the main folder path
+  if (!is.null(subfolder)) {
+    full_folder_path <- here::here(main_folder_name, subfolder)
+  } else {
+    full_folder_path <- here::here(main_folder_name)
+  }
+  
+  # Check if the folder exists, and create it if it doesn't
+  if (!dir.exists(full_folder_path)) {
+    dir.create(full_folder_path, recursive = TRUE)  # Create nested folders if necessary
+  }
+  
+  return(full_folder_path)  # Return the folder path to use later
+}
+
+# Create a function to save output with date
+custom_save <- function(data, folder_name, file_description, save_function, file_extension = ".csv", ...) {
+  # Current date in YYYYMMDD format
+  current_date <- format(Sys.Date(), "%Y%m%d")
+  
+  # Ensure file description has the correct extension
+  if (!grepl(paste0("\\", file_extension, "$"), file_description)) {
+    file_description <- paste0(file_description, file_extension)
+  }
+  
+  # Create the file name using the date and the file description
+  file_name <- paste0(current_date, "_", file_description)
+  
+  # Define the path for the output file
+  file_path <- here::here(folder_name, file_name)
+  
+  # Use the provided save function
+  save_function(data, file_path, ...)
+}
+
+# Create the output folder
+output_folder <- make_folder()
 
 # Read input data - using the comprehensive dataset with Elicit data
 df_raw_data <- read.csv("Data/20250704_Table.csv", stringsAsFactors = FALSE)
@@ -24,7 +73,7 @@ df_data_clean <- df_raw_data %>%
   )
 
 # Save results with UTF-8 encoding - now includes Elicit data
-write.csv(df_data_clean, "Data/20250707_standardized_unit_sizes.csv", row.names = FALSE, fileEncoding = "UTF-8")
+custom_save(df_data_clean, output_folder, "standardized_unit_sizes", write.csv, row.names = FALSE, fileEncoding = "UTF-8")
 
 str(df_data_clean)
 
@@ -57,4 +106,4 @@ df_data_clean <- df_data_clean %>%
 print(table(df_data_clean$Size_group))
 
 # Optionally, save the updated data with the new column and Elicit data
-write.csv(df_data_clean, "Data/20250707_standardized_unit_sizes_with_groups.csv", row.names = FALSE, fileEncoding = "UTF-8")
+custom_save(df_data_clean, output_folder, "standardized_unit_sizes_with_groups", write.csv, row.names = FALSE, fileEncoding = "UTF-8")
