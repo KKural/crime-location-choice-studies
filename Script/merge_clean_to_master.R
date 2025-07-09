@@ -164,7 +164,6 @@ for (j in 1:nrow(clean_norm)) {
   }
 }
 
-cat("Found", nrow(matches), "comprehensive text-based matches\n")
 
 # Merge using the comprehensive matching results
 merged <- master %>%
