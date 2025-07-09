@@ -18,6 +18,7 @@ extract_enhanced_study_info <- function(text) {
     title = NA_character_,
     year = NA_integer_,
     authors = NA_character_,
+    filename = NA_character_,
     journal = NA_character_,
     doi = NA_character_,
     
@@ -52,13 +53,12 @@ extract_enhanced_study_info <- function(text) {
     choice_set_definition = NA_character_,
     estimation_method = NA_character_,
     
-    # Variable counts (7 categories with distance/accessibility)
+    # Variable counts (6 categories, removed social/behavioral)
     total_variables = NA_integer_,
     demographic_vars = NA_integer_,
     economic_vars = NA_integer_,
     crime_attractors_vars = NA_integer_, # Combined land use/infrastructure/environmental/opportunity
     distance_vars = NA_integer_,
-    social_vars = NA_integer_,
     temporal_vars = NA_integer_,
     other_vars = NA_integer_,
     
@@ -69,7 +69,17 @@ extract_enhanced_study_info <- function(text) {
     scale_effects = NA_character_,
     variable_quality = NA_character_,
     missing_information = NA_character_,
-    extraction_confidence = NA_character_
+    extraction_confidence = NA_character_,
+    
+    # Data limitations (new section)
+    data_limitations = NA_character_,
+    limitation_quotes = NA_character_,
+    limitation_summary = NA_character_,
+    spatial_limitations = NA_character_,
+    temporal_limitations = NA_character_,
+    data_quality_limitations = NA_character_,
+    methodological_limitations = NA_character_,
+    generalizability_limitations = NA_character_
   )
   
   # Helper function to extract field values
@@ -97,6 +107,11 @@ extract_enhanced_study_info <- function(text) {
     result$year <- as.integer(str_extract(year_text, "\\d{4}"))
   }
   result$authors <- extract_field("Authors", text)
+  result$filename <- extract_field("Filename", text)
+  # Handle case where filename is not provided
+  if (is.na(result$filename) || result$filename == "Not provided" || result$filename == "") {
+    result$filename <- "Not provided"
+  }
   result$journal <- extract_field("Journal", text)
   result$doi <- extract_field("DOI", text)
   
@@ -127,6 +142,19 @@ extract_enhanced_study_info <- function(text) {
   result$justification_category <- extract_field("Rationale Category", text)
   result$justification_quote <- extract_field("Rationale Summary", text)
   
+  # Enhanced SUoA justification processing
+  if (!is.na(result$justification_category)) {
+    # Check if category indicates "Not specified" and update accordingly
+    if (str_detect(tolower(result$justification_category), "not specified|no rationale|unclear")) {
+      result$justification_category <- "Not specified"
+      # Add flag in summary if needed
+      if (!is.na(result$justification_quote) && 
+          !str_detect(tolower(result$justification_quote), "no explicit rationale")) {
+        result$justification_quote <- paste0(result$justification_quote, " [No explicit rationale provided for SUoA choice]")
+      }
+    }
+  }
+  
   
   # Extract methodology (updated field names)
   result$study_design <- extract_field("Design", text)
@@ -145,29 +173,28 @@ extract_enhanced_study_info <- function(text) {
   
   # Extract variable counts from new compact format: "Demo: [#] | Econ: [#] | ..."
   extract_compact_counts <- function(text) {
-    # Look for the VARIABLE COUNTS line (without Total)
+    # Look for the VARIABLE COUNTS line (without Social category)
     counts_line <- str_extract(text, "Demo:\\s*\\d+\\s*\\|[^\\n]*")
     
     if (!is.na(counts_line)) {
-      # Extract individual counts using regex
+      # Extract individual counts using regex (6 categories)
       demo <- as.integer(str_extract(counts_line, "Demo:\\s*(\\d+)", group = 1))
       econ <- as.integer(str_extract(counts_line, "Econ:\\s*(\\d+)", group = 1))
       crime_attractors <- as.integer(str_extract(counts_line, "Crime Attractors:\\s*(\\d+)", group = 1))
       distance <- as.integer(str_extract(counts_line, "Distance:\\s*(\\d+)", group = 1))
-      social <- as.integer(str_extract(counts_line, "Social:\\s*(\\d+)", group = 1))
       temporal <- as.integer(str_extract(counts_line, "Temporal:\\s*(\\d+)", group = 1))
       other <- as.integer(str_extract(counts_line, "Other:\\s*(\\d+)", group = 1))
       
       # Calculate total automatically
-      total <- sum(c(demo, econ, crime_attractors, distance, social, temporal, other), na.rm = TRUE)
+      total <- sum(c(demo, econ, crime_attractors, distance, temporal, other), na.rm = TRUE)
       
       return(list(
         total = total, demo = demo, econ = econ, crime_attractors = crime_attractors,
-        distance = distance, social = social, temporal = temporal, other = other
+        distance = distance, temporal = temporal, other = other
       ))
     }
     return(list(total = NA, demo = NA, econ = NA, crime_attractors = NA, 
-                distance = NA, social = NA, temporal = NA, other = NA))
+                distance = NA, temporal = NA, other = NA))
   }
   
   # Extract counts and calculate total automatically
@@ -177,7 +204,6 @@ extract_enhanced_study_info <- function(text) {
   result$economic_vars <- counts$econ
   result$crime_attractors_vars <- counts$crime_attractors
   result$distance_vars <- counts$distance
-  result$social_vars <- counts$social
   result$temporal_vars <- counts$temporal
   result$other_vars <- counts$other
   
@@ -190,19 +216,54 @@ extract_enhanced_study_info <- function(text) {
   result$missing_information <- extract_field("Missing Info", text, multiline = TRUE)
   result$extraction_confidence <- extract_field("Confidence", text)
   
+  # Extract data limitations (new section)
+  # Look for the data limitations section in the text
+  limitations_pattern <- "\\*\\*Data Limitations:\\*\\*([\\s\\S]*?)(?=\\*\\*Overall Limitation Summary:|$)"
+  limitations_match <- str_extract(text, limitations_pattern)
+  
+  if (!is.na(limitations_match)) {
+    # Clean up the extracted limitations text
+    limitations_text <- str_replace(limitations_match, "^\\*\\*Data Limitations:\\*\\*\\s*", "")
+    result$data_limitations <- str_trim(limitations_text)
+    
+    # Extract individual quotes and categorize them
+    quote_pattern <- "\\[Quote \\d+\\]:\\s*\"([^\"]+)\"[^\\n]*\\nCategory:\\s*([^\\n]+)"
+    quotes <- str_extract_all(limitations_text, quote_pattern)[[1]]
+    
+    if (length(quotes) > 0) {
+      # Store all quotes together
+      result$limitation_quotes <- paste(quotes, collapse = " | ")
+      
+      # Categorize limitations by type
+      spatial_quotes <- str_extract_all(limitations_text, "Category:\\s*Spatial[^\\n]*\\n(?:Summary:[^\\n]*)?")[[1]]
+      temporal_quotes <- str_extract_all(limitations_text, "Category:\\s*Temporal[^\\n]*\\n(?:Summary:[^\\n]*)?")[[1]]
+      quality_quotes <- str_extract_all(limitations_text, "Category:\\s*Data quality[^\\n]*\\n(?:Summary:[^\\n]*)?")[[1]]
+      method_quotes <- str_extract_all(limitations_text, "Category:\\s*Methodological[^\\n]*\\n(?:Summary:[^\\n]*)?")[[1]]
+      general_quotes <- str_extract_all(limitations_text, "Category:\\s*Generalizability[^\\n]*\\n(?:Summary:[^\\n]*)?")[[1]]
+      
+      result$spatial_limitations <- if(length(spatial_quotes) > 0) paste(spatial_quotes, collapse = " | ") else NA_character_
+      result$temporal_limitations <- if(length(temporal_quotes) > 0) paste(temporal_quotes, collapse = " | ") else NA_character_
+      result$data_quality_limitations <- if(length(quality_quotes) > 0) paste(quality_quotes, collapse = " | ") else NA_character_
+      result$methodological_limitations <- if(length(method_quotes) > 0) paste(method_quotes, collapse = " | ") else NA_character_
+      result$generalizability_limitations <- if(length(general_quotes) > 0) paste(general_quotes, collapse = " | ") else NA_character_
+    }
+  }
+  
+  # Extract overall limitation summary
+  result$limitation_summary <- extract_field("Overall Limitation Summary", text, multiline = TRUE)
+  
   return(result)
 }
 
 # Enhanced variable extraction function
 extract_enhanced_variables <- function(text) {
   
-  # Define variable categories to search for (7 categories with distance/accessibility)
+  # Define variable categories to search for (simplified to 6 categories, removed social/behavioral)
   categories <- c(
     "DEMOGRAPHIC",
     "ECONOMIC", 
     "CRIME ATTRACTORS",
     "DISTANCE / ACCESSIBILITY",
-    "SOCIAL / BEHAVIOURAL",
     "TEMPORAL / CONTROL",
     "OTHER"
   )
