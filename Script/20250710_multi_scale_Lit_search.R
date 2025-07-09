@@ -331,7 +331,8 @@ gold_standard <- c(
   "the usefulness of past crime data as an attractiveness index for residential burglars",
   "traveling alone or together? neighborhood context on individual and group juvenile and adult burglary decisions",
   "where do dealers solicit customers and sell them drugs? a micro-level multiple method study",
-  "where offenders choose to attack: a discrete choice model of robberies in chicago"
+  "where offenders choose to attack: a discrete choice model of robberies in chicago",
+  "Graffiti writers choose locations that optimize exposure"
 )
 
 # Normalize titles
@@ -370,9 +371,16 @@ retrieved_articles <- retrieved_articles |>
     TRUE ~ "Other"  # Default for unidentified sources
   ))
 
+nrow(retrieved_articles)
+
 # And then check the results against our benchmark list to see if they were found
 articles_found <- litsearchr::check_recall(true_hits = gold_standard,
                                            retrieved = retrieved_articles$title)
+
+custom_save(articles_found, output_spatial_scale, "articles_found.csv", write.csv)
+
+
+df_articles_found <- as.data.frame(articles_found) 
 
 Unique_retrieved_articles <- litsearchr::remove_duplicates(retrieved_articles, field="title", method="exact")
 nrow(retrieved_articles)-nrow(Unique_retrieved_articles)
@@ -392,118 +400,6 @@ Unique_retrieved_articles <- Unique_retrieved_articles |>
                 abstract, everything())
 
 # Save the new dataset with instructions as a CSV
-custom_save(data_unique, output_spatial_scale, "data_unique.csv", write.csv)
+custom_save(Unique_retrieved_articles, output_spatial_scale, "Unique_retrieved_articles.csv", write.csv)
 
 
-
-df_articles_found <- as.data.frame(Unique_retrieved_articles) 
-custom_save(df_articles_found, output_spatial_scale, "articles_found.csv", write.csv)
-
-
-# read and process the data, 
-# read the Scopus data
-scopus <- readr::read_csv(here::here("20250117_Analysis & Results/Result csv/scopus.csv"), col_types = readr::cols(.default = readr::col_character())) |>
-  #convert the names to lowercase and replace space with "_"
-  dplyr::rename_all(~stringr::str_replace_all(tolower(.), " ", "_"))|>
-  # convert all the characters to lowercase 
-  dplyr::mutate( dplyr::across(where(is.character), tolower))|>
-  # combine the start page and end page
-  dplyr::mutate(pages = ifelse(!is.na(page_start) & !is.na(page_end), paste(page_start, page_end, sep = "-"), NA))|>
-  dplyr::mutate(`source` = "Scopus") |>
-  # select the necessary columns 
-  dplyr::select(`title`, `abstract`, `year`, `authors`, `source_title`,
-                `volume`, `issue`, `pages`, `doi`, `source`)  
-
-# read Google scholar data 
-google_scholar <- readr::read_csv(here::here("20250117_Analysis & Results/Result csv/google_scholar.csv"), col_types = readr::cols(.default = readr::col_character()))|>
-  #convert the names to lowercase and replace space with "_"
-  dplyr::rename_all(~stringr::str_replace_all(tolower(.), " ", "_")) |>
-  # convert all the characters to lowercase 
-  dplyr::mutate( dplyr::across(where(is.character), tolower))|>
-  # select the necessary columns 
-  dplyr::rename(`issue` = `number`,
-                `source_title` = `publication`)|>
-  # create columns not present to use it later 
-  dplyr::mutate(`source` = "Google scholar",`abstract` = " ",
-                `doi` = " ") |>
-  # select the necessary columns
-  dplyr::select(`title`, `abstract`, `year`, `authors`, `source_title`,
-                `volume`, `issue`,`pages`, `doi`,`source`)
-
-# read web of science data 
-WOS <- readxl::read_excel(here::here("20250117_Analysis & Results/Result csv/WOS.xls"), col_types = "text")|>
-  #convert the names to lowercase and replace space with "_"
-  dplyr::rename_all(~stringr::str_replace_all(tolower(.), " ", "_"))|>
-  # convert all the characters to lowercase 
-  dplyr::mutate( dplyr::across(where(is.character), tolower))|>
-  # combine the start page and end page
-  dplyr::mutate(pages = ifelse(!is.na(start_page) & !is.na(end_page), paste(start_page, end_page, sep = "-"), NA))|>
-  # select the necessary columns 
-  dplyr::rename(`title` = `article_title`,
-                `year` = `publication_year`)|>
-  # create columns not present to use it later 
-  dplyr::mutate(`source` = "WOS") |>
-  # select the necessary columns
-  dplyr::select(`title`, `abstract`, `year`, `authors`, `source_title`,
-                `volume`, `issue`, `pages`, `doi`,`source`)  
-
-# read proquest data 
-pro_quest <- readr::read_csv(here::here("20250117_Analysis & Results/Result csv/ProQuest.CSV"), col_types = readr::cols(.default = readr::col_character())) |>
-  # Convert the names to lowercase and replace space with "_"
-  dplyr::rename_all(~stringr::str_replace_all(tolower(.), " ", "_")) |>
-  # Convert all the characters to lowercase
-  dplyr::mutate(dplyr::across(where(is.character), tolower)) |>
-  # Rename columns
-  dplyr::rename(`source_title` = `publication`,
-                `year` = `pubdate`,
-                `authors` = `author`) |>
-  # Extract only the year (first 4 characters from the year column)
-  dplyr::mutate(year = substr(year, 1, 4)) |>
-  # Concatenate startpage and endpage into pages
-  dplyr::mutate(pages = ifelse(!is.na(startpage) & !is.na(endpage), paste(startpage, endpage, sep = "-"), NA)) |>
-  # Create columns not present to use later
-  dplyr::mutate(`source` = "ProQuest") |>
-  # Select the necessary columns
-  dplyr::select(`title`, `abstract`, `year`, `authors`, `source_title`, `volume`, `issue`, `pages`, `doi`, `source`)
-
-# bind all rows (N = 1194)
-data_all <- dplyr::bind_rows(WOS,scopus,  pro_quest, google_scholar)
-
-# count number of articles from each sources
-source_summary <- data_all |>
-  dplyr::count(source) |>
-  dplyr::rename(Number_of_Entries = n)|>
-  dplyr::arrange(desc(Number_of_Entries))
-
-source_summary
-
-
-# Normalize titles to remove punctuation, convert to lowercase, and remove extra spaces
-data_all <- data_all |>
-  # Remove any non-text symbols in the title, then remove extra spaces
-  dplyr::mutate(title = stringr::str_replace_all(title, "[[:punct:]]", " ") |> 
-                  stringr::str_squish() |> 
-                  tolower())
-
-nrow(data_all)
-
-# Remove all duplicates based on the normalized title
-data_unique <- data_all |>
-  dplyr::distinct(title, .keep_all = TRUE)  # Keeps the first occurrence of duplicates
-
-nrow(data_unique)
-
-# add extra columns for inclusion and exclusion
-data_unique <- data_unique |> 
-  dplyr:: select(source, year, title, abstract, 
-                 source_title, volume, issue, source, 
-                 doi) |>
-  dplyr::mutate(`select_reject_by (Wim/Christophe)` = " ", 
-                `notes (Wim/Christophe)` = " ",
-                `select_reject_by (Kural)` = " ",
-                `notes kural` = " ",)|>
-  # rearrange the column order 
-  dplyr::select(`select_reject_by (Wim/Christophe)`, `select_reject_by (Kural)`,`notes kural`, everything())
-
-# Save the new dataset with instructions as a CSV
-custom_save(data_unique, output_spatial_scale, "data_unique.csv", write.csv)
