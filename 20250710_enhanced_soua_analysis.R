@@ -472,5 +472,3 @@ write_csv(anglo_stats, file.path(output_dir, "enhanced_anglo_comparison.csv"))
 # Calculate execution time
 end_time <- Sys.time()
 execution_time <- difftime(end_time, start_time, units = "mins")
-
-data
