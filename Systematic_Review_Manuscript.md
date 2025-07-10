@@ -1,4 +1,4 @@
-# Spatial Units of Analysis in Crime Location Choice Studies: A Systematic Scoping Review of Six Orders of Magnitude Variation
+# Spatial Units of Analysis in Crime Location Choice Studies: A Systematic Scoping Review of Nearly Five Orders of Magnitude Variation
 
 ## Abstract
 
@@ -6,7 +6,7 @@
 
 **Methods:** We conducted a systematic review following PRISMA-ScR guidelines. We searched four databases and found 2,325 papers. After removing duplicates and irrelevant studies, we reviewed 80 papers and included 49 studies that met our criteria. These studies analyze 98,647 crime incidents using discrete choice models to understand where criminals choose to commit crimes. The screening process was systematic. We excluded most papers because they lacked spatial detail (20 papers), studied where offenders live rather than where they commit crimes (10 papers), or didn't use discrete choice models (8 papers). Our final dataset of 49 studies represents the most comprehensive analysis of spatial unit selection in crime location choice research to date.
 
-**Results:** Spatial units vary enormously - from 136 m² individual properties to 8.48 km² administrative districts (four orders of magnitude). Despite better computers and data, researchers haven't moved toward smaller units over time (β = 0.012, p > 0.05). Countries cluster strongly in their typical unit sizes (ICC = 33.1%), showing institutional factors matter more than technology. Study area size drives unit choice more than anything else (β = 0.571, p < 0.001). Researchers match crime types to scales systematically: micro-environmental crimes like graffiti use tiny units (< 0.01 km²), property crimes use neighborhood-level units (0.1-1.0 km²), and general crime studies use administrative units (1.0-5.0 km²).
+**Results:** Spatial units vary enormously - from 136 m² individual properties to 8.48 km² administrative districts (4.8 orders of magnitude). Despite better computers and data, researchers haven't moved toward smaller units over time (β = 0.012, p > 0.05). Countries cluster strongly in their typical unit sizes (ICC = 33.1%), showing institutional factors matter more than technology. Study area size drives unit choice more than anything else (β = 0.571, p < 0.001). Researchers match crime types to scales systematically: micro-environmental crimes like graffiti use tiny units (< 0.01 km²), property crimes use neighborhood-level units (0.1-1.0 km²), and general crime studies use administrative units (1.0-5.0 km²).
 
 **Conclusions:** Researchers aren't choosing spatial units randomly. They systematically match scale to the crime processes they're studying. Technology improvements haven't driven methodological change like we expected. Instead, institutional context and practical constraints shape what researchers can actually do. We provide evidence-based guidelines for future spatial unit selection.
 
@@ -178,7 +178,7 @@ Given the heterogeneity in spatial units and methodological approaches, we condu
 
 #### 2.6.1 Log Transformation Rationale
 
-The extreme variation in spatial unit sizes (spanning six orders of magnitude from 136 m² to 8.48 km²) created severe right skewness (skewness = 2.05) that violated normality assumptions for parametric statistical methods. Log transformation was essential for three reasons: (1) it normalized the highly skewed distribution enabling valid parametric inference, (2) it linearized the relationship between unit size and predictors, and (3) it facilitated meaningful interpretation of percentage changes rather than absolute differences across the enormous scale range. We applied natural log transformation to both spatial unit sizes and study area sizes before all regression analyses.
+The extreme variation in spatial unit sizes (spanning 4.8 orders of magnitude from 136 m² to 8.48 km²) created severe right skewness (skewness = 2.05) that violated normality assumptions for parametric statistical methods. Log transformation was essential for three reasons: (1) it normalized the highly skewed distribution enabling valid parametric inference, (2) it linearized the relationship between unit size and predictors, and (3) it facilitated meaningful interpretation of percentage changes rather than absolute differences across the enormous scale range. We applied natural log transformation to both spatial unit sizes and study area sizes before all regression analyses.
 
 #### 2.6.2 Statistical Methods
 
@@ -246,28 +246,28 @@ The screening process was systematic and thorough. We excluded most papers becau
 
 ### 3.2 Spatial Unit Size Distribution (RQ1)
 
-Crime location choice studies vary enormously in spatial scale - six orders of magnitude from 136 m² individual properties (Vandeviver et al., 2015) to 8.48 km² administrative districts (Townsley et al., 2015). This variation reflects systematic theoretical alignment rather than arbitrary choices. The smallest units are employed by researchers studying micro-environmental crimes like graffiti, where exposure and visibility require fine-grained analysis (Kuralarasan et al., 2024). Medium-sized units around 1.2 km² capture neighborhood-level processes for property crimes (Bernasco et al., 2013). The largest units enable analysis of broad spatial patterns across metropolitan areas (Song et al., 2017).
+Crime location choice studies vary enormously in spatial scale - 4.8 orders of magnitude from 136 m² individual properties (Vandeviver et al., 2015) to 8.48 km² administrative districts (Townsley et al., 2015). This variation reflects systematic theoretical alignment rather than arbitrary choices. The smallest units are employed by researchers studying micro-environmental crimes like graffiti, where exposure and visibility require fine-grained analysis (Kuralarasan et al., 2024). Medium-sized units around 1.2 km² capture neighborhood-level processes for property crimes (Bernasco et al., 2013). The largest units enable analysis of broad spatial patterns across metropolitan areas (Song et al., 2017).
 
 ![Distribution of Spatial Unit Sizes](20250710_Analysis%20&%20Results/enhanced_distribution_analysis.png)
 
-**Figure 2.** Distribution of spatial unit sizes across 51 crime location choice studies. The log-transformed distribution shows systematic clustering into four categories: micro-environmental units (≤0.01 km², 18%), neighborhood-level units (0.01-1.0 km², 35%), administrative units (1.0-5.0 km², 43%), and regional units (>5.0 km², 4%). Median unit size is 1.20 km², indicating preference for neighborhood-scale analysis consistent with crime pattern theory.
+**Figure 2.** Distribution of spatial unit sizes across 51 crime location choice studies. The log-transformed distribution shows systematic clustering into four categories: micro-environmental units (≤0.01 km², 18%), neighborhood-level units (0.01-1.0 km², 35%), administrative units (1.0-5.0 km², 43%), and regional units (>5.0 km², 4%). Median unit size is 1.2 km², indicating preference for neighborhood-scale analysis consistent with crime pattern theory.
 
 **Distribution Characteristics:**
 
-Studies cluster into four categories: micro-environmental units (≤0.01 km², 18% of studies) for examining property-level features; neighborhood-level units (0.01-1.0 km², 35%) for residential context analysis; administrative units (1.0-5.0 km², 43%) for broad spatial patterns; and regional units (>5.0 km², 4%) for metropolitan-scale analysis. The median unit size of 1.20 km² shows researchers prefer neighborhood-scale analysis, consistent with crime pattern theory about offender spatial decision-making (Brantingham & Brantingham, 1993).
+Studies cluster into four categories: micro-environmental units (≤0.01 km², 18% of studies) for examining property-level features; neighborhood-level units (0.01-1.0 km², 35%) for residential context analysis; administrative units (1.0-5.0 km², 43%) for broad spatial patterns; and regional units (>5.0 km², 4%) for metropolitan-scale analysis. The median unit size of 1.2 km² shows researchers prefer neighborhood-scale analysis, consistent with crime pattern theory about offender spatial decision-making (Brantingham & Brantingham, 1993).
 
 **Table 1.** Summary statistics for spatial unit sizes across 51 crime location choice studies
 
 | Statistic | Value |
 |-----------|-------|
 | Studies analyzed | 51 |
-| Median unit size | 1.20 km² |
+| Median unit size | 1.2 km² |
 | Mean unit size | 1.63 km² |
 | Smallest unit | 136 m² |
 | Largest unit | 8.48 km² |
 | Standard deviation | 1.91 km² |
 | Skewness (original) | 2.05 |
-| Orders of magnitude | 6.0 |
+| Orders of magnitude | 4.8 |
 
 ### 3.3 Temporal Trends in Spatial Scale Selection (RQ2)
 
@@ -340,7 +340,7 @@ Crime-type specificity demonstrates theoretical sophistication. Researchers syst
 
 This systematic review makes several novel contributions to spatial criminology and crime location choice research that advance both theoretical understanding and methodological practice.
 
-**First, we provide the first systematic quantitative synthesis of spatial unit selection practices in crime location choice studies.** While numerous studies have noted the importance of spatial scale selection (Fotheringham & Wong, 1991; Steenbeek & Weisburd, 2016), no previous research has systematically examined how researchers actually make these decisions across different contexts. Our analysis of 51 observations spanning six orders of magnitude provides the empirical foundation for evidence-based spatial unit selection guidelines.
+**First, we provide the first systematic quantitative synthesis of spatial unit selection practices in crime location choice studies.** While numerous studies have noted the importance of spatial scale selection (Fotheringham & Wong, 1991; Steenbeek & Weisburd, 2016), no previous research has systematically examined how researchers actually make these decisions across different contexts. Our analysis of 51 observations spanning 4.8 orders of magnitude provides the empirical foundation for evidence-based spatial unit selection guidelines.
 
 **Second, we challenge the prevailing assumption of methodological chaos in spatial criminology.** Critics have argued that arbitrary spatial unit selection undermines the field's credibility (Openshaw, 1984). Our findings demonstrate that researchers systematically align spatial scales with criminological processes: micro-environmental crimes use property-level units, property crimes employ neighborhood-scale analysis, and multi-crime studies use administrative units. This reveals theoretical sophistication rather than arbitrary selection, fundamentally reframing debates about methodological rigor in environmental criminology. Kuralarasan et al. (2024) exemplify this sophistication by explicitly justifying street segment selection for graffiti analysis based on human observational limitations and exposure measurement requirements. Similarly, Bernasco & Jacques (2015) chose fine-grained units for drug dealing analysis to capture environmental features that dealers can perceive and evaluate when making location decisions.
 
@@ -414,7 +414,7 @@ This systematic review of 51 crime location choice studies demonstrates sophisti
 
 Study area size emerges as the dominant constraint (β = 0.571, p < 0.001), explaining 31.1% of variation in spatial unit selection. Institutional context fundamentally shapes methodological possibilities, with 33.1% intraclass correlation indicating substantial country-level clustering. Despite dramatic technological improvements over two decades, researchers have not systematically adopted finer spatial resolutions (β = 0.012, p > 0.05), rejecting technological determinism and highlighting the importance of institutional capacity building over purely computational solutions.
 
-These findings reframe our understanding of spatial unit selection in environmental criminology. The extraordinary variation in spatial units—spanning six orders of magnitude—reflects sophisticated theoretical alignment within institutional constraints rather than methodological chaos. Crime location choice researchers demonstrate systematic scale-matching that aligns analytical units with underlying causal mechanisms, indicating a more mature field than critics suggest.
+These findings reframe our understanding of spatial unit selection in environmental criminology. The extraordinary variation in spatial units—spanning 4.8 orders of magnitude—reflects sophisticated theoretical alignment within institutional constraints rather than methodological chaos. Crime location choice researchers demonstrate systematic scale-matching that aligns analytical units with underlying causal mechanisms, indicating a more mature field than critics suggest.
 
 Future research should prioritize controlled scale-effects experiments, multi-scale methodological development, and scale-explicit theoretical frameworks. Infrastructure investment should emphasize data standardization and institutional capacity building rather than technological advancement alone. By embracing the complexity of spatial scale rather than seeking to standardize it away, environmental criminology can build on the theoretical sophistication already evident while addressing institutional challenges that create systematic methodological variation across research contexts.
 

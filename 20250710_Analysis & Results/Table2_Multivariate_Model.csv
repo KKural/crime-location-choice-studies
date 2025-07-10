@@ -1,0 +1,6 @@
+Predictor,Effect_Size_Beta,p_value,CI_95,Interpretation,Model_R_squared
+Study area size,0.048,0.784,"[-0.3, 0.4]",Strong positive,0.311
+Country clustering (ICC),0.331,-,-,Structural effect,
+Anglo-Saxon vs Other,0.012,0.981,"[-0.99, 1.02]",No difference,
+Publication year,-0.002,0.964,"[-0.09, 0.09]",No trend,
+Research sophistication,0.208,0.51,"[-0.43, 0.85]",No effect,
