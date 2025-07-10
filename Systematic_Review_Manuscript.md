@@ -2,8 +2,6 @@
 
 ## Abstract
 
-## Abstract
-
 **Background:** The choice of spatial unit affects how we understand crime patterns and design interventions. Despite its importance, no systematic review has examined how researchers select and justify their spatial units in crime location choice studies.
 
 **Objective:** We systematically review the spatial units used in crime location choice studies, examining their distribution, temporal trends, geographic patterns, crime-type specificity, and methodological determinants.
