@@ -97,8 +97,9 @@ df_data_clean <- df_data_clean %>%
       labels = size_labels,
       right = FALSE
     ),
-    # Extract 4-digit year from citation format "(Author et al., YYYY)"
-    Year = as.numeric(str_extract(Citation, "\\b(19|20)\\d{2}\\b"))
+    # Extract 4-digit year from citation format "(Author et al., YYYY)" or "(Author et al., YYYYa/b)"
+    # First extract the year with possible letter suffix, then remove the letter
+    Year = as.numeric(str_extract(str_extract(Citation, "\\b(19|20)\\d{2}[a-z]?\\b"), "\\d{4}"))
   ) %>%
   select(
     Study_ID, `Title_of_the_study`, Citation, Year, `Size_of_the_unit`, Unit, 

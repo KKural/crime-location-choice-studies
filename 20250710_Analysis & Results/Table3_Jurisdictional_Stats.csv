@@ -1,0 +1,11 @@
+Jurisdiction,N_Studies,Mean_Size_km2,Median_Size_km2,SD_Size_km2,Min_Size_km2,Max_Size_km2
+Belgium,3,0.2637,8e-4,0.4558,1.36e-4,0.79
+Japan,1,0.025,0.025,NA,0.025,0.03
+Northern Ireland,1,0.15,0.15,NA,0.15,0.15
+United States,8,0.4304,0.216,0.5035,0.01968,1.36
+United Kingdom,6,0.5914,0.385,0.7303,0.0284,2.04
+New Zealand,3,1.524,1.41,0.3936,1.2,1.96
+China,8,1.826,1.62,0.629,0.958,2.81
+India,1,2.18,2.18,NA,2.18,2.18
+Netherlands,17,1.7825,2.63,1.2666,1.42e-4,2.96
+Australia,3,7.8867,8.48,1.0277,6.7,8.48

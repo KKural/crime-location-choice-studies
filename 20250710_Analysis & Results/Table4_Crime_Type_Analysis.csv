@@ -1,0 +1,15 @@
+Crime_Type_Enhanced,N_Studies,Mean_Size_km2,Median_Size_km2,SD_Size_km2,Min_Size_km2,Max_Size_km2
+Graffiti/Vandalism,1,8e-4,8e-4,NA,8.45e-4,0
+Drug-related,1,0.0015,0.0015,NA,0.001545,0
+Breaking And Entering,1,0.032,0.032,NA,0.032,0.03
+Residential Breaking And Entering (B & E),1,0.062,0.062,NA,0.062,0.06
+Terrorist Attacks By The Provisional Irish Republican Army (Pira),1,0.15,0.15,NA,0.15,0.15
+Riot-Related Incidents,1,0.33,0.33,NA,0.33,0.33
+Group Crime,1,0.37,0.37,NA,0.37,0.37
+Serious Acquisitive Crime (Sac),1,0.44,0.44,NA,0.44,0.44
+Robbery,8,1.2724,1.62,0.9854,0.01968,2.96
+Any-Crime-Type Offences,1,1.68,1.68,NA,1.68,1.68
+Theft,5,1.888,2.18,1.0497,0.2,2.81
+Burglary,23,2.0036,0.958,2.5133,1.36e-4,8.48
+Multiple Types,5,2.31,2.96,1.277,0.04,2.96
+Not Specified,1,2.96,2.96,NA,2.96,2.96
