@@ -2,6 +2,7 @@
 rm(list=ls())
 library(dplyr)
 library(here)
+library(stringr)
 
 # Workspace setup - Reproducible output folder creation --------------------
 
@@ -87,7 +88,7 @@ print(table(df_data_clean$Name_of_the_unit))
 size_breaks <- c(-Inf, 0.001, 1.2, 1.63293, 5, Inf)
 size_labels <- c("very small", "small", "medium", "large", "very large")
 
-# Add size group column and rearrange columns 
+# Add size group column and extract publication year from Citation column
 df_data_clean <- df_data_clean %>%
   mutate(
     Size_group = cut(
@@ -95,15 +96,20 @@ df_data_clean <- df_data_clean %>%
       breaks = size_breaks,
       labels = size_labels,
       right = FALSE
-    )
+    ),
+    # Extract 4-digit year from citation format "(Author et al., YYYY)"
+    Year = as.numeric(str_extract(Citation, "\\b(19|20)\\d{2}\\b"))
   ) %>%
   select(
-    Study_ID, `Title_of_the_study`, Citation, `Size_of_the_unit`, Unit, 
+    Study_ID, `Title_of_the_study`, Citation, Year, `Size_of_the_unit`, Unit, 
     Unit_size_km2, Size_group, `Name_of_the_unit`, `No_of_units`, `No_of_incidents`, `Inferred_size`,
     `DOI`, `ISSN`, `Journal`, `Volume`, `Issue`
   )
+
 # Print frequency table for size groups
 print(table(df_data_clean$Size_group))
+
+str(df_data_clean)
 
 # Optionally, save the updated data with the new column and Elicit data
 custom_save(df_data_clean, output_folder, "standardized_unit_sizes_with_groups", write.csv, row.names = FALSE, fileEncoding = "UTF-8")

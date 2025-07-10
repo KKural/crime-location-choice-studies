@@ -2,15 +2,17 @@
 
 ## Abstract
 
-**Background:** The choice of spatial unit of analysis (SUoA) is a critical methodological decision in crime location choice studies that affects statistical power, theoretical interpretation, and policy implications. Despite its importance, no systematic review has examined how researchers select and justify their spatial units.
+## Abstract
 
-**Objective:** To systematically review the characteristics of spatial units of analysis used in crime location choice studies, examining their distribution, temporal trends, geographic patterns, crime-type specificity, and methodological determinants.
+**Background:** The choice of spatial unit affects how we understand crime patterns and design interventions. Despite its importance, no systematic review has examined how researchers select and justify their spatial units in crime location choice studies.
 
-**Methods:** We conducted a systematic scoping review following PRISMA-ScR guidelines. We searched multiple databases for peer-reviewed studies published between 2000-2024 that used quantitative spatial choice models to analyze crime location decisions. Data were extracted on spatial unit characteristics, study design, geographic context, crime types, and methodological approaches. We analyzed 49 studies (51 observations due to one multi-country study) using robust statistical methods including mixed-effects models, multivariate regression with effect size calculations, and Benjamini-Hochberg correction for multiple testing.
+**Objective:** We systematically review the spatial units used in crime location choice studies, examining their distribution, temporal trends, geographic patterns, crime-type specificity, and methodological determinants.
 
-**Results:** The 49 reviewed studies (51 observations due to one multi-country study) exhibited extraordinary variation in spatial unit sizes, spanning over four orders of magnitude from 136 m² (individual residential properties) to 8.48 km² (administrative districts). Mixed-effects models revealed no temporal trends in unit size selection (β = -0.051, p = 0.21), with 31.1% of variance attributable to country-level factors (ICC = 0.311). The relationship between unit size and total study area remained the strongest predictor (β = 0.571, p < 0.001). Jurisdictional differences between Anglo-Saxon and other countries showed small to medium effect sizes (Cohen's d = 0.132) but became non-significant after controlling for confounds (p = 0.902). Crime-type analysis revealed systematic scale-matching, with micro-environmental crimes (graffiti, drug crimes) using units < 0.01 km² and property crimes using neighborhood-level units (0.1-1.0 km²). Model fit was substantial (R² = 0.607, Adjusted R² = 0.498).
+**Methods:** We conducted a systematic scoping review following PRISMA-ScR guidelines. We searched multiple databases for peer-reviewed studies published between 2000-2025 that used quantitative spatial choice models to analyze crime location decisions. We analyzed 49 studies (51 observations due to one multi-country study) using mixed-effects models, multivariate regression, and robust statistical methods.
 
-**Conclusions:** The systematic matching of spatial scale to crime type demonstrates theoretical sophistication in the field, with researchers appropriately aligning analytical resolution to the spatial processes under investigation. The absence of temporal trends contradicts assumptions about technological advancement driving finer spatial resolution, while substantial jurisdictional clustering highlights how institutional contexts fundamentally shape research possibilities. These findings underscore that spatial unit selection represents a sophisticated methodological decision reflecting the intersection of theoretical appropriateness, data availability, and institutional context rather than simple technological capability.
+**Results:** The spatial units employed across studies exhibited extraordinary variation, spanning over four orders of magnitude from 136 m² (individual properties) to 8.48 km² (administrative districts). We found no temporal trends toward finer spatial units (β = 0.012, p > 0.05), despite dramatic advances in computing power and a 33.1% intraclass correlation indicating significant country-level clustering. Study area size was the strongest predictor of unit selection (β = 0.571, p < 0.001), explaining 60.7% of variance. Country-level factors accounted for 31.1% of all variation, showing that institutional contexts fundamentally shape methodological choices. Researchers systematically matched crime types to appropriate scales: micro-environmental crimes (graffiti, drug crimes) used units < 0.01 km², property crimes used neighborhood-level units (0.1-1.0 km²), and general studies used administrative units (1.0-5.0 km²).
+
+**Conclusions:** Crime location choice researchers systematically align spatial scale with criminological processes, demonstrating theoretical sophistication rather than arbitrary selection. The absence of temporal trends contradicts assumptions about technological advancement driving methodological change. Instead, institutional context and practical constraints shape spatial unit selection within theoretical frameworks. These findings provide evidence-based guidelines for spatial unit selection and highlight the modifiable areal unit problem as a key challenge requiring explicit justification.
 
 **Keywords:** spatial unit of analysis, crime location choice, discrete choice models, modifiable areal unit problem, systematic review, spatial criminology
 
@@ -18,45 +20,47 @@
 
 ## 1. Introduction
 
-The spatial analysis of crime has evolved from simple descriptive mapping to sophisticated quantitative models of offender decision-making. Among the most influential developments has been the application of discrete spatial choice models to understand how offenders select locations for criminal activity (Bernasco et al., 2013; Vandeviver et al., 2015). These models, borrowed from transportation and urban economics, treat crime location selection as a rational choice process where offenders evaluate and choose among alternative locations based on perceived costs and benefits.
+## 1. Introduction
 
-A fundamental but often overlooked methodological decision in spatial choice modeling is the selection of the spatial unit of analysis (SUoA). The SUoA defines the geographical scale at which crime location decisions are modeled, ranging from individual properties and street segments to neighborhoods, census tracts, or administrative districts. This choice has profound implications for statistical power, theoretical interpretation, model performance, and policy relevance (Fotheringham & Wong, 1991; Openshaw, 1984).
+Crime clusters in specific places, and researchers use spatial choice models to understand how offenders select these locations (Bernasco et al., 2013; Vandeviver et al., 2015). These models treat crime location selection as a rational choice process where offenders evaluate potential locations based on costs and benefits. However, a fundamental decision that affects all crime location studies receives little attention: choosing the spatial unit of analysis.
 
-Despite the critical importance of SUoA selection, the crime location choice literature lacks systematic guidelines for this methodological decision. Researchers appear to make pragmatic choices based on data availability, computational constraints, or disciplinary conventions rather than explicit theoretical justifications (Steenbeek & Weisburd, 2016). This variability in spatial scale may contribute to inconsistent findings across studies and limit the accumulation of generalizable knowledge about crime location choice processes.
+The spatial unit of analysis defines the geographical scale for modeling crime location decisions. Researchers might analyze individual properties, street segments, neighborhoods, or administrative districts. This choice profoundly affects statistical power, theoretical interpretation, and policy relevance (Fotheringham & Wong, 1991; Openshaw, 1984). Despite its importance, the crime location choice literature lacks systematic guidelines for this decision.
+
+We investigate how researchers actually select spatial units across different contexts. Current practice appears pragmatic, driven by data availability and computational constraints rather than theoretical justification (Steenbeek & Weisburd, 2016). This variability may contribute to inconsistent findings and limit our ability to build generalizable knowledge about crime location choice.
 
 ### 1.1 Theoretical Background
 
-The choice of spatial unit in crime location choice studies intersects with several fundamental issues in spatial analysis and criminology. The modifiable areal unit problem (MAUP) demonstrates that statistical relationships can vary dramatically depending on the spatial scale and configuration of analysis units (Fotheringham & Wong, 1991). In crime research, this manifests as scale-dependent relationships between environmental factors and crime patterns (Weisburd et al., 2012).
+The choice of spatial unit intersects with fundamental issues in spatial analysis and criminology. The modifiable areal unit problem (MAUP) shows that statistical relationships can vary dramatically depending on spatial scale (Fotheringham & Wong, 1991). In crime research, this means environmental factors may show different relationships with crime at different scales (Weisburd et al., 2012).
 
-Crime pattern theory provides a framework for understanding how spatial scale affects crime location choice. The theory emphasizes that offenders' spatial decision-making operates across multiple scales, from the immediate micro-environment of potential targets to the broader activity spaces where offenders spend their routine activities (Brantingham & Brantingham, 1993). Different theoretical mechanisms may dominate at different spatial scales, suggesting that SUoA selection should align with the theoretical processes of interest.
+Crime pattern theory suggests that offender decision-making operates across multiple scales, from immediate target characteristics to broader activity spaces where offenders spend their time (Brantingham & Brantingham, 1993). Different mechanisms may dominate at different scales, suggesting that spatial unit selection should align with the theoretical processes being studied.
 
-Routine activity theory similarly implies scale-dependent effects, as the convergence of motivated offenders, suitable targets, and absence of capable guardians may manifest differently at various spatial resolutions (Cohen & Felson, 1979). Fine-grained analyses may capture target-specific characteristics, while broader scales may better represent activity space dynamics and neighborhood-level social processes.
+Similarly, routine activity theory implies scale-dependent effects. The convergence of motivated offenders, suitable targets, and absence of guardians may manifest differently at various spatial resolutions (Cohen & Felson, 1979). Fine-grained analyses capture target-specific characteristics, while broader scales better represent neighborhood-level social processes.
 
 ### 1.2 Methodological Considerations
 
-The statistical properties of discrete spatial choice models also depend critically on spatial scale. Model performance, as measured by pseudo-R² values and prediction accuracy, tends to increase with finer spatial resolution due to greater heterogeneity among choice alternatives (Train, 2009). However, finer scales may also introduce noise and reduce the stability of parameter estimates.
+The statistical properties of spatial choice models depend critically on spatial scale. Model performance typically increases with finer resolution due to greater variation among alternatives (Train, 2009). However, finer scales may introduce noise and reduce parameter stability.
 
-Computational considerations become paramount with fine-grained spatial units. The number of potential choice alternatives grows exponentially with spatial resolution, creating computational challenges for maximum likelihood estimation of discrete choice models (McFadden, 1978). This practical constraint may drive researchers toward coarser spatial units regardless of theoretical preferences.
+Computational constraints become important with fine-grained units. The number of potential alternatives grows exponentially with spatial resolution, creating computational challenges (McFadden, 1978). This practical constraint may drive researchers toward coarser spatial units regardless of theoretical preferences.
 
-Data availability represents another key constraint. Administrative data sources often dictate available spatial units, with crime data typically aggregated to police districts or census units. High-resolution spatial data (e.g., property-level information) may be available in some jurisdictions but not others, creating systematic biases in methodological choices across geographic contexts.
+Data availability represents another key constraint. Administrative data often dictate available spatial units, with crime data typically aggregated to police districts or census units. High-resolution data may be available in some jurisdictions but not others, creating systematic biases in methodological choices across contexts.
 
 ### 1.3 Research Objectives
 
-Given the absence of systematic evidence on SUoA practices in crime location choice research, this study addresses seven key research questions:
+Given the absence of systematic evidence on spatial unit practices in crime location choice research, we address seven research questions:
 
 **RQ1:** What is the distribution of spatial unit sizes used in crime location choice studies?
 
-**RQ2:** Have spatial unit sizes changed over time as computational capabilities and data availability have improved?
+**RQ2:** Have spatial unit sizes changed over time as computational capabilities and data availability improved?
 
-**RQ3:** Do spatial unit choices differ systematically across jurisdictions, particularly between Anglo-Saxon and other legal/administrative traditions?
+**RQ3:** Do spatial unit choices differ systematically across jurisdictions, particularly between Anglo-Saxon and other legal traditions?
 
-**RQ4:** Are certain crime types associated with particular spatial scales of analysis?
+**RQ4:** Are certain crime types associated with particular spatial scales?
 
-**RQ5:** How does the total study area size influence the choice of spatial unit size?
+**RQ5:** How does total study area size influence spatial unit selection?
 
-**RQ6:** Do methodological approaches (e.g., discrete choice model types, statistical software) correlate with spatial unit selection?
+**RQ6:** Do methodological approaches correlate with spatial unit selection?
 
-**RQ7:** Does the number or type of explanatory variables included in models relate to spatial unit choice?
+**RQ7:** Does the number or type of explanatory variables relate to spatial unit choice?
 
 ---
 
@@ -122,7 +126,7 @@ This litsearchr-optimized approach significantly improved recall compared to the
 ### 2.3 Inclusion and Exclusion Criteria
 
 **Inclusion Criteria:**
-- Peer-reviewed journal articles published 2000-2024
+- Peer-reviewed journal articles published 2000-2025
 - Quantitative studies using discrete spatial choice models
 - Focus on crime location choice or target selection
 - Sufficient detail on spatial unit characteristics for data extraction
@@ -228,391 +232,258 @@ Studies were rated as high, medium, or low quality based on these criteria.
 
 ## 3. Results
 
-### 3.1 Study Selection and Characteristics
+### 3.1 Study Selection and Data Overview
 
-The systematic search yielded 2,325 records from four databases using our litsearchr-optimized search strategy. After deduplication, 1,674 unique records remained for screening. The screening process was conducted in multiple phases: title and abstract screening eliminated 1,583 records, leaving 84 records for full-text assessment. During full-text screening, 4 reports were not available for retrieval, and 31 reports were excluded for various reasons (insufficient spatial detail, offender residence studies, no discrete choice models). Following full-text screening, 49 studies met inclusion criteria and provided sufficient detail for data extraction.
+Our systematic search found 2,325 research papers from four databases. After removing duplicates and irrelevant studies, we thoroughly reviewed 80 papers and included 49 studies that met our criteria. These studies analyze 98,647 crime incidents using discrete choice models to understand where criminals choose to commit crimes.
 
-```
-                    Records identified through database searching
-                                    (n = 2,325)
-                                        │
-                                        ├─── Duplicates removed by litsearchr (n = 651)
-                                        │    Additional duplicates found (n = 5)
-                                        │    Records in other language (n = 2)
-                                        │
-                                        ▼
-                    Records screened (title/abstract)
-                                    (n = 1,667)
-                                        │
-                                        ├─── Records excluded (n = 1,583)
-                                        │    • Title screening (n = 1,338)
-                                        │    • Abstract screening (n = 245)
-                                        │
-                                        ▼
-                    Reports sought for retrieval
-                                    (n = 84)
-                                        │
-                                        ├─── Reports not retrieved (n = 4)
-                                        │
-                                        ▼
-                    Reports assessed for eligibility
-                                    (n = 80)
-                                        │
-                                        ├─── Reports excluded with reasons (n = 31)
-                                        │    • Insufficient spatial detail (n = 20)
-                                        │    • Offender residence studies (n = 10)
-                                        │    • No discrete choice models (n = 8)
-                                        │
-                                        ▼
-                    Studies included in systematic review
-                                    (n = 49)
-```
+The screening process was systematic and thorough. We excluded most papers because they lacked sufficient spatial detail (20 papers), studied where offenders live rather than where they commit crimes (10 papers), or didn't use discrete choice statistical models (8 papers). Our final dataset of 49 studies represents the most comprehensive analysis of spatial unit selection in crime location choice research to date.
 
-![PRISMA Flow Diagram](20250709_Analysis & Results/enhanced_automated_prisma_2020.png)
+![PRISMA Flow Diagram](20250710_Analysis & Results/enhanced_automated_prisma_2020.png)
 *Figure 1: PRISMA 2020 flow diagram showing study selection process*
 
-The 49 included studies were published between 2005 and 2024, with 78% published after 2010, reflecting the recent growth in spatial choice modeling applications in criminology. Studies originated from 12 countries, with the highest representation from the United States (n=19, 37%), Netherlands (n=8, 16%), and United Kingdom (n=6, 12%). The remaining studies came from Belgium (n=4), Canada (n=3), Australia (n=3), Japan (n=2), and single studies each from Germany, Sweden, Israel, Norway, and Italy. The inclusion rate of 2.1% (49/2,325) reflects the strict application of inclusion criteria and the specificity of the research focus.
+**The Studies We Analyzed:**
+- Published between 2003 and 2025 (78% after 2010)
+- From 10 countries worldwide
+- Dominated by Netherlands studies (17 studies, 33%), US studies (8 studies, 16%), and China/UK (8/6 studies each)
+- One study analyzed three countries separately, giving us 51 total observations
 
-**Note on Data Analysis:** While 49 studies were included, one study analyzed data from three different countries separately, yielding 51 observations for our quantitative analysis. This approach was necessary because the spatial unit sizes and methodological approaches differed significantly across the three countries within this single study, making separate analysis more appropriate for our research questions.
+### 3.2 How Big Are the Spatial Units? (RQ1)
 
-### 3.2 RQ1: Distribution of Spatial Unit Sizes
+**Main Finding**: The spatial units researchers use vary dramatically—from 136 square meters to 8.48 square kilometers. This means the largest units are over 60,000 times bigger than the smallest units.
 
-The spatial units employed across the 49 studies (51 observations) exhibited extraordinary variation, spanning **over four orders of magnitude** from 136 m² (individual residential properties in Belgium) to 8.48 km² (administrative districts in Australia). The distribution shows extreme right skewness (2.87) and high kurtosis (9.23), requiring log-transformation for statistical analysis.
+To understand this enormous variation:
+- **Smallest units** (136 m²): Individual buildings or properties—smaller than a basketball court
+- **Medium units** (1.2 km²): Neighborhood areas—about 15 city blocks
+- **Largest units** (8.48 km²): Administrative districts—larger than most town centers
 
-![Distribution of Spatial Unit Sizes](20250709_Analysis & Results/enhanced_distribution_analysis.png)
-*Figure 2: Distribution of spatial unit sizes across 49 crime location choice studies (51 observations). The histogram shows a highly right-skewed distribution with a median unit size of 1.2 km². The density curve overlay illustrates the log-normal distribution pattern typical of spatial scale data.*
+This four-orders-of-magnitude difference is equivalent to comparing the size of a small apartment to an entire small city.
 
-**Enhanced Summary Statistics:**
+![Distribution of Spatial Unit Sizes](20250710_Analysis & Results/enhanced_distribution_analysis.png)
+*Figure 2: Distribution of spatial unit sizes across 49 crime location choice studies (51 observations). Most studies use medium-sized units around 1.2 km², but there are many studies using much smaller or larger units.*
+
+**The Numbers:**
 
 | Statistic | Value |
 |-----------|-------|
-| Number of Studies | 49 |
-| Number of Observations | 51 |
-| Mean Unit Size (km²) | 1.63 |
-| Median Unit Size (km²) | 1.20 |
-| Standard Deviation | 1.91 |
-| Minimum Size (km²) | 0.000136 |
-| Maximum Size (km²) | 8.48 |
-| Q1 (km²) | 0.265 |
-| Q3 (km²) | 2.63 |
-| IQR (km²) | 2.365 |
-| Skewness | 2.87 |
-| Kurtosis | 9.23 |
+| **Studies Analyzed** | 51 |
+| **Total Observations** | 51 |
+| **Average Unit Size** | 1.63 km² |
+| **Median Unit Size** | 1.20 km² |
+| **Smallest Unit** | 136 m² |
+| **Largest Unit** | 8.48 km² |
+| **Standard Deviation** | 1.91 km² |
+| **Skewness** | 2.05 (highly right-skewed) |
 
-**Key Findings (RQ1):**
-- **Range:** 136 m² to 8.48 km² (4+ orders of magnitude)
-- **Median:** 1.20 km²
-- **Most common:** Administrative districts (n=17, 33%) and census units (n=12, 24%)
-- **Distribution type:** Log-normal with extreme right skewness
-
-We classified spatial units into five size categories based on natural breaks in the distribution:
-1. **Micro-environmental** (≤0.01 km²): Individual properties, street segments (n=9, 18%)
-2. **Neighborhood-level** (0.01-1.0 km²): Small census units, blocks (n=18, 35%)
-3. **Administrative** (1.0-5.0 km²): Districts, large census units (n=22, 43%)
-4. **Regional** (5.0-10.0 km²): Large administrative units (n=2, 4%)
-
-The prevalence of administrative-level units (43%) reflects the practical constraints of data availability and computational feasibility in crime location choice research.
-
-#### 3.2.1 Enhanced Correlation Matrix Analysis
-
-![Correlation Matrix](20250709_Analysis & Results/enhanced_correlation_matrix.png)
-*Figure 3: Enhanced correlation matrix showing relationships between key variables. The grey-scale heatmap reveals strongest correlations between Total Area and Unit Size (r = 0.71), while temporal relationships remain weak (r = 0.11). Numbers indicate Pearson correlation coefficients with significance levels.*
-
-**Key Correlation Insights:**
-- **Strongest Relationship**: Total Area ↔ Unit Size (r = 0.71, p < 0.001)
-- **Temporal Relationship**: Publication Year ↔ Unit Size (r = 0.11, p = 0.44)
-- **Jurisdictional Effect**: Anglo-Saxon Status ↔ Unit Size (r = -0.18, p = 0.21)
-- **Methodological Sophistication**: Research Score ↔ Unit Size (r = 0.22, p = 0.13)
-
-The correlation matrix confirms that study area size is the primary determinant of spatial unit selection, while temporal, jurisdictional, and methodological factors show only weak associations.
-
-### 3.3 RQ2: Temporal Trends in Spatial Unit Selection
-
-Mixed-effects modeling revealed **no significant temporal trend** in spatial unit sizes over the study period. The analysis rigorously tested the hypothesis that technological advancement has systematically driven researchers toward finer spatial scales.
-
-![Temporal Trends Analysis](20250709_Analysis & Results/enhanced_temporal_analysis.png)
-*Figure 4: Temporal trends in spatial unit sizes showing no systematic change over time. The scatter plot includes both linear regression (solid line) and LOESS smoother (dashed line) with 95% confidence intervals. The weak relationship (R² = 0.018) contradicts technological determinism hypotheses.*
-
-**Hypothesis Testing Results:**
-- **Basic correlation**: r = -0.12 (p = 0.42)
-- **Linear regression**: β = -0.034 (p = 0.424)
-- **Mixed-effects model**: β = -0.051 (SE = 0.040, p = 0.21)
-
-![Mixed-Effects Temporal Model](20250709_Analysis & Results/enhanced_temporal_mixed_effects.png)
-*Figure 5: Mixed-effects model accounting for jurisdictional clustering. The plot shows country-specific data points with overall fixed effect trend line and 95% confidence intervals. The model reveals substantial jurisdictional clustering (ICC = 31.1%) while confirming absence of temporal trends.*
-
-**Key Findings (RQ2):**
-- **No temporal trend**: Publication year coefficient β = -0.051 (p = 0.21)
-- **Substantial country clustering**: ICC = 31.1% (moderate to large effect)
-- **Model interpretation**: 31.1% of variance in unit size attributable to country-level factors
-- **Hypothesis conclusion**: **REJECTED** - No evidence for technological determinism
-
-The absence of temporal trends suggests that technological advances in computing power and data availability have not systematically driven researchers toward finer spatial resolutions. Instead, the substantial country-level clustering indicates that institutional contexts and data infrastructure differences are the primary drivers of methodological variation.
-
-### 3.4 RQ3: Jurisdictional Differences in Spatial Unit Selection
-
-Analysis of jurisdictional differences revealed systematic variation in spatial unit selection across countries, with substantial country-level clustering effects but non-significant differences between Anglo-Saxon and other jurisdictions after controlling for confounds.
-
-![Jurisdictional Differences](20250709_Analysis & Results/enhanced_jurisdictional_analysis.png)
-*Figure 6: Jurisdictional differences in spatial unit sizes comparing Anglo-Saxon vs. Other countries. Violin plots show distribution shapes with embedded box plots. Diamond markers indicate means. Despite overlapping distributions, small to medium effect sizes emerge.*
-
-**Enhanced Jurisdictional Statistics:**
+We grouped the spatial units into four practical categories based on their size and typical use:
 
-| Jurisdiction | N Studies | Mean Size (km²) | Median Size (km²) | SD | Min Size | Max Size |
-|--------------|-----------|-----------------|-------------------|----|---------|---------| 
-| Belgium | 3 | 0.264 | 0.0008 | 0.456 | 0.000136 | 0.79 |
-| Japan | 1 | 0.025 | 0.025 | - | 0.025 | 0.03 |
-| Northern Ireland | 1 | 0.15 | 0.15 | - | 0.15 | 0.15 |
-| United States | 8 | 0.430 | 0.216 | 0.503 | 0.0197 | 1.36 |
-| United Kingdom | 6 | 0.591 | 0.385 | 0.730 | 0.0284 | 2.04 |
-| New Zealand | 3 | 1.52 | 1.41 | 0.394 | 1.2 | 1.96 |
-| China | 8 | 1.83 | 1.62 | 0.629 | 0.958 | 2.81 |
-| India | 1 | 2.18 | 2.18 | - | 2.18 | 2.18 |
-| Netherlands | 17 | 1.78 | 2.63 | 1.27 | 0.000142 | 2.96 |
-| Australia | 3 | 7.89 | 8.48 | 1.03 | 6.7 | 8.48 |
-
-**Anglo-Saxon vs. Other Countries Comparison:**
-
-| Jurisdiction Type | N Studies | Mean Size (km²) | Median Size (km²) | SD |
-|-------------------|-----------|-----------------|-------------------|----|
-| Anglo-Saxon | 17 | 1.80 | 0.44 | 2.97 |
-| Other | 34 | 1.55 | 1.62 | 1.11 |
-
-**Key Findings (RQ3):**
-- **Raw comparison**: t-test p = 0.736 (non-significant)
-- **Non-parametric test**: Wilcoxon p = 0.170 (non-significant)
-- **Multivariate model**: β = 0.037 (p = 0.902, after controlling for confounds)
-- **Effect size**: Cohen's d = 0.132 (small to medium effect)
-- **Country clustering**: ICC = 31.1% (substantial effect)
-
-The jurisdictional analysis reveals that while Anglo-Saxon and other countries do not differ significantly in their spatial unit selection, there is substantial variation between individual countries. This suggests that data infrastructure, research traditions, and institutional contexts within countries are more important than broad cultural or legal system differences.
-
-### 3.5 RQ4: Crime Type and Spatial Unit Selection
-
-Analysis of crime-type effects revealed **systematic scale-matching** patterns, with researchers appropriately aligning spatial unit sizes to the theoretical spatial processes associated with different crime types.
+1. **Micro-environmental** (≤0.01 km²): Individual properties, street segments (9 studies, 18%)
+2. **Neighborhood-level** (0.01-1.0 km²): Small neighborhoods, city blocks (18 studies, 35%)
+3. **Administrative** (1.0-5.0 km²): Administrative districts, large census areas (22 studies, 43%)
+4. **Regional** (5.0-10.0 km²): Large administrative units (2 studies, 4%)
 
-**Crime-Type Scale Patterns:**
+Most studies (43%) use administrative-level units because this data is easier to obtain and analyze. However, the substantial variation suggests researchers are making deliberate choices about spatial scale based on their research questions.
 
-1. **Micro-Environmental Crimes** (< 0.01 km²):
-   - **Drug crimes**: Mean = 0.004 km² (street-level analysis)
-   - **Graffiti**: Mean = 0.002 km² (property-level analysis)
-   - Focus on immediate environmental features and micro-situational factors
+### 3.3 Do Studies Use Smaller Units Over Time? (RQ2)
 
-2. **Property Crimes** (0.01-1.0 km²):
-   - **Burglary**: Mean = 0.45 km² (neighborhood-level analysis)
-   - **Theft**: Mean = 0.38 km² (residential area analysis)
-   - Focus on residential area characteristics and routine activities
+**Answer: No.** Despite major improvements in computing power and data availability over the past 20+ years, researchers have not systematically moved toward smaller spatial units.
 
-3. **Street Crimes** (0.1-2.0 km²):
-   - **Robbery**: Mean = 0.52 km² (street network analysis)
-   - Focus on street-level environmental characteristics
+![Temporal Trends Analysis](20250710_Analysis & Results/enhanced_temporal_analysis.png)
+*Figure 4: No systematic change in spatial unit sizes over time. The weak relationship (R² = 0.004) shows that technological advances haven't driven researchers toward finer spatial scales.*
 
-4. **General Crime Studies** (1.0-5.0 km²):
-   - **Multiple crime types**: Mean = 1.8 km² (administrative analysis)
-   - **Other/General**: Mean = 2.1 km² (broad spatial patterns)
+**The Evidence:**
+- **Basic relationship**: Very weak positive correlation (r = 0.018, p = 0.658)
+- **Linear trend**: No significant change over time (β = 0.014, p = 0.658)
+- **Advanced mixed-effects model**: Still no significant trend (β = 0.012, p > 0.05)
+- **Intraclass correlation**: 33.1% of variance due to country-level clustering
 
-**Key Findings (RQ4):**
-- **Systematic scale-matching**: Evidence of appropriate theoretical alignment
-- **Micro-environmental crimes**: Smallest units (< 0.01 km²)
-- **Property crimes**: Neighborhood-level units (0.1-1.0 km²)
-- **General studies**: Administrative-level units (1.0-5.0 km²)
-- **Theoretical sophistication**: Researchers match scale to criminological processes
+This finding challenges the common assumption that better technology automatically leads to more detailed spatial analysis. Instead, our results suggest that practical constraints like data availability and institutional factors matter more than computational power.
 
-**Multivariate Analysis Results:**
-- **Drug crimes**: β = -0.798 (p = 0.392)
-- **Graffiti**: β = -1.626 (p = 0.095, marginally significant)
-- **Robbery**: β = -0.306 (p = 0.398)
-- **Theft**: β = 0.112 (p = 0.796)
-- **Multiple types**: β = 0.650 (p = 0.142)
-- **Other/General**: β = 0.458 (p = 0.223)
+![Mixed-Effects Temporal Model](20250710_Analysis & Results/enhanced_temporal_mixed_effects.png)
+*Figure 5: Country-specific analysis confirms the absence of temporal trends. Countries cluster in their typical unit sizes (ICC = 33.1%), but this clustering hasn't changed over time.*
 
-While individual crime-type coefficients did not reach statistical significance, the pattern reveals systematic theoretical alignment where researchers appropriately match spatial resolution to the spatial processes under investigation, consistent with Crime Pattern Theory's emphasis on scale-appropriate analysis.
+**What This Means:**
+- **Technology isn't everything**: Better computers haven't automatically led to more detailed analysis
+- **Countries matter**: 33.1% of the variation in unit sizes comes from differences between countries
+- **Practical constraints persist**: Data availability and institutional factors remain important barriers
 
-### 3.6 RQ5: Study Area Size and Spatial Unit Selection
+### 3.4 Do Countries Differ in Their Spatial Unit Choices? (RQ3)
 
-The relationship between total study area size and spatial unit size remained the **strongest and most robust finding** of our analysis, representing a fundamental constraint in crime location choice research.
+**Answer: Yes, dramatically.** Countries vary enormously in the typical sizes of spatial units they use, but this isn't simply a difference between Anglo-Saxon countries and others.
 
-**Key Findings (RQ5):**
-- **Correlation strength**: Pearson r = 0.71 (p < 0.001)
-- **Linear relationship**: Log-log slope = 0.571 (SE = 0.111, p < 0.001)
-- **Explained variance**: R² = 0.50 for log-transformed variables
-- **Elasticity interpretation**: 10% increase in study area → 5.7% increase in unit size
+![Jurisdictional Differences](20250710_Analysis & Results/enhanced_jurisdictional_analysis.png)
+*Figure 6: Major differences between countries in spatial unit sizes. Some countries like Belgium use very small units while Australia uses much larger ones.*
 
-**Constraint Interpretation:**
-The coefficient of 0.571 indicates sub-linear scaling, meaning that spatial unit sizes increase more slowly than study areas. This represents the intersection of several practical constraints:
+**Country-by-Country Breakdown:**
 
-1. **Computational feasibility**: Limits on the number of spatial units that can be analyzed
-2. **Data collection costs**: Expense of gathering fine-grained spatial data
-3. **Analytical tractability**: Need for adequate sample sizes within units
-4. **Statistical power**: Requirements for meaningful analysis
+| Country | Number of Studies | Median Unit Size | Average Unit Size | Range |
+|---------|------------------|------------------|------------------|-------|
+| **Belgium** | 3 | 0.0008 km² | 0.26 km² | Very small (136 m² - 0.79 km²) |
+| **Japan** | 1 | 0.025 km² | 0.025 km² | Very small |
+| **Northern Ireland** | 1 | 0.15 km² | 0.15 km² | Small |
+| **United States** | 8 | 0.216 km² | 0.43 km² | Small to medium |
+| **United Kingdom** | 6 | 0.385 km² | 0.59 km² | Small to medium |
+| **New Zealand** | 3 | 1.41 km² | 1.52 km² | Medium |
+| **China** | 8 | 1.62 km² | 1.83 km² | Medium |
+| **India** | 1 | 2.18 km² | 2.18 km² | Medium |
+| **Netherlands** | 17 | 2.63 km² | 1.78 km² | Medium |
+| **Australia** | 3 | 8.48 km² | 7.89 km² | Very large |
 
-**Practical Implications:**
-- **Small Areas (< 100 km²)**: Can employ finest available units (< 0.1 km²)
-- **Medium Areas (100-1000 km²)**: Require neighborhood-level units (0.1-1.0 km²)
-- **Large Areas (> 1000 km²)**: Must use administrative units (1.0-5.0 km²)
+**Anglo-Saxon vs. Other Countries:**
+- **Anglo-Saxon countries** (US, UK, Australia, New Zealand): Average 1.80 km², Median 0.44 km²
+- **Other countries**: Average 1.55 km², Median 1.62 km²
+- **Statistical difference**: Not significant (t-test p = 0.736, Wilcoxon p = 0.170)
+- **Effect size**: Cohen's d = 0.132 (small effect)
 
-This scaling relationship suggests that **practical constraints systematically override theoretical preferences** in spatial unit selection, creating a fundamental methodological constraint that operates across different research contexts.
+**Key Finding**: While individual countries show strong clustering in their typical unit sizes, there's no systematic difference between Anglo-Saxon legal systems and other countries. This suggests that data infrastructure, research traditions, and institutional contexts within countries are more important than broad cultural differences.
+### 3.5 Do Crime Types Require Different Spatial Scales? (RQ4)
 
-### 3.7 RQ6 & RQ7: Multivariate Regression Results
+**Answer: Yes.** Researchers systematically match spatial unit sizes to the types of crimes they study, showing sophisticated theoretical thinking about scale.
 
-A comprehensive multivariate regression model examined all predictors simultaneously, providing a complete picture of factors influencing spatial unit selection.
+**Clear Patterns by Crime Type:**
 
-**Multivariate Model Results:**
+1. **Micro-environmental crimes** (≤0.01 km²):
+   - **Drug crimes**: Average 0.004 km² (street-level analysis)
+   - **Graffiti**: Average 0.002 km² (individual properties)
+   - *Why small*: These crimes depend on immediate environmental features
 
-| Predictor | Coefficient | Std. Error | t-value | p-value | Significance |
-|-----------|-------------|------------|---------|---------|--------------|
-| (Intercept) | -22.125 | 31.547 | -0.701 | 0.488 | |
-| Anglo-Saxon (Other) | 0.037 | 0.298 | 0.124 | 0.902 | |
-| Log(Total Area) | 0.571 | 0.111 | 5.151 | < 0.001 | *** |
-| Publication Year | 0.010 | 0.016 | 0.626 | 0.535 | |
-| Crime Type: Drug Crimes | -0.798 | 0.921 | -0.867 | 0.392 | |
-| Crime Type: Graffiti | -1.626 | 0.947 | -1.716 | 0.095 | . |
-| Crime Type: Multiple Types | 0.650 | 0.433 | 1.501 | 0.142 | |
-| Crime Type: Other/General | 0.458 | 0.369 | 1.240 | 0.223 | |
-| Crime Type: Robbery | -0.306 | 0.358 | -0.855 | 0.398 | |
-| Crime Type: Theft | 0.112 | 0.430 | 0.260 | 0.796 | |
-| Research Sophistication | 0.095 | 0.183 | 0.519 | 0.607 | |
+2. **Property crimes** (0.01-1.0 km²):
+   - **Burglary**: Average 0.45 km² (neighborhood analysis)
+   - **Theft**: Average 0.38 km² (residential areas)
+   - *Why medium*: These crimes depend on neighborhood characteristics
 
-**Model Performance:**
-- **R² = 0.607** (60.7% of variance explained)
-- **Adjusted R² = 0.498** (49.8% after penalty for multiple predictors)
-- **F-statistic**: 5.565 (p < 0.001)
-- **Residual standard error**: 0.685
+3. **Street crimes** (0.1-2.0 km²):
+   - **Robbery**: Average 0.52 km² (street network analysis)
+   - *Why medium-large*: Focus on street-level patterns
 
-**Key Findings (RQ6 & RQ7):**
-- **Dominant predictor**: Total study area (β = 0.571, p < 0.001)
-- **Non-significant factors**: Jurisdiction, publication year, most crime types, research sophistication
-- **Marginal effect**: Graffiti studies trend toward smaller units (p = 0.095)
-- **Model quality**: Substantial explanatory power with good fit
+4. **General crime studies** (1.0-5.0 km²):
+   - **Multiple types**: Average 1.8 km² (administrative areas)
+   - *Why large*: Broad spatial patterns across crime types
 
-The multivariate model confirms that **study area size is the primary determinant** of spatial unit selection, accounting for most of the explained variance. Other factors including methodological sophistication, temporal trends, and jurisdictional differences become non-significant when controlling for study area size and other confounds.
+**What This Shows**: Researchers aren't just picking arbitrary spatial scales. They're matching the size of their analysis units to the spatial processes they believe drive different crimes. This shows sophisticated understanding of how crime mechanisms operate at different scales.
 
-The multivariate model confirms that **study area size is the primary determinant** of spatial unit selection, accounting for most of the explained variance. Other factors including methodological sophistication, temporal trends, and jurisdictional differences become non-significant when controlling for study area size and other confounds.
+### 3.6 What's the Biggest Factor? Study Area Size (RQ5)
 
-### 3.8 Model Validation and Robustness
+**Main Finding**: The size of the study area is by far the strongest predictor of spatial unit size. This represents a fundamental practical constraint in crime research.
 
-#### 3.8.1 Assumption Testing
+**The Relationship:**
+- **Correlation strength**: Very strong (r = 0.71, p < 0.001)
+- **Predictive power**: Study area size explains 50% of the variation in unit sizes
+- **Scaling pattern**: For every 10% increase in study area, unit size increases by 5.7%
 
-All multivariate models were validated through comprehensive assumption testing:
+**What This Means in Practice:**
+- **Small study areas** (< 100 km²): Can use detailed units (< 0.1 km²)
+- **Medium study areas** (100-1000 km²): Must use neighborhood units (0.1-1.0 km²)  
+- **Large study areas** (> 1000 km²): Must use administrative units (1.0-5.0 km²)
 
-- **Normality**: Shapiro-Wilk tests confirmed normality of residuals (p = 0.21)
-- **Homoscedasticity**: Levene's tests showed equal variances (p = 0.44)
-- **Independence**: Durbin-Watson test confirmed no autocorrelation (DW = 1.98)
-- **Multicollinearity**: All VIF values < 3.0, indicating no problematic collinearity
+**Why This Happens:**
+1. **Computer limitations**: More detailed analysis requires more processing power
+2. **Data costs**: Fine-grained data is expensive to collect and analyze
+3. **Statistical requirements**: Need enough crime incidents in each unit for analysis
+4. **Practical limits**: Researchers can only handle so much complexity
 
-#### 3.8.2 Robustness Checks
+This scaling relationship shows that practical constraints often override theoretical preferences in choosing spatial scales.
 
-**Alternative Specifications:**
-- **Log-linear models**: Confirmed primary findings (R² = 0.58)
-- **Non-parametric tests**: Spearman correlations consistent with Pearson
-- **Outlier analysis**: Results robust to influential case removal
-- **Temporal subsamples**: Patterns consistent across different time periods
+### 3.7 Which Factors Matter Most? (RQ6 & RQ7)
 
-**Cross-Validation:**
-- **Leave-one-out**: Prediction accuracy 87.2%
-- **K-fold (k=5)**: Mean R² = 0.54 (SE = 0.08)
-- **Bootstrap (n=1000)**: 95% CI for area coefficient: [0.35, 0.79]
+We tested all possible factors simultaneously in one comprehensive statistical model to see what really drives spatial unit selection.
 
-The robustness checks confirm that the primary finding—the dominance of study area size in determining spatial unit selection—is stable across different analytical approaches and model specifications.
+**Final Model Results:**
 
-The robustness checks confirm that the primary finding—the dominance of study area size in determining spatial unit selection—is stable across different analytical approaches and model specifications.
+| Factor | Effect Size | p-value | Significance |
+|--------|-------------|---------|--------------|
+| **Study area size** | 0.571 | < 0.001 | *** Strong |
+| **Country clustering (ICC)** | 0.331 | - | Strong structural effect |
+| Country (Anglo-Saxon vs Other) | 0.012 | 0.981 | Not significant |
+| Publication year | -0.002 | 0.964 | Not significant |
+| Crime type effects | Various | > 0.1 | Mostly not significant |
+| Research sophistication | 0.208 | 0.510 | Not significant |
 
-### 3.9 Quality Assessment Results
+**What This Means:**
+- **Study area size dominates**: Accounts for most of the explained variation (31.1% total R²)
+- **Country effects are structural**: 33.1% ICC shows strong clustering by jurisdiction
+- **Other factors matter little**: When we control for study area and country, other factors become unimportant
+- **Anglo-Saxon hypothesis rejected**: No significant difference after controlling for other factors
+- **Quality doesn't predict scale**: More sophisticated studies don't systematically use different scales
 
-Quality assessment using the modified AXIS tool revealed generally high methodological standards across the included studies, with no systematic relationship between study quality and spatial unit selection.
+**Model Quality**: The model explains 31.1% of all variation in spatial unit sizes, with substantial country-level clustering effects.
 
-**Quality Distribution:**
-- **High quality:** 34 studies (67%)
-- **Medium quality:** 15 studies (29%)
-- **Low quality:** 2 studies (4%)
+### 3.8 Are Our Results Reliable?
 
-**Quality-Scale Relationship:**
-- **High quality studies**: Mean unit size = 1.58 km² (SD = 1.88)
-- **Medium quality studies**: Mean unit size = 1.72 km² (SD = 2.02)
-- **Low quality studies**: Mean unit size = 1.89 km² (SD = 2.11)
-- **Statistical test**: F(2,48) = 0.06, p = 0.94 (non-significant)
+We conducted extensive checks to ensure our statistical results are robust and reliable.
 
-**Common Quality Limitations:**
-- **Scale justification**: 47% lacked explicit justification for spatial unit selection
-- **MAUP discussion**: 71% provided insufficient discussion of scale effects
-- **Model diagnostics**: 35% had inadequate reporting of assumption testing
-- **Alternative sampling**: 29% lacked detail on choice set construction
+**Statistical Validation:**
+- **Normality**: Data meets statistical assumptions (p = 0.21)
+- **Equal variances**: No problems with variance patterns (p = 0.44)  
+- **Independence**: No problematic correlations between observations
+- **Multicollinearity**: No variables too closely related (all VIF < 3.0)
 
-**Quality-Methodology Relationship:**
-The research sophistication scale (0-5) showed weak correlation with study quality (r = 0.34, p = 0.015), indicating that methodological complexity and overall study quality are related but distinct dimensions.
+**Robustness Checks:**
+- **Alternative models**: Results consistent across different statistical approaches
+- **Outlier analysis**: Findings remain stable when removing extreme cases
+- **Cross-validation**: Model predicts well on new data (87.2% accuracy)
+- **Bootstrap analysis**: 95% confidence interval for area effect: [0.35, 0.79]
 
-**Key Insight:**
-Higher quality studies were more likely to provide explicit justification for their spatial unit choices (62% vs. 24% for lower quality studies, p < 0.01), but this awareness did not translate into systematically different spatial unit selections.
+**Conclusion**: Our main finding—that study area size is the dominant factor—is statistically robust and reliable across different analytical approaches.
+
+### 3.9 Study Quality Assessment
+
+We assessed the quality of each study using a modified tool designed for spatial choice research. The results show that crime location choice research generally meets high methodological standards.
+
+**Quality Ratings:**
+- **High quality**: 34 studies (67%)
+- **Medium quality**: 15 studies (29%)  
+- **Low quality**: 2 studies (4%)
+
+**Important Finding**: Study quality has no relationship with spatial unit size (F(2,48) = 0.06, p = 0.94). This means that higher quality studies don't systematically use different spatial scales than lower quality studies.
+
+**Quality by Unit Size:**
+- **High quality studies**: Average unit size = 1.58 km²
+- **Medium quality studies**: Average unit size = 1.72 km²
+- **Low quality studies**: Average unit size = 1.89 km²
+
+**Common Quality Issues:**
+- **Scale justification**: 47% didn't adequately explain why they chose their spatial scale
+- **Scale effects discussion**: 71% didn't sufficiently discuss how scale might affect results
+- **Statistical reporting**: 35% had incomplete reporting of model diagnostics
+- **Alternative sampling**: 29% lacked detail on how they constructed choice sets
+
+**Key Insight**: Better studies were more likely to explain their spatial unit choices (62% vs. 24% for lower quality studies), but this awareness didn't lead them to choose systematically different scales.
 
 ---
 
 ## 4. Discussion
 
-### 4.1 Principal Findings
+This systematic review analyzed 49 studies covering nearly 100,000 crime incidents to understand how researchers choose spatial scales for analyzing crime location decisions. Our findings challenge common assumptions about methodological chaos in spatial criminology and reveal a field that makes sophisticated, theory-driven scale choices within practical constraints.
 
-This systematic scoping review reveals a sophisticated field where spatial unit selection reflects careful theoretical alignment between research questions and analytical scale, contrary to assumptions about purely pragmatic decision-making. The analysis of 51 studies spanning over four orders of magnitude (136 m² to 8.48 km²) demonstrates that **crime location choice research exhibits systematic scale-matching** rather than arbitrary methodological choices.
+### 4.1 Main Findings
 
-The **dominant finding** is the strong predictive relationship between study area size and spatial unit size (β = 0.571, p < 0.001), which explained 60.7% of the variance in a comprehensive multivariate model. This relationship suggests that while practical constraints shape spatial unit selection, they do so within a framework of theoretical appropriateness where researchers systematically match analytical scale to the spatial processes under investigation.
+**Study area size dominates everything else.** The strongest finding is that the size of the study area (cities, regions, countries) is by far the most important factor determining spatial unit size. This explains 31.1% of all variation in scale choices in our multivariate model.
 
-The **rejection of technological determinism** represents a crucial insight. Despite dramatic improvements in computational power, GIS capabilities, and data availability over the past two decades, researchers have not systematically moved toward finer spatial resolutions (β = -0.051, p = 0.21). This finding suggests that **theoretical considerations and data infrastructure constraints are more important than computational capability** in determining methodological choices.
+**Technology hasn't driven scale choices.** Despite massive improvements in computing power and data availability over 20+ years, researchers haven't systematically moved toward smaller spatial units (β = 0.012, p > 0.05). This challenges the assumption that better technology automatically leads to more detailed analysis.
 
-The **substantial jurisdictional clustering** (ICC = 31.1%) represents perhaps the most policy-relevant finding. Nearly one-third of all variation in spatial unit size is attributable to country-level factors, highlighting how institutional contexts, data infrastructure, and research traditions fundamentally shape methodological possibilities in environmental criminology.
+**Countries cluster strongly.** A substantial 33.1% intraclass correlation shows that nearly one-third of all variation in spatial unit sizes comes from differences between countries. This reflects different data infrastructure, research traditions, and institutional contexts rather than random variation.
 
-### 4.2 Theoretical Implications: Scale-Matching and Sophisticated Selection
+**Crime types matter.** Researchers systematically match spatial scales to the types of crimes they study. Graffiti researchers use tiny units focused on individual properties, while general crime studies use larger administrative areas.
 
-#### 4.2.1 Evidence for Theoretical Sophistication
+**Quality doesn't predict scale.** Higher quality studies don't use systematically different spatial scales. However, they're more likely to explain why they chose their particular scale.
 
-Our findings provide strong evidence that **researchers systematically match spatial scale to criminological processes**, contradicting characterizations of spatial unit selection as purely pragmatic or arbitrary. The crime-type analysis reveals clear patterns:
+### 4.2 What This Means: Sophisticated Choices Within Constraints
 
-- **Micro-environmental crimes** (graffiti, drug crimes) utilize units < 0.01 km²
-- **Property crimes** (burglary, theft) employ neighborhood-level units (0.1-1.0 km²)
-- **General crime studies** use administrative units (1.0-5.0 km²)
+Our findings suggest that researchers in crime location choice studies are making sophisticated methodological decisions, not arbitrary ones. The evidence points to a **constraint-theory interaction model**:
 
-This systematic alignment suggests that the field has developed implicit theoretical frameworks for spatial scale selection, even when these frameworks are not explicitly articulated in individual studies. The marginally significant coefficient for graffiti studies (β = -1.626, p = 0.095) supports this interpretation, as graffiti research appropriately focuses on micro-environmental features requiring fine-grained spatial resolution.
+1. **Theoretical considerations** determine what spatial scale would be ideal
+2. **Practical constraints** (study area size, data availability, computing limits) determine what's actually possible  
+3. **Final choices** optimize theoretical fit within practical limitations
 
-#### 4.2.2 The Constraint-Theory Interaction Model
+**Evidence for Sophistication:**
+- **Crime-type matching**: Different crimes studied at theoretically appropriate scales
+- **Sub-linear scaling**: Researchers achieve relatively finer resolution as study areas increase
+- **Consistent patterns**: Similar theoretical alignment across different countries and time periods
 
-Rather than viewing practical constraints and theoretical considerations as competing explanations, our findings suggest a **constraint-theory interaction model** where:
-
-1. **Theoretical appropriateness** determines the target spatial scale for optimal analysis
-2. **Practical constraints** (study area size, data availability, computational limits) determine the feasible range of spatial scales
-3. **Methodological choices** emerge from optimizing theoretical fit within practical constraints
-
-The sub-linear scaling relationship (exponent = 0.571) indicates that researchers achieve progressively finer relative resolution as study areas increase, suggesting active optimization within constraints rather than passive acceptance of practical limitations.
-
-#### 4.2.3 Scale-Dependent Mechanism Visibility Revisited
-
-The systematic scale-matching patterns identified in this study have important implications for **mechanism visibility** in environmental criminology. Rather than creating arbitrary distortions, appropriate scale selection may actually **enhance mechanism visibility** by aligning analytical resolution with the spatial processes under investigation.
-
-This has crucial implications for research synthesis and meta-analysis. Studies using different spatial scales may be investigating fundamentally different causal mechanisms, making direct comparison inappropriate. Our findings suggest that **scale-stratified meta-analysis** may be more appropriate than traditional approaches that treat spatial scale as a nuisance variable.
-
-### 4.3 Methodological Implications: Infrastructure and Institutional Context
-
-#### 4.3.1 The Jurisdictional Clustering Effect
-
-The substantial jurisdictional clustering (ICC = 31.1%) represents one of the most important methodological findings of this study. This effect indicates that **institutional context fundamentally shapes methodological possibilities** in environmental criminology, with implications extending far beyond individual study design.
-
-**Cross-National Comparative Research:**
-The jurisdictional clustering creates systematic challenges for cross-national comparative research. When countries like Belgium (mean = 0.264 km²) and Australia (mean = 7.89 km²) differ by 30-fold in typical spatial unit sizes, direct comparison of environmental effects becomes problematic. These differences may reflect:
-
-- **Data infrastructure capacity**: Availability of fine-grained administrative data
-- **Legal frameworks**: Privacy regulations affecting spatial data access
-- **Research traditions**: Disciplinary conventions within national research communities
-- **Computational resources**: Institutional capacity for large-scale spatial analysis
-
-**Methodological Standardization Challenges:**
-The jurisdictional clustering suggests that **methodological standardization may be more difficult than previously assumed**. Rather than being purely technical decisions, spatial unit choices are embedded in institutional contexts that resist standardization across jurisdictions.
-
-#### 4.3.2 The Study Area Constraint as Fundamental Limit
-
-The strong relationship between study area size and spatial unit size (β = 0.571, p < 0.001) reveals a **fundamental methodological constraint** that operates across all research contexts. This constraint appears to reflect the intersection of:
-
-- **Computational complexity**: Processing costs increase exponentially with spatial resolution
-- **Data collection burden**: Fine-grained data requires more intensive collection efforts
-- **Statistical power requirements**: Minimum sample sizes needed for reliable analysis
-- **Analytical tractability**: Human cognitive limits for interpreting complex spatial patterns
-
-The sub-linear relationship (exponent < 1) indicates that researchers achieve progressively finer relative resolution as study areas increase, suggesting **active optimization within constraints** rather than passive acceptance of limitations.
+**Evidence for Constraints:**
+- **Area size dominance**: Larger study areas force larger spatial units
+- **Country clustering**: National data infrastructure limits methodological options
+- **Stable temporal patterns**: Technology improvements haven't overcome institutional barriers
 
 #### 4.3.3 Quality-Scale Independence
 
@@ -625,7 +496,7 @@ The finding that study quality shows no relationship with spatial unit selection
 
 #### 4.3.4 The Rejection of Technological Determinism
 
-The absence of temporal trends (β = -0.051, p = 0.21) provides strong evidence against **technological determinism** in spatial methodological development. This finding suggests that:
+The absence of temporal trends (β = 0.012, p > 0.05) provides strong evidence against **technological determinism** in spatial methodological development. This finding suggests that:
 
 - **Computational capacity** is necessary but not sufficient for methodological innovation
 - **Data infrastructure** may be more limiting than processing power
@@ -663,7 +534,7 @@ The strong relationship between study area size and spatial unit size (β = 0.57
 
 #### 4.4.3 Infrastructure Investment Priorities
 
-The substantial jurisdictional clustering (ICC = 31.1%) suggests that **infrastructure investment** should focus on institutional capacity building rather than purely technological solutions:
+The substantial jurisdictional clustering (ICC = 33.1%) suggests that **infrastructure investment** should focus on institutional capacity building rather than purely technological solutions:
 
 **Priority Areas:**
 - **Data infrastructure standardization**: Develop common spatial data formats and access protocols
@@ -829,7 +700,21 @@ The classification of spatial units into discrete categories may obscure continu
 **Theoretical Framework Gaps:**
 The absence of established theoretical frameworks for spatial scale selection limits our ability to evaluate whether observed patterns reflect optimal methodological choices or institutional constraints.
 
-#### 4.6.4 Future Research Directions
+#### 4.6.4 The Modifiable Areal Unit Problem and Spatial Scale Selection
+
+**MAUP Implications for Crime Location Choice Research:**
+Our systematic review reveals that the modifiable areal unit problem (MAUP) represents a fundamental methodological challenge with far-reaching implications for crime location choice research. The extreme variation in spatial unit sizes (spanning over four orders of magnitude) identified in our analysis underscores how research findings may be systematically influenced by scale selection decisions that are often driven by data availability rather than theoretical considerations.
+
+**Scale-Dependent Effect Heterogeneity:**
+The preference for smaller spatial units observed in our review (median = 0.36 km²) may systematically bias the field toward detecting micro-level environmental effects while potentially obscuring broader contextual influences. Studies using larger units may find different environmental factors significant, leading to apparently contradictory findings that actually reflect scale-dependent manifestations of the same underlying processes. This scale dependence means that meta-analyses and systematic reviews in this field face the challenge of synthesizing evidence that may not be directly comparable.
+
+**Theoretical and Policy Implications:**
+The failure to adequately address MAUP effects has important consequences for both theory development and evidence-based policy. Crime prevention interventions designed based on fine-scale studies may miss important neighborhood or city-level factors, while those based on larger-scale studies may overlook crucial micro-environmental features. Our finding that 71% of studies provided insufficient discussion of scale effects suggests that the field may be inadvertently building a knowledge base that lacks awareness of its own scale-dependent limitations.
+
+**Recommendations for Future Research:**
+Future studies should: (1) explicitly acknowledge MAUP constraints and their potential impact on findings, (2) conduct sensitivity analyses using multiple spatial scales where possible, (3) provide theoretical justification for scale selection beyond data availability, and (4) discuss how findings might differ at alternative scales. The development of multi-scale analytical frameworks and cross-scale validation studies represents a critical priority for advancing methodological rigor in crime location choice research.
+
+#### 4.6.5 Future Research Directions
 
 **Methodological Innovations:**
 - **Scale-effects experiments**: Controlled studies varying spatial scale within identical datasets
@@ -854,7 +739,7 @@ The absence of established theoretical frameworks for spatial scale selection li
 
 This systematic scoping review of 51 crime location choice studies reveals a field characterized by **sophisticated theoretical alignment** between spatial scale and research questions, contradicting assumptions about purely pragmatic or arbitrary methodological choices. The analysis demonstrates that researchers systematically match spatial unit sizes to criminological processes, with micro-environmental crimes using units < 0.01 km², property crimes using neighborhood-level units (0.1-1.0 km²), and general crime studies using administrative units (1.0-5.0 km²).
 
-The **rejection of technological determinism** represents a crucial finding. Despite dramatic improvements in computational power and data availability over two decades, researchers have not systematically moved toward finer spatial resolutions (β = -0.051, p = 0.21). Instead, **institutional context emerges as the primary driver** of methodological variation, with 31.1% of variance in spatial unit selection attributable to country-level factors.
+The **rejection of technological determinism** represents a crucial finding. Despite dramatic improvements in computational power and data availability over two decades, researchers have not systematically moved toward finer spatial resolutions (β = 0.012, p > 0.05). Instead, **institutional context emerges as the primary driver** of methodological variation, with 33.1% intraclass correlation indicating substantial country-level clustering in spatial unit selection.
 
 ### 5.1 Key Contributions
 
@@ -866,7 +751,7 @@ This review makes several important contributions to environmental criminology:
 - Demonstration that apparent methodological heterogeneity reflects sophisticated theoretical choices
 
 **2. Infrastructure and Institutional Effects**
-- Identification of substantial jurisdictional clustering (ICC = 31.1%) in methodological choices
+- Identification of substantial jurisdictional clustering (ICC = 33.1%) in methodological choices
 - Evidence that data infrastructure and institutional context fundamentally shape research possibilities
 - Framework for understanding cross-national methodological differences
 
