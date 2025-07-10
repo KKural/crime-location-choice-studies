@@ -1,0 +1,268 @@
+Citation,Name_of_the_unit,Crime_Type,Unit_size_km2,Country,"Supporting quotes for ""STUDY DESIGN & METHODOLOGY""",quotes,num_quotes
+"(Langton & Steenbeek, 2017)",Residential_property,Burglary,1.4227e-4,Netherlands,"- ""Analysis is carried out using conditional logistic regression.""
+  - ""Conditional logistic regression models were fitted by conditional maximum likelihood using the statistical environment R.""
+  - ""a case-control sampling procedure. This sampling technique is largely associated with epidemiological observational studies that investigate the incidence and distribution of disease.""
+  - ""The total sample is split between the 'treatment' group of observations, suffering from the disease of interest, and the 'control' group, which are free of the disease.""
+  - ""The results indicate that the more residential units are considered to be under surveillance, the less likely they are to be burglarised. Conversely, properties that are more accessible and are easier to escape from are more likely to be targeted by burglars.""
+  - ""The findings lead us to reject the null hypotheses of no effect for hypotheses H1, H2 and H4. For H3, there is insufficient evidence to reject the null hypothesis that there is no relationship between indications of resident wealth and the risk of being burgled.""
+  - ""The likelihood ratio test of Model 1 provides support for the assertion that the burglars do not randomly select their targets, given the statistically significant improvement over the baseline model (LR chi2(8) ¼ 57.71; Prob > chi2 ¼ < 0.001).""
+  - ""The data offers no evidence to suggest that the effect of surveillability is greater in neighbourhoods with high collective efficacy (p-2s > 0.05).""",,8
+"(Kuralarasa et al, 2024)",Street_segment,Graffiti/Vandalism,8.4491e-4,Belgium,"- ""We used the Poisson model implementation because it is computationally easier to estimate. Because the results are equal to those of a conditional logit implementation, our interpretation of the model estimates follows random utility maximization theory.""
+  - ""We estimated two separate conditional logit models, as detailed in Table 2""
+  - ""Specifically, we applied the conditional logit model, which is part of the discrete choice model family and is derived from the Random Utility Maximization (RUM) theory (Bernasco, 2023).""
+  - ""In line with the rational choice perspective and consistent with the extant location choice literature on offending (see Ruiter, 2017), we used the discrete choice model to examine our hypotheses by estimating the location preferences of graffiti writers.""
+  - ""We employ a discrete spatial choice model, specifically the conditional logit model, which is one of the methods used under discrete choice models (Bernasco, 2023).""",,5
+"(Bernasco & Jacques, 2015)",Street_segment,Drug-related,0.001545,Netherlands,"- ""In the economics literature and in recent criminological research (e.g., Bernasco, Block, & Ruiter, 2013), location choice questions have mostly been analyzed with discrete choice models (Ben-Akiva & Lerman, 1987;Train, 2009), in particular the multinomial logit model.""
+  - ""We used this model to calculate, bivariately, the increase in the odds of choosing a street segment that results from a one-unit increase in the street segment characteristic.""
+  - ""The reported odds ratios should not be seen as inferential statistics characterizing a population, but as descriptive statistics of the relations between street segment characteristics and the location choices of the dealers in our sample.""
+  - ""The statistical approach taken here reflects the small size of our sample, which is too small to allow statistical inference. We only analyze bivariate relations between the characteristics of street segment variables and the dealers' spatial choices, and we refrain from trying to assess the statistical significance of these relations.""",,6
+"(Bernasco et al., 2013)",Census_block,Robbery,0.01968,United States,"- ""The discrete choice framework describes the behavior of a decision-maker who must choose an alternative from a finite set of alternatives that are mutually exclusive and collectively exhaustive.""
+  - ""The multinomial logit model includes only characteristics of the focal block, not those of adjacent blocks.""
+  - ""the universal logit model was extended with the 15 same attributes of second-order spatially adjacent blocks""
+  - ""The multinomial logit model is characterized by the independence of irrelevant alternatives (IIAs) property,""
+  - ""A generalization of the logit model that does allow utilities to depend on attributes of multiple other alternatives in the choice set (and thus may violate the IIA assumption) is the universal or mother logit model.""
+  - ""the analysis includes only the 17.2% of street robberies that were cleared, i.e. for which at least one offender was arrested who was a Chicago resident.""
+  - ""A still more robust set of estimates was obtained with a bootstrapping procedure.""
+  - ""we used Stata/MP version 11 running on an Intel Xeon 8-core CPU at 2.27 GHz with 12 Gb RAM).""",,11
+"(Bernasco et al., 2017)",Census_block,Robbery,0.01968,United States,"- ""The hypothesis is assessed by estimating and comparing separate discrete location choice models for each two-hour time block of the day and for each day of the week.""
+  - ""The present article seeks to contribute to the knowledge about how spatial crime patterns depend on the time of the day and the day of the week.""
+  - ""the conditional logit model was used to estimate the effects of census block attributes on the probability of the census block being selected for robbery.""
+  - ""This is a discrete choice model that is consistent with random utility maximization theory.""
+  - ""To explore temporal differences in location preference, 12 models were estimated separately for each of 12 two-hour blocks (4-6 a.m., 6-8 a.m., 8-10 a.m., etc.) and 7 models were estimated separately for each of the seven days of the week.""
+  - ""To obtain robust estimates, the analysis just described was repeated 10 times, each time selecting a different random sample of 11,999 (daily variation) or 7,999 (weekly variation) alternative census blocks.""
+  - ""To combine the results of the 10 iterations, we used Rubin's (1987) formulae for combining the estimates of bootstrapped multiple regression analyses.""",,9
+"(Hanayama et al., 2018)",Grid_cell,Burglary,0.025,Japan,"- ""This study examines the effects of neighbourhood attractiveness on the residential burglar's crime location choice process using a discrete choice model.""
+  - ""The purpose of the discrete choice model is to explain the outcome of behaviour when an individual decision maker must choose a single alternative from a set of finite distinct alternatives""
+  - ""The use of random utility maximisation theory to study the criminal location choice process can be supported by rational choice theory.""
+  - ""If random error terms are independent and identically (Gumbel or Type I extreme value) distributed, then the parameters can be estimated with a multinomial logit model known as the conditional logit model""
+  - ""The conditional logit model has been widely used in previous studies.""
+  - ""The estimation results of the conditional logit model are presented in Table 3""
+  - ""the results of the conditional logit model introducing the past residential burglary rate showed that the distance from offender's residence (0.70), the number of residential units (1.08), and the proportion of single-family dwellings (1.06) were significant (odds ratio).""",,8
+"(Frith et al., 2017)",Street_segment,Burglary,0.0284,United Kingdom,"- ""With a mixed logit (discrete choice) model, we use data regarding (N = 459) residential burglaries (for the first time) to model offender spatial decision-making at the street segment level.""
+  - ""The application of the discrete choice framework requires the specification of the decision-makers, the choice-set, and the choice criterion.""
+  - ""The ML model also addresses problems associated with modeling repeated choices by the same offender.""
+  - ""the ML model assumes a probability density function for the coefficients, f (β|θ ), where θ represents the mean and the standard deviation of the βs.""
+  - ""We used various numbers of Halton draws (all of which converged), with and without correlated coefficients.""
+  - ""All models were computed with the ""bayesmixedlogit"" routine (Baker, 2013) in Stata.""",,8
+"(Smith & Brown, 2007)",Grid_cell,Breaking And Entering,0.032,United States,"- ""the spatial hierarchy term is significant.""
+  - ""numerical optimization was performed using a variable metric algorithm implemented in the R software package (Team 2004).""
+  - ""Parameters are estimated via maximum likelihood, where the likelihood function is given by""
+  - ""The models presented in this paper use the spatial hierarchy model, with evaluation likelihood determined via Parzen kernel density estimation.""
+  - ""The most commonly applied multinomial choice model is the multinomial logit.""",,5
+"(Bernasco, 2019)",Grid_cell,Multiple Types,0.04,Netherlands,"- ""I use a discrete spatial choice approach to explain the offender's choice of a crime location and test the hypotheses.""
+  - ""Following the random utility maximization postulate and according to a conditional logit model [36], the offender chooses a single location from the full choice set of 4558 locations""
+  - ""The deterministic part of utility V ij is a linear function of the attributes of individuals and locations:""
+  - ""The values of β 1 to β 17 are parameters that are estimated from the data.""
+  - ""If the unobserved random utility components ε ij are independently and identically distributed according to an extreme value distribution, the conditional logit model [36] can be derived.""
+  - ""The findings reported here suggest that all of us, law-breakers and law-abiders alike, may be less innovative and more predictable than we think we are, or would like to be.""",,7
+"(Xue & Brown, 2006)",Grid_cell,Residential Breaking And Entering (B & E),0.062,United States,"- ""In this paper, we exploit the rational choice perspective to model the site selection behavior of individual criminals.""
+  - ""Our model differs from those used in consumer theory in that the decision makers for us are active criminals and hence, not accessible by survey instruments.""
+  - ""Discrete choice models have been applied to a number of areas, such as consumer destination selection [12,24], travel mode analysis [1,3,19], and recreational demand models [25].""
+  - ""The problem formulation in Section 2 provides the basis for developing spatial choice models for criminal event prediction.""
+  - ""The resulting approach is called the distinct spatial choice model.""
+  - ""the spatial choice model in Eq. ( 1) for criminal site selection changes to""
+  - ""The Type I extreme value distribution is described as P(e i be)=exp(Àexp(Àe)) [18].""
+  - ""The models of Section 3 provide a method for predicting criminal incidents.""
+  - ""The prior probabilities P(a i aM) of the uniform spatial choice models were calculated as in Section 3.2 for each cluster.""
+  - ""The final prediction of a future crime's spatial distribution is the combination of the predicted probabilities of all clusters.""
+  - ""the distinct spatial choice model provides more accurate and distinct predictions.""
+  - ""The predictions of the compared models are paired probabilities over the spatial alternatives in choice set A.""
+  - ""The testing results and the visualization show that the new models perform much better than the hot spot methods using density estimation.""",,13
+"(Marchment & Gill, 2019)",Small_areas,Terrorist Attacks By The Provisional Irish Republican Army (Pira),0.15,Northern Ireland,"- ""A conditional logistic regression ascertained which characteristics increased the likelihood that an area would be selected as a target, using a dataset of attacks carried out by the Provisional Irish Republican Army in Belfast over a twentyyear period.""
+  - ""The discrete choice approach (McFadden, 1974) can appropriately model between a set of two or more discrete alternatives, based on the utility the offender expects to derive from each alternative (Train, 2003).""
+  - ""The conditional logit model tested the hypotheses.""
+  - ""The conditional logit model is used as it incorporates attributes of both the alternatives and the individual perpetrator.""
+  - ""The values of m are estimated using maximum likelihood estimation and are interpreted as the multiplicative effects of a one unit increase in a SA's attribute on its probability of being selected by individual i.""
+  - ""All models were estimated using STATA and McFadden, 1975; McFadden, 1979; Louviere et al., 2000;""",,6
+"(Johnson & Summers, 2015)",Lower_Super_Output_Area,Theft,0.2,United Kingdom,"- ""In addition to modeling the influence of area-level attributes, it is possible to include interaction terms to allow estimation of the effects of factors that vary systematically across choosers.""
+  - ""All models are estimated using STATA 10 SE.""
+  - ""the conditional logit model, and the β m may be estimated using maximum likelihood estimation.""
+  - ""The type of model used, also referred to as a random utility model (for an overview, see Train, 2003), assumes that when making a decision, a chooser (in this case an offender) selects from a set of alternatives the choice that maximizes their perceived utility.""
+  - ""Using a discrete choice model and data for detected incidents of theft from vehicles (TFV), we test predictions from two theoretical perspectives-crime pattern and social disorganization theories.""",,7
+"(Baudains et al., 2013)",Lower_Super_Output_Area,Riot-Related Incidents,0.33,United Kingdom,"- ""Unlike most studies of victimization, we use a random utility model to examine simultaneously how the features of the destinations selected by rioters, the origins of their journeys, and the characteristics of the offenders influence offender spatial decision making.""
+  - ""In this section, we discuss the approach, starting with a few examples to illustrate the logic of the method, and then we describe the statistical model applied. Regarding theoretical models of utility in criminology, rational choice theory (Cornish and Clarke, 1986) explicitly considers offender decision-making processes at the event level.""
+  - ""In terms of formal methods for modeling decision making of this kind, the discrete choice approach is a class of model that concerns an individual's choice between a set of two or more discrete alternatives (for an overview, see Train, 2003).""
+  - ""All models are estimated using STATA 10 SE (StataCorp, College Station, TX).""
+  - ""The estimates of population churn rates and ethnic heterogeneity were derived using data from the 2001 U.K. Census.""
+  - ""The results presented are robust to the inclusion of two other variables: a measure of police strength and a measure of police relations in the destination areas.""",,7
+"(Rowan, Appleby & McGloin, 2022)",Census_block_group,Group Crime,0.37,United States,"- ""We conduct a series of spatially lagged negative binomial regression models to analyze our data because the total count of group crime incidents exhibits over-dispersion (Anselin 1988).""
+  - ""To account for the spatial clustering of group crime rates, we estimate the following model:
+
+where y is an N × 1 vector of observations on the group crime rate for each census block group j, X is an N × K matrix of independent variables including activity nodes, density, and control variables, β is a K × 1 vector of regression coefficients, W is a row-standardized first-order contiguity neighbourhood matrix using queen contiguity, in which spatially adjacent communities in all directions are considered contiguous to a particular census block group j, ρ is the spatial lag operator that was generated using GeoDa 1.14.0 (http://geoda.uiuc.edu), and ε is a vector of error terms (e.g., Browning et al. 2017).""
+  - ""For all models, we included the population within the census block group as an exposure measure and this estimates the outcome as a group crime rate per capita (e.g., Osgood 2000).""
+  - ""For ease of interpretability, all coefficients in Table 3 are presented as standardized incident rate ratios and include the population within the census block group as an exposure measure to estimate the outcome as a group crime rate.""",,7
+"(Frith, 2019)","Census_output_
+areas",Serious Acquisitive Crime (Sac),0.44,United Kingdom,"- ""this study uses the latent class (and mixed and conditional logit) to examine the offence location choices of serious acquisitive crime offenders in York (UK).""
+  - ""The three discrete choice models of offence location choices in these analyses are all computed in Stata 14 (StataCorp, 2015).""
+  - ""the LCL are estimated through EM using the 'lclogit' command (Pacifico and Yoo, 2012) and the associated standard errors using the 'gllamm' command (Rabe-Hesketh et al., 2002).""
+  - ""The CL was estimated using maximum likelihood with the built-in 'clogit' command.""
+  - ""For the ML, although it could also be estimated using maximum simulation likelihood, following Frith et al. (2017) and Townsley et al. (2016), it was estimated using hierarchical Bayes using the 'bayesmixedlogit' command (Baker, 2015).""
+  - ""The study area in these analyses is the city of York (UK), which covers approximately 270km""
+  - ""For these analyses, revealed preference data for 1,105 recorded3 and solved4 SAC in York committed by 687 offenders living in York between April 2008 and March 2012 were collected.""",,8
+"(Bernasco et al., 2015)",Lower_Level_Super_Output_Area_(LSOA),Burglary,0.51,United Kingdom,"- ""To test the hypotheses, a discrete spatial crime location choice approach is used (Bernasco et al., 2013;Bernasco & Ruiter, 2014) in which every burglary is conceptualized as a discrete choice amongst all 1,687 LSOAs in the study area, and a multinomial logit model is used to estimate the relative weight of each of the LSOA characteristics in the burglar's decision.""
+  - ""The estimated effects of prior burglaries in the same MSOA also display a pattern of temporal decay, from an odds ratio of 3.6 for burglaries 0-2 days ago down to an odds ratio of 1.4 for burglaries 6-24 months ago.""
+  - ""Pseudo R 2 values for the discrete choice model are expected to be much lower than those for ordinary least squares models. In this case, according to McFadden's guidance, the observed pseudo R 2 of .31 represents an excellent fit to the data (McFadden, 1978: 307)""
+  - ""The estimated model parameters (odds ratios, confidence intervals, and significance level indicators) are listed in Table A1 in the Appendix.""
+  - ""Using police-recorded burglary data we rigorously test three hypotheses using discrete spatial choice modeling techniques.""",,6
+"(Bernasco, 2006)",Neighborhood,Burglary,0.65,Netherlands,"- ""The results partially support the hypotheses, because the effects of physical accessibility, proximity, and a special proximity aspect, the home neighbourhood, are all significant in the hypothesised direction, supporting hypotheses 2 and 4.""
+  - ""The presented estimated standard errors are 'robust' standard errors that have been upwardly corrected to account for the dependence between observations that emerges because some offender's and some offender groups' multiple burglaries are analysed (see White, 1982).""
+  - ""The second major column of the Table, titled 'solitary offender', contains the results of a conditional logit model of neighbourhood target choice by solitary burglars.""
+  - ""The outcomes of estimating the choice model are presented in Table 8""
+  - ""Hypotheses on location choice can be very well formalised using the random utility maximization (RUM) approach, and with the associated statistical conditional logit model (McFadden, 1973).""",,5
+"(Bernasco & Nieuwbeerta, 2005)",Neighborhood,Burglary,0.65,Netherlands,"- ""In order to construct valid standard error estimates, we calculated so-called 'robust standard errors' according to the method proposed by White (1982), with a correction for the nested structure of the data.""
+  - ""Parameter estimation of the conditional logit model is performed with maximum likelihood methods, and is relatively straightforward (see, e.g. Greene 1997).""
+  - ""the discrete spatial choice model can be derived to take the form of the conditional logit model (McFadden 1973;Greene 1997).""
+  - ""The micro-economic framework and its close statistical counterpart, the conditional logit model, have been applied in many fields and to a wide variety of discrete choice problems, including problems of location choice.""
+  - ""The discrete spatial choice approach applies a general micro-economic framework to discrete choice behaviour.""",,7
+"(Bernasco & Block, 2009)",Census_tract,Robbery,0.7,United States,"- ""We model the spatial choices of Chicago robbers using a general microeconomic framework for the analysis of discrete choice, that is, choice among a limited set of alternatives. The framework is known as random utility maximization in economics and has been introduced and developed by 2000 Nobel laureate McFadden (1973).""
+  - ""The framework is attractive for various reasons, which include the strong link between the theoretical formulation and its statistical counterpart, the conditional logit model.""
+  - ""All models were estimated using the clogit procedure that is part of the general-purpose statistical software Stata (StataCorp, 2005).""
+  - ""To test hypotheses on the effects of choice criteria, the theoretical choice model needs to be linked to a corresponding statistical model. Assuming that robbers choose the tract they favor most after taking into account the pros and cons, the choice model can be derived to take the form of the conditional logit model (Greene, 1997;McFadden, 1973).""
+  - ""The estimation of discrete choice models requires a considerable amount of computer resources when both the number of observations (choices) and the number of alternatives per choice are large.""
+  - ""To formalize the hypotheses that specify differences between juvenile and adult offenders and between robbers of different racial and ethnic groups, the terms for interactions between census tract attributes and robber attributes are inserted into the utility function (i.e., juvenile × distance and adult × distance interactions), and nine interaction terms that relate African-American, non-Hispanic white, and Hispanic offenders to census tracts with African-American, non-Hispanic white, and Hispanic majority residential populations (with nonmajority or mixed-census tracts as reference categories).""",,10
+"(Vandeviver & Bernasco, 2020)",Statistical_districts,Burglary,0.79,Belgium,"- ""Using a discrete spatial choice approach, we estimate the combined effect of neighborhood-level and residence-level attributes on burglars' target choice in a conditional logit model.""
+  - ""To study burglars' target choices, we apply the discrete choice framework to burglary location choices, an approach introduced in criminology by Bernasco and Nieuwbeerta (2005). This approach permits including target features (e.g., neighborhood and residence attributes), offender features (e.g., offending histories), and target-offender interactions (e.g., distance from the offender's home to each alternative) in a single model""
+  - ""Like most previous crime location choice studies, we use the conditional logit model.""
+  - ""We estimate three main effects models to determine the effects of neighborhood and residence attributes on target choice.""
+  - ""In addition, we estimate 25 cross-level interaction effect models to determine to which extent the relationships between residential attributes and the likelihood of burglary target selection vary according to neighborhood-level attributes.""
+  - ""The integrated main effects and the interaction effects models are most relevant for our argument.""",,9
+"(Curtis-Ham et al., 2025)",Statistical_Area,Burglary,1.2,New Zealand,"- ""As with most previous DSCM studies, we employed conditional logit models (McFadden, 1984).""
+  - ""For each crime type we ran a conditional logit model involving four reliability-relevance categories (H f H s , H f L s , L f H s , L f L s )×6 distance bands (within SA2 plus 5 outside) + 1 opportunity variable = 25 estimates.""
+  - ""We exponentiate these estimated parameters to report them as odds ratios (ORs).""
+  - ""The mechanics of the conditional logit model are described in detail elsewhere (Bernasco, 2010b), but to summarize, the model estimates the expected utility of each choice alternative (SA2), given the attributes of that alternative, and selects the alternative that maximizes utility.""
+  - ""To test our hypothesis, we used discrete spatial choice models (DSCMs). DSCMs are discrete choice models applied to spatial choices, such as where to buy a house (McFadden, 1977), where to shop for groceries (Hillier et al., 2015), or, in the present case, where to commit a crime.""",,6
+"(A. Chamberlain et al., 2022)",Block_groups,Burglary,1.36,United States,"- ""In all of our models, our dependent variable is dichotomous, where a 1 is equal to the selected neighborhood and 0 represents the remaining unselected options.""
+  - ""We analyze two models. First, we evaluate the likelihood of a neighborhood being selected based on the target neighborhood's distance from the suspect's home and sociodemographic characteristics between adult and juvenile suspects.""
+  - ""we use seemingly unrelated estimation using the post estimation command suest in Stata.""
+  - ""We employ a conditional logit model to examine the probability that a particular neighborhood will be selected relative to all other remaining options (Ben-Akiva & Bierlaire, 1999).""
+  - ""To predict the probability that an offender targets a specific neighborhood, we use discrete choice modeling, and compare patterns of neighborhood selection between adults aged 18 or older to juveniles under age 18 and across solo versus group offenses.""",,6
+"(Curtis-Ham et al., 2022a)","Statistical_Area_
+2",Burglary,1.41,New Zealand,"- ""To test our hypotheses, we employed discrete crime location choice modelling (DSCM).""
+  - ""Consistent with most previous DSCM studies, we used conditional logit models to test our hypotheses (McFadden 1984).""
+  - ""The conditional logit model evaluates the likelihood of a choice alternative (SA2) being selected given its attributes (e.g. presence of a home in the SA2, presence of nearest prior crime 200-500 m away).""
+  - ""In each model (one per crime type), there were 61 variables: 10 node types × 6 distances (SA2 plus 5 bands) + 1 opportunity variable.""
+  - ""We report model coefficients as odds ratios (ORs).""
+  - ""The models provided a good fit to the data with pseudo R 2 values between 0.35 and 0.42 (McFadden 1973), which are at the upper end of the range of values found in other DSCM studies (Table 1""
+  - ""Across all crime types, the median VIF was 1.56 and the maximum was 5.69, well under the commonly applied threshold of 10 (Bernasco and Block 2011;O'Brien 2007).""",,7
+"(Song et al., 2019)",Census_unit,Theft,1.62,China,"- ""Following the large majority of previous location choice studies, we used the conditional logit model to analyze the role of distance, crime generators and daily population mobility in the offenders' choice of locations for committing TFP.""
+  - ""the probability that offender i chooses census unit n equals:""
+  - ""The utility level U in is a linear function of the characteristics of the census units (or their logarithms):""
+  - ""The conditional logit model is easy to estimate and consistent with random utility maximization theory (McFadden 1973).""
+  - ""The discrete spatial choice model was introduced by Bernasco and Nieuwbeerta (2005) as a method to analyze crime location choices using individual-level offender data.""",,5
+"(Long et al., 2021)",Community,Robbery,1.62,China,"- ""The discrete spatial choice modeling is used to test the impact of their guardianship role on street robbers' crime location choice, accounting for accessibility and proximity, crime attractors and generators, and social disorganization.""
+  - ""The discrete spatial choice approach is widely used in microeconomics to analyze discrete choice behavior (Bernasco & Nieuwbeerta, 2005).""
+  - ""The utility function can be estimated by a conditional logit model (McFadden, 1978).""
+  - ""All models are estimated using STATA 13.0.""
+  - ""The results of discrete spatial choice models (Odds Ratios, Z-scores, Pseudo R 2 , significance level with 95% confidence intervals) are listed in Table 4""
+  - ""The utility function is calculated as follows:
+
+where U ij is the expected utility of a robbery in neighborhood j for street robber i, x ij are the values of the explanatory variables for neighborhood j for street robber i, β is a vector of coefficients to be estimated, and ε ij is the random error component of the model.""",,8
+"(Long & Liu, 2021)",Neighborhood,Robbery,1.62,China,"- ""This study will refer to the above studies and use the conditional logit selection models in the Discrete Spatial Choice Modeling to calculate.""
+  - ""Discrete spatial choice modeling is widely used to analyze the selection behavior in microeconomics [19,65]. Based on the theory of stochastic utility, it assumes that a decision-maker must choose a discrete set of choices while assessing the relative utility of each alternative [70].""
+  - ""Using a kernel density estimation and the discrete spatial choice modeling, we combine the offender data, POI data, and mobile phone data to explain the crime location choice of the street robbers who committed offenses and were arrested from 2012 to 2016 in ZG City, China.""
+  - ""The utility function can be estimated based on the Conditional Logit Selection models.""
+  - ""Models calculations were done under Stata 13.0 software.""",,6
+"(Long & Liu, 2022)",Neighborhood,Robbery,1.62,China,"- ""A conditional logit selection model was estimated to assess street robbers' crime location choice preferences.""
+  - ""The conditional logit selection models have been applied to various discrete choice behaviors, including offender's crime location choice problems""
+  - ""The results of conditional logit selection models are presented in Table 3 (Pseudo R 2 , Odds Ratios, Standard Error, Z-scores, and significance level with 95 % confidence intervals).""
+  - ""The pseudo R 2 value of the Model is >0.20, which indicates that the model in this paper has a better explanatory ability.""
+  - ""the conditional logit selection models and the significant differences in the odds ratios of variables confirm street robbers' crime location choices vary by age.""
+  - ""the locations of the robbery were geocoded into one of 1971 neighborhoods as the dependent variable. For each robbery, the neighborhood where the robbery took place is recorded as ""1"" and all other neighborhoods are recorded as ""0"".""
+  - ""The former approach is used in this study, due to its advantages in exploring interactions between variables.""",,8
+"(Long et al., 2018)",Community,Robbery,1.62,China,"- ""These two groups of variables are then fed into a mixed logit model to assess the influence of a robber's prior experience on subsequent street robbery location choices.""
+  - ""The mixed logit model is a family of discrete choice models that estimate the probability of individuals selecting one outcome from exhaustive, mutually exclusive, and limited set of options""
+  - ""The mixed logit model is widely used in microeconomics to analyze discrete choice behavior.""
+  - ""The probability of street robber β i choosing community j can be calculated as follows:
+
+To obtain the probability of unconditional choice, we integrate L ij (β i ) for all values of β i""
+  - ""Results of mixed logit models (odds ratios, standard error, z-scores, significance level and 95% confidence intervals, etc.) are listed in Tables 4 5 6""
+  - ""The utility function is calculated as follows:
+
+where U ij is the expected utility of a robbery in community j for street robber i, x ij are the values of the explanatory variables for community j for street robber i, β i is a vector of coefficients to be estimated for street robber i, and ε ij is the random error component of the model.""
+  - ""The utility function can be estimated by a mixed logit model.""",,10
+"(Kuralarasan & Bernasco, 2022)",Wards,Theft,2.18,India,"- ""We used discrete crime location choice models to establish the choice criteria that snatching offenders use when they decide where to offend.""
+  - ""To quantify the spatial preferences of snatching offenders and test the hypotheses, we used the discrete crime location choice method (Bernasco and Nieuwbeerta 2005).""
+  - ""This discrete crime location choice method is particularly appropriate for two reasons. The first reason is the intimate link it provides between theory and statistical model. The method is rooted in random utility maximization theory, and uses statistical models (including amongst others the conditional, nested and mixed logit models) that are directly connected to this underlying theory.""
+  - ""The discrete crime location choice method takes as a starting point an individual who is motivated to commit a snatching offense and is faced with the decision of where to commit it.""
+  - ""The probability that the person committing offense n chooses location i can thus be written as:
+
+If the unobserved random utility components ε ni are independent and identically distributed according to an extreme value distribution, the conditional logit model (McFadden 1974 ) can be derived,""
+  - ""The estimated odds ratio of the log-distance effect is 0.36 in Model 1 and 0.35 in Model 2.""
+  - ""Table 3 presents the results of two conditional logit models.""",,9
+"(S. van Sleeuwen et al., 2021)",Neighborhood,Multiple Types,2.63,Netherlands,"- ""The results of the conditional logit models are presented using odds ratios (ORs) and their respective bootstrapped cluster-corrected standard errors (SEs).""
+  - ""Because the small sample size does not justify using normal standard errors, we calculated bootstrapped standard errors based on 100 samples.""
+  - ""The choice outcome is the neighbourhood the offender selected for committing the offence.""
+  - ""To provide a first empirical test of our extended crime pattern theory, we estimated a conditional logit model as commonly applied in crime location choice research (Bernasco and Ruiter 2014;Ruiter 2017).""
+  - ""We put this extended theory to a first empirical test by applying a discrete spatial choice model to detailed information from the Netherlands on 71 offences committed by 30 offenders collected through a unique online survey instrument.""",,6
+"(Menting et al., 2020)",Neighborhood,Theft,2.63,Netherlands,"- ""Because offences are sometimes nested within offenders, cluster-corrected standard errors were estimated.""
+  - ""Results are presented as odds ratios (OR), the multiplicative effect of a one-unit increase of the independent variable on the odds of choosing a particular target neighbourhood.""
+  - ""The conditional logit model (McFadden 1974;1978a) is derived from random utility maximization (RUM) theory assumptions, which imply that a motivated offender evaluates the expected utility (gain, profits, satisfaction and risks) of each of the possible alternatives and selects the alternative with the largest expected utility.""
+  - ""Conditional logit models were used to test our hypotheses.""
+  - ""Using discrete spatial choice models with a spatial choice set of 12,821 areas in the Netherlands, we test (1) whether the presence of an activity node affects the probability an area and areas nearby are targeted; ( 2) to what extent the inclusion of other activity nodes beyond offenders' residential areas improves our understanding of crime location choices; and (3) whether effects depend on activity node visiting frequency.""",,7
+"(Xiao et al., 2021)",Community,Burglary,2.74,China,"- ""Using data on 3860 residential burglaries committed by 3772 burglars between January 2012 and June 2016 in ZG city, China, conditional logit (discrete choice) models were estimated to assess residential burglars' target location choice preferences.""
+  - ""This study first presents the distribution of the barrier variables as well as their respective bivariate relationships with the residential burglary locations in ZG city (Table 2 ). Then it tests the hypotheses and analyzes why residential burglars prefer to target particular communities over others using discrete spatial choice models.""
+  - ""For testing the hypotheses, this study used the conditional logit model originally proposed by McFadden (1973) and recently used in crime location choice research (Ruiter, 2017).""
+  - ""The models assume rational decision-makers (i.e. the offenders) to choose the highest utility option from a finite set of discrete alternatives (the potential target communities).""
+  - ""The models were estimated using Stata/MP version 15.""
+  - ""Only if the likelihood of arrest of ZG city-based offenders varies systematically across the different communities and is correlated with the community-level predictor variables and burglaries in blocks with high arrest probabilities are overrepresented, the analysis of only arrested offenders might potentially result in biased estimates. In order to address possible sample selection bias due to differences in arrest rates between communities, the weighted exogenous sample maximum likelihood (WESML) estimation method proposed by Bernasco et al. (2013) was used.""",,9
+"(Yue et al., 2023)",Community,Theft,2.81,China,"- ""the results in this research have no severe multicollinearity issues.""
+  - ""incorporating streetscape variables can significantly improve the fitting performance of the model.""
+  - ""The estimated coefficient of each independent variable indicates the direction and strength of the association between the variable and the offender's preference for a location.""
+  - ""the conditional logit model, which is a practical model derived from the theoretical discrete spatial choice model, can be formulated as follows:""
+  - ""The research field of crime geography employs a discrete spatial choice model to analyze the factors that influence offenders' decisions in selecting a community j for committing crimes, with the dependent variable being dichotomous.""",,5
+"(Lammers et al., 2015)",Postal_code_area,Multiple Types,2.96,Netherlands,"- ""The pseudo R-squared of this full model was .35, which again shows that a large part of the variation in crime location choice can be explained by prior crime locations, former and current residential locations, and the area characteristics included in the model.""
+  - ""To estimate the different conditional logit models, a large data matrix of almost 1.8 million rows was created.""
+  - ""When presenting the results of the conditional logit models, odds ratios are used.""
+  - ""Discrete choice models often follow the random utility maximization (RUM) approach and are statistically tested with a conditional logit model (McFadden, 1974 (McFadden, , 1978a""
+  - ""Discrete choice models are used to explain why an individual chooses a specific single alternative when presented with a distinct number of alternatives (Ben-Akiva and Bierlaire, 2003), given attributes of the alternatives and attributes of the individual.""",,6
+"(Lammers, 2017)",Postal_code_area,Burglary,2.96,Netherlands,"- ""The data were analysed using a discrete spatial choice model.""
+  - ""The discrete spatial choice model testing whether co-offended crimes are more likely committed in the shared awareness space of the co-offending group includes a number of control variables measuring area characteristics known to influence crime location choice.""
+  - ""Discrete choice models are used to explain why an individual chooses a specific single alternative when presented with a distinct number of alternatives (Ben-Akiva and Bierlaire 2003), given characteristics of the alternatives and characteristics of the decision maker.""
+  - ""Discrete choice models are statistically tested with a conditional logit model (McFadden 1974;1978).""
+  - ""The dependent variable in this model is the choice of an area j from a geographical set of alternatives J to commit a co-offended crime.""
+  - ""The independent variables home location, previous home location and previous crime location were constructed in a similar way: these variables received a score of 1 when an offender had committed a crime in this postal code area, or was living in the area at the time of the offence, or had lived in the area before.""
+  - ""The results show that the area where one of the offenders lives at the time of the offence has 11.7 times higher odds of being targeted than an otherwise comparable area where none of the offenders live at the time of the offence.""
+  - ""The results of the current study therefore might indicate that the awareness spaces of offenders are not extended with areas unknown to them, yet known to co-offenders.""",,11
+"(Menting et al., 2016)",Postal_code_area,Not Specified,2.96,Netherlands,"- ""We used discrete spatial choice models to study crime location choice.""
+  - ""The hypotheses were tested by using discrete choice models.""
+  - ""Discrete choice models often follow the random utility maximization (RUM) assumptions and are statistically tested with a conditional logit model (McFadden, 1974 (McFadden, , 1978a))""
+  - ""For estimating the conditional logit models, we constructed a large data matrix of almost 2.8 million rows.""
+  - ""The results of the conditional logit models are presented by using odds ratios (ORs).""
+  - ""The pseudo-R² of all models ranged between .30 and .31, which is considered to represent an excellent fit to the data (McFadden, 1978b: 307)""",,6
+"(S. E. M. van Sleeuwen et al., 2018)",Postal_code_area,Multiple Types,2.96,Netherlands,"- ""Data on 12,639 offenses committed by 3,666 repeat offenders in the Netherlands are analyzed using discrete spatial choice models.""
+  - ""Discrete choice models distinguish four elements of a choice situation: the decision-maker, alternatives, attributes of the alternatives, and a decision rule""
+  - ""Conditional logit models 1 were used to test our hypotheses.""
+  - ""The results of the conditional logit models are presented using odds ratios (ORs) and their respective standard errors (SEs).""
+  - ""To account for the fact that multiple offenses are nested within offenders, cluster-corrected SEs were estimated.""
+  - ""The models in which the time-specific effects for previously targeted areas were taken into account (models 1-4, Tables 2 and 3 ) show a pseudo R 2 of .32.""",,10
+"(Bernasco, 2010a)",Postal_code_area,Multiple Types,2.96,Netherlands,"- ""The purpose of a discrete choice model is to explain the outcome of a discrete choice situation, which is the situation in which an individual decision maker has to choose a single alternative from a limited number of distinct alternatives (Ben-Akiva and Bierlaire, 1999).""
+  - ""Most discrete choice models are based on the decision rule that specifies utility maximization. According to the random utility maximization model (McFadden, 1973), the decision maker evaluates each available choice alternative in terms of its utility (net gain, profits, and satisfaction) and chooses the alternative that maximizes his or her utility if chosen.""
+  - ""If e ij follows a type I extreme value distribution, then the parameters can be estimated with a multinomial logit model-also known as the conditional logit model (Ben-Akiva and Bierlaire, 1999).""
+  - ""the estimation of a conditional logit model requires that we set up a large data matrix that has, for each of the 7,179 offenses analyzed, as many rows as choice alternatives (i.e., each of the 4,000 postal code areas in the data set is a choice alternative for each of the 7,179 offenses).""
+  - ""The dependent variable is defined as a dichotomous variable that equals 1 for the particular area that was actually chosen and equals 0 for all other areas.""
+  - ""The independent variables of theoretical interest vary across both offenses and potential target areas.""",,9
+"(Bernasco, 2010b)",Postal_code_area,Burglary,2.96,Netherlands,"- ""The discrete choice framework was originally developed in economics as a model of individual choice behavior based on the principle of random utility maximization.""
+  - ""The discrete choice framework consists of a set of assumptions regarding four elements of a choice situation (Ben-Akiva and Bierlaire 1999):""
+  - ""the multinomial logit model can be derived, which was originally labeled the conditional logit model (McFadden 1974) and is also simply referred to as 'logit model' in the discrete choice literature.""
+  - ""The spatial competition model (also see Fotheringham et al. 2000;Pellegrini and Fotheringham 2002) allows for spatial decision-making to be spatially hierarchical, and is not saddled with the IIA property nor with the disadvantages of the nested logit model.""
+  - ""the analysis in this article will apply the spatial competition model (Fotheringham et al. 2000;Pellegrini and Fotheringham 2002), a model that is able to estimate the extent to which the choice of a spatial alternative is influenced by the presence and the size of nearby alternatives.""
+  - ""The discrete choice framework is a set of assumptions and methods to model a decisionmaker's choice among a set of alternatives that are mutually exclusive and collectively exhaustive.""
+  - ""The discrete choice framework was developed in the 1970s by McFadden and others working in the field of travel demand, and the first applications of discrete choice were in the study of travel mode choice (i.e., the choice between train, bus, car, or airplane).""",,9
+"(Bernasco & Kooistra, 2010)",Postal_code_area,Robbery,2.96,Netherlands,"- ""To test the four hypotheses on the role of residential history in robbers' target location choices, a method is required that compares the postal code areas that offenders targeted with alternative postal code areas that they did not target.""
+  - ""In the present analysis and in Bernasco (2010), the independent variables of major interest are whether, for how long and until what point the area has been part of the offender's residential history.""
+  - ""To this end, we use the conditional logit model, a regression model that explains the outcome of a decision-maker's choice amongst discrete alternatives""
+  - ""the dependent variable is the probability that an area is chosen as a crime location by the offender.""
+  - ""The independent variables include generic area characteristics such as population size and affluence, as well as offenderspecific characteristics, in particular the distance of the area from the offender's residence.""
+  - ""The parameters in Table 2 are odd ratios, which indicate how much a one unit increase in an independent variable raises (if the odds ratio is above 1) or diminishes (if the odds ratio is below 1) the probability that the area is chosen as a crime location.""
+  - ""The limited size of the sample, motivated by the wish to have a homogeneous set of offenders and offences, is obviously related to this lack of statistical significance.""",,8
+"(Clare et al., 2009)",Residential_suburb,Burglary,6.7,Australia,"- ""Consequently, this article utilises the discrete spatial choice approach to formally evaluate the impact of barriers and connectors on residential burglars' macro-level offending location choices.""
+  - ""The essential elements involved with the application of discrete spatial choice are: (a) defining the boundaries of the choice set, (b) capturing the unique attributes of the decision-makers and (c) modelling the interaction between the individual chooser's characteristics and choice for the whole population (McFadden, 1974).""
+  - ""Equation 2 summarises the structure of the logic that underpins the discrete spatial choice approach.""
+  - ""Equation 2 summarises the structure of the logic that underpins the discrete spatial choice approach. However, in order to apply and test this theoretical construct, a statistical technique called conditional logit modelling is required.""
+  - ""Parameters are estimated by conditional logit models through maximum likelihood methods and, as such, care must be taken to ensure that the estimated standard errors are robust to the probability that the data set contains instances of multiple burglaries committed by the same offenders (clustering of cases).""
+  - ""The conditional logit model draws its versatility from its capacity for z ij to capture variation between choice options and individual's perceptions of the utility of choice options simultaneously, with the model able to: (a) acknowledge the influence of distinct characteristics of all choices available in the choice set, (b) estimate the importance of variable factors such as distance between suburbs and (c) examine the influence of individual chooser characteristics for the outcome of the decision-making process.""",,8
+"(Townsley et al., 2016)",Statistical_local_areas,Burglary,8.48,Australia,"- ""All analyses were conducted in the statistical programming language R using the RSGHB package (Dumont et al. 2013) to estimate both models.""
+  - ""The mixed logit was estimated using hierarchical Bayes, so named because a hierarchy of parameters is estimated.""
+  - ""The mixed logit estimates a set of coefficients for each decision maker.""
+  - ""The mixed logit model is a more general statistical model that allows preferences to be estimated for each decision maker.""
+  - ""Analyzing detected residential burglaries from Brisbane, Australia, we apply a random effects variant of the discrete spatial choice model to estimate preference variation between offenders across six location choice characteristics.""",,5

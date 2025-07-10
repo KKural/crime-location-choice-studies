@@ -1,0 +1,518 @@
+Citation,Year.x,Name_of_the_unit,Crime_Type,spatial_unit_quote,spatial_unit_reasoning
+"(A. Chamberlain et al., 2022)",2022,Block_groups,Burglary,"- ""we include demographic and economic data from the US Census for all 334 block groups in the city.""
+  - ""We use block groups to define a neighborhood because these are the smallest unit available where meaningful sociodemographic data are available.""
+  - ""a handful of block groups were removed due to missing data on some Census variables, leaving the total number of neighborhoods analyzed at 304.""","- The paper specifies that the spatial units of analysis (SUoA) are ""block groups,"" which is a common unit used in census data for demographic analysis.
+- The size of these block groups is not explicitly mentioned in terms of square kilometers or meters, but it is implied that they are the smallest units available for meaningful sociodemographic data.
+- The total number of block groups used in the study is initially 334, but after removing some due to missing data, the final number is 304.
+- The rationale for choosing block groups is explicitly stated as being ""because these are the smallest unit available where meaningful sociodemographic data are available,"" which aligns with the category of ""Data availability.""
+- The population per unit is not explicitly mentioned in the paper, so this information cannot be extracted."
+"(A. W. Chamberlain & Boggess, 2016)",2016,Blocks,Burglary,"- ""The final sample includes 5,182 incidents committed by 6,846 suspects which were aggregated to the census block group, the operational definition of neighborhood.""
+  - ""The final data set contains information on all 334 block groups in the City of Tampa.""
+  - ""We rely on block groups in order to minimize within neighborhood heterogeneity while also ensuring that there is neighborhood contextual data available.""","- The paper specifies that the spatial units of analysis (SUoA) are ""census block groups,"" which is a common administrative unit used in urban studies.
+- The size of these block groups is not explicitly mentioned in terms of square kilometers or meters, but it is implied that they are used as they are defined by the census.
+- The number of units is clearly stated as 334 block groups in the City of Tampa.
+- The population per unit is not explicitly mentioned, but the use of block groups suggests that each unit would contain a range of populations typical for such administrative divisions.
+- The rationale for choosing block groups is to minimize within-neighborhood heterogeneity and ensure availability of contextual data, which aligns with practical constraints and data availability.
+- The justification summary is that block groups were chosen to reduce internal variability and ensure data availability, which is consistent with practical constraints and data availability considerations."
+"(Baudains et al., 2013)",2013,Lower_Super_Output_Area,Riot-Related Incidents,"- ""Data exist across the complete set of 4,765 LSOAs in the Greater London area, and each LSOA typically consists of around 1,500 residents.""
+  - ""In executing our research design, we are interested in offender decision making at the area level, and our chosen unit of analysis is the U.K. census LSOA.""
+  - ""The results presented are robust to the inclusion of two other variables: a measure of police strength and a measure of police relations in the destination areas.""
+  - ""The advantage of smaller sized units of analysis in the discrete choice approach is that the explanatory variables are more representative of the population and characteristics of each area.""
+  - ""The estimates of population churn rates and ethnic heterogeneity were derived using data from the 2001 U.K. Census.""","- The paper specifies that the spatial units of analysis (SUoA) are ""U.K. census LSOA,"" which stands for Lower Super Output Areas. This is a type of administrative unit used in the UK for statistical purposes.
+- The size of each LSOA is not explicitly mentioned in terms of square kilometers or meters, but it is noted that each typically consists of around 1,500 residents.
+- The number of units is clearly stated as 4,765 LSOAs in the Greater London area.
+- The rationale for choosing LSOAs is implied by the mention of data availability and the advantage of smaller units in representing population characteristics.
+- The quoted rationale suggests that the choice was based on data availability and the practical advantage of using smaller units for more representative data.
+- The justification summary is that LSOAs were chosen due to their availability in the UK census data and their suitability for representing detailed population characteristics."
+"(Bernasco & Block, 2009)",2009,Census_tract,Robbery,"- ""In line with many other studies of spatial choice (Block and Block, 1995;Boggs, 1965;Velez, 2001), we use the census tract as our unit of analysis of location choice.""
+  - ""Although smaller units of analysis minimize within-unit heterogeneity, the census tract was chosen as the spatial unit of analysis because it was the lowest level of aggregation for which the ""collective efficacy"" measure was available and because computationally the use of the resource-intensive discrete choice model with smaller spatial units of analysis would have required a drastic reduction in sample size.""
+  - ""Furthermore, our reading of the empirical literature that addresses the modifiable area unit problem in the context of crime (e.g., Hipp, 2007; Wooldredge, 2002) is that effects tend to be fairly robust across geographic levels of aggregation.""
+  - ""Finally, there is also an empirical aspect to the question of the appropriate unit of analysis. No less than 73 percent of the Chicago robberies were committed outside the census tract in which the offender lived.""
+  - ""Data on the population size and the racial and ethnic composition of the 865 census tracts in the city of Chicago in 2000 were taken from the public files of the U.S. Census Bureau.""
+  - ""Tracts with a population below 100 were not used in the analysis, which applies to 21 tracts (2.4 percent); the other 844 census tracts are considered in the analysis.""
+  - ""In future work, it might be advisable to use smaller units of spatial aggregation. Using census tracts, 28 percent of the offenders committed a robbery in their home census tract. Thus, for 28 percent of them, where they live completely explains where they offend.""","- The paper specifies that the spatial unit of analysis (SUoA) used is the ""census tract"" (SUoA Type).
+- The size of the census tracts is not explicitly mentioned in terms of square kilometers or meters, but it is implied that they vary (SUoA Size).
+- The description of the census tracts includes their use as a unit of analysis for location choice and their relevance to collective efficacy measures (SUoA Description).
+- The total number of census tracts used in the analysis is 844 (Number of Units).
+- The population per unit is not explicitly mentioned, but tracts with a population below 100 were excluded (Population per Unit).
+- The rationale for choosing census tracts includes their availability for collective efficacy measures and computational constraints (Quoted Rationale).
+- The rationale category is a mix of data availability and practical constraint (Rationale Category).
+- The justification summary is that census tracts were chosen due to data availability for collective efficacy measures and computational limitations with smaller units (Justification Summary)."
+"(Bernasco & Jacques, 2015)",2015,Street_segment,Drug-related,"- ""The average length of the 262 street segments is 103 meters (SD = 65 m, minimum = 16 m, maximum = 425 m).""
+  - ""The results of our analysis of the interview transcripts demonstrate that street segments are still too coarse as units of analysis, not only because they still cover too large territory but also because their relevant characteristics are not stable over time.""
+  - ""Systematic observation requires that the area be partitioned into spatial units. In line with recent work that advocates the use of small spatial units of analysis (Oberwittler & Wikström, 2009;Weisburd, Groff, & Yang, 2012) and translating it into practical guidelines, 262 street segments were identified in the study area, of which 49 are located in the Red Light District.""
+  - ""The rationale was that for decision making in dealing situations, what matters are the characteristics of a place that can be seen or heard, and it seemed that street segments (""street blocks,"" ""face blocks"") are small enough to assure that from any point in the street segment, relevant attributes of any other point in the same segment could be seen and heard.""
+  - ""Segments were operationally defined as the two sides of a street, road or alley between intersections, or a square.""","- The spatial units of analysis (SUoA) used in the study are ""street segments,"" which are defined as the two sides of a street, road, or alley between intersections, or a square.
+- The size of these units is described by their average length, which is 103 meters, with a standard deviation of 65 meters, and a range from 16 to 425 meters.
+- The total number of spatial units in the study is 262.
+- The rationale for choosing street segments as the SUoA is based on the idea that they are small enough for relevant attributes to be seen or heard from any point within the segment, which is important for decision-making in drug dealing situations.
+- The justification category is ""Theory–method"" because the choice is based on theoretical considerations about the scale at which drug dealing decisions are made.
+- The justification summary is that street segments were chosen because they are small enough to capture relevant environmental characteristics that influence drug dealing decisions."
+"(Bernasco & Kooistra, 2010)",2010,Postal_code_area,Robbery,"- ""The third source of data is a database containing demographic, social and economic information on all postal code areas in the Netherlands.""
+  - ""There are 4006 postal code areas nationwide; they have an average population size of 4900 and an average number of households of 2100.""
+  - ""In terms of size, shape and topography, the postal code area is a useful spatial unit of analysis because it approximates the area one would expect people to be familiar with if they lived within it.""
+  - ""Its boundaries have been designed with post delivery services in mind, physical restrictions on travel within the area are minimal, and it invites local travel by foot and bicycle, modes of travel that provide ample opportunities to learn about the environment.""","- The paper uses ""postal code areas"" as the spatial units of analysis (SUoA Type).
+- The size of these units is not explicitly mentioned in terms of square kilometers or meters, but it is implied that they vary in size (SUoA Size).
+- The description of these units is that they are used for postal delivery services and are designed to be familiar to residents, with minimal physical restrictions and opportunities for local travel (SUoA Description).
+- There are 4006 postal code areas in total (Number of Units).
+- The average population per unit is 4900, with an average of 2100 households (Population per Unit).
+- The rationale for choosing postal code areas is that they are a useful scale for analysis because they approximate familiar areas for residents and have minimal physical restrictions (Quoted Rationale).
+- The rationale category is ""Theory–method"" because the choice is based on the theoretical assumption that these areas are familiar to residents and thus relevant for crime location choices (Rationale Category).
+- The justification summary is that postal code areas are chosen because they represent areas that are familiar to residents, which is consistent with the theoretical framework of crime pattern theory (Justification Summary)."
+"(Bernasco & Luykx, 2003)",2003,Neighborhood,Burglary,"- ""Counting the 89 neighborhoods analyzed, the average neighborhood has a surface of 0.65 square kilometers, is the home to 4950, residents and contains 2350 residential units.""
+  - ""Our measures of ethnic heterogeneity, residentiul mobility, real estate value of residential units and percentage of owner-occupied residential units all were taken from a statistical publication of the municipality of The Hague (DSO, 2001)""
+  - ""We used data on 89 neighborhoods, as 5 neighborhoods are almost or completely non-residential (industrial areas, parks, dune area). Counting the 89 neighborhoods analyzed, the average neighborhood has a surface of 0.65 square kilometers, is the home to 4950, residents and contains 2350 residential units.""
+  - ""The hypotheses are tested using data on the city of The Hague, the Netherlands. With a population of about 440,000, it is a large city according to Dutch standards. The Hague is the ""administrative capital"" of the Netherlands, as it hosts the Dutch national parliament, the government departments, and many semi-governmental organizations as well. The city is situated at the North Sea coast, and its current boundaries include the former coastal villages of Scheveningen, Loosduinen and Kijkduin. The city comprises 94 neighborhoods.""
+  - ""We used data on 89 neighborhoods, as 5 neighborhoods are almost or completely non-residential (industrial areas, parks, dune area).""
+  - ""The city comprises 94 neighborhoods.""","- The paper uses neighborhoods as the spatial units of analysis (SUoA Type: Administrative unit).
+- The size of each neighborhood is described as having an average surface area of 0.65 square kilometers (SUoA Size: 0.65 km²).
+- The description of the spatial units includes that they are neighborhoods within the city of The Hague, with an average population of 4950 residents and 2350 residential units per neighborhood (SUoA Description).
+- The total number of spatial units used in the study is 89 neighborhoods (Number of Units: 89).
+- The average population per unit is 4950 residents (Population per Unit: 4950).
+- The rationale for choosing neighborhoods as the spatial units is not explicitly stated in terms of ""because,"" ""due to,"" or similar phrases, but it is implied that the choice was based on data availability from the municipality of The Hague (Quoted Rationale: Not explicitly stated, but implied by data source).
+- The rationale category is likely ""Data availability"" since the data was taken from a statistical publication of the municipality (Rationale Category: Data availability).
+- The justification summary is that neighborhoods were used as spatial units because they are the administrative divisions for which data was readily available from the municipality of The Hague (Justification Summary)."
+"(Bernasco & Nieuwbeerta, 2005)",2005,Neighborhood,Burglary,"- ""The average neighbourhood has a surface of 0.65 square kilometres, is home to 4,952 residents and contains 2,380 residential units (DSO 2001).""
+  - ""In order to test hypotheses on burglary location choice in The Hague, we introduced a new approach, i.e. the discrete spatial choice approach.""
+  - ""The geometric positions of the 89 residential neighbourhoods are displayed in Figure 1""
+  - ""The Hague comprises 89 residential neighbourhoods.""","- The paper specifies that the study area is divided into ""89 residential neighbourhoods,"" which are the spatial units of analysis (SUoA Type: Administrative unit).
+- The size of each spatial unit is described as having ""a surface of 0.65 square kilometres,"" indicating the SUoA Size.
+- The description of each spatial unit includes the number of residents and residential units, providing a detailed SUoA Description.
+- The total number of spatial units is explicitly stated as ""89 residential neighbourhoods,"" which is the Number of Units.
+- The average population per unit is given as ""4,952 residents,"" which is the Population per Unit.
+- The rationale for choosing these spatial units is not explicitly justified with a quote, but it can be inferred that the choice was based on administrative convenience and data availability, as the data was obtained from the municipality of The Hague.
+- The Rationale Category is likely ""Data availability / Admin convenience"" due to the use of existing administrative boundaries and data sources.
+- The Justification Summary is that the spatial units were chosen based on administrative boundaries and data availability from the municipality of The Hague."
+"(Bernasco et al., 2013)",2013,Census_block,Robbery,"- ""We use data that are disaggregated to the level of census blocks.""
+  - ""In 2000 there were 24,594 census blocks in Chicago from which a robber chooses a single one when committing a robbery.""
+  - ""In Chicago, with an average surface of 140 m Â 140 m (460 ftÂ 460 ft) and an average population of 118 residents, census blocks are approximately 30 times smaller than census tracts.""
+  - ""In this article, we introduce three major advances over prior work on crime location choice. The first applies to spatial scale. While classic studies on the geography of crime (Shaw and McKay, 1942;Sampson et al., 1997) have used large urban areas as their spatial units of analysis, recent research suggests that often crime concentrations are not larger than a street segment (Smith et al., 2000;Weisburd et al., 2004) or street corner (McCord and Ratcliffe, 2007). To improve our understanding of the fine-grained spatial decisions of street robbers, we zoom in to the level of census blocks.""
+  - ""Zooming in to block level allows us to analyze in a detailed way the location choices of robbers.""","- The paper uses census blocks as the spatial unit of analysis (SUoA Type: Census block).
+- The size of each census block is described as having an average surface of 140m x 140m (SUoA Size: 140m x 140m).
+- The description of census blocks includes their average population and size relative to census tracts (SUoA Description: Average population of 118 residents, 30 times smaller than census tracts).
+- There are 24,594 census blocks in the study (Number of Units: 24,594).
+- The average population per unit is 118 residents (Population per Unit: 118 residents).
+- The rationale for choosing census blocks is to improve understanding of fine-grained spatial decisions and because crime concentrations are often smaller than larger urban areas (Quoted Rationale: ""To improve our understanding of the fine-grained spatial decisions of street robbers, we zoom in to the level of census blocks"").
+- The rationale category is Theory–method and Scale optimization (Rationale Category: Theory–method / Scale optimization).
+- The justification summary is that census blocks were chosen to provide a detailed analysis of robbery location choices, reflecting the fine-grained nature of crime concentrations (Justification Summary: Census blocks were chosen for detailed analysis of robbery locations)."
+"(Bernasco et al., 2015)",2015,Lower_Level_Super_Output_Area_(LSOA),Burglary,"- ""As a compromise, we decided to use the UK Census Lower Level Super Output Area (LSOA) geography as the basic spatial unit of analysis.""
+  - ""Spillover effects can be assessed using either hierarchical spatial nesting structures or spatial proximity structures (Bernasco & Elffers, 2010). Because the boundaries of the UK census areas are designed to optimize social homogeneity in terms of household tenure and dwelling type (Haining, 2012;Sturgis, Brunton-Smith, Kuha, & Jackson, 2013), we preferred the former, and estimated spillover using variables measured at the next higher level of the census geography in the UK, the Middle Layer Super Output Area (MSOA).""
+  - ""LSOAs are defined on the basis of proximity and social homogeneity measures (type of dwelling and nature of tenure) and have a population of approximately 1,500 residents and 600 households.""
+  - ""LSOAs are smaller than the postal code areas used in some other crime location choice studies (Bernasco, 2010b;Lammers et al., 2015) but larger than the micro-scale places used in others (Bernasco, 2010a;Bernasco et al., 2013).""
+  - ""The concept of crime location choice presumes spatial units of analysis, which are the alternative locations that burglars choose from when deciding on where to commit a burglary.""","- The paper specifies that the spatial units of analysis are the UK Census Lower Level Super Output Areas (LSOAs).
+- The size of these units is described as having a population of approximately 1,500 residents and 600 households.
+- The number of units is not explicitly mentioned in the provided text, but it is implied that there are multiple LSOAs used in the study.
+- The rationale for choosing LSOAs is based on their definition by proximity and social homogeneity measures, which aligns with the theoretical framework of crime location choice.
+- The choice of LSOAs is also justified by their size being smaller than postal code areas but larger than micro-scale places, suggesting a balance in scale optimization.
+- The use of LSOAs is consistent with prior research and allows for the assessment of spillover effects using hierarchical spatial nesting structures."
+"(Bernasco et al., 2017)",2017,Census_block,Robbery,"- ""The spatial units of analysis are census blocks.""
+  - ""As robberies can be committed anywhere in outdoor public space, all census blocks are included in the analyses.""
+  - ""About 98.5 percent of these addresses were successfully geocoded and assigned to 1 of the 24,594 census blocks in the city of Chicago.""
+  - ""The mean age was 23.9 years (SD ¼ 8.8), 89.7 percent were male, 78.4 percent were African American, 15.6 percent were Hispanic, and 5.5 percent were White.""
+  - ""The data also include information on the offenders who were arrested for committing these street robberies, including gender, racial and ethnic background, age, and residential address at the time of the robbery.""
+  - ""The analysis is limited to cleared robberies because only for cleared robberies offender addresses are available, and distance from the offender home location is by far the most important predictive factor in crime location choice""","- The paper specifies that the spatial units of analysis are ""census blocks,"" which is a common administrative unit used in urban studies.
+- The size of these census blocks is described as having a median size of 19,680 m², which is approximately 140 × 140 m.
+- The total number of census blocks used in the study is 24,594.
+- The rationale for using census blocks is not explicitly stated in terms of ""because,"" ""due to,"" or similar phrases, but it is implied that they are used because they are the smallest administrative units available for analysis, which allows for detailed spatial analysis.
+- The use of census blocks is consistent with prior research in criminology, where such units are often used for spatial analysis due to their availability and relevance to urban crime patterns.
+- The justification for using census blocks can be inferred as being due to their appropriateness for detailed spatial analysis and the availability of data at this scale."
+"(Bernasco, 2006)",2006,Neighborhood,Burglary,"- ""The Hague comprises of 89 residential neighbourhoods.""
+  - ""The geometric positions of the 89 residential neighbourhoods are displayed in Figure 1""
+  - ""Each residential burglary and each offender address was assigned to one of the 89 residential neighbourhoods of The Hague.""
+  - ""The average neighbourhood has an area of 0.65 square kilometres, is the home to 4952 residents and contains 2380 residential units.""","- The paper specifies that the study area is divided into ""89 residential neighbourhoods,"" which indicates the type of spatial unit used.
+- The size of each spatial unit is described as having an ""average area of 0.65 square kilometres,"" providing the size of the spatial units.
+- The description of each spatial unit includes the number of residents and residential units, offering a detailed description of the spatial units.
+- The total number of spatial units is explicitly stated as ""89 residential neighbourhoods.""
+- The average population per unit is given as ""4952 residents.""
+- The rationale for choosing these spatial units is not explicitly justified in terms of why this scale was chosen, but it is implied that the use of administrative units like neighborhoods is due to data availability and administrative convenience."
+"(Bernasco, 2010a)",NA,Postal_code_area,Multiple Types,"- ""The third source is a national database of demographic, social, and economic information on all (four-digit) postal code areas in the Netherlands.""
+  - ""There are approximately 4,000 postal code areas nationwide, with an average population size of 4,900 and an average number of households of 2,100.""
+  - ""In terms of their size, shape, and topography, the postal code area is a useful approximation of the area one would expect people to be familiar with if they lived within it.""
+  - ""postal code boundaries have been designed with post delivery services in mind. This design ensures that minimal physical restrictions on travel are in place within the postal code area and that the areas invite local travel by foot and bicycle (which is how post generally is delivered in the Netherlands).""
+  - ""the size of postal code areas is related inversely to the level of urbanization. Postal codes in urban areas usually cover less than half a square mile, whereas postal codes in more rural regions are larger (less than 2 square miles).""
+  - ""Throughout the remainder of this article, where ""area of residence"" is used to describe empirical findings, it means ""postal code area of residence.""""","- The paper uses postal code areas as the spatial units of analysis (SUoA Type: Administrative unit).
+- The size of these units varies inversely with urbanization, with urban areas being smaller and rural areas larger (SUoA Size: varies).
+- The description of these units highlights their design for postal delivery, which minimizes travel restrictions and encourages local familiarity (SUoA Description).
+- There are approximately 4,000 postal code areas in the study (Number of Units).
+- The average population per unit is about 4,900 (Population per Unit).
+- The rationale for choosing postal code areas is based on their design and the inverse relationship with urbanization, which makes them a useful approximation for areas of familiarity (Quoted Rationale).
+- The rationale category is a combination of data availability and practical convenience, as the data are readily available at this scale and it aligns with administrative boundaries (Rationale Category).
+- The justification summary is that postal code areas are used because they are a practical and data-rich scale that reflects local familiarity and travel patterns (Justification Summary)."
+"(Bernasco, 2010b)",NA,Postal_code_area,Burglary,"- ""The empirical analysis distinguishes small residential areas approximately the size of a football field, containing only 18 residential units and 40 residents on average.""
+  - ""The postal code system was created with the facilitation of postal delivery services in mind. Therefore, a single postal code is nearly always on the same street, applies to adjacent properties, and is not subdivided by physical barriers that impede pedestrian or car transportation.""
+  - ""the study area (Greater The Hague Area) measures 400 sq. km, and houses a population of 1,000,000 residents in 460,000 residential units. This area comprises 26,214 postal code areas.""
+  - ""For the present study on residential burglary, only the 23,984 postal codes areas (91.5%) were used that contain at least 3 residential units and at least 3 residents""
+  - ""The postal codes in the area comprise 18 addresses on average.""
+  - ""The geographic position of a postal code is calculated as the geographic mean of these addresses.""
+  - ""the qualifications of a behavior setting (Barker 1968;Wicker 1987) or setting (Wikstro ¨m 2006) seem to fit the postal code area unit well.""
+  - ""the main criterion for choosing a particular unit of analysis is the theory to be tested. The unit of analysis should match the theory""
+  - ""Many contemporary scholars in geographic criminology advocate the use of much smaller spatial units of analysis (Groff et al. 2009;Oberwittler and Wikstro ¨m 2009;Smith et al. 2000)""
+  - ""The first reason to favor small spatial units is the generic principle in all sciences that to understand the characteristics and behavior of an object of inquiry, it is helpful to understand the characteristics and the behavior of its constituting elements, as well as the nature of the relations between these constituting elements.""","- The spatial units of analysis (SUoA) used in the study are described as ""small residential areas approximately the size of a football field,"" which indicates the size of these units.
+- The SUoA type is identified as ""postal code areas,"" which are used as the spatial units for analysis.
+- The number of units is specified as 23,984 postal code areas, which were selected based on containing at least 3 residential units and 3 residents.
+- The population per unit is described as containing ""18 residential units and 40 residents on average.""
+- The rationale for choosing these spatial units is justified by the need to match the theory being tested and the preference for smaller units to understand constituting elements and their relationships.
+- The justification category is primarily based on ""Theory–method"" and ""Prior research,"" as indicated by the references to matching the theory and following contemporary scholars' recommendations for smaller spatial units."
+"(Bernasco, 2019)",2019,Grid_cell,Multiple Types,"- ""The model fit measure is the rank number of the grid cell where the crime was actually committed, divided by the total number of 4558 grid cells, averaged over all crimes.""
+  - ""Following [8], the predictability of an individual's whereabouts was derived from entropy measures of the sequence of 96 locations (i.e., 200 × 200m grid cells) reported in the space-time budget.""
+  - ""the offender chooses a single location from the full choice set of 4558 locations (67 × 67 = 5092 grid cells of 200x200m each, minus 544 grid cells completely located on the North Sea).""
+  - ""The values of β 1 to β 17 are parameters that are estimated from the data.""
+  - ""the characteristic size of the area covered by the mobility of a single person up to time t is indicated by his or her radius of gyration""","- The paper uses a grid cell system as the spatial unit of analysis (SUoA Type: Grid cell).
+- Each grid cell is 200x200m in size (SUoA Size: 200m x 200m).
+- The total number of grid cells used in the study is 4558 (Number of Units: 4558).
+- The paper does not provide specific information on the population per unit or a detailed description of the spatial units beyond their size and number.
+- The rationale for choosing this spatial scale is not explicitly stated in terms of ""because,"" ""due to,"" or similar phrases, but it is implied that the choice is consistent with prior research and practical constraints, as indicated by the reference to other studies and the use of a discrete spatial choice approach.
+- The justification summary is that the grid cell system was likely chosen for its consistency with prior research and practical constraints, although this is not explicitly stated."
+"(Cai et al., 2024)",2024,Community,Burglary,"- ""We use communities (juweihui or cunweihui) as the unit of analysis. Communities are the smallest administrative unit where population census and major survey data are collected.""
+  - ""These communities with relatively high resident homogeneity are comparable to prior studies in terms of geographic and population sizes (Bernasco and Block 2009;Song et al. 2019).""","- The paper specifies that the spatial units of analysis are ""communities (juweihui or cunweihui),"" which are administrative units.
+- The size of these units is described as having an average geographic area of 2.813km² for all communities, but the analytical sample has an average size of 0.958km².
+- The number of units in the study is 1,652 after excluding those without street view images.
+- The average population per unit is 5,957.
+- The rationale for choosing these units is implied by their use as the smallest administrative units for census and survey data collection, suggesting a practical convenience and data availability rationale.
+- The mention of comparability to prior studies indicates a consideration of consistency with previous research."
+"(Clare et al., 2009)",2009,Residential_suburb,Burglary,"- ""The city of Perth is located in the south-west of Western Australia at the coast of the Indian Ocean. The estimated residential population of Perth in 2001 was 1,381,298 people. Perth is the largest city in Western Australia, with suburbs that sprawl along the coast for approximately 100 km and extend inland from the coast by up to 40 km.""
+  - ""A total of 291 residential suburbs were selected as members of the possible choice set for the residential burglaries examined here.""
+  - ""It is important to note here that the term suburb as used in Western Australia has a different meaning to other parts of the world (particularly the United States and Canada), and is more akin to a neighbourhood in these areas.""
+  - ""The overall geographic placement of these suburbs in relation to the Swan River, selected major roads, and the location of the railway line are displayed in Figure 1""
+  - ""The essential elements involved with the application of discrete spatial choice are: (a) defining the boundaries of the choice set, (b) capturing the unique attributes of the decision-makers and (c) modelling the interaction between the individual chooser's characteristics and choice for the whole population (McFadden, 1974).""
+  - ""The final dataset contained 1,761 singleoffender (actual or attempted) residential burglaries committed between January 1, 2001, and December 31, 2002 , where the offender resided in the city of Perth.""
+  - ""The advantage of the discrete spatial choice approach is that it places realistic constraints on those 'bounded rational choices' that rational choice theorists discuss (Cornish & Clarke, 1986).""
+  - ""A further issue concerns the selection of the spatial scale for burglary analysis in this case. This is a complex problem and there may be no solution that is applicable across the ecology of different cities.""","- The paper uses ""residential suburbs"" as the spatial units of analysis (SUoA Type).
+- The average size of these suburbs is given as 6.76 km² (SUoA Size).
+- The suburbs are described as having a mean population of 4,669 residents and 1,791 dwellings (SUoA Description).
+- There are 291 residential suburbs in the study (Number of Units).
+- The average population per unit is 4,669 residents (Population per Unit).
+- The rationale for choosing suburbs as the spatial unit is not explicitly justified with a direct quote, but it is implied that suburbs are used because they are a natural administrative unit in Western Australia and are consistent with the data available from the Australian Bureau of Statistics (Quoted Rationale).
+- The rationale category is likely ""Data availability"" and ""Admin convenience"" since suburbs are a standard administrative unit in Western Australia and data is readily available at this level (Rationale Category).
+- The justification summary is that suburbs were chosen as the spatial unit because they are a standard administrative unit in Western Australia, aligning with available data and administrative convenience (Justification Summary)."
+"(Curtis-Ham et al., 2022a)",NA,"Statistical_Area_
+2",Burglary,"- ""The median land area of the sampled SA2s was 1.2km 2 (quartiles 0.84, 2.2 km 2 ) on average across the five offences modelled.""
+  - ""SA2s are comparable to the units used in other neighbourhood level DSCM studies (e.g., Clare et al. 2009;Townsley et al. 2015).""
+  - ""Selecting the spatial unit involves balancing a range of considerations by the analyst (Bernasco 2010a). These include theoretical relevance (how big is one unit of 'activity space'?), spatial spill-over (if the unit is too small the choice is influenced by the attributes of surrounding units), spatial heterogeneity (if the unit is too big then variation within the unit that could affect the choice is not captured), and computational processing (if there are too many units the capacity of available computing equipment may be exceeded).""","- The spatial unit of analysis (SUoA) used in the study is the ""Statistical Area 2"" (SA2), which is a type of administrative unit.
+- The size of these units is described as typically containing 2000-4000 residents in urban areas and 1000-3000 residents in rural areas, with a median land area of 1.2 km².
+- The number of units is not explicitly mentioned, but it is implied that there are multiple SA2s used in the study.
+- The rationale for choosing SA2s includes their comparability to units used in other studies and the need to balance theoretical relevance, spatial spill-over, spatial heterogeneity, and computational processing.
+- The justification category is a mix of prior research and practical constraint, as the choice is influenced by both the comparability to other studies and the practical considerations of data analysis."
+"(Curtis-Ham et al., 2022b)",NA,Statistical_Area,Burglary,"- ""In this study we used the NZ Census Statistical Area 2 (SA2) as the set of locations from which an offense location could be chosen.""
+  - ""There were 2153 SA2s, with land areas of 0.063km 2 to 12,042.36km 2 , reflecting the relative population density in urban and rural areas (median 1.962km 2""
+  - ""SA2s roughly equate to neighborhoods and typically contain 2000-4000 residents in metropolitan areas (1000-5000 in rural areas).""
+  - ""SA2s are comparable to the units used in other crime location choice studies (e.g., Clare et al. 2009;Townsley et al. 2015).""","- The paper specifies that the spatial units of analysis (SUoA) used in the study are the New Zealand Census Statistical Area 2 (SA2).
+- The size of these units is described in terms of land area, ranging from 0.063 km² to 12,042.36 km², with a median of 1.962 km².
+- The number of SA2s used in the study is given as 2153.
+- The population per unit is described as typically containing 2000-4000 residents in metropolitan areas and 1000-5000 in rural areas.
+- The rationale for choosing SA2s is implied by their comparability to units used in other crime location choice studies, suggesting a basis in prior research and consistency with established methodologies."
+"(Curtis-Ham et al., 2025)",2025,Statistical_Area,Burglary,"- ""In the present study the alternatives are the neighborhoods (""Statistical Area 2"" Census Units, or ""SA2s"") from which offenders are selecting when deciding where to commit crime.""
+  - ""Consistent with previous studies (e.g., Clare et al., 2009;Townsley et al., 2015), we use SA2s as the spatial unit to examine meso-level spatial choices.""
+  - ""using SA2s balances the risk of ignoring spatial spill-over mechanisms-where choices between small units are affected by nearby units-and the risk of ignoring spatial heterogeneity-where the use of large units may fail to capture important variation within those units.""","- The paper specifies that the spatial units of analysis are ""Statistical Area 2"" Census Units, or ""SA2s,"" which are a type of administrative unit.
+- The size of these units is described as having a median land area of 1.2 km², with a range of 0.84 to 2.2 km².
+- The number of units is not explicitly mentioned in the provided text, but it is implied that there are 2,153 SA2s in total, as mentioned in the context of sampling.
+- The population per unit is given as typically containing 2,000-4,000 residents, with a lower range in rural areas.
+- The rationale for choosing SA2s is based on consistency with previous studies and the balance between avoiding spatial spill-over and capturing spatial heterogeneity.
+- The justification category is ""Prior research"" and ""Theory–method,"" as the choice is consistent with previous studies and aligns with theoretical considerations for spatial analysis."
+"(Frith et al., 2017)",2017,Street_segment,Burglary,"- ""Analyses were conducted for all street segments in the towns of High Wycombe and nearby Beaconsfield and Marlow in Buckinghamshire (U.K.).""
+  - ""The study area was defined by identifying the ""built-up areas"" of the three towns and by applying a 1-km buffer around them""
+  - ""For example, people do not navigate from one large area to another; they navigate along the road network. As such, a spatial resolution at this scale (e.g., street segment) should better capture the spatial logic of offender decision-making""
+  - ""These smaller spatial units are also methodologically justified as even if an offender's mental map is more generalized than is specified, local variations would be unobserved if aggregated before measurement""
+  - ""The use of this framework has now become well established in the criminological literature, although the units of analysis considered are typically large areal units (for an overview of studies, see appendix C in the online supporting information).""
+  - ""For parsimony, table 3 shows the results for the key variables of interest, along with the model fits from the ML models. Estimates for the full models can be found in appendices D and E in the online supporting information.""
+  - ""the unit of analysis is the street segment.""","- The spatial units of analysis (SUoA) used in the study are street segments, as indicated by the repeated mention of ""street segments"" throughout the paper.
+- The study area covers approximately 150 km² and includes 5,286 street segments, which provides the number of units.
+- The rationale for choosing street segments as the spatial unit is that people navigate along the road network, and this scale better captures the spatial logic of offender decision-making.
+- The choice of street segments is also justified by the methodological consideration that local variations would be unobserved if aggregated before measurement.
+- The paper does not provide specific details on the size of each street segment or the population per unit, but it does mention that there are 81,682 dwellings across these segments.
+- The rationale category is Theory–method, as the choice is based on theoretical considerations about how offenders navigate and make decisions."
+"(Frith, 2019)",2019,"Census_output_
+areas",Serious Acquisitive Crime (Sac),"- ""the alternatives in this analysis are output areas, herein referred to as neighbourhoods, which are the smallest units for which the variables in this study are available.""
+  - ""The study area in these analyses is the city of York (UK), which covers approximately 270km""
+  - ""In general, finer spatial granularity are to be preferred (see also Weisburd et al., 2009). For example, while offenders' mental boundaries between areas are effectively inscrutable, and will, to some degree, vary from offender to offender, larger spatial areas tend to be more heterogeneous.""
+  - ""For these analyses, revealed preference data for 1,105 recorded3 and solved4 SAC in York committed by 687 offenders living in York between April 2008 and March 2012 were collected.""","- The paper specifies that the spatial units of analysis are ""output areas"" referred to as ""neighbourhoods,"" which are the smallest units for which data is available. This indicates the SUoA Type is ""Output areas"" or ""Neighbourhoods.""
+- The size of these units is not explicitly mentioned in terms of square kilometers or meters, but it is implied that they are the smallest available units, suggesting a focus on fine granularity.
+- The number of units is not directly stated, but the study involves 1,105 offence location choices, which may imply a large number of units.
+- The population per unit is not provided, but the focus on neighbourhoods suggests a relatively small population per unit.
+- The rationale for choosing these units is based on data availability and the preference for finer spatial granularity, as indicated by the quote about preferring finer granularity and the use of the smallest available units.
+- The justification summary is that the spatial units were chosen based on data availability and the preference for finer spatial granularity to capture detailed variations in offender behavior."
+"(Hanayama et al., 2018)",2018,Grid_cell,Burglary,"- ""Using grid cells as alternatives in the conditional logit model allows the unbiased comparison of alternatives, because the grid cells are equal in size.""
+  - ""We used data from 369 solved cases committed by 70 offenders and related these data to 1,134 areas (500 m grid cells) in Sendai City, Japan.""
+  - ""The Japanese national census, in addition to neighbourhood units, makes data aggregated by grid cell unit available. The size of grid cells is 500 m on a one side and comes with specified longitude and latitude data.""
+  - ""Ratcliffe (2003) showed that physical boundaries separating neighbourhoods, such as highways and parkland, do not form barriers to the movement of residential burglars.""","- The paper specifies that the spatial units of analysis are ""500 m grid cells"" in Sendai City, Japan, which indicates the SUoA Type and Size.
+- The total number of spatial units used in the study is 1,134, as mentioned in the abstract and methodology sections.
+- The rationale for choosing grid cells is partly due to their equal size, which allows for unbiased comparison in the conditional logit model.
+- The paper also references Ratcliffe (2003) to justify the use of grid cells, suggesting that physical boundaries do not significantly impact the movement of burglars, which supports the choice of grid cells as a practical and theoretical basis for analysis.
+- The justification category is a mix of ""Data availability"" (since data is aggregated by grid cell units) and ""Theory–method"" (as it aligns with the need for unbiased comparison and theoretical considerations about offender movement)."
+"(Johnson & Summers, 2015)",2015,Lower_Super_Output_Area,Theft,"- ""The unit of analysis selected was the U.K. census Lower Super Output Area (LSOA).""
+  - ""For the study area, there were 198 LSOAs, each with a population of around 1,524 people and about 662 residential households.""
+  - ""LSOAs are somewhat smaller than the areas used in most (but not all; for example, Bernasco et al., 2013) previous studies of this kind.""
+  - ""Using a Geographical Information System (GIS), the police data were ""related"" to maps of the area to determine origindestination flows.""","- The paper specifies that the spatial units of analysis are ""U.K. census Lower Super Output Areas (LSOAs),"" which indicates the type of spatial unit used.
+- The size of each LSOA is described in terms of population and households, with approximately 1,524 people and 662 households per unit.
+- The number of units is explicitly stated as 198 LSOAs.
+- The rationale for choosing LSOAs is not explicitly justified with a direct quote, but it is implied that they are used because they are a standard administrative unit for census data in the UK, which is often used in research for data availability and administrative convenience.
+- The use of LSOAs is consistent with prior research, as indicated by the comparison with other studies that have used similar or larger units."
+"(Kuralarasa et al, 2024)",2024,Street_segment,Graffiti/Vandalism,"- ""We chose to represent street segments using polygons rather than the more common ""line"" representations.""
+  - ""Our final dataset includes information from 2,233 street segments from the original 2,392.""
+  - ""The spatial resolution of a street segment naturally corresponds to human observational limitations. It possesses attributes suitable for direct sensory perception, making it especially relevant for measuring exposure.""
+  - ""We adopted street segments as our spatial unit of analysis, aligning with recent research advocating the use of street segments or similarly sized spatial units for analyzing crime and disorder (Groff et al., 2010;Weisburd et al., 2004).""
+  - ""These categories have different structural characteristics that directly affect urban traffic flows in general and may indirectly influence social dynamics.""","- The paper specifies that the spatial unit of analysis (SUoA) used is the ""street segment,"" which aligns with recent research recommendations for analyzing crime and disorder.
+- The size of these street segments is not explicitly mentioned in terms of exact dimensions, but they are described as being represented by polygons, which suggests a variable size depending on the urban layout.
+- The number of units is clearly stated as 2,233 street segments.
+- The population per unit is not mentioned in the paper.
+- The rationale for choosing street segments is based on their alignment with human observational limitations and their suitability for measuring exposure, which falls under the category of ""Theory–method.""
+- The justification summary is that street segments were chosen because they align with human observational limitations and are suitable for measuring exposure, which is consistent with recent research recommendations."
+"(Kuralarasan & Bernasco, 2022)",2022,Wards,Theft,"- ""Contemporary work on crime at places (Lee et al. 2017;Weisburd et al. 2009) emphasizes the heterogeneity of such large units and suggests that crime better be studied at more fine-grained resolutions, such as streets, street segments or parcels, as this could better reflect the very local nature of crime attractors and generators and guardianship.""
+  - ""In terms of surface area, the wards are similar in size to neighborhoods or census tracts that have been used in crime location studies elsewhere (i.e., Long et al. 2018;Townsley et al. 2015), but due to the high population density in Chennai, the population sizes of wards are larger than those in most other studies.""
+  - ""The study area for the present research is the Greater Chennai City Corporation, a metropolitan area with a population of over 6.6 million during the latest census in 2011. It consists of 201 wards with an average surface area of 2.18 km 2 (quartiles 0.97, 1.61 and 2.53) and an average population of 33,195 (quartiles 21,451, 36,560 and 43,622)""","- The spatial units of analysis (SUoA) used in the study are administrative units known as ""wards"" within the Greater Chennai City Corporation.
+- The size of these wards varies, with an average surface area of 2.18 km² and a range from 0.97 to 2.53 km².
+- The number of wards used in the study is 201.
+- The average population per ward is 33,195, with a range from 21,451 to 43,622.
+- The rationale for using wards as the spatial unit is not explicitly stated in terms of why they were chosen over other units, but it is implied that they are used because they are similar in size to neighborhoods or census tracts used in other studies.
+- The justification category is not explicitly stated, but it can be inferred as ""Prior research"" since the wards are compared to units used in other studies.
+- The justification summary is that wards were used as they are comparable to units used in other crime location studies, despite the recognition that finer-grained resolutions might be more ideal for capturing local crime dynamics."
+"(Lammers et al., 2015)",2015,Postal_code_area,Multiple Types,"- ""Therefore, four-digit postal code areas are the spatial unit of analysis to indicate ""crime locations"" (crime target areas) and ""areas of residence.""""
+  - ""Most other studies on crime location choice analyzed areas of similar or larger size (e.g., Bernasco, 2010b; Bernasco and Block, 2009;Bernasco and Nieuwbeerta, 2005;Clare, Fernandez, and Morgan, 2009;Townsley et al., 2014). Only two crime location choice studies used smaller units of analysis (Bernasco, 2010a; Bernasco, Block, and Ruiter, 2013), but these were designed with very different objectives in mind (e.g., the identification of micro hot spots for robbery and the estimation of spillover effects) than the current study, in which the focus is on the personal geographic experience of offenders.""","- The spatial unit of analysis (SUoA) used in the study is the ""four-digit postal code area.""
+- The size of these units is described as having an ""average size of 2.96 km².""
+- The number of units is specified as ""142 four-digit postal code areas.""
+- The average population per unit is approximately ""7,000.""
+- The rationale for choosing this spatial scale is justified by the fact that ""Dutch postal code areas are designed to have minimal travel restrictions for postal delivery services usually traveling on foot or bicycle, and the size of a postal code area is inversely related to its level of urbanization that matches the geographic coverage of residents.""
+- The justification category is ""Theory–method"" because the choice is based on the theoretical assumption that these areas are familiar to individuals and align with urbanization levels.
+- The justification summary is that four-digit postal code areas are used because they are considered a familiar scale for individuals and match urbanization patterns, making them appropriate for studying crime location choices."
+"(Lammers, 2017)",2017,Postal_code_area,Burglary,"- ""the choice set consists of 142 four-digit postal code areas in the greater The Hague region.""
+  - ""Since the four-digit postal code areas were designed to have minimal travel restrictions for postal delivery services travelling by bike or foot (Bernasco 2010b) , it is plausible that those living in or frequently visiting such an area will be familiar with it.""","- The spatial unit of analysis (SUoA) used in the study is the ""four-digit postal code area,"" which is an administrative unit.
+- The size of each SUoA is specified as having an ""average size of 2.96 km².""
+- The number of units is explicitly mentioned as ""142 four-digit postal code areas.""
+- The average population per unit is given as ""7,000.""
+- The rationale for choosing this spatial scale is implied by the mention that these areas were ""designed to have minimal travel restrictions for postal delivery services travelling by bike or foot,"" suggesting practical convenience and familiarity for residents.
+- The justification category is ""Admin convenience"" and ""Practical constraint,"" as the choice is based on existing administrative boundaries and practical considerations for travel and familiarity.
+- The justification summary is that the four-digit postal code areas were chosen due to their design for minimal travel restrictions, making them a practical and convenient scale for analysis."
+"(Langton & Steenbeek, 2017)",2017,Residential_property,Burglary,"- ""The total sample is split between the 'treatment' group of observations, suffering from the disease of interest, and the 'control' group, which are free of the disease.""
+  - ""the 'treatment' observations are those properties that were burgled, and the 'control' observations are those that were not.""
+  - ""By sampling treatments and controls by neighbourhood, observations can be systematically compared whilst keeping all contextual characteristics on the neighbourhood-level constant, and no assumptions have to be made regarding omitted variable bias.""
+  - ""The neighbourhoods of The Hague that were used in this study are exhibited in Fig. 1 , along with a single demonstrative neighbourhood to visualise the case-control design, using synthetic crime data.""
+  - ""the final sample used for analysis therefore consisted of 300 single houses, evenly split between burglarised and non-burglarised dwellings.""
+  - ""the data used for the neighbourhood-level construct was retrieved courtesy of Bruinsma et al. (2013), gathered from the community survey which contained five questions on social trust and six questions on informal social control""
+  - ""The final construct had a mean of 0.07 (min ¼ À1.80, max ¼ 2.28, SD ¼ 1.05).""
+  - ""The average response per neighbourhood was 36 respondents, giving a net-response rate of 31 percent (Bruinsma et al., 2013).""
+  - ""Of these 86, only those that contained at least one burglarised house and comprehensive coverage of GSV were retained, leaving 55 usable neighbourhoods.""","- The study uses a case-control design, where the spatial units are individual properties (houses) rather than larger administrative or grid-based units.
+- The study is conducted at the property level, with a focus on the physical attributes of residential homes and their immediate surroundings.
+- The spatial units are not explicitly defined in terms of size or type (e.g., census tracts, block groups), but rather as individual properties within neighborhoods.
+- The study uses neighborhoods as a broader context to control for contextual characteristics, but the primary focus is on individual properties.
+- The justification for using individual properties as spatial units is implicit in the methodology, which aims to isolate property-level effects from neighborhood-level effects.
+- The rationale category is likely ""Theory–method"" because the choice of spatial units aligns with the study's focus on property-level attributes and the use of a case-control design."
+"(Long & Liu, 2021)",2021,Neighborhood,Robbery,"- ""The second type of data is a dataset coupled with individual factors (distance of journey to crime variables) and key neighborhood factors, including 2014 POI data (point coordinates), 2014 traffic road network vector map data, 2015 bus stop data (point coordinates) crawled based on Baidu API, within one week of 12 to 18 May 2016 ZG City's mobile phone data and the sixth census data of ZG city in 2010 (Table 3""
+  - ""The data used in this paper include the arrest data and neighborhood characteristics data of ZG City. The first type of data is the arrest data of street robbers in ZG City from 2012 to 2016 provided by ZG City's Public Security Department.""
+  - ""The data used in this paper include the arrest data and neighborhood characteristics data of ZG City.""
+  - ""The study area consists of 1971 neighborhoods (Figure 1 ) with an average area of 1.62 square kilometers.""","- The paper specifies that the study area is divided into ""1971 neighborhoods"" with an ""average area of 1.62 square kilometers."" This indicates the spatial unit of analysis (SUoA) is a neighborhood.
+- The size of each spatial unit is explicitly mentioned as ""1.62 square kilometers.""
+- The description of the spatial units is that they are neighborhoods within ZG City, which are used for analyzing crime location choices.
+- The total number of spatial units is given as ""1971 neighborhoods.""
+- The paper does not provide specific information on the population per unit or a quoted rationale for why this spatial scale was chosen.
+- The rationale category is not explicitly mentioned, but it can be inferred that the choice of neighborhoods as spatial units might be due to data availability and administrative convenience, as the data is organized at this level."
+"(Long & Liu, 2022)",2022,Neighborhood,Robbery,"- ""the locations of the robbery were geocoded into one of 1971 neighborhoods as the dependent variable.""
+  - ""The data in this paper and those of Long et al. (2021) are derived from the same dataset for ZG City, but they have different research questions.""","- The paper specifies that the study area is divided into ""1971 neighborhood units,"" which indicates the type of spatial unit used.
+- The average size of these units is given as ""1.62 km²,"" providing the size of the spatial units.
+- The number of units is explicitly stated as ""1971 neighborhood units.""
+- The paper does not provide specific information on the population per unit, so this detail is not available.
+- The rationale for choosing these spatial units is not explicitly justified in the provided text, so it is not specified.
+- The justification summary is that the study uses neighborhood units as the spatial scale, but the specific reasons for this choice are not detailed in the text."
+"(Long et al., 2018)",2018,Community,Robbery,"- ""The characteristics (sex and age) about the sample of street robbers are reported in Table 1 . For example, street robbers are almost exclusively men (98.67%), and there are only 7 females (1.33%). At the same time, teenagers and adult robber are the overwhelming majority (96.77%), and 51 and older robbers are the minority (3.23%).""
+  - ""Finally, a total of 527 street robbers involving 1262 street robberies are screened out for further analysis.""
+  - ""The data includes 11,455 cleared robberies, among which 67 percent were committed by a single robber without accomplices, 17 percent were committed by two robbers, and 16 percent were committed by three or more robbers.""
+  - ""The study area covers 1973 communities (Figure 2 ), with an average size of 1.62 km 2 . The standard deviation of the size of the communities is 2.85, the minimum size of 0.001 km 2 and the maximum size of 43 km 2""","- The paper specifies that the study area is divided into ""1973 communities,"" which are used as the spatial units of analysis (SUoA Type: Administrative unit).
+- The average size of these communities is given as ""1.62 km 2 ,"" with a standard deviation of ""2.85,"" indicating variability in size (SUoA Size: varies 0.001-43 km²).
+- The description of these communities is provided in terms of their size and number, with a focus on their role as spatial units for analyzing crime patterns (SUoA Description: Communities with varying sizes).
+- The total number of spatial units is explicitly stated as ""1973 communities"" (Number of Units: 1973).
+- The population per unit is not directly provided, but the paper mentions the total population of ZG City and the number of street robbers, which can be used to estimate population density (Population per Unit: Not directly provided).
+- The rationale for choosing these spatial units is not explicitly justified in the quotes provided, but it can be inferred that the choice was based on administrative convenience and data availability (Quoted Rationale: Not explicitly provided; Rationale Category: Admin convenience / Data availability).
+- The justification summary is that the spatial units were likely chosen due to their administrative definition and the availability of data at this scale, although this is not explicitly stated in the paper (Justification Summary: Administrative convenience and data availability)."
+"(Long et al., 2021)",2021,Community,Robbery,"- ""The study area covers 1971 communities (Fig. 2 ), with an average size of 1.62 km 2 . The standard deviation of the size of communities is 2.85, the minimum size of 0.001 km 2 , and the maximum size of 43 km 2""
+  - ""The data matrix of dependent variables is constructed by using these cases. The calculation of dependent variables in discrete spatial choice modeling refers to the method by Bernasco et al. (2013) and Johnson and Summers (2015). This paper assumes that a street robber chose one for robbery among 1971 communities (1971 alternative sets).""
+  - ""The selected neighborhood is recorded as ""1""; otherwise, the non-selected one is recorded as ""0"". Therefore, for each case, it has 1971 rows of data with a ""1"" and 1970 ""0"".""
+  - ""The dataset included the following information of each arrested robber: the unique offender identifier, the Hukou status, the home address, and the location and time of the robbery.""","- The spatial units of analysis (SUoA) are described as ""communities,"" which are administrative units in this context.
+- The size of these communities varies, with an average size of 1.62 km², indicating that the SUoA size is not uniform but has a specified average.
+- The total number of spatial units is explicitly stated as 1971 communities.
+- The paper does not provide specific information on the population per unit, but it does mention that the data includes information on the home address of arrested robbers, which could imply some level of population data.
+- The rationale for choosing these spatial units is not explicitly stated in terms of ""because,"" ""due to,"" or similar phrases, but the use of communities as SUoA is consistent with administrative convenience and data availability.
+- The justification summary is that the study uses communities as spatial units due to their administrative relevance and likely data availability at this scale."
+"(Marchment & Gill, 2019)",2019,Small_areas,Terrorist Attacks By The Provisional Irish Republican Army (Pira),"- ""Since 2011, Northern Ireland has been divided into 4537 'Small Areas' (hereafter, SAs), which are currently the smallest areal unit.""
+  - ""SAs were designed specifically for statistical purposes and follow physical features of the environment such as roads and rivers (NISRA).""
+  - ""The geographical boundary data for the SAs was obtained from the Northern Ireland Statistics and Research Agency (NISRA).""
+  - ""The final offence and offender datasets comprised 150 attacks by 127 PIRA members within Belfast.""
+  - ""Areal unit boundaries are arbitrary and lack ecological meaning (Bursik, 1986) and the characteristic data used may not be an accurate representation of the perceptions of those living in the areas (Coulton et al., 2001).""
+  - ""Smaller units would enable factors such as the effects of social disorganisation to be touched upon, if the data was available.""","- The paper uses ""Small Areas"" (SAs) as the spatial units of analysis, which are the smallest areal units in Northern Ireland.
+- These SAs are designed for statistical purposes and follow physical features like roads and rivers, indicating a practical and administrative convenience rationale.
+- The choice of SAs was justified because they were deemed appropriate due to the lack of sociodemographic variables in the analysis, suggesting a data availability rationale.
+- The total number of SAs used in the study is 890 for Belfast, which is a subset of the 4537 SAs in Northern Ireland.
+- The paper does not provide specific size or population per unit information, but it does mention that SAs are the smallest areal units, implying a focus on scale optimization.
+- The rationale for choosing SAs includes both data availability and administrative convenience, as they are designed for statistical purposes and follow physical boundaries."
+"(Menting et al., 2016)",2016,Postal_code_area,Not Specified,"- ""Dutch four-digit postal code areas are designed to have minimal travel restrictions for postal delivery services that usually travel by foot or bicycle, and their size is inversely related to the level of urbanization (Bernasco, 2010: 398)""
+  - ""The four-digit postal areas are therefore perfectly suited for a crime location choice study because most people will be familiar with these areas when living there or (frequently) visiting the area.""","- The spatial units of analysis (SUoA) are described as ""four-digit postal code areas,"" which is a type of administrative unit.
+- The size of these units is specified as having an ""average area size of 2.96 km²"" with a range from 0.12 to 24.69 km².
+- The number of units is given as 142.
+- The average population per unit is around 7,000.
+- The rationale for choosing these units is that they are ""perfectly suited for a crime location choice study because most people will be familiar with these areas when living there or (frequently) visiting the area."" This suggests a theoretical-methodological justification, as it aligns with the study's focus on awareness spaces and familiarity.
+- The justification category is ""Theory–method"" because the choice is based on the theoretical framework of crime pattern theory and the practical consideration of familiarity with areas."
+"(Menting et al., 2020)",2020,Neighborhood,Theft,"- ""The entire Netherlands were selected as the study area and neighbourhoods as the spatial unit of analysis.""
+  - ""Given their size and homogeneous character, Dutch neighbourhoods are expected to be well known to those who regularly visit them.""
+  - ""Dutch neighbourhoods are the smallest statistical units for which Statistics Netherlands provides detailed information on structural and socio-economic features.""","- The spatial unit of analysis (SUoA) used in the study is the ""neighbourhood,"" which is a type of administrative unit.
+- The size of these neighbourhoods varies, with a median size of 0.68 km² and a range from 0.01 to 128.2 km².
+- There are a total of 12,821 neighbourhoods used in the study.
+- The population per unit varies, with a median residential population of 675 and a range from 0 to 28,120.
+- The rationale for choosing neighbourhoods as the SUoA is because they are the smallest statistical units for which detailed data is available from Statistics Netherlands, and they are expected to be well known to those who regularly visit them, which aligns with the theoretical framework of the study.
+- The justification category is ""Data availability"" and ""Theory–method,"" as the choice is based on data availability and theoretical consistency."
+"(Menting, 2018)",2018,Postal_code_area,Any-Crime-Type Offences,"- ""The study area consisted of three municipalities in the greater The Hague area in the Netherlands: The Hague, Rijswijk, and Leidschendam-Voorburg. Four-digit postal code areas were used as spatial unit of analysis.""
+  - ""Dutch four-digit postal code areas are designed to have minimal travel restrictions for postal delivery services that usually travel by foot or bicycle, and their size is inversely related to the level of urbanization (Bernasco 2010: 398)""
+  - ""The three municipalities in this study contained 82 postal code areas in 2006-2009. Postal code areas were includable when community survey data were available, which applied to 76 (92.7%) of the postal codes in the area""
+  - ""These postal codes are therefore well suited for a crime location choice study, because most people will be familiar with these areas when living there or (frequently) visiting the area.""","- The spatial unit of analysis (SUoA) used in the study is the ""four-digit postal code areas.""
+- The size of these units varies, with an average area size of 1.68 km² and a range of 0.12-22.26 km².
+- The number of units used in the study is 76.
+- The average population per unit is around 7700.
+- The rationale for choosing these units is that they are ""well suited for a crime location choice study, because most people will be familiar with these areas when living there or (frequently) visiting the area.""
+- The justification category is ""Theory–method"" because the choice is based on the theoretical suitability of the units for studying crime location choice.
+- The justification summary is that four-digit postal code areas were chosen because they are familiar to residents and visitors, making them suitable for analyzing crime location choice."
+"(Rowan, Appleby & McGloin, 2022)",2022,Census_block_group,Group Crime,"- ""The data used in this study cover arrests from January 1, 2013 to December 31, 2016 that had complete information on the variables of interest (N = 68,393).1""
+  - ""Data include street connectivity measures from the Environmental Protection Agency and publicly available arrest information from Baltimore City (2013-16).""","QUOTES:
+
+- ""The current study extends crime pattern theory and addresses this gap in the co-offending literature by considering whether the distribution of co-offences across census block groups in Baltimore City (Maryland) is related to measures of activity nodes and 'connected' street networks, net of the solo crime rate.""
+- ""We merged the 2013-16 geocoded arrest data with data from the Environmental Protection Agency (EPA). The EPA has a publicly available Smart Location Database that includes a wide range of contextual information about census block groups across the entire United States.""
+- ""Importantly, in a city context (as opposed to suburban or rural locales), a census block is generally a small area (typically a street-bounded block) and using this unit is consistent with prior work on the relationship between co-offending and neighbourhood context, which has relied on census tracts or blocks (e.g., Schaefer 2012; Billings et al. 2016).""
+- ""Indeed, in Baltimore the census block group is relatively small: The average census block group in Baltimore has 2.4 census blocks, is .14 square miles, and has an average of 953 residents.""
+- ""The data used in this study cover arrests from January 1, 2013 to December 31, 2016 that had complete information on the variables of interest (N = 68,393).""
+- ""During this time period, there were a total of N = 6,249 incidents across 653 census block groups (Average Rate = 1.93 per 100 residents, SD = 11.24).""
+
+REASONING:
+
+- The spatial unit of analysis (SUoA) used in the study is the ""census block group.""
+- The size of each census block group is specified as "".14 square miles.""
+- The description of the spatial units indicates that they are small areas typically bounded by streets, consistent with prior research on neighborhood context.
+- The study includes a total of 653 census block groups.
+- The average population per unit is given as 953 residents.
+- The rationale for choosing this spatial scale is quoted as: ""Importantly, in a city context (as opposed to suburban or rural locales), a census block is generally a small area (typically a street-bounded block) and using this unit is consistent with prior work on the relationship between co-offending and neighbourhood context, which has relied on census tracts or blocks.""
+- The rationale category is ""Prior research,"" as the choice is consistent with previous studies on similar topics.
+- The justification summary indicates that the choice of census block groups is based on their appropriateness for studying neighborhood-level phenomena and consistency with prior research."
+"(S. E. M. van Sleeuwen et al., 2018)",2018,Postal_code_area,Multiple Types,"- ""the alternatives represent the 142 different four-digit postal code areas of the study region, the greater The Hague area in the Netherlands.""
+  - ""In previous studies, it was argued that four-digit postal code areas are well-suited for crime location choice research, as these administrative areas were constructed in such a way to have minimal travel restrictions for postal delivery services that usually travel on foot or bicycle (Bernasco 2010:398)""
+  - ""Hence, most people who live in or regularly visit an area should be familiar with that area.""","- The spatial units of analysis (SUoA) are described as ""four-digit postal code areas,"" which are a type of administrative unit.
+- The size of these units is specified as having an ""average area size of about 2.96 km².""
+- The number of units is given as ""142 different four-digit postal code areas.""
+- The average population per unit is approximately ""7,000 residents.""
+- The rationale for choosing these units is based on their suitability for crime location choice research due to minimal travel restrictions and familiarity with the area, which aligns with practical convenience and prior research.
+- The justification summary is that four-digit postal code areas were chosen because they are well-suited for crime location choice research, providing a practical and familiar scale for analysis."
+"(S. van Sleeuwen et al., 2021)",2021,Neighborhood,Multiple Types,"- ""In order to determine the adequate spatial and temporal resolution for our unit of analysis, we first checked the reported level of accuracy for the seven routine activity domains and the five different reported types of crime. Spatial accuracy was generally higher for the reported routine activity nodes than for the crimes. However, for all 12 categories combined, more than three-quarters of the locations were indicated to be reported at least at the neighbourhood level.""
+  - ""The dependent variable crime committed in neighbourhood (1 = yes; 0 = no) indicates whether or not an offence was committed in a specific neighbourhood.""","- The paper uses ""neighbourhoods"" as the spatial unit of analysis (SUoA Type).
+- The size of these neighbourhoods is described with a median area of 0.66 km², a mean of 2.63 km², and a range of 0.02-130.14 km² (SUoA Size).
+- The description of these spatial units is that they are ""unique neighbourhoods in the Netherlands for the year 2018"" (SUoA Description).
+- There are 13,305 unique neighbourhoods used in the study (Number of Units).
+- The paper does not provide specific information on the population per unit (Population per Unit).
+- The rationale for choosing neighbourhoods as the spatial unit is implied by the need for spatial accuracy and the availability of data at this level (Quoted Rationale).
+- The rationale category is likely ""Data availability"" and ""Theory–method"" as the choice is based on the accuracy of reported locations and the theoretical framework of crime pattern theory (Rationale Category).
+- The justification summary is that neighbourhoods were chosen due to their spatial accuracy and data availability, aligning with the study's theoretical framework (Justification Summary)."
+"(Smith & Brown, 2007)",2007,Grid_cell,Breaking And Entering,"- ""The choice set was defined using the following steps. The smallest rectangle that would wholly circumscribe the boundaries of the City of Richmond was the extents of a grid with 100 rows and 100 columns. A spatial intersection operation was then performed to remove those grid cells falling wholly outside the city limits. The remaining 4,895 centroids constitute the choice set.""
+  - ""If features are aggregated areally, such as demographic data reported by census tract, then a grid resolution finer than the aggregation area is unnecessary.""
+  - ""The resolution of the grid used must be fine enough to capture the variance of spatial features. Determining adequate resolution depends on the nature of features used.""
+  - ""The north-south inter-centroid spacing is 170 m, the east-west inter-centroid spacing is 191 m.""","- The paper uses a grid cell as the spatial unit of analysis (SUoA Type: Grid cell).
+- The size of each grid cell is specified by the inter-centroid spacing, which is 170 meters north-south and 191 meters east-west (SUoA Size: 170m x 191m).
+- The choice set is described as being derived from a grid that covers the City of Richmond, with centroids constituting the choice set (SUoA Description: Grid cells covering the City of Richmond).
+- The total number of spatial units is given as 4,895 centroids (Number of Units: 4,895).
+- The paper does not provide specific information on the population per unit (Population per Unit: Not mentioned).
+- The rationale for choosing this spatial scale is related to the need to capture the variance of spatial features and the resolution being fine enough for the data used (Quoted Rationale: ""The resolution of the grid used must be fine enough to capture the variance of spatial features"").
+- The rationale category is related to practical constraints and scale optimization, as it depends on the nature of the features used (Rationale Category: Practical constraint / Scale optimization).
+- The justification summary is that the grid size was chosen to be fine enough to capture the variance of spatial features, which is a practical consideration for the analysis (Justification Summary: Practical consideration for capturing spatial feature variance)."
+"(Song et al., 2019)",2019,Census_unit,Theft,"- ""Using census units as spatial units of analysis implies that we aggregate numbers of crime generators to the census unit level, and thus sum the numbers of schools, restaurants, bus stops and other facilities per census unit.""
+  - ""The study area comprises 1891 census units in total, of which 275 are not included in the analysis because the lack mobility data due to limited coverage of the GSM mobile phone network, leaving 1616 census units in the analysis.""
+  - ""The census unit was chosen as the spatial unit of analysis because census units have a size similar to those in comparable studies (Bernasco and Block 2009;Clare et al. 2009;Menting et al. 2016), because census units are approximately equally sized, and because in the study area they are relatively homogenous in terms of population composition.""
+  - ""The mean population is 5956 (standard error 4706, minimum 245, maximum 51,450).""","- The spatial unit of analysis (SUoA) type is specified as ""census units.""
+- The size of these census units is provided as an average of 1.62 km², with a range from 0.02 km² to 31.30 km².
+- The number of census units in the study is 1616 after excluding some due to limited data coverage.
+- The average population per unit is given as 5956, with a range from 245 to 51,450.
+- The rationale for choosing census units includes their similar size to those in comparable studies, their equal size, and their homogeneity in population composition.
+- The justification category is ""Prior research"" and ""Theory–method"" as it aligns with previous studies and theoretical considerations."
+"(Townsley et al., 2015)",2015,Neighborhood,Burglary,"- ""Study regions and their associated choice set geographies (NL-neighborhoods, UK-Super Output Areas [medium layer], AU-Statistical Local Areas) were selected based on equivalence in size of the known burglar population, number of targets (households) within each area, and total number of areas in a study region.""
+  - ""The Hague, Birmingham, and Brisbane can be characterized as having relatively high (3,652 households per km 2 ), medium (1,513 households per km 2 ), and low (299 households per km 2 ) target densities, respectively.""
+  - ""The variable number of households is an operationalization of the target availability construct and simply represents the total number of residential dwellings, and thus potential targets for residential burglary, found within the area.""
+  - ""The variable proportion of single-family dwellings is an operationalization of the target accessibility construct and is measured as the proportion of residential dwellings in a given area not categorized as flats/apartments.""
+  - ""The variable residential mobility is an operationalization of the community stability construct and is calculated by estimating the resident ''turnover'' for an area.""
+  - ""The variables proximity and proximity to city center describe the distance between an offender's home area and the alternative in question, and the distance between the alternative and the city center of the study region, respectively.""","- The paper uses different spatial units for each country: neighborhoods in the Netherlands, Super Output Areas (medium layer) in the UK, and Statistical Local Areas in Australia.
+- The selection of these spatial units was based on equivalence in size of the known burglar population, number of targets (households), and total number of areas in each study region.
+- The paper provides target densities for each city, which are used to describe the spatial units.
+- The spatial units are used to operationalize various constructs such as target availability, target accessibility, and community stability.
+- The rationale for choosing these spatial units seems to be based on data availability and administrative convenience, as they are standard units used in each country for statistical purposes."
+"(Townsley et al., 2015)",2015,Super_Output_Areas,Burglary,"- ""Study regions and their associated choice set geographies (NL-neighborhoods, UK-Super Output Areas [medium layer], AU-Statistical Local Areas) were selected based on equivalence in size of the known burglar population, number of targets (households) within each area, and total number of areas in a study region.""
+  - ""The Hague, Birmingham, and Brisbane can be characterized as having relatively high (3,652 households per km 2 ), medium (1,513 households per km 2 ), and low (299 households per km 2 ) target densities, respectively.""
+  - ""The variable number of households is an operationalization of the target availability construct and simply represents the total number of residential dwellings, and thus potential targets for residential burglary, found within the area.""
+  - ""The variable proportion of single-family dwellings is an operationalization of the target accessibility construct and is measured as the proportion of residential dwellings in a given area not categorized as flats/apartments.""
+  - ""The variable residential mobility is an operationalization of the community stability construct and is calculated by estimating the resident ''turnover'' for an area.""
+  - ""The variables proximity and proximity to city center describe the distance between an offender's home area and the alternative in question, and the distance between the alternative and the city center of the study region, respectively.""","- The paper uses different spatial units for each country: neighborhoods in the Netherlands, Super Output Areas (medium layer) in the UK, and Statistical Local Areas in Australia.
+- The selection of these spatial units was based on equivalence in size of the known burglar population, number of targets (households), and total number of areas in each study region.
+- The paper provides target densities for each city, which are used to describe the spatial units.
+- The spatial units are used to operationalize various constructs such as target availability, target accessibility, and community stability.
+- The rationale for choosing these spatial units seems to be based on data availability and administrative convenience, as they are standard units used in each country for statistical purposes."
+"(Townsley et al., 2015)",2015,Statistical_local_areas,Burglary,"- ""Study regions and their associated choice set geographies (NL-neighborhoods, UK-Super Output Areas [medium layer], AU-Statistical Local Areas) were selected based on equivalence in size of the known burglar population, number of targets (households) within each area, and total number of areas in a study region.""
+  - ""The Hague, Birmingham, and Brisbane can be characterized as having relatively high (3,652 households per km 2 ), medium (1,513 households per km 2 ), and low (299 households per km 2 ) target densities, respectively.""
+  - ""The variable number of households is an operationalization of the target availability construct and simply represents the total number of residential dwellings, and thus potential targets for residential burglary, found within the area.""
+  - ""The variable proportion of single-family dwellings is an operationalization of the target accessibility construct and is measured as the proportion of residential dwellings in a given area not categorized as flats/apartments.""
+  - ""The variable residential mobility is an operationalization of the community stability construct and is calculated by estimating the resident ''turnover'' for an area.""
+  - ""The variables proximity and proximity to city center describe the distance between an offender's home area and the alternative in question, and the distance between the alternative and the city center of the study region, respectively.""","- The paper uses different spatial units for each country: neighborhoods in the Netherlands, Super Output Areas (medium layer) in the UK, and Statistical Local Areas in Australia.
+- The selection of these spatial units was based on equivalence in size of the known burglar population, number of targets (households), and total number of areas in each study region.
+- The paper provides target densities for each city, which are used to describe the spatial units.
+- The spatial units are used to operationalize various constructs such as target availability, target accessibility, and community stability.
+- The rationale for choosing these spatial units seems to be based on data availability and administrative convenience, as they are standard units used in each country for statistical purposes."
+"(Townsley et al., 2016)",2016,Statistical_local_areas,Burglary,"- ""Examining the location choices of these offenders, a choice set of 158 Statistical Local Areas (SLAs) were defined as possible offending areas.""
+  - ""For each SLA the following characteristics, each relating to a specified behavioral rule, were sourced from the Australian Bureau of Statistics (ABS) 2006 Census and included in the estimated model.""
+  - ""The map of average b i coefficients per SLA is displayed in Fig. 3""
+  - ""The overall variation in b i coefficients appears only partially related to the spatial nesting of burglars in SLAs.""
+  - ""The variation in b i is displayed in four shades of grey. The burglars that live in SLAs colored in black have relatively strong proximity preferences, more than one standard deviation above the mean.""","- The paper uses ""Statistical Local Areas (SLAs)"" as the spatial units of analysis, which are administrative units in Australia.
+- The size of these units is not explicitly mentioned in terms of square kilometers or meters, but they are described as administrative units, which implies they are based on existing administrative boundaries.
+- The number of units is specified as 158 SLAs.
+- The population per unit is not explicitly mentioned, but the use of SLAs suggests that they are designed to contain a certain population size, although this is not detailed in the paper.
+- The rationale for choosing SLAs is not explicitly stated in terms of ""because,"" ""due to,"" or similar phrases, but it is implied that they were chosen due to data availability from the Australian Bureau of Statistics (ABS) 2006 Census.
+- The justification category is likely ""Data availability"" since the data for these units was sourced from the ABS census.
+- The justification summary is that SLAs were used because they are administrative units for which data was available from the ABS census, facilitating the analysis of location choice preferences."
+"(Vandeviver & Bernasco, 2020)",2020,Statistical_districts,Burglary,"- ""The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function. Throughout this paper we refer to these entities as 'neighborhoods'.""
+  - ""The neighborhoods in this study are similarly constructed to the areas used in most previous discrete spatial choice studies and are comparable or smaller in size (e.g., Lammers et al. 2015;Menting et al. 2016).""
+  - ""The Census identified 138,321 residences in Ghent. For each residence, Statistics Belgium provided a unique identification number and five variables.""
+  - ""The analysis of burglary target choice should thus preferably define 'residence' as its main unit of analysis (Bernasco 2010a; Vandeviver et al. 2015a""
+  - ""On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.""","- The paper uses ""statistical districts"" as the spatial units of analysis, which are referred to as ""neighborhoods.""
+- The size of these neighborhoods is described as covering an average area of 0.79 square kilometers.
+- The number of spatial units is specified as 193 neighborhoods.
+- The population per unit is given as an average of 1287 residents per neighborhood.
+- The rationale for choosing these spatial units is implied by their comparability to previous studies and their suitability for analyzing burglary target choice at the residence level.
+- The justification category is likely ""Prior research"" and ""Theory–method"" since the choice is consistent with previous studies and aligns with the theoretical framework of analyzing target selection at the residence level."
+"(Vandeviver et al., 2015)",2015,Residential_property,Burglary,"- ""This paper addresses this shortcoming and seeks to establish which attributes at the house-level influence offenders' decision when selecting a residential property as a burglary target.""
+  - ""In this study, we consider a discrete spatial choice model of burglary target selection in which every burglar can choose among 503,589 residential properties in a Belgian province to pick a burglary target.""
+  - ""The study area comprises the entire province of East Flanders (Belgium), a densely urbanized polycentric study area with a population of approximately 1.5 million inhabitants distributed across 12 cities and 53 towns.""
+  - ""the use of fine-grained spatial units of analysis such as the house that is burglarized has the advantage that it addresses the modifiable areal unit problem and reduces the risk of aggregation bias""
+  - ""Since micro-places more accurately measure the environment in which the offender acts, it is preferable to conduct geospatial criminological research at the most fine-grained spatial resolution available.""
+  - ""Essentially, burglary is about an offender finding a suitable house to burglarize and committing his offence within a clearly confined space.""
+  - ""The study area spans East Flanders (see Fout! Verwijzingsbron niet gevonden.), a north-western province in Belgium that borders the Netherlands in the north. It covers nearly 3,000 km² and has a population of approximately 1.5 million.""","- The paper uses the ""house"" as the spatial unit of analysis (SUoA Type), which is a fine-grained spatial unit.
+- The study area is described as the entire province of East Flanders, covering nearly 3,000 km² with a population of approximately 1.5 million inhabitants.
+- The number of units is specified as 503,589 residential properties.
+- The rationale for choosing the house as the SUoA is to address the modifiable areal unit problem and reduce aggregation bias, as well as to conduct research at the most fine-grained spatial resolution available.
+- The justification category is Theory–method, as the choice is based on theoretical considerations about the nature of burglary and the need for fine-grained analysis.
+- The justification summary is that using houses as the spatial unit allows for a more accurate analysis of burglary target selection by addressing methodological issues and aligning with the nature of the crime."
+"(Xiao et al., 2021)",2021,Community,Burglary,"- ""Communities have a relatively homogeneous population and their average size is 2.74 km-sq., which closely resembles the size of the units of analysis in many other crime location choice studies (e.g., Menting et al., 2016).""
+  - ""All residential burglaries were geocoded to one of the 2643 communities in ZG city.""
+  - ""Community size has a skew distribution though, with half of all communities smaller than 0.92 kmsq., but the smallest area only 0.01 km-sq. and the largest 82.49 km-sq.""
+  - ""Communities in the downtown area are generally smaller with a higher population density, whereas communities in the suburbs often have a lot of farmland or woodland and are thus usually bigger in size with relatively low numbers of residents.""","- The spatial units of analysis (SUoA) are described as ""communities"" in ZG city, which are administrative units.
+- The average size of these communities is given as 2.74 km², with a range from 0.01 km² to 82.49 km².
+- The number of units is specified as 2643 communities.
+- The rationale for choosing these units is implied by their homogeneous population and similarity in size to other studies, suggesting a combination of data availability and consistency with prior research.
+- The justification summary is that communities were chosen due to their homogeneous population and consistency with other studies, which likely facilitated data analysis and comparison."
+"(Xue & Brown, 2006)",2006,Grid_cell,Residential Breaking And Entering (B & E),"- ""The sub regions shown in Fig. 1 are block groups, which are the smallest areas, for which census counts are recorded.""
+  - ""The features of each spatial alternative come from the combination of census data and calculated distance values.""
+  - ""The analysis of B & E is related to locations of households in a city. However, it is difficult to represent all locations of individual houses in even a modest sized city, such as Richmond.""
+  - ""we aggregated alternatives using 2517 regular grids, which were assumed to be fine enough to represent all spatial alternatives within this area.""","- The paper mentions that the spatial units used are ""block groups,"" which are the smallest areas for which census counts are recorded. This indicates the type of spatial unit used.
+- The size of these units is not explicitly mentioned in terms of square meters or kilometers, but they are described as being based on census data, which typically uses administrative boundaries.
+- The paper describes the use of ""2517 regular grids"" to represent spatial alternatives, suggesting that these grids are used to aggregate data within the block groups.
+- The rationale for using block groups seems to be related to data availability, as they are the smallest units for which census data is available.
+- The number of units is explicitly mentioned as 2517 regular grids.
+- The population per unit is not directly mentioned, but the use of block groups implies that each unit would contain a population count as per census data.
+- The quoted rationale is implicit in the mention of using block groups and grids due to data availability and the need to represent spatial alternatives effectively.
+- The rationale category is likely ""Data availability"" and ""Admin convenience,"" as the choice is influenced by the availability of census data and the administrative convenience of using existing block group boundaries.
+- The justification summary is that block groups were used due to their alignment with census data availability and their suitability for representing spatial alternatives within the study area."
+"(Yue et al., 2023)",2023,Community,Theft,"- ""Finally, 1636 communities remain in this study.""
+  - ""This study is conducted in ZG city, a megacity in southeast China. With an urbanization rate of 86.46%, the population of permanent residents in the city amounted to 15.30 million in 2019. There are 2643 communities in the ZG city, and this study takes the community as the spatial unit of analysis.""
+  - ""The main aim of this study is to investigate how the presence of people on the street and the streetscape's physical environment affect criminals' crime location choices. First, this study collected a set of finegrained SVIs in a megacity in China. Then, using integrated deep learning networks, we detected on-street population and streetscape physical environment features from these images. A discrete spatial choice model is finally constructed to investigate the effect of streetscape features on offenders' crime location choices. Residence-crime proximity, crime attractors, generators, detractors, and socioeconomic attributes of communities are accounted for, as these factors also influence crime location choice.""
+  - ""Because of the high urbanization rate, buildings and roads do generally not change significantly from one year to another. Being situated in a sub-tropical region, trees and bushes remain green throughout the year. Therefore, street view images in ZG, unlike those in high latitude cities, do not have much seasonal variations.""","- The study is conducted in ZG city, a megacity in southeast China, which provides the context for the spatial units.
+- The spatial unit of analysis is explicitly stated as ""the community,"" which is a type of administrative unit.
+- The number of communities used in the study is given as 1636.
+- The population of permanent residents in ZG city is mentioned as 15.30 million, but the average population per community is not explicitly provided.
+- The rationale for choosing communities as spatial units is not explicitly justified in terms of data availability, administrative convenience, or theoretical considerations. However, the use of communities aligns with the study's focus on socioeconomic attributes and residence-crime proximity, suggesting a practical and theoretical basis.
+- The justification for the spatial scale is not explicitly stated, but it is implied that communities are used because they are a relevant administrative unit for analyzing socioeconomic factors and crime location choices."
