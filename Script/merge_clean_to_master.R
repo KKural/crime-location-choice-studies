@@ -4,8 +4,8 @@ library(readr)
 library(stringr)
 
 # Read both datasets
-master <- read_csv("20250709_Analysis & Results/20250709_standardized_unit_sizes_with_groups.csv")
-clean <- read_csv("20250709_Analysis & Results/20250709_analysis_ready_dataset_clean.csv")
+master <- read_csv("20250710_Analysis & Results/20250710_standardized_unit_sizes_with_groups.csv")
+clean <- read_csv("20250710_Analysis & Results/20250710_analysis_ready_dataset_clean.csv")
 
 # Clean the title column in the clean dataset to match master format
 clean <- clean %>%
@@ -172,4 +172,4 @@ merged <- master %>%
   select(-clean_title)  # Remove the helper column
 
 # Save the merged result
-write_csv(merged, "20250709_Analysis & Results/20250709_standardized_unit_sizes_with_groups_merged.csv")
+write_csv(merged, "20250710_Analysis & Results/20250710_standardized_unit_sizes_with_groups_merged.csv")
