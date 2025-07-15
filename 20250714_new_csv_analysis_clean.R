@@ -84,6 +84,20 @@ input_file <- file.path(make_folder(), "20250714_standardized_unit_sizes_with_gr
 # Load dataset
 data_raw <- readr::read_csv(input_file, show_col_types = FALSE, locale = readr::locale(encoding = "UTF-8"))
 
+# Debug: Show available columns
+message("Available columns in dataset: ", paste(names(data_raw), collapse = ", "))
+
+# Check column existence outside mutate to avoid vectorized issues
+has_country <- "Country" %in% names(data_raw)
+has_crime_type <- "Crime type" %in% names(data_raw)
+has_crime_type_alt <- "Crime_Type" %in% names(data_raw)
+has_crime_type_std <- "Crime_Type_Standardized" %in% names(data_raw)
+has_year <- "Year" %in% names(data_raw)
+has_citation <- "Citation" %in% names(data_raw)
+has_total_variables <- "Total_Variables" %in% names(data_raw)
+has_quoted_rationale <- "Quoted_Rationale" %in% names(data_raw)
+has_rationale_category <- "Rationale_Category" %in% names(data_raw)
+
 # Data preparation-----------------------------
 
 # Process data with unit conversion and derived variables
@@ -102,11 +116,13 @@ data <- data_raw |>
   
   # Extract year from Citation if Year column doesn't exist or is empty
   dplyr::mutate(
-    Year = dplyr::case_when(
-      "Year" %in% names(data_raw) && !all(is.na(data_raw$Year)) ~ as.numeric(data_raw$Year),
-      "Citation" %in% names(data_raw) ~ as.numeric(stringr::str_extract(stringr::str_extract(Citation, "\\b(19|20)\\d{2}[a-z]?\\b"), "\\d{4}")),
-      TRUE ~ 2020  # Default year if none found
-    )
+    Year = if(has_year && !all(is.na(data_raw$Year))) {
+      as.numeric(Year)
+    } else if(has_citation) {
+      as.numeric(stringr::str_extract(stringr::str_extract(Citation, "\\b(19|20)\\d{2}[a-z]?\\b"), "\\d{4}"))
+    } else {
+      rep(2020, nrow(.))
+    }
   ) |>
   
   # Add size group column based on preferred breakpoints

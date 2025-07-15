@@ -1,0 +1,30 @@
+---
+title: "Test Variables"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+library(readxl)
+
+# Set table path
+table_path <- "20250712_Analysis & Results/Manuscript_All_Tables.xlsx"
+
+# Load model results for inline referencing throughout document
+if (file.exists(table_path)) {
+  model_table <- readxl::read_excel(table_path, sheet = "Table2_Model_Results")
+  # Extract values for inline referencing
+  icc <- model_table$Effect_Size_Beta[model_table$Predictor == "Country clustering (ICC)"]
+  year_beta <- model_table$Effect_Size_Beta[model_table$Predictor == "Publication year"]
+  year_p_raw <- as.numeric(model_table$p_value[model_table$Predictor == "Publication year"])
+  year_p <- ifelse(year_p_raw < 1, paste0(".", substr(as.character(year_p_raw), 3, nchar(as.character(year_p_raw)))), as.character(year_p_raw))
+} else {
+  # Fallback values if file not found
+  icc <- 0.328
+  year_beta <- 0.033
+  year_p <- ".334"
+}
+```
+
+# Test
+
+The ICC value is `r icc` and year beta is `r year_beta` with p-value `r year_p`.

@@ -1,0 +1,5 @@
+Crime_type_grouped,N_studies,Median_size_km2,Mean_size_km2,SD_size_km2,Percent_justified
+Burglary,25,0.88,1.8471,2.4665,96
+Other,13,0.44,1.3448,1.3459,92.3
+Robbery,8,1.62,1.2724,0.9854,87.5
+Theft,5,2.18,1.888,1.0497,100
