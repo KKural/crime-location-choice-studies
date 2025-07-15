@@ -18,7 +18,7 @@ setwd(here())
 
 # File paths
 csv_file <- "Data/20250521_Unique_retrieved_articles_wokring.csv"
-output_dir <- "20250709_Analysis & Results"
+output_dir <- "20250710_Analysis & Results"
 
 # Create output directory if it doesn't exist
 if (!dir.exists(output_dir)) {
@@ -26,26 +26,10 @@ if (!dir.exists(output_dir)) {
 }
 
 # Read the screening data
-cat("Reading screening data...\n")
 screening_data <- read.csv(csv_file, stringsAsFactors = FALSE)
-
-# Display basic information about the dataset
-cat("Dataset dimensions:", nrow(screening_data), "rows,", ncol(screening_data), "columns\n")
-cat("Column names:", paste(names(screening_data), collapse = ", "), "\n\n")
 
 # Clean and standardize the screening decisions
 screening_data$kural_decision <- tolower(trimws(screening_data$select_reject_by..Kural.))
-
-# Display unique values to understand the data
-cat("Unique screening decisions:\n")
-unique_decisions <- unique(screening_data$kural_decision)
-print(unique_decisions)
-cat("\n")
-
-# Count records by screening decision
-decision_counts <- table(screening_data$kural_decision)
-print(decision_counts)
-cat("\n")
 
 # Calculate PRISMA 2020 flow numbers following proper structure
 # Total records from database search (before any duplicate removal)
@@ -103,49 +87,16 @@ reports_excluded_full_text <- excluded_full_text
 # This includes studies included at title, abstract, or full-text stages
 final_included <- included_title + included_abstract + included_full_text
 
-# Display PRISMA 2020 Flow Numbers (Correct Structure)
-cat("=== PRISMA 2020 Flow Numbers ===\n")
-cat("Total records identified from databases:", total_records_identified, "\n")
-cat("Duplicates removed by litsearchr:", litsearchr_duplicates_removed, "\n")
-cat("Records after litsearchr duplicate removal:", records_after_litsearchr, "\n")
-cat("Additional exclusions during screening:", additional_exclusions_screening, "\n")
-cat("  - Additional duplicates found:", additional_duplicates, "\n")
-cat("  - Other language:", other_language, "\n")
-cat("Records after all duplicates removed:", total_records_after_duplicates, "\n")
-cat("Records screened (title/abstract):", records_screened_title_abstract, "\n")
-cat("Records excluded (title/abstract):", records_excluded_title_abstract, "\n")
-cat("  - Excluded at title stage:", excluded_title, "\n")
-cat("  - Excluded at abstract stage:", excluded_abstract, "\n")
-cat("Reports sought for retrieval:", reports_sought, "\n")
-cat("Reports not retrieved:", reports_not_retrieved, "\n")
-cat("Reports assessed for full-text eligibility:", reports_assessed_full_text, "\n")
-cat("Reports excluded at full-text stage:", excluded_full_text, "\n")
-cat("Final included studies:", final_included, "\n")
-cat("================================\n\n")
-
-# Verification: Check if numbers add up (Correct Structure)
-cat("=== Verification ===\n")
-cat("Total records breakdown:\n")
-cat("- Litsearchr duplicates removed:", litsearchr_duplicates_removed, "\n")
-cat("- Additional exclusions during screening:", additional_exclusions_screening, "\n")
-cat("- Excluded at title/abstract:", records_excluded_title_abstract, "\n")
-cat("- Not retrieved:", reports_not_retrieved, "\n")
-cat("- Excluded at full-text:", excluded_full_text, "\n")
-cat("- Final included:", final_included, "\n")
-cat("Sum:", litsearchr_duplicates_removed + additional_exclusions_screening + records_excluded_title_abstract + reports_not_retrieved + excluded_full_text + final_included, "\n")
-cat("Should equal total records from databases:", total_records_identified, "\n")
-cat("===================\n\n")
-
 # Create enhanced PRISMA 2020 flow diagram using custom function
 create_automated_enhanced_prisma <- function() {
   
-  # Create PNG with maximum vertical space and resolution
-  png(paste0(output_dir, "/enhanced_automated_prisma_2020.png"), 
-      width = 2400, height = 3200, res = 200, bg = "white", type = "cairo")
+  # Create PNG with minimal white space - optimized dimensions
+  png(paste0(output_dir, "/prisma_2020.png"), 
+      width = 2200, height = 2800, res = 200, bg = "white", type = "cairo")
   
-  # Set up the plot with maximum vertical space
-  par(mar = c(1, 1, 1, 1))
-  plot(0, 0, type = "n", xlim = c(0, 18), ylim = c(0, 28), 
+  # Set up the plot with minimal margins to reduce white space
+  par(mar = c(0.1, 0.1, 0.1, 0.1))
+  plot(0, 0, type = "n", xlim = c(0, 18), ylim = c(0, 24), 
        axes = FALSE, xlab = "", ylab = "")
   
   # Define grayscale colors
@@ -172,19 +123,14 @@ create_automated_enhanced_prisma <- function() {
     }
   }
   
-  # Header - at the top
-  rect(3, 26, 15, 27, col = medium_gray, border = "black", lwd = 3)
-  text(9, 26.5, "PRISMA 2020 flow diagram for systematic reviews", 
-       cex = 1.6, font = 2, adj = 0.5, col = "black")
-  
   # IDENTIFICATION SECTION - Following correct flow from database search
   # Records identified from databases (original total before any duplicate removal)
-  draw_box(6, 24, 5, 1.8, 
+  draw_box(6, 22, 5, 1.8, 
            c("Records identified from", "databases", paste0("(n = ", total_records_identified, ")")), 
            color = light_gray, text_size = 1.1)
   
   # Records removed before screening (litsearchr duplicates + additional manual exclusions)
-  draw_box(13, 24, 6.5, 3.0, 
+  draw_box(13, 22, 6.5, 3.0, 
            c("Records removed before screening:", 
              paste0("Duplicate records removed by litsearchr (n = ", litsearchr_duplicates_removed, ")"), 
              paste0("Additional duplicates found (n = ", additional_duplicates, ")"),
@@ -193,129 +139,120 @@ create_automated_enhanced_prisma <- function() {
            color = "white", text_size = 0.85)
   
   # Identification stage label
-  rect(0.5, 22.5, 1.8, 25.5, col = medium_gray, border = "black", lwd = 2)
-  text(1.15, 24, "Identification", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
+  rect(0.5, 20.5, 1.8, 23.5, col = medium_gray, border = "black", lwd = 2)
+  text(1.15, 22, "Identification", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
   
   # SCREENING SECTION - Following proper PRISMA 2020 flow
   # Records screened (title and abstract)
-  draw_box(6, 20, 5, 1.8, 
+  draw_box(6, 18, 5, 1.8, 
            c("Records screened", paste0("(n = ", records_screened_title_abstract, ")")), 
            color = light_gray, text_size = 1.1)
   
   # Records excluded at title/abstract screening
-  draw_box(13, 20, 6.5, 2.4, 
+  draw_box(13, 18, 6.5, 2.4, 
            c("Records excluded:", paste0("Title screening (n = ", excluded_title, ")"), paste0("Abstract screening (n = ", excluded_abstract, ")")), 
            color = "white", text_size = 0.95)
   
   # Reports sought for retrieval
-  draw_box(6, 17, 5, 1.8, 
+  draw_box(6, 15, 5, 1.8, 
            c("Reports sought for retrieval", paste0("(n = ", reports_sought, ")")), 
            color = light_gray, text_size = 1.1)
   
   # Reports not retrieved
-  draw_box(13, 17, 6.5, 2.0, 
+  draw_box(13, 15, 6.5, 2.0, 
            c("Reports not retrieved", paste0("(n = ", reports_not_retrieved, ")")), 
            color = "white", text_size = 1.05)
   
   # Reports assessed for eligibility (full-text)
-  draw_box(6, 14, 5, 1.8, 
+  draw_box(6, 12, 5, 1.8, 
            c("Reports assessed for eligibility", paste0("(n = ", reports_assessed_full_text, ")")), 
            color = light_gray, text_size = 1.1)
   
   # Reports excluded at full-text stage
-  draw_box(13, 14, 6.5, 2.0, 
+  draw_box(13, 12, 6.5, 2.0, 
            c("Reports excluded with reasons:", paste0("Full-text exclusions (n = ", excluded_full_text, ")")), 
            color = "white", text_size = 0.95)
   
   # Screening stage label
-  rect(0.5, 12, 1.8, 21, col = medium_gray, border = "black", lwd = 2)
-  text(1.15, 16.5, "Screening", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
+  rect(0.5, 10, 1.8, 19, col = medium_gray, border = "black", lwd = 2)
+  text(1.15, 14.5, "Screening", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
   
-  # INCLUDED SECTION - Maximum separation at bottom
+  # INCLUDED SECTION - Minimal bottom space
   # Studies included in review - bigger box with automated data
-  draw_box(6, 10, 5, 1.8, 
+  draw_box(6, 8, 5, 1.8, 
            c("Studies included in review", paste0("(n = ", final_included, ")")), 
            color = light_gray, text_size = 1.1)
   
-  # Reports of included studies - bigger box
-  draw_box(6, 7, 5, 1.8, 
+  # Reports of included studies - bigger box, positioned close to bottom
+  draw_box(6, 4.5, 5, 1.8, 
            c("Reports of included studies", paste0("(n = ", final_included, ")")), 
            color = light_gray, text_size = 1.1)
   
   # Included stage label
-  rect(0.5, 5, 1.8, 11, col = medium_gray, border = "black", lwd = 2)
-  text(1.15, 8, "Included", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
+  rect(0.5, 2.5, 1.8, 9, col = medium_gray, border = "black", lwd = 2)
+  text(1.15, 5.75, "Included", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
   
   # ARROWS - Precisely calculated positions based on box dimensions
   # Main flow arrows (vertical, down-pointing)
-  arrows(6, 24 - 0.9, 6, 20 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
-  arrows(6, 20 - 0.9, 6, 17 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
-  arrows(6, 17 - 0.9, 6, 14 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
-  arrows(6, 14 - 0.9, 6, 10 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
-  arrows(6, 10 - 0.9, 6, 7 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 22 - 0.9, 6, 18 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 18 - 0.9, 6, 15 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 15 - 0.9, 6, 12 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 12 - 0.9, 6, 8 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 8 - 0.9, 6, 4.5 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
   
   # Exclusion arrows (horizontal, right-pointing)
-  arrows(6 + 2.5, 24, 13 - 3.25, 24, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
-  arrows(6 + 2.5, 20, 13 - 3.25, 20, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
-  arrows(6 + 2.5, 17, 13 - 3.25, 17, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
-  arrows(6 + 2.5, 14, 13 - 3.25, 14, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
+  arrows(6 + 2.5, 22, 13 - 3.25, 22, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
+  arrows(6 + 2.5, 18, 13 - 3.25, 18, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
+  arrows(6 + 2.5, 15, 13 - 3.25, 15, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
+  arrows(6 + 2.5, 12, 13 - 3.25, 12, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
   
   dev.off()
   
-  # Create PDF version with maximum spacing
+  # Create PDF version with minimal spacing
   pdf(paste0(output_dir, "/enhanced_automated_prisma_2020.pdf"), 
-      width = 18, height = 26, bg = "white")
+      width = 16, height = 20, bg = "white")
   
-  par(mar = c(1, 1, 1, 1))
-  plot(0, 0, type = "n", xlim = c(0, 18), ylim = c(0, 28), 
+  par(mar = c(0.1, 0.1, 0.1, 0.1))
+  plot(0, 0, type = "n", xlim = c(0, 18), ylim = c(0, 24), 
        axes = FALSE, xlab = "", ylab = "")
   
-  # Header
-  rect(3, 26, 15, 27, col = medium_gray, border = "black", lwd = 3)
-  text(9, 26.5, "PRISMA 2020 flow diagram for systematic reviews", 
-       cex = 1.6, font = 2, adj = 0.5, col = "black")
-  
   # All content boxes with correct PRISMA 2020 flow
-  draw_box(6, 24, 5, 1.8, c("Records identified from", "databases", paste0("(n = ", total_records_identified, ")")), color = light_gray, text_size = 1.1)
-  draw_box(13, 24, 6.5, 3.0, c("Records removed before screening:", paste0("Duplicate records removed by litsearchr (n = ", litsearchr_duplicates_removed, ")"), paste0("Additional duplicates found (n = ", additional_duplicates, ")"), paste0("Records in other language (n = ", other_language, ")"), "Records marked as ineligible by automation tools (n = 0)"), color = "white", text_size = 0.85)
-  draw_box(6, 20, 5, 1.8, c("Records screened", paste0("(n = ", records_screened_title_abstract, ")")), color = light_gray, text_size = 1.1)
-  draw_box(13, 20, 6.5, 2.4, c("Records excluded:", paste0("Title screening (n = ", excluded_title, ")"), paste0("Abstract screening (n = ", excluded_abstract, ")")), color = "white", text_size = 0.95)
-  draw_box(6, 17, 5, 1.8, c("Reports sought for retrieval", paste0("(n = ", reports_sought, ")")), color = light_gray, text_size = 1.1)
-  draw_box(13, 17, 6.5, 2.0, c("Reports not retrieved", paste0("(n = ", reports_not_retrieved, ")")), color = "white", text_size = 1.05)
-  draw_box(6, 14, 5, 1.8, c("Reports assessed for eligibility", paste0("(n = ", reports_assessed_full_text, ")")), color = light_gray, text_size = 1.1)
-  draw_box(13, 14, 6.5, 2.0, c("Reports excluded with reasons:", paste0("Full-text exclusions (n = ", excluded_full_text, ")")), color = "white", text_size = 0.95)
-  draw_box(6, 10, 5, 1.8, c("Studies included in review", paste0("(n = ", final_included, ")")), color = light_gray, text_size = 1.1)
-  draw_box(6, 7, 5, 1.8, c("Reports of included studies", paste0("(n = ", final_included, ")")), color = light_gray, text_size = 1.1)
+  draw_box(6, 22, 5, 1.8, c("Records identified from", "databases", paste0("(n = ", total_records_identified, ")")), color = light_gray, text_size = 1.1)
+  draw_box(13, 22, 6.5, 3.0, c("Records removed before screening:", paste0("Duplicate records removed by litsearchr (n = ", litsearchr_duplicates_removed, ")"), paste0("Additional duplicates found (n = ", additional_duplicates, ")"), paste0("Records in other language (n = ", other_language, ")"), "Records marked as ineligible by automation tools (n = 0)"), color = "white", text_size = 0.85)
+  draw_box(6, 18, 5, 1.8, c("Records screened", paste0("(n = ", records_screened_title_abstract, ")")), color = light_gray, text_size = 1.1)
+  draw_box(13, 18, 6.5, 2.4, c("Records excluded:", paste0("Title screening (n = ", excluded_title, ")"), paste0("Abstract screening (n = ", excluded_abstract, ")")), color = "white", text_size = 0.95)
+  draw_box(6, 15, 5, 1.8, c("Reports sought for retrieval", paste0("(n = ", reports_sought, ")")), color = light_gray, text_size = 1.1)
+  draw_box(13, 15, 6.5, 2.0, c("Reports not retrieved", paste0("(n = ", reports_not_retrieved, ")")), color = "white", text_size = 1.05)
+  draw_box(6, 12, 5, 1.8, c("Reports assessed for eligibility", paste0("(n = ", reports_assessed_full_text, ")")), color = light_gray, text_size = 1.1)
+  draw_box(13, 12, 6.5, 2.0, c("Reports excluded with reasons:", paste0("Full-text exclusions (n = ", excluded_full_text, ")")), color = "white", text_size = 0.95)
+  draw_box(6, 8, 5, 1.8, c("Studies included in review", paste0("(n = ", final_included, ")")), color = light_gray, text_size = 1.1)
+  draw_box(6, 4.5, 5, 1.8, c("Reports of included studies", paste0("(n = ", final_included, ")")), color = light_gray, text_size = 1.1)
   
   # Stage labels
-  rect(0.5, 22.5, 1.8, 25.5, col = medium_gray, border = "black", lwd = 2)
-  text(1.15, 24, "Identification", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
-  rect(0.5, 12, 1.8, 21, col = medium_gray, border = "black", lwd = 2)
-  text(1.15, 16.5, "Screening", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
-  rect(0.5, 5, 1.8, 11, col = medium_gray, border = "black", lwd = 2)
-  text(1.15, 8, "Included", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
+  rect(0.5, 20.5, 1.8, 23.5, col = medium_gray, border = "black", lwd = 2)
+  text(1.15, 22, "Identification", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
+  rect(0.5, 10, 1.8, 19, col = medium_gray, border = "black", lwd = 2)
+  text(1.15, 14.5, "Screening", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
+  rect(0.5, 2.5, 1.8, 9, col = medium_gray, border = "black", lwd = 2)
+  text(1.15, 5.75, "Included", cex = 1.2, font = 2, srt = 90, adj = 0.5, col = "black")
   
   # Arrows
-  arrows(6, 24 - 0.9, 6, 20 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
-  arrows(6, 20 - 0.9, 6, 17 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
-  arrows(6, 17 - 0.9, 6, 14 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
-  arrows(6, 14 - 0.9, 6, 10 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
-  arrows(6, 10 - 0.9, 6, 7 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 22 - 0.9, 6, 18 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 18 - 0.9, 6, 15 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 15 - 0.9, 6, 12 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 12 - 0.9, 6, 8 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
+  arrows(6, 8 - 0.9, 6, 4.5 + 0.9, lwd = 3, length = 0.15, col = "black", angle = 20, code = 2)
   
-  arrows(6 + 2.5, 24, 13 - 3.25, 24, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
-  arrows(6 + 2.5, 20, 13 - 3.25, 20, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
-  arrows(6 + 2.5, 17, 13 - 3.25, 17, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
-  arrows(6 + 2.5, 14, 13 - 3.25, 14, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
+  arrows(6 + 2.5, 22, 13 - 3.25, 22, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
+  arrows(6 + 2.5, 18, 13 - 3.25, 18, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
+  arrows(6 + 2.5, 15, 13 - 3.25, 15, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
+  arrows(6 + 2.5, 12, 13 - 3.25, 12, lwd = 2, length = 0.12, col = "black", angle = 20, code = 2)
   
   dev.off()
 }
 
 # Execute the function
 create_automated_enhanced_prisma()
-
-cat("Enhanced automated PRISMA diagram saved as:\n")
-cat("- PNG:", paste0(output_dir, "/enhanced_automated_prisma_2020.png"), "\n")
-cat("- PDF:", paste0(output_dir, "/enhanced_automated_prisma_2020.pdf"), "\n")
 
 # Save the counts to a CSV file for reference (Correct PRISMA 2020 Structure)
 prisma_counts <- data.frame(
@@ -341,17 +278,3 @@ detailed_breakdown <- screening_data %>%
   arrange(desc(count))
 
 write.csv(detailed_breakdown, paste0(output_dir, "/enhanced_screening_decisions_breakdown.csv"), row.names = FALSE)
-
-cat("\n=== Summary for Manuscript (Correct PRISMA 2020 Structure) ===\n")
-cat("For the PRISMA 2020 flow diagram and manuscript:\n")
-cat("- Total records identified from databases:", total_records_identified, "\n")
-cat("- Duplicates removed by litsearchr:", litsearchr_duplicates_removed, "\n")
-cat("- Additional exclusions during screening:", additional_exclusions_screening, "\n")
-cat("- Records screened (title/abstract):", records_screened_title_abstract, "\n")
-cat("- Records excluded at title/abstract screening:", records_excluded_title_abstract, "\n")
-cat("- Reports assessed for full-text eligibility:", reports_assessed_full_text, "\n")
-cat("- Reports excluded at full-text stage:", excluded_full_text, "\n")
-cat("- Final studies included:", final_included, "\n")
-cat("===============================\n")
-
-cat("\nEnhanced automated PRISMA diagram generation complete!\n")

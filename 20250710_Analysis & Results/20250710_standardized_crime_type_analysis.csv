@@ -1,0 +1,6 @@
+Crime_Type_Standardized,N_Studies,Mean_Unit_Size_km2,Median_Unit_Size_km2,SD_Unit_Size,Min_Unit_Size,Max_Unit_Size,Countries,Sample_Size_Range,Percentage_of_Studies,Size_Category
+Burglary,25,1.8471,0.88,2.4665,1.36e-4,8.48,Belgium; Australia; Netherlands; United Kingdom; China; United States; New Zealand; Japan,N/A,49,Medium (0.1-1 km²)
+Multiple/Mixed Crime Types,8,2.07,2.795,1.2332,0.04,2.96,Netherlands; United States,N/A,15.7,Large (1-10 km²)
+Robbery,8,1.2724,1.62,0.9854,0.01968,2.96,China; United States; Netherlands,N/A,15.7,Large (1-10 km²)
+Other Specific Crimes,5,0.1845,0.15,0.1968,8.45e-4,0.44,Belgium; United Kingdom; Northern Ireland; Netherlands,N/A,9.8,Medium (0.1-1 km²)
+Theft,5,1.888,2.18,1.0497,0.2,2.81,China; India; United Kingdom; Netherlands,N/A,9.8,Large (1-10 km²)

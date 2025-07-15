@@ -1,0 +1,538 @@
+﻿Title,Authors,DOI,DOI link,Venue,Citation count,Year,study area size,"Supporting quotes for ""study area size""","Supporting  tables for ""study area size""","Reasoning for ""study area size"""
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,"Peter Baudains, Alex Braithwaite, Shane D Johnson",-,-,,85,2013,Not specified (the paper does not provide a direct measurement or calculation method for the total study area size in square kilometers),"  - ""Predominantly, the riots took place in the highly populated areas of London, Birmingham, and Manchester.""
+  - ""Data exist across the complete set of 4,765 LSOAs in the Greater London area, and each LSOA typically consists of around 1,500 residents.""
+  - ""In executing our research design, we are interested in offender decision making at the area level, and our chosen unit of analysis is the U.K. census LSOA.""
+  - ""To do this, we use data for all riot-related incidents that occurred in London in August 2011 that were detected by the police.""
+  - ""We examine the extent to which these patterns might be considered random or whether systematic patterns emerge that would plausibly be explained by existing criminological theory concerned with crime patterns.""",,"- The study focuses on riot-related incidents in London during August 2011, indicating that the study area is primarily within Greater London.
+- The use of Lower Super Output Areas (LSOAs) as the unit of analysis suggests that the study area is divided into these smaller geographic units for analysis.
+- The mention of 4,765 LSOAs in Greater London implies that the study area encompasses these areas, but it does not provide a direct measurement of the total area size in square kilometers.
+- The paper does not provide a direct statement of the total study area size in square kilometers, nor does it offer a method for calculating this size based on the LSOAs.
+- The study area description is limited to the geographic scope of Greater London and the use of LSOAs, but it lacks specific details about the total area size."
+a_discrete_spatial_choice_model_of_burglary_target.pdf,-,-,-,-,-,-,"Total Study Area Size: Nearly 3,000 km²
+Study Area Description: Entire province of East Flanders, Belgium
+Area Calculation Method: Not specified
+Area Source: Paper description
+Alternative Size Info: None found
+Context Notes: Densely urbanized polycentric area with a population of approximately 1.5 million","  - ""It covers nearly 3,000 km² and has a population of approximately 1.5 million.""
+  - ""The study area comprises the entire province of East Flanders (Belgium), a densely urbanized polycentric study area with a population of approximately 1.5 million inhabitants distributed across 12 cities and 53 towns.""",,"- The paper explicitly states that the study area is the entire province of East Flanders in Belgium.
+- It provides a specific size for the study area, mentioning that it covers ""nearly 3,000 km².""
+- This information is directly related to the study area size, which is a key piece of information for understanding the scope of the study."
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,"Joseph Clare, John Fernandez, Frank Morgan",-,-,,100,2009,"Total Study Area Size: Approximately 1967.96 km²
+Study Area Description: City of Perth, including 291 residential suburbs
+Area Calculation Method: Calculated from average suburb size and total number of suburbs
+Area Source: Australian Bureau of Statistics (ABS) data
+Alternative Size Info: Average suburb size is 6.76 km²
+Context Notes: Suburbs sprawl along the coast for approximately 100 km and extend inland up to 40 km","  - ""Perth is the largest city in Western Australia, with suburbs that sprawl along the coast for approximately 100 km and extend inland from the coast by up to 40 km.""
+  - ""A total of 291 residential suburbs were selected as members of the possible choice set for the residential burglaries examined here.""
+  - ""The overall geographic placement of these suburbs in relation to the Swan River, selected major roads, and the location of the railway line are displayed in Figure 1""
+  - ""The city of Perth is located in the south-west of Western Australia at the coast of the Indian Ocean.""",,"- The study area is described as the city of Perth, which is located in Western Australia.
+- The geographic extent of Perth is described as sprawling along the coast for approximately 100 km and extending inland up to 40 km.
+- The study involves 291 residential suburbs, which are part of the choice set for residential burglaries.
+- The average size of these suburbs is given as 6.76 km², which can be used to estimate the total study area size.
+- To calculate the total study area size, we can multiply the average size of a suburb by the total number of suburbs: 6.76 km² * 291 suburbs = approximately 1967.96 km²."
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,"Han Yue, Lin Liu, Luzi Xiao, Y D Wei",-,-,Applied Geography,15,2023,Not specified (the paper does not provide a specific total area size in square kilometers or any other unit),"  - ""The type of crime studied in this paper is street theft crime, which includes snatching, pickpocketing, and theft from the person that happened in the public open space.""
+  - ""This study is conducted in ZG city, a megacity in southeast China.""
+  - ""There are 2643 communities in the ZG city, and this study takes the community as the spatial unit of analysis.""
+  - ""Finally, 1636 communities remain in this study.""
+  - ""We obtained a set of detected street theft crimes committed during 2017 and 2018 from the police department of ZG city.""",,"- The study is conducted in ZG city, which is described as a megacity in southeast China. This provides a general geographic context for the study area.
+- The study area is further defined by the number of communities involved, with 2643 communities in ZG city and 1636 communities remaining in the study. This indicates the spatial scope of the study.
+- The study focuses on street theft crime within these communities, suggesting that the study area is urban and includes public spaces where such crimes occur.
+- The use of a discrete spatial choice model to analyze crime location choices implies that the study area is divided into discrete spatial units, which are the communities.
+- However, the paper does not provide a specific total area size in square kilometers or any other unit. It does not mention the exact size of the study area in terms of km² or any other measurement."
+Target Selection Models with Preference Variation Between Offenders,"Michael Townsley, Daniel Birks, Stijn Ruiter, Wim Bernasco, • Gentry White",-,-,-,-,-,"Total Study Area Size: Not specified
+Study Area Description: Brisbane Local Government Area, 158 Statistical Local Areas (SLAs)
+Area Calculation Method: Not mentioned
+Area Source: Not stated
+Alternative Size Info: None found
+Context Notes: None","  - ""Examining the location choices of these offenders, a choice set of 158 Statistical Local Areas (SLAs) were defined as possible offending areas.""
+  - ""Data describing 2844 detected residential burglaries committed by 873 offenders over 2006-2009 calendar years in the Brisbane Local Government Area were collected and analyzed.""
+  - ""Analyzing detected residential burglaries from Brisbane, Australia, we apply a random effects variant of the discrete spatial choice model to estimate preference variation between offenders across six location choice characteristics.""",,"- The study is conducted in Brisbane, Australia, as indicated by the mention of ""Brisbane, Australia"" and ""Brisbane Local Government Area.""
+- The study area is described in terms of the number of Statistical Local Areas (SLAs) involved, which is 158.
+- The paper does not provide a direct measurement of the study area size in square kilometers (km²), nor does it mention any specific geographic boundaries or administrative units beyond the SLAs.
+- The area calculation method and source are not explicitly mentioned in the provided text.
+- There is no alternative size information or context notes provided in the text."
+Effects of residential history on commercial robbers' crime location choices,"Wim Bernasco, Thessa Kooistra",-,-,-,-,-,"Total Study Area Size: Not specified
+Study Area Description: Postal code areas in the Netherlands
+Area Calculation Method: Not mentioned
+Area Source: Not stated
+Alternative Size Info: None found
+Context Notes: None","  - ""The third source of data is a database containing demographic, social and economic information on all postal code areas in the Netherlands. There are 4006 postal code areas nationwide; they have an average population size of 4900 and an average number of households of 2100.""
+  - ""In terms of size, shape and topography, the postal code area is a useful spatial unit of analysis because it approximates the area one would expect people to be familiar with if they lived within it.""
+  - ""Using unique data on the residential histories of commercial robbers, this study has generated new empirical evidence relating to the spatial behaviour of offenders that supports crime pattern theory.""
+  - ""The first data source is the National Commercial Robbery Registration System (LORS), which is managed by the Dutch National Police Services Agency (KLPD). The LORS is an information system specifically designed for strategic and operational analyses in criminal investigations of commercial robberies.""",,"- The paper discusses the use of postal code areas as a spatial unit of analysis, which suggests that the study area is defined by these areas.
+- The mention of 4006 postal code areas nationwide indicates the scope of the study area, but it does not provide a direct measurement of the total area size in square kilometers.
+- The paper does not provide a specific total area size in square kilometers or any other unit, nor does it mention a method for calculating the area size.
+- The study area description is related to postal code areas, but no specific geographic boundaries or administrative units are detailed beyond this.
+- There is no mention of how the area size was calculated or what source was used for this information.
+- The paper does not provide alternative size information or context notes about the area."
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,"Sabine E M Van Sleeuwen, Stijn Ruiter, Barbara Menting",-,-,,21,2018,"Total Study Area Size: Not specified (average area size of postal code areas is 2.96 km²)
+Study Area Description: Greater The Hague area, comprising nine municipalities
+Area Calculation Method: Not mentioned
+Area Source: Study methodology
+Alternative Size Info: 142 postal code areas with an average size of 2.96 km²
+Context Notes: Study area defined by postal code areas","  - ""The dependent variable represents the choice outcome, that is, the target area the offender has selected from the set of alternative areas. As all offense locations were geocoded and allocated to one of the 142 postal codes in the study area, the dependent variable describes the choice for a particular postal code from all 142 potential alternatives in the greater The Hague area.""
+  - ""In previous studies, it was argued that four-digit postal code areas are well-suited for crime location choice research, as these administrative areas were constructed in such a way to have minimal travel restrictions for postal delivery services that usually travel on foot or bicycle (Bernasco 2010:398)""
+  - ""The area comprises of nine municipalities around-and including-the city of The Hague, the third largest city in the Netherlands.""",,"- The study area is described as comprising nine municipalities around and including the city of The Hague, indicating a geographic scope.
+- The average area size of the postal code areas within the study region is given as approximately 2.96 km².
+- The study uses 142 four-digit postal code areas, which are considered suitable for crime location choice research due to their minimal travel restrictions.
+- The dependent variable involves choosing a target area from these 142 postal code areas, suggesting that the study area is defined by these administrative boundaries."
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Wim Bernasco,-,-,,204,2010,Not specified (the paper does not provide a specific total study area size in square kilometers or any other unit),"  - ""The third source is a national database of demographic, social, and economic information on all (four-digit) postal code areas in the Netherlands.""
+  - ""In terms of their size, shape, and topography, the postal code area is a useful approximation of the area one would expect people to be familiar with if they lived within it.""
+  - ""The second source of data is the population registration data, which are held in a nationwide information system (Dutch acronym GBA) used by Dutch municipalities and several other agencies, to keep track of birth, death, nationality, marriage, divorce, childbirth, and residential addresses of all Dutch citizens.""
+  - ""The first data source is a police information system used by the Greater The Hague Police Force that was designed to support crime investigations.""
+  - ""There are approximately 4,000 postal code areas nationwide, with an average population size of 4,900 and an average number of households of 2,100.""",,"- The study uses data from the Greater The Hague Police Force, which suggests a focus on the Hague area.
+- The use of a nationwide population registration system and a national database of demographic information indicates a broader scope, but the focus is on postal code areas within the Netherlands.
+- The mention of approximately 4,000 postal code areas with an average population size and number of households provides context for the study area's scope.
+- The study area is described in terms of postal code areas, which are used as a proxy for areas familiar to residents.
+- However, the paper does not provide a specific total study area size in square kilometers or any other unit."
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,"Luzi Xiao, Stijn Ruiter, Lin Liu, Guangwen Song, Suhong Zhou",-,-,"Computers, Environment and Urban Systems",12,2021,"Total Study Area Size: Approximately 7235.22 km²
+Study Area Description: 2643 communities in ZG city
+Area Calculation Method: Estimated from average community size and number of communities
+Area Source: Paper's methodology section
+Alternative Size Info: Average community size is 2.74 km²
+Context Notes: Communities vary in size; average size used for estimation","  - ""Community size has a skew distribution though, with half of all communities smaller than 0.92 kmsq., but the smallest area only 0.01 km-sq. and the largest 82.49 km-sq.""
+  - ""Communities have a relatively homogeneous population and their average size is 2.74 km-sq., which closely resembles the size of the units of analysis in many other crime location choice studies (e.g., Menting et al., 2016).""
+  - ""Communities in the downtown area are generally smaller with a higher population density, whereas communities in the suburbs often have a lot of farmland or woodland and are thus usually bigger in size with relatively low numbers of residents.""
+  - ""All residential burglaries were geocoded to one of the 2643 communities in ZG city.""",,"- The paper provides information about the number of communities (2643) and their average size (2.74 km-sq.), which can be used to estimate the total study area size.
+- The average size of each community is given as 2.74 km-sq., and there are 2643 communities.
+- To find the total study area size, we can multiply the number of communities by the average size of each community: 2643 communities * 2.74 km-sq./community = approximately 7235.22 km-sq.
+- The paper also mentions that community sizes vary, with some being smaller and others larger, but the average size is a reasonable basis for estimating the total area."
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,"Barbara Menting, Marre Lammers, Stijn Ruiter, Wim Bernasco",-,-,-,-,-,"Total Study Area Size: Not specified (average area size of 2.96 km² per postal code area)
+Study Area Description: Greater The Hague area in the Netherlands
+Area Calculation Method: Not mentioned
+Area Source: Paper description
+Alternative Size Info: 142 four-digit postal code areas with an average size of 2.96 km²
+Context Notes: Average area size provided; total area not specified","  - ""Dutch four-digit postal code areas are designed to have minimal travel restrictions for postal delivery services that usually travel by foot or bicycle, and their size is inversely related to the level of urbanization (Bernasco, 2010: 398)""",,"- The paper provides specific information about the study area size by mentioning the average area size of the four-digit postal code areas within the study area. This is a direct measure of the size of the areas being studied.
+- The average area size is given as 2.96 km², which is a key piece of information for understanding the scale of the study area.
+- The study area is described as covering the greater The Hague area in the Netherlands, which provides a geographic context for the study.
+- The paper does not provide a total study area size in km² but gives an average size for each postal code area, which can be used to estimate the total area if the number of areas is known."
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *","Marre Lammers, Barbara Menting, Stijn Ruiter, Wim Bernasco",-,-,-,-,-,"Total Study Area Size: Approximately 420.32 km²
+Study Area Description: Greater The Hague area, Netherlands
+Area Calculation Method: Calculated from number of postal code areas and average area size
+Area Source: Paper's methodology section
+Alternative Size Info: 142 four-digit postal code areas, average size 2.96 km²
+Context Notes: Average population size approximately 7,000 per postal code area","  - ""The average shortest distance from residence to boundary was 7.1 km, which is much larger than the mean and median distance between residence and crime location (2.9 and 1.9 km, respectively), suggesting that a bias caused by edge effects is unlikely.""",,"- The study area is described as the ""greater The Hague area"" in the Netherlands, which provides a geographic description.
+- The study area is further defined as consisting of 142 four-digit postal code areas, with each area having an average size of 2.96 km².
+- To calculate the total study area size, we can multiply the number of postal code areas by the average size of each area: 142 areas × 2.96 km²/area = approximately 420.32 km².
+- The mention of the average population size and the average size of each postal code area provides additional context about the study area.
+- The discussion about distances and edge effects suggests that the study area is large enough to minimize bias from edge effects."
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Wim Bernasco,-,-,-,-,-,400 sq. km,"  - ""The police force services a geographical area of 400 sq. km that houses a population of one million residents and 460,000 residential units.""
+  - ""the study area (Greater The Hague Area) measures 400 sq. km, and houses a population of 1,000,000 residents in 460,000 residential units.""",,"- The paper explicitly mentions the size of the study area in square kilometers. The first quote provides the size of the geographical area served by the police force, which is 400 sq. km.
+- The second quote confirms that the study area, specifically the Greater The Hague Area, also measures 400 sq. km.
+- Both quotes clearly state the total study area size in square kilometers, which is a direct answer to the question."
+The Importance of Importance Sampling,"Wim Medvedev, Oleg N Polaschek, Sophie Curtis-Ham, Wim Bernasco, Oleg N Medvedev, Devon L L Polaschek",-,-,-,-,-,"Total Study Area Size: Not specified (varies by SA2, median 1.962km²)
+Study Area Description: National dataset covering all SA2s in New Zealand
+Area Calculation Method: Not mentioned (implied use of SA2 boundaries)
+Area Source: New Zealand Census data
+Alternative Size Info: Range 0.063km² to 12,042.36km², median 1.962km²
+Context Notes: SA2s used as neighborhoods; population density varies","  - ""In this study we used the NZ Census Statistical Area 2 (SA2) as the set of locations from which an offense location could be chosen. SA2s roughly equate to neighborhoods and typically contain 2000-4000 residents in metropolitan areas (1000-5000 in rural areas).""
+  - ""The outcome variable was the choice of SA2: in which of the 2153 SA2 areas of New Zealand did the offender commit the index offense?""
+  - ""The data used in this study included solved residential and non-residential burglary, commercial and personal robbery and extra-familial sex offenses occurring between 2009 and 2018 from a national dataset obtained from the New Zealand Police.""",,"- The study uses a national dataset from New Zealand, indicating that the study area is nationwide.
+- The study area is defined by the use of NZ Census Statistical Area 2 (SA2) units, which are described as roughly equivalent to neighborhoods.
+- The total number of SA2s used in the study is 2153, and these units vary in size from 0.063km² to 12,042.36km², with a median size of 1.962km².
+- The study area description is national, covering all SA2s in New Zealand, which are used as the spatial units for analysis.
+- The area calculation method is not explicitly mentioned, but it is implied that the SA2 boundaries are used as defined by the New Zealand Census.
+- The area source is the New Zealand Census data, as indicated by the use of SA2s.
+- Alternative size information is provided by the range and median size of the SA2s.
+- Context notes include the variation in population density and the use of SA2s as neighborhoods."
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Marre Lammers,-,-,-,-,-,"Total Study Area Size: Approximately 420.32 km²
+Study Area Description: Greater The Hague region
+Area Calculation Method: Based on number and average size of postal code areas
+Area Source: Data used in the study
+Alternative Size Info: None found
+Context Notes: None","  - ""The total number of four-digit postal code areas in the data is 142.""
+  - ""The dependent variable in this study is the choice of an area j from a geographical set of alternatives J to co-offend in. This co-offended crime had to be committed between 2006 and 2009 in the greater The Hague region.""
+  - ""The current study will take a next step in gaining insight into the relationship between co-offending and crime location choice, by using one model to analyse previous and current home locations of all offenders involved, as well as previous crime locations and measures of attractiveness of targets.""
+  - ""The data were analysed using a discrete spatial choice model.""",,"- The study focuses on the greater The Hague region in The Netherlands, which is the study area.
+- The study area is described as consisting of 142 four-digit postal code areas.
+- Each postal code area has an average size of 2.96 km².
+- To find the total study area size, we can multiply the number of postal code areas by the average size of each area: 142 areas × 2.96 km²/area = approximately 420.32 km².
+- The study area description is the greater The Hague region, which is covered by these postal code areas.
+- The area calculation method is based on the number and average size of the postal code areas.
+- The area source is the data used in the study, which includes these postal code areas.
+- There is no alternative size information or context notes provided in the paper."
+"Right place, right time? Making crime pattern theory time-specific","Sabine E M Van Sleeuwen, Stijn Ruiter, Wouter Steenbeek",-,-,-,-,-,"Total Study Area Size: Not specified (but can be estimated from 13,305 neighborhoods with a mean area of 2.63 km²)
+Study Area Description: 13,305 unique neighborhoods in the Netherlands
+Area Calculation Method: Geocoding longitude-latitude information
+Area Source: Statistics Netherlands 2019
+Alternative Size Info: Median area of 0.66 km², mean area of 2.63 km²
+Context Notes: Focus on neighborhoods where crimes were committed","  - ""In the present study, we extended crime pattern theory and proposed that an offender's spatial knowledge acquired during daily routine activities is not equally applicable to all times of day.""
+  - ""The results showed that almost 40% of the offences (39.4%) were committed within the neighbourhoods of offenders' activity nodes, increasing to 84.5% when including first-, second-and third-order spatial lags surrounding the activity node neighbourhoods.""
+  - ""the final dataset for analysis is a data matrix of 944,655 rows (containing 13,305 neighbourhood rows for each of the 71 crimes to be explained).""
+  - ""The results show that almost 40% of the offences are committed within the neighbourhoods of offenders' activity nodes, increasing to 85% when including first-, second-and third-order neighbourhoods.""",,"- The paper discusses the spatial distribution of crimes within the Netherlands, specifically focusing on the neighborhoods where offenders commit crimes.
+- The study area is described in terms of the number of neighborhoods analyzed, which is 13,305 unique neighborhoods in the Netherlands for the year 2018.
+- The median area of these neighborhoods is provided as 0.66 km², with a mean of 2.63 km² and a range from 0.02 to 130.14 km².
+- The total study area size can be estimated by multiplying the number of neighborhoods by the average area per neighborhood. However, the paper does not provide a direct total area size calculation.
+- The study area description is the Netherlands, specifically focusing on the neighborhoods where crimes were committed.
+- The area calculation method is based on geocoding longitude-latitude information to unique neighborhoods.
+- The area source is Statistics Netherlands 2019.
+- Alternative size information is provided in terms of the number of neighborhoods and their median and mean areas.
+- Context notes include the focus on neighborhoods and the spatial distribution of crimes within these areas."
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,"Dongping Long, Lin Liu, Mingen Xu, Jiaxin Feng, Jianguo Chen, Li He",-,-,Cities,38,2021,"Total Study Area Size: Approximately 3193.02 km²
+Study Area Description: 1971 communities
+Area Calculation Method: Calculated from community count and average size
+Area Source: Paper's methodology section
+Alternative Size Info: Average community size of 1.62 km²
+Context Notes: Standard deviation of community sizes is 2.85 km²; minimum size is 0.001 km²; maximum size is 43 km²","  - ""The study area covers 1971 communities (Fig. 2 ), with an average size of 1.62 km 2""
+  - ""The standard deviation of the size of communities is 2.85, the minimum size of 0.001 km 2 , and the maximum size of 43 km 2""",,"- The paper provides specific information about the study area size by mentioning that it covers 1971 communities.
+- The average size of each community is given as 1.62 km², which can be used to calculate the total study area size.
+- To find the total study area size, we multiply the number of communities by the average size of each community: 1971 communities * 1.62 km²/community = approximately 3193.02 km².
+- The paper also provides additional details such as the standard deviation, minimum, and maximum sizes of the communities, but these are not necessary for calculating the total study area size."
+Do Migrant and Native Robbers Target Different Places?," Liu",-,-,ISPRS Int. J. Geo Inf.,3,2021,"Total Study Area Size: Approximately 3193.02 km²
+Study Area Description: 1971 neighborhoods in ZG City
+Area Calculation Method: Calculated from neighborhood count and average size
+Area Source: Paper's methodology section
+Alternative Size Info: 1971 neighborhoods, 1.62 km² average neighborhood size
+Context Notes: Based on neighborhood boundaries","  - ""The study area consists of 1971 neighborhoods (Figure 1 ) with an average area of 1.62 square kilometers.""
+  - ""ZG City-one of the largest cities in Southeast China [19]. In 2018, the resident population was 14.9 million, and the GDP of the city was 2.30 trillion with an annual growth rate of 6.50%.""",,"- The paper provides a direct mention of the study area size in terms of the number of neighborhoods and their average area. This is a clear indication of the study area size.
+- The quote ""The study area consists of 1971 neighborhoods (Figure 1 ) with an average area of 1.62 square kilometers"" gives us the total number of neighborhoods and their average size, which can be used to calculate the total study area size.
+- To calculate the total study area size, we multiply the number of neighborhoods by their average area: 1971 neighborhoods * 1.62 km²/neighborhood = approximately 3193.02 km².
+- The paper does not provide a direct total area size in km², but it does give us enough information to calculate it based on the number and average size of the neighborhoods."
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?","Dongping Long, Lin Liu",-,-,Cities,3,2022,"Total Study Area Size: Approximately 3193.02 km²
+Study Area Description: ZG City, a major city in the southeast coastal region of China
+Area Calculation Method: Based on number of neighborhood units and average unit size
+Area Source: Long et al. (2021)
+Alternative Size Info: None found
+Context Notes: None","  - ""ZG City is one of the major cities in the southeast coastal region of China, a national central city and the core of the Guangdong-Hong Kong-Macao Greater Bay Area, and has been the political, economic, scientific, educational, and cultural center of southern China.""",,"- The paper provides a direct mention of the study area size in terms of the number of neighborhood units and their average area. This is a clear indication of the study area size.
+- The average area of each neighborhood unit is given as 1.62 km², and there are 1971 such units. This allows for the calculation of the total study area size.
+- The total study area size can be calculated by multiplying the number of neighborhood units by the average area of each unit: 1971 units × 1.62 km²/unit = approximately 3193.02 km².
+- The study area description is provided as ZG City, which is a major city in the southeast coastal region of China, indicating the geographic boundaries of the study.
+- The area calculation method is implied to be based on the number of neighborhood units and their average size, which is a common method for estimating area sizes in urban studies.
+- The area source is referenced to Long et al. (2021), indicating that the data comes from a previous study or dataset.
+- There are no alternative size information or context notes provided in the paper that would alter or qualify the calculated total study area size."
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,"Stijn Ruiter, Barbara Menting, Marre Lammers, Wim Bernasco",-,-,British Journal of Criminology,33,2019,"Total Study Area Size: Approximately 33,000 km² (calculated from 12,821 neighbourhoods × mean size of 2.63 km²)
+Study Area Description: Entire Netherlands, divided into 12,821 neighbourhoods
+Area Calculation Method: Calculated from neighbourhood count and mean size
+Area Source: Statistics Netherlands data
+Alternative Size Info: Median neighbourhood size of 0.68 km²
+Context Notes: Neighbourhoods are smallest statistical units; mean size used for calculation","  - ""The entire Netherlands were selected as the study area and neighbourhoods as the spatial unit of analysis.""
+  - ""Given their size and homogeneous character, Dutch neighbourhoods are expected to be well known to those who regularly visit them.""
+  - ""Dutch neighbourhoods are the smallest statistical units for which Statistics Netherlands provides detailed information on structural and socio-economic features.""",,"- The study area is described as ""the entire Netherlands,"" which indicates a broad geographic scope.
+- The spatial unit of analysis is specified as ""neighbourhoods,"" which are the smallest statistical units in the Netherlands.
+- The paper provides specific data on the number of neighbourhoods (12,821) and their median size (0.68 km²), which can be used to estimate the total study area size.
+- The mean size of a neighbourhood is given as 2.63 km², which can be used to calculate the total area by multiplying it by the number of neighbourhoods."
+Location Choice of Snatching Offenders in Chennai City,"K Kuralarasan, Wim Bernasco",-,-,Journal of quantitative criminology,10,2021,"Total Study Area Size: Approximately 438.18 km²
+Study Area Description: Greater Chennai City Corporation, a metropolitan area
+Area Calculation Method: Based on average surface area of wards
+Area Source: Paper itself
+Alternative Size Info: None found
+Context Notes: None","  - ""The study area for the present research is the Greater Chennai City Corporation, a metropolitan area with a population of over 6.6 million during the latest census in 2011.""
+  - ""In terms of surface area, the wards are similar in size to neighborhoods or census tracts that have been used in crime location studies elsewhere (i.e., Long et al. 2018;Townsley et al. 2015), but due to the high population density in Chennai, the population sizes of wards are larger than those in most other studies.""",,"- The study area is described as the Greater Chennai City Corporation, which is a metropolitan area.
+- The area consists of 201 wards, each with an average surface area of 2.18 km².
+- To find the total study area size, we need to multiply the average surface area of a ward by the total number of wards.
+- The total study area size can be calculated as 201 wards * 2.18 km² per ward = approximately 438.18 km².
+- The study area description is the Greater Chennai City Corporation, which is a metropolitan area.
+- The area calculation method is based on the average surface area of the wards.
+- The area source is the paper itself, which provides the average surface area of the wards.
+- There is no alternative size information or context notes provided in the paper."
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Barbara Menting,-,-,,14,2018,"Total Study Area Size: Not specified (average area size of postal code areas is 1.68 km²)
+Study Area Description: Three municipalities in the greater The Hague area: The Hague, Rijswijk, and Leidschendam-Voorburg
+Area Calculation Method: Not mentioned
+Area Source: Paper provides average area size of postal code areas
+Alternative Size Info: Average area size of postal code areas is 1.68 km²
+Context Notes: Study area consists of 76 postal code areas","  - ""The study area consisted of three municipalities in the greater The Hague area in the Netherlands: The Hague, Rijswijk, and Leidschendam-Voorburg.""
+  - ""The three municipalities in this study contained 82 postal code areas in 2006-2009. Postal code areas were includable when community survey data were available, which applied to 76 (92.7%) of the postal codes in the area""",,"- The study area is described as consisting of three municipalities in the greater The Hague area in the Netherlands: The Hague, Rijswijk, and Leidschendam-Voorburg.
+- The study area includes 76 postal code areas, which are the spatial units of analysis.
+- The average area size of these postal code areas is given as 1.68 km², with a standard deviation of 2.61 and a range from 0.12 to 22.26 km².
+- The total study area size can be estimated by multiplying the average area size by the number of postal code areas, but the paper does not provide a direct total area size calculation."
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China","Dongping Long, Lin Liu, Jiaxin Feng, Suhong Zhou, Fengrui Jing",-,-,Sustainability,21,2018,"Total Study Area Size: Approximately 3197.86 km²
+Study Area Description: 1973 communities
+Area Calculation Method: Calculated from community count and average size
+Area Source: Paper data
+Alternative Size Info: None found
+Context Notes: None","  - ""The study area covers 1973 communities (Figure 2 ), with an average size of 1.62 km 2""
+  - ""The study area covers 1973 communities (Figure 2 ), with an average size of 1.62 km 2 . The standard deviation of the size of the communities is 2.85, the minimum size of 0.001 km 2 and the maximum size of 43 km 2""",,"- The paper provides specific information about the study area size by mentioning the number of communities and their average size.
+- The average size of each community is given as 1.62 km².
+- The total number of communities is 1973.
+- To calculate the total study area size, we can multiply the number of communities by the average size of each community: 1973 communities × 1.62 km²/community = approximately 3197.86 km².
+- The paper does not provide a direct total area size, but it gives enough information to calculate it.
+- The study area description is provided as covering 1973 communities.
+- The area calculation method is implied to be based on the average size of communities.
+- The area source is the paper itself, as it provides the necessary data for calculation.
+- There are no alternative size information or context notes provided in the paper."
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,"Sophie Curtis-Ham, Wim Bernasco, Oleg N Medvedev, Devon L L Polaschek",-,-,-,-,-,Not specified (the paper does not provide a total study area size in km²),"  - ""The study illustrates both the opportunities and challenges involved in employing this methodological paradigm with police administrative data.""
+  - ""The present findings build on prior studies that employed DSCMs to study individual reliability and relevance variables in isolation (e.g., Bernasco, 2019;Ruiter, 2017;van Sleeuwen et al., 2021), by demonstrating how these variables operate collectively.""
+  - ""the alternatives are the neighborhoods (""Statistical Area 2"" Census Units, or ""SA2s"") from which offenders are selecting when deciding where to commit crime.""",,"- The study uses ""Statistical Area 2"" (SA2) census units as the spatial unit for analysis, which indicates that the study area is divided into these units.
+- The paper provides a description of the size of these SA2s, stating that they ""usually contain 2,000-4,000 residents"" and have a ""median of 1.2 km² land area, with 50% sized between 0.84 and 2.2 km².""
+- This information suggests that the study area is composed of multiple SA2s, but the total size of the study area is not explicitly mentioned in terms of total km².
+- The focus of the study is on the reliability and relevance of offenders' knowledge of locations, rather than on the total size of the study area.
+- The paper does not provide a direct statement or calculation for the total study area size in km²."
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,"Alyssa W Chamberlain, Lyndsay N Boggess, Taylor Fisher",-,-,Crime and delinquency,3,2022,Not specified (the paper does not provide a direct measurement of the study area size in square kilometers or any other unit),"  - ""We use data from the Tampa, Florida between January 2000 and September 2012.""
+  - ""The city police department provided data for all arrests for burglaries over a 13-year period of time, totaling 7,124 burglary incidents corresponding to 9,288 unique suspects.""
+  - ""We geocoded the incident and home addresses using ArcGIS 10.6.""
+  - ""We exclude incidents with an unknown or incorrect address, addresses listing a P.O. box or correctional facility, as well as incidents where the suspect lives outside of the city boundaries.""
+  - ""The final sample includes 4,920 burglary arrests nested in 6,165 suspects.""
+  - ""To assess the potential influence of neighborhood characteristics on burglary decision making, we include demographic and economic data from the US Census for all 334 block groups in the city.""
+  - ""However, a handful of block groups were removed due to missing data on some Census variables, leaving the total number of neighborhoods analyzed at 304.""",,"- The study is conducted in Tampa, Florida, as indicated by the use of data from this city.
+- The study uses data from the city police department, which suggests that the study area is confined to the city limits.
+- The use of ArcGIS for geocoding addresses implies that the study area is defined by geographic boundaries within the city.
+- The exclusion of incidents outside city boundaries further supports that the study area is limited to the city of Tampa.
+- The mention of 334 block groups and the subsequent analysis of 304 neighborhoods suggests that the study area is divided into these geographic units.
+- However, the paper does not provide a direct measurement of the study area size in square kilometers or any other unit."
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,"Liang Cai, Guangwen Song, Yanji Zhang",-,-,-,-,-,"Total Study Area Size: Approximately 1,583km²
+Study Area Description: Central urban area of ZG city
+Area Calculation Method: Calculated from community count and average size
+Area Source: Author calculation from community data
+Alternative Size Info: 1,652 communities, 0.958km² average unit size
+Context Notes: Excludes communities without street view images","  - ""We focus on the central urban area of the city where the majority of population reside and commute and where street view images are available.""
+  - ""We use communities (juweihui or cunweihui) as the unit of analysis. Communities are the smallest administrative unit where population census and major survey data are collected.""",,"- The study focuses on the city of ZG in southeast China, specifically the central urban area where most of the population resides and commutes.
+- The unit of analysis is communities (juweihui or cunweihui), which are the smallest administrative units for census and survey data.
+- The total number of communities in the ZG region is 2,643, with an average geographic area of 2.813km².
+- After excluding communities without street view images, the analytical sample consists of 1,652 communities with an average size of 0.958km².
+- To calculate the total study area size, we can multiply the number of communities in the analytical sample by their average size: 1,652 communities * 0.958km²/community = approximately 1,583km²."
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,"Sophie Curtis-Ham, Wim Bernasco, Oleg N Medvedev, Devon L L Polaschek",-,-,-,-,-,Not specified (the study provides median land area of SA2 units but not total study area size),"  - ""Using discrete spatial choice models, we identified relationships between proximity to pre-crime activity locations recorded in a police database (e.g., offenders' homes, family members' homes, schools, prior crimes, and other police interactions) and the locations of 17,054 residential burglaries, 10,353 non-residential burglaries, 1,977 commercial robberies, 4,315 personal robberies, and 4,421 extra-familial sex offences in New Zealand.""",,"- The study uses data from New Zealand, specifically focusing on various types of crimes and their locations.
+- The study area is defined by the use of ""Statistical Area 2"" (SA2) units, which are a standard geographic division in New Zealand.
+- The median land area of the SA2s used in the study is provided as 1.2km², with quartiles ranging from 0.84 to 2.2 km².
+- The study does not provide a total study area size in km² but gives a median size for the SA2 units used in the analysis."
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,"Wim Bernasco, Richard Block",-,-,,277,2009,Not specified (the paper does not provide a direct measurement of the total study area size in square kilometers or any other unit),"  - ""In the spatial choice model, the spatial unit of analysis applies to the definition of what it is that offenders choose when they decide where to offend. In line with many other studies of spatial choice (Block and Block, 1995;Boggs, 1965;Velez, 2001), we use the census tract as our unit of analysis of location choice.""
+  - ""Data on the population size and the racial and ethnic composition of the 865 census tracts in the city of Chicago in 2000 were taken from the public files of the U.S. Census Bureau.""
+  - ""Tracts with a population below 100 were not used in the analysis, which applies to 21 tracts (2.4 percent); the other 844 census tracts are considered in the analysis.""
+  - ""No less than 73 percent of the Chicago robberies were committed outside the census tract in which the offender lived.""
+  - ""Testing the model on cleared robbery cases in Chicago in the years 1996-1998,""",,"- The study focuses on Chicago, specifically using data from 1996 to 1998, which indicates the geographic scope of the study.
+- The spatial unit of analysis is the census tract, which is a common method for dividing urban areas into smaller, manageable units for study.
+- The paper mentions that data was collected from 865 census tracts in Chicago, but 21 tracts were excluded due to low population, leaving 844 tracts for analysis.
+- The fact that 73% of robberies occurred outside the offender's home census tract suggests that the study area is not limited to a single tract but encompasses multiple tracts across Chicago.
+- However, the paper does not provide a direct measurement of the total study area size in square kilometers or any other unit."
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,"Alyssa W Chamberlain, Lyndsay N Boggess",-,-,,30,2016,"Total Study Area Size: Not specified
+Study Area Description: City of Tampa, Florida
+Area Calculation Method: Not mentioned
+Area Source: Not stated
+Alternative Size Info: 334 census block groups
+Context Notes: Entire city of Tampa","  - ""The final data set contains information on all 334 block groups in the City of Tampa.""
+  - ""The final sample includes 5,182 incidents committed by 6,846 suspects which were aggregated to the census block group, the operational definition of neighborhood.""
+  - ""We utilize discrete choice modeling on all arrests for burglaries in the City of Tampa, Florida, from January 2000 through September 2012.""",,"- The study focuses on the City of Tampa, Florida, which is the study area.
+- The study uses data from all arrests for burglaries in Tampa from January 2000 through September 2012, indicating that the entire city is the study area.
+- The data is aggregated to the census block group level, with 334 block groups in the city, which suggests that the study area encompasses these block groups.
+- The paper does not provide a specific size in square kilometers or square miles, but it does mention that the study area includes all 334 block groups in Tampa."
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,"Guangwen Song, Wim Bernasco, Lin Liu, Luzi Xiao, Suhong Zhou, Weiwei Liao",-,-,-,-,-,"Total Study Area Size: More than 3000 km²
+Study Area Description: Central part of ZG City
+Area Calculation Method: Not specified
+Area Source: Paper statement
+Alternative Size Info: Not applicable
+Context Notes: Central part of ZG City","  - ""The study area comprises 1891 census units in total, of which 275 are not included in the analysis because the lack mobility data due to limited coverage of the GSM mobile phone network, leaving 1616 census units in the analysis.""",,"- The paper explicitly states that the study area covers ""more than 3000 km²,"" which provides a direct measure of the total study area size.
+- The size of individual census units is provided, but this is not necessary for calculating the total study area size since the paper already gives a direct measure.
+- The number of census units and their average size could be used to estimate the total area, but since the paper provides a direct measure, this is not necessary.
+- The study area description is given as being located in the central part of ZG City, which provides some context about the geographic boundaries."
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection","Christophe Vandeviver, Wim Bernasco",-,-,-,-,-,"Total Study Area Size: 156 km²
+Study Area Description: City of Ghent
+Area Calculation Method: Not specified
+Area Source: Census data
+Alternative Size Info: None found
+Context Notes: Divided into 193 residential neighborhoods","  - ""On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.""
+  - ""The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function.""",,"- The paper provides a direct statement about the total area of the city of Ghent, which is approximately 156 km². This is the total study area size.
+- The study area description is the city of Ghent, which is divided into 193 residential neighborhoods.
+- The area calculation method is not explicitly mentioned, but it is implied that the area is based on the city's administrative boundaries.
+- The area source is the Census data, as indicated by the mention of ""statistical districts.""
+- There is no alternative size information provided beyond the total area of the city.
+- The context notes include the division of the city into residential neighborhoods and the average size of these neighborhoods."
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS","Wim Bernasco, Floor Luykx",-,-,,197,2003,"Total Study Area Size: 57.85 km²
+Study Area Description: City of The Hague, Netherlands; 89 neighborhoods
+Area Calculation Method: Calculated from average neighborhood size and number of neighborhoods
+Area Source: Paper's methodology section
+Alternative Size Info: Average neighborhood size is 0.65 square kilometers
+Context Notes: Excludes non-residential areas; average annual burglary rate provided","  - ""The study of the effects of neighborhood features reflecting attractiveness and opportunity has a long-standing tradition in criminology.""
+  - ""The city comprises 94 neighborhoods. We used data on 89 neighborhoods, as 5 neighborhoods are almost or completely non-residential (industrial areas, parks, dune area).""
+  - ""The total number of residential burglaries in The Hague during the six-year period 1996-2001 was about 26.000, which amounts to an average annual number of about 50 per neighborhood, and an annual rate of about 1 residential burglary per 100 dwellings for the city as a whole.""
+  - ""Counting the 89 neighborhoods analyzed, the average neighborhood has a surface of 0.65 square kilometers, is the home to 4950, residents and contains 2350 residential units.""
+  - ""The hypotheses are tested using data on the city of The Hague, the Netherlands.""",,"- The study focuses on the city of The Hague, Netherlands, which is the primary study area.
+- The study uses data from 89 neighborhoods within The Hague, indicating that these neighborhoods are part of the study area.
+- The average neighborhood size is given as 0.65 square kilometers, but this is not the total study area size.
+- To find the total study area size, we need to calculate the total area covered by the 89 neighborhoods. Since each neighborhood averages 0.65 square kilometers, the total area would be 89 neighborhoods * 0.65 square kilometers per neighborhood.
+- The calculation for the total study area size is: 89 neighborhoods * 0.65 square kilometers/neighborhood = 57.85 square kilometers."
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,"Shane D Johnson, Lucia Summers",-,-,Crime and delinquency,85,2015,Not specified (the paper does not provide a direct measurement of the study area size in square kilometers),"  - ""In line with previous studies (Bernasco, 2006(Bernasco, , 2010;;Bernasco & Block, 2009, 2011;Bernasco & Luykx, 2003;Bernasco et al., 2013;Clare et al., 2009), crimes committed by offenders living outside the study area were excluded from the sample.""
+  - ""The unit of analysis selected was the U.K. census Lower Super Output Area (LSOA). For the study area, there were 198 LSOAs, each with a population of around 1,524 people and about 662 residential households.""
+  - ""Data for crimes detected by the police were acquired for the county of Dorset (UK) for the 5-year period January 1, 2001, to December 31, 2005.""",,"- The study area is described as the county of Dorset in the UK, which provides a geographic boundary.
+- The unit of analysis is the Lower Super Output Area (LSOA), with 198 LSOAs included in the study area.
+- Each LSOA has a population of around 1,524 people and about 662 residential households, but no direct mention of the total area size in square kilometers is provided.
+- The paper does not explicitly mention the total study area size in square kilometers or any other unit of measurement.
+- The focus is on the number of LSOAs and their population characteristics rather than the physical area size."
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,"Zachary R Rowan, Sarah Appleby, Jean Marie Mcgloin, Simon Fraser",-,-,,3,2021,Not specified (the paper does not provide a direct total area size in square kilometers or miles),"  - ""The average census block group in Baltimore has 2.4 census blocks, is .14 square miles, and has an average of 953 residents.""
+  - ""During this time period, there were a total of N = 6,249 incidents across 653 census block groups (Average Rate = 1.93 per 100 residents, SD = 11.24).""
+  - ""The data used in this study cover arrests from January 1, 2013 to December 31, 2016 that had complete information on the variables of interest (N = 68,393).1""
+  - ""The current study extends crime pattern theory and addresses this gap in the co-offending literature by considering whether the distribution of co-offences across census block groups in Baltimore City (Maryland) is related to measures of activity nodes and 'connected' street networks, net of the solo crime rate.""",,"- The study focuses on Baltimore City, Maryland, and uses data from census block groups within this area.
+- The study area is described in terms of the number of census block groups (653) and the average characteristics of these groups (2.4 census blocks, 0.14 square miles, 953 residents).
+- The total study area size can be estimated by multiplying the average size of a census block group by the total number of groups. However, the paper does not provide a direct total area size in square kilometers or miles.
+- The paper does not explicitly mention the total study area size in square kilometers or miles, nor does it provide a method for calculating this size directly from the information given."
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,"Wim Bernasco, Paul Nieuwbeerta, Richard Block, Henk Elffers, Jan De Keijser, Jasper Van Der Kemp, Peter Van Koppen",-,-,,362,2005,"Total Study Area Size: Approximately 57.85 km²
+Study Area Description: The city of The Hague, comprising 89 residential neighborhoods
+Area Calculation Method: Calculated from average neighborhood size and number of neighborhoods
+Area Source: Paper's description of The Hague's neighborhoods
+Alternative Size Info: 89 neighborhoods, average neighborhood size 0.65 km²
+Context Notes: Based on average neighborhood size and number of neighborhoods","  - ""The geometric positions of the 89 residential neighbourhoods are displayed in Figure 1""
+  - ""The average neighbourhood has a surface of 0.65 square kilometres, is home to 4,952 residents and contains 2,380 residential units (DSO 2001).""
+  - ""The Hague comprises 89 residential neighbourhoods.""
+  - ""The Hague is situated at the coast of the North Sea. With a population of about 440,000, it is the third largest city in the Netherlands.""",,"- The paper provides information about the city of The Hague, which is the study area. It mentions that The Hague has a population of about 440,000 and comprises 89 residential neighborhoods.
+- The average size of each neighborhood is given as 0.65 square kilometers, but this is not the total study area size. To find the total study area size, we need to calculate the total area covered by these neighborhoods.
+- The total study area size can be estimated by multiplying the number of neighborhoods by the average size of each neighborhood: 89 neighborhoods * 0.65 km² = 57.85 km².
+- The paper does not provide a direct statement of the total study area size in km², but we can calculate it based on the information given about the average neighborhood size and the number of neighborhoods."
+Co-offending and the Choice of Target Areas in Burglary,Wim Bernasco,-,-,-,-,-,"Total Study Area Size: Approximately 58.85km² (89 neighborhoods × 0.65km²); Study Area Description: 89 residential neighborhoods in The Hague; Area Calculation Method: Calculated from neighborhood count and average size; Area Source: Paper's description of The Hague; Alternative Size Info: 89 spatial units, 0.65km² average unit size; Context Notes: Based on neighborhood boundaries","  - ""The average neighbourhood has an area of 0.65 square kilometres, is the home to 4952 residents and contains 2380 residential units.""
+  - ""The Hague comprises of 89 residential neighbourhoods.""
+  - ""The geometric positions of the 89 residential neighbourhoods are displayed in Figure 1""",,"- The paper provides information about the number of residential neighborhoods in The Hague and the average area of each neighborhood.
+- The total study area size can be calculated by multiplying the number of neighborhoods by the average area of each neighborhood.
+- The paper does not provide a direct statement of the total study area size in square kilometers, but it can be inferred from the given data."
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,"Wim Bernasco, Shane D Johnson",-,-,,88,2015,Not specified (the paper does not provide a direct measurement of the total study area size in square kilometers or any other unit of area measurement),"  - ""Using data in 3,337 detected burglaries from one UK police force,""
+  - ""Data were acquired for all detected residential burglaries committed between January 2007 and December 2012 in the West Midlands, a large metropolitan UK police force""
+  - ""the areas used here have an average population of only 1,500, potentially providing for more homogeneous spatial units and enhanced ecological validity.""
+  - ""The concept of crime location choice presumes spatial units of analysis, which are the alternative locations that burglars choose from when deciding on where to commit a burglary.""
+  - ""As a compromise, we decided to use the UK Census Lower Level Super Output Area (LSOA) geography as the basic spatial unit of analysis.""
+  - ""LSOAs are defined on the basis of proximity and social homogeneity measures (type of dwelling and nature of tenure) and have a population of approximately 1,500 residents and 600 households.""",,"- The study uses data from the West Midlands, a large metropolitan UK police force, which suggests the study area is within this region.
+- The paper mentions using Lower Level Super Output Areas (LSOAs) as the basic spatial unit of analysis, which are defined by proximity and social homogeneity measures.
+- LSOAs have an average population of 1,500 residents and 600 households, indicating the size of the spatial units used in the study.
+- However, the paper does not provide a direct measurement of the total study area size in square kilometers or any other unit of area measurement.
+- The focus is on the use of LSOAs as spatial units rather than a specific total area size."
+Burglar Target Selection: A Crossnational Comparison,"Michael Townsley, Daniel Birks, Wim Bernasco, Stijn Ruiter, Shane D Johnson,  Gentry White, Scott Baum",-,-,Journal of research in crime and delinquency,60,2015,Not specified (the paper does not provide a direct measurement of the total study area size in square kilometers for each city),"  - ""Study regions and their associated choice set geographies (NL-neighborhoods, UK-Super Output Areas [medium layer], AU-Statistical Local Areas) were selected based on equivalence in size of the known burglar population, number of targets (households) within each area, and total number of areas in a study region.""
+  - ""All additional differences are the result of an interaction between burglary and clearance rates: At a national level, the United Kingdom has 454 residential burglaries per 100,000 population with a clearance rate of 13 percent (Office of National Statistics [ONS] 2013; Taylor and Chaplin 2011), Australia has 592 residential burglaries per 100,000 population and 8.7 percent clearance rate (Australian Bureau of Statistics 2011; Australian Institute of Criminology 2012), and the Netherlands has 427 residential burglaries per 100,000 population with a clearance rate of 7 percent (Bernasco and Nieuwbeerta 2005).""
+  - ""Recorded crime data from three independent police services are used to analyze the location choices of residential burglars operating in The Hague (Netherlands), Birmingham (United Kingdom), and Brisbane (Australia).""
+  - ""The Hague, Birmingham, and Brisbane can be characterized as having relatively high (3,652 households per km 2 ), medium (1,513 households per km 2 ), and low (299 households per km 2 ) target densities, respectively.""",,"- The paper provides information about the study regions, which are The Hague in the Netherlands, Birmingham in the United Kingdom, and Brisbane in Australia.
+- The study areas are described in terms of their geographic units: neighborhoods in The Hague, Super Output Areas in Birmingham, and Statistical Local Areas in Brisbane.
+- The paper mentions the target densities for each city, which are high in The Hague (3,652 households per km²), medium in Birmingham (1,513 households per km²), and low in Brisbane (299 households per km²).
+- However, the paper does not provide a direct measurement of the total study area size in square kilometers for each city.
+- The focus is on the density of households rather than the total area size."
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,"Michael J Frith, Shane D Johnson, Hannah M Fry",-,-,CrimRxiv,63,2017,"Total Study Area Size: Approximately 150 km²
+Study Area Description: Built-up areas of three towns with a 1-km buffer
+Area Calculation Method: GIS/mapping approach
+Area Source: Paper's methodology section
+Alternative Size Info: None found
+Context Notes: Includes a 1-km buffer around built-up areas","  - ""The resulting study area covers a geography of approximately 150 km 2 and includes 81,682 dwellings situated on 5,286 street segments.""
+  - ""The study area was defined by identifying the ""built-up areas"" of the three towns and by applying a 1-km buffer around them (for a map of the study area, see appendix A in the online supporting information 1""",,"- The paper explicitly states that the study area covers ""approximately 150 km 2,"" which directly answers the question about the total study area size.
+- The description of the study area includes the ""built-up areas"" of three towns with a 1-km buffer, providing a geographic context for the area.
+- The area calculation method is implied by the use of ""built-up areas"" and a buffer, suggesting a GIS or mapping approach.
+- The source of the area information is the paper itself, as it is part of the study's methodology.
+- There is no alternative size information provided beyond the total area.
+- The context notes include the presence of a buffer and the focus on built-up areas."
+Modelling taste heterogeneity regarding offence location choices,Michael J Frith,-,-,Journal of Choice Modeling,13,2019,"Total Study Area Size: Approximately 270km²
+Study Area Description: City of York (UK)
+Area Calculation Method: Not specified
+Area Source: Not stated
+Alternative Size Info: None found
+Context Notes: None","  - ""the alternatives in this analysis are output areas, herein referred to as neighbourhoods, which are the smallest units for which the variables in this study are available.""
+  - ""the choice set is restricted to the city of York (UK).""",,"- The paper explicitly states that the study area is the city of York (UK) and provides a specific size for this area: ""approximately 270km²."" This directly answers the question about the total study area size.
+- The study area description is clearly mentioned as being the city of York (UK), which is a geographic boundary.
+- The area calculation method is not explicitly mentioned, but it is implied that the size is based on the city's administrative boundaries.
+- The area source is not explicitly stated, but it is likely based on official city data or geographic information.
+- There is no alternative size information or context notes provided beyond the explicit mention of the city's size."
+Graffiti Writers Choose Locations That Optimize Exposure,"K Kuralarasan, Wim Bernasco, Christophe Vandeviver",-,-,Crime &amp; Delinquency,1,2024,Not specified (the paper does not provide a direct measurement or calculation of the total study area size in square kilometers),"  - ""In our study, we analyze graffiti instances in Ghent, Belgium. 1 To ensure practicality in the scope of our observations while still focusing on areas with a high incidence of graffiti, we restricted our study area to the city center of Ghent.""
+  - ""Our final dataset includes information from 2,233 street segments from the original 2,392. A total of 159 segments were not observed for various reasons and were excluded from the analysis (see Figure A1 for map).""
+  - ""The data were collected by a team of 212 observers in November 2017 using systematic social observation (SSO). These observers were undergraduatelevel students from Ghent University who had received training for a month.""
+  - ""We ensured that nearly all publicly accessible or visible locations in the Ghent city center were included in our observations.""
+  - ""The observation focused only on the street segments of Ghent city center. We only observed the number of graffiti instances on each street segment, not on the specific objects where it was written.""",,"- The study area is described as the ""city center of Ghent,"" which provides a geographic description but does not specify the exact size in square kilometers.
+- The study involved observing graffiti instances across 2,233 street segments, but this does not directly translate to a specific area size without knowing the average size of each segment.
+- The paper does not provide a direct measurement or calculation of the total study area size in square kilometers.
+- The focus on the city center and the number of street segments observed suggest a detailed spatial analysis, but the exact area size is not explicitly mentioned."
+Modelling the spatial decision making of terrorists: the discrete choice approach,-,-,-,Applied Geography,21,2019,"Total Study Area Size: Not specified
+Study Area Description: Belfast, using 890 Small Areas (SAs) as the smallest areal unit
+Area Calculation Method: Not mentioned
+Area Source: Northern Ireland Statistics and Research Agency (NISRA)
+Alternative Size Info: 890 Small Areas (SAs) in Belfast
+Context Notes: Focus on attacks within Belfast; SAs are administrative units","  - ""Since 2011, Northern Ireland has been divided into 4537 'Small Areas' (hereafter, SAs), which are currently the smallest areal unit.""
+  - ""The location of each attack was geocoded to the corresponding SA.""
+  - ""The final offence and offender datasets comprised 150 attacks by 127 PIRA members within Belfast.""
+  - ""The geographical boundary data for the SAs was obtained from the Northern Ireland Statistics and Research Agency (NISRA).""
+  - ""Belfast is the capital and largest city of Northern Ireland and is on the flood plain of the River Lagan.""",,"- The study area is described as Belfast, which is the capital and largest city of Northern Ireland.
+- The study uses ""Small Areas"" (SAs) as the smallest areal unit, which are part of the administrative division of Northern Ireland.
+- The geographical boundary data for these SAs was obtained from the Northern Ireland Statistics and Research Agency (NISRA), indicating that the study area is defined by these administrative boundaries.
+- The study focuses on attacks within Belfast, with 150 attacks by 127 PIRA members, and each attack was geocoded to a corresponding SA.
+- The total number of SAs in Belfast is mentioned as 890, which provides a basis for understanding the spatial scope of the study."
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,"Yifei Xue, Donald E Brown",-,-,Decision Support Systems,66,2006,"Total Study Area Size: Not specified
+Study Area Description: City of Richmond, VA
+Area Calculation Method: Not mentioned
+Area Source: Not stated
+Alternative Size Info: None found
+Context Notes: Modest-sized city; data from Richmond police department","  - ""The analysis of B & E is related to locations of households in a city. However, it is difficult to represent all locations of individual houses in even a modest sized city, such as Richmond.""
+  - ""The data for model evaluation came from the Regional Crime Analysis Program (ReCAP). ReCap was created as a cooperative project between local police departments in Northern and Central Virginia and the researchers in the University of Virginia.""
+  - ""Since the attributes of spatial alternatives came from census data and calculated distance values, it is possible that some values of these attributes are correlated.""
+  - ""We extracted the Residential bBreaking and Enter-ingQ (B & E) criminal incidents between July 1, 1997 and October 31, 1997 in the city of Richmond, VA for model estimation and validation.""
+  - ""The specific data set used for evaluating this work came from the criminal incident reporting mainframe system (RAMS). It is the data set used by the police department in Richmond, VA.""",,"- The study area is explicitly mentioned as the city of Richmond, VA, as indicated by the use of data from the Richmond police department's criminal incident reporting system.
+- The study focuses on residential breaking and entering incidents within Richmond, suggesting that the study area is confined to this city.
+- The mention of using census data and calculated distance values implies that the study area is defined by administrative boundaries, likely those of the city of Richmond.
+- The paper does not provide a specific size in square kilometers or any other unit, nor does it mention any specific method for calculating the area or any alternative size information.
+- The context notes that the study area is a modest-sized city, which is Richmond, but no specific size or area calculation method is provided."
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,"Wim Bernasco, Stijn Ruiter, Richard Block",-,-,-,-,-,"Total Study Area Size: Not specified
+Study Area Description: City of Chicago
+Area Calculation Method: Not mentioned
+Area Source: Chicago Police Department and U.S. Census
+Alternative Size Info: None found
+Context Notes: Excludes expressways and college campuses","  - ""The spatial units of analysis are census blocks.""
+  - ""The analysis is limited to cleared robberies because only for cleared robberies offender addresses are available, and distance from the offender home location is by far the most important predictive factor in crime location choice""
+  - ""About 98.5 percent of these addresses were successfully geocoded and assigned to 1 of the 24,594 census blocks in the city of Chicago.""
+  - ""The data also include information on the offenders who were arrested for committing these street robberies, including gender, racial and ethnic background, age, and residential address at the time of the robbery.""
+  - ""The data did not allow us to identify offenders across multiple robberies.""
+  - ""In addition, we collected detailed information on land use, population, and activities in all 24,594 census blocks of the city of Chicago in the year 2000.""
+  - ""The data further exclude a few street robberies that are perpetrated on expressways (covered by the state police) and robberies on college campuses (covered by the university's police).""
+  - ""The data also exclude Chicago robberies committed by persons who are not residents of Chicago, but this is an exclusion by design, as our sample applies to residents of Chicago.""",,"- The study area is described as being composed of ""24,594 census blocks in the city of Chicago,"" which indicates the geographic scope of the study.
+- The median size of each census block is given as ""19,680 m² (approximately 140 Â 140 m),"" which can be used to estimate the total area covered by these blocks.
+- To calculate the total study area size, we need to multiply the number of census blocks by the average area of each block. However, the paper does not provide a direct total area size in square kilometers.
+- The study area description is clearly the city of Chicago, as indicated by the use of census blocks within the city.
+- The area calculation method is implied to be based on the use of census block data, but it is not explicitly stated how the total area was calculated.
+- The area source is the data collected from the Chicago Police Department and the U.S. Census.
+- There is no alternative size information provided in the paper.
+- Context notes include the exclusion of certain areas like expressways and college campuses, but these do not affect the overall study area size calculation."
+Go where the money is: modeling street robbers' location choices,"Wim Bernasco, Richard Block, Stijn Ruiter",-,-,-,-,-,"Total Study Area Size: Not specified
+Study Area Description: City of Chicago, focusing on 24,594 census blocks
+Area Calculation Method: Not mentioned
+Area Source: Data on census blocks in Chicago
+Alternative Size Info: None found
+Context Notes: None","  - ""The remaining 24,594 blocks have a median size of 19,680 m 2 ($140 m Â 140 m).""
+  - ""The data further include detailed information on land use, population and activities in all census blocks in the city of Chicago.""
+  - ""In 2000 there were 24,594 census blocks in Chicago from which a robber chooses a single one when committing a robbery.""
+  - ""In Chicago, with an average surface of 140 m Â 140 m (460 ftÂ 460 ft) and an average population of 118 residents, census blocks are approximately 30 times smaller than census tracts.""
+  - ""Using data on nearly 13,000 robberies, on the approximately 18,000 offenders involved in these robberies, and on the nearly 25,000 census blocks in the city of Chicago,""",,"- The study area is described as the city of Chicago, with a focus on the nearly 25,000 census blocks within it.
+- The size of each census block is given as an average surface area of 140 m Â 140 m, which translates to approximately 19,680 square meters.
+- The total number of census blocks is 24,594, but the paper does not provide a direct total area size in square kilometers.
+- To calculate the total study area size in square kilometers, we would need to multiply the number of census blocks by the average area of each block. However, the paper does not provide this calculation directly.
+- The study area description is clearly the city of Chicago, with a focus on the census blocks within it.
+- The area calculation method is not explicitly mentioned, but it is implied that the data on census blocks and their characteristics were used to analyze the study area.
+- The area source is the data collected on the census blocks in Chicago.
+- There is no alternative size information or context notes provided in the paper."
+The usefulness of past crime data as an attractiveness index for residential burglars,"Aiko Hanayama, | Shumpei Haginoya, Hiroki Kuraishi, Masakazu Kobayashi",-,-,,5,2018,"Total Study Area Size: Approximately 283.5 km²
+Study Area Description: Portion of Sendai City excluding flooded areas
+Area Calculation Method: Calculated from grid cell size and count
+Area Source: Grid cell method described in the paper
+Alternative Size Info: 1,134 grid cells, each 500m x 500m
+Context Notes: Excludes areas flooded by the Great East Japan Earthquake and Tsunami","  - ""Ultimately, we used 1,134 grid cells as the study area.""
+  - ""Using the grid cell method described earlier, we narrowed down the study area to covering the area not flooded during the Great East Japan Earthquake and Tsunami on March 11, 2011 (Pasco, 2011) because the tsunami may have changed the environment.""
+  - ""The size of grid cells is 500 m on a one side and comes with specified longitude and latitude data.""",,"- The study area is described as covering a portion of Sendai City, specifically excluding areas flooded by the Great East Japan Earthquake and Tsunami.
+- The study area is composed of 1,134 grid cells, each with a size of 500 meters on one side.
+- To calculate the total area, we need to calculate the area of one grid cell and then multiply by the number of grid cells. The area of one grid cell is 500 meters * 500 meters = 250,000 square meters or 0.25 square kilometers.
+- Multiplying this by the number of grid cells gives us the total study area size: 0.25 km² * 1,134 grid cells = approximately 283.5 km².
+- The paper also mentions that Sendai City has an area of about 786 km², but this is not the specific study area size, as the study area is a subset of the city."
+Adolescent offenders' current whereabouts predict locations of their future crimes,Wim Bernasco,-,-,PLoS ONE,21,2019,Not specified (the paper does not provide a specific size for the study area),"  - ""The Study of Peers, Activities and Neighborhoods (SPAN) is a two-wave panel study among adolescents in The Hague, the Netherlands, and its suburbs.""
+  - ""The study included a selfreport questionnaire and a personal space-time budget interview, both of which were administered at the schools that the respondents attended.""
+  - ""The sample was representative for adolescents in The Hague of these age groups in terms of gender and ethnic background.""
+  - ""the offender chooses a single location from the full choice set of 4558 locations (67 × 67 = 5092 grid cells of 200x200m each, minus 544 grid cells completely located on the North Sea).""
+  - ""The sample was designed to be conducted among a cohort of 1st graders (ages 12-13) and a cohort 4th graders (ages 15-16).""",,"- The paper describes the study as being conducted in The Hague, the Netherlands, and its suburbs, but it does not provide a specific size for the study area.
+- The mention of ""4558 locations (67 × 67 = 5092 grid cells of 200x200m each, minus 544 grid cells completely located on the North Sea)"" suggests a grid-based approach to defining the study area, but it does not directly translate to a total area size in square kilometers.
+- The paper does not provide any direct statement or calculation for the total study area size in square kilometers.
+- The absence of explicit area size information means that the study area size is not specified in the paper."
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,"Wim Bernasco, Scott Jacques",-,-,,26,2015,"Total Study Area Size: Not specified
+Study Area Description: 1012 postal code, including Amsterdam Red Light District
+Area Calculation Method: Not mentioned
+Area Source: Study area description
+Alternative Size Info: 262 street segments with an average length of 103 meters
+Context Notes: Located in downtown Amsterdam","  - ""the 1012 postal code was chosen as the study area; its street layout is displayed in Figure 1""
+  - ""The overall study sample consisted of 50 subjects who were active as dealers in downtown Amsterdam.""
+  - ""The 1012 postal code includes as a subarea the Amsterdam Red Light District (""De Wallen""), a network of small streets and alleys with a heavy concentration of legal indoors prostitution services, totaling approximately 370 ""windows"" where prostitutes openly advertise their services.""
+  - ""The rationale was that for decision making in dealing situations, what matters are the characteristics of a place that can be seen or heard, and it seemed that street segments (""street blocks,"" ""face blocks"") are small enough to assure that from any point in the street segment, relevant attributes of any other point in the same segment could be seen and heard.""
+  - ""The average length of the 262 street segments is 103 meters (SD = 65 m, minimum = 16 m, maximum = 425 m).""",,"- The study area is described as being located in the 1012 postal code, which includes the Amsterdam Red Light District. This provides a geographic boundary for the study area.
+- The study area is further defined by the presence of 262 street segments, which are used as the unit of analysis for the study.
+- The average length of these street segments is given as 103 meters, which provides a physical scale for the study area.
+- The study area is described as being in downtown Amsterdam, which gives a broader geographic context.
+- The paper does not provide a direct measurement of the total study area size in square kilometers or any other unit, but it does describe the area in terms of its street segments and geographic location."
+Discrete choice analysis of spatial attack sites,"Michael A Smith, Ae D E Brown, Donald E Brown",-,-,Inf. Syst. E Bus. Manag.,16,2007,Not specified (the paper does not provide a direct measurement of the total study area size in square kilometers or any other unit),"  - ""The complete dataset consists of all reported breaking and entering crime in the City of Richmond, VA for calendar year 1997.""
+  - ""The choice set was defined using the following steps. The smallest rectangle that would wholly circumscribe the boundaries of the City of Richmond was the extents of a grid with 100 rows and 100 columns.""
+  - ""The remaining 4,895 centroids constitute the choice set.""
+  - ""The dataset of breaking and entering crime analyzed here was obtained from the Richmond City Records Management Center and augmented with publicly available GIS layers to introduce proximity measurements and census information.""
+  - ""The north-south inter-centroid spacing is 170 m, the east-west inter-centroid spacing is 191 m.""",,"- The study area is described as the City of Richmond, VA, which provides a geographic boundary for the study.
+- The choice set is defined by a grid that circumscribes the city boundaries, indicating that the study area is the entire city.
+- The grid has 100 rows and 100 columns, with specific inter-centroid spacings, which could be used to estimate the total area covered by the grid.
+- However, the paper does not provide a direct measurement of the total study area size in square kilometers or any other unit.
+- The description of the grid and its spacing suggests a method for calculating the area, but no explicit calculation or area size is provided in the paper."
+Residential burglary target selection: An analysis at the property-level using Google Street View,"Samuel H Langton, Wouter Steenbeek",-,-,,40,2017,Not specified (the paper does not provide a specific total study area size in km²),"  - ""The neighbourhoods of The Hague that were used in this study are exhibited in Fig. 1 , along with a single demonstrative neighbourhood to visualise the case-control design, using synthetic crime data.""
+  - ""The physical characteristics of these residential units and their immediate surrounding area are measured through Systematic Social Observation (SSO), using Google Maps and its built-in virtual reality tool, Google Street View (GSV).2""
+  - ""For this study, a selection of 150 dwellings that were burglarised during daylight hours in 2009 is made from geocoded, timestamped data from The Hague Police Force, the Netherlands.""
+  - ""the present study uses quantitative data on burglary events and residential units to test the previous findings from offender-based literature, answering calls from recent research (Vandeviver et al., 2015).""
+  - ""the final sample used for analysis therefore consisted of 300 single houses, evenly split between burglarised and non-burglarised dwellings.""",,"- The study focuses on residential burglary target selection in The Hague, Netherlands, using data from 2009.
+- The study involves a selection of 150 burglarized dwellings and 150 non-burglarized dwellings, all located in The Hague.
+- The study uses Google Street View to measure physical characteristics of residential units and their surroundings.
+- The study area is described as being within The Hague, with specific neighborhoods used in the study.
+- The study does not provide a specific total area size in square kilometers or any other unit."

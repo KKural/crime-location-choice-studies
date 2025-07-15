@@ -1,0 +1,86 @@
+---
+title: "Test Document - Methods Section"
+output: 
+  word_document:
+    reference_docx: "reference.docx"
+    fig_caption: true
+    df_print: kable
+bibliography: references.bib
+csl: https://www.zotero.org/styles/apa
+link-citations: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.path = "figures/",
+  dpi = 300
+)
+
+# Load required libraries
+library(knitr)
+library(kableExtra)
+library(flextable)
+library(officer)
+library(readxl)
+library(tidyverse)
+
+# Set figure and table paths
+fig_path <- "20250712_Analysis & Results/"
+table_path <- "20250712_Analysis & Results/Manuscript_All_Tables.xlsx"
+
+# Load model results for inline referencing throughout document
+# Define variables with values from latest R analysis results
+naive_search_total <- 249
+total_records_identified <- 2325
+```
+
+# Methods
+
+## Study Design and Registration
+
+We conducted a systematic scoping review following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses Extension for Scoping Reviews (PRISMA-ScR) guidelines [@tricco2018]. The review protocol was developed based on established frameworks for conducting systematic scoping reviews [@arksey2005; @guidance2023]. No protocol was pre-registered due to the exploratory nature of the research questions.
+
+## Search Strategy
+
+We developed a comprehensive search strategy using a two-phase approach to optimize search term selection and maximize recall of relevant studies.
+
+### Phase 1: Initial Search and Keyword Extraction
+
+We conducted an initial "naive" search across three databases to identify candidate keywords:
+- Web of Science Core Collection (n = 97)
+- Scopus (n = 105) 
+- ProQuest (n = 47)
+
+The naive search strategy employed broad Boolean terms across three conceptual domains (population, intervention, outcome) to capture studies analyzing offender location choice decisions through discrete choice models:
+
+```{r naive-search-table, echo=FALSE, warning=FALSE, message=FALSE}
+# Create table for naive search terms
+naive_search_terms <- data.frame(
+  Database = c("Web of Science", "Scopus", "ProQuest"),
+  `Search String` = c(
+    "TS=(((offend* OR crim* OR burglar* OR robb* OR co-offend* OR dealer*) AND (\"discret* choic*\" OR \"choic* model*\" OR \"rational choice\" OR \"awareness space\" OR \"journey to crime\" OR \"mobility\" OR \"opportunity\" OR \"accessibility\" OR \"attractiveness\" OR \"crime pattern*\") AND (\"crime locat* choic*\" OR \"offend* locat* choic*\" OR \"robber* locat* choic*\" OR \"burglar* locat* choic*\" OR \"target area*\" OR \"target selection\" OR \"crime site selection\" OR \"spatial choic* model*\")))",
+    "TITLE-ABS-KEY(((offend* OR crim* OR burglar* OR robb* OR co-offend* OR dealer*) AND (\"discret* choic*\" OR \"choic* model*\" OR \"rational choice\" OR \"awareness space\" OR \"journey to crime\" OR \"mobility\" OR \"opportunity\" OR \"accessibility\" OR \"attractiveness\" OR \"crime pattern*\") AND (\"crime locat* choic*\" OR \"offend* locat* choic*\" OR \"robber* locat* choic*\" OR \"burglar* locat* choic*\" OR \"target area*\" OR \"target selection\" OR \"crime site selection\" OR \"spatial choic* model*\")))",
+    "noft(((offend* OR crim* OR burglar* OR robb* OR co-offend* OR dealer*) AND (\"discret* choic*\" OR \"choic* model*\" OR \"rational choice\" OR \"awareness space\" OR \"journey to crime\" OR \"mobility\" OR \"opportunity\" OR \"accessibility\" OR \"attractiveness\" OR \"crime pattern*\") AND (\"crime locat* choic*\" OR \"offend* locat* choic*\" OR \"robber* locat* choic*\" OR \"burglar* locat* choic*\" OR \"target area*\" OR \"target selection\" OR \"crime site selection\" OR \"spatial choic* model*\")))"
+  ),
+  Records = c("97", "105", "47")
+)
+
+# Create formatted table
+naive_table <- flextable(naive_search_terms) %>%
+  set_caption("**Table 1. Naive search strategy and results**") %>%
+  theme_vanilla() %>%
+  bold(part = "header") %>%
+  font(fontname = "Times New Roman", part = "all") %>%
+  autofit()
+
+naive_table
+```
+
+This initial search used broad terms related to crime location choice, discrete choice modeling, and spatial analysis. The `r naive_search_total` initial results were deduplicated and used as input for systematic keyword extraction.
+
+## Test Conclusion
+
+This test document should render successfully to this point.

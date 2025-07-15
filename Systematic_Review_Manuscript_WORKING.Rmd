@@ -1,0 +1,140 @@
+---
+title: "Spatial Units of Analysis in Crime Location Choice Studies: A Systematic Scoping Review"
+author: "Research Team"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+  word_document:
+    toc: true
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.path = "figures/",
+  dpi = 300
+)
+
+# Load required libraries with error handling
+tryCatch({
+  library(knitr)
+  library(flextable)
+  library(readxl)
+  library(tidyverse)
+  cat("All libraries loaded successfully\n")
+}, error = function(e) {
+  cat("Error loading libraries:", conditionMessage(e), "\n")
+})
+
+# Set figure and table paths
+fig_path <- "20250710_Analysis & Results/"
+table_path <- "20250710_Analysis & Results/Manuscript_All_Tables.xlsx"
+
+# Check if files exist
+cat("Figure path exists:", dir.exists(fig_path), "\n")
+cat("Table file exists:", file.exists(table_path), "\n")
+```
+
+# Abstract
+
+**Background:** How researchers choose spatial units affects everything we understand about crime patterns and what interventions might work. But no one has systematically looked at how researchers actually make these decisions. We examine what spatial units researchers use in crime location choice studies - how big they are, whether they've changed over time, if they differ across countries, and what drives these choices.
+
+**Methods:** We conducted a systematic review following PRISMA-ScR guidelines. We searched four databases and found 2,325 papers. After removing duplicates and irrelevant studies, we reviewed 80 papers and included 49 studies that met our criteria. Our final dataset of 49 studies and 51 observations (one study used 3 countries) represents the most comprehensive analysis of spatial unit selection in crime location choice research to date.
+
+**Results:** Spatial units vary enormously - from 136 m² individual properties to 8.48 km² administrative districts (4.8 orders of magnitude). Despite better computers and data, researchers haven't moved toward smaller units over time (β = 0.012, p > 0.05). Countries cluster strongly in their typical unit sizes (ICC = 33.1%), showing institutional factors matter more than technology. Study area size drives unit choice more than anything else (β = 0.571, p < 0.001). Researchers match crime types to scales systematically: micro-environmental crimes like graffiti use tiny units (< 0.01 km²), property crimes use neighborhood-level units (0.1-1.0 km²), and general crime studies use administrative units (1.0-5.0 km²).
+
+**Conclusions:** Researchers aren't choosing spatial units randomly. They systematically match scale to the crime processes they're studying. Technology improvements haven't driven methodological change like we expected. Instead, institutional context and practical constraints shape what researchers can actually do. We provide evidence-based guidelines for future spatial unit selection.
+
+# Introduction
+
+Crime clusters in specific places, and researchers use spatial choice models to understand how offenders select these locations [@bernasco2013; @vandeviver2015]. These models treat crime location selection as a rational choice process where offenders evaluate potential locations based on costs and benefits. Bernasco and Jacques [-@bernasco2015] found that dealers choose locations where expected rewards and costs are optimal, applying this framework to consensual crimes like drug dealing. But there's a fundamental decision that affects all crime location studies that gets little attention: choosing the spatial unit of analysis.
+
+The spatial unit defines the geographical scale for modeling crime location decisions. Researchers might look at individual properties, street segments, neighborhoods, or administrative districts. This choice affects statistical power, how we interpret results, and what policies make sense [@fotheringham1991; @openshaw1984]. Despite this importance, the crime location choice literature lacks systematic guidelines for this decision.
+
+## Research Objectives
+
+Given the absence of systematic evidence on spatial unit practices in crime location choice research, we address seven research questions:
+
+**RQ1:** What is the distribution of spatial unit sizes used in crime location choice studies?
+
+**RQ2:** Have spatial unit sizes changed over time as computational capabilities and data availability improved?
+
+**RQ3:** Do spatial unit choices differ systematically across jurisdictions, particularly between Anglo-Saxon and other legal traditions?
+
+**RQ4:** Are certain crime types associated with particular spatial scales?
+
+**RQ5:** How does total study area size influence spatial unit selection?
+
+**RQ6:** Do methodological approaches correlate with spatial unit selection?
+
+**RQ7:** Does the number or type of explanatory variables relate to spatial unit choice?
+
+# Methods
+
+## Study Design and Registration
+
+We conducted a systematic scoping review following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses Extension for Scoping Reviews (PRISMA-ScR) guidelines [@tricco2018]. The review protocol was developed based on established frameworks for conducting systematic scoping reviews [@arksey2005; @guidance2023]. No protocol was pre-registered due to the exploratory nature of the research questions.
+
+```{r test-table}
+# Test if table creation works
+tryCatch({
+  test_data <- data.frame(
+    Database = c("Web of Science", "Scopus", "ProQuest"),
+    Records = c("681", "1,169", "189")
+  )
+  
+  flextable(test_data) %>%
+    set_caption("Test Table") %>%
+    theme_vanilla() %>%
+    autofit()
+}, error = function(e) {
+  cat("Error creating table:", conditionMessage(e), "\n")
+  kable(data.frame(Error = "Table creation failed"))
+})
+```
+
+# Results
+
+## Test Section After Research Objectives
+
+This content should be visible if the document renders properly beyond the Research Objectives section.
+
+```{r test-excel-read}
+# Test reading from Excel file
+tryCatch({
+  if (file.exists(table_path)) {
+    sheets <- excel_sheets(table_path)
+    cat("Available sheets:", paste(sheets, collapse = ", "), "\n")
+    
+    # Try to read the first sheet
+    test_table <- read_excel(table_path, sheet = "Table1_Summary_Statistics")
+    cat("Successfully read", nrow(test_table), "rows from Excel file\n")
+    
+    # Display the table
+    flextable(test_table) %>%
+      set_caption("Table from Excel file") %>%
+      theme_vanilla() %>%
+      autofit()
+  } else {
+    cat("Excel file not found at:", table_path, "\n")
+    kable(data.frame(Error = "Excel file not found"))
+  }
+}, error = function(e) {
+  cat("Error reading Excel file:", conditionMessage(e), "\n")
+  kable(data.frame(Error = paste("Excel read failed:", conditionMessage(e))))
+})
+```
+
+# Discussion
+
+This section should also be visible if the document renders completely.
+
+# References
+
+This is where references would appear.

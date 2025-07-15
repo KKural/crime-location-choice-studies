@@ -1,0 +1,134 @@
+---
+title: "Spatial Unit Selection in Crime Location Choice Research: Supplementary Materials"
+author: "Kuralarasan Kathirvel, Wim Bernasco"
+date: "`r Sys.Date()`"
+output:
+  word_document:
+    reference_docx: "reference.docx"
+  html_document:
+    theme: default
+  pdf_document:
+    latex_engine: xelatex
+bibliography: references.bib
+csl: journal-of-quantitative-criminology.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(knitr)
+library(flextable)
+library(readxl)
+
+# Set up paths for figures and tables
+fig_path <- "20250712_Analysis & Results/"
+table_path <- "20250712_Analysis & Results/Manuscript_All_Tables.xlsx"
+```
+
+# Acknowledgments
+
+We thank the research libraries and database providers that made this systematic review possible. We acknowledge the authors of the 51 included studies for their contributions to spatial criminology and their detailed reporting that enabled our data extraction. Special thanks to the reviewers who provided valuable feedback on earlier versions of this manuscript.
+
+# Funding
+
+This research was supported by [funding information to be inserted].
+
+# Conflicts of Interest
+
+The authors declare no conflicts of interest.
+
+# Data Availability Statement
+
+The data extraction spreadsheet and analysis code are available at [repository link to be inserted]. Individual study data are available from the original publications cited in our reference list.
+
+# Appendices {.appendix}
+
+## Appendix A: Search Strategy Details
+
+### A.1 Initial Naive Search Results
+- Web of Science: 97 records
+- Scopus: 105 records
+- ProQuest: 47 records
+- Total: 249 records
+
+### A.2 Litsearchr Network Analysis
+Using the litsearchr package in R, we conducted keyword co-occurrence network analysis on the 249 initial records. The analysis identified 25 high-importance search terms based on network strength (weighted degree centrality) using an 80/20 Pareto cutoff.
+
+### A.3 Optimized Search Results
+**Final Search String:**
+((offend* OR crim* OR burglar* OR robber* OR dealer*) AND ("choic* model*" OR "discret* choic*" OR "ration* choic*" OR "spatial* choic*" OR mobil*) AND (pattern* OR "locat* choic*" OR "target* select*"))
+
+**Database Results:**
+- Web of Science: 681 records
+- Scopus: 1,169 records
+- ProQuest: 189 records
+- Google Scholar: 286 records
+- Total: 2,325 records
+- After deduplication: 1,674 unique records
+- Duplicates removed: 651 (28.0%)
+
+### A.4 Gold Standard Validation
+The search strategy was validated against 41 known relevant articles representing core literature in crime location choice research. The gold standard included seminal works such as:
+
+- "A discrete spatial choice model of burglary target selection at the house-level"
+- "Where offenders choose to attack: a discrete choice model of robberies in Chicago"  
+- "Graffiti writers choose locations that optimize exposure"
+- "Go where the money is: modeling street robbers' location choices"
+- "Effects of attractiveness, opportunity and accessibility to burglars on residential burglary rates"
+
+**Validation Results:**
+- Gold standard articles: 41
+- Articles successfully retrieved: 41 (100% recall)
+- False negatives: 0
+- Search performance: Perfect recall with maintained precision
+
+**Final Dataset Composition:**
+- Gold standard articles included: 41 studies
+- Additional relevant studies identified: 8 studies  
+- Multi-country study contributing additional observations: 1 study (3 countries, +2 observations)
+- Total final dataset: 49 studies, 51 observations
+
+This demonstrates that our optimized search strategy achieved perfect recall for known relevant literature while successfully identifying additional high-quality studies that expanded our evidence base beyond expert-known articles.
+
+## Appendix B: Data Extraction Form
+
+[Complete data extraction form with all variables and coding schemes]
+
+## Appendix C: Quality Assessment Tool
+
+[Modified AXIS tool with adaptations for spatial choice studies]
+
+## Appendix D: Included Studies Reference List
+
+[Complete reference list of all 51 included studies with full citations]
+
+## Appendix E: Statistical Analysis Code
+
+[R code for all statistical analyses with detailed comments]
+
+## Appendix F: Supplementary Tables and Figures
+
+[Additional tables and figures referenced in the main text]
+
+## Detailed Screening Stage Results
+
+### Title and Abstract Screening (Combined)
+- **Records screened**: 1,667 (after removing 7 additional duplicates and other language articles)
+- **Records excluded**: 1,583
+  - **Title screening exclusions**: 1,338
+  - **Abstract screening exclusions**: 245
+- **Records retained for full-text assessment**: 84
+
+### Full-Text Assessment
+- **Reports sought for retrieval**: 84
+- **Reports not retrieved**: 4
+- **Reports assessed for eligibility**: 80
+- **Reports excluded**: 31
+  - **Insufficient spatial detail**: 20
+  - **Offender residence studies**: 10
+  - **No discrete choice models**: 8
+- **Studies included in final review**: 49
+
+### Inter-rater Reliability
+Cohen's kappa was calculated for each screening stage:
+- Title/Abstract screening: κ = 0.89
+- Full-text assessment: κ = 1.00 (perfect agreement)

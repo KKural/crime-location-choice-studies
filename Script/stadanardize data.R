@@ -3,8 +3,8 @@ rm(list=ls())
 library(dplyr)
 library(here)
 library(stringr)
+library(here)
 
-# Workspace setup - Reproducible output folder creation --------------------
 
 # Function to create a folder with a date argument
 make_folder <- function(date = Sys.Date(), subfolder = NULL) {
@@ -53,7 +53,7 @@ custom_save <- function(data, folder_name, file_description, save_function, file
 output_folder <- make_folder()
 
 # Read input data - using the comprehensive dataset with Elicit data
-df_raw_data <- read.csv("Data/20250704_Table.csv", stringsAsFactors = FALSE)
+df_raw_data <- read.csv(here("Data", "20250704_Table.csv"), stringsAsFactors = FALSE)
 
 # Convert unit sizes to km², sort, create Study_ID (if not exists), rearrange columns
 df_data_clean <- df_raw_data %>%
@@ -69,7 +69,7 @@ df_data_clean <- df_raw_data %>%
   mutate(Study_ID = row_number()) %>%
   select(
     Study_ID, `Title_of_the_study`, Citation, `Size_of_the_unit`, Unit, 
-    Unit_size_km2, `No_of_units`, `No_of_incidents`, `Name_of_the_unit`, `Inferred_size`,
+    Unit_size_km2, `No_of_units`, `No_of_incidents`, `Name_of_the_unit`, `Inferred_unit_size`,
     `DOI`, `ISSN`, `Journal`, `Volume`, `Issue`
   )
 
@@ -103,14 +103,13 @@ df_data_clean <- df_data_clean %>%
   ) %>%
   select(
     Study_ID, `Title_of_the_study`, Citation, Year, `Size_of_the_unit`, Unit, 
-    Unit_size_km2, Size_group, `Name_of_the_unit`, `No_of_units`, `No_of_incidents`, `Inferred_size`,
+    Unit_size_km2, Size_group, `Name_of_the_unit`, `No_of_units`, `No_of_incidents`, `Inferred_unit_size`,
     `DOI`, `ISSN`, `Journal`, `Volume`, `Issue`
   )
 
 # Print frequency table for size groups
 print(table(df_data_clean$Size_group))
 
-str(df_data_clean)
 
-# Optionally, save the updated data with the new column and Elicit data
+# Save the updated data with all study area calculations
 custom_save(df_data_clean, output_folder, "standardized_unit_sizes_with_groups", write.csv, row.names = FALSE, fileEncoding = "UTF-8")

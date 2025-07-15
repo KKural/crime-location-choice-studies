@@ -1,0 +1,7 @@
+Country_clean,N_studies,Median_size,Mean_size,SD_size,Min_size,Max_size,Percent_justified,Anglo_Saxon
+Belgium,3,8.45e-4,0.264,0.456,1.36e-4,0.79,100,FALSE
+United Kingdom,6,0.385,0.591,0.73,0.0284,2.04,100,TRUE
+United States,11,0.7,2.464,3.538,0.01968,8.48,100,TRUE
+New Zealand,3,1.41,1.524,0.394,1.2,1.96,100,TRUE
+China,8,1.62,1.826,0.629,0.958,2.81,87.5,FALSE
+Netherlands,17,2.63,1.782,1.267,1.42e-4,2.96,88.2,FALSE

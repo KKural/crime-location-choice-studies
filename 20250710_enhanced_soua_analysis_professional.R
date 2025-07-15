@@ -230,13 +230,34 @@ p1_distribution <- ggplot(data, aes(x = Log_Unit_size)) +
   labs(
     title = "Enhanced Distribution of Spatial Unit Sizes",
     subtitle = paste("Distribution of", nrow(data), "studies with density curve overlay"),
-    y = "Frequency",
-    caption = "Dashed line: median | Dotted line: mean | Density curve shows distribution shape"
+    y = "Frequency"
   ) +
   annotate("text", x = log10(median(data$Unit_size_km2, na.rm = TRUE)), 
            y = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.9,
            label = paste("Median =", round(median(data$Unit_size_km2, na.rm = TRUE), 4), "km²"),
-           color = "grey20", size = 3.5, hjust = -0.1)
+           color = "grey20", size = 3.5, hjust = -0.1) +
+  # Add legend box inside the plot
+  annotate("rect", xmin = -4.5, xmax = -2.5, ymin = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.7, 
+           ymax = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.95, 
+           fill = "white", color = "grey20", alpha = 0.9) +
+  annotate("segment", x = -4.4, xend = -4.1, 
+           y = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.9, 
+           yend = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.9, 
+           linetype = "dashed", color = "grey20", linewidth = 1) +
+  annotate("text", x = -4.0, y = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.9, 
+           label = "Median", color = "grey20", size = 3, hjust = 0) +
+  annotate("segment", x = -4.4, xend = -4.1, 
+           y = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.83, 
+           yend = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.83, 
+           linetype = "dotted", color = "grey20", linewidth = 1) +
+  annotate("text", x = -4.0, y = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.83, 
+           label = "Mean", color = "grey20", size = 3, hjust = 0) +
+  annotate("segment", x = -4.4, xend = -4.1, 
+           y = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.76, 
+           yend = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.76, 
+           linetype = "solid", color = "grey20", linewidth = 1.2) +
+  annotate("text", x = -4.0, y = max(hist(data$Log_Unit_size, breaks = 25, plot = FALSE)$counts) * 0.76, 
+           label = "Density", color = "grey20", size = 3, hjust = 0)
 
 ggsave(file.path(output_dir, "enhanced_distribution_analysis.png"), p1_distribution,
        width = 12, height = 8, dpi = 300, bg = "white")
@@ -287,14 +308,23 @@ p1_correlation <- ggplot(corr_data, aes(x = Variable1, y = Variable2, fill = Cor
   ) +
   labs(
     title = "Enhanced Correlation Matrix: Key Variables",
-    subtitle = "Pearson correlations with significance thresholds",
-    caption = "Dark = negative correlation | Light = positive correlation | Numbers show correlation coefficients"
+    subtitle = "Pearson correlations with significance thresholds"
   ) +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
     axis.title = element_blank(),
-    panel.grid = element_blank()
-  )
+    panel.grid = element_blank(),
+    legend.position = "right"
+  ) +
+  # Add legend explanation inside the plot
+  annotate("rect", xmin = 0.5, xmax = 2.5, ymin = 6.5, ymax = 7.5, 
+           fill = "white", color = "grey20", alpha = 0.9) +
+  annotate("text", x = 1.5, y = 7.2, 
+           label = "Dark = negative | Light = positive", 
+           color = "grey20", size = 3, hjust = 0.5) +
+  annotate("text", x = 1.5, y = 6.8, 
+           label = "Numbers = correlation coefficients", 
+           color = "grey20", size = 3, hjust = 0.5)
 
 ggsave(file.path(output_dir, "enhanced_correlation_matrix.png"), p1_correlation,
        width = 10, height = 8, dpi = 300, bg = "white")
