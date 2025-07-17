@@ -1,0 +1,43 @@
+Subject: Crime Location Choice SUoA Review - Manuscript Progress Update
+
+Dear [Professor Names],
+
+I wanted to provide you with a brief update on the spatial units of analysis (SUoA) manuscript we've been working on.
+
+**Current Status:**
+The manuscript draft is substantially complete and has undergone comprehensive revision for clarity, accuracy, and conciseness. The current version (20250717_Systematic_Review_Manuscript_Dynamic.Rmd) includes:
+
+**Key Findings:**
+- Analysis of SUoA selection practices across crime location choice studies
+- SUoA sizes span multiple orders of magnitude, reflecting systematic scale-matching to research objectives
+- Strong country-level clustering (ICC values) indicating national data infrastructures shape scale selection
+- Crime-type specificity with systematic alignment between offence characteristics and spatial scales
+- Rationale analysis identifying three major categories: Data Availability (45.1%), Theory-Method (35.3%), and Prior Research (27.5%)
+- Evidence that variation stems from deliberate, context-sensitive decisions rather than arbitrary choices
+
+**Completed Revisions:**
+- Removed repetition and streamlined all major sections
+- Corrected inconsistencies in terminology and data reporting
+- Enhanced clarity in abstract, introduction, and conclusions
+- Improved accuracy of statistical reporting and figure descriptions
+- Eliminated unsupported claims and overstated conclusions
+- Standardized language throughout for precision and neutrality
+
+**Analysis Code:**
+The analysis is fully reproducible through the R script (20250714_new_csv_analysis_clean.R), which generates all tables and figures automatically for the dynamic manuscript.
+
+**Next Steps:**
+I believe the manuscript is ready for your review and feedback. Would you prefer to:
+1. Review the current draft and provide comments?
+2. Discuss any specific aspects or sections in person/via call?
+3. Proceed with submission preparations?
+
+Please let me know your preferred timeline and any specific areas you'd like me to focus on for final refinements.
+
+Best regards,
+[Your name]
+
+**Attachments:**
+- 20250717_Systematic_Review_Manuscript_Dynamic.Rmd
+- 20250714_new_csv_analysis_clean.R
+- Supporting data files

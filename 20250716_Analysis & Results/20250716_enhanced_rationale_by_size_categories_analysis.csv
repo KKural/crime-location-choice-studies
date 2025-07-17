@@ -1,0 +1,23 @@
+Size_category,rationale_new_clean,N_studies,Total_in_category,Percentage
+Very Small (<0.01 km²),Theory-Method,4,4,100
+Small (0.01-<0.25 km²),Administrative Convenience,3,17,17.6
+Small (0.01-<0.25 km²),Data Availability,4,17,23.5
+Small (0.01-<0.25 km²),Practical Constraint,2,17,11.8
+Small (0.01-<0.25 km²),Prior Research,2,17,11.8
+Small (0.01-<0.25 km²),Scale Optimization,3,17,17.6
+Small (0.01-<0.25 km²),Theory-Method,3,17,17.6
+Medium (0.25-<1.0 km²),Administrative Convenience,2,21,9.5
+Medium (0.25-<1.0 km²),Data Availability,8,21,38.1
+Medium (0.25-<1.0 km²),Not Specified,1,21,4.8
+Medium (0.25-<1.0 km²),Practical Constraint,3,21,14.3
+Medium (0.25-<1.0 km²),Prior Research,4,21,19
+Medium (0.25-<1.0 km²),Scale Optimization,1,21,4.8
+Medium (0.25-<1.0 km²),Theory-Method,2,21,9.5
+Large (1.0-<3.0 km²),Administrative Convenience,5,36,13.9
+Large (1.0-<3.0 km²),Data Availability,8,36,22.2
+Large (1.0-<3.0 km²),Not Specified,3,36,8.3
+Large (1.0-<3.0 km²),Practical Constraint,3,36,8.3
+Large (1.0-<3.0 km²),Prior Research,8,36,22.2
+Large (1.0-<3.0 km²),Theory-Method,9,36,25
+Very Large (≥3.0 km²),Administrative Convenience,2,5,40
+Very Large (≥3.0 km²),Data Availability,3,5,60

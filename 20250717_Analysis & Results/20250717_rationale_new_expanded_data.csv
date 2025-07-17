@@ -1,0 +1,84 @@
+Study_ID,Citation,Unit_size_km2,Size_category,Year,Country_clean,Crime_type_grouped,rationale_new,Has_justification,rationale_new_clean
+1,"(Vandeviver et al., 2015)",1.36e-4,Very Small (<0.01 km²),2015,Belgium,Burglary,Theory–method,TRUE,Theory-Method
+2,"(Langton & Steenbeek, 2017)",1.4227e-4,Very Small (<0.01 km²),2017,Netherlands,Burglary,Theory method,TRUE,Theory-Method
+3,"(Kuralarasa et al, 2024)",8.449099999999999e-4,Very Small (<0.01 km²),2024,Belgium,Other,Theory method,TRUE,Theory-Method
+4,"(Bernasco & Jacques, 2015)",0.001545,Very Small (<0.01 km²),2015,Netherlands,Other,Theory method,TRUE,Theory-Method
+5,"(Bernasco et al., 2017)",0.01968,Small (0.01-<0.25 km²),2017,United States,Robbery,Prior research,TRUE,Prior Research
+5,"(Bernasco et al., 2017)",0.01968,Small (0.01-<0.25 km²),2017,United States,Robbery,Scale optimization,TRUE,Scale Optimization
+6,"(Bernasco et al., 2013)",0.01968,Small (0.01-<0.25 km²),2013,United States,Robbery,Theory method,TRUE,Theory-Method
+6,"(Bernasco et al., 2013)",0.01968,Small (0.01-<0.25 km²),2013,United States,Robbery,Scale optimization,TRUE,Scale Optimization
+7,"(Hanayama et al., 2018)",0.025,Small (0.01-<0.25 km²),2018,Japan,Burglary,Data availability,TRUE,Data Availability
+7,"(Hanayama et al., 2018)",0.025,Small (0.01-<0.25 km²),2018,Japan,Burglary,Theory method,TRUE,Theory-Method
+8,"(Frith et al., 2017)",0.0284,Small (0.01-<0.25 km²),2017,United Kingdom,Burglary,Theory method,TRUE,Theory-Method
+9,"(Smith & Brown, 2007)",0.032,Small (0.01-<0.25 km²),2007,United States,Burglary,Practical constraint,TRUE,Practical Constraint
+9,"(Smith & Brown, 2007)",0.032,Small (0.01-<0.25 km²),2007,United States,Burglary,Scale optimization,TRUE,Scale Optimization
+10,"(Bernasco, 2019)",0.04,Small (0.01-<0.25 km²),2019,Netherlands,Other,Prior research,TRUE,Prior Research
+10,"(Bernasco, 2019)",0.04,Small (0.01-<0.25 km²),2019,Netherlands,Other,Practical constraint,TRUE,Practical Constraint
+11,"(Xue & Brown, 2006)",0.062,Small (0.01-<0.25 km²),2006,United States,Burglary,Data availability,TRUE,Data Availability
+11,"(Xue & Brown, 2006)",0.062,Small (0.01-<0.25 km²),2006,United States,Burglary,Admin convenience,TRUE,Administrative Convenience
+12,"(Marchment & Gill, 2019)",0.15,Small (0.01-<0.25 km²),2019,Northern Ireland,Other,Data availability,TRUE,Data Availability
+12,"(Marchment & Gill, 2019)",0.15,Small (0.01-<0.25 km²),2019,Northern Ireland,Other,Admin convenience,TRUE,Administrative Convenience
+13,"(Johnson & Summers, 2015)",0.2,Small (0.01-<0.25 km²),2015,United Kingdom,Theft,Data availability,TRUE,Data Availability
+13,"(Johnson & Summers, 2015)",0.2,Small (0.01-<0.25 km²),2015,United Kingdom,Theft,Admin convenience,TRUE,Administrative Convenience
+14,"(Baudains et al., 2013)",0.33,Medium (0.25-<1.0 km²),2013,United Kingdom,Other,Data availability,TRUE,Data Availability
+14,"(Baudains et al., 2013)",0.33,Medium (0.25-<1.0 km²),2013,United Kingdom,Other,Practical constraint,TRUE,Practical Constraint
+15,"(Rowan, Appleby & McGloin, 2022)",0.37,Medium (0.25-<1.0 km²),2022,United States,Other,Prior research,TRUE,Prior Research
+16,"(Frith, 2019)",0.44,Medium (0.25-<1.0 km²),2019,United Kingdom,Other,Data availability,TRUE,Data Availability
+16,"(Frith, 2019)",0.44,Medium (0.25-<1.0 km²),2019,United Kingdom,Other,Theory method,TRUE,Theory-Method
+17,"(Bernasco et al., 2015)",0.51,Medium (0.25-<1.0 km²),2015,United Kingdom,Burglary,Scale optimization,TRUE,Scale Optimization
+17,"(Bernasco et al., 2015)",0.51,Medium (0.25-<1.0 km²),2015,United Kingdom,Burglary,Prior research,TRUE,Prior Research
+18,"(Townsley et al., 2015)",0.65,Medium (0.25-<1.0 km²),2015,Netherlands,Burglary,Data availability,TRUE,Data Availability
+18,"(Townsley et al., 2015)",0.65,Medium (0.25-<1.0 km²),2015,Netherlands,Burglary,Admin convenience,TRUE,Administrative Convenience
+19,"(Bernasco, 2006)",0.65,Medium (0.25-<1.0 km²),2006,Netherlands,Burglary,Not specified,TRUE,Not Specified
+20,"(Bernasco & Luykx, 2003)",0.65,Medium (0.25-<1.0 km²),2003,Netherlands,Burglary,Data availability,TRUE,Data Availability
+21,"(Bernasco & Nieuwbeerta, 2005)",0.65,Medium (0.25-<1.0 km²),2005,Netherlands,Burglary,Data availability,TRUE,Data Availability
+21,"(Bernasco & Nieuwbeerta, 2005)",0.65,Medium (0.25-<1.0 km²),2005,Netherlands,Burglary,Admin convenience,TRUE,Administrative Convenience
+22,"(Bernasco & Block, 2009)",0.7,Medium (0.25-<1.0 km²),2009,United States,Robbery,Data availability,TRUE,Data Availability
+22,"(Bernasco & Block, 2009)",0.7,Medium (0.25-<1.0 km²),2009,United States,Robbery,Practical constraint,TRUE,Practical Constraint
+23,"(Vandeviver & Bernasco, 2020)",0.79,Medium (0.25-<1.0 km²),2020,Belgium,Burglary,Prior research,TRUE,Prior Research
+23,"(Vandeviver & Bernasco, 2020)",0.79,Medium (0.25-<1.0 km²),2020,Belgium,Burglary,Theory–method,TRUE,Theory-Method
+24,"(A. W. Chamberlain & Boggess, 2016)",0.88,Medium (0.25-<1.0 km²),2016,United States,Burglary,Practical constraint,TRUE,Practical Constraint
+24,"(A. W. Chamberlain & Boggess, 2016)",0.88,Medium (0.25-<1.0 km²),2016,United States,Burglary,Data availability,TRUE,Data Availability
+25,"(Cai et al., 2024)",0.958,Medium (0.25-<1.0 km²),2024,China,Burglary,Category: Prior research,TRUE,Prior Research
+25,"(Cai et al., 2024)",0.958,Medium (0.25-<1.0 km²),2024,China,Burglary,Data availability,TRUE,Data Availability
+26,"(Curtis-Ham et al., 2025)",1.2,Large (1.0-<3.0 km²),2025,New Zealand,Burglary,Prior research,TRUE,Prior Research
+26,"(Curtis-Ham et al., 2025)",1.2,Large (1.0-<3.0 km²),2025,New Zealand,Burglary,Theory method,TRUE,Theory-Method
+27,"(A. Chamberlain et al., 2022)",1.36,Large (1.0-<3.0 km²),2022,United States,Burglary,Data availability,TRUE,Data Availability
+28,"(Curtis-Ham et al., 2022a)",1.41,Large (1.0-<3.0 km²),2022,New Zealand,Burglary,Prior research,TRUE,Prior Research
+28,"(Curtis-Ham et al., 2022a)",1.41,Large (1.0-<3.0 km²),2022,New Zealand,Burglary,Practical constraint,TRUE,Practical Constraint
+29,"(Long et al., 2021)",1.62,Large (1.0-<3.0 km²),2021,China,Robbery,Admin convenience,TRUE,Administrative Convenience
+29,"(Long et al., 2021)",1.62,Large (1.0-<3.0 km²),2021,China,Robbery,Data availability,TRUE,Data Availability
+30,"(Long et al., 2018)",1.62,Large (1.0-<3.0 km²),2018,China,Robbery,Admin convenience,TRUE,Administrative Convenience
+30,"(Long et al., 2018)",1.62,Large (1.0-<3.0 km²),2018,China,Robbery,Data availability,TRUE,Data Availability
+31,"(Song et al., 2019)",1.62,Large (1.0-<3.0 km²),2019,China,Theft,Prior research,TRUE,Prior Research
+31,"(Song et al., 2019)",1.62,Large (1.0-<3.0 km²),2019,China,Theft,Theory–method,TRUE,Theory-Method
+32,"(Long & Liu, 2022)",1.62,Large (1.0-<3.0 km²),2022,China,Robbery,Not specified,TRUE,Not Specified
+33,"(Long & Liu, 2021)",1.62,Large (1.0-<3.0 km²),2021,China,Robbery,Not specified,TRUE,Not Specified
+34,"(Menting, 2018)",1.68,Large (1.0-<3.0 km²),2018,Netherlands,Other,Theory–method,TRUE,Theory-Method
+35,"(Curtis-Ham et al., 2022b)",1.962,Large (1.0-<3.0 km²),2022,New Zealand,Burglary,Prior research,TRUE,Prior Research
+36,"(Townsley et al., 2015)",2.04,Large (1.0-<3.0 km²),2015,United Kingdom,Burglary,Data availability,TRUE,Data Availability
+36,"(Townsley et al., 2015)",2.04,Large (1.0-<3.0 km²),2015,United Kingdom,Burglary,Admin convenience,TRUE,Administrative Convenience
+37,"(Kuralarasan & Bernasco, 2022)",2.18,Large (1.0-<3.0 km²),2022,India,Theft,Prior research,TRUE,Prior Research
+38,"(S. van Sleeuwen et al., 2021)",2.63,Large (1.0-<3.0 km²),2021,Netherlands,Other,Data availability,TRUE,Data Availability
+38,"(S. van Sleeuwen et al., 2021)",2.63,Large (1.0-<3.0 km²),2021,Netherlands,Other,Theory method,TRUE,Theory-Method
+39,"(Menting et al., 2020)",2.63,Large (1.0-<3.0 km²),2020,Netherlands,Theft,Data availability,TRUE,Data Availability
+39,"(Menting et al., 2020)",2.63,Large (1.0-<3.0 km²),2020,Netherlands,Theft,Theory method,TRUE,Theory-Method
+40,"(Xiao et al., 2021)",2.74,Large (1.0-<3.0 km²),2021,China,Burglary,Prior research,TRUE,Prior Research
+40,"(Xiao et al., 2021)",2.74,Large (1.0-<3.0 km²),2021,China,Burglary,Data availability,TRUE,Data Availability
+41,"(Yue et al., 2023)",2.81,Large (1.0-<3.0 km²),2023,China,Theft,Not specified,TRUE,Not Specified
+42,"(Bernasco, 2010a)",2.96,Large (1.0-<3.0 km²),2010,Netherlands,Other,Data availability,TRUE,Data Availability
+42,"(Bernasco, 2010a)",2.96,Large (1.0-<3.0 km²),2010,Netherlands,Other,Admin convenience,TRUE,Administrative Convenience
+43,"(S. E. M. van Sleeuwen et al., 2018)",2.96,Large (1.0-<3.0 km²),2018,Netherlands,Other,Practical constraint,TRUE,Practical Constraint
+43,"(S. E. M. van Sleeuwen et al., 2018)",2.96,Large (1.0-<3.0 km²),2018,Netherlands,Other,Prior research,TRUE,Prior Research
+44,"(Lammers et al., 2015)",2.96,Large (1.0-<3.0 km²),2015,Netherlands,Other,Theory–method,TRUE,Theory-Method
+45,"(Lammers, 2017)",2.96,Large (1.0-<3.0 km²),2017,Netherlands,Burglary,Admin convenience,TRUE,Administrative Convenience
+45,"(Lammers, 2017)",2.96,Large (1.0-<3.0 km²),2017,Netherlands,Burglary,Practical constraint,TRUE,Practical Constraint
+46,"(Bernasco & Kooistra, 2010)",2.96,Large (1.0-<3.0 km²),2010,Netherlands,Robbery,Theory method,TRUE,Theory-Method
+47,"(Menting et al., 2016)",2.96,Large (1.0-<3.0 km²),2016,Netherlands,Other,Theory method,TRUE,Theory-Method
+48,"(Bernasco, 2010b)",2.96,Large (1.0-<3.0 km²),2010,Netherlands,Burglary,Theory method,TRUE,Theory-Method
+48,"(Bernasco, 2010b)",2.96,Large (1.0-<3.0 km²),2010,Netherlands,Burglary,Prior research,TRUE,Prior Research
+49,"(Clare et al., 2009)",6.7,Very Large (≥3.0 km²),2009,United States,Burglary,Data availability,TRUE,Data Availability
+49,"(Clare et al., 2009)",6.7,Very Large (≥3.0 km²),2009,United States,Burglary,Admin convenience,TRUE,Administrative Convenience
+50,"(Townsley et al., 2015)",8.48,Very Large (≥3.0 km²),2015,United States,Burglary,Data availability,TRUE,Data Availability
+50,"(Townsley et al., 2015)",8.48,Very Large (≥3.0 km²),2015,United States,Burglary,Admin convenience,TRUE,Administrative Convenience
+51,"(Townsley et al., 2016)",8.48,Very Large (≥3.0 km²),2016,United States,Burglary,Data availability,TRUE,Data Availability

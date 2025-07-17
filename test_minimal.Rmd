@@ -1,0 +1,51 @@
+---
+title: "Test Document"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+
+# Load the analysis script to get all objects
+source("20250714_new_csv_analysis_clean.R")
+
+# Test round calls one by one to find the issue
+cat("Testing round calls...\n")
+
+# Test 1: spatial_stats
+cat("Test 1: spatial_stats exists:", exists("spatial_stats"), "\n")
+if(exists("spatial_stats")) {
+  cat("spatial_stats class:", class(spatial_stats), "\n")
+  print(str(spatial_stats))
+}
+
+# Test 2: Core study statistics
+cat("Test 2: Core statistics\n")
+n_studies <- as.numeric(spatial_stats$N_studies)
+n_observations <- as.numeric(spatial_stats$N_observations)
+cat("n_studies:", n_studies, "class:", class(n_studies), "\n")
+cat("n_observations:", n_observations, "class:", class(n_observations), "\n")
+
+# Test 3: Unit size statistics - the problematic ones
+cat("Test 3: Unit size statistics\n")
+mean_unit_val <- spatial_stats$Mean_unit_size
+cat("Mean_unit_size raw:", mean_unit_val, "class:", class(mean_unit_val), "\n")
+
+mean_unit_numeric <- as.numeric(spatial_stats$Mean_unit_size)
+cat("Mean_unit_size numeric:", mean_unit_numeric, "class:", class(mean_unit_numeric), "\n")
+
+# Try the round call that's failing
+cat("Attempting round call...\n")
+tryCatch({
+  result <- round(as.numeric(spatial_stats$Mean_unit_size), 3)
+  cat("Round succeeded:", result, "\n")
+}, error = function(e) {
+  cat("Round FAILED with error:", e$message, "\n")
+})
+
+cat("Setup completed successfully!\n")
+```
+
+# Test
+
+This is a test document.
