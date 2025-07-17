@@ -1,0 +1,6 @@
+Size_category,N_studies,N_justified,Percent_justified
+Very Small (<0.01 km²),4,4,100
+Small (0.01-<0.25 km²),9,9,100
+Medium (0.25-<1.0 km²),12,12,100
+Large (1.0-<3.0 km²),23,23,100
+Very Large (≥3.0 km²),3,3,100

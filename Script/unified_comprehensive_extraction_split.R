@@ -18,7 +18,6 @@ library(writexl)
 
 # Set up input/output folder configuration -----------------
 analysis_date <- Sys.Date()  # Use today's date
-input_folder <- paste0(format(analysis_date - 1, "%Y%m%d"), "_Analysis & Results")  # Yesterday's folder for input
 output_folder <- paste0(format(analysis_date, "%Y%m%d"), "_Analysis & Results")  # Today's folder for output
 
 # Create output folder if it doesn't exist
@@ -26,6 +25,37 @@ if (!dir.exists(output_folder)) {
   dir.create(output_folder, recursive = TRUE)
   cat("Created output folder:", output_folder, "\n")
 }
+
+# Find the most recent input folder with the required file
+find_most_recent_input <- function() {
+  # Look for folders with pattern YYYYMMDD_Analysis & Results
+  all_folders <- list.dirs(".", recursive = FALSE, full.names = FALSE)
+  analysis_folders <- all_folders[grepl("^\\d{8}_Analysis & Results$", all_folders)]
+  
+  if (length(analysis_folders) == 0) {
+    stop("No analysis result folders found")
+  }
+  
+  # Sort by date (descending) and find the most recent one with the required file
+  analysis_folders <- sort(analysis_folders, decreasing = TRUE)
+  
+  for (folder in analysis_folders) {
+    date_part <- substr(folder, 1, 8)
+    test_file <- file.path(folder, paste0(date_part, "_standardized_unit_sizes_with_groups_merged.csv"))
+    
+    if (file.exists(test_file)) {
+      cat("Found input file in:", folder, "\n")
+      return(list(folder = folder, date = date_part))
+    }
+  }
+  
+  stop("No folder with required standardized_unit_sizes_with_groups_merged.csv file found")
+}
+
+# Get the most recent input folder
+input_info <- find_most_recent_input()
+input_folder <- input_info$folder
+input_date <- input_info$date
 
 # Output folder creation and utility functions --------------------------------
 
@@ -76,87 +106,109 @@ folder_name <- output_folder
 
 # Data reading and initial processing -----------------------------------------
 
-# Read yesterday's standardized dataset from the input folder
-standardized_file <- here::here(input_folder, paste0(format(analysis_date - 1, "%Y%m%d"), "_standardized_unit_sizes_with_groups_merged.csv"))
+# Step 0: Merge the 5 detailed CSV files from Data folder with rationale categories
+detailed_csv_files <- c(
+  "Data/Study_Identification_Spatial_Units.csv",
+  "Data/Theoretical_Framework_Methodology.csv", 
+  "Data/Temporal_Variables_Findings.csv",
+  "Data/Scale_Effects_Limitations.csv",
+  "Data/study area size.csv"
+)
 
-if (!file.exists(standardized_file)) {
-  stop("Standardized dataset not found in: ", standardized_file)
+existing_files <- character()
+for (file in detailed_csv_files) {
+  if (file.exists(file)) {
+    existing_files <- c(existing_files, file)
+    cat("Found file:", file, "\n")
+  } else {
+    cat("File not found:", file, "\n")
+  }
 }
 
-cat("Reading input file:", standardized_file, "\n")
-cat("Output will be saved to:", output_folder, "\n")
+if (length(existing_files) == 0) {
+  stop("No detailed CSV files found! Please check file paths in Data/ folder.")
+}
 
-# Read the data
-df <- read_csv(standardized_file, show_col_types = FALSE)
+# Function to clean column names (remove supporting/reasoning columns)
+clean_column_names <- function(df) {
+  main_cols <- colnames(df)[!grepl("Supporting|Reasoning", colnames(df))]
+  return(df[, main_cols])
+}
+
+# Function to standardize basic metadata columns
+standardize_metadata <- function(df) {
+  required_cols <- c("Title", "Authors", "DOI", "Year", "Venue", "Citation count")
+  for (col in required_cols) {
+    if (!col %in% colnames(df)) {
+      df[[col]] <- NA
+    }
+  }
+  return(df)
+}
+
+# Read and process first file
+cat("Reading base file:", existing_files[1], "\n")
+df <- read_csv(existing_files[1], show_col_types = FALSE)
+df <- clean_column_names(df)
+df <- standardize_metadata(df)
+
+metadata_cols <- c("Title", "Authors", "DOI", "DOI link", "Venue", "Citation count", "Year")
+base_content_cols <- setdiff(colnames(df), metadata_cols)
+
+# Process additional files and merge by Title
+if (length(existing_files) > 1) {
+  for (i in 2:length(existing_files)) {
+    file <- existing_files[i]
+    cat("Reading and merging file:", file, "\n")
+    additional_df <- read_csv(file, show_col_types = FALSE)
+    additional_df <- clean_column_names(additional_df)
+    additional_df <- standardize_metadata(additional_df)
+    
+    additional_content_cols <- setdiff(colnames(additional_df), metadata_cols)
+    merge_cols <- c("Title", additional_content_cols)
+    additional_subset <- additional_df[, merge_cols]
+    
+    df <- merge(df, additional_subset, by = "Title", all.x = TRUE, all.y = TRUE)
+  }
+}
+
+# Clean up the final dataset
+df <- df[, !duplicated(colnames(df))]
+
+title_col <- "Title"
+metadata_cols_present <- intersect(metadata_cols, colnames(df))
+content_cols_present <- setdiff(colnames(df), metadata_cols_present)
+
+final_col_order <- c(title_col, content_cols_present)
+df <- df[, final_col_order]
+
+df <- df[!is.na(df$Title) & df$Title != "", ]
+df$Title <- str_trim(df$Title)
+df[df == ""] <- NA
+df <- df[rowSums(!is.na(df)) > 1, ]
+df <- df[order(df$Title), ]
+
+cat("Merged dataset rows:", nrow(df), "\n")
+cat("Merged dataset columns:", ncol(df), "\n")
 
 # Print available columns for debugging
-cat("\nAvailable columns in dataset:\n")
+cat("\nAvailable columns in merged dataset:\n")
 print(names(df))
-
-# Fix column names to match expected format
-if ("Title_of_the_study" %in% names(df) && !"Title" %in% names(df)) {
-  cat("Renaming Title_of_the_study to Title\n")
-  df <- df %>% rename(Title = Title_of_the_study)
-}
-
-if ("Name_of_the_unit" %in% names(df) && !"Unit_Type" %in% names(df)) {
-  cat("Using Name_of_the_unit as Unit_Type\n")
-  df <- df %>% rename(Unit_Type = Name_of_the_unit)
-}
-
-# Ensure minimum required columns exist (reduced set)
-required_cols <- c("Title", "Study_Area_Size_km2")  # Minimum required columns
-
-# Check for optional columns and create if missing
-if (!"Unit_Type" %in% names(df)) {
-  cat("Adding Unit_Type column with default value\n")
-  df$Unit_Type <- "Not Specified"
-}
-
-if (!"Has_Unit_Justification" %in% names(df)) {
-  cat("Adding Has_Unit_Justification column\n")
-  df$Has_Unit_Justification <- !is.na(df$Quoted_Rationale) & df$Quoted_Rationale != ""
-}
-
-if (!"Rationale_Category" %in% names(df)) {
-  cat("Adding Rationale_Category column with default value\n")
-  df$Rationale_Category <- "Uncategorized"
-}
-
-if (!"Quoted_Rationale" %in% names(df)) {
-  cat("Adding Quoted_Rationale column\n")
-  df$Quoted_Rationale <- NA_character_
-}
-
-# Check minimum required columns
-missing_cols <- setdiff(required_cols, names(df))
-if (length(missing_cols) > 0) {
-  stop("Required columns missing: ", paste(missing_cols, collapse = ", "))
-}
-
-cat("\nProcessing with columns:\n")
-print(str(df))
-
-# Get initial dataset size
-raw_dataset_rows <- nrow(df)
-
-# Clean up the dataset
-df <- df %>%
-  filter(!is.na(Title) & Title != "") %>%
-  mutate(
-    Title = str_trim(Title),
-    Study_Area_Size_km2 = as.numeric(Study_Area_Size_km2)
-  ) %>%
-  filter(rowSums(!is.na(.)) > 1) %>%
-  arrange(Title)
-
-cat("Initial dataset rows:", raw_dataset_rows, "\n")
-cat("Clean dataset rows:", nrow(df), "\n")
 
 # Save the clean combined dataset
 cat("Saving clean_combined_dataset_merged. Rows:", nrow(df), "\n")
 if (nrow(df) == 0) cat("Warning: df is empty!\n")
 custom_save(df, output_folder, "clean_combined_dataset_merged", readr::write_csv)
+
+# Check if we have the spatial units column with rationale categories
+if ("SPATIAL UNITS - DESCRIPTION & JUSTIFICATION" %in% names(df)) {
+  cat("Found SPATIAL UNITS column with rationale categories\n")
+} else {
+  cat("WARNING: SPATIAL UNITS column not found\n")
+  cat("Available columns that might contain spatial info:\n")
+  spatial_cols <- names(df)[grepl("SPATIAL|spatial|Spatial", names(df))]
+  print(spatial_cols)
+}
 
 metadata_cols <- c("Title", "Authors", "DOI", "DOI link", "Venue", "Citation count", "Year")
 base_content_cols <- setdiff(colnames(df), metadata_cols)
@@ -367,58 +419,79 @@ extract_variables_grouped <- function(text) {
   return(list(variables = variables_string, count = length(variables)))
 }
 
-# Initialize result dataframe with required columns
+# Initialize result dataframe with basic columns that exist
 result_data <- data.frame(
   Title = df$Title,
-  Year = df$Year,
-  Journal = df$Journal,
-  DOI = df$DOI,
-  Study_Period = df$Study_Period,
-  Data_Collection_Period = df$Data_Collection_Period,
-  Data_Sources = df$Data_Sources,
-  Data_Availability = df$Data_Availability,
-  Unit_Type = df$Unit_Type,
-  Unit_size_km2 = df$Unit_size_km2,
-  Has_Unit_Justification = df$Has_Unit_Justification,
-  Rationale_Category = df$Rationale_Category,
-  Quoted_Rationale = df$Quoted_Rationale,
-  Justification_Summary = df$Justification_Summary,
+  Year = if("Year" %in% names(df)) df$Year else NA,
+  DOI = if("DOI" %in% names(df)) df$DOI else NA,
+  Authors = if("Authors" %in% names(df)) df$Authors else NA,
+  Venue = if("Venue" %in% names(df)) df$Venue else NA,
   stringsAsFactors = FALSE
 )
+
+# Add columns that will be extracted
+result_data$Journal <- NA
+result_data$Study_Period <- NA
+result_data$Data_Collection_Period <- NA
+result_data$Data_Sources <- NA
+result_data$Data_Availability <- NA
+result_data$Unit_Type <- NA
+result_data$Unit_size_km2 <- NA
+result_data$Has_Unit_Justification <- NA
+result_data$Rationale_Category <- NA
+result_data$Quoted_Rationale <- NA
+result_data$Justification_Summary <- NA
+
+# =============================================================================#
+# Main Processing Loop
+# =============================================================================#
+
+# Process each row of the dataset
+for (i in 1:nrow(df)) {
   
   # Extract author names from Citation if needed
-  if (!is.na(df$Citation[i])) {
+  if ("Citation" %in% names(df) && !is.na(df$Citation[i])) {
     author_match <- str_extract(df$Citation[i], "\\((.*?)(?:,|\\d{4}|et al\\.)")
     if (!is.na(author_match)) {
       result_data$Authors[i] <- str_replace_all(author_match, "[\\(\\),]", "")
     }
   }
   
-  # Temporal scope & data sources from existing columns
-  result_data$Study_Period[i] <- df$Study_Period[i]
-  result_data$Data_Collection_Period[i] <- df$Data_Collection_Period[i]
-  result_data$Data_Sources[i] <- df$Data_Sources[i]
-  result_data$Data_Availability[i] <- df$Data_Availability[i]
+  # Extract temporal scope & data sources from existing columns if they exist
+  if ("TEMPORAL SCOPE & DATA SOURCES" %in% names(df)) {
+    temporal_text <- df$`TEMPORAL SCOPE & DATA SOURCES`[i]
+    if (!is.na(temporal_text)) {
+      temporal_fields <- extract_all_fields_improved(temporal_text, c("Study Period", "Data Collection Period", "Data Sources", "Data Availability"))
+      result_data$Study_Period[i] <- temporal_fields["Study Period"]
+      result_data$Data_Collection_Period[i] <- temporal_fields["Data Collection Period"]
+      result_data$Data_Sources[i] <- temporal_fields["Data Sources"]
+      result_data$Data_Availability[i] <- temporal_fields["Data Availability"]
+    }
+  }
   
   # Also check other sections for data collection timing
   if (is.na(result_data$Data_Collection_Period[i])) {
     # Check sampling section for timing info
-    sampling_text <- df$`SAMPLING & CHOICE SETS`[i]
-    if (!is.na(sampling_text)) {
-      data_collection_timing <- extract_data_collection_period(sampling_text)
-      if (!is.na(data_collection_timing)) {
-        result_data$Data_Collection_Period[i] <- data_collection_timing
+    if ("SAMPLING & CHOICE SETS" %in% names(df)) {
+      sampling_text <- df$`SAMPLING & CHOICE SETS`[i]
+      if (!is.na(sampling_text)) {
+        data_collection_timing <- extract_data_collection_period(sampling_text)
+        if (!is.na(data_collection_timing)) {
+          result_data$Data_Collection_Period[i] <- data_collection_timing
+        }
       }
     }
   }
   
   # Check data preparation section for timing info
   if (is.na(result_data$Data_Collection_Period[i])) {
-    data_prep_text <- df$`DATA PREPARATION & PROCESSING`[i]
-    if (!is.na(data_prep_text)) {
-      data_collection_timing <- extract_data_collection_period(data_prep_text)
-      if (!is.na(data_collection_timing)) {
-        result_data$Data_Collection_Period[i] <- data_collection_timing
+    if ("DATA PREPARATION & PROCESSING" %in% names(df)) {
+      data_prep_text <- df$`DATA PREPARATION & PROCESSING`[i]
+      if (!is.na(data_prep_text)) {
+        data_collection_timing <- extract_data_collection_period(data_prep_text)
+        if (!is.na(data_collection_timing)) {
+          result_data$Data_Collection_Period[i] <- data_collection_timing
+        }
       }
     }
   }
@@ -682,7 +755,7 @@ if (length(crossnational_row) > 0) {
   # Read the previously saved combined dataset using the output_folder
   combined_file_path <- file.path(output_folder, paste0(format(Sys.Date(), "%Y%m%d"), "_clean_combined_dataset_merged.csv"))
   original_csv <- read.csv(combined_file_path, stringsAsFactors = FALSE)
-  crossnational_csv_row <- which(grepl "Cross.*national", original_csv$Title, ignore.case = TRUE)
+  crossnational_csv_row <- which(grepl("Cross.*national", original_csv$Title, ignore.case = TRUE))
   
   if (length(crossnational_csv_row) > 0) {
     original_csv_study <- original_csv[crossnational_csv_row, ]
@@ -1306,7 +1379,7 @@ if (file.exists(spatial_unit_file)) {
 # =============================================================================#
 
 # Calculate summary statistics
-summary_stats <- df %>%
+summary_stats <- result_data %>%
   summarise(
     N_Studies = n(),
     Mean_Unit_Size = round(mean(Study_Area_Size_km2, na.rm = TRUE), 4),
@@ -1335,14 +1408,14 @@ summary_statistics <- data.frame(
   ),
   Value = c(
     raw_dataset_rows,
-    nrow(df),
-    nrow(df),
-    paste(round(median(df$Study_Area_Size_km2, na.rm = TRUE), 1), "km²"),
-    paste(round(mean(df$Study_Area_Size_km2, na.rm = TRUE), 2), "km²"),
-    paste(round(sd(df$Study_Area_Size_km2, na.rm = TRUE), 2), "km²"),
-    as.character(round(e1071::skewness(df$Study_Area_Size_km2, na.rm = TRUE), 2)),
-    as.character(round(log10(max(df$Study_Area_Size_km2, na.rm = TRUE) / 
-                            min(df$Study_Area_Size_km2, na.rm = TRUE)), 1))
+    nrow(result_data),
+    nrow(result_data),
+    paste(round(median(result_data$Study_Area_Size_km2, na.rm = TRUE), 1), "km²"),
+    paste(round(mean(result_data$Study_Area_Size_km2, na.rm = TRUE), 2), "km²"),
+    paste(round(sd(result_data$Study_Area_Size_km2, na.rm = TRUE), 2), "km²"),
+    as.character(round(e1071::skewness(result_data$Study_Area_Size_km2, na.rm = TRUE), 2)),
+    as.character(round(log10(max(result_data$Study_Area_Size_km2, na.rm = TRUE) / 
+                            min(result_data$Study_Area_Size_km2, na.rm = TRUE)), 1))
   ),
   stringsAsFactors = FALSE
 )

@@ -1,0 +1,283 @@
+i am giving my text from previous papers,  can you tkae ciatiao from that and add it at right place: Use https://www.covidence.org/  for systematic review 
+
+Introduction
+Crime location choice research has seen a notable shift from examining larger spatial units such as states, cities, and neighborhoods (Baumer et al., 1998; Loftin & Hill, 1974) to a micro-unit like street segments and face blocks (Eck & Weisburd, 1995; Sampson & Groves, 1989). This transition to micro-level analysis is important to improve our understanding of the location choice of offenders. The focus on the micro units enables us to understand crime trends with greater precision (Weisburd et al., 2004). The granularity of micro-level analysis enhances our theoretical comprehension of crime location choice and plays a major role in shaping crime prevention strategies and policymaking. However, despite its growing popularity, there is a lack of consensus in the location choice literature regarding the impact of multiple spatial scales. This raises a question about the universal applicability and reliability of conclusions drawn from micro-level spatial analyses. This gap highlights the necessity for systematically exploring the influence of various spatial scales on crime location choice studies. This effort is needed for theoretical evolution and practical application. 
+Recent research in crime location choice (e.g., shows growing interest in using micro-level spatial units. However, these studies highlight a key issue: there's still uncertainty about how different spatial scales impact the ability to compare and understand crime data from various studies. This lack of clarity and comparability presents a significant challenge, as it undermines the ability to understand crime patterns better and the development of universally applicable theoretical frameworks. Therefore, addressing this issue is important for enhancing the practical applications of crime location choice research findings.
+In this study, we aim to examine the effects of multiple spatial scales on crime location choice of robbery using data sets from Chennai and Chicago. This examination aims to bridge the gap in understanding how different spatial units impact the analysis and interpretation of crime data. First, we review existing literature to map the evolution of spatial scale usage in crime location choice research and to understand the current state of knowledge. Then, we empirically analyze crime data sets at multiple spatial scales using the discrete choice method. This analysis demonstrates how varying spatial units could lead to different interpretations and conclusions about crime location choice. By achieving these objectives, this paper seeks to improve the understanding of spatial scales' role in crime location choice research and contribute to the crime location choice literature.
+This paper is structured as follows: First, we present a literature review providing an overview and historical perspective on the use of spatial scales in location choice studies. A data and methods section follows this. Next, we present an empirical analysis examining the influence of multiple spatial scales on crime location choice. The paper concludes with a discussion of the findings and their implications.
+Literature Review 
+The crime location choice research has significantly transformed from its initial focus on larger geographic units to micro-level analysis. Prior studies mostly analyzed larger geographic units such as states, cities, and neighborhoods, laying a foundational understanding of crime patterns across broader areas (Baumer et al., 1998; Loftin & Hill, 1974). These studies were important in proving foundational knowledge about crime distribution and its correlation with characteristics of larger spatial units. However, the introduction of micro place analysis marked a major shift in crime location choice research, focusing on more specific places like street segments, census blocks or grid cells (e.g., Bernasco, 2019; Bernasco et al., 2013; Bernasco & Jacques, 2015). This shift was not merely a change in the unit of analysis but provided an understanding of crime trends at the micro-level.
+This shift to micro-level analysis was influenced by emerging theoretical perspectives that the crime and the opportunities are presented at micro-places (Curman et al., 2015; Weisburd et al., 2004). Hence, it is important to study crime patterns at a micro-level where the details of offending behavior are distinct from macro-level analysis. Micro-level analysis has provided insights into crime trends and patterns and enabled researchers to identify and examine the specific characteristics of places that influence crime, such as the presence of crime generators and attractors, and how these influence crime location choice (Bernasco & Block, 2011; Kuralarasan & Bernasco, 2022).
+Further, crime concentration at micro places makes it an important unit of analysis to understand crime patterns (Groff et al., 2010). Additionally, crime is not uniformly distributed but is concentrated in micro places (Brantingham & Brantingham, 2017), often with high stability over time (Curman et al., 2015). This concentration and stability challenge the idea of crime as a uniformly distributed phenomenon and highlight the importance of micro-level analysis in understanding the spatial distribution of crime. However, though smaller spatial units can offer detailed insights, one challenge with smaller units is the potential for spillover effects. This means that the characteristics of one small area, such as a street segment, might influence or be influenced by adjacent areas (Bernasco et al., 2013) and making it difficult to ignore the factors contributing to crime in micro-places. 
+Furthermore, crime data is often aggregated at larger scales, such as neighborhoods or census tracts. While smaller units provide detailed insights, the availability and common use of larger-scale data is one reason for including larger units in spatial analysis. It is evident from the crime location choice literature that both macro and micro units are preferred. However, there are noticeable gaps, particularly when comparing results across different spatial units. The lack of a standard approach for choosing the appropriate spatial unit for analysis makes comparing and consolidating findings from different studies difficult. Our research aims to address these gaps by reviewing how prior crime location choice used spatial scales and quantitative analysis of how different spatial scales impact the crime location choice of robbery in Chennai and Chicago, thereby contributing to understanding the location choice of crime.
+Table 1 presents the prior studies on crime location choice, spatial units, number of incidents, number of units and name of the incidents. These studies are based on three sources. First set of studies are based on the review of location choice research by  Ruiter, (2017). Second, we updated this list based on a CSV file of all location choice studies from Sophie Curtis-Ham and third, we added further studies using the Boolean keywords search in Web of Science “("offender" OR "burglar" OR "robber") AND ("location" OR "target" OR "spatial") AND ("discrete" OR "choose" OR "choice" OR "select)”.  Our selection criteria are studies that employed the discrete choice model, a method common in analyzing crime location choice (e.g. Bernasco & Block, 2009; Vandeviver et al., 2015). Ultimately, we included 42 distinct studies that utilize 44 various spatial scales. The studies are arranged chronologically to show how the usage of spatial scale evolved, and they indicate how studies used smaller and larger spatial units over the years. 
+The table indicates that studies in the early 2000s mostly used neighborhood scales. Post 2010, there was a shift towards smaller units such as postal code areas and census blocks. The emphasis on micro-spatial analysis is evident in the 16 studies that utilize street segments and individual property units. These studies account for a significant portion of the latter half of the table, indicating that contemporary studies focus on smaller spatial units that influence crime occurrence. For example, Bernasco & Jacques, (2015) used a smaller scale of 103 meters.  The diversity in spatial scale also challenges the comparability and generalizability of findings across different spatial scales (Steenbeek & Weisburd, 2016; Weisburd et al., 2012). Table 1 shows that there is no standardized approach to selecting spatial units. 
+Table 1: Spatial units in crime location choice studies
+S. No	Citation	Size of the unit
+(km2)	No of units	No of incidents	Unit of analysis
+1	(Bernasco & Luykx, 2003)
+0.65	89	26	Neighborhood
+2	(Bernasco & Nieuwbeerta, 2005)
+0.65	89	548	Neighborhood
+3	(Bernasco, 2006)
+0.65	89	1.174	Neighborhood
+4	(Clare et al., 2009)
+6.7	291	1.761	Residential suburb
+5	(Bernasco & Block, 2009)
+ 	844	12.872	Census tract
+6	(Bernasco, 2010a)
+< 0.805 (urban)< 3.219 (rural) 	4	7.179	Postal code area
+7	(Bernasco & Kooistra, 2010)
+ 	4.006	1.539	Postal code area
+8	(Bernasco, 2010b)
+0.017	23.984	1.311	Postal code area
+9	(Bernasco et al., 2013)
+19.68	24.594	12.938	Census block
+10	(Baudains et al., 2013)
+ 	4.765	2.299	LSOA
+11	(Townsley et al., 2015)
+8.48	158	889	Other administrative unit
+12	(Lammers et al., 2015)
+2.96	142	12.639	Postal code area
+13	(Townsley et al., 2015)
+2.04	131	398	Other administrative unit
+14	(Townsley et al., 2015)
+0.65	89	1.835	Neighborhood
+15	(Bernasco et al., 2015)
+0.51	1.687	3.337	LSOA
+16	(Bernasco & Jacques, 2015)
+0.103	262	50	Street segment
+17	(Johnson & Summers, 2015)
+ 	198	721	LSOA
+18	(Vandeviver et al., 2015)
+ 	503.589	4.308	Residential property
+19	(Townsley et al., 2016)
+8.48	158	2.844	statistical local areas
+20	(Menting et al., 2016)
+2.96	142	19.42	Postal code area
+21	(A. W. Chamberlain & Boggess, 2016)
+ 	334	5.182	Neighborhood
+22	(Bernasco et al., 2017)
+19.68	24.594	12.938	Census block
+23	(Lammers, 2017)
+2.96	142	3.037	Postal code area
+24	(Frith et al., 2017)
+ 	5.286	459	Street segment
+25	(Langton & Steenbeek, 2017)
+ 	51.378	2.911	Residential property
+26	(S. E. M. van Sleeuwen et al., 2018)
+2.96	142	12.639	Postal code area
+27	(Menting, 2018)
+1.68	76	13.088	Postal code area
+28	(Long et al., 2018)
+1.62	1.973	527	Community
+29	(Hanayama et al., 2018)
+0.5	1.134	369	Grid cell
+30	(Song et al., 2019)
+1.62	1.616	3.436	Census unit
+31	(Frith, 2019)
+0.44	616	1.105	Other administrative unit
+32	(Bernasco, 2019)
+0.2	4.558	5.092	Grid cell
+33	(Marchment & Gill, 2019)
+ 	890	150	Small areas
+34	(Vandeviver & Bernasco, 2020)
+0.79	193	679	Neighborhood
+35	(Menting et al., 2020)
+0.68	12.821	140	Neighborhood
+36	(Xiao et al., 2021)
+2.74	2.643	3.86	Community
+37	(Long et al., 2021)
+1.62	1.971	4.358	Community
+38	(Long & Liu, 2021)
+1.62	1.971	4.358	Neighborhood
+39	(S. van Sleeuwen et al., 2021)
+0.66	71	13.305	Neighborhood
+40	(Kuralarasan & Bernasco, 2022)
+2.18	201	1.573	Other administrative unit
+41	(Long & Liu, 2022)
+1.62	1.971	4.358	Neighborhood
+42	(A. Chamberlain et al., 2022)
+ 	304	4.92	Neighborhood
+43	(Curtis-Ham et al., 2022b)
+ 	2153	4.5 million	Census Statistical Area
+44	(Curtis-Ham et al., 2022a)
+1.2	2.153	38.57	Census unit statistical area
+45	(Yue et al., 2023)
+1.558	2643	1540	Community
+
+Data
+Crime Data
+Chennai data comprises 1573 cleared street robberies (snatching) committed by 1152 offenders from August 2010 to July 2017. The data were obtained from the State Crime Records Bureau (SCRB), Tamil Nadu, India, and included the date, time, location, age, gender, number of offenders, crime and offender addresses. The addresses were geo-coded using Google Earth. 
+Chicago data includes 12,938 cleared street robberies committed by 18,114 offenders, recorded by the Chicago Police Department from 1996 to 1998. The data includes the date, time, number of offenders, and geo-coded location of each incident.
+
+Unit of Analysis
+The ward is the unit of analysis for Chennai. There are 201 wards in Chennai, and the average surface area of the ward is 2.18 km2. For the multi-scale analysis, we used three levels of square grid cells: 1500 m2, 1000 m2, and 500 m2.     
+For Chicago, census blocks are the unit of analysis, and there are 24,594 census blocks, excluding non-land blocks and blocks without residential functions. Each block has an 844-person population, and a block with a population size of less than 100 is excluded from the analysis. 
+Crime Generators and Attractors
+We used crime generators and attractors as predictors for crime location choice. For Chennai, facilities like transport hubs, educational institutions, government offices, retail facilities, and places of worship were identified using Google Earth (see Kuralarasan & Bernasco, 2022 for more details). In the case of Chicago, variables such as the presence of cash economy businesses and illegal activities. Additional variables such as accessibility of blocks, presence of schools, population, racial and ethnic composition, annual drug arrests, annual prostitution arrests, collective efficacy, and high were included (see Bernasco & Block, 2009 for more details). The surface area of the spatial units and population were considered as spatial units a control variables.
+Methods
+Discrete choice model 
+
+Reference
+Baudains, P., Braithwaite, A., & Johnson, S. (2013). TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS. CRIMINOLOGY, 51(2), 251–285. https://doi.org/10.1111/1745-9125.12004
+Baumer, E., Lauritsen, J. L., Rosenfeld, R., & Wright, R. (1998). The Influence of Crack Cocaine on Robbery, Burglary, and Homicide Rates: A Cross-City, Longitudinal Analysis. Journal of Research in Crime and Delinquency, 35(3), 316–340. https://doi.org/10.1177/0022427898035003004
+Bernasco, W. (2006). Co‐offending and the choice of target areas in burglary. Journal of Investigative Psychology and Offender Profiling, 3(3), 139–155. https://doi.org/10.1002/jip.49
+Bernasco, W. (2010a). A Sentimental Journey To Crime: Effects of Residential History on Crime Location Choice. Criminology, 48(2), 389–416. https://doi.org/10.1111/j.1745-9125.2010.00190.x
+Bernasco, W. (2010b). Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places. JOURNAL OF QUANTITATIVE CRIMINOLOGY, 26(1), 113–138. https://doi.org/10.1007/s10940-009-9086-6
+Bernasco, W. (2019). Adolescent Offenders’ Current Whereabouts Predict locations of their Future Crimes. PLOS ONE, 14(1). https://doi.org/10.1371/journal.pone.0210733
+Bernasco, W., & Block, R. (2009). Where offenders choose to attack: A discrete choice model of robberies in Chicago. American Society of Criminology, 47, 1–38. https://doi.org/10.1111/j.1745-9125.2009.00140.x.
+Bernasco, W., & Block, R. (2011). Robberies in Chicago: A Block-Level Analysis of the Influence of Crime Generators, Crime Attractors, and Offender Anchor Points. JOURNAL OF RESEARCH IN CRIME AND DELINQUENCY, 48(1), 33–57. https://doi.org/10.1177/0022427810384135
+Bernasco, W., Block, R., & Ruiter, S. (2013). Go where the money is: Modeling street robbers’ location choices. Journal of Economic Geography, 13(1), 119–143. https://doi.org/10.1093/jeg/lbs005
+Bernasco, W., & Jacques, S. (2015). Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study. Journal of Contemporary Criminal Justice, 31(4), 376–408. https://doi.org/10.1177/1043986215608535
+Bernasco, W., Johnson, S. D., & Ruiter, S. (2015). Learning where to offend: Effects of past on future burglary locations. Applied Geography, 60, 120–129. https://doi.org/10.1016/j.apgeog.2015.03.014
+Bernasco, W., & Kooistra, T. (2010). Effects of residential history on commercial robbers’ crime location choices. European Journal of Criminology, 7(4), 251–265. https://doi.org/10.1177/1477370810363372
+Bernasco, W., & Luykx, F. (2003). Effects of Attractiveness, Opportunity and Accessibility to Burglars on Residential Burglary Rates of Urban Neighborhoods. Criminology, 41(3), 981–1002. https://doi.org/10.1111/j.1745-9125.2003.tb01011.x
+Bernasco, W., & Nieuwbeerta, P. (2005). How do residential burglars select target areas? A new approach to the analysis of criminal location choice. British Journal of Criminology, 45(3), 296–315. https://doi.org/10.1093/bjc/azh070
+Bernasco, W., Ruiter, S., & Block, R. (2017). Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago. Journal of Research in Crime and Delinquency, 54(2), 244–275. https://doi.org/10.1177/0022427816680681
+Brantingham, P. J., & Brantingham, P. L. (2017). The geometry of crime and crime pattern theory. In R. Wortley & M. Townsley (Eds.), Environmental Criminology and Crime Analysis (Second Edition). Routledge.
+Chamberlain, A., Boggess, L., & Fisher, T. (2022). Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions. CRIME & DELINQUENCY. https://doi.org/10.1177/00111287211067177
+Chamberlain, A. W., & Boggess, L. N. (2016). Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar’s Home Neighborhood Predict Offense Location? Journal of Research in Crime and Delinquency, 53(6), 872–906. https://doi.org/10.1177/0022427816647993
+Clare, J., Fernandez, J., & Morgan, F. (2009). Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars’ Macro-Level Offending Location Choices. AUSTRALIAN AND NEW ZEALAND JOURNAL OF CRIMINOLOGY, 42(2), 139–158. https://doi.org/10.1375/acri.42.2.139
+Curman, A. S. N., Andresen, M. A., & Brantingham, P. J. (2015). Crime and Place: A Longitudinal Examination of Street Segment Patterns in Vancouver, BC. Journal of Quantitative Criminology, 31(1), 127–147. https://doi.org/10.1007/s10940-014-9228-3
+Curtis-Ham, S., Bernasco, W., Medvedev, O. N., & Polaschek, D. L. L. (2022a). Relationships Between Offenders’ Crime Locations and Different Prior Activity Locations as Recorded in Police Data. Journal of Police and Criminal Psychology. https://doi.org/10.1007/s11896-022-09540-8
+Curtis-Ham, S., Bernasco, W., Medvedev, O. N., & Polaschek, D. L. L. (2022b). The Importance of Importance Sampling: Exploring Methods of Sampling from Alternatives in Discrete Choice Models of Crime Location Choice. Journal of Quantitative Criminology, 38(4), 1003–1031. https://doi.org/10.1007/s10940-021-09526-5
+Eck, J. E., & Weisburd, D. (Eds.). (1995). Crime and place. Criminal Justice Press.
+Frith, M. J. (2019). Modelling taste heterogeneity regarding offence location choices. Journal of Choice Modelling, 33, 100187. https://doi.org/10.1016/j.jocm.2019.100187
+Frith, M. J., Johnson, S. D., & Fry, H. M. (2017). Role of the street network in burglars’ spatial decision-making. Criminology, 55(2), 344–376. https://doi.org/10.1111/1745-9125.12133
+Groff, E. R., Weisburd, D., & Yang, S.-M. (2010). Is it Important to Examine Crime Trends at a Local “Micro” Level?: A Longitudinal Analysis of Street to Street Variability in Crime Trajectories. Journal of Quantitative Criminology, 26(1), 7–32. https://doi.org/10.1007/s10940-009-9081-y
+Hanayama, A., Haginoya, S., Kuraishi, H., & Kobayashi, M. (2018). The usefulness of past crime data as an attractiveness index for residential burglars. JOURNAL OF INVESTIGATIVE PSYCHOLOGY AND OFFENDER PROFILING, 15(3), 257–270. https://doi.org/10.1002/jip.1507
+Johnson, S., & Summers, L. (2015). Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model. CRIME & DELINQUENCY, 61(3), 454–480. https://doi.org/10.1177/0011128714540276
+Kuralarasan, K., & Bernasco, W. (2022). Location Choice of Snatching Offenders in Chennai City. Journal of Quantitative Criminology, 38(3), 673–696. https://doi.org/10.1007/s10940-021-09514-9
+Lammers, M. (2017). Co-offenders’ Crime Location Choice: Do Co-offending Groups Commit Crimes in Their Shared Awareness Space? The British Journal of Criminology, 58(5), 1193–1211. https://doi.org/10.1093/bjc/azx069
+Lammers, M., Menting, B., Ruiter, S., & Bernasco, W. (2015). Biting Once, Twice: The Influence of Prior on Subsequent Crime Location Choice. Criminology, 53(3), 309–329. https://doi.org/10.1111/1745-9125.12071
+Langton, S. H., & Steenbeek, W. (2017). Residential burglary target selection: An analysis at the property-level using Google Street View. Applied Geography, 86, 292–299. https://doi.org/10.1016/j.apgeog.2017.06.014
+Loftin, C., & Hill, R. H. (1974). Regional Subculture and Homicide: An Examination of the Gastil-Hackney Thesis. American Sociological Review, 39(5), 714. https://doi.org/10.2307/2094316
+Long, D., & Liu, L. (2021). Do Migrant and Native Robbers Target Different Places? ISPRS International Journal of Geo-Information, 10(11), 771. https://doi.org/10.3390/ijgi10110771
+Long, D., & Liu, L. (2022). Do juvenile, young adult, and adult offenders target different places in the Chinese context? Cities, 130, 103943. https://doi.org/10.1016/j.cities.2022.103943
+Long, D., Liu, L., Feng, J., Zhou, S., & Jing, F. (2018). Assessing the influence of prior on subsequent street robbery location choices: A case study in ZG City, China. Sustainability (Switzerland), 10(6). https://doi.org/10.3390/su10061818
+Long, D., Liu, L., Xu, M., Feng, J., Chen, J., & He, L. (2021). Ambient population and surveillance cameras: The guardianship role in street robbers’ crime location choice. Cities, 115(September 2020), 103223–103223. https://doi.org/10.1016/j.cities.2021.103223
+Marchment, Z., & Gill, P. (2019). Modelling the spatial decision making of terrorists: The discrete choice approach. Applied Geography, 104, 21–31. https://doi.org/10.1016/j.apgeog.2019.01.009
+Menting, B. (2018). Awareness×Opportunity: Testing Interactions Between Activity Nodes and Criminal Opportunity in Predicting Crime Location Choice. British Journal of Criminology, 58(3), 1171–1192.
+Menting, B., Lammers, M., Ruiter, S., & Bernasco, W. (2016). Family Matters: Effects of Family Members’ Residential Areas on Crime Location Choice*. Criminology, 54(3), 413–433. https://doi.org/10.1111/1745-9125.12109
+Menting, B., Lammers, M., Ruiter, S., & Bernasco, W. (2020). The Influence of Activity Space and Visiting Frequency on Crime Location Choice: Findings from an Online Self-Report Survey. The British Journal of Criminology, 60(2), 303–322. https://doi.org/10.1093/bjc/azz044
+Ruiter, S. (2017). Crime Location Choice (W. Bernasco, J.-L. van Gelder, & H. Elffers, Eds.; Vol. 1). Oxford University Press. https://doi.org/10.1093/oxfordhb/9780199338801.013.20
+Sampson, R. J., & Groves, W. B. (1989). Community Structure and Crime: Testing Social-Disorganization Theory. American Journal of Sociology, 94(4), 774–802. https://doi.org/10.1086/229068
+Song, G., Bernasco, W., Liu, L., Xiao, L., Zhou, S., & Liao, W. (2019). Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves’ Target Location Choices. Journal of Quantitative Criminology, 35(4), 831–854. https://doi.org/10.1007/s10940-019-09406-z
+Steenbeek, W., & Weisburd, D. (2016). Where the Action is in Crime? An Examination of Variability of Crime Across Different Spatial Units in The Hague, 2001–2009. Journal of Quantitative Criminology, 32(3), 449–469. https://doi.org/10.1007/s10940-015-9276-3
+Townsley, M., Birks, D., Bernasco, W., Ruiter, S., Johnson, S. D., White, G., & Baum, S. (2015). Burglar Target Selection: A Cross-national Comparison. Journal of Research in Crime and Delinquency, 52(1), 3–31. https://doi.org/10.1177/0022427814541447
+Townsley, M., Birks, D., Ruiter, S., Bernasco, W., & White, G. (2016). Target Selection Models with Preference Variation Between Offenders. JOURNAL OF QUANTITATIVE CRIMINOLOGY, 32(2), 283–304. https://doi.org/10.1007/s10940-015-9264-7
+van Sleeuwen, S. E. M., Ruiter, S., & Menting, B. (2018). A Time for a Crime: Temporal Aspects of Repeat Offenders’ Crime Location Choices. Journal of Research in Crime and Delinquency, 55(4), 538–568. https://doi.org/10.1177/0022427818766395
+van Sleeuwen, S., Ruiter, S., & Steenbeek, W. (2021). Right place, right time? Making crime pattern theory time-specific. CRIME SCIENCE, 10(1). https://doi.org/10.1186/s40163-021-00139-8
+Vandeviver, C., & Bernasco, W. (2020). ‘Location, Location, Location’: Effects of Neighborhood and House Attributes on Burglars’ Target Selection. Journal of Quantitative Criminology, 36(4), 779–821. https://doi.org/10.1007/s10940-019-09431-y
+Vandeviver, C., Neutens, T., Van Daele, S., Geurts, D., & Vander Beken, T. (2015). A discrete spatial choice model of burglary target selection at the house-level. Applied Geography, 64, 24–34. https://doi.org/10.1016/j.apgeog.2015.08.004
+Weisburd, D., Bushway, S., Lum, C., & Yang, S. (2004). Trajectories of crime at places: A longitudinal study of street segments in the City of Seattle. CRIMINOLOGY, 42(2), 283–321. https://doi.org/10.1111/j.1745-9125.2004.tb00521.x
+Weisburd, D., Groff, E., & Yang, S.-M. (2012). The criminology of place: Street segments and our understanding of the crime problem. Oxford University Press.
+Xiao, L., Ruiter, S., Liu, L., Song, G., & Zhou, S. (2021). Burglars blocked by barriers? The impact of physical and social barriers on residential burglars’ target location choices in China. Computers, Environment and Urban Systems, 86, 101582–101582. https://doi.org/10.1016/j.compenvurbsys.2020.101582
+Yue, H., Liu, L., & Xiao, L. (2023). Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model. APPLIED GEOGRAPHY, 157. https://doi.org/10.1016/j.apgeog.2023.103025
+
+A systematic scoping review of crime location choice studies and its spatial unit of analysis
+
+1	Abstract
+This systematic scoping   review examines the current body of research on crime location choice, focusing specifically on the decision-making processes of offenders, as analyzed through discrete choice models. By systematically reviewing quantitative literature, this study aims to map the spatial units of analysis utilized in these studies and identify gaps in existing research. The review emphasizes the importance of exploring how spatial scales are modeled as factors influencing  the outcomes of discrete choice models in offender decision-making, including potential quantitative relationships between spatial scales and decision-making outcomes. The expected outcomes include a comprehensive mapping of spatial unit usage and recommendations for standardizing spatial scales in future research.
+
+2	Introduction
+Crime location choice research has evolved from focusing on larger spatial units such as cities, states, and neighborhoods  (Baumer et al., 1998; Loftin & Hill, 1974) to smaller spatial units like street segments and face blocks  (Eck & Weisburd, 1995; Sampson & Groves, 1989). This shift towards micro-level analysis has been driven by the need to get better understanding of offenders' location choices  . Advances in computational power and the rise of crime mapping technologies have also made it more feasible to analyze micro-level spatial units (Vandeviver & Bernasco, 2017), enabling researchers to extract granular insights into crime trends and offender behavior (Weisburd et al., 2004), enhancing theoretical development and enabling more precise crime prevention strategies. 
+
+Despite its increasing popularity micro spatial units, there is still no consensus on how   spatial scales impact findings in crime location choice research. For example, micro-level studies might capture localized crime patterns that are not easily generalizable to broader contexts, while macro-level studies might overlook critical details of offender decision-making. This lack of clarity and comparability presents a significant challenge, as it undermines the development of universally applicable theoretical frameworks. Therefore, addressing the issue of spatial scale comparability is crucial for enhancing the practical applications of crime location choice research findings. 
+The introduction of micro place analysis marked a major shift in crime location choice research, focusing on more specific places like street segments, census blocks or grid cells (e.g., Bernasco, 2019; Bernasco et al., 2013; Bernasco & Jacques, 2015). This shift was not merely a change in the unit of analysis but provided an understanding of crime trends at the micro-level. However, there is a lack of clarity on how spatial units influence crime data and the interpretation of offender decision-making presents a challenge for developing theoretical frameworks. Understanding these influences is essential for advancing criminological theory and practical applications. Consequently, this scoping review seeks to systematically assess the use of spatial units in crime location choice studies, with a focus on quantitative analyses employing discrete choice models. By doing so, this review aims to map the spatial units of analysis used across various studies, identify gaps in the literature, and examine how different spatial scales impact the understanding of crime location choices.
+
+Rationale for Review
+Despite the significant growth of crime location choice research, there remains a lack of reviews   that specifically address how different spatial scales impact the findings of discrete choice models used to explain offender decision-making. Discrete choice models offer a structured, quantitative method to analyze how offenders select targets and locations, but existing studies vary widely in their use of spatial units, from large-scale neighborhoods to individual street segments. The diversity in spatial scale also challenges the comparability and generalizability of findings across different spatial scales (Steenbeek & Weisburd, 2016; Weisburd et al., 2012). 
+This review aims not only to synthesize existing findings but also contributeto the literature by evaluating how the choice of spatial units affects the outcomes of discrete choice models in crime location choice research. By systematically mapping and analyzing the spatial scales used in these studies, the review clarifies how varying spatial boundaries can influence both model results and their interpretation. By addressing these aspects, the review adds value beyond mere synthesis, directly contributing to the advancement of knowledge in the field and offering practical guidance for researchers and policymakers.
+3	Objective
+The primary objective of this systematic scoping review is to map the varied use of spatial scales in quantitative studies that analyze crime location choices using discrete choice models or related frameworks. This review aims to examine how different spatial units, from macro-level regions to micro-level , are applied in the literature. By identifying   patterns in spatial scale usage, this review will highlight the strengths and limitations of different scales, offering guidance for future research. 
+
+4	Methods and Analysis
+1.	Inclusion Criteria
+•	Population: Studies that apply discrete choice models to analyze offenders’ location choice decisions across various crime types – including violent crimes, property crimes, and other offenses –
+•	Concept: The study must focus on the selection of locations or targets by offenders, with a particular focus on spatial  scale usage in the analysis of crime location choices. 
+•	Outcomes: The study must analyze crime location choices quantitatively, specifically examining the macro-micro spatial units   (e.g., neighborhoods to grid cells  ) employed in the analysis.
+•	Study Types: Empirical, quantitative studies that utilize discrete choice models or similar decision-making frameworks to examine crime location choices. The review will prioritize peer-reviewed journal articles.
+•	Language Restrictions: Only studies published in English will be included
+2.	Exclusion Criteria
+•	Non-Empirical Studies: Papers that do not involve empirical analysis, such as purely theoretical works, opinion pieces, or narrative reviews.
+•	Qualitative Studies: Studies that rely solely on qualitative methods without a quantitative analysis of spatial scales in crime location choice.
+•	Irrelevant Spatial Focus: Research that does not explicitly address the spatial dimensions of crime location choice or does not utilize spatial scales in the analysis.
+•	Lack of Discrete Choice Models: Studies that do not employ discrete choice models or other quantitative frameworks related to spatial decision-making.
+5	Information Sources and Search Strategy
+
+Naive Search:
+We will conduct an initial search using Web of Science (WOS), Scopus, and ProQuest Criminal Justice Database. The search will target studies on location choice, discrete choice models, and offender behavior
+
+
+Naive Search Term: 
+Source	Navie search term 
+WOS 
+	TS=(((offend* OR crim* OR burglar* OR robb* OR co-offend* OR dealer*)     AND   ("discret* choic*"     OR "choic* model*"     OR "rational choice"     OR "awareness space"     OR "journey to crime"    OR "mobility"    OR "opportunity"    OR "accessibility"    OR "attractiveness"    OR "crime pattern*" )     AND   ("crime locat* choic*"    OR "offend* locat* choic*"    OR "robber* locat* choic*"    OR "burglar* locat* choic*"    OR "target area*"    OR "target selection"    OR "crime site selection"    OR "spatial choic* model*" ) ))
+
+Scopus
+	TITLE-ABS-KEY ( ( ( offend* OR crim* OR burglar* OR robb* OR co-offend* OR dealer* ) AND ( "discret* choic*" OR "choic* model*" OR "rational choice" OR "awareness space" OR "journey to crime" OR "mobility" OR "opportunity" OR "accessibility" OR "attractiveness" OR "crime pattern*" ) AND ( "crime locat* choic*" OR "offend* locat* choic*" OR "robber* locat* choic*" OR "burglar* locat* choic*" OR "target area*" OR "target selection" OR "crime site selection" OR "spatial choic* model*" ) ) )
+
+ProQuest
+	noft(((offend* OR crim* OR burglar* OR robb* OR co-offend* OR dealer*) AND ("discret* choic*" OR "choic* model*" OR "rational choice" OR "awareness space" OR "journey to crime" OR "mobility" OR "opportunity" OR "accessibility" OR "attractiveness" OR "crime pattern*") AND ("crime locat* choic*" OR "offend* locat* choic*" OR "robber* locat* choic*" OR "burglar* locat* choic*" OR "target area*" OR "target selection" OR "crime site selection" OR "spatial choic* model*")))
+
+
+
+
+
+Focused Search:
+Following the initial search, we refined the search terms using the litsearchR (see script attached) package in R (Grames et al., 2019). This package generates keyword co-occurrence networks from the articles retrieved in the naive search. By extracting keywords from the titles, abstracts, and keywords of the articles, the search terms were refined to improve precision.
+
+Refined Search Term:
+Source	Refined search term 
+WOS 
+	TS=(((offend* OR crim* OR burglar* OR robber* OR dealer*) AND ("choic* model*" OR "discret* choic*" OR "ration* choic*" OR "spatial* choic*" OR mobil*) AND (pattern* OR "locat* choic*" OR "target* select*")))
+Scopus
+	TITLE-ABS-KEY ( ( ( offend* OR crim* OR burglar* OR robber* OR dealer* ) AND ( "choic* model*" OR "discret* choic*" OR "ration* choic*" OR "spatial* choic*" OR mobil* ) AND ( "locat* choic*" OR "target* select*" OR pattern* ) ) )
+
+ProQuest
+	noft(((offend* OR crim* OR burglar* OR robber* OR dealer*) AND ("choic* model*" OR "discret* choic*" OR "ration* choic*" OR "spatial* choic*" OR mobil*) AND ("locat* choic*" OR "target* select*" OR pattern*))) 
+scopus 
+
+Google scholar 
+	("offender" OR "offenders" OR "crime" OR "criminal" OR "criminals" OR "burglar" OR "burglars" OR "robber" OR "robbers" OR "dealer" OR "dealers") 
+("choice model" OR "discrete choice" OR "discrete choice model" OR "rational choice" OR "spatial choice" OR "mobility") 
+("pattern" OR "location choice" OR "target selection" OR "behavior pattern" )
+
+
+Database Application:
+The refined search terms will be used to identify relevant studies in the Web of Science (WOS), Scopus, and ProQuest Criminal Justice Database. We expanded the refined search term for Google Scholar to fit its search requirements.
+
+6	Study Selection
+Inclusion criteria will guide the selection process. Two independent reviewers will screen the titles, abstracts, and full texts.
+
+7	Data Extraction
+The following data will be extracted from each study:
+•	Study Details: Title, authors, and year of publication.
+•	Sample Characteristics: Sample size and type of offender/crime.
+•	Unit of Analysis: Level of analysis (e.g., individuals, neighborhoods, street segments), size of spatial scale and number of units
+•	Methodological Approach: Type of discrete choice model used (e.g., multinomial logit, nested logit) and any spatial regression techniques.
+•	Findings  : Main results  including all variables included in the regression models, their respective estimates, and any reported significance levels.
+8	Synthesis and Presentation
+Results will be synthesized and presented using tables and figures. A PRISMA flow diagram will illustrate the selection process. Findings will be grouped based on the size   of the spatial unit of analysis.
+
+9	Conclusion
+This systematic scoping review will map the varied use of spatial scales in crime location choice studies, focusing on quantitative research employing discrete choice models. By identifying the strengths and limitations of different spatial units in explaining offenders’ location choices, the review aims to highlight key gaps in the literature. The findings will offer recommendations for standardizing spatial scales in future research. 
+
+10	References
+Baumer, E., Lauritsen, J. L., Rosenfeld, R., & Wright, R. (1998). The Influence of Crack Cocaine on Robbery, Burglary, and Homicide Rates: A Cross-City, Longitudinal Analysis. Journal of Research in Crime and Delinquency, 35(3), 316–340. https://doi.org/10.1177/0022427898035003004
+Bernasco, W. (2019). Adolescent Offenders’ Current Whereabouts Predict locations of their Future Crimes. PLOS ONE, 14(1). https://doi.org/10.1371/journal.pone.0210733
+Bernasco, W., Block, R., & Ruiter, S. (2013). Go where the money is: Modeling street robbers’ location choices. Journal of Economic Geography, 13(1), 119–143. https://doi.org/10.1093/jeg/lbs005
+Bernasco, W., & Jacques, S. (2015). Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study. Journal of Contemporary Criminal Justice, 31(4), 376–408. https://doi.org/10.1177/1043986215608535
+Eck, J. E., & Weisburd, D. (Eds.). (1995). Crime and place. Criminal Justice Press.
+Grames, E. M., Stillman, A. N., Tingley, M. W., & Elphick, C. S. (2019). An automated approach to identifying search terms for systematic reviews using keyword co‐occurrence networks. Methods in Ecology and Evolution, 10(10), 1645–1654. https://doi.org/10.1111/2041-210X.13268
+Loftin, C., & Hill, R. H. (1974). Regional Subculture and Homicide: An Examination of the Gastil-Hackney Thesis. American Sociological Review, 39(5), 714. https://doi.org/10.2307/2094316
+Sampson, R. J., & Groves, W. B. (1989). Community Structure and Crime: Testing Social-Disorganization Theory. American Journal of Sociology, 94(4), 774–802. https://doi.org/10.1086/229068
+Steenbeek, W., & Weisburd, D. (2016). Where the Action is in Crime? An Examination of Variability of Crime Across Different Spatial Units in The Hague, 2001–2009. Journal of Quantitative Criminology, 32(3), 449–469. https://doi.org/10.1007/s10940-015-9276-3
+Vandeviver, C., & Bernasco, W. (2017). The geography of crime and crime control. Applied Geography, 86, 220–225.
+Weisburd, D., Bushway, S., Lum, C., & Yang, S. (2004). Trajectories of crime at places: A longitudinal study of street segments in the City of Seattle. CRIMINOLOGY, 42(2), 283–321. https://doi.org/10.1111/j.1745-9125.2004.tb00521.x
+Weisburd, D., Groff, E., & Yang, S.-M. (2012). The criminology of place: Street segments and our understanding of the crime problem. Oxford University Press.
+
+
+

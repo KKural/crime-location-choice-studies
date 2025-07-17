@@ -1,2 +1,2 @@
-N_studies,N_countries,N_journals,Mean_unit_size,Median_unit_size,SD_unit_size,Min_unit_size,Max_unit_size,Q1_unit_size,Q3_unit_size,IQR_unit_size,Skewness,Kurtosis,Year_range_start,Year_range_end,Temporal_span,Percent_with_justification,Mean_total_variables,Median_total_variables
-51,9,27,1.63293,1.2,1.91072,1.36e-4,8.48,0.265,2.63,2.365,2.108,7.929,2003,2025,22,94.1,21.9,21
+N_observations,N_studies,N_countries,N_journals,Mean_unit_size,Median_unit_size,SD_unit_size,Min_unit_size,Max_unit_size,Q1_unit_size,Q3_unit_size,IQR_unit_size,Skewness,Kurtosis,Year_range_start,Year_range_end,Temporal_span,Percent_with_justification,Mean_total_variables,Median_total_variables
+51,49,9,27,1.63293,1.2,1.91072,1.36e-4,8.48,0.265,2.63,2.365,2.108,7.929,2003,2025,22,94.1,21.9,21

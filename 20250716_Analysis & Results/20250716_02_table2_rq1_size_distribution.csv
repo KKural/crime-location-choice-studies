@@ -1,0 +1,6 @@
+Size_category,n,percentage,Mean_year,Percent_justified,Mean_variables
+Very Small (<0.01 km²),4,7.8,2017.8,100,22.2
+Small (0.01-<0.25 km²),9,17.6,2014.6,100,18.2
+Medium (0.25-<1.0 km²),12,23.5,2013.9,100,22.7
+Large (1.0-<3.0 km²),23,45.1,2018.6,100,23.6
+Very Large (≥3.0 km²),3,5.9,2013.3,100,16

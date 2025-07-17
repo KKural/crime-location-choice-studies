@@ -1,0 +1,42 @@
+object_name,object_class,object_dim,columns
+anglo_test,htest,10,NA
+bw_palette,list,7,NA
+bw_theme,theme,136,NA
+corr_data,tbl_df,49 × 4,"Variable1, Variable2, Correlation, Correlation_Text"
+correlation_matrix,matrix,7 × 7,NA
+country_plot_data,tbl_df,48 × 72,"Study_ID, Title_of_the_study, Citation, rationale_new, Size_of_the_unit, Unit, Name_of_the_unit, No_of_units, No_of_incidents, Inferred_unit_size, DOI, ISSN, Journal, Volume, Issue, Data_Collection_Period, Study_Period, Country, City_Region, Crime_Type, Crime_Type_Standardized, Rationale_Category, Study_Design, Discrete_Choice_Model, Estimation_Method, Quoted_Rationale, Justification_Summary, Sampling_Approach, Choice_Set_Definition, Alternative_Selection, Significant_Predictors, Effect_Directions, Data_Sources, Data_Availability, Data_Quality_Issues, Missing_Data_Issues, Data_Source_Limitations, Measurement_Issues, Temporal_Limitations, Generalizability, Context_Specificity, Comparative_Limitations, Spatial_Scale_Recommendations, Data_Collection_Suggestions, Methodological_Improvements, Demographic_Variables, Demographic_Count, Economic_Variables, Economic_Count, Environmental_Variables, Environmental_Count, Distance_Variables, Distance_Count, Temporal_Variables, Temporal_Count, Total_Variables, Unit_size_km2, Year, Size_group, Unit_size_log10, Unit_size_m2, Year_scaled, Decade, Time_period, Size_category, Country_clean, Anglo_saxon, Crime_type_grouped, Has_justification, Rationale_clean, Variable_Diversity_Score, Rationale_Category_proxy"
+country_summary,tbl_df,6 × 7,"Country_clean, N_studies, Median_size, Mean_size, SD_size, Min_size, Max_size"
+custom_save,function,1,NA
+data,tbl_df,51 × 72,"Study_ID, Title_of_the_study, Citation, rationale_new, Size_of_the_unit, Unit, Name_of_the_unit, No_of_units, No_of_incidents, Inferred_unit_size, DOI, ISSN, Journal, Volume, Issue, Data_Collection_Period, Study_Period, Country, City_Region, Crime_Type, Crime_Type_Standardized, Rationale_Category, Study_Design, Discrete_Choice_Model, Estimation_Method, Quoted_Rationale, Justification_Summary, Sampling_Approach, Choice_Set_Definition, Alternative_Selection, Significant_Predictors, Effect_Directions, Data_Sources, Data_Availability, Data_Quality_Issues, Missing_Data_Issues, Data_Source_Limitations, Measurement_Issues, Temporal_Limitations, Generalizability, Context_Specificity, Comparative_Limitations, Spatial_Scale_Recommendations, Data_Collection_Suggestions, Methodological_Improvements, Demographic_Variables, Demographic_Count, Economic_Variables, Economic_Count, Environmental_Variables, Environmental_Count, Distance_Variables, Distance_Count, Temporal_Variables, Temporal_Count, Total_Variables, Unit_size_km2, Year, Size_group, Unit_size_log10, Unit_size_m2, Year_scaled, Decade, Time_period, Size_category, Country_clean, Anglo_saxon, Crime_type_grouped, Has_justification, Rationale_clean, Variable_Diversity_Score, Rationale_Category_proxy"
+data_raw,spec_tbl_df,51 × 57,"Study_ID, Title_of_the_study, Citation, rationale_new, Year, Size_of_the_unit, Unit, Name_of_the_unit, No_of_units, No_of_incidents, Inferred_unit_size, DOI, ISSN, Journal, Volume, Issue, Data_Collection_Period, Study_Period, Country, City_Region, Crime_Type, Crime_Type_Standardized, Rationale_Category, Study_Design, Discrete_Choice_Model, Estimation_Method, Quoted_Rationale, Justification_Summary, Sampling_Approach, Choice_Set_Definition, Alternative_Selection, Significant_Predictors, Effect_Directions, Data_Sources, Data_Availability, Data_Quality_Issues, Missing_Data_Issues, Data_Source_Limitations, Measurement_Issues, Temporal_Limitations, Generalizability, Context_Specificity, Comparative_Limitations, Spatial_Scale_Recommendations, Data_Collection_Suggestions, Methodological_Improvements, Demographic_Variables, Demographic_Count, Economic_Variables, Economic_Count, Environmental_Variables, Environmental_Count, Distance_Variables, Distance_Count, Temporal_Variables, Temporal_Count, Total_Variables"
+effect_size,numeric,1,NA
+ggsave_png,function,1,NA
+input_file,character,1,NA
+justification_by_country,tbl_df,6 × 4,"Country_clean, N_studies, N_justified, Percent_justified"
+justification_by_size,tbl_df,5 × 4,"Size_category, N_studies, N_justified, Percent_justified"
+justification_summary,tbl_df,1 × 5,"Total_Studies, With_Justification, Percent_Justified, Without_Justification, Percent_Not_Justified"
+make_folder,function,1,NA
+numeric_vars,tbl_df,51 × 7,"Unit_size_log10, Year, Total_Variables, Variable_Diversity_Score, Country_numeric, Crime_type_numeric, Rationale_numeric"
+output_folder,character,1,NA
+p1a,gg,11,NA
+p1b,gg,11,NA
+p1c,gg,11,NA
+p1d,gg,11,NA
+p2a,gg,11,NA
+p2b,gg,11,NA
+p3a,gg,11,NA
+p3b,gg,11,NA
+p4a,gg,11,NA
+p4c,gg,11,NA
+p4c_size,gg,11,NA
+p4d,gg,11,NA
+p5a,gg,11,NA
+p5b,gg,11,NA
+pcorr,gg,11,NA
+rationale_by_size,tbl_df,15 × 5,"Size_category, Rationale_clean, N_studies, Total_in_category, Percentage"
+rationale_summary,tbl_df,5 × 4,"Rationale_clean, N_studies, Percentage, Mean_size_km2"
+size_cat_data,tbl_df,5 × 3,"Size_category, n, percentage"
+spatial_stats,tbl_df,1 × 20,"N_observations, N_studies, N_countries, N_journals, Mean_unit_size, Median_unit_size, SD_unit_size, Min_unit_size, Max_unit_size, Q1_unit_size, Q3_unit_size, IQR_unit_size, Skewness, Kurtosis, Year_range_start, Year_range_end, Temporal_span, Percent_with_justification, Mean_total_variables, Median_total_variables"
+temporal_model,lm,12,NA
+temporal_summary,summary.lm,11,NA
+variable_complexity_summary,tbl_df,1 × 7,"Mean_variables, Median_variables, SD_variables, Min_variables, Max_variables, Q1_variables, Q3_variables"
