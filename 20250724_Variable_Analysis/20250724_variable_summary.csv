@@ -1,0 +1,798 @@
+Variable,Frequency,Studies,Source_Columns
+Schools | Number,13,11,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; TEMPORAL & CONTROL VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Population size | Number,9,8,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Euclidean Distance | Distance,7,7,DISTANCE & ACCESSIBILITY VARIABLES
+Home-to-crime distance | Distance,7,7,DISTANCE & ACCESSIBILITY VARIABLES
+Proportion of single-person households | Percentage,7,4,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Proportion of migrants | Percentage,6,3,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Age | Number,5,5,DEMOGRAPHIC & SOCIAL VARIABLES
+Bars and clubs | Number,5,5,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Bus stops | Number,5,5,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; TEMPORAL & CONTROL VARIABLES
+Gender | Percentage,5,5,DEMOGRAPHIC & SOCIAL VARIABLES
+High schools | Number,5,5,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Population Density | Distance,5,4,TEMPORAL & CONTROL VARIABLES; ECONOMIC VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Restaurants | Number,5,5,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Socioeconomic heterogeneity | Index,5,3,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Subway stations | Number,5,5,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; TEMPORAL & CONTROL VARIABLES
+Bars | Number,4,4,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Collective efficacy | Index,4,3,DEMOGRAPHIC & SOCIAL VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Distance to city center | Distance,4,4,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; DISTANCE & ACCESSIBILITY VARIABLES
+Ethnic Heterogeneity | Index,4,3,TEMPORAL & CONTROL VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Euclidean distance | Distance,4,4,DISTANCE & ACCESSIBILITY VARIABLES
+Number of business units in commercial or public industries | Number,4,2,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of households | Number,4,4,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; ECONOMIC VARIABLES
+Population density | Distance,4,2,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Population density | Number,4,4,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES
+Proportion of residents with a non-Western background | Percentage,4,2,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Accessibility | Distance,3,3,TEMPORAL & CONTROL VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; ECONOMIC VARIABLES
+Affluence | Number,3,2,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Age of offenders | Number,3,3,DEMOGRAPHIC & SOCIAL VARIABLES
+Banks | Number,3,3,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Collective Efficacy | Number,3,3,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Distance | Distance,3,3,DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Distance of Journey to Crime | Distance,3,3,DISTANCE & ACCESSIBILITY VARIABLES
+Employee Density | Distance,3,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Ethnic heterogeneity | Index,3,3,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES; ECONOMIC VARIABLES
+Ethnic Heterogeneity | Percentage,3,3,DEMOGRAPHIC & SOCIAL VARIABLES
+Gender | Binary,3,3,DEMOGRAPHIC & SOCIAL VARIABLES
+Malls and supermarkets | Number,3,3,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; TEMPORAL & CONTROL VARIABLES
+Number of business units in any industry | Number,3,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; ECONOMIC VARIABLES
+Number of dwellings | Number,3,2,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; TEMPORAL & CONTROL VARIABLES
+Number of employees | Number,3,2,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Percent migrants | Percentage,3,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Percent Occupied Housing Units | Percentage,3,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Population Density | Number,3,2,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Population Size | Number,3,3,TEMPORAL & CONTROL VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Population Turnover | Percentage,3,2,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Presence of illegal cash economies | Number,3,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; ECONOMIC VARIABLES
+Presence of legal cash economies | Number,3,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; ECONOMIC VARIABLES
+Propinquity | Distance,3,1,DEMOGRAPHIC & SOCIAL VARIABLES; DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Proportion of Single-Person Households | Percentage,3,2,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES; ECONOMIC VARIABLES
+Racial/Ethnic Heterogeneity | Index,3,2,TEMPORAL & CONTROL VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Residential Population Density | Distance,3,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Residential Stability | Percentage,3,2,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES
+Residential Units | Number,3,2,DEMOGRAPHIC & SOCIAL VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Retail stores | Number,3,3,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Social Cohesion | Number,3,3,DEMOGRAPHIC & SOCIAL VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Surveillance cameras | Number,3,3,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Total Number of Households | Number,3,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Wholesale markets | Number,3,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; ECONOMIC VARIABLES
+25. | Number,2,2,MAJOR FINDINGS & RESULTS
+Adjacency | Binary,2,2,DISTANCE & ACCESSIBILITY VARIABLES
+Age of Burglar | Number,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Ambient population | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; TEMPORAL & CONTROL VARIABLES
+ATMs | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+ATMs and banks | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Average House Price | Number,2,1,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Average rent price | Number,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Bus Stops | Distance,2,2,DISTANCE & ACCESSIBILITY VARIABLES
+Car parks | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; TEMPORAL & CONTROL VARIABLES
+Collective efficacy | Number,2,2,DEMOGRAPHIC & SOCIAL VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Cybercafés | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+D.HIGHWAY | Distance,2,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; DISTANCE & ACCESSIBILITY VARIABLES
+D.HOSPITAL | Distance,2,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; DISTANCE & ACCESSIBILITY VARIABLES
+Day of Week | Number,2,2,TEMPORAL & CONTROL VARIABLES
+Distance of journey to crime | Distance,2,2,TEMPORAL & CONTROL VARIABLES
+Distance of Journey to Prior Robbery | Distance,2,1,DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Distance of Journey to Subsequent Robbery | Distance,2,1,DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Distance Squared | Distance,2,2,TEMPORAL & CONTROL VARIABLES; DISTANCE & ACCESSIBILITY VARIABLES
+Distance to City Center | Distance,2,1,DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Distance to the nearest highway ramp | Distance,2,1,DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Ethnic Diversity | Index,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Ethnic diversity | Number,2,2,DEMOGRAPHIC & SOCIAL VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+FAM.DENSITY | Density,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+GDP | Number,2,2,ECONOMIC VARIABLES
+Gender of offenders | Percentage,2,2,DEMOGRAPHIC & SOCIAL VARIABLES
+Gini Coefficient | Index,2,1,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Grocery stores | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Home Location | Percentage,2,1,DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Hospitals | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Hotels | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Level of urbanization | Index,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES
+Mean value of residential property | Number,2,1,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Number of business units in industry categories | Number,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of commercial or public business units | Number,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of people on the street | Number,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of people working | Number,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of potential targets | Number,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of residential units | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Number of Residential Units | Number,2,2,TEMPORAL & CONTROL VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of Residents | Number,2,2,DEMOGRAPHIC & SOCIAL VARIABLES
+Number of residents with a non-Western ethnic background | Number,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES
+Number of retail stores | Number,2,2,ECONOMIC VARIABLES
+Number of Schools | Number,2,2,ECONOMIC VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Number of single-person households | Number,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES
+P.CARE.PH | Number,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Percent lowly-rent houses | Percentage,2,1,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Physical Barriers | Number,2,2,DISTANCE & ACCESSIBILITY VARIABLES
+Population Churn Rates | Rate,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Population turnover | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Poverty | Percentage,2,1,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Presence of facilities | Number,2,1,ECONOMIC VARIABLES; TEMPORAL & CONTROL VARIABLES
+Presence of illegal markets | Number,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Previous Crime Location | Binary,2,2,TEMPORAL & CONTROL VARIABLES
+Previous Home Location | Percentage,2,1,DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Proportion of houses built after 2000 | Percentage,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Proportion of residents with a non-western background | Percentage,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Proportion of single-family dwellings | Percentage,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Proportion of Single-Family Dwellings | Percentage,2,2,DISTANCE & ACCESSIBILITY VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Proportion of young adults | Percentage,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES
+Proportion of youngsters | Percentage,2,2,DEMOGRAPHIC & SOCIAL VARIABLES
+Proximity | Distance,2,2,DISTANCE & ACCESSIBILITY VARIABLES
+Proximity to City Centre | Distance,2,1,DISTANCE & ACCESSIBILITY VARIABLES; TEMPORAL & CONTROL VARIABLES
+Real Estate Value | Percentage,2,2,TEMPORAL & CONTROL VARIABLES
+Residential mobility | Index,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; TEMPORAL & CONTROL VARIABLES
+Residential Mobility | Number,2,2,DEMOGRAPHIC & SOCIAL VARIABLES
+Residential mobility | Percentage,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; DEMOGRAPHIC & SOCIAL VARIABLES
+Residential Mobility | Rate,2,2,TEMPORAL & CONTROL VARIABLES
+Robust Standard Errors | Number,2,2,TEMPORAL & CONTROL VARIABLES
+Social cohesion | Number,2,2,DEMOGRAPHIC & SOCIAL VARIABLES
+Socioeconomic Heterogeneity | Index,2,2,ECONOMIC VARIABLES
+Subway Stations | Distance,2,2,DISTANCE & ACCESSIBILITY VARIABLES
+Territoriality | Number,2,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES; TEMPORAL & CONTROL VARIABLES
+Time of Day | Number,2,2,TEMPORAL & CONTROL VARIABLES
+Total number of business units | Number,2,1,ECONOMIC VARIABLES; ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Total number of residents | Number,2,1,DEMOGRAPHIC & SOCIAL VARIABLES; ECONOMIC VARIABLES
+Trees | Number,2,2,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+[Architectural_Features | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+[Physical_Accessibility | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+[Public_Facilities | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+[Residential_Units | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+[Social_Accessibility | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+0%; distance inversely related to targeting likelihood. | Percentage,1,1,MAJOR FINDINGS & RESULTS
+000) | Number,1,1,MODEL FIT & PERFORMANCE METRICS
+001) | Number,1,1,MODEL FIT & PERFORMANCE METRICS
+"028, Root likelihood for mixed logit = 0.151 | Number",1,1,MODEL FIT & PERFORMANCE METRICS
+06 for residential burglary). | Number,1,1,MAJOR FINDINGS & RESULTS
+"065 for bars, 1.302 for night shops, 1.084 for nightclubs, 1.058 for restaurants, 1.235 for schools, and 1.034 for residential units. | Number",1,1,MAJOR FINDINGS & RESULTS
+"070 (juvenile), OR = 1.092 (young adult); transportation hubs: OR = 1.035 (young adult), OR = 1.075 (adult); distance of journey to crime: OR = 0.194 (juvenile), OR = 0.212 (young adult), OR = 0.227 (adult). | Distance",1,1,MAJOR FINDINGS & RESULTS
+08 (full model) and 2.34 (restricted sample). | Number,1,1,MAJOR FINDINGS & RESULTS
+114. | Number,1,1,MAJOR FINDINGS & RESULTS
+"13. A 10-unit increase in ethnic heterogeneity increases the odds by a factor of 1.15. A 1-kilometer decrease in distance from the offender's home increases the odds by a factor of 1.67. A 1,000-unit increase in residential units increases the odds by a factor of 1.35. | Distance",1,1,MAJOR FINDINGS & RESULTS
+"147), sports stadiums (OR=0.816), transportation hubs (OR=1.052), subway stations (OR=1.038). | Number",1,1,MAJOR FINDINGS & RESULTS
+"19, 0.23, 0.26 | Number",1,1,MODEL FIT & PERFORMANCE METRICS
+2%; each unit increase in pedestrian-oriented street density increases group crime rate by 2.8%. | Percentage,1,1,MAJOR FINDINGS & RESULTS
+22 to 235 times more likely to offend near certain activity nodes. | Number,1,1,MAJOR FINDINGS & RESULTS
+25 for both models | Number,1,1,MODEL FIT & PERFORMANCE METRICS
+"25, 0.30 | Number",1,1,MODEL FIT & PERFORMANCE METRICS
+"264, Model 2 = 0.285, Model 3 = 0.283, Model 4 = 0.289 | Number",1,1,MODEL FIT & PERFORMANCE METRICS
+27 to 0.36. | Number,1,1,MODEL FIT & PERFORMANCE METRICS
+"3 to 28.4 (× 10 -4 ), indicating better fit than CL and null models. | Number",1,1,MODEL FIT & PERFORMANCE METRICS
+"304, Model 2 = 0.479, Model 3 = 0.490 | Number",1,1,MODEL FIT & PERFORMANCE METRICS
+35 and 0.42 | Number,1,1,MODEL FIT & PERFORMANCE METRICS
+35 for not being arrested. | Number,1,1,MAJOR FINDINGS & RESULTS
+38 for same weekend day; OR = 25.77 for same weekend day with zero-hour difference. | Number,1,1,MAJOR FINDINGS & RESULTS
+"4%, hospitals by 13.5%, non-locals by 19.8%. | Percentage",1,1,MAJOR FINDINGS & RESULTS
+"48 and 4.45, respectively. | Number",1,1,MODEL FIT & PERFORMANCE METRICS
+"48), ease of escape (OR = 1.61), accessibility (OR = 1.46). | Distance",1,1,MAJOR FINDINGS & RESULTS
+5% of addresses; could not identify offenders across multiple robberies. | Percentage,1,1,DATA PREPARATION & PROCESSING
+"6 for same LSOA within 2 days, 3.6 for same MSOA within 2 days; distance from residence decreases odds by 42% per kilometer. | Percentage",1,1,MAJOR FINDINGS & RESULTS
+6 million | Number,1,1,STUDY CONTEXT & GEOGRAPHY
+"6; OR for very frequently visited nodes = 7,845.3. | Number",1,1,MAJOR FINDINGS & RESULTS
+"61 for distance, e  = 1.77 for major roads, e  = 13.78 for military bases or police stations. | Distance",1,1,MAJOR FINDINGS & RESULTS
+63 and a maximum VIF of 2.49. | Number,1,1,DATA PREPARATION & PROCESSING
+"67 (The Hague), 1.90 (Birmingham), 1.21 (Brisbane); for single-family dwellings: 1.19 (The Hague), 1.12 (Birmingham), 1.13 (Brisbane); for number of households: 1.34 (The Hague), 1.76 (Birmingham), 1.47 (Brisbane). | Number",1,1,MAJOR FINDINGS & RESULTS
+"7 for one offender's current home, 44.05 for two/three offenders' current home, 3.01 for one offender's previous home, 4.8 for one offender's previous crime location. | Number",1,1,MAJOR FINDINGS & RESULTS
+"70), number of residential units (1.05), proportion of single-family dwellings (1.06), number of past residential burglaries (1.16), past residential burglary rate (1.79). | Percentage",1,1,MAJOR FINDINGS & RESULTS
+"87, Model 2 = 17446.9 | Number",1,1,MODEL FIT & PERFORMANCE METRICS
+"88), former familial residential areas (OR = 1.37). | Number",1,1,MAJOR FINDINGS & RESULTS
+91 for juveniles and 2.77 for adults; native Dutch burglars decrease choice probability by a factor of 0.92 for ethnically mixed areas. | Number,1,1,MAJOR FINDINGS & RESULTS
+"958km^2. Spatial knowledge moderates the relationship between social contexts and physical disorder, particularly in places different from residential spaces. | Rate",1,1,SCALE EFFECTS & SPATIAL FINDINGS
+993 for Model 2 | Number,1,1,MODEL FIT & PERFORMANCE METRICS
+A i/J i | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Accessibility | Binary,1,1,ECONOMIC VARIABLES
+Accessibility Along Main Streets | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Accessibility based on distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Accessibility Measure | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Accessibility of a block | Binary,1,1,ECONOMIC VARIABLES
+Accessibility of the location | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Accessibility: Block on main street | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Accessibility: Block with El station | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Accessible residential properties | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Activity Level | Number,1,1,ECONOMIC VARIABLES
+Activity Nodes | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Activity spaces | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Affluence Measures | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Affluence Measures | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Age | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Age Composition | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Age Distribution | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Age group | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+"Age groups (juvenile, young adult, adult) | Percentage",1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Age of burglars | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Age structure | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Age structure of offenders | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Ambient Guardianship | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Amount of Lost Property or Money | Number,1,1,ECONOMIC VARIABLES
+Annual Increase Rate | Percentage,1,1,ECONOMIC VARIABLES
+Anonymity | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Area Characteristics | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Arrest data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Attractive Targets | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Auto-oriented street density | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Auto-Oriented Street Density | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Automatic teller machines (ATMs) | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Availability of potential targets | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Average Crime Trip Distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Average Distance Replacement | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Average Distance Traveled | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Average house price | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Average journey-to-crime distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Average length of street segments | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Average population per ward | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Average population size | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Average real estate value of residential units | Percentage,1,1,ECONOMIC VARIABLES
+Average Residential Real Estate Value | Percentage,1,1,ECONOMIC VARIABLES
+Average Value of Properties | Number,1,1,ECONOMIC VARIABLES
+Average Value of Residential Properties | Percentage,1,1,ECONOMIC VARIABLES
+Barber shops and beauty salons | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Barriers (e.g., wide rivers) | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Bars and Clubs | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Bars and taverns | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Bars, clubs, coffeeshops, and smartshops | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Bars/nightlife | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Basic stores | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Betweenness | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Birth | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Birthplace | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Block population | Number,1,1,ECONOMIC VARIABLES
+Bridges | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Broken Windows | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Building Type | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Building Type | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Buildings along the street | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Bus Stations | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Bus stations | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Bus stop data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Bus Stops | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Business density | Binary,1,1,ECONOMIC VARIABLES
+Carparks | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Cash-intensive businesses (check-cashing outlets, ATMs, pawn shops, bars) | Number",1,1,ECONOMIC VARIABLES
+Catering Businesses | Binary,1,1,ECONOMIC VARIABLES
+CCTV cameras | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Census Data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Centering of Distance Measures | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Central Heating and/or Air-Conditioning System | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Check-cashing outlets | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Childbirth | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Cinemas | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+City Center Proximity | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+City Centers | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Clearance rate of theft from the person | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Closeness Centrality | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Commercial interfaces | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Community categorization by majority population type (local, domestic migrant, mixed) | Binary",1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Concentrated Disadvantage | Percentage,1,1,ECONOMIC VARIABLES
+Concentrated Disadvantage | Rate,1,1,TEMPORAL & CONTROL VARIABLES
+Concentrated Disadvantage Index | Rate,1,1,ECONOMIC VARIABLES
+Concentric zone model | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Connectivity via major roads | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Connectors - Train Network | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Connectors (e.g., transit lines) | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Construction Type | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Contagion | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Contagion measure | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Contiguity Order | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Crime attractors | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Crime attractors | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Crime Attractors | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Crime committed in neighbourhood | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Crime detractors | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Crime generators | Rate,1,1,TEMPORAL & CONTROL VARIABLES
+Crime generators and attractors | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Crime prevention | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+"Crime year specific numbers of retail facilities, schools, cultural, health care, and sports/leisure facilities | Number",1,1,TEMPORAL & CONTROL VARIABLES
+Cross-Validation | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Cultural facilities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Culture | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Culture, health-care, and sports/leisure facilities | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Culture, Health-Care, and Sports/Leisure Facilities | Number",1,1,TEMPORAL & CONTROL VARIABLES
+Cybercafés | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Cybercafés and sports stadiums | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+D ij | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Daily human mobility | Index,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Daily human mobility | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Daily Human Mobility | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Date of Belgian Land Registry data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Day-of-week effects | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Day-of-week weighting | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Death | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Demographic Characteristics of Offenders | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Demographic Profile Variables | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Density of road network | Density,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Density of road network | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Density of Road Network | Percentage,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Deprivation | Index,1,1,TEMPORAL & CONTROL VARIABLES
+Deprived areas/cash economies | Number,1,1,ECONOMIC VARIABLES
+Discrete Choice Approach | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Discrete Choice Modeling Framework | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Distance Bands | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance between burglar's home and target address | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance between current residence and crime location | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance Between Neighbourhoods | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance between offender homes and robbery locations within census block | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance between the offender's residential area and the crime location | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance decay | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Distance decay pattern | Rate,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance from Activity Space | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance from city center | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance from current residential area to the target area | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance from home | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance from Home | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance from home to crime location | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance from offender's home | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance from offender's residence | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance from Prior Crime | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance from Residential Area to Target Areas | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance from the city centre | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance from the offender's home | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance Measure | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance squared | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance to city centre | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance to crime | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance to nearest main road | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance to nearest street corner | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance to Offender's Residence | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance to Prior Crime Location | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance to Residence | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance to ward centroids | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Distance Values | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Distance within same postal code area | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Divorce | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Dominant land use function | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Drug markets | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+DST were removed due to uniform distribution. | Number,1,1,DATA PREPARATION & PROCESSING
+Duration Hypothesis | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Duration of residence | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Duration of Residence | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Ease of Escape | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Economic Inequality | Number,1,1,ECONOMIC VARIABLES
+Education level | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Education Level | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+"Educational institutions (schools, colleges) | Percentage",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Educational level | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Educational Qualifications | Percentage,1,1,ECONOMIC VARIABLES
+Employee density | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Entertainment venues | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Entertainment Venues | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Estimated Travel Time | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Ethnic-heterogeneity | Index,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Ethnic background | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Ethnic Composition | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Ethnic composition of population in postal code areas | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Ethnic Diversity | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Ethnic Heterogeneity | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Ethnic Origin of Burglar | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Ethnic Origin of Burglar | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Ethnicity | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Ethnicity/race | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Euclidean distances between census units | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Euclidean distances between offender homes and census block midpoints | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Exclusion of census units due to limited mobility data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Exclusion of February | Number,1,1,TEMPORAL & CONTROL VARIABLES
+F ij | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Facilities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Fences | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Fixed effects analysis | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Foreign-born residents | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Gang territorial dissimilarity | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Gas stations | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Gender of burglars | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Gender ratio of offenders | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+General activity level | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+General activity level of the location | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+General merchandise shops | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Geocoded Neighbourhoods | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Geographical location of study area | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Ghosh distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Going out | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Grass | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Grocers | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Grocers and terminal markets | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Guardianship | Index,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Hangouts and loitering hotspots | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Health care | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Health care institutions | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+High Schools | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Higher altitude | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Higher population turnover rates | Rate,1,1,ECONOMIC VARIABLES
+Higher real estate values | Number,1,1,ECONOMIC VARIABLES
+History Hypothesis | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Home-crime distance distribution | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Home-to-Target Distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Home Hypothesis | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Home occupancy in residential neighbourhoods | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Home ownership | Percentage,1,1,ECONOMIC VARIABLES
+Home Ownership | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Hotels Restaurants Bars | Number,1,1,TEMPORAL & CONTROL VARIABLES
+"Hotels, restaurants, and bars | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+House type | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Household Composition | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Household Count | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Household Size | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Household size/composition | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Household Size/Composition | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Housing Characteristics | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Hukou status | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Hukou status | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Hukou Status | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Idiosyncratic Farness | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Index of Multiple Deprivation (IMD) | Index,1,1,ECONOMIC VARIABLES
+Indigenous Status | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Informal Social Control | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Interaction Terms | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Intersections | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Jewelry shops | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Jobs | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Journey-to-crime | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Journey-to-crime distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Journey-to-Crime Distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Journey to crime | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Jurisdictional Dummies | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Labor-intensive industrial cluster | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Land Use - Population Density | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Land Use - Suburb Size | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Land use and activities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Laundromats | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Lawns | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Level of Urbanization | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Likelihood of successful completion | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Limited social network overlap | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Liquor stores | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Location | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Logged distance of journey to crime | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Low educational attainment | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Major Road | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Major Roads | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Major thoroughfares | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Malls and Supermarkets | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Marital Status | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Markets | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Marriage | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Marriage halls | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Mean housing repayment | Number,1,1,ECONOMIC VARIABLES
+Mean Income per Resident | Number,1,1,ECONOMIC VARIABLES
+Mean population | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Median Distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Median Home Value | Number,1,1,ECONOMIC VARIABLES
+Median income | Number,1,1,ECONOMIC VARIABLES
+Median Income | Number,1,1,ECONOMIC VARIABLES
+Median Nearest Neighbor Distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Median Residential Population | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Median Weekly Income Bracket | Number,1,1,ECONOMIC VARIABLES
+"Medical facilities (hospitals, medical services) | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Middle schools | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Migration status | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Military Base | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Mixed land-use | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Mobile phone data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Mobility of burglars | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Moran's I Statistic | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Movement Potential | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Nationality | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Natural log of the number of households | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Negative log of distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Neighbourhood Boundaries | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Neighbourhood disorder | Index,1,1,TEMPORAL & CONTROL VARIABLES
+Neighbourhood Proximity | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Neighbourhood routinely visited at different time of day as crime event | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Neighbourhood routinely visited at same time of day as crime event | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Neighbourhoods of offenders' activity nodes | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Network Distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Newer Buildings | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Newer buildings | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Night Shops | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Nightclubs | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Non-residential census blocks | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Non-Western Background | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Normalization of Data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Not Arrested in the Act of Prior Robbery | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Number of bars/restaurants/hotels | Rate,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of boundaries shared with public areas | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Number of business units for industries targeted in commercial robbery | Number,1,1,ECONOMIC VARIABLES
+Number of business units for targeted industries | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of business units in commercial industries | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of cars parked on a parking lot | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Number of Culture, Health-Care, and Sports/Leisure Facilities | Number",1,1,ECONOMIC VARIABLES
+Number of escape routes | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Number of Floors | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of Hotels Restaurants Bars | Number,1,1,ECONOMIC VARIABLES
+"Number of hotels, restaurants, and bars | Number",1,1,ECONOMIC VARIABLES
+"Number of hotels, restaurants, bars, schools, cultural facilities, health care institutions, and sport and leisure facilities | Number",1,1,ECONOMIC VARIABLES
+Number of Households | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Number of households in a community | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Number of households in SA2 | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Number of households in the SA2 | Number,1,1,ECONOMIC VARIABLES
+Number of past residential burglaries | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Number of People Working | Number,1,1,ECONOMIC VARIABLES
+Number of PIRA members | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Number of premises per SA2 | Number,1,1,ECONOMIC VARIABLES
+Number of Properties | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Number of properties in a neighbourhood | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Number of Residential Properties | Number,1,1,ECONOMIC VARIABLES
+Number of residential units in postal code areas | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Number of Retail Stores | Number,1,1,ECONOMIC VARIABLES
+Number_of_Employees | Number,1,1,ECONOMIC VARIABLES
+Offender's current or former residence | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Offender Residence-Crime Proximity | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Old urban areas and urban villages | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Opportunity | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Opportunity measures | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Opportunity Variables | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Parks | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Parks | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Past residential burglary rate | Rate,1,1,TEMPORAL & CONTROL VARIABLES
+Pawn shops | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Pawnshops, currency exchange, and check-cashing services | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Pedestrian-oriented street density | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Pedestrian-Oriented Street Density | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Pedestrian Travel Time | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+People Working | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Percent Black Residents | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Percent Latino Residents | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Percentage of Black Residents | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Percentage of Latino Residents | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Percentage of Occupied Units | Percentage,1,1,ECONOMIC VARIABLES
+Percentage of owner-occupied dwellings | Percentage,1,1,ECONOMIC VARIABLES
+Percentage of Owner-Occupied Properties | Percentage,1,1,ECONOMIC VARIABLES
+Percentage of Residents Below Poverty | Percentage,1,1,ECONOMIC VARIABLES
+Percentage of single-family dwellings | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Percentage of single-person households | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Percentage of Single-Person Households | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Percentage of Unemployed | Percentage,1,1,ECONOMIC VARIABLES
+"Personal care facilities (barbershops, beauty parlors) | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Physical accessibility | Percentage,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Physical Barriers - Major Roads | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Physical Barriers - Swan River | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Physical disorder | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Physical Disorder | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Plants | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+POI data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Points of Interest | Number,1,1,ECONOMIC VARIABLES
+Police Station | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Population (log) | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Population | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Population Distribution | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Population percentages of 15-25-year-old | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+"Population percentages of 15-25-year-old, foreign-born, and single residents | Percentage",1,1,TEMPORAL & CONTROL VARIABLES
+Population Turnover | Number,1,1,ECONOMIC VARIABLES
+Population turnover | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Population Turnover | Rate,1,1,TEMPORAL & CONTROL VARIABLES
+Postal code area characteristics | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Postal Code Areas | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Potential Customer Density | Distance,1,1,ECONOMIC VARIABLES
+Poverty level | Number,1,1,ECONOMIC VARIABLES
+Poverty Level | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Presence of activity nodes in SA2 | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of Bars | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Presence of Bus Stations | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Presence of business | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Presence of catering businesses | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of El stations | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of High Schools | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Presence of high schools | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of illegal cash economies | Binary,1,1,ECONOMIC VARIABLES
+Presence of legal cash economies | Binary,1,1,ECONOMIC VARIABLES
+Presence of locks and escape routes | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of Night Shops | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Presence of Nightclubs | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Presence of Restaurants | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Presence of retail and entertainment businesses | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of Retail and Entertainment Businesses | Number,1,1,ECONOMIC VARIABLES
+Presence of retail businesses | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of Rooftop Living Floor | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of schools | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Presence of Schools | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Presence of Schools | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Presence of Train Stations | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Presence of Trees | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Presence of underground station | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Previous crime location | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Previous Crime Location | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Previous crime location on different week part | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Previous crime location on different weekday | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Previous crime location on different weekend day | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Previous crime location on same weekday | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Previous crime location on same weekend day | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Previous crime location with a . . . hour difference | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Primary schools | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Prior burglary in neighborhood | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Prior crime locations | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Prior crimes | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Prior Offenses | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Property at end of row | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Property setback from street | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Proportion of buildings built after 2000 | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Proportion of foreigners | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Proportion of high-rise buildings | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Proportion of high-rise residential buildings | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Proportion of local residents with ZG city Hukou status | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Proportion of newcomers | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Proportion of non-locals | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Proportion of Non-Western Residents | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Proportion of Residents with a Non-Western Background | Percentage,1,1,ECONOMIC VARIABLES
+Proportion of residents with a non-Western ethnic background | Percentage,1,1,ECONOMIC VARIABLES
+Proportion of Residents with a Non-Western Ethnic Background | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Proportion of Youngsters | Percentage,1,1,ECONOMIC VARIABLES
+Proportion rental units | Percentage,1,1,ECONOMIC VARIABLES
+Prostitution markets | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Proximity Hypothesis | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Proximity to Activity Nodes | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Proximity to Burglar's Home | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Proximity to CBD | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Proximity to Central Business District | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Proximity to city center | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Proximity to City Center | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Proximity to El Stations | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Proximity to Offender's Home | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Proximity to Residential Area | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Pseudo-R 2 | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Public facilities in the central business district | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Public transport usage | Percentage,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Racial and Ethnic Background | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Racial and ethnic background of offenders | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Racial and ethnic composition | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Racial and Ethnic Composition | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Racial and ethnic composition of the population | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Racial and ethnic dissimilarity | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Racial and ethnic segregation | Binary,1,1,ECONOMIC VARIABLES
+Racial Composition | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Racial/ethnic composition | Binary,1,1,ECONOMIC VARIABLES
+Racial/Ethnic Composition | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Racial/Ethnic Heterogeneity | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Radius of Gyration | Percentage,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Random Sampling | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Random Utility Model | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Real Estate Value of Residences | Index,1,1,ECONOMIC VARIABLES
+Recency Hypothesis | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Recency of Prior Crimes | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Recency Variables | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Recognition as strangers | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Relative Mobility | Percentage,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+"Religious facilities (temples, churches, mosques) | Percentage",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Rent categories (no rent, low, medium, high) | Binary",1,1,ECONOMIC VARIABLES
+Rental Status | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Rental Units | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Residence-crime proximity | Distance,1,1,TEMPORAL & CONTROL VARIABLES
+Residences | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Residential addresses | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Residential Area Variables | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Residential Churn | Index,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Residential density | Distance,1,1,ECONOMIC VARIABLES
+Residential Density | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Residential Instability | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Residential Mobility | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Residential Mobility Rates | Rate,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Residential population density | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Residential Real Estate Value | Number,1,1,ECONOMIC VARIABLES
+Residential segregation | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Residential Stability | Index,1,1,TEMPORAL & CONTROL VARIABLES
+Residential units' visible cues | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+"Restaurants, fast-food outlets, and food stands | Number",1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Retail activities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Retail Businesses | Binary,1,1,ECONOMIC VARIABLES
+Retail businesses | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Retail Centers | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Retail employment | Density,1,1,ECONOMIC VARIABLES
+Retail Stores | Number,1,1,TEMPORAL & CONTROL VARIABLES
+River | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+River as barrier | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+River Thames | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Road Network Configuration | Percentage,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Road network data | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Road Structure | Rate,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Routine activities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Routine Activities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Routine activity nodes | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Routine Activity Nodes | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Schools | Binary,1,1,ECONOMIC VARIABLES
+Seasonal measurement period | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Seemingly Unrelated Estimation | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Selection of weekdays | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Series of Models | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Sex | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Sex of offenders | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Shared Awareness Space | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Shopping | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Shopping Centers | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Shopping malls | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Shops facing the street | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Shortest travel path | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Sidewalks | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Single-Parent Households | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Single-Person Households | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Single residents | Percentage,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Social Barriers | Index,1,1,TEMPORAL & CONTROL VARIABLES
+Social Barriers | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Social barriers based on Hukou status | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Social cohesion | Index,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Social Cohesion | Index,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Social cohesion and collective efficacy | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Social Control | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Social Disorder | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Social Disorganization | Index,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Social Disorganization | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Social disorganization | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Social Trust | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Socially organized areas | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Socio-Economic Index for Areas (SEIFA) | Index,1,1,ECONOMIC VARIABLES
+Socioeconomic Heterogeneity | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Solo Crime Rate | Rate,1,1,TEMPORAL & CONTROL VARIABLES
+Spatial boundaries | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Spatial Competition | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Spatial competition variable | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Spatial Competition Variable | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Spatial Lag | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Spatial Lag Operator | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Spatial Lags | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Spatial Lags | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Spatial Unit | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Sport and leisure facilities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Sports activities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Sports and leisure facilities | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Sports stadiums | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Street permeability | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Street Segment Type | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Street Segments | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Streetlights | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Structural elements | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Subway Stations | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Subway Stations | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Supermarkets | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Surveillability | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Surveillance Cameras | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+SWEBER (spatially weighted burglar exposition rate) | Rate,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+T ij | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Target Vulnerability | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Temporal Categories | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Temporal Filter | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Temporally optimized distance | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Thames River barrier | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Through Movement | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Time-of-day effects | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Time | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Time and Place of Incident | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Time elapsed since interview | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Time Interval Between Two Robberies | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Time of day | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Time of Offense | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Time Since Moved Out of the Area | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Total number of households | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Total number of residents in the census block | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Total Population | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Total Residential Units | Distance,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Traffic road network vector map data | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Train Stations | Binary,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Train stations | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Trams and Buses | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Transit Stations | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Transport hubs | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Transport Hubs | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Transportation Hubs | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Transportation Hubs | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Transportation hubs | Number,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Transportation network accessibility | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Travel Restrictions | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Type of Street Segment | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Types of housing | Binary,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+u 26 | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+u 27 | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+u 30 | Distance,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+u30 | Distance,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+u66 | Density,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Underreporting of crimes | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Unit of Analysis | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Urban nature of the study area | Number,1,1,DEMOGRAPHIC & SOCIAL VARIABLES
+Vehicular Travel Time | Number,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Victim Suburb Weekly Income | Number,1,1,ECONOMIC VARIABLES
+Visiting frequency | Rate,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+W ij | Binary,1,1,DISTANCE & ACCESSIBILITY VARIABLES
+Wald Tests | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Walls | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Ward Area | Percentage,1,1,TEMPORAL & CONTROL VARIABLES
+Ward Population | Number,1,1,TEMPORAL & CONTROL VARIABLES
+Wealth | Distance,1,1,ECONOMIC VARIABLES
+Whether Offender Has Lived in the Area Before | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Whether Offender Lives in the Area | Binary,1,1,TEMPORAL & CONTROL VARIABLES
+Windows | Percentage,1,1,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES
+Year dummies | Binary,1,1,TEMPORAL & CONTROL VARIABLES

@@ -1,0 +1,1050 @@
+Title,Variable,Source_Column,Study_Index
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Population | Number,DEMOGRAPHIC & SOCIAL VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Ethnic Heterogeneity | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Rental Units | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Household Size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Household Composition | Number,DEMOGRAPHIC & SOCIAL VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Rental Status | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Median income | Number,ECONOMIC VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Residential density | Distance,ECONOMIC VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Proportion rental units | Percentage,ECONOMIC VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Higher real estate values | Number,ECONOMIC VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Higher population turnover rates | Rate,ECONOMIC VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Residential Density | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Building Type | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Housing Characteristics | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Prior burglary in neighborhood | Binary,TEMPORAL & CONTROL VARIABLES,1
+"""Location, Location, Location"": Effects of Neighborhood and House Attributes on Burglars' Target Selection",Distance from offender's home | Distance,TEMPORAL & CONTROL VARIABLES,1
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Population size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Percentage of single-person households | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Level of urbanization | Index,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Birth | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Death | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Nationality | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Marriage | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Divorce | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Childbirth | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Residential addresses | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Poverty level | Number,ECONOMIC VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Level of urbanization | Index,ECONOMIC VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Distance from home to crime location | Distance,DISTANCE & ACCESSIBILITY VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Home Hypothesis | Binary,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,History Hypothesis | Binary,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Recency Hypothesis | Binary,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Duration Hypothesis | Percentage,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Proximity Hypothesis | Distance,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Population Size | Number,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Percentage of Single-Person Households | Percentage,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Poverty Level | Number,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Level of Urbanization | Number,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Whether Offender Lives in the Area | Binary,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Whether Offender Has Lived in the Area Before | Binary,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Duration of Residence | Percentage,TEMPORAL & CONTROL VARIABLES,2
+A SENTIMENTAL JOURNEY TO CRIME: EFFECTS OF RESIDENTIAL HISTORY ON CRIME LOCATION CHOICE*,Time Since Moved Out of the Area | Binary,TEMPORAL & CONTROL VARIABLES,2
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Proportion of residents with a non-Western background | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Proportion of single-person households | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Proportion of residents with a non-Western background | Percentage,ECONOMIC VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Proportion of single-person households | Percentage,ECONOMIC VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Population density | Distance,ECONOMIC VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Number of employees | Number,ECONOMIC VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Presence of facilities | Number,ECONOMIC VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Facilities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Euclidean distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Distance within same postal code area | Distance,DISTANCE & ACCESSIBILITY VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Accessibility based on distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Spatial boundaries | Number,DISTANCE & ACCESSIBILITY VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Transportation network accessibility | Distance,DISTANCE & ACCESSIBILITY VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Previous crime location on same weekday | Binary,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Previous crime location on different weekday | Binary,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Previous crime location on same weekend day | Binary,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Previous crime location on different weekend day | Binary,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Previous crime location on different week part | Binary,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Previous crime location with a . . . hour difference | Binary,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Offender's current or former residence | Binary,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Distance from current residential area to the target area | Distance,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Proportion of residents with a non-Western background | Percentage,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Proportion of single-person households | Percentage,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Population density | Distance,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Number of employees | Number,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,Presence of facilities | Number,TEMPORAL & CONTROL VARIABLES,3
+A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices,38 for same weekend day; OR = 25.77 for same weekend day with zero-hour difference. | Number,MAJOR FINDINGS & RESULTS,3
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Population size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Age of burglars | Number,DEMOGRAPHIC & SOCIAL VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Gender of burglars | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Construction Type | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Central Heating and/or Air-Conditioning System | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Number of Floors | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Presence of Rooftop Living Floor | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Journey-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Average journey-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Shortest travel path | Distance,DISTANCE & ACCESSIBILITY VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Temporally optimized distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,4
+a_discrete_spatial_choice_model_of_burglary_target.pdf,Date of Belgian Land Registry data | Number,TEMPORAL & CONTROL VARIABLES,4
+Adolescent offenders' current whereabouts predict locations of their future crimes,Gender | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Ethnic background | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Age structure | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Educational level | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Educational Qualifications | Percentage,ECONOMIC VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Points of Interest | Number,ECONOMIC VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Catering Businesses | Binary,ECONOMIC VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Retail Businesses | Binary,ECONOMIC VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Schools | Binary,ECONOMIC VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Presence of catering businesses | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Presence of retail businesses | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Presence of schools | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Prior crime locations | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Radius of Gyration | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Distance from Activity Space | Distance,DISTANCE & ACCESSIBILITY VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Distance from Prior Crime | Distance,DISTANCE & ACCESSIBILITY VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Contiguity Order | Distance,DISTANCE & ACCESSIBILITY VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Day-of-week weighting | Number,TEMPORAL & CONTROL VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Seasonal measurement period | Number,TEMPORAL & CONTROL VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Time elapsed since interview | Number,TEMPORAL & CONTROL VARIABLES,5
+Adolescent offenders' current whereabouts predict locations of their future crimes,Underreporting of crimes | Percentage,TEMPORAL & CONTROL VARIABLES,5
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Hukou status | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Proportion of migrants | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Proportion of youngsters | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Socioeconomic heterogeneity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Social cohesion | Index,DEMOGRAPHIC & SOCIAL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Collective efficacy | Index,DEMOGRAPHIC & SOCIAL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Types of housing | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,GDP | Number,ECONOMIC VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Annual Increase Rate | Percentage,ECONOMIC VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Economic Inequality | Number,ECONOMIC VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Proportion of Youngsters | Percentage,ECONOMIC VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Malls and supermarkets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Grocers and terminal markets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Bars and clubs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Cybercafés and sports stadiums | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,High schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,ATMs and banks | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Car parks | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Surveillance cameras | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Ambient population | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Distance of Journey to Crime | Distance,DISTANCE & ACCESSIBILITY VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Density of Road Network | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Bus Stops | Distance,DISTANCE & ACCESSIBILITY VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Transportation Hubs | Distance,DISTANCE & ACCESSIBILITY VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Subway Stations | Distance,DISTANCE & ACCESSIBILITY VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Crime generators and attractors | Number,TEMPORAL & CONTROL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Density of road network | Percentage,TEMPORAL & CONTROL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Distance of journey to crime | Distance,TEMPORAL & CONTROL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Social disorganization | Percentage,TEMPORAL & CONTROL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,Logged distance of journey to crime | Distance,TEMPORAL & CONTROL VARIABLES,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,63 and a maximum VIF of 2.49. | Number,DATA PREPARATION & PROCESSING,6
+Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice,"264, Model 2 = 0.285, Model 3 = 0.283, Model 4 = 0.289 | Number",MODEL FIT & PERFORMANCE METRICS,6
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Gender | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Age | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Hukou Status | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Social Cohesion | Number,DEMOGRAPHIC & SOCIAL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Collective Efficacy | Number,DEMOGRAPHIC & SOCIAL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",GDP | Number,ECONOMIC VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Socioeconomic Heterogeneity | Index,ECONOMIC VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Amount of Lost Property or Money | Number,ECONOMIC VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",High schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Shopping malls | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Transportation hubs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Bars and clubs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Cybercafés | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Grocery stores | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Hotels | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Restaurants | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",ATMs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Banks | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Subway stations | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Bus stations | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Surveillance cameras | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Daily human mobility | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Distance of Journey to Prior Robbery | Distance,DISTANCE & ACCESSIBILITY VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Distance of Journey to Subsequent Robbery | Distance,DISTANCE & ACCESSIBILITY VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Time Interval Between Two Robberies | Number,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Distance of Journey to Prior Robbery | Distance,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Not Arrested in the Act of Prior Robbery | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Distance of Journey to Subsequent Robbery | Distance,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Transportation Hubs | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Subway Stations | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Bus Stations | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Bars and Clubs | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Cybercafés | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Malls and Supermarkets | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",High Schools | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Surveillance Cameras | Binary,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Daily Human Mobility | Number,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",Socioeconomic Heterogeneity | Number,TEMPORAL & CONTROL VARIABLES,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China","19, 0.23, 0.26 | Number",MODEL FIT & PERFORMANCE METRICS,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",000) | Number,MODEL FIT & PERFORMANCE METRICS,7
+"Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A Case Study in ZG City, China",35 for not being arrested. | Number,MAJOR FINDINGS & RESULTS,7
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Population size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Collective efficacy | Index,DEMOGRAPHIC & SOCIAL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Proportion of single-person households | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Proportion of residents with a non-western background | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Age of offenders | Number,DEMOGRAPHIC & SOCIAL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Gender of offenders | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Number_of_Employees | Number,ECONOMIC VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Number of bars/restaurants/hotels | Rate,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Collective efficacy | Index,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Euclidean Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Average Distance Replacement | Distance,DISTANCE & ACCESSIBILITY VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Postal Code Areas | Number,DISTANCE & ACCESSIBILITY VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Travel Restrictions | Number,DISTANCE & ACCESSIBILITY VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Distance between the offender's residential area and the crime location | Distance,TEMPORAL & CONTROL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Previous crime location | Binary,TEMPORAL & CONTROL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,"Crime year specific numbers of retail facilities, schools, cultural, health care, and sports/leisure facilities | Number",TEMPORAL & CONTROL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Number of employees | Number,TEMPORAL & CONTROL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Neighbourhood disorder | Index,TEMPORAL & CONTROL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Proportion of single-person households | Percentage,TEMPORAL & CONTROL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,Proportion of residents with a non-western background | Percentage,TEMPORAL & CONTROL VARIABLES,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,"25, 0.30 | Number",MODEL FIT & PERFORMANCE METRICS,8
+AWARENESS × OPPORTUNITY: TESTING INTERACTIONS BETWEEN ACTIVITY NODES AND CRIMINAL OPPORTUNITY IN PREDICTING CRIME LOCATION CHOICE,25. | Number,MAJOR FINDINGS & RESULTS,8
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Proportion of Single-Person Households | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Proportion of Residents with a Non-Western Ethnic Background | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Proportion of single-person households | Percentage,ECONOMIC VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Proportion of residents with a non-Western ethnic background | Percentage,ECONOMIC VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Number of retail stores | Number,ECONOMIC VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *","Number of hotels, restaurants, and bars | Number",ECONOMIC VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Number of people working | Number,ECONOMIC VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Retail stores | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *","Hotels, restaurants, and bars | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Culture | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Health care | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Sports and leisure facilities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Number of people working | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Distance to Prior Crime Location | Distance,DISTANCE & ACCESSIBILITY VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Distance from Residential Area to Target Areas | Distance,DISTANCE & ACCESSIBILITY VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Recency Variables | Binary,TEMPORAL & CONTROL VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Residential Area Variables | Percentage,TEMPORAL & CONTROL VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Population Density | Distance,TEMPORAL & CONTROL VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Proportion of Single-Person Households | Percentage,TEMPORAL & CONTROL VARIABLES,9
+"BITING ONCE, TWICE: THE INFLUENCE OF PRIOR ON SUBSEQUENT CRIME LOCATION CHOICE *",Proportion of Non-Western Residents | Percentage,TEMPORAL & CONTROL VARIABLES,9
+Burglar Target Selection: A Crossnational Comparison,Residential Mobility | Number,DEMOGRAPHIC & SOCIAL VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Social Cohesion | Number,DEMOGRAPHIC & SOCIAL VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Residential Real Estate Value | Number,ECONOMIC VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Number of households | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Proportion of single-family dwellings | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Residential mobility | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Availability of potential targets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Proximity | Distance,DISTANCE & ACCESSIBILITY VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Proximity to City Center | Distance,DISTANCE & ACCESSIBILITY VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Proportion of Single-Family Dwellings | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Number of Households | Number,DISTANCE & ACCESSIBILITY VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Jurisdictional Dummies | Binary,TEMPORAL & CONTROL VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Robust Standard Errors | Number,TEMPORAL & CONTROL VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,Wald Tests | Number,TEMPORAL & CONTROL VARIABLES,10
+Burglar Target Selection: A Crossnational Comparison,"67 (The Hague), 1.90 (Birmingham), 1.21 (Brisbane); for single-family dwellings: 1.19 (The Hague), 1.12 (Birmingham), 1.13 (Brisbane); for number of households: 1.34 (The Hague), 1.76 (Birmingham), 1.47 (Brisbane). | Number",MAJOR FINDINGS & RESULTS,10
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Proportion of local residents with ZG city Hukou status | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,"Community categorization by majority population type (local, domestic migrant, mixed) | Binary",DEMOGRAPHIC & SOCIAL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Social barriers based on Hukou status | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Limited social network overlap | Number,DEMOGRAPHIC & SOCIAL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Number of households in a community | Number,DEMOGRAPHIC & SOCIAL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Proportion of houses built after 2000 | Percentage,ECONOMIC VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Average rent price | Number,ECONOMIC VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,"Rent categories (no rent, low, medium, high) | Binary",ECONOMIC VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Number of households | Number,ECONOMIC VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Proportion of high-rise buildings | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Proportion of houses built after 2000 | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Natural log of the number of households | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Average rent price | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Physical Barriers | Number,DISTANCE & ACCESSIBILITY VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Distance Measure | Distance,DISTANCE & ACCESSIBILITY VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Accessibility Measure | Distance,DISTANCE & ACCESSIBILITY VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Distance | Distance,TEMPORAL & CONTROL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Affluence Measures | Percentage,TEMPORAL & CONTROL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Affluence Measures | Number,TEMPORAL & CONTROL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Building Type | Percentage,TEMPORAL & CONTROL VARIABLES,11
+Burglars blocked by barriers? The impact of physical and social barriers on residential burglars' target location choices in China,Household Count | Number,TEMPORAL & CONTROL VARIABLES,11
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Total number of residents | Number,DEMOGRAPHIC & SOCIAL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Number of residents with a non-Western ethnic background | Number,DEMOGRAPHIC & SOCIAL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Number of single-person households | Number,DEMOGRAPHIC & SOCIAL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Population density | Number,DEMOGRAPHIC & SOCIAL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Total number of residents | Number,ECONOMIC VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Number of residents with a non-Western ethnic background | Number,ECONOMIC VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Number of single-person households | Number,ECONOMIC VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Number of retail stores | Number,ECONOMIC VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,"Number of hotels, restaurants, bars, schools, cultural facilities, health care institutions, and sport and leisure facilities | Number",ECONOMIC VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Retail stores | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Hotels | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Restaurants | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Bars | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Cultural facilities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Health care institutions | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Sport and leisure facilities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Home Location | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Previous Home Location | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Previous Crime Location | Number,DISTANCE & ACCESSIBILITY VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Area Characteristics | Number,TEMPORAL & CONTROL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Home Location | Percentage,TEMPORAL & CONTROL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Previous Home Location | Percentage,TEMPORAL & CONTROL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Previous Crime Location | Binary,TEMPORAL & CONTROL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,Shared Awareness Space | Percentage,TEMPORAL & CONTROL VARIABLES,12
+CO-OFFENDERS' CRIME LOCATION CHOICE: DO CO-OFFENDING GROUPS COMMIT CRIMES IN THEIR SHARED AWARENESS SPACE?,"7 for one offender's current home, 44.05 for two/three offenders' current home, 3.01 for one offender's previous home, 4.8 for one offender's previous crime location. | Number",MAJOR FINDINGS & RESULTS,12
+Co-offending and the Choice of Target Areas in Burglary,Residential Mobility | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Ethnic Heterogeneity | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Number of Properties | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Number of Residents | Number,DEMOGRAPHIC & SOCIAL VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Average Value of Residential Properties | Percentage,ECONOMIC VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Percentage of Owner-Occupied Properties | Percentage,ECONOMIC VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Mean Income per Resident | Number,ECONOMIC VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,[Architectural_Features | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,[Public_Facilities | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,[Residential_Units | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,[Physical_Accessibility | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,[Social_Accessibility | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Home-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Distance to city centre | Distance,DISTANCE & ACCESSIBILITY VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Physical accessibility | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,13
+Co-offending and the Choice of Target Areas in Burglary,Number of properties in a neighbourhood | Number,TEMPORAL & CONTROL VARIABLES,13
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Population size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Proportion of non-locals | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Hukou status | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Primary schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Middle schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Hospitals | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Basic stores | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Markets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Supermarkets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Restaurants | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Cinemas | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Bars | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Banks | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Subway stations | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Bus stops | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Median Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Average Crime Trip Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Euclidean Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Relative Mobility | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Exclusion of February | Number,TEMPORAL & CONTROL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Selection of weekdays | Number,TEMPORAL & CONTROL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Clearance rate of theft from the person | Percentage,TEMPORAL & CONTROL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Geographical location of study area | Number,TEMPORAL & CONTROL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Mean population | Number,TEMPORAL & CONTROL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Exclusion of census units due to limited mobility data | Number,TEMPORAL & CONTROL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,Euclidean distances between census units | Distance,TEMPORAL & CONTROL VARIABLES,14
+Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices,"4%, hospitals by 13.5%, non-locals by 19.8%. | Percentage",MAJOR FINDINGS & RESULTS,14
+Discrete choice analysis of spatial attack sites,Demographic Profile Variables | Number,DEMOGRAPHIC & SOCIAL VARIABLES,15
+Discrete choice analysis of spatial attack sites,u30 | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,15
+Discrete choice analysis of spatial attack sites,u66 | Density,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,15
+Discrete choice analysis of spatial attack sites,u 26 | Distance,DISTANCE & ACCESSIBILITY VARIABLES,15
+Discrete choice analysis of spatial attack sites,u 27 | Distance,DISTANCE & ACCESSIBILITY VARIABLES,15
+Discrete choice analysis of spatial attack sites,u 30 | Distance,DISTANCE & ACCESSIBILITY VARIABLES,15
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Population (log) | Number,DEMOGRAPHIC & SOCIAL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Proportion of high-rise residential buildings | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Proportion of buildings built after 2000 | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Low educational attainment | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Physical Disorder | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Newer Buildings | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Parks | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Entertainment Venues | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Subway Stations | Distance,DISTANCE & ACCESSIBILITY VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Bus Stops | Distance,DISTANCE & ACCESSIBILITY VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Distance from home | Distance,TEMPORAL & CONTROL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Population size | Number,TEMPORAL & CONTROL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Newer buildings | Number,TEMPORAL & CONTROL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Subway stations | Number,TEMPORAL & CONTROL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Bus stops | Number,TEMPORAL & CONTROL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Parks | Number,TEMPORAL & CONTROL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,Entertainment venues | Number,TEMPORAL & CONTROL VARIABLES,16
+Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical Disorder and Spatial Knowledge on Burglars' Location Choice,"958km^2. Spatial knowledge moderates the relationship between social contexts and physical disorder, particularly in places different from residential spaces. | Rate",SCALE EFFECTS & SPATIAL FINDINGS,16
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Proportion of migrants | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Proportion of young adults | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?","Age groups (juvenile, young adult, adult) | Percentage",DEMOGRAPHIC & SOCIAL VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Social cohesion | Number,DEMOGRAPHIC & SOCIAL VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Proportion of migrants | Percentage,ECONOMIC VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Proportion of young adults | Percentage,ECONOMIC VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Cybercafés | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Wholesale markets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Bars and clubs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Routine activity nodes | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Distance of Journey to Crime | Distance,DISTANCE & ACCESSIBILITY VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Bus Stops | Number,DISTANCE & ACCESSIBILITY VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Subway Stations | Number,DISTANCE & ACCESSIBILITY VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Bus stops | Number,TEMPORAL & CONTROL VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Subway stations | Number,TEMPORAL & CONTROL VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Malls and supermarkets | Number,TEMPORAL & CONTROL VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?",Car parks | Number,TEMPORAL & CONTROL VARIABLES,17
+"Do juvenile, young adult, and adult offenders target different places in the Chinese context?","070 (juvenile), OR = 1.092 (young adult); transportation hubs: OR = 1.035 (young adult), OR = 1.075 (adult); distance of journey to crime: OR = 0.194 (juvenile), OR = 0.212 (young adult), OR = 0.227 (adult). | Distance",MAJOR FINDINGS & RESULTS,17
+Do Migrant and Native Robbers Target Different Places?,Gender | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Ethnicity | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Education level | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Proportion of migrants | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Proportion of youngsters | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Socioeconomic heterogeneity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Daily human mobility | Index,DEMOGRAPHIC & SOCIAL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Migration status | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Wholesale markets | Number,ECONOMIC VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Proportion of migrants | Percentage,ECONOMIC VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Socioeconomic heterogeneity | Index,ECONOMIC VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Labor-intensive industrial cluster | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Old urban areas and urban villages | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Wholesale markets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Sports stadiums | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Malls and supermarkets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Grocers | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Bars and clubs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,High schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,ATMs and banks | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Carparks | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Bus stops | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Density of road network | Density,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Distance of Journey to Crime | Distance,DISTANCE & ACCESSIBILITY VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Arrest data | Number,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,POI data | Number,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Traffic road network vector map data | Number,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Bus stop data | Number,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Mobile phone data | Number,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Distance of journey to crime | Distance,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Ambient population | Number,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Crime prevention | Percentage,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,Proportion of migrants | Percentage,TEMPORAL & CONTROL VARIABLES,18
+Do Migrant and Native Robbers Target Different Places?,25 for both models | Number,MODEL FIT & PERFORMANCE METRICS,18
+Do Migrant and Native Robbers Target Different Places?,"147), sports stadiums (OR=0.816), transportation hubs (OR=1.052), subway stations (OR=1.038). | Number",MAJOR FINDINGS & RESULTS,18
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Gender | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Racial and Ethnic Background | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Age | Number,DEMOGRAPHIC & SOCIAL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Total Population | Number,DEMOGRAPHIC & SOCIAL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Racial and Ethnic Composition | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Ethnic Diversity | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Presence of High Schools | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Presence of legal cash economies | Binary,ECONOMIC VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Presence of illegal cash economies | Binary,ECONOMIC VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Business density | Binary,ECONOMIC VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Accessibility | Binary,ECONOMIC VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Block population | Number,ECONOMIC VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Racial/ethnic composition | Binary,ECONOMIC VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Presence of legal cash economies | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Presence of illegal cash economies | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,High schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Bars and clubs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,"Restaurants, fast-food outlets, and food stands | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Barber shops and beauty salons | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Liquor stores | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Grocery stores | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,General merchandise shops | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Gas stations | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Laundromats | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,"Pawnshops, currency exchange, and check-cashing services | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Non-residential census blocks | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Distance between offender homes and robbery locations within census block | Distance,DISTANCE & ACCESSIBILITY VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Euclidean distances between offender homes and census block midpoints | Distance,DISTANCE & ACCESSIBILITY VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Accessibility: Block on main street | Binary,DISTANCE & ACCESSIBILITY VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Accessibility: Block with El station | Binary,DISTANCE & ACCESSIBILITY VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Home-crime distance distribution | Distance,DISTANCE & ACCESSIBILITY VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Negative log of distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Time of Day | Number,TEMPORAL & CONTROL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Day of Week | Number,TEMPORAL & CONTROL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Distance from Home | Distance,TEMPORAL & CONTROL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,Random Sampling | Number,TEMPORAL & CONTROL VARIABLES,19
+Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago,5% of addresses; could not identify offenders across multiple robberies. | Percentage,DATA PREPARATION & PROCESSING,19
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Percentage of owner-occupied dwellings | Percentage,ECONOMIC VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Average real estate value of residential units | Percentage,ECONOMIC VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Home ownership | Percentage,ECONOMIC VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Residential units' visible cues | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Public facilities in the central business district | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Likelihood of successful completion | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Social cohesion and collective efficacy | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Mobility of burglars | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Journey-to-crime | Distance,DISTANCE & ACCESSIBILITY VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Distance decay pattern | Rate,DISTANCE & ACCESSIBILITY VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",SWEBER (spatially weighted burglar exposition rate) | Rate,DISTANCE & ACCESSIBILITY VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Proximity to CBD | Distance,DISTANCE & ACCESSIBILITY VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Concentric zone model | Distance,DISTANCE & ACCESSIBILITY VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Ethnic Heterogeneity | Number,TEMPORAL & CONTROL VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Residential Mobility | Rate,TEMPORAL & CONTROL VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Real Estate Value | Percentage,TEMPORAL & CONTROL VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Home Ownership | Percentage,TEMPORAL & CONTROL VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Proximity to Central Business District | Distance,TEMPORAL & CONTROL VARIABLES,20
+"EFFECTS OF ATTRACTIVENESS, OPPORTUNITY AND ACCESSIBILITY TO BURGLARS ON RESIDENTIAL BURGLARY RATES OF URBAN NEIGHBORHOODS",Moran's I Statistic | Number,TEMPORAL & CONTROL VARIABLES,20
+Effects of residential history on commercial robbers' crime location choices,Population density | Distance,DEMOGRAPHIC & SOCIAL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Population size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Population percentages of 15-25-year-old | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Foreign-born residents | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Single residents | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Mean value of residential property | Number,ECONOMIC VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Postal code area characteristics | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Distance to the nearest highway ramp | Distance,DISTANCE & ACCESSIBILITY VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Distance between current residence and crime location | Distance,DISTANCE & ACCESSIBILITY VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Distance to the nearest highway ramp | Distance,TEMPORAL & CONTROL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Mean value of residential property | Number,TEMPORAL & CONTROL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Population density | Distance,TEMPORAL & CONTROL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Population size | Number,TEMPORAL & CONTROL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,"Population percentages of 15-25-year-old, foreign-born, and single residents | Percentage",TEMPORAL & CONTROL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Distance decay | Percentage,TEMPORAL & CONTROL VARIABLES,21
+Effects of residential history on commercial robbers' crime location choices,Duration of residence | Percentage,TEMPORAL & CONTROL VARIABLES,21
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Gender | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Age | Number,DEMOGRAPHIC & SOCIAL VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Number of premises per SA2 | Number,ECONOMIC VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Number of business units in commercial or public industries | Number,ECONOMIC VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Number of households | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Number of business units in any industry | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Number of business units in commercial industries | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Number of business units in commercial or public industries | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Opportunity Variables | Number,TEMPORAL & CONTROL VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,Distance Bands | Distance,TEMPORAL & CONTROL VARIABLES,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,27 to 0.36. | Number,MODEL FIT & PERFORMANCE METRICS,22
+Familiar Locations and Similar Activities: Examining the Contributions of Reliable and Relevant Knowledge in Offenders' Crime Location Choices,06 for residential burglary). | Number,MAJOR FINDINGS & RESULTS,22
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Population density | Number,DEMOGRAPHIC & SOCIAL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Proportion of single-person households | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Proportion of residents with a non-Western background | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Average population size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Urban nature of the study area | Number,DEMOGRAPHIC & SOCIAL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Ethnic diversity | Number,DEMOGRAPHIC & SOCIAL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Population Density | Distance,ECONOMIC VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Proportion of Single-Person Households | Percentage,ECONOMIC VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Proportion of Residents with a Non-Western Background | Percentage,ECONOMIC VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Number of Retail Stores | Number,ECONOMIC VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Number of Hotels Restaurants Bars | Number,ECONOMIC VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Number of Schools | Number,ECONOMIC VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,"Number of Culture, Health-Care, and Sports/Leisure Facilities | Number",ECONOMIC VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Number of People Working | Number,ECONOMIC VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Retail stores | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Bars/nightlife | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,"Culture, health-care, and sports/leisure facilities | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Guardianship | Index,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Euclidean Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Previous Crime Location | Binary,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Distance | Distance,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Population Density | Distance,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Single-Person Households | Percentage,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Non-Western Background | Percentage,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Retail Stores | Number,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Hotels Restaurants Bars | Number,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,Schools | Number,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,"Culture, Health-Care, and Sports/Leisure Facilities | Number",TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,People Working | Number,TEMPORAL & CONTROL VARIABLES,23
+FAMILY MATTERS: EFFECTS OF FAMILY MEMBERS' RESIDENTIAL AREAS ON CRIME LOCATION CHOICE *,"88), former familial residential areas (OR = 1.37). | Number",MAJOR FINDINGS & RESULTS,23
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Age | Number,DEMOGRAPHIC & SOCIAL VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Indigenous Status | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Sex | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Population Size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Population Density | Distance,DEMOGRAPHIC & SOCIAL VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Ethnic Heterogeneity | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Residential Mobility Rates | Rate,DEMOGRAPHIC & SOCIAL VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Total Residential Units | Distance,DEMOGRAPHIC & SOCIAL VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Victim Suburb Weekly Income | Number,ECONOMIC VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Socio-Economic Index for Areas (SEIFA) | Index,ECONOMIC VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Median Weekly Income Bracket | Number,ECONOMIC VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Physical Barriers - Swan River | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Physical Barriers - Major Roads | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Connectors - Train Network | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Land Use - Suburb Size | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,Land Use - Population Density | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,W ij | Binary,DISTANCE & ACCESSIBILITY VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,F ij | Binary,DISTANCE & ACCESSIBILITY VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,T ij | Binary,DISTANCE & ACCESSIBILITY VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,D ij | Distance,DISTANCE & ACCESSIBILITY VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,A i/J i | Binary,DISTANCE & ACCESSIBILITY VARIABLES,24
+Formal Evaluation of the Impact of Barriers and Connectors on Residential Burglars' Macro-Level Offending Location Choices,08 (full model) and 2.34 (restricted sample). | Number,MAJOR FINDINGS & RESULTS,24
+Go where the money is: modeling street robbers' location choices,Total number of residents in the census block | Number,DEMOGRAPHIC & SOCIAL VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Racial and ethnic composition of the population | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Age of offenders | Number,DEMOGRAPHIC & SOCIAL VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Gender of offenders | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Racial and ethnic background of offenders | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Presence of legal cash economies | Number,ECONOMIC VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Presence of illegal cash economies | Number,ECONOMIC VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Accessibility of a block | Binary,ECONOMIC VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Racial and ethnic segregation | Binary,ECONOMIC VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Presence of legal cash economies | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Presence of illegal cash economies | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Presence of high schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Presence of El stations | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Land use and activities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Euclidean Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Accessibility Along Main Streets | Binary,DISTANCE & ACCESSIBILITY VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Proximity to El Stations | Binary,DISTANCE & ACCESSIBILITY VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Social Barriers | Number,DISTANCE & ACCESSIBILITY VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Accessibility | Distance,TEMPORAL & CONTROL VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Spatial Lags | Number,TEMPORAL & CONTROL VARIABLES,25
+Go where the money is: modeling street robbers' location choices,Racial/Ethnic Composition | Number,TEMPORAL & CONTROL VARIABLES,25
+Graffiti Writers Choose Locations That Optimize Exposure,Presence of Schools | Number,DEMOGRAPHIC & SOCIAL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Residential Units | Number,DEMOGRAPHIC & SOCIAL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Residential Units | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Bars | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Night Shops | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Nightclubs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Restaurants | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Trees | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Broken Windows | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Street Segment Type | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Street Segments | Number,DISTANCE & ACCESSIBILITY VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Bridges | Distance,DISTANCE & ACCESSIBILITY VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Intersections | Distance,DISTANCE & ACCESSIBILITY VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Trams and Buses | Number,DISTANCE & ACCESSIBILITY VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Betweenness | Distance,DISTANCE & ACCESSIBILITY VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Type of Street Segment | Binary,TEMPORAL & CONTROL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Presence of Bars | Binary,TEMPORAL & CONTROL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Presence of Night Shops | Binary,TEMPORAL & CONTROL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Presence of Nightclubs | Binary,TEMPORAL & CONTROL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Presence of Restaurants | Binary,TEMPORAL & CONTROL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Presence of Schools | Binary,TEMPORAL & CONTROL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,Presence of Trees | Binary,TEMPORAL & CONTROL VARIABLES,26
+Graffiti Writers Choose Locations That Optimize Exposure,993 for Model 2 | Number,MODEL FIT & PERFORMANCE METRICS,26
+Graffiti Writers Choose Locations That Optimize Exposure,"065 for bars, 1.302 for night shops, 1.084 for nightclubs, 1.058 for restaurants, 1.235 for schools, and 1.034 for residential units. | Number",MAJOR FINDINGS & RESULTS,26
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Residential Mobility | Number,DEMOGRAPHIC & SOCIAL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Age of Burglar | Number,DEMOGRAPHIC & SOCIAL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Ethnic Origin of Burglar | Number,DEMOGRAPHIC & SOCIAL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Average Residential Real Estate Value | Percentage,ECONOMIC VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Percentage of single-family dwellings | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Number of residential units | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Proximity to Offender's Home | Distance,DISTANCE & ACCESSIBILITY VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Proximity to City Centre | Distance,DISTANCE & ACCESSIBILITY VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Distance Between Neighbourhoods | Distance,DISTANCE & ACCESSIBILITY VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Proximity to City Centre | Distance,TEMPORAL & CONTROL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Proximity to Burglar's Home | Distance,TEMPORAL & CONTROL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Ethnic Heterogeneity | Index,TEMPORAL & CONTROL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Residential Mobility | Rate,TEMPORAL & CONTROL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Real Estate Value | Percentage,TEMPORAL & CONTROL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Number of Residential Units | Number,TEMPORAL & CONTROL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Age of Burglar | Number,TEMPORAL & CONTROL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,Ethnic Origin of Burglar | Binary,TEMPORAL & CONTROL VARIABLES,27
+HOW DO RESIDENTIAL BURGLARS SELECT TARGET AREAS? A New Approach to the Analysis of Criminal Location Choice,"13. A 10-unit increase in ethnic heterogeneity increases the odds by a factor of 1.15. A 1-kilometer decrease in distance from the offender's home increases the odds by a factor of 1.67. A 1,000-unit increase in residential units increases the odds by a factor of 1.35. | Distance",MAJOR FINDINGS & RESULTS,27
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Percent migrants | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Number of people on the street | Number,DEMOGRAPHIC & SOCIAL VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Percent migrants | Percentage,ECONOMIC VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Percent lowly-rent houses | Percentage,ECONOMIC VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Fences | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Walls | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Windows | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Grass | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Sidewalks | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Plants | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Number of people on the street | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Commercial interfaces | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Shops facing the street | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Buildings along the street | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Streetlights | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Surveillance cameras | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Trees | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Lawns | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,ATMs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Banks | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Subway stations | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Bus stops | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Hospitals | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Offender Residence-Crime Proximity | Distance,DISTANCE & ACCESSIBILITY VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Residence-crime proximity | Distance,TEMPORAL & CONTROL VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Crime attractors | Number,TEMPORAL & CONTROL VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Crime generators | Rate,TEMPORAL & CONTROL VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Crime detractors | Number,TEMPORAL & CONTROL VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Percent migrants | Percentage,TEMPORAL & CONTROL VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,Percent lowly-rent houses | Percentage,TEMPORAL & CONTROL VARIABLES,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,"87, Model 2 = 17446.9 | Number",MODEL FIT & PERFORMANCE METRICS,28
+Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model,114. | Number,MAJOR FINDINGS & RESULTS,28
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Population Turnover | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Ethnic Diversity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Total Number of Households | Number,DEMOGRAPHIC & SOCIAL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Average House Price | Number,ECONOMIC VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Total Number of Households | Number,ECONOMIC VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Population Turnover | Number,ECONOMIC VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Accessible residential properties | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,"Connectors (e.g., transit lines) | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,"Barriers (e.g., wide rivers) | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Street permeability | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Higher altitude | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Train stations | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Total number of households | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Average house price | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Ethnic diversity | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Population turnover | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Distance to city center | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Distance to Offender's Residence | Distance,DISTANCE & ACCESSIBILITY VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Distance to City Center | Distance,DISTANCE & ACCESSIBILITY VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Presence of Train Stations | Binary,DISTANCE & ACCESSIBILITY VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Presence of Bus Stations | Binary,DISTANCE & ACCESSIBILITY VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Temporal Categories | Number,TEMPORAL & CONTROL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Distance to Residence | Distance,TEMPORAL & CONTROL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Distance to City Center | Distance,TEMPORAL & CONTROL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Total Number of Households | Number,TEMPORAL & CONTROL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Average House Price | Number,TEMPORAL & CONTROL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Ethnic Diversity | Index,TEMPORAL & CONTROL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,Population Turnover | Rate,TEMPORAL & CONTROL VARIABLES,29
+LEARNING WHERE TO OFFEND EFFECTS OF PAST ON FUTURE BURGLARY LOCATIONS,"6 for same LSOA within 2 days, 3.6 for same MSOA within 2 days; distance from residence decreases odds by 42% per kilometer. | Percentage",MAJOR FINDINGS & RESULTS,29
+Location Choice of Snatching Offenders in Chennai City,Population size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Average population per ward | Number,DEMOGRAPHIC & SOCIAL VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Age structure of offenders | Number,DEMOGRAPHIC & SOCIAL VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Gender ratio of offenders | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Retail businesses | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,"Religious facilities (temples, churches, mosques) | Percentage",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,"Educational institutions (schools, colleges) | Percentage",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Marriage halls | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Jewelry shops | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,"Personal care facilities (barbershops, beauty parlors) | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Restaurants | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,"Medical facilities (hospitals, medical services) | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Home-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Journey to crime | Distance,DISTANCE & ACCESSIBILITY VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Distance to ward centroids | Distance,DISTANCE & ACCESSIBILITY VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Transport hubs | Number,DISTANCE & ACCESSIBILITY VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Public transport usage | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Ward Area | Percentage,TEMPORAL & CONTROL VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,Ward Population | Number,TEMPORAL & CONTROL VARIABLES,30
+Location Choice of Snatching Offenders in Chennai City,6 million | Number,STUDY CONTEXT & GEOGRAPHY,30
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Number of Residents | Number,DEMOGRAPHIC & SOCIAL VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Age Composition | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Ethnic Composition | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Average Value of Properties | Number,ECONOMIC VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Number of Residential Properties | Number,ECONOMIC VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Residential Units | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Spatial Competition | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Euclidean Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Physical Barriers | Number,DISTANCE & ACCESSIBILITY VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Journey-to-Crime Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Spatial Competition Variable | Number,DISTANCE & ACCESSIBILITY VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Home-to-Target Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Distance between burglar's home and target address | Distance,TEMPORAL & CONTROL VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Number of residential units in postal code areas | Number,TEMPORAL & CONTROL VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Ethnic composition of population in postal code areas | Percentage,TEMPORAL & CONTROL VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,Spatial competition variable | Number,TEMPORAL & CONTROL VARIABLES,31
+Modeling Micro-Level Crime Location Choice: Application of the Discrete Choice Framework to Crime at Places,91 for juveniles and 2.77 for adults; native Dutch burglars decrease choice probability by a factor of 0.92 for ethnically mixed areas. | Number,MAJOR FINDINGS & RESULTS,31
+Modelling taste heterogeneity regarding offence location choices,Ethnic heterogeneity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Residential Churn | Index,DEMOGRAPHIC & SOCIAL VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Gender | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Age group | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Affluence | Number,ECONOMIC VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Number of potential targets | Number,ECONOMIC VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Number of potential targets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Distance from the offender's home | Distance,DISTANCE & ACCESSIBILITY VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Distance from the city centre | Distance,DISTANCE & ACCESSIBILITY VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,Road network data | Distance,DISTANCE & ACCESSIBILITY VARIABLES,32
+Modelling taste heterogeneity regarding offence location choices,"48 and 4.45, respectively. | Number",MODEL FIT & PERFORMANCE METRICS,32
+Modelling the spatial decision making of terrorists: the discrete choice approach,Number of PIRA members | Number,DEMOGRAPHIC & SOCIAL VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Residential segregation | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Recognition as strangers | Binary,DEMOGRAPHIC & SOCIAL VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Major Road | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Police Station | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Military Base | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,River | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Home-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Distance to city center | Distance,DISTANCE & ACCESSIBILITY VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Euclidean distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Ghosh distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,Major thoroughfares | Binary,DISTANCE & ACCESSIBILITY VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,River as barrier | Binary,DISTANCE & ACCESSIBILITY VARIABLES,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,001) | Number,MODEL FIT & PERFORMANCE METRICS,33
+Modelling the spatial decision making of terrorists: the discrete choice approach,"61 for distance, e  = 1.77 for major roads, e  = 13.78 for military bases or police stations. | Distance",MAJOR FINDINGS & RESULTS,33
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Population Density | Distance,DEMOGRAPHIC & SOCIAL VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Household Size/Composition | Number,DEMOGRAPHIC & SOCIAL VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Demographic Characteristics of Offenders | Number,DEMOGRAPHIC & SOCIAL VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Number of dwellings | Number,ECONOMIC VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Total number of business units | Number,ECONOMIC VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Number of business units in industry categories | Number,ECONOMIC VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Number of business units in commercial or public industries | Number,ECONOMIC VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Number of dwellings | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Total number of business units | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Number of business units in industry categories | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Number of business units in commercial or public industries | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Prior crimes | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Median Nearest Neighbor Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Temporal Filter | Number,TEMPORAL & CONTROL VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Recency of Prior Crimes | Number,TEMPORAL & CONTROL VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Spatial Unit | Number,TEMPORAL & CONTROL VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,Opportunity | Number,TEMPORAL & CONTROL VARIABLES,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,35 and 0.42 | Number,MODEL FIT & PERFORMANCE METRICS,34
+Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data,22 to 235 times more likely to offend near certain activity nodes. | Number,MAJOR FINDINGS & RESULTS,34
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Residential Stability | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Single-Parent Households | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Percentage of Black Residents | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Percentage of Latino Residents | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Social Disorganization | Index,DEMOGRAPHIC & SOCIAL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Social Cohesion | Index,DEMOGRAPHIC & SOCIAL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Concentrated Disadvantage Index | Rate,ECONOMIC VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Median Income | Number,ECONOMIC VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Median Home Value | Number,ECONOMIC VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Percentage of Residents Below Poverty | Percentage,ECONOMIC VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Percentage of Unemployed | Percentage,ECONOMIC VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Percentage of Occupied Units | Percentage,ECONOMIC VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Routine Activities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Social Cohesion | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Residential Instability | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Racial/Ethnic Heterogeneity | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Anonymity | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Home-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Euclidean distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Distance squared | Distance,DISTANCE & ACCESSIBILITY VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Normalization of Data | Number,TEMPORAL & CONTROL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Distance Squared | Distance,TEMPORAL & CONTROL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Centering of Distance Measures | Distance,TEMPORAL & CONTROL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,Series of Models | Number,TEMPORAL & CONTROL VARIABLES,35
+Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?,0%; distance inversely related to targeting likelihood. | Percentage,MAJOR FINDINGS & RESULTS,35
+Residential burglary target selection: An analysis at the property-level using Google Street View,Collective Efficacy | Number,DEMOGRAPHIC & SOCIAL VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Social Trust | Number,DEMOGRAPHIC & SOCIAL VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Informal Social Control | Number,DEMOGRAPHIC & SOCIAL VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Wealth | Distance,ECONOMIC VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Surveillability | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Accessibility | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Ease of Escape | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Distance to nearest main road | Distance,DISTANCE & ACCESSIBILITY VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Distance to nearest street corner | Distance,DISTANCE & ACCESSIBILITY VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Number of escape routes | Number,DISTANCE & ACCESSIBILITY VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Property at end of row | Binary,DISTANCE & ACCESSIBILITY VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Number of boundaries shared with public areas | Number,DISTANCE & ACCESSIBILITY VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Property setback from street | Binary,DISTANCE & ACCESSIBILITY VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Presence of business | Binary,TEMPORAL & CONTROL VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Mixed land-use | Binary,TEMPORAL & CONTROL VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,House type | Binary,TEMPORAL & CONTROL VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,Fixed effects analysis | Number,TEMPORAL & CONTROL VARIABLES,36
+Residential burglary target selection: An analysis at the property-level using Google Street View,"48), ease of escape (OR = 1.61), accessibility (OR = 1.46). | Distance",MAJOR FINDINGS & RESULTS,36
+"Right place, right time? Making crime pattern theory time-specific",Home occupancy in residential neighbourhoods | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Number of cars parked on a parking lot | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Presence of locks and escape routes | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Residences | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Jobs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Sports activities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Shopping | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Going out | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Neighbourhoods of offenders' activity nodes | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Spatial Lags | Distance,DISTANCE & ACCESSIBILITY VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Neighbourhood Proximity | Distance,DISTANCE & ACCESSIBILITY VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Geocoded Neighbourhoods | Number,DISTANCE & ACCESSIBILITY VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Neighbourhood routinely visited at same time of day as crime event | Binary,TEMPORAL & CONTROL VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Neighbourhood routinely visited at different time of day as crime event | Binary,TEMPORAL & CONTROL VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Time of day | Binary,TEMPORAL & CONTROL VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Crime committed in neighbourhood | Binary,TEMPORAL & CONTROL VARIABLES,37
+"Right place, right time? Making crime pattern theory time-specific",Pseudo-R 2 | Number,TEMPORAL & CONTROL VARIABLES,37
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Ethnic-heterogeneity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Socioeconomic heterogeneity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Population turnover | Number,DEMOGRAPHIC & SOCIAL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Residential mobility | Index,DEMOGRAPHIC & SOCIAL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Affluence | Number,ECONOMIC VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Ambient Guardianship | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Movement Potential | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Through Movement | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Activity Nodes | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Estimated Travel Time | Number,DISTANCE & ACCESSIBILITY VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Euclidean Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Network Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Road Network Configuration | Percentage,DISTANCE & ACCESSIBILITY VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Idiosyncratic Farness | Number,DISTANCE & ACCESSIBILITY VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Closeness Centrality | Number,DISTANCE & ACCESSIBILITY VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Pedestrian Travel Time | Number,DISTANCE & ACCESSIBILITY VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Vehicular Travel Time | Number,DISTANCE & ACCESSIBILITY VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Residential mobility | Index,TEMPORAL & CONTROL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Socioeconomic heterogeneity | Index,TEMPORAL & CONTROL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Affluence | Number,TEMPORAL & CONTROL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Ethnic heterogeneity | Index,TEMPORAL & CONTROL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,Number of dwellings | Number,TEMPORAL & CONTROL VARIABLES,38
+ROLE OF THE STREET NETWORK IN BURGLARS' SPATIAL DECISION-MAKING *,"3 to 28.4 (× 10 -4 ), indicating better fit than CL and null models. | Number",MODEL FIT & PERFORMANCE METRICS,38
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Population Density | Number,DEMOGRAPHIC & SOCIAL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Ethnic Heterogeneity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Population Turnover | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Schools | Number,DEMOGRAPHIC & SOCIAL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Poverty | Percentage,ECONOMIC VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Population density | Number,ECONOMIC VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Ethnic heterogeneity | Index,ECONOMIC VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Bars | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Transit Stations | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Shopping Centers | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Pedestrian-Oriented Street Density | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Auto-Oriented Street Density | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Auto-oriented street density | Distance,DISTANCE & ACCESSIBILITY VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Pedestrian-oriented street density | Distance,DISTANCE & ACCESSIBILITY VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Spatial Lag Operator | Number,TEMPORAL & CONTROL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Solo Crime Rate | Rate,TEMPORAL & CONTROL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Population Density | Number,TEMPORAL & CONTROL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Racial/Ethnic Heterogeneity | Index,TEMPORAL & CONTROL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Population Turnover | Percentage,TEMPORAL & CONTROL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,Poverty | Percentage,TEMPORAL & CONTROL VARIABLES,39
+Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces,2%; each unit increase in pedestrian-oriented street density increases group crime rate by 2.8%. | Percentage,MAJOR FINDINGS & RESULTS,39
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,P.CARE.PH | Number,ECONOMIC VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,FAM.DENSITY | Density,ECONOMIC VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,D.HIGHWAY | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,FAM.DENSITY | Density,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,P.CARE.PH | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,D.HOSPITAL | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,D.HIGHWAY | Distance,DISTANCE & ACCESSIBILITY VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,D.HOSPITAL | Distance,DISTANCE & ACCESSIBILITY VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,Time | Number,TEMPORAL & CONTROL VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,Location | Number,TEMPORAL & CONTROL VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,Census Data | Number,TEMPORAL & CONTROL VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,Distance Values | Distance,TEMPORAL & CONTROL VARIABLES,40
+Spatial analysis with preference specification of latent decision makers for criminal event prediction,DST were removed due to uniform distribution. | Number,DATA PREPARATION & PROCESSING,40
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Population Churn Rates | Rate,DEMOGRAPHIC & SOCIAL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Ethnic Heterogeneity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Number of Schools | Number,DEMOGRAPHIC & SOCIAL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Age Distribution | Number,DEMOGRAPHIC & SOCIAL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Propinquity | Distance,DEMOGRAPHIC & SOCIAL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Social Disorganization | Number,DEMOGRAPHIC & SOCIAL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Index of Multiple Deprivation (IMD) | Index,ECONOMIC VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Routine Activity Nodes | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Transport Hubs | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Retail Centers | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,River Thames | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Home-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Distance to city center | Distance,DISTANCE & ACCESSIBILITY VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Presence of underground station | Binary,DISTANCE & ACCESSIBILITY VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Thames River barrier | Binary,DISTANCE & ACCESSIBILITY VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Propinquity | Distance,DISTANCE & ACCESSIBILITY VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Contagion measure | Number,DISTANCE & ACCESSIBILITY VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Prior Offenses | Number,TEMPORAL & CONTROL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Propinquity | Distance,TEMPORAL & CONTROL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Contagion | Number,TEMPORAL & CONTROL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Discrete Choice Approach | Number,TEMPORAL & CONTROL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Population Churn Rates | Rate,TEMPORAL & CONTROL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Ethnic Heterogeneity | Index,TEMPORAL & CONTROL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Deprivation | Index,TEMPORAL & CONTROL VARIABLES,41
+TARGET CHOICE DURING EXTREME EVENTS: A DISCRETE SPATIAL CHOICE MODEL OF THE 2011 LONDON RIOTS *,Population Density | Number,TEMPORAL & CONTROL VARIABLES,41
+Target Selection Models with Preference Variation Between Offenders,Residential mobility | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Social cohesion | Number,DEMOGRAPHIC & SOCIAL VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Ethnicity/race | Number,DEMOGRAPHIC & SOCIAL VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Collective efficacy | Number,DEMOGRAPHIC & SOCIAL VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Mean housing repayment | Number,ECONOMIC VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Number of households | Number,ECONOMIC VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Target Vulnerability | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,City Center Proximity | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Proximity to city center | Distance,DISTANCE & ACCESSIBILITY VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Proximity | Distance,DISTANCE & ACCESSIBILITY VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,Distance to crime | Distance,DISTANCE & ACCESSIBILITY VARIABLES,42
+Target Selection Models with Preference Variation Between Offenders,"028, Root likelihood for mixed logit = 0.151 | Number",MODEL FIT & PERFORMANCE METRICS,42
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Population density | Number,DEMOGRAPHIC & SOCIAL VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Household size/composition | Number,DEMOGRAPHIC & SOCIAL VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Population turnover | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Socioeconomic Heterogeneity | Index,ECONOMIC VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,City Centers | Distance,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Major Roads | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Train Stations | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Home-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Distance to city center | Distance,DISTANCE & ACCESSIBILITY VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Connectivity via major roads | Binary,DISTANCE & ACCESSIBILITY VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Adjacency | Binary,DISTANCE & ACCESSIBILITY VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Robust Standard Errors | Number,TEMPORAL & CONTROL VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Unit of Analysis | Number,TEMPORAL & CONTROL VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Random Utility Model | Number,TEMPORAL & CONTROL VARIABLES,43
+Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model,Interaction Terms | Number,TEMPORAL & CONTROL VARIABLES,43
+The Importance of Importance Sampling,Number of households in the SA2 | Number,ECONOMIC VARIABLES,44
+The Importance of Importance Sampling,Number of business units in any industry | Number,ECONOMIC VARIABLES,44
+The Importance of Importance Sampling,Number of business units for industries targeted in commercial robbery | Number,ECONOMIC VARIABLES,44
+The Importance of Importance Sampling,Number of commercial or public business units | Number,ECONOMIC VARIABLES,44
+The Importance of Importance Sampling,Number of households in SA2 | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,44
+The Importance of Importance Sampling,Number of business units in any industry | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,44
+The Importance of Importance Sampling,Number of business units for targeted industries | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,44
+The Importance of Importance Sampling,Number of commercial or public business units | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,44
+The Importance of Importance Sampling,Presence of activity nodes in SA2 | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,44
+The Importance of Importance Sampling,Day-of-week effects | Binary,TEMPORAL & CONTROL VARIABLES,44
+The Importance of Importance Sampling,Time-of-day effects | Binary,TEMPORAL & CONTROL VARIABLES,44
+The Importance of Importance Sampling,Year dummies | Binary,TEMPORAL & CONTROL VARIABLES,44
+The Importance of Importance Sampling,Opportunity measures | Number,TEMPORAL & CONTROL VARIABLES,44
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Gender | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Age | Number,DEMOGRAPHIC & SOCIAL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Residential Population Density | Distance,DEMOGRAPHIC & SOCIAL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Employee Density | Distance,DEMOGRAPHIC & SOCIAL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Median Residential Population | Number,DEMOGRAPHIC & SOCIAL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Residential Population Density | Distance,ECONOMIC VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Employee Density | Distance,ECONOMIC VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Residential population density | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Employee density | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Dominant land use function | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Crime attractors | Binary,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Visiting frequency | Rate,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Proximity to Residential Area | Binary,DISTANCE & ACCESSIBILITY VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Proximity to Activity Nodes | Binary,DISTANCE & ACCESSIBILITY VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Neighbourhood Boundaries | Number,DISTANCE & ACCESSIBILITY VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Time of Offense | Number,TEMPORAL & CONTROL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Spatial Lag | Binary,TEMPORAL & CONTROL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Residential Population Density | Distance,TEMPORAL & CONTROL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,Employee Density | Distance,TEMPORAL & CONTROL VARIABLES,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,"304, Model 2 = 0.479, Model 3 = 0.490 | Number",MODEL FIT & PERFORMANCE METRICS,45
+THE INFLUENCE OF ACTIVITY SPACE AND VISITING FREQUENCY ON CRIME LOCATION CHOICE: FINDINGS FROM AN ONLINE SELF-REPORT SURVEY,"6; OR for very frequently visited nodes = 7,845.3. | Number",MAJOR FINDINGS & RESULTS,45
+The usefulness of past crime data as an attractiveness index for residential burglars,Proportion of foreigners | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Proportion of newcomers | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Number of residential units | Number,DEMOGRAPHIC & SOCIAL VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Proportion of single-family dwellings | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Real Estate Value of Residences | Index,ECONOMIC VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Number of Residential Units | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Proportion of Single-Family Dwellings | Percentage,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Crime Attractors | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Road Structure | Rate,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Distance from offender's residence | Distance,DISTANCE & ACCESSIBILITY VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Distance from city center | Distance,DISTANCE & ACCESSIBILITY VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Number of past residential burglaries | Number,TEMPORAL & CONTROL VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,Past residential burglary rate | Rate,TEMPORAL & CONTROL VARIABLES,46
+The usefulness of past crime data as an attractiveness index for residential burglars,"70), number of residential units (1.05), proportion of single-family dwellings (1.06), number of past residential burglaries (1.16), past residential burglary rate (1.79). | Percentage",MAJOR FINDINGS & RESULTS,46
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Racial/Ethnic Heterogeneity | Index,DEMOGRAPHIC & SOCIAL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Percent Occupied Housing Units | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Percent Black Residents | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Percent Latino Residents | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Residential Stability | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Concentrated Disadvantage | Percentage,ECONOMIC VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Residential Stability | Percentage,ECONOMIC VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Percent Occupied Housing Units | Percentage,ECONOMIC VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Gini Coefficient | Index,ECONOMIC VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Activity spaces | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Structural elements | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Socially organized areas | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Routine activities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Hangouts and loitering hotspots | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Euclidean Distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Average Distance Traveled | Distance,DISTANCE & ACCESSIBILITY VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Distance Squared | Distance,DISTANCE & ACCESSIBILITY VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Concentrated Disadvantage | Rate,TEMPORAL & CONTROL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Residential Stability | Index,TEMPORAL & CONTROL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Racial/Ethnic Heterogeneity | Index,TEMPORAL & CONTROL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Percent Occupied Housing Units | Percentage,TEMPORAL & CONTROL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Gini Coefficient | Index,TEMPORAL & CONTROL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Racial Composition | Percentage,TEMPORAL & CONTROL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Discrete Choice Modeling Framework | Number,TEMPORAL & CONTROL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,Seemingly Unrelated Estimation | Number,TEMPORAL & CONTROL VARIABLES,47
+Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions,25. | Number,MAJOR FINDINGS & RESULTS,47
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Gender | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Age | Number,DEMOGRAPHIC & SOCIAL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Marital Status | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Birthplace | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Education Level | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Population Size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Population Distribution | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Potential Customer Density | Distance,ECONOMIC VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Presence of Retail and Entertainment Businesses | Number,ECONOMIC VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Accessibility | Distance,ECONOMIC VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Activity Level | Number,ECONOMIC VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Presence of retail and entertainment businesses | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,General activity level | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,"Bars, clubs, coffeeshops, and smartshops | Number",ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,CCTV cameras | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Territoriality | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Physical disorder | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Accessibility of the location | Distance,DISTANCE & ACCESSIBILITY VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,General activity level of the location | Number,DISTANCE & ACCESSIBILITY VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Average length of street segments | Distance,DISTANCE & ACCESSIBILITY VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Time of Day | Number,TEMPORAL & CONTROL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Day of Week | Number,TEMPORAL & CONTROL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Social Control | Number,TEMPORAL & CONTROL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Territoriality | Number,TEMPORAL & CONTROL VARIABLES,48
+Where Do Dealers Solicit Customers and Sell Them Drugs? A Micro-Level Multiple Method Study,Social Disorder | Number,TEMPORAL & CONTROL VARIABLES,48
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Population size | Number,DEMOGRAPHIC & SOCIAL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Racial and ethnic composition | Percentage,DEMOGRAPHIC & SOCIAL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Collective efficacy | Index,DEMOGRAPHIC & SOCIAL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Age of offenders | Number,DEMOGRAPHIC & SOCIAL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Sex of offenders | Number,DEMOGRAPHIC & SOCIAL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Presence of illegal markets | Number,ECONOMIC VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,"Cash-intensive businesses (check-cashing outlets, ATMs, pawn shops, bars) | Number",ECONOMIC VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Deprived areas/cash economies | Number,ECONOMIC VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Retail employment | Density,ECONOMIC VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Presence of illegal markets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Check-cashing outlets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Automatic teller machines (ATMs) | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Pawn shops | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Bars and taverns | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Drug markets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Prostitution markets | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,High schools | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Retail activities | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Collective efficacy | Number,ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Home-to-crime distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Euclidean distance | Distance,DISTANCE & ACCESSIBILITY VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Adjacency | Binary,DISTANCE & ACCESSIBILITY VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Racial and ethnic dissimilarity | Number,DISTANCE & ACCESSIBILITY VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Gang territorial dissimilarity | Number,DISTANCE & ACCESSIBILITY VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Time and Place of Incident | Number,TEMPORAL & CONTROL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Cross-Validation | Number,TEMPORAL & CONTROL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Collective Efficacy | Number,TEMPORAL & CONTROL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Social Barriers | Index,TEMPORAL & CONTROL VARIABLES,49
+WHERE OFFENDERS CHOOSE TO ATTACK: A DISCRETE CHOICE MODEL OF ROBBERIES IN CHICAGO*,Attractive Targets | Number,TEMPORAL & CONTROL VARIABLES,49

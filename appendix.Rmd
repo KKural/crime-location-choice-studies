@@ -1,0 +1,425 @@
+---
+title: "Appendix: Complete List of Included Studies"
+output: 
+  word_document:
+    reference_docx: reference.docx
+    toc: false
+    number_sections: false
+---
+
+<!-- 
+HOW TO RUN THIS SCRIPT:
+
+1. REQUIRED FILES AND FOLDER STRUCTURE:
+   - This .Rmd file should be in your main working directory
+   - Data file: "20250724_Final_data.xlsx" should be in the same folder as this .Rmd file
+   - BibTeX file: "export.bib" should be in the same folder as this .Rmd file
+   - Parser script: Create a folder called "Script" in the same directory, and place "bibtex_parser.R" inside it
+   - Optional: "reference.docx" for custom Word formatting (if you have specific formatting requirements)
+
+2. FOLDER STRUCTURE SHOULD LOOK LIKE:
+   YourWorkingDirectory/
+   ├── appendix.Rmd (this file)
+   ├── 20250724_Final_data.xlsx (your data)
+   ├── export.bib (your references)
+   ├── reference.docx (optional formatting template)
+   └── Script/
+       └── bibtex_parser.R (BibTeX parsing script)
+
+3. REQUIRED R PACKAGES:
+   The script will automatically load these packages. If you don't have them installed, run:
+   install.packages(c("flextable", "dplyr", "officer", "readxl", "stringr"))
+
+4. HOW TO RUN:
+   - Open this file in RStudio
+   - Click the "Knit" button at the top of the editor
+   - Or use Ctrl+Shift+K (Windows) / Cmd+Shift+K (Mac)
+   - The output will be a Word document named "appendix.docx"
+
+5. WHAT THE SCRIPT DOES:
+   - Reads your Excel data file and filters for included studies
+   - Creates a formatted table with study information
+   - Matches studies to BibTeX references and creates a reference list
+   - Exports everything to a Word document ready for publication
+
+6. TROUBLESHOOTING:
+   - If you get "file not found" errors, check that all files are in the correct locations
+   - If references don't match properly, check that your BibTeX file contains the studies
+   - If the table looks wrong, check that your Excel file has the expected column names
+-->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+# Load required packages
+library(flextable)  # For creating formatted tables
+library(dplyr)      # For data manipulation
+library(officer)    # For Word document formatting
+library(readxl)     # For reading Excel files
+library(stringr)    # For text processing
+
+# Source the BibTeX parser (if it exists)
+bibtex_script_path <- file.path("Script", "bibtex_parser.R")
+if (file.exists(bibtex_script_path)) {
+  source(bibtex_script_path)
+  cat("✓ BibTeX parser loaded successfully\n")
+} else {
+  cat("⚠ BibTeX parser not found at:", bibtex_script_path, "\n")
+  cat("References will use basic formatting if BibTeX file is not available\n")
+}
+```
+
+```{r data-preparation}
+# Load and prepare the data
+cat("📊 Loading data from Excel file...\n")
+data <- read_excel("20250724_Final_data.xlsx")
+cat("✓ Data loaded successfully:", nrow(data), "total records\n")
+
+# Filter for included studies and add Reference_ID
+data_included <- data %>%
+  filter(Inclusion_Exclusion == "Included") %>%
+  mutate(
+    # Clean the year formatting - handle both numeric years and "n.d."
+    Publication_Year_Clean = case_when(
+      grepl("n\\.d\\.|no date|nd", as.character(Publication_Year), ignore.case = TRUE) ~ "n.d.",
+      TRUE ~ as.character(as.numeric(gsub("[^0-9]", "", as.character(Publication_Year))))
+    ),
+    # For sorting purposes, convert n.d. to a large number so it appears last
+    Publication_Year_Sort = case_when(
+      Publication_Year_Clean == "n.d." ~ 9999,
+      TRUE ~ as.numeric(Publication_Year_Clean)
+    )
+  ) %>%
+  arrange(desc(Publication_Year_Sort)) %>%
+  mutate(Reference_ID = row_number()) %>%  # Add numbered references
+  select(Reference_ID, everything())
+
+cat("✓ Filtered to", nrow(data_included), "included studies\n")
+
+# Merge scenario and population variables
+data_included <- data_included %>%
+  mutate(Corruption_Scenarios_Merged = apply(select(., starts_with("Corruption_Scenarios")), 1, function(x) {
+    paste(na.omit(unique(x[x != ""])), collapse = ", ")
+  })) %>%
+  mutate(Target_Population_Merged = apply(select(., Public_Sector_Actors, Private_Sector_Actors, 
+                                                 General_Public, Students, 
+                                                 Demographic_Group, Target_Population_Other), 
+                                          1, function(x) {
+                                            paste(na.omit(unique(x[x != ""])), collapse = ", ")
+                                          }))
+
+# Create the appendix table with the existing Covidence ID
+appendix_table <- data_included %>%
+  select(
+    Reference_ID,
+    Covidence_ID,
+    Authors,
+    Publication_Year = Publication_Year_Clean,
+    Region,
+    Corruption_Scenarios_Merged,
+    Settings_Class,
+    Target_Population_Merged,
+    Techniques_Class,
+    Quality_Appraisal_Total_Score
+  ) %>%
+  mutate(
+    # Year is already in character format to handle both numeric years and "n.d."
+    Publication_Year = Publication_Year
+  )
+
+cat("✓ Appendix table prepared with", nrow(appendix_table), "studies\n")
+```
+
+This appendix provides a comprehensive overview of all studies included in the systematic review.
+
+## Table A1. List of Included Studies
+
+```{r table-creation}
+# Create flextable with improved formatting including Co Evidence ID
+Table_A1 <- appendix_table %>%
+  rename_with(~ gsub('_', ' ', .)) %>%
+  flextable() %>%
+  # Set specific column widths for better formatting (adjusted for new column)
+  width(j = 1, width = 0.4) %>%  # Reference ID - narrow
+  width(j = 2, width = 0.5) %>%  # Co Evidence ID - narrow
+  width(j = 3, width = 1.6) %>%  # Authors - wide (reduced slightly)
+  width(j = 4, width = 0.5) %>%  # Publication Year - narrow
+  width(j = 5, width = 0.7) %>%  # Region - medium
+  width(j = 6, width = 1.0) %>%  # Corruption Scenarios - wide (reduced slightly)
+  width(j = 7, width = 0.7) %>%  # Settings Class - medium
+  width(j = 8, width = 0.9) %>%  # Target Population - medium-wide
+  width(j = 9, width = 0.7) %>%  # Techniques Class - medium
+  width(j = 10, width = 0.5) %>%  # Quality Score - narrow
+  # Font and size settings
+  fontsize(size = 8, part = 'all') %>%  # Slightly smaller font to accommodate extra column
+  font(fontname = 'Times New Roman', part = 'all') %>%
+  # Alignment settings
+  align(j = c(1, 2, 4, 10), align = 'center', part = 'all') %>%  # Center: ID, Co Evidence ID, Year, Score
+  align(j = c(3, 5, 6, 7, 8, 9), align = 'left', part = 'all') %>%  # Left: Authors, Region, etc.
+  # Header formatting
+  bold(part = 'header') %>%
+  bg(bg = '#f0f0f0', part = 'header') %>%
+  # Text wrapping
+  valign(valign = 'top', part = 'all') %>%
+  # Borders
+  border_remove() %>%
+  hline_top(border = fp_border(width = 2), part = 'header') %>%
+  hline(i = 1, border = fp_border(width = 1), part = 'header') %>%
+  hline_bottom(border = fp_border(width = 2), part = 'body') %>%
+  # Padding
+  padding(padding.top = 3, padding.bottom = 3, padding.left = 2, padding.right = 2, part = 'all') %>%  # Slightly tighter padding
+  # Fix text wrapping for long content
+  fix_border_issues()
+
+Table_A1
+```
+
+*Note: Reference ID corresponds to the numbered references below.*
+
+\newpage
+
+## References
+
+```{r references, results='asis'}
+# Parse BibTeX file for proper references
+bib_file <- "export.bib"
+
+if (file.exists(bib_file) && exists("parse_bibtex_file")) {
+  # Parse the BibTeX file
+  bib_result <- tryCatch({
+    parse_bibtex_file(bib_file)
+  }, error = function(e) {
+    message("Error parsing BibTeX file: ", e$message)
+    NULL
+  })
+  
+  if (!is.null(bib_result) && length(bib_result$formatted) > 0) {
+    # Create references with improved matching
+    
+    for (i in 1:nrow(appendix_table)) {
+      study_authors <- appendix_table$Authors[i]
+      study_year <- appendix_table$Publication_Year[i]
+      
+      # Skip if authors or year is NA
+      if (is.na(study_authors) || is.na(study_year)) {
+        reference <- paste0(i, '. [Missing author or year information].')
+        cat(reference, '\n\n')
+        next
+      }
+      
+      # Clean the year - handle both numeric years and "n.d."
+      clean_year <- if(study_year == "n.d.") {
+        "n.d."
+      } else {
+        as.numeric(gsub("[^0-9]", "", as.character(study_year)))
+      }
+      
+      # Try multiple matching strategies
+      ref_found <- FALSE
+      matched_ref <- NULL
+      
+      # Strategy 1: Match by year and author
+      for (j in 1:length(bib_result$formatted)) {
+        bib_ref <- bib_result$formatted[j]
+        
+        if (is.na(bib_ref) || bib_ref == "") next
+        
+        # Check for year match (try different year formats in BibTeX formatted references)
+        year_match <- if(clean_year == "n.d.") {
+          # For n.d., look for common "no date" patterns
+          grepl("n\\.d\\.|no date|nd\\b", bib_ref, ignore.case = TRUE, perl = TRUE)
+        } else {
+          year_patterns <- c(
+            paste0("\\(", clean_year, "\\)"),      # (2024)
+            paste0(" ", clean_year, "\\b"),        # space 2024
+            paste0("^", clean_year, "\\b"),        # start with 2024
+            paste0(clean_year, "\\.")              # 2024.
+          )
+          any(sapply(year_patterns, function(pattern) {
+            grepl(pattern, bib_ref, perl = TRUE)
+          }))
+        }
+        
+        if (year_match) {
+          # Extract and clean author names from study data
+          # Handle different separator formats
+          author_separators <- c(",", ";", "&", " and ")
+          author_parts <- study_authors
+          
+          for (sep in author_separators) {
+            if (grepl(sep, author_parts)) {
+              author_parts <- unlist(str_split(author_parts, sep))
+              break
+            }
+          }
+          
+          if (length(author_parts) == 1) {
+            author_parts <- unlist(str_split(study_authors, " "))
+          }
+          
+          author_parts <- str_trim(author_parts)
+          
+          # Try matching with different author formats
+          for (author in author_parts[1:min(5, length(author_parts))]) {  # Check first 5 parts
+            if (is.na(author) || author == "" || nchar(author) < 2) next
+            
+            # Extract potential last name
+            author_clean <- str_trim(author)
+            
+            # Try different lastname extraction methods
+            lastname_candidates <- c()
+            
+            # Method 1: If it looks like "LastName, FirstName"
+            if (grepl(",", author_clean)) {
+              lastname_candidates <- c(lastname_candidates, str_trim(str_split(author_clean, ",")[[1]][1]))
+            }
+            
+            # Method 2: If it looks like "FirstName LastName"
+            space_parts <- str_trim(unlist(str_split(author_clean, " ")))
+            if (length(space_parts) > 1) {
+              lastname_candidates <- c(lastname_candidates, space_parts[length(space_parts)])
+            }
+            
+            # Method 3: Use the whole name if it's short and might be a lastname
+            if (nchar(author_clean) >= 3 && nchar(author_clean) <= 15 && !grepl(" ", author_clean)) {
+              lastname_candidates <- c(lastname_candidates, author_clean)
+            }
+            
+            # Method 4: Check if any word in the author field matches
+            author_words <- str_trim(unlist(str_split(author_clean, "[\\s,.-]+")))
+            for (word in author_words) {
+              if (nchar(word) >= 3) {
+                lastname_candidates <- c(lastname_candidates, word)
+              }
+            }
+            
+            # Check if any lastname candidate matches the BibTeX reference
+            for (lastname in unique(lastname_candidates)) {
+              if (nchar(lastname) >= 3 && 
+                  grepl(paste0("\\b", lastname, "\\b"), bib_ref, ignore.case = TRUE, perl = TRUE)) {
+                matched_ref <- bib_ref
+                ref_found <- TRUE
+                break
+              }
+            }
+            
+            if (ref_found) break
+          }
+        }
+        
+        if (ref_found) break
+      }
+      
+      # Strategy 2: If no match found, try just year matching with broader author matching
+      if (!ref_found) {
+        for (j in 1:length(bib_result$formatted)) {
+          bib_ref <- bib_result$formatted[j]
+          
+          if (is.na(bib_ref) || bib_ref == "") next
+          
+          # Look for the year anywhere in the reference
+          year_found <- if(clean_year == "n.d.") {
+            grepl("n\\.d\\.|no date|nd\\b", bib_ref, ignore.case = TRUE)
+          } else {
+            grepl(as.character(clean_year), bib_ref)
+          }
+          
+          if (year_found) {
+            # Check if any substantial word from authors appears
+            author_words <- str_trim(unlist(str_split(study_authors, "[^a-zA-Z]+")))
+            author_words <- author_words[nchar(author_words) >= 4]  # Only words with 4+ characters
+            
+            for (word in author_words[1:min(10, length(author_words))]) {
+              if (!is.na(word) && word != "" && 
+                  grepl(paste0("\\b", word, "\\b"), bib_ref, ignore.case = TRUE)) {
+                matched_ref <- bib_ref
+                ref_found <- TRUE
+                break
+              }
+            }
+            
+            if (ref_found) break
+          }
+        }
+      }
+      
+      # Strategy 3: Very loose matching - just check if any significant author word appears anywhere
+      if (!ref_found) {
+        # Extract significant words from author string
+        significant_words <- str_trim(unlist(str_split(study_authors, "[^a-zA-Z]+")))
+        significant_words <- significant_words[nchar(significant_words) >= 5]  # 5+ character words
+        
+        if (length(significant_words) > 0) {
+          for (j in 1:length(bib_result$formatted)) {
+            bib_ref <- bib_result$formatted[j]
+            
+            if (is.na(bib_ref) || bib_ref == "") next
+            
+            for (word in significant_words[1:min(3, length(significant_words))]) {
+              if (grepl(word, bib_ref, ignore.case = TRUE)) {
+                # Double-check that the year is close (within 1 year) or is n.d.
+                year_close_match <- if(clean_year == "n.d.") {
+                  grepl("n\\.d\\.|no date|nd\\b", bib_ref, ignore.case = TRUE)
+                } else {
+                  grepl(as.character(clean_year), bib_ref) || 
+                  grepl(as.character(clean_year - 1), bib_ref) ||
+                  grepl(as.character(clean_year + 1), bib_ref)
+                }
+                
+                if (year_close_match) {
+                  matched_ref <- bib_ref
+                  ref_found <- TRUE
+                  break
+                }
+              }
+            }
+            
+            if (ref_found) break
+          }
+        }
+      }
+      
+      # Output the reference in Nature Human Behaviour format
+      if (ref_found && !is.null(matched_ref)) {
+        # Nature Human Behaviour format: Author(s). Title. Journal vol, pages (year).
+        cat(paste0(i, '. ', matched_ref), '\n\n')
+      } else {
+        # Create basic reference in Nature Human Behaviour style if no match found
+        year_display <- if(clean_year == "n.d.") "n.d." else paste0("(", clean_year, ")")
+        basic_ref <- paste0(study_authors, '. [Title not available]. [Journal information not available] ', year_display, '. [Complete reference information not available in BibTeX file].')
+        cat(paste0(i, '. ', basic_ref), '\n\n')
+      }
+    }
+    
+  } else {
+    # Fallback to basic references if BibTeX parsing fails
+    for (i in 1:nrow(appendix_table)) {
+      authors <- ifelse(is.na(appendix_table$Authors[i]), "[Missing authors]", appendix_table$Authors[i])
+      year <- ifelse(is.na(appendix_table$Publication_Year[i]), "[Missing year]", 
+                     appendix_table$Publication_Year[i])  # Keep as-is since it can be "n.d." or numeric
+      
+      # Format in Nature Human Behaviour style
+      year_display <- if(year == "n.d.") "n.d." else paste0("(", year, ")")
+      reference <- paste0(i, '. ', authors, '. [Title not available]. [Journal information not available] ', year_display, '. [BibTeX file could not be parsed - please add complete reference information].')
+      cat(reference, '\n\n')
+    }
+  }
+  
+} else {
+  # Fallback if BibTeX file not found or parser not available
+  for (i in 1:nrow(appendix_table)) {
+    authors <- ifelse(is.na(appendix_table$Authors[i]), "[Missing authors]", appendix_table$Authors[i])
+    year <- ifelse(is.na(appendix_table$Publication_Year[i]), "[Missing year]", 
+                   appendix_table$Publication_Year[i])  # Keep as-is since it can be "n.d." or numeric
+    
+    # Format in Nature Human Behaviour style
+    year_display <- if(year == "n.d.") "n.d." else paste0("(", year, ")")
+    reference <- paste0(i, '. ', authors, '. [Title not available]. [Journal information not available] ', year_display, '. [BibTeX file not found or parser not available - please add complete reference information].')
+    cat(reference, '\n\n')
+  }
+}
+```
+
+---
+
+*References are numbered to correspond with the Reference ID column in Table A1.*

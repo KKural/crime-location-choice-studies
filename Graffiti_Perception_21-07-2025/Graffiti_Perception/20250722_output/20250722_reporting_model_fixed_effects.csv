@@ -1,0 +1,13 @@
+Predictor,Estimate,Std. Error,t value,Pr(>|t|)
+(Intercept),18.662,3.773,4.947,0
+age,0.049,0.023,2.153,0.032
+genderVrouw,-0.691,0.662,-1.043,0.298
+genderNon-binair,2.313,4.313,0.536,0.592
+genderAnders:,12.438,6.271,1.983,0.048
+genderWil ik liever niet zeggen,-4.457,3.065,-1.454,0.147
+educationDiploma Middelbaar,-0.222,3.689,-0.06,0.952
+educationDiploma Hoger Onderwijs,0.39,3.667,0.106,0.915
+educationWil ik liever niet zeggen,0.614,5.658,0.108,0.914
+housingIk huur een woning/appartement,-1.523,0.806,-1.889,0.06
+housingIk huur een kot,-1.478,1.522,-0.971,0.332
+housingAnders:,-2.635,1.722,-1.53,0.127
