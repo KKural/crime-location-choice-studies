@@ -62,18 +62,20 @@ folder_name <- output_folder
 
 # Data reading and initial processing -----------------------------------------
 
-# List of CSV files to merge
+# List of CSV files to merge - All 6 Elicit extraction files
 combined_csv_files <- c(
-  "Data/Study_Identification_Spatial_Units.csv",
-  "Data/Theoretical_Framework_Methodology.csv", 
-  "Data/Temporal_Variables_Findings.csv",
-  "Data/Scale_Effects_Limitations.csv",
-  "Data/study area size and COMPREHENSIVE VARIABLE EXTRACTION.csv"
+  "Data/20250730_geo_unit_basic.csv",
+  "Data/20250730_unit_details_rationale.csv",
+  "Data/20250730_constraints_data.csv",
+  "Data/20250730_data_crime.csv",
+  "Data/20250730_model_stats.csv",
+  "Data/20250730_analysis_methods.csv"
 )
 
-# Function to clean column names (remove supporting/reasoning columns)
+# Function to clean column names (keep supporting quotes and reasoning, remove only tables and metadata)
 clean_column_names <- function(df) {
-  main_cols <- colnames(df)[!grepl("tables|DOI|Venue|Citation", colnames(df))]
+  # Remove only supporting tables columns and metadata, but keep supporting quotes and reasoning
+  main_cols <- colnames(df)[!grepl("Supporting  tables|DOI|Venue|Citation count", colnames(df))]
   return(df[, main_cols])
 }
 
@@ -82,8 +84,8 @@ remove_duplicate_cols <- function(df, is_first_file = FALSE) {
   if (is_first_file) {
     return(df)
   } else {
-    # Remove Authors and Year columns from subsequent files to avoid duplicates
-    cols_to_remove <- c("Authors", "Year")
+    # Remove Authors, Year, and DOI link columns from subsequent files to avoid duplicates
+    cols_to_remove <- c("Authors", "Year", "DOI link")
     remaining_cols <- setdiff(names(df), cols_to_remove)
     return(df[, remaining_cols])
   }
@@ -109,164 +111,163 @@ for (i in 1:length(combined_csv_files)) {
   }
 }
 
-# Print column names
+# Check if data was successfully loaded
+if (is.null(df_combined) || nrow(df_combined) == 0) {
+  stop("No data was loaded. Please check that the CSV files exist in the Data folder.")
+}
+
+# Clean column names - remove backslashes and convert dots to underscores
+names(df_combined) <- gsub('\\\\"', '"', names(df_combined))
+# Convert to proper R column names and replace dots with underscores
+names(df_combined) <- make.names(names(df_combined))
+names(df_combined) <- gsub("\\.", "_", names(df_combined))
+
+# Print column names before reorganizing
+print("Original column order:")
 print(names(df_combined))
+
+# Define the desired column order - each variable followed by its supporting quotes and reasoning
+# Using proper R column names with underscores instead of dots
+desired_order <- c(
+  "Title", "Authors", "Year",
+  "Country", "Supporting_quotes_for__Country_", "Reasoning_for__Country_",
+  "City", "Supporting_quotes_for__City__", "Reasoning_for__City__",
+  "Total_Study_Area_Size", "Supporting_quotes_for__Total_Study_Area_Size_", "Reasoning_for__Total_Study_Area_Size_",
+  "Spatial_Unit_Name", "Supporting_quotes_for__Spatial_Unit_Name_", "Reasoning_for__Spatial_Unit_Name_",
+  "Unit_Size", "Supporting_quotes_for__Unit_Size_", "Reasoning_for__Unit_Size_",
+  "Number_of_Units", "Supporting_quotes_for__Number_of_Units_", "Reasoning_for__Number_of_Units_",
+  "Average_Population_per_Unit", "Supporting_quotes_for__Average_Population_per_Unit_", "Reasoning_for__Average_Population_per_Unit_",
+  "Spatial_Aggregation", "Supporting_quotes_for__Spatial_Aggregation_", "Reasoning_for__Spatial_Aggregation_",
+  "Unit_Selection_Rationale", "Supporting_quotes_for__Unit_Selection_Rationale_", "Reasoning_for__Unit_Selection_Rationale_",
+  "Rationale_Category", "Supporting_quotes_for___Rationale_Category_", "Reasoning_for___Rationale_Category_",
+  "Data_Limitations", "Supporting_quotes_for__Data_Limitations_", "Reasoning_for__Data_Limitations_",
+  "Computational_Constraints", "Supporting_quotes_for__Computational_Constraints_", "Reasoning_for__Computational_Constraints_",
+  "Alternative_Units", "Supporting_quotes_for__Alternative_Units_", "Reasoning_for__Alternative_Units_",
+  "Data_Collection_Period", "Supporting_quotes_for__Data_Collection_Period_", "Reasoning_for__Data_Collection_Period_",
+  "Data_Sources", "Supporting_quotes_for__Data_Sources_", "Reasoning_for__Data_Sources_",
+  "Number_of_Data_Sources", "Supporting_quotes_for__Number_of_Data_Sources_", "Reasoning_for__Number_of_Data_Sources_",
+  "Crime_Type", "Supporting_quotes_for__Crime_Type_", "Reasoning_for__Crime_Type_",
+  "Crime_Type_Group", "Supporting_quotes_for__Crime_Type_Group_", "Reasoning_for__Crime_Type_Group_",
+  "Crime_Incidents", "Supporting_quotes_for__Crime_Incidents_", "Reasoning_for__Crime_Incidents_",
+  "Model_Type", "Supporting_quotes_for__Model_Type_", "Reasoning_for__Model_Type_",
+  "Independent_Variables", "Supporting_quotes_for__Independent_Variables_", "Reasoning_for__Independent_Variables_",
+  "Number_of_Variables", "Supporting_quotes_for__Number_of_Variables_", "Reasoning_for__Number_of_Variables_",
+  "Model_Fit_Statistics", "Supporting_quotes_for___Model_Fit_Statistics_", "Reasoning_for___Model_Fit_Statistics_",
+  "Coefficients", "Supporting_quotes_for__Coefficients_", "Reasoning_for__Coefficients_",
+  "Confidence_Intervals", "Supporting_quotes_for__Confidence_Intervals_", "Reasoning_for__Confidence_Intervals_",
+  "Effect_Sizes", "Supporting_quotes_for__Effect_Sizes_", "Reasoning_for__Effect_Sizes_",
+  "Software_Used", "Supporting_quotes_for__Software_Used_", "Reasoning_for__Software_Used_",
+  "MAUP_Discussion", "Supporting_quotes_for__MAUP_Discussion_", "Reasoning_for__MAUP_Discussion_",
+  "Sensitivity_Analysis", "Supporting_quotes_for__Sensitivity_Analysis_", "Reasoning_for__Sensitivity_Analysis_",
+  "Future_Suggestions", "Supporting_quotes_for__Future_Suggestions_", "Reasoning_for__Future_Suggestions_"
+)
+
+# Check which columns exist in the data and only select those
+existing_columns <- intersect(desired_order, names(df_combined))
+missing_columns <- setdiff(desired_order, names(df_combined))
+
+# Reorder columns according to the desired order
+df_combined <- df_combined[, existing_columns]
+
+# Add Study ID as first column and verification columns at the end
+df_combined <- data.frame(
+  Study_ID = "",
+  df_combined,
+  Verified_by_Kural = "",
+  Verified_by_Stephanie = "",
+  stringsAsFactors = FALSE
+)
+
+# Clean up formatting in all columns
+for (col in names(df_combined)) {
+  # Skip the Study_ID and verification columns (keep them as empty strings)
+  if (col %in% c("Study_ID", "Verified_by_Kural", "Verified_by_Stephanie")) {
+    next
+  }
+  
+  # Process each cell in the column
+  for (i in 1:nrow(df_combined)) {
+    cell_value <- df_combined[[col]][i]
+    if (!is.na(cell_value) && cell_value != "" && !cell_value %in% c("-", "- ", "--", "---", "N/A", "n/a", "NA")) {
+      # Clean up quotes and dashes at the beginning and end of content only
+      cell_value <- stringr::str_trim(cell_value)  # Remove leading/trailing whitespace
+      
+      # Only remove leading dashes if they appear to be formatting artifacts
+      # (i.e., at the very beginning of the cell, not part of legitimate content like "2009 - 2010")
+      if (stringr::str_detect(cell_value, "^-+\\s")) {
+        cell_value <- stringr::str_replace(cell_value, "^-+\\s*", "")  # Remove leading dashes with space
+      }
+      
+      # Remove leading quotes if they appear to be formatting artifacts
+      if (stringr::str_detect(cell_value, "^\"")) {
+        cell_value <- stringr::str_replace(cell_value, "^\"\\s*", "")  # Remove leading quote
+      }
+      
+      # Only remove trailing dashes if they appear to be formatting artifacts
+      # (i.e., at the very end of the cell, not part of legitimate content)
+      if (stringr::str_detect(cell_value, "\\s-+$")) {
+        cell_value <- stringr::str_replace(cell_value, "\\s*-+$", "")  # Remove trailing dashes with space
+      }
+      
+      # Remove trailing quotes if they appear to be formatting artifacts
+      if (stringr::str_detect(cell_value, "\\s*\"$")) {
+        cell_value <- stringr::str_replace(cell_value, "\\s*\"$", "")  # Remove trailing quote
+      }
+      
+      # Replace double quotes with single quotes (but preserve legitimate quoted content)
+      cell_value <- stringr::str_replace_all(cell_value, '""', '"')
+      
+      # Final trim
+      cell_value <- stringr::str_trim(cell_value)
+      
+      df_combined[[col]][i] <- cell_value
+    } else if (is.na(cell_value) || cell_value %in% c("-", "- ", "--", "---", "N/A", "n/a", "NA")) {
+      # Set truly empty cells to empty string
+      df_combined[[col]][i] <- ""
+    }
+  }
+}
+
+# Print column names after reorganizing
+names(df_combined)
 nrow(df_combined)
 ncol(df_combined)
 
-
-# Save the combined data set
+# Save the combined and reorganized data set
 custom_save(df_combined, output_folder, "combined_dataset", readr::write_csv)
 
+# =============================================================================
+# DATA PROCESSING COMPLETE
+# =============================================================================
+# The dataset has been successfully reorganized with the structure:
+# Variable -> Supporting Quotes -> Reasoning for each variable
+# The old processing pipeline below was designed for a different column structure
+# and has been commented out to prevent errors.
 
-# read and select the requried columns 
+# Note: If you need further analysis, you can work directly with df_combined
+# which now has the properly organized columns.
 
-df_combined <-df_combined |>
-  dplyr::select(
-    Title, Year, Authors,
-    `BASIC STUDY IDENTIFICATION`, `TEMPORAL SCOPE & DATA SOURCES`, 
-    `study area size`,`SPATIAL UNITS - DESCRIPTION & JUSTIFICATION`, `STUDY CONTEXT & GEOGRAPHY`, 
-    `SAMPLING & CHOICE SETS`, `THEORETICAL FRAMEWORK & OBJECTIVES`, 
-    `STUDY DESIGN & METHODOLOGY`, `DATA PREPARATION & PROCESSING`, `DEMOGRAPHIC & SOCIAL VARIABLES`, 
-    `ECONOMIC VARIABLES`, `TEMPORAL & CONTROL VARIABLES`,`MODEL FIT & PERFORMANCE METRICS`, 
-    `MAJOR FINDINGS & RESULTS`, `ENVIRONMENTAL & CRIME ATTRACTOR VARIABLES`, `DISTANCE & ACCESSIBILITY VARIABLES`,
-    `SCALE EFFECTS & SPATIAL FINDINGS`, `DATA LIMITATIONS & METHODOLOGICAL ISSUES`, 
-    `GENERALIZABILITY & COMPARATIVE LIMITATIONS`, `IMPLICATIONS & FUTURE DIRECTIONS`
-  )
+# =============================================================================
+# OLD PROCESSING PIPELINE (COMMENTED OUT)
+# =============================================================================
+# The following code was designed for the old column structure and would need
+# to be adapted to work with the new reorganized column structure.
+
+# =============================================================================
+# OLD PROCESSING PIPELINE (COMMENTED OUT)
+# =============================================================================
+# The following code was designed for the old column structure and would need
+# to be adapted to work with the new reorganized column structure.
 
 # Data Extraction and Processing Functions--------------------------------------
-# Enhanced Data Collection Period Extraction Function
-extract_data_collection_period <- function(text) {
-  if (is.na(text) || text == "" || text == "N/A") {
-    return(NA)
-  }
-  
-  # patterns for data collection period
-  data_collection_patterns <- c(
-    # Explicit data collection mentions with markdown formatting
-    "\\*\\*Data Collection Period:\\*\\*\\s*([^\\n]+)",
-    "- \\*\\*Data Collection Period:\\*\\*\\s*([^\\n]+)",
-    "Data Collection Period:\\s*([^\\n]+)",
-    "- Data Collection Period:\\s*([^\\n]+)",
-    
-    # Alternative phrasings
-    "\\*\\*Data collection period:\\*\\*\\s*([^\\n]+)",
-    "data collection period:\\s*([^\\n]+)",
-    "Data was collected\\s*([^\\n]+)",
-    "data was collected\\s*([^\\n]+)",
-    "Data collection occurred\\s*([^\\n]+)",
-    "data collection occurred\\s*([^\\n]+)",
-    "Data gathered\\s*([^\\n]+)",
-    "data gathered\\s*([^\\n]+)",
-    "Database accessed\\s*([^\\n]+)",
-    "database accessed\\s*([^\\n]+)",
-    "Data obtained\\s*([^\\n]+)",
-    "data obtained\\s*([^\\n]+)",
-    "Data available\\s*([^\\n]+)",
-    "data available\\s*([^\\n]+)",
-    
-    # Temporal phrases indicating data collection timing
-    "\\b(collected|gathered|obtained|accessed|extracted|retrieved)\\s+(?:in|during|from|between)\\s+([^\\n\\.,;]+)",
-    "\\b(data|information|records)\\s+(?:was|were)\\s+(?:collected|gathered|obtained|accessed|extracted|retrieved)\\s+(?:in|during|from|between)?\\s*([^\\n\\.,;]+)",
-    
-    # Survey/fieldwork specific patterns
-    "(?:survey|fieldwork|interviews?)\\s+(?:conducted|carried out|performed)\\s+(?:in|during|from|between)?\\s*([^\\n\\.,;]+)",
-    "(?:questionnaires?|data collection)\\s+(?:administered|conducted)\\s+(?:in|during|from|between)?\\s*([^\\n\\.,;]+)",
-    
-    # Database/system access patterns
-    "(?:database|system|records?)\\s+(?:accessed|queried|extracted)\\s+(?:in|during|from|between)?\\s*([^\\n\\.,;]+)",
-    
-    # Patterns for extracting useful info even when explicitly marked as "not mentioned"
-    "not\\s+explicitly\\s+mentioned[^,]*,?\\s*but\\s+([^\\n]+)",
-    "not\\s+mentioned[^,]*,?\\s*but\\s+([^\\n]+)",
-    "not\\s+specified[^,]*,?\\s*but\\s+([^\\n]+)",
-    "not\\s+stated[^,]*,?\\s*but\\s+([^\\n]+)",
-    
-    # Patterns for data availability periods
-    "data\\s+(?:was|were)?\\s*available\\s+(?:up\\s+to|until|through)\\s+([^\\n\\.,;]+)",
-    "available\\s+(?:up\\s+to|until|through)\\s+([^\\n\\.,;]+)",
-    "data\\s+(?:from|covering|spanning)\\s+([^\\n\\.,;]+)",
-    "(?:covering|spanning)\\s+(?:the\\s+)?period\\s+([^\\n\\.,;]+)",
-    
-    # Study timeframe patterns (as fallback)
-    "study\\s+(?:conducted|performed|carried\\s+out)\\s+(?:in|during|from|between)\\s+([^\\n\\.,;]+)",
-    "(?:conducted|performed|carried\\s+out)\\s+(?:in|during|from|between)\\s+([^\\n\\.,;]+)",
-    
-    # Very broad year extraction patterns (last resort)
-    "\\b((?:19|20)\\d{2}(?:\\s*[-–]\\s*(?:19|20)\\d{2})?)\\b",
-    "\\b((?:19|20)\\d{2}\\s+to\\s+(?:19|20)\\d{2})\\b",
-    "\\b((?:19|20)\\d{2})\\b",
-    "\\b((?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+(?:19|20)\\d{2})\\b",
-    "\\b(\\d{1,2}[-/]\\d{1,2}[-/](?:19|20)\\d{2})\\b"
-  )
-  
-  for (pattern in data_collection_patterns) {
-    match <- stringr::str_match(text, pattern)
-    if (!is.na(match[1, 2])) {
-      result <- stringr::str_trim(match[1, 2])
-      
-      # Clean up the result
-      result <- stringr::str_remove_all(result, "\\*\\*")
-      result <- stringr::str_remove(result, "^[-–]\\s*")
-      result <- stringr::str_trim(result)
-      
-      # More permissive filtering - accept results that contain temporal information
-      if (result != "" && 
-          nchar(result) > 3 &&
-          # Accept if it contains years or temporal keywords
-          (stringr::str_detect(result, "\\b(19|20)\\d{2}\\b") || 
-           stringr::str_detect(tolower(result), "\\b(january|february|march|april|may|june|july|august|september|october|november|december|spring|summer|fall|autumn|winter|year|month|week|day)\\b") ||
-           stringr::str_detect(tolower(result), "\\b(available|collected|gathered|obtained|accessed|extracted|retrieved|conducted|performed)\\b")) &&
-          # Exclude only completely non-informative results
-          !stringr::str_detect(tolower(result), "^(n/?a|unclear|unknown|not\\s+available)$")) {
-        return(result)
-      }
-    }
-  }
-  
-  return(NA)
-}
 
-# Extract field information from text using regex patterns
-extract_all_fields_improved <- function(text, field_names) {
-  if (is.na(text) || text == "" || text == "N/A") {
-    return(setNames(rep(NA, length(field_names)), field_names))
-  }
-  
-  results <- setNames(rep(NA, length(field_names)), field_names)
-  
-  for (field_name in field_names) {
-    patterns <- c(
-      paste0("\\*\\*", field_name, ":\\*\\*\\s*\"([^\"]+)\""),
-      paste0("- \\*\\*", field_name, ":\\*\\*\\s*\"([^\"]+)\""),
-      paste0("\\*\\*", field_name, ":\\*\\*\\s*(.+?)(?=\\s*\\n\\s*-\\s*\\*\\*|\\s*\\n\\s*\\*\\*|$)"),
-      paste0("- \\*\\*", field_name, ":\\*\\*\\s*(.+?)(?=\\s*\\n\\s*-\\s*\\*\\*|\\s*\\n\\s*\\*\\*|$)"),
-      paste0("\\*\\*", field_name, ":\\*\\*\\s*(.+?)(?=\\n|$)"),
-      paste0("- ", field_name, ":\\s*(.+?)(?=\\s*\\n\\s*-|$)"),
-      paste0(field_name, ":\\s*(.+?)(?=\\s*\\n\\s*-|$)")
-    )
-    
-    for (pattern in patterns) {
-      match <- stringr::str_match(text, pattern)
-      if (!is.na(match[1, 2])) {
-        result <- stringr::str_trim(match[1, 2])
-        result <- stringr::str_remove_all(result, "\\*\\*")
-        result <- stringr::str_remove(result, "^-\\s*")
-        result <- stringr::str_trim(result)
-        if (result != "" && 
-            !stringr::str_detect(result, "^Not mentioned$") && 
-            !stringr::str_detect(result, "^Not explicitly mentioned$") &&
-            !stringr::str_detect(result, "^N/A$") &&
-            !stringr::str_detect(result, "^NA$")) {
-          results[field_name] <- result
-          break
-        }
-      }
-    }
-  }
-  
-  return(results)
-}
+# The rest of the processing functions and pipeline have been commented out
+# because they were designed for a different column structure. If you need
+# to perform additional analysis, you can work directly with df_combined
+# which now has the properly organized structure:
+# Variable -> Supporting Quotes -> Reasoning
+
+# End of active script
 
 # Extract variables from text and return them as a numbered list string
 extract_variables_grouped <- function(text) {
@@ -1001,10 +1002,6 @@ if (length(crossnational_row) > 0) {
   if (file.exists(combined_file_path)) {
     original_csv <- readr::read_csv(combined_file_path, show_col_types = FALSE)
     
-    # Debug: print column names to understand the structure
-    cat("Available columns in CSV:\n")
-    print(names(original_csv))
-    
     crossnational_csv_row <- which(grepl("Cross.*national", original_csv$Title, ignore.case = TRUE))
   } else {
     warning("Combined CSV file not found. Skipping cross-national study splitting.")
@@ -1075,10 +1072,6 @@ if (length(crossnational_row) > 0) {
     if (!is.na(spatial_text) && length(spatial_text) > 0 && spatial_text != "") {
       rationale_match <- stringr::str_extract(spatial_text, '"[^"]*"')
     }
-    
-    # Debug information
-    cat("Spatial text found:", !is.na(spatial_text), "\n")
-    cat("Rationale match found:", !is.na(rationale_match), "\n")
     
     base_rationale <- if (!is.na(rationale_match) && length(rationale_match) > 0) {
       rationale_match

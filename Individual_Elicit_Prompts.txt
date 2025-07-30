@@ -1,92 +1,158 @@
 INDIVIDUAL ELICIT PROMPTS FOR DATA EXTRACTION
 ================================================
 
+## GEOGRAPHIC CONTEXT
 PROMPT 1 - Country
 In which country was this study conducted? Provide the exact country name where the research took place. Look for explicit mentions of country names in the text, methodology section, study area description, or author affiliations. If the study covers multiple countries, list all countries separated by semicolons.
 
 PROMPT 2 - City
 In which city or cities was this study conducted? Provide only the exact city names mentioned in the study. Look for specific city names in the study area description, data collection section, or case study details. If multiple cities are included, list all cities separated by semicolons. Do NOT include counties, states, provinces, districts, or other regional identifiers - extract only the city names themselves.
 
-PROMPT 3 - Name of the Spatial Unit
-What is the exact name or type of spatial unit of analysis used in this study? Look for terms such as census tracts, census blocks, neighborhoods, wards, postal codes, ZIP codes, grid cells, super output areas, statistical districts, administrative areas, boroughs, precincts, beat areas, or any other geographic unit mentioned.
-
-PROMPT 4 - Spatial Unit Size
-What is the size or dimension of each individual spatial unit used in this study? Provide only the size measurement for a single unit (e.g., area of one census tract, size of one grid cell, etc.). If no specific unit size is mentioned, respond with "Not specified". Look for measurements like "each tract is X km²", "grid cells of X meters", "units averaging X hectares", etc. Do NOT include total study area, population counts, or aggregate measurements.
-
-PROMPT 5 - Number of Units Used
-How many spatial units were included in the final statistical analysis? Provide only the exact number. Look for this information in the methodology section, sample description, or results section.
-
-PROMPT 6 - Rationale for Unit Size
-What justification, reasoning, or explanation did the authors provide for choosing their specific spatial unit size or type? Look for discussions in the methodology section, study design, or spatial analysis sections. Include theoretical justifications, practical considerations, or references to previous research.
-
-PROMPT 7 - SUoA Rationalization Category
-Based on the rationale provided in the previous prompt, categorize the type of justification the authors used for their spatial unit of analysis (SUoA) selection. Choose the most appropriate category: "Previous research", "Theory", "Data availability", "Administrative convenience", "Theory and previous research", "Data availability and previous research", "Theory and data availability", or "Theory, previous research, and data availability".
-
-PROMPT 8 - Data Limitation for Selection of Spatial Unit
-What limitations, constraints, or factors influenced the choice of spatial units in this study? Look for data availability issues, administrative boundary constraints, privacy concerns, confidentiality requirements, aggregation requirements, statistical disclosure controls, or other factors that restricted the spatial unit selection.
-
-PROMPT 9 - Data Collection Period
-When was the data for this study collected? Provide the specific time period, dates, months, or years when the crime data or other study data was gathered. Look for phrases about when data was collected, accessed, obtained, downloaded, or when the study period occurred.
-
-PROMPT 10 - Data Sources
-What were the sources of data used in this study? List all data sources mentioned. Look for police databases, crime records, census data, administrative records, surveys, government agencies, or commercial databases. If multiple sources were used, separate them with semicolons.
-
-PROMPT 11 - No of Data Sources Used
-How many different data sources were used in this study? Provide the exact number of distinct data sources, databases, organizations, or agencies that provided data for the analysis.
-
-PROMPT 12 - Average Population per Unit
-What is the average population size per spatial unit in this study? Provide the average number of residents, inhabitants, or population per individual unit. If no average population is mentioned, respond with "Not specified".
-
-PROMPT 13 - Total Study Area Size
+PROMPT 3 - Total_Study_Area_Size
 What is the total area or size of the entire study region? Provide the overall geographic area covered by the study. If no total area is mentioned, respond with "Not specified". Look for measurements of the complete study area, city area, or regional coverage in square kilometers, square miles, hectares, etc.
 
-PROMPT 14 - Whether They Aggregated the Data
-Did the researchers aggregate, combine, or group data from smaller units to create larger analytical units? Provide "Yes" or "No" and describe the aggregation process if mentioned. Look for descriptions of how individual-level data was aggregated to area-level, or how smaller geographic units were combined into larger ones.
+## SPATIAL UNIT DETAILS
+PROMPT 4 - Spatial_Unit_Name
+What is the exact name or type of spatial unit of analysis used in this study? Look for terms such as census tracts, census blocks, neighborhoods, wards, postal codes, ZIP codes, grid cells, super output areas, statistical districts, administrative areas, boroughs, precincts, beat areas, or any other geographic unit mentioned.
 
-PROMPT 15 - Type of Crime
-What specific type or category of crime does this study analyze? Look for crime types such as burglary, residential burglary, commercial burglary, theft, motor vehicle theft, robbery, street robbery, assault, drug offenses, vandalism, graffiti, fraud, or domestic violence. If multiple crime types are studied, list all of them separated by semicolons.
+PROMPT 5 - Unit_Size
+What is the size or dimension of each individual spatial unit used in this study? Provide only the size measurement for a single unit (e.g., area of one census tract, size of one grid cell, etc.). If no specific unit size is mentioned, respond with "Not specified". Look for measurements like "each tract is X km²", "grid cells of X meters", "units averaging X hectares", etc. Do NOT include total study area, population counts, or aggregate measurements.
 
-PROMPT 16 - Crime Type Group
-Does this study analyze a single crime type or multiple crime types? Categorize the study as either "Single crime type" if only one specific crime is analyzed, or "Multiple crime types" if the study examines several different crime categories.
+PROMPT 6 - Number_of_Units
+How many spatial units were included in the final statistical analysis? Provide only the exact number. Look for this information in the methodology section, sample description, or results section.
 
-PROMPT 17 - Number of Crime Incidents
-How many individual crime incidents or crime events were analyzed in this study? Provide the exact number of crime cases, incidents, events, or records that formed the basis of the statistical analysis.
+PROMPT 7 - Average_Population_per_Unit
+What is the average population size per spatial unit in this study? Provide the average number of residents, inhabitants, or population per individual unit. If no average population is mentioned, respond with "Not specified".
 
-PROMPT 18 - Discrete Choice Model
-What type of discrete choice model was used in the statistical analysis? Look for conditional logit, multinomial logit, nested logit, mixed logit, random parameters logit, binary logit, probit, multinomial probit, or any other discrete choice modeling approach mentioned.
+PROMPT 8 - Spatial_Aggregation
+Did the researchers aggregate data from smaller administrative or statistical spatial units to create larger spatial units for analysis? Look specifically for cases where data was available at a finer administrative scale (e.g., census blocks, statistical areas, smaller postal zones) but was combined or aggregated to larger administrative units (e.g., census tracts, larger postal areas, districts) for the final analysis. DO NOT include routine aggregation of individual crime incidents to any spatial unit - focus only on aggregation between different levels of administrative/statistical boundaries. Provide "Yes" or "No" and describe the aggregation process, specifying both the original smaller administrative unit and the final larger administrative unit used for analysis.
 
-PROMPT 19 - Independent Variables
-What are the independent variables, predictor variables, explanatory variables, or covariates used in the statistical model? Look specifically in model tables, regression tables, or statistical output tables for the complete list of variables. List all variables included in the regression analysis, choice model, or other statistical tests in a numbered format (1, 2, 3, etc.). Include both main variables of interest and control variables as they appear in the model tables.
+## SPATIAL UNIT RATIONALE
+PROMPT 9 - Unit_Selection_Rationale
+What justification, reasoning, or explanation did the authors provide for choosing their specific spatial unit size or type? Look for discussions in the methodology section, study design, or spatial analysis sections. Include theoretical justifications, practical considerations, or references to previous research.
 
-PROMPT 20 - Total Number of Independent Variables
-How many independent variables were included in the final statistical model? Provide the exact number of predictor variables, explanatory variables, or covariates used in the analysis.
+PROMPT 10 - Rationale_Category
+Based on the rationale provided in the previous prompt, categorize the type of justification the authors used for their spatial unit of analysis (SUoA) selection. Choose the most appropriate category: "Previous research", "Theory", "Data availability", "Administrative convenience", "Theory and previous research", "Data availability and previous research", "Theory and data availability", or "Theory, previous research, and data availability".
 
-PROMPT 21 - Model Fit Statistics
-What model fit statistics, goodness-of-fit measures, or performance metrics are reported for the statistical model? Look for measures such as log-likelihood, pseudo R-squared, McFadden's R-squared, AIC, BIC, chi-square statistics, likelihood ratio tests, or other fit indices.
+PROMPT 11 - Data_Limitations
+What limitations, constraints, or factors influenced the choice of spatial units in this study? Look for data availability issues, administrative boundary constraints, privacy concerns, confidentiality requirements, aggregation requirements, statistical disclosure controls, or other factors that restricted the spatial unit selection.
 
-PROMPT 22 - Coefficients for All Variables
-What are the coefficient values, parameter estimates, or beta values reported for each independent variable in the statistical model? Extract the specific numerical coefficient values for all variables. Include both significant and non-significant variables.
-
-PROMPT 23 - Confidence Intervals
-What confidence intervals are reported for the model coefficients or parameter estimates? Look for confidence interval values typically presented as ranges such as "95% CI: [lower bound, upper bound]" in results tables or statistical output.
-
-PROMPT 24 - Effect Sizes
-What effect sizes, odds ratios, relative risk ratios, or magnitude measures are reported for the independent variables? Look for odds ratios, hazard ratios, incidence rate ratios, Cohen's d, standardized coefficients, or percentage changes in outcome variables.
-
-PROMPT 25 - Future Suggestions for Spatial Units
-What future recommendations, suggestions, or improvements do the authors propose regarding spatial unit size or spatial unit of analysis? Look for discussions about alternative spatial units, different scales of analysis, optimal unit sizes, or methodological improvements related to spatial boundaries.
-
-PROMPT 26 - Computational Constraints Mentioned
+PROMPT 12 - Computational_Constraints
 What computational limitations, memory constraints, or processing challenges (if any) did the authors mention that influenced their spatial unit selection? Provide detailed descriptions of any constraints mentioned such as memory limitations, processing time, computational feasibility concerns, or software limitations. If no constraints are mentioned, state "No computational constraints mentioned."
 
-PROMPT 27 - Alternative Units Considered
+PROMPT 13 - Alternative_Units
 What alternative spatial units or scales (if any) did the authors mention considering before selecting their final unit of analysis? Provide detailed descriptions of any alternative units that were discussed but not used, including reasons for rejection. If no alternatives are mentioned, state "No alternative units discussed."
 
-PROMPT 28 - MAUP Discussion
+## DATA SOURCES AND COLLECTION
+PROMPT 14 - Data_Collection_Period
+When was the data for this study collected? Provide the specific time period, dates, months, or years when the crime data or other study data was gathered. Look for phrases about when data was collected, accessed, obtained, downloaded, or when the study period occurred.
+
+PROMPT 15 - Data_Sources
+What were the sources of data used in this study? List all data sources mentioned. Look for police databases, crime records, census data, administrative records, surveys, government agencies, or commercial databases. If multiple sources were used, separate them with semicolons.
+
+PROMPT 16 - Number_of_Data_Sources
+How many different data sources were used in this study? Provide the exact number of distinct data sources, databases, organizations, or agencies that provided data for the analysis.
+
+## CRIME TYPE AND INCIDENTS
+PROMPT 17 - Crime_Type
+What specific type or category of crime does this study analyze? Look for crime types such as burglary, residential burglary, commercial burglary, theft, motor vehicle theft, robbery, street robbery, assault, drug offenses, vandalism, graffiti, fraud, or domestic violence. If multiple crime types are studied, list all of them separated by semicolons.
+
+PROMPT 18 - Crime_Type_Group
+Does this study analyze a single crime type or multiple crime types? Categorize the study as either "Single crime type" if only one specific crime is analyzed, or "Multiple crime types" if the study examines several different crime categories.
+
+PROMPT 19 - Crime_Incidents
+How many individual crime incidents or crime events were analyzed in this study? Provide the exact number of crime cases, incidents, events, or records that formed the basis of the statistical analysis.
+
+## MODEL AND STATISTICAL ANALYSIS
+PROMPT 20 - Model_Type
+What type of discrete choice model was used in the statistical analysis? Look for conditional logit, multinomial logit, nested logit, mixed logit, random parameters logit, binary logit, probit, multinomial probit, or any other discrete choice modeling approach mentioned.
+
+PROMPT 21 - Independent_Variables
+What are ALL the independent variables, predictor variables, explanatory variables, or covariates used in the final statistical model? This is CRITICAL - you must find EVERY SINGLE VARIABLE used in the analysis. 
+
+FOCUS PRIMARILY ON MODEL TABLES: Look at the actual statistical model tables, regression tables, coefficient tables, and results tables. Extract the EXACT variable names as they appear in these tables - do not paraphrase or generalize.
+
+IMPORTANT: If you find abbreviated codes (e.g., H B ij, E A ij, C O ij), you MUST also look for the full variable descriptions or definitions elsewhere in the paper. Look for variable definition tables, legend explanations, or text that explains what these codes represent. Always provide the FULL MEANINGFUL NAME, not just the abbreviated code.
+
+Conduct an exhaustive search throughout the ENTIRE document including:
+1. ALL MODEL TABLES: Examine every regression table, model output table, coefficient table, statistical results table, and parameter estimate table - THIS IS THE MOST IMPORTANT SOURCE
+2. ALL VARIABLE DEFINITION SECTIONS: Look for tables or text that explain what abbreviated codes mean
+3. ALL RESULTS SECTIONS: Scan every results, findings, analysis, and discussion section for variable mentions
+4. ALL METHODOLOGY SECTIONS: Check variable descriptions, model specifications, analytical approaches, and data sections
+5. ALL APPENDICES: Review supplementary tables, additional model outputs, robustness checks, and sensitivity analyses
+6. ALL FIGURE CAPTIONS: Check captions of regression plots, model diagrams, and statistical figures
+7. ALL VARIABLE DESCRIPTIONS: Look for sections describing predictors, covariates, control variables, and explanatory variables
+8. ALL EQUATION SECTIONS: Check mathematical formulations and model equations
+9. ALL FOOTNOTES: Review footnotes in tables and text for additional variable information
+10. ALL LEGENDS AND KEYS: Look for explanations of variable codes and abbreviations
+
+SEARCH FOR VARIABLES IN MULTIPLE FORMATS:
+- Variables listed in table rows or columns (MOST IMPORTANT)
+- Full variable descriptions that correspond to abbreviated codes
+- Variables mentioned in text descriptions
+- Variables in mathematical equations or formulas  
+- Variables abbreviated or coded (e.g., X1, X2, INCOME, POP_DENS) - but find their full meanings
+- Variables described but not explicitly listed
+
+CRITICAL INSTRUCTION: List each variable INDIVIDUALLY and SEPARATELY using the EXACT names from model tables. If variables appear as codes (like H B ij, E A ij), find their full descriptions and use those instead. DO NOT group variables together. DO NOT use categories or general descriptions. DO NOT add examples in parentheses. Each variable must be listed as a separate numbered item using its precise name from the statistical output.
+
+WRONG EXAMPLE (DO NOT DO THIS):
+1. H B ij
+2. E A ij
+3. Places of worship (e.g., temples, mosques, churches)
+
+CORRECT EXAMPLE (DO THIS - using full variable names):
+1. Distance_to_home_base
+2. Employment_accessibility_index
+3. Distance_to_temple
+4. Distance_to_mosque
+5. Distance_to_church
+6. Ward_population
+7. Ward_area
+
+EXTRACT MEANINGFUL VARIABLE NAMES: Look specifically at the left column or row headers of statistical tables where variable names are listed. If you see abbreviated codes, search the entire document for their full definitions. Use the most descriptive and meaningful names available, including any prefixes, suffixes, transformations, or coding (e.g., "ln_distance_home", "dummy_male", "lag_crime_rate", "sqrt_population_density").
+
+List ALL variables that appear in ANY final model, robustness check, or sensitivity analysis using their most meaningful names from the tables in a numbered format (1, 2, 3, etc.). Include EVERY individual variable:
+- Each main predictor variable listed separately with full meaningful name
+- Each control variable listed separately with full meaningful name
+- Each interaction term listed separately (e.g., Age_Income_interaction, Distance_squared)
+- Each dummy variable listed separately with full meaningful name
+- Each distance variable listed separately with full meaningful name
+- Each temporal variable listed separately with full meaningful name
+- Each fixed effect variable listed separately with full meaningful name
+- Each transformed variable listed separately with full meaningful name (log_income, sqrt_distance, etc.)
+- Each geographic variable listed separately with full meaningful name
+- Each socioeconomic variable listed separately with full meaningful name
+- Each environmental variable listed separately with full meaningful name
+- Each crime-related variable listed separately with full meaningful name
+- Each infrastructure variable listed separately with full meaningful name
+
+IMPORTANT: Do NOT miss ANY variables. Do NOT group variables. Do NOT add examples. Do NOT use abbreviated codes without finding their full meanings. List each variable separately using its most MEANINGFUL and DESCRIPTIVE name from the model tables and variable definitions. Be absolutely exhaustive. If you find 50+ individual variables, list them all separately with their full meaningful names. List each variable on a separate line with its number.
+
+PROMPT 22 - Number_of_Variables
+How many independent variables are listed in the previous prompt (Prompt 21)? Count the total number of numbered variables and provide only that number. If the previous prompt lists variables numbered 1 through 15, then answer "15".
+
+PROMPT 23 - Model_Fit_Statistics
+What model fit statistics, goodness-of-fit measures, or performance metrics are reported for the statistical model? Look for measures such as log-likelihood, pseudo R-squared, McFadden's R-squared, AIC, BIC, chi-square statistics, likelihood ratio tests, or other fit indices.
+
+PROMPT 24 - Coefficients
+What are the coefficient values, parameter estimates, or beta values reported for each independent variable in the statistical model? Extract the specific numerical coefficient values for all variables. Include both significant and non-significant variables.
+
+PROMPT 25 - Confidence_Intervals
+What confidence intervals are reported for the model coefficients or parameter estimates? Look for confidence interval values typically presented as ranges such as "95% CI: [lower bound, upper bound]" in results tables or statistical output.
+
+PROMPT 26 - Effect_Sizes
+What effect sizes, odds ratios, relative risk ratios, or magnitude measures are reported for the independent variables? Look for odds ratios, hazard ratios, incidence rate ratios, Cohen's d, standardized coefficients, or percentage changes in outcome variables.
+
+PROMPT 27 - Software_Used
+What statistical software, programming tools, or analytical platforms were used for the data analysis? Look for R, Stata, Python, SPSS, SAS, BIOGEME, Nlogit, ArcGIS, QGIS, Mplus, or any other analytical tools. Include version numbers if mentioned.
+
+## METHODOLOGICAL CONSIDERATIONS
+PROMPT 28 - MAUP_Discussion
 How do the authors discuss the Modifiable Areal Unit Problem (MAUP) or ecological fallacy in relation to their spatial unit selection? Provide detailed descriptions of any discussion about scale effects, aggregation bias, or spatial autocorrelation issues. If MAUP is not discussed, state "No MAUP discussion present."
 
-PROMPT 29 - Sensitivity Analysis
+PROMPT 29 - Sensitivity_Analysis
 What sensitivity analysis (if any) did the study conduct using different spatial unit sizes or scales? Provide detailed descriptions of any comparison of results across different spatial scales, including methodological approaches and key findings. If no sensitivity analysis was conducted, state "No sensitivity analysis performed."
 
-PROMPT 30 - Software Used
-What statistical software, programming tools, or analytical platforms were used for the data analysis? Look for R, Stata, Python, SPSS, SAS, BIOGEME, Nlogit, ArcGIS, QGIS, Mplus, or any other analytical tools. Include version numbers if mentioned.
+PROMPT 30 - Future_Suggestions
+What future recommendations, suggestions, or improvements do the authors propose regarding spatial unit size or spatial unit of analysis? Look for discussions about alternative spatial units, different scales of analysis, optimal unit sizes, or methodological improvements related to spatial boundaries.
