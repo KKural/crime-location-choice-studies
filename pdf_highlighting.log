@@ -1,0 +1,135 @@
+2025-07-30 17:54:23,278 - INFO - Loading data from test_combined_dataset.csv
+2025-07-30 17:54:23,306 - INFO - Loaded 3 studies from CSV
+2025-07-30 17:54:23,306 - INFO - Processing 3 studies
+2025-07-30 17:54:23,308 - INFO - Processing study 1/3: Location, Location, Location": Effects of Neighbor...
+2025-07-30 17:54:23,315 - INFO - Found PDF match: 23_location_location_location_effects_of_neighbo.pdf (score: 86.02150537634408)
+2025-07-30 17:54:23,770 - INFO - Processing 79 quotes for 23_location_location_location_effects_of_neighbo.pdf
+2025-07-30 17:54:29,827 - INFO - Highlighted quote for Country on page 11 (similarity: 80.93994778067885%)
+2025-07-30 17:54:29,865 - INFO - Highlighted quote for City on page 1 (similarity: 83.3675564681725%)
+2025-07-30 17:54:31,431 - INFO - Highlighted quote for City on page 11 (similarity: 90.9090909090909%)
+2025-07-30 17:54:32,846 - INFO - Highlighted quote for Total Study Area Size on page 14 (similarity: 80.95238095238095%)
+2025-07-30 17:54:32,906 - INFO - Highlighted quote for Spatial Unit Name on page 14 (similarity: 85.3211009174312%)
+2025-07-30 17:54:37,542 - INFO - Highlighted quote for Spatial Unit Name on page 14 (similarity: 94.06392694063928%)
+2025-07-30 17:54:38,918 - INFO - Highlighted quote for Unit Size on page 14 (similarity: 82.35294117647058%)
+2025-07-30 17:54:38,940 - INFO - Highlighted quote for Unit Size on page 14 (similarity: 93.5483870967742%)
+2025-07-30 17:54:39,007 - INFO - Highlighted quote for Number of Units on page 14 (similarity: 85.3211009174312%)
+2025-07-30 17:54:57,068 - INFO - Highlighted quote for Average Population per Unit on page 14 (similarity: 82.35294117647058%)
+2025-07-30 17:54:57,115 - INFO - Highlighted quote for Average Population per Unit on page 14 (similarity: 93.5483870967742%)
+2025-07-30 17:54:57,193 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 85.3211009174312%)
+2025-07-30 17:54:57,220 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 93.5483870967742%)
+2025-07-30 17:54:57,649 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 96.53179190751445%)
+2025-07-30 17:54:58,094 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 83.60128617363344%)
+2025-07-30 17:56:30,770 - INFO - Highlighted quote for Unit Selection Rationale on page 14 (similarity: 93.5483870967742%)
+2025-07-30 17:57:38,712 - INFO - Highlighted quote for Rationale Category on page 14 (similarity: 87.70864946889226%)
+2025-07-30 17:57:38,841 - INFO - Highlighted quote for Data Limitations on page 14 (similarity: 85.3211009174312%)
+2025-07-30 17:57:44,403 - INFO - Highlighted quote for Data Limitations on page 14 (similarity: 84.86096807415035%)
+2025-07-30 18:00:49,556 - INFO - Loading data from test_combined_dataset.csv
+2025-07-30 18:00:49,562 - INFO - Loaded 3 studies from CSV
+2025-07-30 18:00:49,562 - INFO - Processing 3 studies
+2025-07-30 18:00:49,578 - INFO - Processing study 1/3: Location, Location, Location": Effects of Neighbor...
+2025-07-30 18:00:49,584 - INFO - Found PDF match: 23_location_location_location_effects_of_neighbo.pdf (score: 86.02150537634408)
+2025-07-30 18:00:50,005 - INFO - Processing 79 quotes for 23_location_location_location_effects_of_neighbo.pdf
+2025-07-30 18:00:56,294 - INFO - Highlighted quote for Country on page 11 (similarity: 80.93994778067885%)
+2025-07-30 18:00:56,340 - INFO - Highlighted quote for City on page 1 (similarity: 83.3675564681725%)
+2025-07-30 18:00:57,837 - INFO - Highlighted quote for City on page 11 (similarity: 90.9090909090909%)
+2025-07-30 18:00:59,295 - INFO - Highlighted quote for Total Study Area Size on page 14 (similarity: 80.95238095238095%)
+2025-07-30 18:00:59,353 - INFO - Highlighted quote for Spatial Unit Name on page 14 (similarity: 85.3211009174312%)
+2025-07-30 18:01:03,316 - INFO - Highlighted quote for Spatial Unit Name on page 14 (similarity: 94.06392694063928%)
+2025-07-30 18:01:04,557 - INFO - Highlighted quote for Unit Size on page 14 (similarity: 82.35294117647058%)
+2025-07-30 18:01:04,580 - INFO - Highlighted quote for Unit Size on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:01:04,636 - INFO - Highlighted quote for Number of Units on page 14 (similarity: 85.3211009174312%)
+2025-07-30 18:01:19,331 - INFO - Highlighted quote for Average Population per Unit on page 14 (similarity: 82.35294117647058%)
+2025-07-30 18:01:19,347 - INFO - Highlighted quote for Average Population per Unit on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:01:19,403 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 85.3211009174312%)
+2025-07-30 18:01:19,425 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:01:19,832 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 96.53179190751445%)
+2025-07-30 18:01:20,245 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 83.60128617363344%)
+2025-07-30 18:02:38,487 - INFO - Highlighted quote for Unit Selection Rationale on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:03:46,891 - INFO - Highlighted quote for Rationale Category on page 14 (similarity: 87.70864946889226%)
+2025-07-30 18:03:46,940 - INFO - Highlighted quote for Data Limitations on page 14 (similarity: 85.3211009174312%)
+2025-07-30 18:03:51,789 - INFO - Highlighted quote for Data Limitations on page 14 (similarity: 84.86096807415035%)
+2025-07-30 18:05:26,019 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 97.0%)
+2025-07-30 18:05:26,470 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 81.93832599118943%)
+2025-07-30 18:05:27,020 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 88.95348837209302%)
+2025-07-30 18:05:28,319 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 89.92248062015504%)
+2025-07-30 18:05:30,148 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 84.47653429602889%)
+2025-07-30 18:05:30,200 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 80.57553956834532%)
+2025-07-30 18:05:50,367 - INFO - Highlighted quote for Alternative Units on page 2 (similarity: 83.31562167906482%)
+2025-07-30 18:06:02,250 - INFO - Highlighted quote for Data Collection Period on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:06:03,175 - INFO - Highlighted quote for Data Collection Period on page 14 (similarity: 96.53179190751445%)
+2025-07-30 18:06:04,137 - INFO - Highlighted quote for Data Collection Period on page 14 (similarity: 88.34080717488789%)
+2025-07-30 18:06:08,081 - INFO - Highlighted quote for Data Collection Period on page 13 (similarity: 82.75862068965517%)
+2025-07-30 18:06:52,357 - INFO - Highlighted quote for Data Sources on page 16 (similarity: 85.17350157728707%)
+2025-07-30 18:09:48,725 - INFO - Loading data from test_combined_dataset.csv
+2025-07-30 18:09:48,747 - INFO - Loaded 1 studies from CSV
+2025-07-30 18:09:48,748 - INFO - Processing 1 studies
+2025-07-30 18:09:48,748 - INFO - Processing study 1/1: Location, Location, Location": Effects of Neighbor...
+2025-07-30 18:09:48,761 - INFO - Found PDF match: 23_location_location_location_effects_of_neighbo.pdf (score: 86.02150537634408)
+2025-07-30 18:09:49,311 - INFO - Processing 79 quotes for 23_location_location_location_effects_of_neighbo.pdf
+2025-07-30 18:09:55,640 - INFO - Highlighted quote for Country on page 11 (similarity: 80.93994778067885%)
+2025-07-30 18:09:55,676 - INFO - Highlighted quote for City on page 1 (similarity: 83.3675564681725%)
+2025-07-30 18:09:57,232 - INFO - Highlighted quote for City on page 11 (similarity: 90.9090909090909%)
+2025-07-30 18:09:58,731 - INFO - Highlighted quote for Total Study Area Size on page 14 (similarity: 80.95238095238095%)
+2025-07-30 18:09:58,789 - INFO - Highlighted quote for Spatial Unit Name on page 14 (similarity: 85.3211009174312%)
+2025-07-30 18:10:03,201 - INFO - Highlighted quote for Spatial Unit Name on page 14 (similarity: 94.06392694063928%)
+2025-07-30 18:10:04,386 - INFO - Highlighted quote for Unit Size on page 14 (similarity: 82.35294117647058%)
+2025-07-30 18:10:04,435 - INFO - Highlighted quote for Unit Size on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:10:04,541 - INFO - Highlighted quote for Number of Units on page 14 (similarity: 85.3211009174312%)
+2025-07-30 18:10:21,291 - INFO - Highlighted quote for Average Population per Unit on page 14 (similarity: 82.35294117647058%)
+2025-07-30 18:10:21,315 - INFO - Highlighted quote for Average Population per Unit on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:10:21,395 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 85.3211009174312%)
+2025-07-30 18:10:21,415 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:10:21,934 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 96.53179190751445%)
+2025-07-30 18:10:22,470 - INFO - Highlighted quote for Spatial Aggregation on page 14 (similarity: 83.60128617363344%)
+2025-07-30 18:11:53,098 - INFO - Highlighted quote for Unit Selection Rationale on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:13:02,572 - INFO - Highlighted quote for Rationale Category on page 14 (similarity: 87.70864946889226%)
+2025-07-30 18:13:02,672 - INFO - Highlighted quote for Data Limitations on page 14 (similarity: 85.3211009174312%)
+2025-07-30 18:13:08,538 - INFO - Highlighted quote for Data Limitations on page 14 (similarity: 84.86096807415035%)
+2025-07-30 18:14:39,776 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 97.0%)
+2025-07-30 18:14:40,018 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 81.93832599118943%)
+2025-07-30 18:14:40,420 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 88.95348837209302%)
+2025-07-30 18:14:41,286 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 89.92248062015504%)
+2025-07-30 18:14:42,535 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 84.47653429602889%)
+2025-07-30 18:14:42,580 - INFO - Highlighted quote for Computational Constraints on page 16 (similarity: 80.57553956834532%)
+2025-07-30 18:15:08,612 - INFO - Highlighted quote for Alternative Units on page 2 (similarity: 83.31562167906482%)
+2025-07-30 18:15:25,848 - INFO - Highlighted quote for Data Collection Period on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:15:26,762 - INFO - Highlighted quote for Data Collection Period on page 14 (similarity: 96.53179190751445%)
+2025-07-30 18:15:28,188 - INFO - Highlighted quote for Data Collection Period on page 14 (similarity: 88.34080717488789%)
+2025-07-30 18:15:32,508 - INFO - Highlighted quote for Data Collection Period on page 13 (similarity: 82.75862068965517%)
+2025-07-30 18:16:05,479 - INFO - Highlighted quote for Data Sources on page 16 (similarity: 85.17350157728707%)
+2025-07-30 18:19:10,734 - INFO - Highlighted quote for Crime Type Group on page 1 (similarity: 94.56521739130434%)
+2025-07-30 18:20:26,634 - INFO - Highlighted quote for Model Type on page 16 (similarity: 97.6878612716763%)
+2025-07-30 18:20:27,845 - INFO - Highlighted quote for Model Type on page 16 (similarity: 97.82608695652173%)
+2025-07-30 18:20:29,330 - INFO - Highlighted quote for Model Type on page 16 (similarity: 81.93832599118943%)
+2025-07-30 18:20:29,996 - INFO - Highlighted quote for Model Type on page 16 (similarity: 88.95348837209302%)
+2025-07-30 18:20:31,109 - INFO - Highlighted quote for Model Type on page 16 (similarity: 89.92248062015504%)
+2025-07-30 18:20:31,198 - INFO - Highlighted quote for Model Type on page 16 (similarity: 90.52631578947368%)
+2025-07-30 18:21:20,043 - INFO - Highlighted quote for Independent Variables on page 16 (similarity: 85.67493112947659%)
+2025-07-30 18:21:38,919 - INFO - Highlighted quote for Number of Variables on page 16 (similarity: 95.58823529411765%)
+2025-07-30 18:21:41,185 - INFO - Highlighted quote for Model Fit Statistics on page 17 (similarity: 80.61674008810573%)
+2025-07-30 18:21:42,434 - INFO - Highlighted quote for Model Fit Statistics on page 18 (similarity: 82.16704288939052%)
+2025-07-30 18:21:42,476 - INFO - Highlighted quote for Model Fit Statistics on page 18 (similarity: 96.40287769784173%)
+2025-07-30 18:23:23,912 - INFO - Highlighted quote for Confidence Intervals on page 18 (similarity: 83.9506172839506%)
+2025-07-30 18:24:20,939 - INFO - Highlighted quote for Software Used on page 16 (similarity: 80.48192771084337%)
+2025-07-30 18:24:21,396 - INFO - Highlighted quote for MAUP Discussion on page 14 (similarity: 96.53179190751445%)
+2025-07-30 18:24:21,777 - INFO - Highlighted quote for MAUP Discussion on page 14 (similarity: 83.60128617363344%)
+2025-07-30 18:24:22,156 - INFO - Highlighted quote for Sensitivity Analysis on page 13 (similarity: 91.11747851002865%)
+2025-07-30 18:24:44,235 - INFO - Highlighted quote for Sensitivity Analysis on page 17 (similarity: 80.93220338983052%)
+2025-07-30 18:24:44,266 - INFO - Highlighted quote for Sensitivity Analysis on page 14 (similarity: 93.5483870967742%)
+2025-07-30 18:24:44,906 - INFO - Highlighted quote for Sensitivity Analysis on page 14 (similarity: 96.53179190751445%)
+2025-07-30 18:24:44,934 - INFO - Highlighted quote for Future Suggestions on page 24 (similarity: 100.0%)
+2025-07-30 18:24:50,871 - INFO - Highlighted quote for Future Suggestions on page 24 (similarity: 88.92171344165436%)
+2025-07-30 18:25:13,863 - INFO - Highlighted quote for Future Suggestions on page 24 (similarity: 85.64356435643565%)
+2025-07-30 18:25:13,867 - INFO - Successfully highlighted 54/79 quotes in 23_location_location_location_effects_of_neighbo.pdf
+2025-07-30 18:25:13,985 - INFO - 
+        ========== HIGHLIGHTING SUMMARY ==========
+        Total studies processed: 1
+        Studies with highlights: 1
+        Total quotes: 79
+        Successfully highlighted: 54
+        Overall success rate: 68.4% if total_quotes > 0 else 0
+        ==========================================
+        
+2025-07-30 18:25:13,987 - INFO - Reports saved to:
+2025-07-30 18:25:13,987 - INFO -   - Summary: Test_Highlighted_PDFs\highlighting_report.csv
+2025-07-30 18:25:13,987 - INFO -   - Details: Test_Highlighted_PDFs\highlighting_details.json

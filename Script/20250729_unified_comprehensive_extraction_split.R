@@ -169,14 +169,150 @@ missing_columns <- setdiff(desired_order, names(df_combined))
 # Reorder columns according to the desired order
 df_combined <- df_combined[, existing_columns]
 
-# Add Study ID as first column and verification columns at the end
-df_combined <- data.frame(
-  Study_ID = "",
-  df_combined,
-  Verified_by_Kural = "",
-  Verified_by_Stephanie = "",
+# Function to normalize titles for matching
+normalize_title <- function(title) {
+  if (is.na(title) || title == "") return("")
+  
+  # Convert to lowercase
+  normalized <- tolower(title)
+  
+  # Remove file extensions
+  normalized <- stringr::str_replace(normalized, "\\.pdf$", "")
+  
+  # Remove special characters and extra spaces
+  normalized <- stringr::str_replace_all(normalized, "[^a-z0-9\\s]", " ")
+  normalized <- stringr::str_replace_all(normalized, "\\s+", " ")
+  normalized <- stringr::str_trim(normalized)
+  
+  # Remove common prefixes that might vary
+  normalized <- stringr::str_replace(normalized, "^a\\s+", "")
+  normalized <- stringr::str_replace(normalized, "^the\\s+", "")
+  
+  return(normalized)
+}
+
+# Create study ID mapping with both original and normalized titles
+study_id_mapping <- data.frame(
+  Study_ID = 1:51,
+  Original_Title = c(
+    "A discrete spatial choice model of burglary target selection at the house-level",
+    "Residential burglary target selection: An analysis at the property-level using Google Street View",
+    "Graffiti Writers Choose Locations That Optimize Exposure",
+    "Where Do Dealers Solicit Customers and Sell Them Drugs",
+    "Go where the money is: Modeling street robbers' location choices",
+    "Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago",
+    "The usefulness of past crime data as an attractiveness index for residential burglars",
+    "Role of the Street Network in Burglars' Spatial Decision-Making",
+    "discrete choice analysis of spatial attack sites",
+    "Adolescent offenders' current whereabouts predict locations of their future crime",
+    "spatial analysis with preference specification of latent decision makers for criminal event prediction",
+    "Modelling the spatial decision making of terrorists: The discrete choice approach",
+    "Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model (LSOA)",
+    "Target Choice During Extreme Events: A Discrete Spatial Choice Model of the 2011 London Riots (LSOA)",
+    "Situating Crime Pattern Theory Into The Explanation Of Co-Offending: Considering Area-Level Convergence Spaces",
+    "Modelling taste heterogeneity regarding offence location choices (Census output area)",
+    "Learning where to offend: Effects of past on future burglary locations (UK Census Lower Level Super Output Area (LSOA)",
+    "How do residential burglars select target areas? : A new approach to the analysis of criminal location choice",
+    "Co-offending and the Choice of Target Areas in Burglary",
+    "Burglar Target Selection: A Cross-national Comparison (NL)",
+    "Effect Attractiveness Opportunity And Accessibility To Burglars On Residential Burglary Rates Of Urban Neighborhoods",
+    "Where offenders choose to attack: A discrete choice model of robberies in Chicago",
+    "Location Location Location: Effects of Neighborhood and House Attributes on Burglars' Target Selection",
+    "Relative Difference and Burglary Location: Can Ecological Characteristics of a Burglar's Home Neighborhood Predict Offense Location?",
+    "divergent decisionmaking in context neighborhood context shapes effects of physical disorder and spatial knowledge on burglars location choice",
+    "familiar locations and similar activities examining the contributions of reliable and relevant knowledge in offenders crime location choices",
+    "Traveling Alone or Together? Neighborhood Context on Individual and Group Juvenile and Adult Burglary Decisions",
+    "Relationships Between Offenders' Crime Locations and Different Prior Activity Locations as Recorded in Police Data",
+    "Crime Feeds on Legal Activities: Daily Mobility Flows Help to Explain Thieves' Target Location Choices",
+    "Assessing the influence of prior on subsequent street robbery location choices: A case study in ZG City  China",
+    "Ambient population and surveillance cameras: The guardianship role in street robbers' crime location choice",
+    "Do Migrant and Native Robbers Target Different Places?",
+    "Do juvenile, young adult, and adult offenders target different places in the Chinese context?",
+    "Awareness×Opportunity: Testing Interactions Between Activity Nodes and Criminal Opportunity in Predicting Crime Location Choice",
+    "The Importance of Importance Sampling: Exploring Methods of Sampling from Alternatives in Discrete Choice Models of Crime Location Choice",
+    "Burglar Target Selection: A Cross-national Comparison (Super Output Areas - UK)",
+    "Location Choice of Snatching Offenders in Chennai City (Wards)",
+    "The Influence of Activity Space and Visiting Frequency on Crime Location Choice: Findings from an Online Self-Report Survey",
+    "Right place  right time? Making crime pattern theory time-specific",
+    "Burglars blocked by barriers The impact of physical and social barriers on residential burglars target location choices in China",
+    "Investigating the effect of people on the street and streetscape physical environment on the location choice of street theft crime offenders using street view images and a discrete spatial choice model",
+    "Biting Once Twice: the Influence of Prior on Subsequent Crime Location Choice",
+    "Co-offenders' crime location choice: Do co-offending groups commit crimes in their shared awareness space?",
+    "Family Matters: Effects of Family Members' Residential Areas on Crime Location Choice",
+    "A Time for a Crime: Temporal Aspects of Repeat Offenders' Crime Location Choices",
+    "A Sentimental Journey To Crime : Effects of Residential History on Crime Location Choice",
+    "Modeling micro-level crime location choice: Application of the discrete choice framework to crime at places",
+    "Effects of Residential history on Commercial Robbers' Crime Location Choices",
+    "Formal evaluation of the impact of barriers and connectors on residential burglars' macro-level offending location choices",
+    "Burglar Target Selection: A Cross-national Comparison (statistical local areas - AU)",
+    "Target Selection Models with Preference Variation Between Offenders"
+  ),
   stringsAsFactors = FALSE
 )
+
+# Add normalized titles to the mapping
+study_id_mapping$Normalized_Title <- sapply(study_id_mapping$Original_Title, normalize_title)
+
+# Create normalized titles for the dataset
+df_combined$Normalized_Title <- sapply(df_combined$Title, normalize_title)
+
+# Function to find best match using string similarity
+find_best_match <- function(query_title, reference_titles, reference_ids) {
+  if (is.na(query_title) || query_title == "") return(NA)
+  
+  # Calculate string distances
+  distances <- stringr::str_similarity(query_title, reference_titles)
+  
+  # Find the best match (highest similarity)
+  best_match_idx <- which.max(distances)
+  
+  # Only return match if similarity is above threshold (0.8)
+  if (distances[best_match_idx] >= 0.8) {
+    return(reference_ids[best_match_idx])
+  } else {
+    return(NA)
+  }
+}
+
+# Assign Study_IDs using fuzzy matching
+df_combined$Study_ID <- sapply(df_combined$Normalized_Title, function(title) {
+  find_best_match(title, study_id_mapping$Normalized_Title, study_id_mapping$Study_ID)
+})
+
+# For unmatched studies, leave Study_ID as NA and we'll handle them manually
+df_combined$Study_ID[is.na(df_combined$Study_ID)] <- ""
+
+# Remove the temporary normalized title column
+df_combined$Normalized_Title <- NULL
+
+# Add verification columns
+df_combined$Verified_by_Kural <- ""
+df_combined$Verified_by_Stephanie <- ""
+
+# Order the dataframe by Study_ID in ascending order (put empty Study_IDs at the end)
+df_combined$Study_ID_numeric <- as.numeric(df_combined$Study_ID)
+df_combined <- df_combined[order(df_combined$Study_ID_numeric, na.last = TRUE), ]
+df_combined$Study_ID_numeric <- NULL
+
+# Reorganize columns to put Study_ID first and verification columns last
+verification_cols <- c("Verified_by_Kural", "Verified_by_Stephanie")
+other_cols <- setdiff(names(df_combined), c("Study_ID", verification_cols))
+df_combined <- df_combined[, c("Study_ID", other_cols, verification_cols)]
+
+# Print matching results
+cat("\n=== Study ID Matching Results ===\n")
+matched_studies <- sum(df_combined$Study_ID != "", na.rm = TRUE)
+total_studies <- nrow(df_combined)
+cat(paste0("Successfully matched: ", matched_studies, " out of ", total_studies, " studies\n"))
+
+if (any(df_combined$Study_ID == "" | is.na(df_combined$Study_ID))) {
+  cat("\nUnmatched studies (please check manually):\n")
+  unmatched_titles <- df_combined$Title[df_combined$Study_ID == "" | is.na(df_combined$Study_ID)]
+  for (i in seq_along(unmatched_titles)) {
+    cat(paste0(i, ". ", unmatched_titles[i], "\n"))
+  }
+}
+cat("=================================\n\n")
 
 # Clean up formatting in all columns
 for (col in names(df_combined)) {
@@ -235,6 +371,28 @@ ncol(df_combined)
 
 # Save the combined and reorganized data set
 custom_save(df_combined, output_folder, "combined_dataset", readr::write_csv)
+
+# =============================================================================
+# PDF QUOTE HIGHLIGHTING INTEGRATION
+# =============================================================================
+# After saving the combined dataset, you can now highlight quotes in PDFs
+
+# Source the PDF highlighting integration script
+if (file.exists("Script/pdf_quote_highlighter_r_integration.R")) {
+  source("Script/pdf_quote_highlighter_r_integration.R")
+  
+  cat("\n=== PDF Quote Highlighting Available ===\n")
+  cat("To highlight supporting quotes in your PDF files, run:\n")
+  cat("  result <- run_pdf_quote_highlighting()\n")
+  cat("Or specify paths manually:\n")
+  combined_dataset_file <- custom_save(df_combined, output_folder, "combined_dataset", readr::write_csv)
+  cat(paste0("  result <- highlight_quotes_in_pdfs(\n"))
+  cat(paste0("    csv_file = \"", combined_dataset_file, "\",\n"))
+  cat(paste0("    pdf_folder = \"Review_articles\",\n"))
+  cat(paste0("    output_folder = \"Review_articles_highlighted\"\n"))
+  cat(paste0("  )\n"))
+  cat("========================================\n")
+}
 
 # =============================================================================
 # DATA PROCESSING COMPLETE

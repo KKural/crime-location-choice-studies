@@ -1,0 +1,390 @@
+[
+  {
+    "pdf_file": "23_location_location_location_effects_of_neighbo.pdf",
+    "output_file": "23_location_location_location_effects_of_neighbo_highlighted.pdf",
+    "total_quotes": 79,
+    "highlighted_quotes": 54,
+    "success_rate": 68.35443037974683,
+    "details": [
+      {
+        "variable": "Country",
+        "quote": "Between 2005 and 2014, the local police department cleared 1871 residential burglaries committed in Ghent.\" - \"This northwestern Belgian city covers an area of approximately 156 km 2 and had a population of 247,486 residents on 1 January 2011.",
+        "found_text": "2014 with Census information on residences and neighborhoods in 2011 for Ghent, Bel- gium. This northwestern Belgian city covers an area of approximately 156 km 2  and had a  population of 247,486 residents on 1 January 2011.",
+        "similarity": 80.93994778067885,
+        "page": 11
+      },
+      {
+        "variable": "City",
+        "quote": "We combine data on 679 burglaries by 577 burglars committed between 2005 and 2014 with data on approximately 138,000 residences in 193 residential neighborhoods in Ghent, Belgium.\" - \"In this analysis, we assess the extent to which neighborhood attributes and residence attributes determine the target selection of burglars",
+        "found_text": "burglarize. Methods   We combine data on 679 burglaries by 577 burglars committed between 2005  and 2014 with data on approximately 138,000 residences in 193 residential neighborhoods  in Ghent, Belgium. Using a discrete spatial choice approach, we estimate the combined",
+        "similarity": 83.3675564681725,
+        "page": 1
+      },
+      {
+        "variable": "City",
+        "quote": "To that aim, we combine police-recorded information on burglars and the residential burglaries they committed between 2005 and 2014 with Census information on residences and neighborhoods in 2011 for Ghent, Belgium.\" - \"This northwestern Belgian city covers an area of approximately 156 km 2 and had a population of 247,486 residents on 1 January 2011.",
+        "found_text": "utes determine the target selection of burglars. To that aim, we combine police-recorded  information on burglars and the residential burglaries they committed between 2005 and  2014 with Census information on residences and neighborhoods in 2011 for Ghent, Bel- gium. This northwestern Belgian city covers an area of approximately 156 km",
+        "similarity": 90.9090909090909,
+        "page": 11
+      },
+      {
+        "variable": "Total Study Area Size",
+        "quote": "This northwestern Belgian city covers an area of approximately 156 km 2 and had a population of 247,486 residents on 1 January 2011.\" - \"On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.",
+        "found_text": "2016 ). On average, the 193 residential neighbor- hoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences  (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers. Four neighborhood attributes and a prior burglary variable are included in the analysis.",
+        "similarity": 80.95238095238095,
+        "page": 14
+      },
+      {
+        "variable": "Spatial Unit Name",
+        "quote": "The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function",
+        "found_text": "792 Journal of Quantitative Criminology (2020) 36:779–821 1 3 Neighborhood Data The Census subdivides Ghent in geographical entities called ‘statistical districts’, of which",
+        "similarity": 85.3211009174312,
+        "page": 14
+      },
+      {
+        "variable": "Spatial Unit Name",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'.\" - \"The neighborhoods in this study are similarly constructed to the areas used in most previous discrete spatial choice studies and are comparable or smaller in size (e.g., Lammers et al. 2015;Menting et al. 2016).\" - \"On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.",
+        "found_text": "193 have a residential function. Throughout this paper we refer to these entities as ‘neigh- borhoods’. The neighborhoods in this study are similarly constructed to the areas used in  most previous discrete spatial choice studies and are comparable or smaller in size (e.g.,  Lammers et  al.  2015 ; Menting et  al.  2016 ). On average, the 193 residential neighbor- hoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences",
+        "similarity": 94.06392694063928,
+        "page": 14
+      },
+      {
+        "variable": "Unit Size",
+        "quote": "On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.\" - \"The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function",
+        "found_text": "2016 ). On average, the 193 residential neighbor- hoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences  (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers. Four neighborhood attributes and a prior burglary variable are included in the analysis.",
+        "similarity": 82.35294117647058,
+        "page": 14
+      },
+      {
+        "variable": "Unit Size",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'.",
+        "found_text": "193 have a residential function. Throughout this paper we refer to these entities as ‘neigh-",
+        "similarity": 93.5483870967742,
+        "page": 14
+      },
+      {
+        "variable": "Number of Units",
+        "quote": "The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function",
+        "found_text": "792 Journal of Quantitative Criminology (2020) 36:779–821 1 3 Neighborhood Data The Census subdivides Ghent in geographical entities called ‘statistical districts’, of which",
+        "similarity": 85.3211009174312,
+        "page": 14
+      },
+      {
+        "variable": "Average Population per Unit",
+        "quote": "On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.\" - \"The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function",
+        "found_text": "2016 ). On average, the 193 residential neighbor- hoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences  (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers. Four neighborhood attributes and a prior burglary variable are included in the analysis.",
+        "similarity": 82.35294117647058,
+        "page": 14
+      },
+      {
+        "variable": "Average Population per Unit",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'.",
+        "found_text": "193 have a residential function. Throughout this paper we refer to these entities as ‘neigh-",
+        "similarity": 93.5483870967742,
+        "page": 14
+      },
+      {
+        "variable": "Spatial Aggregation",
+        "quote": "The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function",
+        "found_text": "792 Journal of Quantitative Criminology (2020) 36:779–821 1 3 Neighborhood Data The Census subdivides Ghent in geographical entities called ‘statistical districts’, of which",
+        "similarity": 85.3211009174312,
+        "page": 14
+      },
+      {
+        "variable": "Spatial Aggregation",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'",
+        "found_text": "193 have a residential function. Throughout this paper we refer to these entities as ‘neigh-",
+        "similarity": 93.5483870967742,
+        "page": 14
+      },
+      {
+        "variable": "Spatial Aggregation",
+        "quote": "The neighborhoods in this study are similarly constructed to the areas used in most previous discrete spatial choice studies and are comparable or smaller in size (e.g., Lammers et al. 2015;Menting et al. 2016)",
+        "found_text": "borhoods’. The neighborhoods in this study are similarly constructed to the areas used in  most previous discrete spatial choice studies and are comparable or smaller in size (e.g.,",
+        "similarity": 96.53179190751445,
+        "page": 14
+      },
+      {
+        "variable": "Spatial Aggregation",
+        "quote": "On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.",
+        "found_text": "Lammers et  al.  2015 ; Menting et  al.  2016 ). On average, the 193 residential neighbor- hoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences",
+        "similarity": 83.60128617363344,
+        "page": 14
+      },
+      {
+        "variable": "Unit Selection Rationale",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'.",
+        "found_text": "193 have a residential function. Throughout this paper we refer to these entities as ‘neigh-",
+        "similarity": 93.5483870967742,
+        "page": 14
+      },
+      {
+        "variable": "Rationale Category",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'.\" - \"The neighborhoods in this study are similarly constructed to the areas used in most previous discrete spatial choice studies and are comparable or smaller in size (e.g., Lammers et al. 2015;Menting et al. 2016).\" - \"In this analysis, we assess the extent to which neighborhood attributes and residence attributes determine the target selection of burglars.",
+        "found_text": "193 have a residential function. Throughout this paper we refer to these entities as ‘neigh- borhoods’. The neighborhoods in this study are similarly constructed to the areas used in  most previous discrete spatial choice studies and are comparable or smaller in size (e.g.,  Lammers et  al.  2015 ; Menting et  al.  2016 ). On average, the 193 residential neighbor-",
+        "similarity": 87.70864946889226,
+        "page": 14
+      },
+      {
+        "variable": "Data Limitations",
+        "quote": "The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function",
+        "found_text": "792 Journal of Quantitative Criminology (2020) 36:779–821 1 3 Neighborhood Data The Census subdivides Ghent in geographical entities called ‘statistical districts’, of which",
+        "similarity": 85.3211009174312,
+        "page": 14
+      },
+      {
+        "variable": "Data Limitations",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'.\" - \"The neighborhoods in this study are similarly constructed to the areas used in most previous discrete spatial choice studies and are comparable or smaller in size (e.g., Lammers et al. 2015;Menting et al. 2016).\" - \"On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.\" - \"our neighborhood and residence data were not measured at the same time of the burglary",
+        "found_text": "The Census subdivides Ghent in geographical entities called ‘statistical districts’, of which  193 have a residential function. Throughout this paper we refer to these entities as ‘neigh- borhoods’. The neighborhoods in this study are similarly constructed to the areas used in  most previous discrete spatial choice studies and are comparable or smaller in size (e.g.,  Lammers et  al.  2015 ; Menting et  al.  2016 ). On average, the 193 residential neighbor- hoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences",
+        "similarity": 84.86096807415035,
+        "page": 14
+      },
+      {
+        "variable": "Computational Constraints",
+        "quote": "We considered using the nested logit model (Ben-Akiva and Lerman 1985) instead of the conditional logit model",
+        "found_text": "6   We considered using the nested logit model (Ben-Akiva and Lerman  1985 ) instead of the conditional",
+        "similarity": 97.0,
+        "page": 16
+      },
+      {
+        "variable": "Computational Constraints",
+        "quote": "The nested logit model is a more flexible discrete choice model that does not assume independence of alternatives within the same group of alternatives",
+        "found_text": ") instead of the conditional  logit model. The nested logit model is a more flexible discrete choice model that does not assume independ-",
+        "similarity": 81.93832599118943,
+        "page": 16
+      },
+      {
+        "variable": "Computational Constraints",
+        "quote": "This model is well-suited for the analysis of hierarchically structured choice sets such as the choice of residences nested in neighborhoods but requires considerable computational resources",
+        "found_text": "ence of alternatives within the same group of alternatives. This model is well-suited for the analysis of  hierarchically structured choice sets such as the choice of residences nested in neighborhoods but requires",
+        "similarity": 88.95348837209302,
+        "page": 16
+      },
+      {
+        "variable": "Computational Constraints",
+        "quote": "Even in a high-performance computing environment, estimation of a nested logit model on a choice set as large as our dataset (i.e. 138,321 alternative residence nested in 193 neighborhoods for each of the 679 burglaries) proved to be computationally prohibitive",
+        "found_text": "considerable computational resources. Even in a high-performance computing environment, estimation of  a nested logit model on a choice set as large as our dataset (i.e. 138,321 alternative residence nested in 193",
+        "similarity": 89.92248062015504,
+        "page": 16
+      },
+      {
+        "variable": "Computational Constraints",
+        "quote": "This forced us to resort to the computationally less demanding but less flexible conditional logit model.\" - \"If the assumption of independence of residences within the same neighborhood is violated, the conditional logit model will still yield unbiased coefficient estimates, but standard errors may be underestimated",
+        "found_text": "neighborhoods for each of the 679 burglaries) proved to be computationally prohibitive. This forced us to  resort to the computationally less demanding but less flexible conditional logit model. If the assumption of  independence of residences within the same neighborhood is violated, the conditional logit model will still",
+        "similarity": 84.47653429602889,
+        "page": 16
+      },
+      {
+        "variable": "Computational Constraints",
+        "quote": "This requires us to be careful and conservative in interpreting significance levels.",
+        "found_text": "ful and conservative in interpreting significance levels. 7   We computed generalized variance inflation factors (GVIFs) to assess multicollinearty among the inde-",
+        "similarity": 80.57553956834532,
+        "page": 16
+      },
+      {
+        "variable": "Alternative Units",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'.\" - \"In reality, however, it is evident that burglars target individual houses or apartments, not neighborhoods, although clearly their choices may be affected by neighborhood attributes.\" - \"The major contribution of our research is that it investigates burglary target choice at the appropriate level of aggregation-burglars burglarize homes rather than complete neighborhoods-while still considering neighborhood-level attributes that affect these choices and taking into account the home locations of the burglars themselves and their limited action radius.",
+        "found_text": "ity. Conversely, if environmental attributes affect burglary risk, communal efforts and col- lective investments may be necessary and could prove cost-effective. The major contribution of our research is that it investigates burglary target choice at the  appropriate level of aggregation—burglars burglarize homes rather than complete neigh- borhoods—while still considering neighborhood-level attributes that affect these choices  and taking into account the home locations of the burglars themselves and their limited",
+        "similarity": 83.31562167906482,
+        "page": 2
+      },
+      {
+        "variable": "Data Collection Period",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'",
+        "found_text": "193 have a residential function. Throughout this paper we refer to these entities as ‘neigh-",
+        "similarity": 93.5483870967742,
+        "page": 14
+      },
+      {
+        "variable": "Data Collection Period",
+        "quote": "The neighborhoods in this study are similarly constructed to the areas used in most previous discrete spatial choice studies and are comparable or smaller in size (e.g., Lammers et al. 2015;Menting et al. 2016)",
+        "found_text": "borhoods’. The neighborhoods in this study are similarly constructed to the areas used in  most previous discrete spatial choice studies and are comparable or smaller in size (e.g.,",
+        "similarity": 96.53179190751445,
+        "page": 14
+      },
+      {
+        "variable": "Data Collection Period",
+        "quote": "On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.\" - \"The Census identified 138,321 residences in Ghent",
+        "found_text": "Lammers et  al.  2015 ; Menting et  al.  2016 ). On average, the 193 residential neighbor- hoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences  (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.",
+        "similarity": 88.34080717488789,
+        "page": 14
+      },
+      {
+        "variable": "Data Collection Period",
+        "quote": "However, comparison of the characteristics of the burglarized neighborhoods in the sample of cleared burglaries (N = 1741; see Step 1, Table 1 ) and those for the sample of burglaries included in the model estimation procedure (N = 679; see Step 6; Table 1 ) allows us to conclude that selectivity is not a concern in this study.",
+        "found_text": "Applying these criteria might introduce selectivity in our included sample. However, com- parison of the characteristics of the burglarized neighborhoods in the sample of cleared  burglaries (N = 1741; see Step 1, Table  1 ) and those for the sample of burglaries included",
+        "similarity": 82.75862068965517,
+        "page": 13
+      },
+      {
+        "variable": "Data Sources",
+        "quote": "This approach permits including target features (e.g., neighborhood and residence attributes), offender features (e.g., offending histories), and target-offender interactions (e.g., distance from the offender's home to each alternative) in a single model (for a detailed discussion, see Ruiter 2017).\" - \"The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function.",
+        "found_text": "tion choices, an approach introduced in criminology by Bernasco and Nieuwbeerta ( 2005 ).  This approach permits including target features (e.g., neighborhood and residence attrib- utes), offender features (e.g., offending histories), and target-offender interactions (e.g.,  distance from the offender’s home to each alternative) in a single model (for a detailed",
+        "similarity": 85.17350157728707,
+        "page": 16
+      },
+      {
+        "variable": "Crime Type Group",
+        "quote": "Results Burglars prefer burglarizing residences in neighborhoods with lower residential density",
+        "found_text": "conditional logit model. Results   Burglars prefer burglarizing residences in neighborhoods with lower residential",
+        "similarity": 94.56521739130434,
+        "page": 1
+      },
+      {
+        "variable": "Model Type",
+        "quote": "To study burglars' target choices, we apply the discrete choice framework to burglary location choices, an approach introduced in criminology by Bernasco and Nieuwbeerta (2005)",
+        "found_text": "1 3 Method To study burglars’ target choices, we apply the discrete choice framework to burglary loca- tion choices, an approach introduced in criminology by Bernasco and Nieuwbeerta (",
+        "similarity": 97.6878612716763,
+        "page": 16
+      },
+      {
+        "variable": "Model Type",
+        "quote": "This approach permits including target features (e.g., neighborhood and residence attributes), offender features (e.g., offending histories), and target-offender interactions (e.g., distance from the offender's home to each alternative) in a single model (for a detailed discussion, see Ruiter 2017)",
+        "found_text": "2005 ).  This approach permits including target features (e.g., neighborhood and residence attrib- utes), offender features (e.g., offending histories), and target-offender interactions (e.g.,  distance from the offender’s home to each alternative) in a single model (for a detailed",
+        "similarity": 97.82608695652173,
+        "page": 16
+      },
+      {
+        "variable": "Model Type",
+        "quote": "The nested logit model is a more flexible discrete choice model that does not assume independence of alternatives within the same group of alternatives",
+        "found_text": ") instead of the conditional  logit model. The nested logit model is a more flexible discrete choice model that does not assume independ-",
+        "similarity": 81.93832599118943,
+        "page": 16
+      },
+      {
+        "variable": "Model Type",
+        "quote": "This model is well-suited for the analysis of hierarchically structured choice sets such as the choice of residences nested in neighborhoods but requires considerable computational resources",
+        "found_text": "ence of alternatives within the same group of alternatives. This model is well-suited for the analysis of  hierarchically structured choice sets such as the choice of residences nested in neighborhoods but requires",
+        "similarity": 88.95348837209302,
+        "page": 16
+      },
+      {
+        "variable": "Model Type",
+        "quote": "Even in a high-performance computing environment, estimation of a nested logit model on a choice set as large as our dataset (i.e. 138,321 alternative residence nested in 193 neighborhoods for each of the 679 burglaries) proved to be computationally prohibitive",
+        "found_text": "considerable computational resources. Even in a high-performance computing environment, estimation of  a nested logit model on a choice set as large as our dataset (i.e. 138,321 alternative residence nested in 193",
+        "similarity": 89.92248062015504,
+        "page": 16
+      },
+      {
+        "variable": "Model Type",
+        "quote": "This forced us to resort to the computationally less demanding but less flexible conditional logit model.",
+        "found_text": "resort to the computationally less demanding but less flexible conditional logit model. If the assumption of",
+        "similarity": 90.52631578947368,
+        "page": 16
+      },
+      {
+        "variable": "Independent Variables",
+        "quote": "For each residence, Statistics Belgium provided a unique identification number and five variables.\" - \"We estimate three main effects models to determine the effects of neighborhood and residence attributes on target choice.\" - \"In addition, we estimate 25 cross-level interaction effect models to determine to which extent the relationships between residential attributes and the likelihood of burglary target selection vary according to neighborhood-level attributes.",
+        "found_text": "third model estimates the combined impact of neighborhood and residence attributes, prior  burglary, and distance. In addition, we estimate 25 cross-level interaction effect models to determine to which  extent the relationships between residential attributes and the likelihood of burglary target  selection vary according to neighborhood-level attributes. If burglars indeed evaluate the",
+        "similarity": 85.67493112947659,
+        "page": 16
+      },
+      {
+        "variable": "Number of Variables",
+        "quote": "This approach permits including target features (e.g., neighborhood and residence attributes), offender features (e.g., offending histories), and target-offender interactions (e.g., distance from the offender's home to each alternative) in a single model\" - \"The Census identified 138,321 residences in Ghent",
+        "found_text": "2005 ).  This approach permits including target features (e.g., neighborhood and residence attrib- utes), offender features (e.g., offending histories), and target-offender interactions (e.g.,  distance from the offender’s home to each alternative) in a single model (for a detailed",
+        "similarity": 95.58823529411765,
+        "page": 16
+      },
+      {
+        "variable": "Model Fit Statistics",
+        "quote": "Table 3 displays estimated odds ratios (OR) and standard errors (SE) as well as the Akaike (AIC) and the Bayesian information criterion (BIC) to assess relative model fit for the integrated main effects only model.\" - \"The smallest AIC and BIC values are observed for the integrated main effects model",
+        "found_text": "23,882.41 (13) 796 Journal of Quantitative Criminology (2020) 36:779–821 1 3 Results Table  3  displays estimated odds ratios (OR) and standard errors (SE) as well as the Akaike  (AIC) and the Bayesian information criterion (BIC) to assess relative model fit for the inte-",
+        "similarity": 80.61674008810573,
+        "page": 17
+      },
+      {
+        "variable": "Model Fit Statistics",
+        "quote": "This suggests that an optimal description of burglars' target choices requires both neighborhood and residence attributes.\" - \"The AIC and the BIC offer insight in the quality of the models relative to each other, and in doing so make a trade-off by rewarding goodness-of-fit and penalizing model complexity",
+        "found_text": "variable. The AIC and the BIC offer insight in the quality of the models relative to each  other, and in doing so make a trade-off by rewarding goodness-of-fit and penalizing model  complexity. Smaller values for both information criteria are preferred (Raftery",
+        "similarity": 82.16704288939052,
+        "page": 18
+      },
+      {
+        "variable": "Model Fit Statistics",
+        "quote": "Smaller values for both information criteria are preferred (Raftery 1995).",
+        "found_text": "complexity. Smaller values for both information criteria are preferred (Raftery",
+        "similarity": 96.40287769784173,
+        "page": 18
+      },
+      {
+        "variable": "Confidence Intervals",
+        "quote": "Table 3 displays estimated odds ratios (OR) and standard errors (SE) as well as the Akaike (AIC) and the Bayesian information criterion (BIC) to assess relative model fit for the integrated main effects only model.\" - \"The integrated main effects and the interaction effects models are most relevant for our argument.\" - \"The AIC and the BIC offer insight in the quality of the models relative to each other, and in doing so make a trade-off by rewarding goodness-of-fit and penalizing model complexity.\" - \"The ORs indicate how much the odds of a residence being selected increase multiplicatively given a one-unit change in the associated explanatory variable.",
+        "found_text": "1 3 Results Table  3  displays estimated odds ratios (OR) and standard errors (SE) as well as the Akaike  (AIC) and the Bayesian information criterion (BIC) to assess relative model fit for the inte- grated main effects only model. 8  The ORs indicate how much the odds of a residence being  selected increase multiplicatively given a one-unit change in the associated explanatory  variable. The AIC and the BIC offer insight in the quality of the models relative to each  other, and in doing so make a trade-off by rewarding goodness-of-fit and penalizing model",
+        "similarity": 83.9506172839506,
+        "page": 18
+      },
+      {
+        "variable": "Software Used",
+        "quote": "The nested logit model is a more flexible discrete choice model that does not assume independence of alternatives within the same group of alternatives.\" - \"We considered using the nested logit model (Ben-Akiva and Lerman 1985) instead of the conditional logit model.\" - \"we use the conditional logit model.",
+        "found_text": ") instead of the conditional  logit model. The nested logit model is a more flexible discrete choice model that does not assume independ- ence of alternatives within the same group of alternatives. This model is well-suited for the analysis of",
+        "similarity": 80.48192771084337,
+        "page": 16
+      },
+      {
+        "variable": "MAUP Discussion",
+        "quote": "The neighborhoods in this study are similarly constructed to the areas used in most previous discrete spatial choice studies and are comparable or smaller in size (e.g., Lammers et al. 2015;Menting et al. 2016)",
+        "found_text": "borhoods’. The neighborhoods in this study are similarly constructed to the areas used in  most previous discrete spatial choice studies and are comparable or smaller in size (e.g.,",
+        "similarity": 96.53179190751445,
+        "page": 14
+      },
+      {
+        "variable": "MAUP Discussion",
+        "quote": "On average, the 193 residential neighborhoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences (sd = 785) and cover an area of 0.79 (sd = 1.00) square kilometers.",
+        "found_text": "Lammers et  al.  2015 ; Menting et  al.  2016 ). On average, the 193 residential neighbor- hoods have a population of 1287 residents (standard deviation [sd] = 1299), 717 residences",
+        "similarity": 83.60128617363344,
+        "page": 14
+      },
+      {
+        "variable": "Sensitivity Analysis",
+        "quote": "The analysis of burglary target choice should thus preferably define 'residence' as its main unit of analysis (Bernasco 2010a; Vandeviver et al. 2015a\" - \"Our study opens up at least two avenues for future research",
+        "found_text": "ronment. The analysis of burglary target choice should thus preferably define ‘residence’ as  its main unit of analysis (Bernasco  2010a ; Vandeviver et al.  2015a ). Fortunately, our police",
+        "similarity": 91.11747851002865,
+        "page": 13
+      },
+      {
+        "variable": "Sensitivity Analysis",
+        "quote": "They also most closely correspond with the rational choice perspective's conceptualization of burglary target selection as a dual-level spatial decision-making model.\" - \"The Census subdivides Ghent in geographical entities called 'statistical districts', of which 193 have a residential function",
+        "found_text": "argument. They also most closely correspond with the rational choice perspective’s con- ceptualization of burglary target selection as a dual-level spatial decision-making model.  For these reasons as well as parsimony, we only discuss the integrated and interaction mod-",
+        "similarity": 80.93220338983052,
+        "page": 17
+      },
+      {
+        "variable": "Sensitivity Analysis",
+        "quote": "Throughout this paper we refer to these entities as 'neighborhoods'",
+        "found_text": "193 have a residential function. Throughout this paper we refer to these entities as ‘neigh-",
+        "similarity": 93.5483870967742,
+        "page": 14
+      },
+      {
+        "variable": "Sensitivity Analysis",
+        "quote": "The neighborhoods in this study are similarly constructed to the areas used in most previous discrete spatial choice studies and are comparable or smaller in size (e.g., Lammers et al. 2015;Menting et al. 2016).",
+        "found_text": "borhoods’. The neighborhoods in this study are similarly constructed to the areas used in  most previous discrete spatial choice studies and are comparable or smaller in size (e.g.,",
+        "similarity": 96.53179190751445,
+        "page": 14
+      },
+      {
+        "variable": "Future Suggestions",
+        "quote": "Our study opens up at least two avenues for future research",
+        "found_text": "Our study opens up at least two avenues for future research. First, given the well-corrob-",
+        "similarity": 100.0,
+        "page": 24
+      },
+      {
+        "variable": "Future Suggestions",
+        "quote": "First, given the well-corroborated finding that burglary risk of a residence is heightened in the wake of a previous burglary (Ellingworth et al. 1995;Farrell and Pease 2001;Polvi et al. 1991), repeated victimization could be reflected in repeated targeting of the same residence by the same offenders.\" - \"Second, future research could consider short-distance spatial spillover mechanisms in greater detail",
+        "found_text": "Our study opens up at least two avenues for future research. First, given the well-corrob- orated finding that burglary risk of a residence is heightened in the wake of a previous bur- glary (Ellingworth et al.  1995 ; Farrell and Pease  2001 ; Polvi et al.  1991 ), repeated victimi- zation could be reflected in repeated targeting of the same residence by the same offenders.",
+        "similarity": 88.92171344165436,
+        "page": 24
+      },
+      {
+        "variable": "Future Suggestions",
+        "quote": "In particular, the results of our study are important for how we should think about burglary target selection and, more generally, offender spatial decision-making.\" - \"Our study opens up at least two avenues for future research.",
+        "found_text": "Our results carry implications for theory and research on offender spatial decision-mak- ing. In particular, the results of our study are important for how we should think about  burglary target selection and, more generally, offender spatial decision-making. First, our",
+        "similarity": 85.64356435643565,
+        "page": 24
+      }
+    ],
+    "study_title": "Location, Location, Location\": Effects of Neighborhood and House Attributes on Burglars' Target Selection"
+  }
+]
