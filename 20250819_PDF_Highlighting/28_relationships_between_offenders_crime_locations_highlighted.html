@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+        <title>Highlighted: 28_relationships_between_offenders_crime_locations</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; }
+          .header { background: #f0f0f0; padding: 20px; margin-bottom: 20px; }
+          .legend { background: #fff; border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+          .legend-item { display: inline-block; margin-right: 20px; }
+          .content { white-space: pre-wrap; }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h1>Highlighted PDF: 28_relationships_between_offenders_crime_locations</h1>
+          <p>Processed on: 2025-08-19</p>
+          <p>Total highlighted terms: 75</p>
+        </div>
+        
+        <div class="legend">
+          <h3>Legend:</h3>
+          <div class="legend-item"><mark style="background-color: yellow;">Geographic</mark></div>
+          <div class="legend-item"><mark style="background-color: lightblue;">Quantitative</mark></div>
+          <div class="legend-item"><mark style="background-color: lightgreen;">Methods</mark></div>
+          <div class="legend-item"><mark style="background-color: orange;">Crime-related</mark></div>
+          <div class="legend-item"><mark style="background-color: plum;">Statistical</mark></div>
+          <div class="legend-item"><mark style="background-color: lightcoral;">Other</mark></div>
+        </div>
+        
+        <div class="content">Journal of Police and Criminal Psychology (2023) 38:172–185
+https://doi.org/10.1007/s11896-022-09540-8
+
+
+
+
+Relationships Between Offenders’ Crime Locations and Different Prior
+Activity Locations as <mark style="background-color: lightcoral; font-weight: bold;">recorded</mark> in <mark style="background-color: orange; font-weight: bold;">Police data</mark>
+Sophie Curtis‑Ham1          · Wim Bernasco2,3 · Oleg N. Medvedev1 · Devon L. L. Polaschek1
+
+Accepted: 13 July 2022 / Published online: 2 August 2022
+© The Author(s) 2022
+
+
+Abstract
+Understanding the relationships between individual offenders’ crime locations and their prior activity locations is important
+to enable individual level predictions to support crime prevention and investigation strategies. This study examined a wider
+range of crimes and activity locations than included in previous studies, to determine whether offenders are more likely to
+commit crime near some types of activity locations than others. Using discrete spatial choice models, we identified relation-
+ships between proximity to pre-crime activity locations recorded in a police database (e.g., offenders’ homes, family mem-
+bers’ homes, <mark style="background-color: orange; font-weight: bold;">schools</mark>, prior crimes, and <mark style="background-color: orange; font-weight: bold;">other</mark> police interactions) and the locations of 17,054 residential <mark style="background-color: orange; font-weight: bold;">burglaries</mark>, 10,353
+non-residential burglaries, 1,977 commercial robberies, 4,315 personal robberies, and 4,421 <mark style="background-color: orange; font-weight: bold;">extra-familial <mark style="background-color: orange; font-weight: bold;">sex offences</mark></mark> in
+<mark style="background-color: yellow; font-weight: bold;">New Zealand</mark>. Offenders were generally more likely to commit crime closer to their activity locations than farther away, and
+closer to those visited more frequently (e.g., home versus family homes) or more likely to impart relevant knowledge about
+crime opportunities (e.g., prior crimes versus prior victim or witness locations). The observed patterns for different activity
+locations and crime types broadly support a recently proposed extension to crime pattern <mark style="background-color: lightcoral; font-weight: bold;">Theory</mark> and illustrate the benefits of
+differentiating activity location and crime types when examining criminal spatial behaviour. The results have implications
+for offender risk assessment and management, and geographic profiling in police investigations.
+
+Keywords Crime location choice · Crime pattern theory · Discrete spatial choice · Police data · Routine activity locations
+
+
+
+Introduction                                                     locations known to offenders through their routine non-
+                                                                 criminal activities such as where they live, work, or socialise
+We know from routine activity theory (Cohen and                  with family or friends. Recent theoretical development
+Felson 1979) and crime pattern theory (Brantingham               suggests that some types of activity locations are more
+and Brantingham 1991, 1993a) that crimes occur where             salient to offenders’ crime location choices than others
+opportunity (i.e., the presence of a suitable and available      (Curtis-Ham et al. 2020). Understanding which of their
+target) overlaps with offenders’ awareness spaces: the           activity locations people are more likely to commit crime
+                                                                 near has important implications for crime prevention and
+                                                                 investigation. It can assist in identifying offenders’ high-
+                                                                 risk locations for offending, to inform risk management
+                                                                 strategies (Schaefer et al. <mark style="background-color: lightcoral; font-weight: bold;">2016</mark>; Serin et al. 2016). It can
+* Sophie Curtis‑Ham                                              also assist in geographic profiling for crime investigations
+  SC398@students.waikato.ac.nz
+                                                                 (Rossmo 2000). For example, suspects could be prioritised
+1
+    Te Puna Haumaru NZ Institute of Security and Crime           by comparing their high-risk locations for offending with the
+    Science & Te Kura Whatu Oho Mauri School of Psychology,      location of a given crime (as implemented by Curtis‐Ham
+    Te Whare Wānanga O Waikato University of Waikato,            et al. 2022), or with likely ‘anchor point’ areas predicted
+    Hamilton, New Zealand
+                                                                 by analysing the locations of a crime series (as raised by
+2
+    <mark style="background-color: yellow; font-weight: bold;">Netherlands</mark> Institute for the Study of Crime and Law         Goodwill et al. 2014; van der Kemp 2021).
+    Enforcement (NSCR), <mark style="background-color: yellow; font-weight: bold;">Amsterdam</mark>, the Netherlands
+                                                                    But despite the practical importance of being able to pre-
+3
+    Vrije Universiteit Amsterdam, School of Business             dict—at an individual level—where a person will commit
+    and Economics, Department of Spatial Economics,
+    Amsterdam, the Netherlands                                   crime, given knowledge of their different activity locations,
+
+
+13
+Vol:.(1234567890)
+ Journal of Police and Criminal Psychology (2023) 38:172–185                                                                     173
+
+
+little research has explored empirically the extent to which      crime opportunities, and the empirical confirmation of activ-
+various types of activity locations differ in their effects       ity locations studied separately or in the aggregate to date,
+on crime location choices. Studies to date have only com-         we therefore expected that each type of activity location in
+pared a limited subset of activity locations (e.g., offenders’    the present data would be positively associated with crime
+homes, homes of family members and locations of previous          location choice.
+offences; Ruiter <mark style="background-color: lightcoral; font-weight: bold;">2017</mark>). This study leverages a large national         Second, the role of routine activities in generating aware-
+dataset of offenders’ pre-crime activity locations recorded in    ness of crime opportunities means that the likelihood of
+a police database, in a previously unresearched context (New      offending is typically highest nearest to activity nodes and
+Zealand). It expands our understanding of offenders’ crime        declines with distance. This ‘distance decay’ pattern reflects
+location choices—and thus our ability to predict their future     that people are more familiar with areas closer to than far-
+crime locations—by comparing the associations between a           ther away from their activity locations (Brantingham and
+wider range of activity locations and offenders’ crime loca-      Brantingham 1991, 1993a, b), and familiarity is an important
+tion choices, for a wider range of crime types separately,        factor in crime location choice (as expanded upon in Curtis-
+than included in prior studies. It also expands the empirical     Ham et al. 2020). It also reflects the ‘principle of least effort’
+evidence for crime pattern theory and its recent extension        (Zipf 1949): if setting out from an activity location to com-
+by Curtis-Ham et al. (2020) through testing theory-derived        mit crime, people will travel the least distance necessary to
+hypotheses about these comparisons, as described next.            find a crime opportunity—or exploit a known one (Goodwill
+                                                                  et al. 2014). This pattern was observed in the studies described
+Activity Locations and Distance Decay                             above and many past analyses of the frequency of offending at
+                                                                  different distances to offenders’ current homes (see Ackerman
+Drawing on <mark style="background-color: orange; font-weight: bold;">environmental</mark> psychology, crime pattern theory         and Rossmo 2015; Townsley 2016). Further, distance decay
+emphasises the role of people’s routine activities in gener-      is not simply a by-product of such studies aggregating across
+ating awareness of crime opportunities (Brantingham and           offenders, nor a pattern specific to crime, but reflects individu-
+Brantingham 1991, 1993a, b). The consequences of this             als’ tendencies to conduct their everyday activities closer to
+theory for present purposes are two-fold. First, in principle,    existing activity nodes than farther away (Bernasco 2022). We
+offenders could identify crime opportunities near any of          therefore expected to observe a distance decay pattern with
+their activity locations (also referred to as ‘nodes’). Quali-    respect to each activity location type analysed in the present
+tative studies have confirmed that home, work, and other          study.1
+non-criminal activity locations have potential to generate            Hypothesis 1 reflects the stated expectations that each
+awareness of crime opportunities (e.g., Alston 1994; Costello     activity location type would be associated with crime loca-
+and Wiles <mark style="background-color: lightcoral; font-weight: bold;">2001</mark>; Davies and Dale 1996; van Daele 2009).            tion choice and that this association would become weaker
+Recent quantitative studies have estimated the increased          with distance from the activity location. However, we set
+likelihood of offenders to commit crime near their homes,         no a priori hypotheses regarding differences in decay rates
+the homes of close relatives (parents, children and <mark style="background-color: plum; font-weight: bold;">siblings</mark>),    (the steepness of the decline) between different activity
+and the locations of previous offences, compared with else-       nodes. We considered this aspect to be subject to explora-
+where (Menting et al. 2016; Ruiter 2017; van Sleeuwen             tory analysis.
+et al. 2018). This increased likelihood also applies to former,
+rather than current, homes of offenders and of their relatives        H1 Offenders are more likely to commit crime in closer
+(Bernasco 2010b; Bernasco and Kooistra 2010; Menting                  proximity to each activity location than farther away.
+et al. 2016).
+   Two studies have included a wider range of activity loca-      Relative Influence of Different Activity Locations
+tions and demonstrated that offenders are more likely to
+commit crime near these activity locations—collectively—          Although we expected each activity location to have at least
+than farther away. Bernasco (2019) included all locations         some association with crime location choice, the main
+frequented by 70 Dutch adolescents during a 4-day period          aim of this paper was to expand our understanding of how
+up to 4 years before their offences; Menting et al. (2020)
+included friends’ and partners’ homes, victimisation loca-
+tions, school, work, and leisure locations visited by 78 Dutch    1
+                                                                    Buffer zones of reduced crime likelihood immediately surround-
+offenders (aged 18–26) in the month before their offences.        ing home or other activity nodes (Rossmo 2000) would not have been
+However, the small sample <mark style="background-color: lightcoral; font-weight: bold;">sizes</mark> in both studies precluded         detectable given the spatial units of analysis used in this study—
+                                                                  <mark style="background-color: yellow; font-weight: bold;">Neighbourhoods</mark>—because these units cover more than the immediate
+disaggregate analysis to test each activity location type’s
+                                                                  area of activity nodes. We thus expected monotonic decay as found
+association with crime location choice. Considering the           in other neighbourhood level studies (Bernasco 2019; Bernasco and
+potential of any activity location to generate awareness of       Block 2009; Menting et al. 2020).
+
+
+                                                                                                                        13
+ 174                                                                            Journal of Police and Criminal Psychology (2023) 38:172–185
+
+these associations differ between activity locations. To               intimate partners (ex or current spouses and other inti-
+guide expectations about the relative influence of different           mate relationships)2
+activity locations, we drew on the theoretical framework of
+Curtis-Ham et al. (2020). Synthesising existing theory and            Given the likelihood that immediate family members
+empirical evidence from psychology, criminology, and geog-         are visited more frequently than other relatives due to their
+raphy, the framework proposes that offenders’ crime location       likely closer relationships (Agneessens et al. 2006; Wellman
+choices are a product of both the reliability and the relevance    and Wortley 1989), we hypothesised:
+of their knowledge of the areas around their activity nodes.
+People are more likely to commit crime near nodes that have            H3b Offenders are more likely to commit crime near to
+produced reliable knowledge (i.e., greater familiarity) that           the homes of immediate family members (parents, chil-
+is relevant to the crime (i.e., suggestive of a good crime             dren and siblings), than those of other relatives (grand-
+opportunity). Specific attributes of offenders’ activities at          parents, grandchildren and other relatives).
+these locations affect how much reliable and crime-relevant
+knowledge they obtain. The frequency, recency, and dura-              Curtis-Ham et al. (2020) suggest that one dimension
+tion of offenders’ activities at their activity nodes determine    of behavioural similarity would be exposure to criminal
+how reliable is their knowledge of the area. The similarity of     behaviour in different roles. Committing a crime is a similar
+their activities to the crime at hand determines the extent to     activity to committing a future crime and likely to provide
+which they have obtained relevant knowledge of opportuni-          relevant knowledge of the location’s crime opportunities.
+ties for that crime. The more similar the activities in terms of   Experiencing crime as a victim or witness is less similar,
+the behaviour, timing or type of location involved, the more       and so would provide less directly relevant knowledge of the
+conducive they are to identifying the crime opportunities in       location’s crime opportunities. The behavioural similarity
+the vicinity.                                                      factor reflects how people transfer learning from one situa-
+    Our hypotheses comparing different activity nodes’ asso-       tion to another: knowledge about a location gained from the
+ciations with crime location choice reflect their differences on   actual commission of a crime is more directly transferrable
+single factors set out in the theoretical framework where other    to a future crime than knowledge gained from observing
+factors can be assumed constant. The second hypothesis com-        another person committing it (Curtis-Ham et al. 2020).3 We
+pares types of node that vary in terms of how frequently they      therefore tested:
+are visited: offenders’ own homes and homes of their family
+members. These nodes are likely comparable in recency (i.e.,           H4 Offenders are more likely to commit crime near to
+whether they are a current or former address) and duration             places they have previously offended than to places where
+(i.e., how long the offender or family member lived there).            they have previously been a crime victim or witness.
+They are also comparable in terms of type of location (resi-
+dential), timing (one might visit or stay with family at any          Hypotheses H1 to H4 apply to all crime types because
+time of day or day of week) and general behaviour (“hanging        the same mechanisms—prior activities generating reli-
+out”, sleeping). Given that—on average—offenders will visit        able and relevant location knowledge—are theorised for all
+their own home more frequently than their family members’          crime. However, through these mechanisms, different types
+homes, we hypothesised:                                            of activity node can also generate knowledge relevant to
+                                                                   different types of crime (Curtis-Ham et al. 2020). The next
+   H2 Offenders are more likely to commit crime near their         section therefore considers the interaction of node type and
+   own homes than the homes of family members.                     crime type.
+
+   We also compared between homes of different categories
+of family members. Given that offenders’ associations with
+intimate partners and their addresses are likely to have been      2
+                                                                      This hypothesis assumes that the shorter duration of intimate rela-
+of shorter duration (on average) than for immediate family,        tionships offsets the likely higher frequency of visiting intimate part-
+we hypothesised:                                                   ners compared with other family members.
+                                                                   3
+                                                                      The acquisition of location knowledge affects where a future crime
+                                                                   is committed. A person’s experience of a crime as a victim or witness
+   H3a Offenders are more likely to commit crime near to
+                                                                   may also affect their motivation to commit a future crime, but this
+   the homes of immediate family members (parents,                 research is concerned with where, not whether, they commit a future
+   children and siblings), than those of current or former         crime.
+
+
+
+
+13
+ Journal of Police and Criminal Psychology (2023) 38:172–185                                                                              175
+
+
+Activity Locations and Different Crime Types                           Additionally, including opportunity variables in models of
+                                                                    crime location choice explains variance beyond that accounted
+Here we consider how different activity locations gener-            for by proximity to activity nodes alone (Bernasco 2019).
+ate knowledge that is specific to different types of crime.         Studies have frequently found that opportunity measures are
+Curtis-Ham et al.’s (2020) theoretical framework includes           associated with crime location choice while controlling for
+a ‘location type similarity’ factor that reflects that activities   proximity to activity nodes (Ruiter 2017). This finding could
+that involve the same type of location (e.g., residential or        reflect unmeasured activity locations that concentrate where
+commercial) as targeted by a certain crime are more likely          crime opportunities—and people in general—concentrate
+to generate knowledge of nearby targets for that crime. Thus,       (Boivin and Felson 2018; Frank et al. <mark style="background-color: lightcoral; font-weight: bold;">2011</mark>) or crimes com-
+residential nodes such as offenders’ homes or their family’s        mitted outside of awareness space where opportunities that
+homes would yield relevant knowledge of nearby residential          have been either stumbled upon or sought out (Curtis-Ham
+<mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Burglary</mark></mark> targets and less relevant knowledge with respect to        et al. 2020). We therefore expected opportunity to be asso-
+commercial targets. In line with this suggestion, home-crime        ciated with crime location choice while controlling for the
+distances tend to be longer for commercially than resi-             presence of activity nodes.
+dentially focused crimes (Ackerman and Rossmo 2015;
+Townsley 2016). Accordingly, we tested:
+                                                                    Data and Method
+   H5 Residential burglars are more likely to commit crime
+   near to home and family homes than non-residential bur-          To test our hypotheses, we employed discrete crime location
+   glars and commercial robbers.                                    choice modelling (DSCM). DSCM is specifically designed
+                                                                    and therefore frequently used to analyse hypotheses such as
+    H5 excludes personal robberies and extra-familial sex           ours about the relative likelihood of an offender choosing
+offences, which involve moving targets—people—rather                a location to commit crime, given attributes of the loca-
+than specific types of premises from which to gauge loca-           tion such as its distance from an activity node or its crime
+tion type similarity. Although personal robberies tend to           opportunities (Bernasco 2021; Ruiter 2017). This sec-
+concentrate in places with high numbers of potential vic-           tion describes the data, variable construction, and DSCM
+tims (e.g., commercial, nightlife and transit hubs), many           method.
+occur in residential areas (Bernasco and Block 2009; Block
+and Davis 1996; Hart and Miethe 2015). Similarly, vic-              Offender and Activity Node Data
+tims of extra-familial sex offences could be identified and
+first contacted in a target rich environment such as a bar or       Data on offences and offenders’ activity nodes were
+club, or through the offender's <mark style="background-color: orange; font-weight: bold;">social</mark> network, or in their         extracted from the <mark style="background-color: orange; font-weight: bold;">New Zealand Police</mark> National Intelligence
+residential neighbourhood, but the offence itself could occur       Application (NIA). Offences included all residential and
+away from these initial ‘encounter’ locations, even at the          non-residential burglaries, commercial and personal rob-
+offender’s home (Chopin and Caneppele 2018, 2019; Hewitt            beries, and extra-familial sex offences committed between
+et al. 2012, 2020).                                                 2009 and 2018 for which an offender had been identified
+                                                                    with sufficient evidence to proceed against. Including these
+Opportunity and Crime Location Choice                               offences balanced considerations of scope, volume, serious-
+                                                                    ness and priority to police; and coverage of crimes included
+Crime occurs where offenders’ awareness space—the                   in previous DSCM studies—<mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">residential burglary</mark></mark> and rob-
+locations they are aware of around their activity nodes—            bery—and other crimes considered by research on offender
+converges with crime opportunities (Brantingham and                 mobility: <mark style="background-color: orange; font-weight: bold;">non-residential burglary</mark> and extra-familial sex
+Brantingham 1991). Opportunities exist where suitable               offences (Chopin and Caneppele 2018, 2019).5 Including
+targets (for a given crime) are present in the absence of
+capable guardians (Cohen and Felson 1979). Crime location           4
+                                                                      Note that crime locations are a product of an interaction between
+choice is typically modelled as the product of activity node
+                                                                    offenders’ awareness space and opportunities (Menting 2018), an
+proximity while controlling for the locations of crime              interaction that is reflected in the statistical model we use to test the
+opportunities using covariates such as the number of potential      hypotheses.
+targets, or presence of crime generators (Ruiter 2017). We          5
+                                                                      Sex offences ranged from indecent exposure to rape. Some would
+therefore expected hypotheses 1 to 5 to hold while controlling      have occurred at offenders’ homes (regardless of how and where the
+                                                                    victim was identified) reflecting the ability of offenders to make this
+for the presence of opportunities—operationalised via
+                                                                    choice. The dataset did not enable separation of known and stran-
+indicators of the number of potential targets in each spatial       ger victims, nor adult and child victims, to explore how this choice
+unit, relevant to each crime type analysed.4                        depended on victimology.
+
+
+                                                                                                                                13
+ 176                                                                             Journal of Police and Criminal Psychology (2023) 38:172–185
+
+crimes with different target types (residential versus com-          communication), or the time or location with sufficient speci-
+mercial and buildings versus people) and motivations (prop-          ficity, approximately 60,<mark style="background-color: lightblue; font-weight: bold;">000</mark> offenders and 4.5 million nodes
+erty acquisition versus sexual <mark style="background-color: orange; font-weight: bold;">violence</mark>) enabled us to verify        remained (see Curtis-Ham et al. 2021a for more detail on the
+whether the crime-independent hypotheses (H1-H4) were                data cleaning steps). To ensure comparability in recency between
+robust across crime types—important given the theories               different node types, we only included nodes dated within
+from which these hypotheses derived expressly apply for              5 years of the reference offence.6 See Tables S1.1 and S2.2
+all crime. Using a national dataset overcame limitations of          in the online supplementary materials for detailed definitions
+previous studies which typically considered smaller areas and        and the distribution of nodes per offender, respectively.
+excluded offenders with no activity locations in the study               To yield as many prior activity locations as possible per
+area, likely inflating associations between activity locations       crime location choice and to prevent nesting, for each of
+and crime locations (the exceptions are limited to small             the five offence types—modelled separately—each offend-
+European countries: Bernasco and Kooistra 2010; Menting              er’s most recent offence was identified as their ‘reference
+et al. 2020; van Sleeuwen et al. 2021).                              offence’(following Bernasco 2010a); its location was the
+   Activity node data derived from a range of records                variable of interest. An offender could appear in multiple
+including address history, linked persons and their address          models if they committed more than one type of offence
+histories, employment, education, offences, incidents/call-          (e.g., both a residential burglary and a <mark style="background-color: orange; font-weight: bold;">personal <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Robbery</mark></mark></mark>). An
+outs, arrests, stops, and intelligence. These were grouped           offence could recur in the reference offences if it was also
+into ten node types as described below. Because police do            a co-offender’s reference offence (following Menting et al.
+not comprehensively monitor people’s whereabouts, not all            2020; Chamberlain and Boggess 2016 who found that sta-
+activity locations are on record for each offender. The data         tistically adjusting for nesting of offenders in offences made
+are therefore a sample of each offender’s true population of         no difference to the results). We included only offenders with
+activity locations. For example, home addresses often only           at least one pre-offence activity node and only their nodes
+become known when offenders are arrested for an offence;             that pre-dated the reference offence.7 The data included both
+address changes between offences or arrests are thus not nec-        serial offenders, whose crimes prior to the reference offence
+essarily on record. Not all family members will have address         counted as prior crime nodes, and one-off offenders with no
+records in the database; ‘links’ between family members are          prior crimes but at least one other pre-offence activity node.
+not always recorded. Employment and education records                We analysed 17,054 residential burglaries, 10,353 non-
+were more rarely on file. Crime, victimisation, and incident         residential burglaries, 1,977 commercial robberies, 4,315
+locations depend on these being reported to the police.              personal robberies, and 4,421 extra-familial sex offences.8
+   We included activity locations that were less common in           Demographic characteristics of the offenders are provided in
+the data, less routinely visited, and less recent, erring towards    Table S2.1 in the online supplementary materials.
+inclusion of data. Activity locations generate awareness of
+crime opportunities that can result in the offender returning to     Unit of Analysis
+commit crime years after their activities, at least as captured in
+available data (Bernasco 2010b, 2019; Bernasco et al. 2015;          The question that the discrete spatial choice model sets
+Bernasco and Kooistra 2010; Lammers et al. 2015; Menting             out to answer is as follows: which attributes of locations
+et al. 2016). A single prior crime in a neighbourhood is asso-       make offenders decide to choose them (or avoid them) for
+ciated with an increased likelihood of future offending there        committing crime? The ‘locations’ are the spatial units of
+(Bernasco et al. 2015; Long et al. 2018), as are activities with     analysis of the model, an advantage of DSCM being that it
+relatively low frequency in short activity sampling periods          considers both units that were chosen, and those that could
+(Bernasco 2019: four days; Menting et al. 2020: one month).          have been but were not. The units can range from specific
+Thus, activities do not have be particularly recent or ‘rou-         addresses (Vandeviver and Bernasco 2020) to administra-
+tine’ to impart knowledge of crime opportunities that operates       tive units such as census tracts or postcodes (e.g., Townsley
+on future crime location choices (though the more recent or
+routine, the higher the likelihood of future crime). Further,        6
+                                                                        The data initially included crime and incident records dating back
+single data points such as prior offences and incidents can          to 2004—reflecting the start of the database and limited capture of
+be indicative of other activities carried out more routinely in      historical records—and address records dating back to the offender’s
+those locations that are not captured in the data.                   date of birth.
+                                                                     7
+   The raw data included almost 5.5 million activity node               Resulting in the removal of 1.2% of residential burglars, 1.6% of
+records, for approximately 66,000 offenders. After remov-            non-residential burglars, 0.5% of commercial robbers, 0.9% of per-
+                                                                     sonal robbers, and 8.9% of sex offenders.
+ing offence and activity node records that did not reliably          8
+                                                                        We randomly sampled 50% of reference offences to train each
+establish the presence of the offender (e.g., some spe-              model, reserving the rest for future studies testing models’ predic-
+cific frauds and offences involving publication or remote            tions.
+
+
+13
+ Journal of Police and Criminal Psychology (2023) 38:172–185                                                                                            177
+
+et al. 2015). Selecting the spatial unit involves balancing                          Activity Node Variables
+a range of considerations by the analyst (Bernasco 2010a).
+These include theoretical relevance (how big is one unit of                          To assess our hypotheses about the relationships between
+‘activity space’?), <mark style="background-color: lightcoral; font-weight: bold;">spatial spill-over</mark> (if the unit is too small                     different types of activity nodes and crime location choice,
+the choice is influenced by the attributes of surrounding                            each SA2 alternative in each offender’s choice set was
+units), <mark style="background-color: lightcoral; font-weight: bold;">spatial heterogeneity</mark> (if the unit is too big then vari-                     dummy coded depending on the presence (1) or absence
+ation within the unit that could affect the choice is not cap-                       (0) of each type of node in the SA2. Home included any
+tured), and computational processing (if there are too many                          residential address of the offender. Family homes included
+units the capacity of available computing equipment may                              the residential addresses of persons linked to the offender
+be exceeded).                                                                        in NIA as immediate family (parents, children, and sib-
+    We used the New Zealand Census Unit ‘Statistical Area                            lings, including step relationships), past or present intimate
+2’ (SA2).9 SA2s approximate neighbourhoods, typically con-                           partners (spouses, partners, and boy/girlfriends), and other
+taining 2000–4000 residents in <mark style="background-color: lightcoral; font-weight: bold;">urban</mark> areas and 1000–3000                             relatives (grandparents/children, other relatives, foster, and
+residents in rural areas. Outliers with smaller populations                          other care/guardianship relationships).10 School included
+represent industrial and commercial areas, remote regions,                           school and tertiary education locations. Work addresses were
+and bodies of water with no residential population. SA2s are                         included where available, as a distinct type of activity node
+comparable to the units used in other neighbourhood level                            from education. Prior offences included crimes committed
+DSCM studies (e.g., Clare et al. 2009; Townsley et al. 2015).                        by the offender with sufficient evidence to prosecute. Prior
+    In DSCM analysis, the dataset needs to include not only                          victim/witness included offences involving the offender in
+the attributes of chosen locations but those of alternative                          a non-offending role such as a victim or witness, but not as
+locations that could have been chosen but were not. To                               an offender or suspect. Prior incidents included non-crime
+overcome computational challenges involved in includ-                                events reported to or detected by police such as domestic
+ing every SA2 in each offender’s ‘choice set’ of possible                            disputes, drunk and disorderly behaviour, mental distress,
+alternatives—given the number of alternatives, offenders,                            suspicious behaviour and truancy. Finally, the category
+variables and available computing capacity—we sampled                                Other location captured addresses recorded in the offender’s
+from all potential SA2 alternatives (n = <mark style="background-color: lightblue; font-weight: bold;">2153</mark>) to con-                               address history with codes such as ‘arrested at’, ‘seen at’,
+struct a manageable set for each offender. We followed a                             ‘frequents’, ‘trespassed from’, ‘spoken to at’, ‘stopped at’,
+stratified importance sampling approach (Ben-Akiva and                               ‘other’ and ‘unknown’.
+Lerman 1985; McFadden 1977) shown to yield estimates                                    Each SA2 alternative was also coded 1 or 0 based on
+consistent with those produced by including all alterna-                             the presence or absence of the nearest of each type of node
+tives when modelling crime location choice (Curtis-Ham                               within five distance bands extending to 5 km from the SA2
+et al. 2021b). Each offender’s choice set included the cho-                          (with thresholds at 200 m, <mark style="background-color: lightblue; font-weight: bold;">500</mark> m, 1 km, 2 km, and 5 km
+sen SA2; all SA2s that contained an activity node or had                             from the SA2 boundary). Prior studies have shown signifi-
+an activity node within 5 km (from the SA2 boundary);                                cant associations between crime location choice and pres-
+and 10 SA2s randomly selected from the remaining SA2s                                ence of activity nodes at an average of 3 km away (Menting
+(i.e., those that were more than 5 km away from any activ-                           et al. 2020). In choosing 5 km, we balanced exploring the
+ity nodes). The median land area of the sampled SA2s was                             extent to which activity nodes farther away were associated
+1.2km2 (quartiles 0.84, 2.2 k­ m2) on average across the five                        with crime location choice with minimising the number of
+offences modelled. The small and relatively homogenous                               distance bands included, given that each distance band added
+size of the sampled SA2s reflects that the vast majority                             10 variables indicating the presence or absence of each of
+were in urban areas.                                                                 the 10 node types. Using these dichotomous variables per
+                                                                                     distance band rather than the linear distance to each type
+Outcome Variable                                                                     of node enabled us to visualise and compare the pattern of
+                                                                                     distance decay across node and crime types. Additionally,
+The outcome variable reflects the location choice for each                           using distance bands provided a more easily interpretable
+offender; from their set of potential SA2s, it is the one in
+which their reference offence was committed.
+                                                                                     10
+                                                                                         Family nodes were coded mutually exclusively, prioritising imme-
+                                                                                     diate family then intimate partners over other relatives. A limitation
+                                                                                     is that home addresses of some family members, especially intimate
+9
+  The 2018 SA2 shapefile and metadata were downloaded from                           partners, may pre- or post-date the relationship and therefore may not
+https://​dataf​i nder.​stats.​govt.​nz/​layer/​92212-​stati​stical-​area-2-​2018-​   have been visited by the offender. The data did not include relation-
+gener​alised/. We excluded 83 SA2s made up of bodies of water from                   ship dates to enable restriction of activity locations to relationship
+the analysis.                                                                        periods.
+
+
+                                                                                                                                               13
+ 178                                                                               Journal of Police and Criminal Psychology (2023) 38:172–185
+
+scale than using contiguous spatial units at increasing lag            the number of non-residential burglary targets in the SA2.
+orders (e.g., Menting et al. 2020), including distance bands           For <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Commercial robbery</mark></mark>, we used the number of business
+both shorter and longer than the typical distance between              units in industry categories that mapped to the types of
+neighbouring SA2s.11                                                   crime locations used to identify commercial robberies. This
+    As an example, if a given SA2 alternative contained a home         was a more direct measure of potential targets than previ-
+node, it was coded 1 for the variable ‘home in SA2’ and 0 for          ous studies which used indirect measures such as retail foot-
+the variables ‘home at 0-200 m’, ‘home at 200-500 m’, and so           print (Bernasco and Kooistra 2010) and number of retail
+on for the remaining distance bands. If a given SA2 alternative        employees (Bernasco and Block 2009). For personal rob-
+did not contain a home node, but the nearest home node was             bery, we used the number of business units in commercial or
+between 200 and 500 m of the SA2, the SA2 was coded 0 for              public industries, combining the types of facilities included
+the variable ‘home in SA2’, 1 for the variable ‘home node at           in prior DSCM studies as separate covariates (Bernasco
+200-500 m’ and 0 for all other home node × distance band               et al. <mark style="background-color: lightcoral; font-weight: bold;">2013</mark>; Long et al. 2018; Song et al. 2019). This meas-
+variables. If there were no nodes of any kind within 5 km of a         ure is a proxy indicator of the ambient population in a given
+given SA2 alternative, the SA2 was coded 0 for all node type           spatial unit: how many potential targets are there, on aver-
+x distance band variables. Consistent with previous DSCM               age, for work, education, shopping, or recreation purposes
+studies (e.g., Menting et al. 2020), this method prioritised the       (Andresen 2011). Ambient population predicts personal rob-
+most proximal activity nodes while controlling for the pres-           bery and other offences against mobile targets (such as sexual
+ence of activity nodes farther away. The reference category            assaults) better than residential population, thus forming the
+for each type of node at each distance band was no node of             better single indicator of target distribution (Andresen 2011;
+that type within 5 km of the SA2, which could either mean              Andresen and Jenion 2010; Rummens et al. 2021). We thus
+that the node did not exist in the first place (e.g., no police-       adopted the same measure of opportunity for sex offences.
+recorded prior offences), or that it existed but the nearest one
+was farther than 5 km away. A stable model for commercial              Modelling Method
+robbery was only achievable using three distance bands for
+work nodes (applied for all crime types for comparability): ‘in        Consistent with most previous DSCM studies, we used condi-
+SA2 to 200 m’, ‘200 m-1 km’, and ‘1-5 km’.12 See Table S2.3            tional logit models to test our hypotheses (McFadden 1984).
+in the online supplementary materials for descriptive statistics       The <mark style="background-color: lightgreen; font-weight: bold;"><mark style="background-color: lightgreen; font-weight: bold;"><mark style="background-color: lightgreen; font-weight: bold;">Conditional Logit</mark> model</mark></mark> evaluates the likelihood of a
+for the node type x distance band variables.                           choice alternative (SA2) being selected given its attributes
+                                                                       (e.g. presence of a home in the SA2, presence of nearest prior
+Opportunity Variables                                                  crime 200–500 m away). In each model (one per crime type),
+                                                                       there were 61 variables: 10 node types × 6 distances (SA2
+In line with previous DSCM studies, we operationalised                 plus 5 bands) + 1 opportunity variable. We report model
+opportunity as the number of potential targets, or an indicator        coefficients as <mark style="background-color: plum; font-weight: bold;">odds ratios</mark> (ORs). For node types, the ORs
+thereof, in each spatial unit. Because the focus of this study         reflect the increase in odds of an SA2 being chosen given
+was on offenders’ activity locations rather than differentiat-         the presence of an activity node of that type at that distance
+ing criminogenic features of the environment, we identified            band, compared to no node of that type within 5 km of the
+one opportunity variable for each crime type indicative of the         SA2. For opportunity, the ORs reflect the increase in odds
+number of potential targets per SA2. These variables came              for every additional 100 opportunity units (e.g., households,
+from New Zealand Statistics Census and Business Demog-                 businesses) in the SA2. When comparing ORs within models,
+raphy data (http://​nzdot​stat.​stats.​govt.​nz/) and are further      if the ORs’ 95% confidence intervals (CIs) overlapped, we
+detailed in Table S1.2 in the online supplementary materi-             used Wald’s Chi-Square tests of difference.
+als. For residential burglary, we used the number of dwellings
+(see similarly Bernasco and Nieuwbeerta <mark style="background-color: lightcoral; font-weight: bold;">2005</mark>; Frith 2019;
+Townsley et al. 2015). For non-residential burglary, we used           Results
+the total number of business units, which directly measures
+                                                                       The models provided a good fit to the data with pseudo R2 val-
+                                                                       ues between 0.35 and 0.42 (McFadden <mark style="background-color: lightblue; font-weight: bold;">1973</mark>), which are at the
+11
+   Median nearest neighbour distance between centroids of sampled      upper end of the range of values found in other DSCM studies
+SA2s = 893 m (average across models).                                  (Table 1). Figure 1 displays the 95% CIs of the ORs for each
+12
+   This method enabled the model to converge and produce Varia-        model (crime type), simultaneously enabling visual comparison
+tion Inflation Factors (VIFs) demonstrating no problematic multicol-   distance-wise (H1), node-wise (H2-5), and crime-wise (H5).
+linearity. Across all crime types, the median VIF was 1.56 and the
+maximum was 5.69, well under the commonly applied threshold of         Tables S3.1 and S4.1 in the online supplementary materials
+10 (Bernasco and Block 2011; O’Brien 2007).                            provide the ORs and CIs, and the Wald test results, respectively.
+
+
+13
+ Journal of Police and Criminal Psychology (2023) 38:172–185                                                                                  <mark style="background-color: lightblue; font-weight: bold;">179</mark>
+
+Table 1  Model summary                Statistic                     Res. burg.    Non-res. burg.     Com. rob.       Pers. rob.    Sex offences
+statistics
+                                      N offence choices             17,054       10,353              1,977           4,315         4,421
+                                      N SA2 choice alternatives     4,213,998    2,417,735           563,161         1,243,204     784,537
+                                      Pseudo ­R2                    0.42         0.42                0.35            0.38          0.37
+
+                                      SA2 statistical area 2
+
+
+
+
+Fig. 1  Odds ratio (OR) 95% confidence intervals (CIs) for node type      at 1. Bars that do not overlap indicate significant differences between
+and opportunity variables per distance band for each model (crime         ORs. Bars that overlap indicate possible non-significant differences
+type). Note: The shorter the bar, the smaller the CI. Grey bars indi-     between ORs (see Wald test results)
+cate non-significant associations with CIs that cross the vertical line
+
+
+                                                                                                                                    13
+ 180                                                                      Journal of Police and Criminal Psychology (2023) 38:172–185
+
+   As predicted by hypothesis 1, offenders were gener-         near to places they previously offended than places where
+ally more likely to commit crime closer to activity nodes      they had previously been a crime victim or witness: no
+than farther away. Of the 50 associations between crime        prior offence CIs overlapped with prior victim/witness CIs
+location choice and the presence of a node in the same         for ‘in SA2’ (Fig. 1: comparing the top bars of the prior
+SA2, 47 were significant and positive (Fig. 1: where the       offence and prior victim/witness cells).
+top bar in the cell is black and to the right of the ver-          We found partial support for hypothesis 5. Residential
+tical line). Offenders were between 1.22 times (victim/        burglars were roughly twice as likely to commit crime near
+witness node + non-residential burglary) and 235 times         home (OR 53.97) than were non-residential burglars (OR
+(home node + sex offence) more likely to offend in an SA2      28.66) and commercial robbers (OR 19.43; Fig. 1: compar-
+containing that type of activity node than if the nearest      ing the top bars of the top cells across columns). Residential
+activity node of that type were more than 5 km away. The       burglars were—as hypothesised—more likely to offend near
+three non-significant associations were work for residen-      intimate partner homes (OR 2.46) than non-residential bur-
+tial burglary, prior victim/witness events for commercial      glars (OR 1.40; Fig. 1: comparing the top bars of the third to
+robbery, and school for sex offences (Fig. 1: where the top    top cells across columns). But they were less likely to offend
+bar in the cell is grey). In several instances, contrary to    near immediate family homes (OR 5.55) than non-residential
+expectation, offenders were less likely to commit crimes       burglars (OR 8.17; Fig. 1: comparing the top bars of the sec-
+in SA2s with activity nodes present at the longest distance    ond to top cells across columns), and CIs overlapped for the
+bands, than if those nodes were not present in any distance    remaining H5 comparisons (with non-residential burglary
+band: prior victim/witness events for burglary; school for     for other family homes, and with commercial robbery for
+commercial robbery; and sex offences (Fig. 1: where the        all family home categories).
+black bar is to the left of the vertical line).                    Lastly, crime opportunity was positively associated with
+   A distance decay pattern is evident for most nodes          crime location choice, when controlling for the presence
+(Fig. 1: where the bars within each cell get closer to the     of activity nodes. For every increase of 100 households or
+vertical line from top to bottom). For example, in the top     relevant businesses (depending on crime type) in the SA2,
+leftmost cell (home nodes and residential burglary), the       the odds of an offence in that SA2 increased by 7% for resi-
+ORs monotonically decrease with increasing distance            dential burglary, 12% for non-residential burglary, 14% for
+bands, meaning the odds of an SA2 being chosen for a           commercial robbery, 13% for personal robbery, and 10% for
+residential burglary decrease the further that SA2 is from     sex offences.
+a home node. ORs were not always significantly different
+from one distance band to the next, but ORs for the short-
+est distance band (in SA2) were significantly greater than     Discussion
+ORs for the longest distance band for 47 of the 50 com-
+parisons (Fig. 1: comparing the top and bottom bars within     This study aimed to identify near which of a range of activ-
+each cell). The three exceptions were as follows: other        ity locations (nodes) recorded in police data offenders are
+family homes and incidents for commercial robbery and          more likely to commit crime. Almost all nodes—including
+work for personal robbery. The only other statistically sig-   those not considered separately in previous studies: intimate
+nificant exception to monotonic decay was intimate partner     partner and other relatives’ homes, school, work, police
+homes for non-residential burglary with slightly higher        involved incidents and other police contacts—were signifi-
+odds at 0–200 m (OR 1.40) than in the SA2 (OR1<mark style="background-color: plum; font-weight: bold;">.61</mark>).            cantly and positively associated with crime location choice,
+   Confirming hypothesis 2, offenders were more likely         at least at short distances. The lack of association between
+to commit crime near their own homes than their family         work nodes and residential burglary could reflect a lack of
+members’ homes: all differences between ‘home in SA2’          residential burglary opportunities around work nodes likely
+and each type of ‘family home in SA2’ were significant         concentrated in non-residential areas. The lack of associa-
+(Fig. 1: comparing the top bars of the top and second to       tion between prior victim/witness events and commercial
+top cells). Regarding hypotheses 3(a) and 3(b), offend-        robbery indicates that these events were not conducive to
+ers were significantly more likely to commit crime in the      the acquisition of knowledge of commercial robbery oppor-
+same SA2 as immediate family members’ homes than in            tunities. There are several possible explanations for the lack
+the same SA2 as homes of current or former intimate part-      of association between offenders’ school/education nodes
+ners (except sex offenders and commercial robbers) and         and sex offences. First, the aggregation of offences against
+of other relatives (Fig. 1: 3(a) comparing the top bars of     children and adults in the present dataset could have masked
+the second and third to top cells; 3(b) comparing top bars     any victim age-specific association. Second, past research
+of the second and fourth to top cells). Hypothesis 4 was       suggests that relatively few extra-familial child sex offend-
+supported. Offenders were more likely to commit crime          ers access their victims at or near schools (14%: Leclerc
+
+
+13
+ Journal of Police and Criminal Psychology (2023) 38:172–185                                                                   181
+
+and Felson 2016) and that those who do tend to carry out          Lundrigan and Czarnomski 2006; Scott 2012). Likewise,
+the offence elsewhere (Mogavero and Hsu 2017). The few            Townsley et al. (2015) found a smaller association between
+negative associations—at longer distances—were marginally         distance to home and residential burglary location choice in
+significant and small. We treat these results with caution, but   <mark style="background-color: yellow; font-weight: bold;">Australia</mark> than in the UK and the Netherlands, reflecting dif-
+they could reflect the unobserved underlying environmental        ferences in urban population density. Our results are likely to
+backcloth that shapes different activities (Brantingham and       generalise to other low population density jurisdictions and
+Brantingham 1993a, b) and the distribution of crime oppor-        imply that studies in such jurisdictions could benefit from
+tunity, or idiosyncrasies of the present dataset. Replicating     using an even longer distance range.
+this study elsewhere to see if similar patterns emerge would          Differences in relative associations between crime loca-
+assist in resolving whether these exceptions were mere            tions and different nodes were largely consistent with the
+anomalies or not (and if not, the implications for theory).       hypotheses derived from Curtis-Ham et al.’s (2020) theo-
+   Consistent with our expectations based on crime pattern        retical model, thus lending further empirical support to this
+theory (Brantingham and Brantingham 1991, 1993a), crime           extension of crime pattern theory. Offenders were generally
+was almost always most likely in the immediate vicinity           more likely to commit crime closer to activity nodes that
+of activity nodes, declining monotonically with distance.         were higher frequency (home versus family homes; imme-
+We place more weight on the general pattern and treat the         diate family versus other relatives); likely to impart more
+few marginal exceptions with caution given the number of          relevant knowledge about crime opportunities (prior crimes
+comparisons and limitations of the data (discussed below).        versus prior victim or witness locations); and of the same
+The patterns of distance decay for different activity nodes       location type as the crime target (home for residential bur-
+evidence the extent of offenders’ awareness space around          glary versus non-residential burglary and commercial rob-
+different activity nodes and the likelihood that they will        bery). They were also more likely to offend near immediate
+identify criminal opportunities within that space. Home           family homes—presumed to be more enduring nodes—than
+and prior crimes showed the strongest associations with           near intimate partners’ homes, though this difference was less
+crime location choice, over longer distances, followed by         pronounced for the commercial robbery and sex offenders.
+homes of immediate family. These results are consistent with      It is unclear why residential burglars were much more likely
+prior studies of residential burglary, robbery, and crime in      to offend near home than offenders targeting non-residential
+general (Menting et al. 2016), but provide novel confirma-        properties but not always more likely near family homes.
+tion for non-residential burglaries and extra-familial sex        Offenders’ homes are just as likely as their family members’
+offences specifically. The apparent wider awareness space         homes have more residential and fewer non-residential crime
+around home nodes likely reflects that home nodes tend to         opportunities nearby. The difference must therefore lie in how
+anchor other routine activity locations that might not appear     knowledge of those opportunities is acquired through their
+in the data (Golledge 1999; Wang et al. 2013). Further,           activities at different residential nodes, a question that could
+more ‘paths’ exist between home and other nodes, generat-         be explored via survey or interview research in the future.
+ing familiarity with a wider area around home (Schönfelder            Several limitations of this study affect how our results
+and Axhausen <mark style="background-color: lightcoral; font-weight: bold;">2002</mark>; Wang et al. 2013). In contrast, associa-       can be interpreted. First, although the results demonstrate
+tions between prior victim/witness events and incidents and       the ability of police data to indicate crime-salient ele-
+offenders’ crime locations were largely limited to the same       ments of offenders’ activity spaces, we may have missed
+SA2, suggesting more constrained awareness space around           or understated theoretically important relationships for
+these nodes. That the sex offenders were much more likely         under-represented nodes. For example, the offenders
+to offend in the same SA2 as they lived (OR 235) than other       would likely have additional activity nodes not recorded in
+offenders likely reflects that some of these offences occurred    police data near which they could be offending when com-
+at home.                                                          mitting offences away from their police recorded activity
+   That home, and to a lesser extent, immediate family            nodes. To the extent that these activity nodes are missing
+homes and prior offence sites, were strongly associated with      from police data, our results underestimate the association
+crime locations even at the 2–5 km distance range could be        between activity node proximity and crime location choice.
+explained by the relatively low urban population density of       This impact is most extreme in the cases of rarely recorded
+New Zealand (Demographia 2019). When targets are more             nodes such as school and work, so our results for those
+dispersed there are fewer crime opportunities within a given      nodes should be treated with caution. Future research could
+distance range, resulting in longer distances between activity    supplement police data with other administrative datasets
+nodes and crime and an extended decay curve. Accordingly,         that comprehensively capture these locations, akin to the
+New Zealand burglary and sex offenders’ home-crime dis-           use of government address registry data by Bernasco and
+tances are longer on average than those of offenders from         colleagues (Bernasco 2006; Bernasco and Kooistra 2010;
+other countries (Hammond 2014; Lundrigan et al. 2010;             Menting et al. 2016).
+
+
+                                                                                                                       13
+ <mark style="background-color: lightblue; font-weight: bold;">182</mark>                                                                               Journal of Police and Criminal Psychology (2023) 38:172–185
+
+    Second, because we studied solved cases—albeit a com-           incident and its timing (Curtis-Ham et al. 2020).13 Exploring
+mon practice in discrete crime location choice research—            this variation by measuring, more directly, the factors that
+the results may not generalise to all offenders (Bernasco           mediate the influence of prior activity locations on crime
+et al. 2013; Ruiter 2017). For example, if those who offend         location choice would help to identify why, for example,
+close to home are more likely to be identified, relationships       commercial robbers were no more likely to offend near prior
+between home and offence locations would be stronger for            victim/witness locations than farther away.
+solved than unsolved crimes. Similarly, if police are more             We conclude by highlighting the practical implications
+likely to link an offender to a crime committed in a place that     of quantifying the links between offenders’ different activity
+the police know the offender has visited, than to a crime com-      locations and their crime locations, as we did in this study.
+mitted in a place with no recorded link to the offender, we         This quantification enables prediction of the most likely loca-
+would also find stronger node-crime associations for solved         tions at which an individual will offend, given the locations,
+than unsolved crimes. Conversely, if offenders are more likely      and nature, of their activity nodes. Such predictions could
+to return to locations of prior crimes they were not caught for     be used in <mark style="background-color: yellow; font-weight: bold;">community</mark> corrections settings, incorporated into
+(not captured in the present data), relationships between prior     risk assessments to identify offenders’ high-risk locations for
+crimes and offence locations would be weaker for solved than        offending, informing strategies to mitigate risk accordingly
+unsolved prior crimes. Correspondingly, Long et al. (2018)          (Schaefer et al. 2016; Serin et al. 2016). In crime investiga-
+found that offenders were less likely to return to the location     tions, geographic profiling involves using offence locations
+of a crime for which they were immediately caught than of a         to infer the likely location of an offender’s home or other
+crime for which they initially avoided capture. However, they       node (Canter and Youngs 2008; Rossmo 2000; Rossmo and
+still were more likely to return to the location of a prior crime   Rombouts 2008; Rossmo and Summers 2015). Our results
+with immediate capture, than somewhere they had not previ-          could help to identify the kind of node that is more likely to
+ously offended. Further, the few studies to examine the spa-        be (e.g., home, school, prior crime), thus enabling prioritisa-
+tial decision-making of offenders in solved versus unsolved         tion of suspects with higher likelihood nodes in the area pre-
+crimes suggest that differences between these groups are            dicted by the geographic profile (building on the approaches
+minimal (Bernasco et al. 2013; Lammers 2014).                       suggested by Goodwill et al. 2014; van der Kemp 2021, for
+    Lastly, variation may exist between offenders within            incorporating consideration of suspects’ activity nodes other
+offence types. For example, the sex offence data includes a         than home addresses). Alternatively, given a list of suspects,
+range of offences, from indecent exposure to rape, against both     our results could help identify who is more likely to have
+adults and children, and known and stranger victims, and sex        committed a crime at the location of an unsolved crime,
+offenders employ a range of methods for identifying, select-        given the nature and proximity of their activity nodes (e.g.,
+ing and approaching victims (Balemba and Beauregard 2013;           Curtis‐Ham et al. 2022). The fact that this study used data
+Beauregard and Busina 2013; Mogavero and Hsu 2017).                 routinely (though not comprehensively) collected by police
+Similarly, several prior studies have highlighted differences       for operational purposes additionally highlights how much
+between offenders in the association between home or prior          activity location data is likely available to police within their
+offence locations and future crime locations: for example,          own data systems that could be used for these geographic
+based on age and criminal history (Frith 2019; Townsley             profiling purposes.
+et al. 2016). Relatedly, although the conditional logit model
+used in this study provides useful insight into the ‘average’       Supplementary Information The online version contains supplemen-
+                                                                    tary material available at https://d​ oi.o​ rg/1​ 0.1​ 007/s​ 11896-0​ 22-0​ 9540-8.
+offender, it does not yield a distribution across offenders that
+would provide insight into the relative proportion who prefer       Acknowledgements We gratefully acknowledge the assistance of the
+to offend close to activity nodes. Future research could sepa-      New Zealand Police staff who provided access to and advice on the
+rately examine relationships between different activity nodes       data used in this research and who reviewed the manuscript prior to
+and crime location choice for specific subtypes of offences         submission.
+and groups of offenders, and examine individual differences
+                                                                    Funding Open Access funding enabled and organized by CAUL and its
+across the distribution of offenders using <mark style="background-color: lightgreen; font-weight: bold;">Mixed Logit</mark> models       Member Institutions. This research forms part of the first author’s PhD
+(see for example Frith 2019; Townsley et al. 2016).                 thesis, which is funded by a University of Waikato doctoral scholarship.
+    Future research might also benefit from a more granular
+approach when examining the relationship between offence
+locations and offenders’ prior victim/witness, police incident
+and other police-recorded activity locations. Within these
+                                                                    13
+categories there is likely variation in factors that influence         This disaggregation could also explore whether prior crimes are
+                                                                    more likely to be of the same type as the reference offence than vic-
+whether those activities generate relevant knowledge of             tim/witness experiences: an additional potential explanation for the
+nearby crime opportunities, such as the type of offence or          present findings.
+
+
+13
+ Journal of Police and Criminal Psychology (2023) 38:172–185                                                                                                            183
+
+<mark style="background-color: lightcoral; font-weight: bold;">Data availability</mark> The data used in this research study are not pub-                    J Quant Criminol 26(1):113–138. https://​d oi.​o rg/​1 0.​1 007/​
+licly available and were obtained with approval from the New Zealand                   s10940-​009-​9086-6
+Police Research Panel (reference EV-12–462). The results presented                 Bernasco W (2010b) A sentimental journey to crime: effects of resi-
+in this paper are the work of the authors and do not represent the views               dential history on crime location choice. Criminology 48(2):389–
+of New Zealand Police.                                                                 416. https://​doi.​org/​10.​1111/j.​1745-​9125.​2010.​00190.x
+                                                                                   Bernasco W (2019) Adolescent offenders’ current whereabouts pre-
+                                                                                       dict locations of their future crimes. PLoS ONE 14(1):e0210733.
+                                                                                       https://​doi.​org/​10.​1371/​journ​al.​pone.​02107​33
+Declarations                                                                       Bernasco W (2021) Discrete spatial choice models. In: Groff ER,
+                                                                                       Haberman CP (eds) The Study of Crime and Place: A Meth-
+Ethics Approval This research study was conducted retrospectively                      ods Handbook. Temple University Press. https://​osf.​io/​639cz/.
+from data obtained for operational purposes. Ethics approval was                       Accessed 30 July 2022
+obtained from the Psychology Research and Ethics Committee of the                  Bernasco W (2022) Desisting distance decay again: distance does
+University of Waikato (reference #19:13).                                              not affect whether and where adolescents offend. https://​nscr.​
+                                                                                       nl/​app/​uploa​ds/​2022/​03/​Desis​tingD​istan​ceDec​ay_​16_​FigIn.​pdf.
+                                                                                       Accessed 30 July 2022
+Conflict of Interest The first author is employed as a researcher at New
+                                                                                   Bernasco W, Block R (2009) Where offenders choose to attack: a
+Zealand Police. This study was not conducted as a part of that employ-
+                                                                                       discrete choice model of robberies in <mark style="background-color: yellow; font-weight: bold;">Chicago</mark>. Criminology
+ment.
+                                                                                       47(1):93–130. https://​doi.​org/​10.​1111/j.​1745-​9125.​2009.​00140.x
+                                                                                   Bernasco W, Block R (2011) Robberies in Chicago: a block-level anal-
+Open Access This article is licensed under a Creative Commons Attri-                   ysis of the influence of crime generators, crime attractors, and
+bution 4.0 International License, which permits use, sharing, adapta-                  offender anchor points. J Res Crime Delinq 48(1):33–57. https://​
+tion, distribution and reproduction in any medium or format, as long                   doi.​org/​10.​1177/​00224​27810​384135
+as you give appropriate credit to the original author(s) and the source,           Bernasco W, Block R, Ruiter S (2013) Go where the money is: mode-
+provide a link to the Creative Commons licence, and indicate if changes                ling street robbers’ location choices. J Econ Geogr 13(1):119–143.
+were made. The images or other third party material in this article are                https://​doi.​org/​10.​1093/​jeg/​lbs005
+included in the article's Creative Commons licence, unless indicated               Bernasco W, Johnson SD, Ruiter S (2015) Learning where to offend:
+otherwise in a credit line to the material. If material is not included in             effects of past on future burglary locations. Appl Geogr 60(Sup-
+the article's Creative Commons licence and your intended use is not                    plement C):<mark style="background-color: lightblue; font-weight: bold;">120</mark>–129. https://d​ oi.o​ rg/1​ 0.1​ 016/j.a​ pgeog.2​ 015.​03.​014
+permitted by statutory regulation or exceeds the permitted use, you will           Bernasco W, Kooistra T (2010) Effects of residential history on com-
+need to obtain permission directly from the copyright holder. To view a                mercial robbers’ crime location choices. Eur J Criminol 7(4):251–
+copy of this licence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.       265. https://​doi.​org/​10.​1177/​14773​70810​363372
+                                                                                   Bernasco W, Nieuwbeerta P (2005) How do residential burglars select
+                                                                                       target areas? A new approach to the analysis of criminal location
+                                                                                       choice. Br J Criminol 45(3):296–315. https://d​ oi.o​ rg/1​ 0.1​ 093/b​ jc/​
+                                                                                       azh070
+References                                                                         Block R, Davis S (1996) The environs of rapid transit stations: a
+                                                                                       focus for street crime or just another risky place? In: Clarke RV
+Ackerman JM, Rossmo DK (2015) How far to travel? A multilevel                          (ed) Preventing mass transit crime, vol 6. Criminal Justice Press,
+     analysis of the residence-to-crime distance. J Quant Criminol                                                                                       ​ les/p​ roble​ ms/​
+                                                                                       pp 237–257. https://p​ opcen​ ter.a​ su.e​ du/s​ ites/d​ efaul​ t/fi
+     31(2):237–<mark style="background-color: lightblue; font-weight: bold;">262</mark>. https://​doi.​org/​10.​1007/​s10940-​014-​9232-7                                      ​ DFs/B
+                                                                                       street_r​ obber​ y/P     ​ lockD​ avis1​ 996.p​ df. Accessed 30 July 2022
+Agneessens F, Waege H, Lievens J (2006) Diversity in social support                Boivin R, Felson M (2018) Crimes by visitors versus crimes by
+     by role relations: A typology. Social Networks 28(4):427–441.                     residents: the influence of visitor inflows. J Quant Criminol
+     https://​doi.​org/​10.​1016/j.​socnet.​2005.​10.​001                              34(2):465–480. https://​doi.​org/​10.​1007/​s10940-​017-​9341-1
+Alston JD (1994) The serial rapist’s spatial pattern of target selection.          Brantingham PL, Brantingham PJ (1991) Notes on the geometry of
+     Masters thesis, Simon Fraser University. http://​summit.​sfu.​ca/​                crime. In: Brantingham PJ, Brantingham PL (eds) Environmental
+     item/​5080. Accessed 30 July 2022                                                 criminology, 2nd ed. Waveland Press, pp 27–54
+Andresen MA (2011) The ambient population and crime analysis.                      Brantingham PL, Brantingham PJ (1993a) Environment, routine, and
+     Prof Geogr 63(2):<mark style="background-color: lightblue; font-weight: bold;">193</mark>–212. https://​doi.​org/​10.​1080/​00330​124.​                situation: toward a pattern theory of crime. In: Clarke RV, Felson
+     2010.​547151                                                                      M (eds) Routine activity and rational choice. Transaction Publish-
+Andresen MA, Jenion GW (2010) Ambient populations and the calcu-                       ers, pp 259–294
+     lation of crime rates and risk. Secur J 23(2):114–133. https://​doi.​         Brantingham PL, Brantingham PJ (1993b) Nodes, paths and edges:
+     org/​10.​1057/​sj.​2008.1                                                         considerations on the complexity of crime and the physical envi-
+Balemba S, Beauregard E (2013) Where and when? Examining                               ronment. J Environ Psychol 13(1):3–28. https://​doi.​org/​10.​1016/​
+     spatiotemporal aspects of sexual <mark style="background-color: orange; font-weight: bold;">assault</mark> events. J Sex Aggress                    S0272-​4944(05)​80212-9
+     19(2):171–190. https://​doi.​org/​10.​1080/​13552​600.​2012.​703702           Canter D, Youngs D (2008) Interactive Offender Profiling System
+Beauregard E, Busina I (2013) Journey ‘during’ crime: predicting                       (IOPS). In: Chainey S, Tompson L (eds) Crime Mapping Case
+     criminal mobility patterns in sexual assaults. J Interpers Violence               Studies. John Wiley & Sons, Ltd, pp 153–160. https://​doi.​org/​10.​
+     28(10):2052–2067. https://​doi.​org/​10.​1177/​08862​60512​471084                 1002/​97804​70987​193.​ch18
+Ben-Akiva ME, Lerman SR (1985) Discrete choice analysis: theory                    Chamberlain AW, Boggess LN (2016) Relative difference and burglary
+     and application to travel demand. MIT Press                                       location: can ecological characteristics of a burglar’s home neigh-
+Bernasco W (2006) Co-offending and the choice of target areas in                       borhood predict offense location? J Res Crime Delinq 53(6):872–
+     burglary. J Investig Psychol Offender Profiling 3(3):139–<mark style="background-color: lightblue; font-weight: bold;">155</mark>.                     906. https://​doi.​org/​10.​1177/​00224​27816​647993
+     https://​doi.​org/​10.​1002/​jip.​49                                          Chopin J, Caneppele S (2018) The mobility crime triangle for sexual
+Bernasco W (2010a) Modeling micro-level crime location choice:                         offenders and the role of individual and environmental factors. Sexual
+     application of the discrete choice framework to crime at places.                  Abuse 31(7):812–836. https://​doi.​org/​10.​1177/​10790​63218​784558
+
+
+                                                                                                                                                             13
+ 184                                                                                             Journal of Police and Criminal Psychology (2023) 38:172–185
+
+Chopin J, Caneppele S (2019) Geocoding child sexual abuse: an                      Hewitt AN, Chopin J, Beauregard E (2020) Offender and victim ‘journey-
+     explorative analysis on journey to crime and to victimization from                 to-crime’: motivational differences among stranger rapists. J
+     French police data. Child Abuse Negl 91:116–130. https://d​ oi.o​ rg/​             Crim Just 69:101707. https://​doi.​org/​10.​1016/j.​jcrim​jus.​2020.​
+     10.​1016/j.​chiabu.​2019.​03.​001                                                  101707
+Clare J, Fernandez J, Morgan F (2009) Formal evaluation of the impact              Lammers M (2014) Are arrested and non-arrested serial offenders dif-
+     of barriers and connectors on residential burglars’ macro-level                    ferent? A test of spatial offending patterns using DNA found at
+     offending location choices. Aust N Z J Criminol 42(2):139–<mark style="background-color: lightblue; font-weight: bold;">158</mark>.                     crime scenes. J Res Crime Delinq 51(2):143–167. https://​doi.​org/​
+     https://​doi.​org/​10.​1375/​acri.​42.2.​139                                       10.​1177/​00224​27813​504097
+Cohen LE, Felson M (1979) Social change and crime rate trends: a                   Lammers M, Menting B, Ruiter S, Bernasco W (2015) Biting once,
+     routine activity approach. Am Sociol Rev 44(4):588–608. https://​                  twice: the influence of prior on subsequent crime location choice.
+     doi.​org/​10.​2307/​20945​89                                                       Criminology 53(3):309–329. https://​doi.​org/​10.​1111/​1745-​9125.​
+Costello A, Wiles P (2001) GIS and the journey to crime: an analysis                    12071
+     of patterns in South Yorkshire. In: Bowers KJ, Hirschfield A (eds)            Leclerc B, Felson M (2016) Routine activities preceding adolescent
+     Mapping and analysing crime data: Lessons from research and                        sexual abuse of younger children. Sexual Abuse 28(2):116–131.
+     practice. Taylor & Francis, pp 27–60                                               https://​doi.​org/​10.​1177/​10790​63214​544331
+Curtis-Ham S, Bernasco W, Medvedev ON, Polaschek DLL (2020)                        Long D, Liu L, Feng J, Zhou S (2018) Assessing the influence of prior
+     A framework for estimating crime location choice based on                          on subsequent <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">street robbery</mark></mark> location choices: a case study in ZG
+     awareness space. Crime Sci 9(1):1–14. https://​doi.​org/​10.​1186/​                city, <mark style="background-color: yellow; font-weight: bold;">China</mark>. Sustainability 10(6):1818. https://​doi.​org/​10.​3390/​
+     s40163-​020-​00132-7                                                               su100​61818
+Curtis-Ham S, Bernasco W, Medvedev ON, Polaschek DLL (2021b)                       Lundrigan S, Czarnomski S (2006) Spatial characteristics of serial sex-
+     The importance of importance sampling: exploring methods of                        ual assault in New Zealand. Aust N Z J Criminol 39(2):218–231.
+     sampling from alternatives in discrete choice models of crime                      https://​doi.​org/​10.​1375/​acri.​39.2.​218
+     location choice. J Quant Criminol. https://​doi.​org/​10.​1007/​              Lundrigan S, Czarnomski S, Wilson M (2010) Spatial and environmen-
+     s10940-​021-​09526-5                                                               tal consistency in serial sexual assault. J Investig Psychol Offender
+Curtis-Ham S, Bernasco W, Medvedev ON, Polaschek DL (2021a) A                           Profiling 7(1):15–30. https://​doi.​org/​10.​1002/​jip.​100
+     national examination of the spatial extent and similarity of offend-          McFadden D (1973) Conditional logit analysis of qualitative choice
+     ers’ activity spaces using police data. ISPRS International Journal                behavior. In: Zarembka P (ed) Frontiers in econometrics. Aca-
+     of Geo-Information 10(2) 47. https://​doi.​org/​10.​3390/​ijgi1​00200​47.          demic Press, pp <mark style="background-color: lightblue; font-weight: bold;">105</mark>–<mark style="background-color: lightblue; font-weight: bold;">142</mark>
+     Accessed 30 July 2022                                                         McFadden D (1977) Modelling the choice of residential location (No.
+Curtis-Ham S, Bernasco W, Medvedev ON, Polaschek DLL (2022) A                           477; Cowles Foundation Discussion Papers). Yale University.
+     new geographic profiling suspect mapping and ranking technique                     https://​EconP​apers.​repec.​org/​RePEc:​cwl:​cwldpp:​477. Accessed
+     for crime investigations: GP-SMART. J Investig Psychol Offender                    30 July 2022
+     Profiling. https://​doi.​org/​10.​1002/​jip.​1585                             McFadden D (1984) Econometric analysis of qualitative response mod-
+Davies A, Dale A (1996) Locating the stranger rapist. Med Sci Law                       els. In: Griliches P, Intriligator MD (eds) Handbook of economet-
+     36(2):146–156. https://​doi.​org/​10.​1177/​00258​02496​03600​210                  rics, vol 2. Elsevier, pp 105–142. https://​doi.​org/​10.​1016/​S1573-​
+Demographia (2019) Demographia world urban areas: 15th annual                           4412(84)​02016-X
+     edition 201904. Demographia. http://​www.​demog​raphia.​com/​                 Menting B (2018) Awareness × opportunity: testing interactions
+     db-​world​ua.​pdf. Accessed 20 April 2020                                          between activity nodes and criminal opportunity in predicting
+Frank R, Andresen MA, Cheng C, Brantingham PL (2011) Finding                            crime location choice. Br J Criminol 58:1171–1192. https://​doi.​
+     criminal attractors based on offenders’ directionality of crimes. In:              org/​10.​1093/​bjc/​azx049
+     Memon N, Zeng D (eds) 2011 European Intelligence and Security                 Menting B, Lammers M, Ruiter S, Bernasco W (2016) Family mat-
+     Informatics Conference. CPS, pp 86–93. https://​doi.​org/​10.​1109/​               ters: effects of family members’ residential areas on crime loca-
+     EISIC.​2011.​34                                                                    tion choice. Criminology 54(3):413–433. https://​doi.​org/​10.​1111/​
+Frith MJ (2019) Modelling taste heterogeneity regarding offence loca-                   1745-​9125.​12109
+     tion choices. J Choice Model 33:100187. https://d​ oi.o​ rg/1​ 0.1​ 016/j.​   Menting B, Lammers M, Ruiter S, Bernasco W (2020) The influ-
+     jocm.​2019.​100187                                                                 ence of activity space and visiting frequency on crime location
+Golledge R (1999) Human wayfinding and cognitive maps. In:                              choice: findings from an online self-report survey. Br J Criminol
+     Golledge R (ed) Wayfinding behavior: cognitive mapping and                         60(2):303–322. https://​doi.​org/​10.​1093/​bjc/​azz044
+     other spatial processes. Johns Hopkins University Press, pp 5–45              Mogavero MC, Hsu K-H (2017) Sex offender mobility: an application
+Goodwill AM, van der Kemp JJ, Winter JM (2014) Applied geographi-                       of crime pattern theory among child sex offenders. Sexual Abuse
+     cal profiling. In: Bruinsma GJN, Weisburd D (eds) Encyclopedia                     30(8):908–931. https://​doi.​org/​10.​1177/​10790​63217​712219
+     of criminology and criminal justice. Springer, pp 86–99. https://​            O’Brien RM (2007) A caution regarding rules of thumb for variance
+     doi.​org/​10.​1007/​978-1-​4614-​5690-2_​207                                       inflation factors. Qual Quant 41(5):673–690. https://​doi.​org/​10.​
+Hammond L (2014) Geographical profiling in a novel context: prior-                      1007/​s11135-​006-​9018-6
+     itising the search for New Zealand sex offenders. Psychol, Crime              Rossmo DK (2000) Geographic profiling. CRC Press
+     & Law 20(4):<mark style="background-color: lightblue; font-weight: bold;">358</mark>–371. https://​doi.​org/​10.​1080/​10683​16X.​2013.​           Rossmo DK, Rombouts S (2008) Geographic profiling. In: Wortley R,
+     793331                                                                             Mazerolle L (eds) Environmental criminology and crime analy-
+Hart TC, Miethe TD (2015) Configural behavior settings of crime                         sis. Willan, pp 136–149. https://​www.​taylo​rfran​cis.​com/​books/e/​
+     event locations: toward an alternative conceptualization of crimi-                 97811​36308​451. Accessed 30 July 2022
+     nogenic microenvironments. J Res Crime Delinq 52(3):373–402.                  Rossmo DK, Summers L (2015) Routine activity theory in crime inves-
+     https://​doi.​org/​10.​1177/​00224​27814​566639                                    tigation. In: The Criminal Act. Palgrave Macmillan, <mark style="background-color: yellow; font-weight: bold;">London</mark>, pp
+Hewitt A, Beauregard E, Davies G (2012) “Catch and release”: pre-                       19–32. https://​doi.​org/​10.​1057/​97811​37391​322_3
+     dicting encounter and victim release location choice in serial                Ruiter S (2017) Crime location choice. In: Bernasco W, Van Gelder J-L,
+     rape events. Policing 35(4):835–856. https://​doi.​org/​10.​1108/​                 Elffers H (eds) The Oxford handbook of offender decision making.
+     13639​51121​12758​14                                                               Oxford University Press, pp 398–<mark style="background-color: lightblue; font-weight: bold;">420</mark>
+
+
+
+13
+ Journal of Police and Criminal Psychology (2023) 38:172–185                                                                                           185
+
+Rummens A, Snaphaan T, Van de Weghe N, Van den Poel D, Pauwels                 van Daele S (2009) Itinerant crime groups: mobility attributed to
+     LJR, Hardyns W (2021) Do <mark style="background-color: orange; font-weight: bold;">Mobile phone data</mark> provide a better                    anchor points? In: Pauwels L, Ponsaers P, Vande Walle G, Vander
+     denominator in crime rates and improve spatiotemporal predic-                  Beken T, Vander Laenen F, Vermeulen G, Cools M, De Kimpe S,
+     tions of crime? ISPRS Int J Geo Inf 10(6):<mark style="background-color: lightblue; font-weight: bold;">369</mark>. https://​doi.​org/​10.​         De Ruyver B, Easton M (eds) Contemporary issues in the empiri-
+     3390/​ijgi1​00603​69                                                           cal study of crime, vol 1. Maklu, pp 211–225
+Schaefer L, Cullen FT, Eck JE (2016) Environmental corrections: a              van der Kemp JJ (2021) The modus via of sex offenders and the
+     new paradigm for supervising offenders in the community. Sage                  use of geographical offender profiling in sex crime cases. In:
+Schönfelder S, Axhausen KW (2002) Measuring the size and structure                  Deslauriers-Varin N, Bennell C (eds) Criminal Investigations
+     of human activity spaces: the longitudinal perspective [Working                of Sexual Offenses: Techniques and Challenges. Springer
+     Paper]. ETH. https://​doi.​org/​10.​3929/​ethz-a-​00444​4846. https://​        International Publishing, pp 33–48. https://​d oi.​o rg/​1 0.​1 007/​
+     www.​resea​rch-​colle​ction.​ethz.​ch/​handle/​20.​500.​11850/​36482.          978-3-​030-​79968-7_4
+     Accessed 30 July 2022                                                     van Sleeuwen SEM, Ruiter S, Menting B (2018) A time for a crime: tem-
+Scott D (2012) The travelling distances of stranger intruder sex offend-            poral aspects of repeat offenders’ crime location choices. J Res Crime
+     ers [Research Report]. New Zealand Police.                                     Delinq 55(4):538–568. https://​doi.​org/​10.​1177/​00224​27818​766395
+Serin RC, Gobeil R, Lloyd CD, Chadwick N, Wardrop K, Hanby L                   van Sleeuwen SEM, Ruiter S, Steenbeek W (2021) Right place, right
+     (2016) Using dynamic risk to enhance conditional release deci-                 time? Making crime pattern theory time-specific. Crime Sci
+     sions in prisoners to improve their outcomes. Behav Sci Law                    10(1):1–10. https://​doi.​org/​10.​1186/​s40163-​021-​00139-8
+     34(2–3):321–336. https://​doi.​org/​10.​1002/​bsl.​2213                   Vandeviver C, Bernasco W (2020) “Location, location, location”:
+Song G, Bernasco W, Liu L, Xiao L, Zhou S, Liao W (2019) Crime                      effects of neighborhood and <mark style="background-color: yellow; font-weight: bold;">house</mark> attributes on burglars’ target
+     feeds on legal activities: daily <mark style="background-color: plum; font-weight: bold;">mobility flows</mark> help to explain                selection. J Quant Criminol 36(4):779–<mark style="background-color: lightblue; font-weight: bold;">821</mark>. https://​doi.​org/​10.​
+     thieves’ target location choices. J Quant Criminol. https://​doi.​org/​        1007/​s10940-​019-​09431-y
+     10.​1007/​s10940-​019-​09406-z                                            Wang X, Grengs J, Kostyniuk L (2013) Visualizing travel patterns
+Townsley M (2016) Offender mobility. In: Wortley R, Townsley M                      with a GPS dataset: how commuting routes influence non-work
+     (eds) Environmental criminology and crime analysis. Routledge,                 travel behavior. J Urban Technol 20(3):105–125. https://​doi.​org/​
+     pp 142–161                                                                     10.​1080/​10630​732.​2013.​811986
+Townsley M, Birks D, Bernasco W, Ruiter S, Johnson SD, White G,                Wellman B, Wortley S (1989) Brothers’ keepers: situating kinship
+     Baum S (2015) Burglar target selection: a cross-national com-                  relations in broader networks of social support. Sociol Perspect
+     parison. J Res Crime Delinq 52(1):3–31. https://​doi.​org/​10.​1177/​          32(3):273–306. https://​doi.​org/​10.​2307/​13891​19
+     00224​27814​541447                                                        Zipf GK (1949) Human behavior and the principle of least effort.
+Townsley M, Birks D, Ruiter S, Bernasco W, White G (2016) Tar-                      Addison-Wesley Press, pp xi, 573
+     get selection models with preference variation between offend-
+     ers. J Quant Criminol 32(2):<mark style="background-color: lightblue; font-weight: bold;">283</mark>–<mark style="background-color: lightblue; font-weight: bold;">304</mark>. https://​doi.​org/​10.​1007/​        Publisher's Note Springer Nature remains neutral with regard to
+     s10940-​015-​9264-7                                                       jurisdictional claims in published maps and institutional affiliations.
+
+
+
+
+                                                                                                                                             13
+</div>
+      </body>
+      </html>

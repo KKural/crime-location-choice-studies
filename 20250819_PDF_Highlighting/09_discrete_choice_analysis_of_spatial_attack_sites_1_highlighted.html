@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+        <title>Highlighted: 09_discrete_choice_analysis_of_spatial_attack_sites_1</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; }
+          .header { background: #f0f0f0; padding: 20px; margin-bottom: 20px; }
+          .legend { background: #fff; border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+          .legend-item { display: inline-block; margin-right: 20px; }
+          .content { white-space: pre-wrap; }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h1>Highlighted PDF: 09_discrete_choice_analysis_of_spatial_attack_sites_1</h1>
+          <p>Processed on: 2025-08-19</p>
+          <p>Total highlighted terms: 27</p>
+        </div>
+        
+        <div class="legend">
+          <h3>Legend:</h3>
+          <div class="legend-item"><mark style="background-color: yellow;">Geographic</mark></div>
+          <div class="legend-item"><mark style="background-color: lightblue;">Quantitative</mark></div>
+          <div class="legend-item"><mark style="background-color: lightgreen;">Methods</mark></div>
+          <div class="legend-item"><mark style="background-color: orange;">Crime-related</mark></div>
+          <div class="legend-item"><mark style="background-color: plum;">Statistical</mark></div>
+          <div class="legend-item"><mark style="background-color: lightcoral;">Other</mark></div>
+        </div>
+        
+        <div class="content">ISeB (2007) 5:255–274
+DOI 10.1007/s10257-007-0045-1
+
+ORIGINAL ARTICLE
+
+
+
+Discrete choice analysis of spatial attack sites
+
+Michael A. Smith Æ Donald E. Brown
+
+
+
+
+Published online: 20 March 2007
+ Springer-Verlag 2007
+
+
+Abstract This paper presents an algorithm for the complete specification of
+multinomial discrete choice models to predict the spatial preferences of
+attackers. The formulation employed is a modification of models previously
+applied in transportation flow and crime analysis. A breaking and entering
+crime data set is employed to compare the efficacy of this model with tradi-
+tional hot spot models. Discrete choice models are shown to perform as well
+as, or better than such models and offer more interpretable results.
+
+Keywords Spatial choice Æ Multinomial choice Æ Feature selection Æ
+Preference specification Æ Target selection
+
+
+
+1 Introduction
+
+In the contemporary, increasingly mobile society, a large number of the
+choices individuals face are spatial choices. The broad topic of this paper is
+inferring the preferences that govern specific spatial choice decisions from the
+details of past decisions.
+   Familiar instances of spatial choice are informative in setting a context. The
+choice of a fueling station along one’s daily commuting route is a spatial
+choice problem in which the decision maker may consider location relative to
+
+M. A. Smith Æ D. E. Brown (&)
+Department of Systems and Information Engineering,
+University of Virginia,
+P.O. Box 400747, Charlottesville, VA 22904, USA
+e-mail: brown@virginia.edu
+M. A. Smith
+e-mail: mas3f@alumni.virginia.edu
+
+
+                                                                        123
+ 256                                                         M. A. Smith, D. E. Brown
+
+
+<mark style="background-color: orange; font-weight: bold;">traffic</mark> patterns, price differences, perceived crime level, and countless <mark style="background-color: orange; font-weight: bold;">other</mark>
+characteristics of candidate solutions. Deciding among <mark style="background-color: plum; font-weight: bold;">restaurants</mark> for dinner
+before seeing a theater production is a spatial choice problem. In this decision,
+one might consider proximity to the theater and available parking, in addition
+to aspatial attributes such as cuisine and price. Making a residential real estate
+purchase is a highly spatial problem in which one considers neighborhood
+characteristics such as population demographics, school districts and likely
+resale value. All of these problems differ in the extent to which spatial
+attributes influence the decision making process, but they share several
+common properties.
+    Formalizing the shared properties (Fotheringham and O’Kelly 1989) creates a
+groundwork for discussing spatial choice problems and a basis for this paper.
+First, the decision produces a binary response; each alternative is either selected
+or not selected. Second, each alternative is described by a vector of attributes.
+These attributes may include spatial and non-spatial components. Further, they
+may be relevant to the decision maker and the decision making process. Finally,
+the relative spatial placement of each alternative influences its attractiveness. It
+is this final <mark style="background-color: orange; font-weight: bold;">property</mark> that distinguishes spatial from aspatial choice problems.
+
+1.1 Rationale
+
+There are many spatial choice problems that are not encountered by the typical
+person in daily life, but have a dramatic impact on life. The locations criminals
+choose to operate in impact the lives of those living in the same areas. The
+coordinates of hidden improvised explosive devices in combat zones is the
+product of a spatial choice problem, as is the site at which a suicide bomber
+chooses to detonate. Clearly, these decisions impact the victims of the attacks.
+These are all examples of spatial choice problems where mining the spatial
+preferences of the decision maker and predicting decision outcomes can enable
+defensive or counteractive measures, thereby improving public safety. The
+pursuit of this predictive ability is the motivation for this work.
+
+1.2 Objectives
+
+The objective of this paper is to define an algorithm for the objective appli-
+cation of multinomial discrete choice models to spatial point patterns which are
+driven by human decision makers. The facility inherent in the algorithm will be
+demonstrated on an <mark style="background-color: lightcoral; font-weight: bold;">urban</mark> crime data set. This application shows that such
+models can outperform traditional models that are not based on discrete choice
+<mark style="background-color: lightcoral; font-weight: bold;">Theory</mark>, and that discrete choice models are more interpretable by the analyst.
+
+
+2 Conceptual review
+
+This section discusses the statistical methods necessary to apply the model
+specification algorithm proposed in Sect. 3.
+
+123
+ Discrete choice analysis of spatial attack sites                                         257
+
+
+2.1 Multinomial choice modeling
+
+To formalize the discrete choice models employed in this paper, some nota-
+tion is required1. Let C be the universal choice set, the set of all alternatives to
+a specific decision. By convention, |C| = J. This section discusses models
+where J > 2. Binary models are simpler, but not relevant to many spatial
+choice applications.
+   The utility of each element of C is modeled as a random variable, the sum
+of a systematic part and a random disturbance.
+
+                                          Ui ¼ Vi þ ei                                   ð1Þ
+
+i is used as an index into the choice set.
+    Random utility theory prescribes that the probability of selection for an
+individual alternative is
+                                                   
+                    PðiÞ ¼Pr Ui  Uj ; 8j 6¼ i 2 C
+                                                             
+                          ¼Pr Vi þ ei  Vj þ ej ; 8j 6¼ i 2 C             ð2Þ
+                                                             
+                          ¼Pr ej  Vi  Vj þ ei ; 8j 6¼ i 2 C
+
+The most commonly applied multinomial choice model is the multinomial
+logit. This model assumes that the disturbances are independent and identi-
+cally distributed according to the type 1 extreme value distribution. The
+selection of this distribution is made for analytical convenience and is de-
+fended as a approximation of a Gaussian distribution. The next section dis-
+cusses this distribution and Sect. 2.1.2 describes the <mark style="background-color: lightgreen; font-weight: bold;">Multinomial logit model</mark>.
+
+2.1.1 Type 1 Extreme value distribution
+
+In the 1920s, the limiting distributions of maximum values in random samples
+were first described as extreme value distributions (Johnson and Kotz 1970).
+The type 1 form has the cumulative distribution function
+                                             n   xn
+                                                     o
+                           FX ðx; n; hÞ ¼ exp e h                      ð3Þ
+
+and density function
+
+                                                 xn
+                                                       n   xn
+                                                               o
+                            fX ðx; n; hÞ ¼ h1 e h exp e h                            ð4Þ
+
+where n is a location parameter and h is a scale parameter subject to the
+constraint h > 0.
+
+
+1
+  The presentation of multinomial discrete choice models here is adapted from (Ben-Akiva and
+Lerman 1985) and is kept notationally consistent with that work when possible. A notable dif-
+ference is that the presentation here assumes a single decision maker.
+
+
+                                                                                  123
+ 258                                                                 M. A. Smith, D. E. Brown
+
+
+  For convenience, for the remainder of this section, the notation EV1(n,h)
+will indicate the type 1 extreme value distribution with location parameter n
+and scale parameter h.
+  Three properties of the distribution make it attractive for use in the multi-
+nomial choice model. First, it is preserved over linear transformations. That is,
+                                                                 
+                                                                 h
+           8a; b 2 R X  EV1 ðn; hÞ ! aX þ b  EV1 an þ b;                   ð5Þ
+                                                                 a
+Second, the difference of two type 1 extreme variates is logistically distrib-
+uted.
+                                                                                        
+                                                                                 1
+    X  EV1 ðnX ;hÞ;Y  EV1 ðnY ;hÞ ! X  Y  FXY ðx  yÞ ¼
+                                                                      1 þ ehðnX nY ðxyÞÞ
+                                                                                         ð6Þ
+Third, the distribution of the maximum of a set of type 1 variates is also type 1
+distributed.
+          8                                                  0          1 9
+          <                                                  X              =
+    8k 2 Z Xi : i 2 Zk1 3 Xi  EV1 ðni ; hÞ ! max Xi 1ðh1 ln@    eni h A; hÞ
+          :                                   i2Zk1             k
+                                                                              ;
+                                                                          i2Z1
+
+                                                                                        ð7Þ
+
+
+2.1.2 Multinomial logit
+
+Derivation of the multinomial logit model follows directly from the properties
+of the type 1 extreme value distribution. The derivation presented is a variant
+of one in Ben-Akiva and Lerman (1985).
+   Equation 2 can be rewritten as
+                                                      
+                      PðiÞ ¼ Pr Vi þ ei  max Vj þ ej                       ð8Þ
+                                              j6¼i2C
+
+By assuming fei g  EV1 ð0; 1Þ and exploiting Eq. 5,
+                                                        
+                           8j 2 C Vj þ ej  EV1 ðVj ; 1Þ                                ð9Þ
+and, using Eq. 7
+                                                                !
+                                                 X
+                                                         Vj
+                        max Vj þ ej  EV1 ln             e ;1                          ð10Þ
+                        j6¼i2C
+                                                j6¼i2C
+
+Letting j* be the index of the maximum, we can separate the systematic and
+stochastic components such that
+
+123
+ Discrete choice analysis of spatial attack sites                              259
+
+
+                                         ej EV1 ð0; 1Þ
+                                                  X
+                                         Vj ¼ ln     eV j                   ð11Þ
+                                                    j6¼i2C
+
+Returning to Eq. 8,
+                                                      
+                          PðiÞ ¼Pr Vi þ ei  Vj þ ej
+                                                                         ð12Þ
+                               ¼Pr Vj þ ej  ðVi þ ei Þ  0
+
+Noting Eq. 6, the selection probability becomes
+
+                                          1
+                              PðiÞ ¼
+                                     1 þ eVj Vi
+                                         eVi
+                                    ¼ V
+                                     e i þ eVj
+                                                  eVi                        ð13Þ
+                                    ¼               n
+                                                    P           o
+                                        eVi þ exp ln j6¼i2C eVj
+                                          eVi
+                                    ¼P         Vj
+                                          j2C e
+
+It is notable that the ratio of selection probabilities for any two elements of
+the choice set is defined completely by those alternatives’ systematic utilities.
+                                                  P V
+                                     PðiÞ   eVi =   e k
+                                          ¼ Vj P k V
+                                     PðjÞ e = k2C e k
+                                            eVi                              ð14Þ
+                                           ¼ Vj
+                                            e
+                                           ¼eVi Vj
+
+This property, typically referred to as the independence of irrelevant alter-
+natives (IIA) property, is a burdensome constraint that is often violated in
+choice problems. Several approaches have been taken to remove the property,
+one targeted at spatial choice problems is presented in the next section.
+   The multinomial logit derivation presented did not impose a functional
+form on the systematic utility component. The typical form is linear in
+parameters, which offers tractability in computation and interpretation. The
+remainder of this paper assumes a linear in parameters form.
+
+                         Vi ¼ b1 xi;1 þ b2 xi;2 þ    þ bk xi;k ¼ b0 xi    ð15Þ
+
+The derivation presented did assume a location parameter, n = 0, and scale
+parameter, h = 1, for the distribution of the stochastic utility component.
+These values were chosen to reduce the notational complexity of the
+
+
+                                                                            123
+ 260                                                         M. A. Smith, D. E. Brown
+
+
+presentation. Alternate values for these parameters change the scale of the
+utility, but do not change the selection probabilities that the model produces.
+As a result, in applications of the multinomial logit model, arbitrary selection
+of these parameters is a necessity. The values selected here are typical, for
+reasons of convenience.
+
+2.1.3 Hierarchical multinomial choice
+
+Fotheringham (1986) observed that for spatial choice problems, the formu-
+lation presented in Eq. 13 and the IIA property it maintains imply that all
+elements of the choice set are evaluated equally. In such problems, if the
+decision maker restricts the choice set by only evaluating particular clusters of
+alternatives, this assumption is violated.
+   Following the presentation in Fotheringham et al. (2000), let M  C be the
+restricted choice set in which all alternatives are evaluated. Equation 2 is
+modified to include the likelihood that an alternative is in this restricted set.
+                                                         
+          PðiÞ ¼ Pr Ui  Uj þ ln Prf j 2 Mg; 8j 6¼ i 2 C Prfi 2 Mg          ð16Þ
+Following the derivation presented in the previous section and maintaining
+the assumption that fei g  EV1 ð0; 1Þ; the selection probability becomes
+
+                                       Prfi 2 MgeVi
+                           PðiÞ ¼ P                   Vj
+                                                                               ð17Þ
+                                      j2C Prf j 2 Mge
+
+
+Intuitively, this model is a modification of the multinomial logit in which the
+utility of each alternative is weighted by the likelihood that it was evaluated. It
+is referred to in this paper as the spatial hierarchy model.
+   The models presented in this paper use the spatial hierarchy model, with
+evaluation likelihood determined via Parzen kernel density estimation.
+
+
+3 Model specification
+
+As stated in Sect. 1.2, the objective of this paper is to define an algorithm for
+the objective application of multinomial discrete choice models to spatial
+point patterns. It is important to emphasize that the rationale is influenced by
+the type of patterns under consideration. The algorithm presented in this
+section assumes that the random variable under consideration represents a
+spatial attack. In such applications, the goal of the modeler is to predict the
+locations of future attacks. This specification further assumes that the pre-
+dictions will be used to spatially deploy limited defensive resources. There-
+fore, the efficiency of the model is measured by how well it identifies the
+highest risk subset of the geographic space.
+   This section details the algorithm used to fully specify a spatially based
+multinomial discrete choice model. It discusses choice set generation, feature
+
+123
+ Discrete choice analysis of spatial attack sites                                          261
+
+
+selection, the use of a metric to measure evaluation hierarchies, and model
+estimation. The algorithm is exercised in Sect. 4.
+   It is not the goal of this algorithm to predict when or if an attack will occur.
+The models it constructs estimate the probability that an attack will occur in
+an arbitrary subset of the geographic space, given that it will occur somewhere
+within the space.
+   It is assumed that this algorithm is applied in a supervised learning context,
+to the training set after an observation data set has been partitioned into
+training and test subsets. In discrete choice problems, this is a partition of the
+vector of selections. In the context of spatial attack, this means that a subset of
+attacks are held out as a test set. The model assumes temporal stationarity,
+therefore the partition into test and training set need not occur based on an
+epoch.
+   In describing the algorithm’s steps, elements of notation are used to remove
+ambiguity. As     before,let C be the choice set, containing spatial         locations
+indexed as i : i 2 ZJ1 : Let the candidate predictor set U ¼ /i : i 2 ZL                1 :
+Each element of the choice seth is then described           i    by a vector of attributes
+xi ¼ xi;/1 ; . . . ; xi;/L : Let c/j ¼ x1;/j ; . . . ; xJ;/j : The data set also contains a
+vector of selections2, s ¼ ½s1 ; . . . ; sN  where si 2C. Let S ¼ fa : a 2 sg:
+
+3.1 Choice set generation
+
+The multinomial choice model requires a discrete choice set, but the modeler
+often faces a problem where the decision maker is choosing a single point in a
+continuous two dimensional space. To discretize the continuous geographic
+space, a regular grid is laid over the area of interest. The grid cell centroids
+constitute the choice set. Attacks in the dataset are mapped to the geo-
+graphically nearest element in the choice set.
+   The resolution of the grid used must be fine enough to capture the variance
+of spatial features. Determining adequate resolution depends on the nature of
+features used. If features are aggregated areally, such as demographic data
+reported by <mark style="background-color: yellow; font-weight: bold;">census tract</mark>, then a grid resolution finer than the aggregation area
+is unnecessary. Similarly, if features are proximity measures, such as distances
+to key locations, then the inter-centroid spacing should be smaller than the
+minimum distance between these locations.
+
+3.2 Feature selection
+
+The feature selection component of the algorithm synthesizes the results of
+agglomerative clustering and the use of Fisher’s discriminant ratio to measure
+feature separability. The result is an ordering of candidate predictor variables
+that attempts to maximize classification performance by minimizing feature
+correlation.
+
+2
+  Note that this formalization permits an element of the choice set to be selected in multiple
+observations, i.e., it is possible that si = sj for some i „ j.
+
+
+                                                                                   123
+ <mark style="background-color: lightblue; font-weight: bold;">262</mark>                                                                   M. A. Smith, D. E. Brown
+
+
+3.2.1 Candidate predictor scoring
+
+Fisher’s discriminant ratio, fr, is a metric used to score each feature’s pre-
+dictive ability. The choice set is partitioned into elements that have been
+selected, S, and those that have not, C – S. For any set A, let
+
+                                              1 X
+                                 ^/j ;A ¼
+                                 l                   xi;/j                               ð18Þ
+                                             jAj i2A
+
+be an estimate of within set mean. Similarly, define within set variance as
+
+                                        1 X
+                         ^2/j ;A ¼
+                         r                                ^/j ;A Þ2
+                                                 ðxi;/j  l                              ð19Þ
+                                     jAj  1 i2A
+
+Then
+
+                                         ð^        ^/j ;fCSg Þ2
+                                          l/j ;S  l
+                            fr ð/j Þ ¼                                                   ð20Þ
+                                                     ^2/ ;fCSg
+                                           ^2/j ;S þ r
+                                           r
+                                                       j
+
+
+
+is a measure of the separation between those elements of the choice set that
+were and were not selected, with respect to candidate predictor uj. The
+greater the value of fr for a particular feature, the greater the linear separa-
+bility of the predictor. By calculating fr for each candidate predictor an
+ordering of separability is attained.
+
+3.2.2 Candidate predictor clustering
+                                               n               o
+Agglomerative clustering is applied to            cj : j 2 Z L
+                                                             1 ; to identify groups of
+features with large intra-group correlation. The goal of such grouping is to
+avoid selecting multiple features from within a correlated group. This is
+desirable because a high degree of multicollinearity within the model makes
+parameter estimates less stable and produces a less interpretable model.
+   In this application, the similarity metric used is correlation magnitude.
+                                1
+                                  P
+                                J              ^/i ;C Þðxk;/j  l
+                                    k ðxk;/i  l                ^/j ;C Þ
+                  sð/i ; /j Þ ¼                                                   ð21Þ
+                                             r/i ;C r/j ;C
+
+Complete linkage agglomeration is used, i.e., in the recursive clustering pro-
+cess, given a set of clusters, the two clusters, A and B, are joined if they
+collectively minimize the metric
+
+                             sCL ðA; BÞ ¼ max sða; bÞ                                    ð22Þ
+                                               a2A;b2B
+
+
+The output of the clustering procedure is a single cluster, /1, with defined
+partitions to create any number of clusters {1 ... L}.
+
+123
+ Discrete choice analysis of spatial attack sites                                       263
+
+
+   With the cluster structure defined, a specific number of predictors, k, can be
+selected by partitioning the single cluster into k subclusters or correlation
+groups, [/k,1 ... /k,k]. The features within each correlation group are ordered
+based on discriminant ratio score, fr. The candidate predictor with the highest
+score is used in the model, yielding a model with k predictors, each from
+different correlation groups.
+
+                            8i 2 Zk1 /uk;i ¼ argmax/2uk;i fr ð/Þ                     ð23Þ
+
+Let x* denote the vector of selected attributes.
+                                        h                        i
+                                   xi ¼ xi;/u ; . . . ; xi;/u                      ð24Þ
+                                                   k;1                 k;k
+
+
+
+The appropriate value of k is discussed in Sect. 3.6.
+
+3.3 Spatial hierarchy
+
+Section 2.1.3 details an approach to weighting the utility of choice set alter-
+natives by the likelihood those alternatives are evaluated. This section pre-
+sents an optional application of that approach.
+   As previously, let M  C be the restricted choice set in which all alter-
+natives are evaluated. Beginning with the assumption that the decision maker
+evaluates the decision in the geographic space before the feature space, it
+follows that the estimate that a specific alternative, j, was evaluated, Pr {j 2M},
+rely solely on geographic location. To meet this end, a spatial kernel density
+estimate, ^  kðÞ; is produced using the location of selections, si 2s, and
+parameterized with the the cross validation maximum likelihood bandwidth.
+ More formally,
+                   partition the selection vector, s into M equally sized vectors,
+ tj : j 2 ZM                          ^     
+           1 : Then Pr f j 2 Mg ¼ kðj; h Þ; where
+                                                         
+                          ^            1 X jjx  sj jj
+                          kðx; h Þ ¼           g                               ð25Þ
+                                      Nh sj 2s     h
+
+and g(Æ) is the standard Gaussian probability density function. By defining
+^
+kðx; hÞi as the cross validation kernel density estimate
+
+                                            M     X jjx  sj jj
+                          ^
+                          ki ðx; hÞ ¼                  g                             ð26Þ
+                                         ðN  1Þh s 62t   h
+                                                           j   i
+
+
+h* is chosen such that
+
+                                                         M Y
+                                                         Y
+                             h ¼ argmaxh2Rþ                          ^
+                                                                      ki ðsj ; hÞ    ð27Þ
+                                                         i¼1 sj 2ti
+
+
+
+
+                                                                                     123
+ 264                                                                                   M. A. Smith, D. E. Brown
+
+
+3.4 Estimation
+
+With k predictors selected, the linear-in-parameters multinomial choice model
+takes the form
+                                           b1 xi;/     þþbk xi;/
+                                                  uk;1                  uk;k
+                                       e
+                          PðiÞ ¼                b1 xi;/       þþbk xi;/
+                                                                                                         ð28Þ
+                                   P                     uk;1                  uk;k
+                                    j2C e
+
+
+Parameters are estimated via maximum likelihood, where the likelihood
+function is given by
+
+
+                                                                                                         (29)
+
+
+with corresponding log likelihood
+
+
+
+                                                                                                         (30)
+
+
+  C; sÞ has been shown (McFadden 1974) to be globally concave if the data,
+lðb;
+  xi ; are not multicollinear. Thus, obtaining and solving the system of
+equations produced by the first derivatives will yield maximum likelihood
+estimates. As a maximum likelihood estimate, b  ^ is asymptotically normal. The
+associated Hessian matrix can be used to obtain the variance of the parameter
+estimates, thus feature coefficients can be tested for significance with a Stu-
+dent’s t test.
+   If the optional estimate of Pr{i 2M} presented in Sect. 3.3 is included in the
+model, estimation is modified by appending ln ^kðiÞ to x*i.
+   For estimation performed in Sect. 4 of this article, numerical optimization
+was performed using a variable metric algorithm implemented in the R soft-
+ware package (Team 2004).
+
+
+3.5 Evaluation
+
+As previously stated, this algorithm is designed under the assumption that the
+predictions produced will be used to spatially deploy limited resources. To
+effectively meet this use, the model selected must accurately identify the
+highest risk subset of the geographic space. With this in mind, the evaluation
+metric of interest is mean selection site percentile score. Given a set of pre-
+dictions, {P(i): i 2C}, the percentile score of an alternative, j, is the proportion of
+alternatives with estimated selection probability less than or equal to that of
+alternative j.
+
+
+123
+ Discrete choice analysis of spatial attack sites                              265
+
+
+
+
+                                                                             (31)
+
+Informally, assuming a resource allocation strategy which covers areas with
+highest selection probability first, 1–p(j) is the minimum fraction of the total
+area that must be covered by resources to insure coverage at the attack site.
+   To calculate the mean selection site percentile score for a dataset, the
+percentile score is averaged over all selected alternatives.
+
+                                                    1X N
+                                  E½pðjÞjj 2 S ¼         pðsi Þ            ð32Þ
+                                                    N i¼1
+
+
+3.6 Model complexity
+
+The mean selection site percentile score provides an evaluation metric and a
+basis for making decisions on appropriate model complexity. In Sect. 3.2 it was
+assumed that the number of desired predictors, k, was known. With an eval-
+uation metric established, k is chosen to maximize the mean selection site
+percentile score. Following recommendations in Hastie et al. (<mark style="background-color: lightcoral; font-weight: bold;">2001</mark>), a series
+of models is fit, over a range of k. For each model, M-fold cross validation is
+used to estimate the distribution of selection site percentile score. The chosen
+model is the most parsimonious model within one standard error of the
+maximum.
+
+3.7 Algorithm summary
+
+This section presented an algorithm for specifying and estimating a multi-
+nomial spatial choice model. That algorithm is summarized by the following
+steps:
+
+1.   Define the set of alternatives, C, by discretizing the geographic space with
+     a regular grid.
+2.   Define the set of candidate predictor variables, F.
+3.   For each candidate predictor, ui 2F, calculate the separability score,
+     fr(ui).
+4.   Build a cluster of candidate predictors, /1, using correlation magnitude,
+     s(Æ) as a similarity metric and complete linkage agglomeration.
+5.   For a range of values of k
+(a) Partition the cluster into k subclusters, /k,1 ... /k,k
+(b) Select the candidate predictor from each cluster with the maximum
+    separability score /uk;i (as defined in Eq. 23).
+
+
+                                                                        123
+ 266                                                        M. A. Smith, D. E. Brown
+
+
+(c)    Use M-fold cross validation to estimate the mean selection site percentile
+                          h error of thisi statistic for a model which uses the k
+       score and the standard
+       chosen predictors, /uk;1 ; . . . ; /uk;k :
+6.    Select as k the size of the most parsimonious model within one standard
+      error of the maximum mean selection site percentile score.
+
+
+
+4 Application
+
+4.1 Breaking and entering crimes
+
+The dataset of breaking and entering crime analyzed here was obtained from
+the <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">Richmond</mark> City Records Management Center</mark> and augmented with pub-
+licly available GIS layers to introduce proximity measurements and census
+information. For each datum, a geographic coordinate and an attribute vector
+is included. The same data was used for analysis described (Lia and Brown
+2003).
+   The complete dataset consists of all reported breaking and entering crime
+in the City of Richmond, VA for calendar year <mark style="background-color: lightcoral; font-weight: bold;">1997</mark>. To make the assumption
+of consistent preferences reasonable, only <mark style="background-color: orange; font-weight: bold;">residential breaking and entering</mark>
+crimes occurring in the third quarter of the year were used. This subset con-
+tained <mark style="background-color: lightblue; font-weight: bold;">637</mark> distinct spatial selections. It was randomly partitioned into test and
+training subsets in a 1:2 ratio, producing a training set of 425 crime events and
+a test set of 212.
+
+4.1.1 Choice set definition
+
+The choice set was defined using the following steps. The smallest rectangle
+that would wholly circumscribe the boundaries of the City of Richmond was
+the extents of a grid with 100 rows and 100 columns. A spatial intersection
+operation was then performed to remove those <mark style="background-color: yellow; font-weight: bold;">Grid cells</mark> falling wholly outside
+the city limits. The remaining 4,<mark style="background-color: lightblue; font-weight: bold;">895</mark> centroids constitute the choice set. The
+north–south inter-centroid spacing is 170 m, the east–west inter-centroid
+spacing is 191 m.
+
+
+4.1.2 Candidate predictors
+
+The candidate predictor set, F, consists of proximity measurements to each of
+30 features in the geographic space and 38 demographic profile variables
+aggregated at the <mark style="background-color: yellow; font-weight: bold;">census block group</mark> level. It is notable that some geographic
+features are subsets of other features, e.g., u26 is the minimum distance to any
+road
+      and u27 is the minimum distance to an interstate. Clearly,
+8i i ! xi;/26  xi;/27 : Similarly, many of the demographic variates are related,
+
+
+123
+ Discrete choice analysis of spatial attack sites                                                267
+
+
+e.g., u40 through u45 are the fraction ofn the population within a
+specific age group. It follows then that 8i; j i 2 C; j 2 Z45  40 ! xi;/j 2 ½0; 1^
+P45
+   k¼40 xi;/k ¼ 1g: The presence of such features creates a possibility of extreme
+multicollinearity if care is not taken in feature selection.
+   The large number of candidate predictors prevents description of each in
+this article.
+   Before any analysis was performed, the predictors were all standardized to
+zero mean and unit variance.
+
+4.1.3 Feature selection
+
+Using the 425 site training set, separability scores, fr, were calculated for
+each of the candidate predictors. Although the selection vector, s, contains
+425 elements, because many incidents were closest to the same choice set
+element, |S| = 319. Thus, the fr values indicate the separability between two
+classes, C–S, with cardinality 4,576, and S, with cardinality 319. The set of
+candidate predictors, F, was clustered using correlation as a similarity
+metric and complete linkage as the agglomeration method. Figure 1 in-
+cludes a dendrogram of candidate predictors showing the results of the
+agglomerative clustering and a barplot showing the range of separability
+scores. Labels on the figure indicate the order in which predictors are added
+to the model.
+    To select the number of predictors used, tenfold cross validation was per-
+formed on models fitting a range of 1–23 total predictors. The maximum mean
+selected percentile score was obtained using twenty predictors, but the two
+predictor model was within one standard error, and thereby selected. Figure 2
+illustrates the estimated performance as a function of model size.
+
+
+4.1.4 Model estimation and interpretation
+
+A model was refit using the full training set and only the selected predictors,
+u30 and u66. A summary of the estimated model is in Table 1.3
+   The model summary shows that both predictors are extremely significant,
+with p-values less than 10–9.
+   The coefficient on u30, a proximity measure, is negative, indicating the
+feature it represents is attractive. u66 is a density measurement, and the
+coefficient indicates positive association with selection likelihood. The coef-
+ficient magnitudes indicate a similar impact on alternative utility.
+
+
+3
+  The selected predictors, u30 and u66, represent distance to the nearest federal highway and
+population density, respectively. The details of the relationship of these predictors to residential
+breaking and entering crime is outside the scope of this paper and left to criminologists to
+interpret.
+
+
+                                                                                         123
+ 268                                                                                                         M. A. Smith, D. E. Brown
+
+
+                 1.0
+                                                                                                            1
+
+                                                                                                           11
+                                                                                                           2
+                                                                                                           19
+                                                                                                            3
+                                                                                                           22
+                 0.8
+
+                       13
+
+
+
+
+                                                                                                           23
+
+
+
+
+                                                            14
+                                                                                                            7
+                                                                                                           17
+
+
+
+
+                                                                         18
+                                                                    20
+                 0.6
+ Dissimilarity
+
+
+
+
+                                                                                                           5
+
+
+
+
+                                                                                   10
+                                                                     4
+                                                                                                           4
+                                          19
+
+
+
+
+                                                                                  21
+
+
+
+
+                                                                                             8
+                                                                                             23
+                 0.4
+
+
+
+
+                                                      17
+
+
+
+
+                                                                6
+
+
+
+
+                                                                          9
+                                                                                                            6
+
+
+
+
+                                                                                                       5
+                                                                                                           12
+
+
+
+
+                                                                                                  16
+                                                                                                  2
+                                     22
+
+
+
+
+                                                                                                           8
+                                                           12
+                 0.2
+
+
+
+
+                                                                                                            9
+                                                                                                           21
+                                                                                                           10
+                                                                              3
+
+
+
+                                                                                                           14
+                                                                                        15
+
+                                                                                                           18
+                 0.0
+
+
+
+
+                                                                                                           15
+                            7
+
+
+
+
+                                                                                                           16
+                                1
+
+
+
+
+                                                                                                           13
+                                               11
+
+
+
+
+                                                                                                           20
+                                                                                                                              fr
+
+Fig. 1 Breaking and entering: feature selection
+
+
+
+
+Table 1 Breaking and entering: multinomial logit estimation results
+
+Variable                            Coefficient estimate            Asymptotic standard error                   t statistic        p value
+
+u30         –0.563                                                  0.<mark style="background-color: lightblue; font-weight: bold;">088</mark>                                       –6.411             3.87 · 10–10
+u66          0.505                                                  0.026                                       19.474              < 2 · 10–16
+<mark style="background-color: plum; font-weight: bold;">AIC</mark> = 6,788
+<mark style="background-color: plum; font-weight: bold;">BIC</mark> = 6,796
+
+
+4.1.5 Alternative model: spatial hierarchy
+
+An additional model was estimated using the spatial hierarchy specification
+described in Sect. 3.3. The spatial kernel density estimate, ^k; was created with
+the maximum likelihood bandwidth of 4.80 km.
+   The feature selection process (illustrated in Fig. 2) resulted in 11 predictors
+being used, a much larger set than the standard multinomial logit model. The
+additional predictors introduced are
+
+                                               ½/13 ; /18 ; /19 ; /38 ; /46 ; /52 ; /53 ; /58 ; /62 
+
+The model summary is in Table 2. It indicates that the spatial hierarchy term
+is significant. u30 exhibits significance in the standard multinomial logit model,
+but does not in the larger spatial hierarchy model. The p value moved from a
+highly significant value, less than 10–9, to the insignificant 0.189. This change
+suggests multicollinearity with other features in the model.
+
+123
+ Discrete choice analysis of spatial attack sites                                                                                              269
+
+
+
+
+                                                                                                 0.80
+                            0.80
+
+
+
+
+                                                                                                 0.78
+                            0.79
+
+
+
+
+                                                                                                 0.76
+                                                                         Mean Percentile Score
+    Mean Percentile Score
+
+
+
+
+                                                                                                 0.74
+                            0.78
+
+
+
+
+                                                                                                 0.72
+                            0.77
+
+
+
+
+                                                                                                 0.70
+                            0.76
+
+
+
+
+                                                                                                 0.68
+                                                                                                 0.66
+                                   5        10        15       20                                       0   5      10          15      20
+                                             Model Size                                                           Model Size
+                                       (a) Multinomial Logit                                                (b) Spatial Hierarchy
+Fig. 2 Breaking and entering: complexity versus performance
+
+
+
+4.1.6 Model comparison
+
+A geographic hot spot model4 was estimated for comparison purposes. This
+kernel density model is equivalent to the likelihood weighting term in the
+spatial hierarchy model, as presented in Sect. 3.3. As estimated, it used an
+isotropic Gaussian kernel with maximum likelihood bandwidth of 4.80 km.
+   Figures 3, 4, and 5 are choropleths of the percentile score over the geo-
+graphic space for the hot spot, standard multinomial choice, and hierarchical
+
+
+
+Table 2 Breaking and entering: spatial hierarchy estimation results
+
+Variable                           Coefficient estimate        Asymptotic standard error                         t Statistic        p value
+
+ logð^
+     kÞ      0.595                                             0.245                                              2.430             0.016
+u13         –0.056                                             0.055                                             –1.008             0.314
+u18         –0.627                                             0.099                                             –6.308             7.3 · 10–10
+u19         –0.017                                             0.056                                             –0.296             0.767
+u30         –0.<mark style="background-color: lightblue; font-weight: bold;">140</mark>                                             0.106                                             –1.317             0.189
+u38          0.029                                             0.060                                              0.478             0.633
+u46         –0.154                                             0.072                                             –2.146             0.033
+u52          0.391                                             0.079                                              4.975             9.6 · 10–7
+u53          0.172                                             0.070                                              2.468             0.014
+u58         –0.073                                             0.055                                             –1.327             0.185
+u62         –0.024                                             0.036                                             –0.651             0.516
+u66          0.445                                             0.041                                             10.911              < 2 · 10–16
+AIC = 6,711
+BIC = 6,760
+
+
+
+4
+  Readers interested in the specification and application of hot spot models using kernel density
+estimation are referred to Fotheringham et al. (2000). The use of kernel density estimation to
+model crime is extended to incorporate non-spatial attributes in Lia and Brown (2003).
+
+
+                                                                                                                                     123
+ 270                                                                                           M. A. Smith, D. E. Brown
+
+
+                                                                             +
+                    + Training Set                                        +++
+                                                                          +  ++++
+                    + Test Set                                       + +++   + ++
+                                        ++                                   +  +
+                                        ++                               + +++ ++ +
+                                           +
+                                                    +                     +    +    + + ++++  ++++
+                                            +
+                                               + + + ++      +               + +++ +++ +++
+                                                                               +++ +
+                                                         +  + +
+                                                              +           +    +       +
+                                                                                       + ++
+                                   ++              + ++ +++++++++
+                                                         +++++    ++ + ++++++
+                                                                  ++
+                                                                 ++                   ++
+                                                                                      +
+                                                        ++
+                                                         +   ++
+                                                             +
+                                                             +
+                                                               +
+                                                              ++
+                                                               ++++++++
+                                                                      +++
+                                                                      + ++            +++ ++
+                                                                            ++ ++++++++      +++
+                                 + +                        ++ +
+                                                        + ++++++
+                                                                  +
+                                                                  +
+                                                                  +++ ++++
+                                                                         +
+                                                                       ++++ +++++ +++ ++++ ++
+                                                                            +
+                                +                                 ++++   +
+                                                                         +   +
+                                                                             ++           +
+                                                                                          + +   + +   +
+                                              +                 + ++++    +++ ++ ++        ++ + +++++ ++
+                                                                                                       ++
+                                     ++   +                       +                       + +++  +
+                                                                                                 +  +
+                                               +                                      +++++++++ +++
+                                                                                            ++ +
+                                                                             +             +++++ ++
+                                                +++     ++               +
+                                                                       +++++++  ++
+                                                                                 +                     +
+                                              +                       +                              +
+                                            ++        + + + + +++         + + +++                    ++++++++
+                                                                                                       +
+                                                 +  ++         +  +       +  +                      +
+                                         + +++++ ++ + ++++            + +                           +
+                                           +           + +      +++++ ++++      ++++++
+                                                  + +             +  +       ++++ + +
+                                            ++ + + +    ++++++                 ++
+                                             +     +    + ++    +  +   + +    +++
+                                                  ++ + ++ ++ ++              +++
+                                             + + + ++ ++
+                                                           +               ++++++
+                                                                           +
+                                                                            +++
+                                                       +                     +
+                                                       +                   +++
+
+
+              0.0             0.2                0.4                0.6                 0.8                1.0
+                                                       Percentile Score
+
+Fig. 3 Breaking and entering: hot spot model
+
+
+
+
+                                                                             +
+                    + Training Set                                        ++++
+                                                                          +
+                    + Test Set                                       + +++    +++
+                                      ++                                     + ++
+                                                                             +
+                                      ++                                 + ++++ ++ +
+                                         +                                ++        + + ++++   +
+                                          +       +
+                                             + + + ++                        + +++++ +++ ++++  ++
+                                                       +   +
+                                                           +  +
+                                                              +           +    +  ++   +  +
+                                                      +
+                                                 + +++++   +  ++++++    +       +   + +
+                                                                                      ++ +
+                                                                                         +
+                                  ++                      ++++++++++             ++++ +
+                                                      ++++++
+                                                          ++++++++
+                                                               ++ +++++
+                                                                 ++   +
+                                                                      +++
+                                                                      ++++
+                                                                        ++
+                                                                       +++++++ ++++++++  + +++
+                                                                                       + +++   +
+                                 ++                              +     +       +      +
+                                +                     + +++++ ++  +++ +  +
+                                                                         + +++   + + +    +++++ +++++ +++
+                                            +                   +      +  +
+                                                                          +
+                                                                          ++ +     +  +   + ++ +
+                                                                                            +   +++++ ++
+                                                                                                       ++
+                                    ++ + +                        +                        +   ++++++
+                                                                                             +++
+                                                                                      ++++++++++    +
+                                                                             +              +++++++ +
+                                              +++     ++               + +   + +++                     +
+                                            +                         +  + +
+                                                                           +    ++                   +
+                                          ++ + + + + + +++                + + +++                    ++++++++
+                                                                                                       +
+                                               +   +
+                                       + +++++ ++ + ++++ + +   + +
+                                                                 +        +  +
+                                                                             ++                     +
+                                                                                                    +
+                                         +           + +        ++++ +++         +++
+                                                + +            +  + + ++++++++
+                                          ++ + + +    +++++ + ++++
+                                           + + + ++++                         ++
+                                                ++ + +++ ++ ++               ++ +
+                                           + + + ++ ++                     +++++
+                                                                           ++
+                                                                            +++
+                                                     +                       +
+                                                     +                     +++
+
+
+              0.0             0.2                0.4                0.6                 0.8                1.0
+                                                       Percentile Score
+
+Fig. 4 Breaking and entering: multinomial logit model
+
+
+123
+ Discrete choice analysis of spatial attack sites                                                                         271
+
+
+                                                                                    +
+                                                                                 ++++
+                     + Training Set                                              +  +++
+                                                                          + +++     + ++
+                     + Test Set             ++                                      +
+                                            ++                                + +++ ++ +
+                                                                                  +
+                                               +                                 ++        + + ++++  +
+                                                +       +
+                                                   + + + ++                         ++++++ ++ ++++    ++
+                                                                +                       + +    +
+                                                            ++
+                                                             + +   +++++ ++ ++ ++++
+                                                                ++++
+                                                                   +                          + ++
+                                                                                                +
+                                        ++             +   +++ +++++++++++              +++ + +
+                                                            ++
+                                                             +++ +
+                                                                 +++++     +
+                                                                       +++++++++ + +
+                                                                              ++++++++++++
+                                                                                         ++++++ ++  ++
+                                       ++                      ++   ++
+                                                                     +++
+                                                                      ++++
+                                                                           ++
+                                                                           ++++             ++
+                                                                                             + + + ++ ++
+                                      +                     +      ++++ +++++ ++ + ++++++ +++++
+                                                                   +           +    +                       +
+                                                  +                  +           ++ + +               +++ ++
+                                                                                                   ++ +      ++
+                                          ++ + +                       + +                   +++++++++++++
+                                                                                                    ++    +
+                                                                                                    +
+                                                                                                    +
+                                                                                                    + ++ ++
+                                                                                                   ++++++
+                                                                                                        +
+                                                    +++     ++              +  +++++++                       +
+                                                  +              +         +   ++ +  + +                   +
+                                                                                                           ++++++++
+                                                ++ + + + + ++ + ++++                                         +
+                                                     ++  +
+                                             + +++++ + + ++ +       +
+                                                                    + +
+                                                                      +    +     +  +
+                                                                                    ++                    +
+                                                                                                          +
+                                               +           + +       ++++ ++++         +++
+                                                       + +          +  + + ++++++++
+                                                ++ + + +    +++++ + ++++
+                                                 + + + ++++                         ++
+                                                                                     ++
+                                                      ++ + +++ ++ ++
+                                                                 +                +
+                                                                                  +++
+                                                                                    ++++
+                                                 + + + + ++                        +++
+                                                           +                        +
+                                                           +                      +++
+
+
+               0.0               0.2                   0.4                0.6                 0.8                1.0
+                                                             Percentile Score
+
+Fig. 5 Breaking and entering: spatial hierarchy model
+
+
+multinomial choice models respectively. These figures also include points
+indicating the location of event sites in the training and test sets.
+   Informally, the most striking difference among the choropleths is that the
+hot spot model produces much smoother contours than the discrete choice
+models. This difference reflects the large kernel density bandwidth estimated
+for the hot spot model and the restriction of that model to the geographic
+space. For this application, the use of feature space attributes causes the
+selection probabilities, within some local geographic regions, to vary much
+more dramatically in the discrete choice models than they do in the hot spot
+model.
+   To illustrate the change in distribution of test set predictions, Fig. 6 shows
+boxplots of the percentile scores by model. The boxplots suggest that the
+
+
+               Spatial Hierarchy
+
+
+
+               Multinomial Logit
+
+
+
+                         Hot Spot
+
+
+
+                                               0.2              0.4             0.6             0.8             1.0
+
+Fig. 6 Breaking and entering: percentile score distribution by model
+
+
+                                                                                                                       123
+ 272                                                                                                     M. A. Smith, D. E. Brown
+
+
+
+
+                                        1.0
+                                                    Hot Spot
+                                                    Multinomial Logit
+                                                    Spatial Hierarchy
+
+
+
+
+                                        0.8
+              Fraction of test events
+                                        0.6
+                                        0.4
+                                        0.2
+                                        0.0
+
+
+
+
+                                              0.0            0.2              0.4           0.6           0.8
+                                                                         Fraction of geographic space
+Fig. 7 Breaking and entering: area versus accuracy trade-off
+
+
+multinomial logit model offers a reduction in variance and an improved
+median selection site percentile score relative to the hot spot model. The
+spatial hierarchy model also improves on the hot spot model, though to a
+lesser extent.
+   Figure 7 shows the trade-off between the fraction of the geographic space
+at or above a percentile score and the fraction of test events at or above that
+percentile score. It shows that the discrete choice models dominate the hot
+spot model over the complete trade-off range. Further, the difference between
+the discrete choice models is small throughout, suggesting that the additional
+complexity and sacrifice of interpretability in the spatial hierarchy model is
+undesirable.
+   The large test set makes it possible to apply a paired t test on the percentile
+score distributions to evaluate their relative effectiveness. The null hypothesis
+is that the mean difference in selection site percentile score is equal to zero.
+The alternate hypothesis is that the mean difference is greater than zero.
+Table 3 summarizes the results of these tests, using pKDE, pMNL, and pSH to
+indicate the hot spot, standard multinomial log, and spatial hierarchy per-
+
+Table 3 Breaking and entering: model comparison results
+
+Test                                                                    Test statistic                             p value
+
+pMNL – pKDE                                                             –9.71                                       < 2.2 · 10–16
+pSH – pKDE                                                              –10.74                                      < 2.2 · 10–16
+pSH – pMNL                                                              0.38                                       0.65
+
+
+
+123
+ Discrete choice analysis of spatial attack sites                                           273
+
+
+centile score estimates, respectively. For this dataset, the discrete choice
+models outperform the hot spot model with considerable statistical signifi-
+cance. Between the discrete choice models, there is not a significant difference
+in mean percentile score.
+   The improvement attained using discrete choice models on this dataset is
+consistent with results seen using other spatial attack datasets, including the
+dataset of suicide bombing incidents discussed in Brown et al. (2004).
+
+
+5 Conclusion
+
+This paper presented a newly developed algorithm for the objective applica-
+tion of multinomial discrete choice models to spatial point patterns. The
+algorithm was exercised using a data set of urban residential breaking and
+entering crimes. The evaluation results demonstrate that models produced by
+the algorithm can predictively outperform traditional models not based on
+discrete choice theory, and are often more interpretable by the analyst. Some
+important characteristics of the algorithm include:
+•   the use of correlation clustering in feature selection to minimize multi-
+    collinearity;
+•   the use of a separability metric in feature selection to maximize predictive
+    performance;
+•   the use of cross validation to estimate performance and select appropriate
+    model complexity;
+
+
+  The algorithm can be integrated into a spatial crime analysis system such as
+ReCAP (Brown 1998) to aid planners without requiring experience in discrete
+choice modeling.
+
+
+References
+
+Ben-Akiva M, Lerman SR (1985) Discrete choice analysis. The MIT Press, Cambridge
+Brown DE (1998) The regional crime analysis program (ReCAP): a framework for mining data to
+    catch criminals. In: Proceedings of the 1998 IEEE international conference on systems, man,
+    and cybernetics, pp 2848–2853
+Brown DE, Dalton J, Hoyle H (2004) Spatial forecast methods for terrorist events in urban
+    environments. In: Proceedings of the second NSF/NIJ symposium on intelligence and security
+    informatics. Lecture Notes in Computer Science, Tuscon, Arizona. Springer, Heidelberg, pp
+    426–435
+Fotheringham AS (1986) Modelling hierarchical destination choice. Environ Plan A 18:401–418
+Fotheringham AS, O’Kelly ME (1989) Spatial interaction models: formulations and applications.
+    Kluwer, Dordrecht
+Fotheringham AS, Brunsdon C, Charlton M (2000) Quantitative geography. Sage Publications
+    Ltd, <mark style="background-color: yellow; font-weight: bold;">London</mark>
+Hastie T, Tibshirani R, Friedman J (2001) The elements of statistical learning; data mining
+    inference and prediction. Springer, Heidelberg
+
+
+
+                                                                                    123
+ 274                                                             M. A. Smith, D. E. Brown
+
+
+Johnson NLm, Kotz S (1970) Continuous Univariate Distributions—1. Wiley, New <mark style="background-color: yellow; font-weight: bold;">York</mark>
+Lia H, Brown DE (2003) Criminal incident prediction using a a point-pattern-based density
+    model. Int J Forecasting 19:603–622
+McFadden D (1974) <mark style="background-color: lightgreen; font-weight: bold;">Conditional Logit</mark> analysis of qualitative choice behavior, Chapter 4.
+    Academic, New York, pp <mark style="background-color: lightblue; font-weight: bold;">105</mark>–<mark style="background-color: lightblue; font-weight: bold;">142</mark>
+Team RDC (2004) R: a language and environment for statistical computing. R Foundation for
+    Statistical Computing, Vienna
+
+
+
+
+123
+</div>
+      </body>
+      </html>

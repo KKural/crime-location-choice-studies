@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+        <title>Highlighted: 25_divergent_decision-making_in_context_neighborhood</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; }
+          .header { background: #f0f0f0; padding: 20px; margin-bottom: 20px; }
+          .legend { background: #fff; border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+          .legend-item { display: inline-block; margin-right: 20px; }
+          .content { white-space: pre-wrap; }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h1>Highlighted PDF: 25_divergent_decision-making_in_context_neighborhood</h1>
+          <p>Processed on: 2025-08-19</p>
+          <p>Total highlighted terms: 79</p>
+        </div>
+        
+        <div class="legend">
+          <h3>Legend:</h3>
+          <div class="legend-item"><mark style="background-color: yellow;">Geographic</mark></div>
+          <div class="legend-item"><mark style="background-color: lightblue;">Quantitative</mark></div>
+          <div class="legend-item"><mark style="background-color: lightgreen;">Methods</mark></div>
+          <div class="legend-item"><mark style="background-color: orange;">Crime-related</mark></div>
+          <div class="legend-item"><mark style="background-color: plum;">Statistical</mark></div>
+          <div class="legend-item"><mark style="background-color: lightcoral;">Other</mark></div>
+        </div>
+        
+        <div class="content">Divergent Decision-Making in Context: Neighborhood Context Shapes Effects of Physical
+
+            Disorder and Spatial Knowledge on Burglars’ Location Choice
+
+
+
+                                         Liang Cai
+
+                   Department of Sociology, The University of <mark style="background-color: yellow; font-weight: bold;">Chicago</mark>
+
+                                  liangcai@uchicago.edu
+
+
+
+
+                                     Guangwen Song
+
+  Center of GeoInformatics for Public Security, School of Geography and Remote Sensing,
+
+                                  Guangzhou University
+
+                                   songgwen@126.com
+
+
+
+
+                                       Yanji Zhang
+
+                       Department of Sociology, Fuzhou University
+
+                                 chairman7up@126.com
+
+
+
+
+                    Word count: 7,487 (excl. reference, tables, figures)
+
+                                  Version: Dec. 22, 2024
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+ABSTRACT
+
+Objectives Although the <mark style="background-color: orange; font-weight: bold;">social</mark> disorganization tradition emphasizes the role of neighborhood
+
+context in shaping delinquent behaviors and neighborhood crime, researchers have rarely
+
+considered the influence of neighborhood context on criminals’ decision of where to offend. This
+
+study explicitly examines how concentrated disadvantage in both the origin and destination
+
+<mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">neighborhoods</mark></mark> structures burglars’ preference for street physical disorder and spatial familiarity.
+
+Methods We measure observed and perceived physical disorder from 107,858 street view
+
+images using computer vision algorithms. Geo-referenced mobile phone flows between 1,642
+
+<mark style="background-color: yellow; font-weight: bold;">Census units</mark> are used to approximate offenders’ potential spatial knowledge about target
+
+neighborhoods. Discrete choice models are estimated separately for burglars from disadvantaged
+
+and non-disadvantaged neighborhoods (N=1,<mark style="background-color: lightblue; font-weight: bold;">972</mark>).
+
+Results While burglars residing in non-disadvantaged neighborhoods are not sensitive to
+
+physical disorder in non-disadvantaged target neighborhoods, they strongly avoid disadvantaged
+
+neighborhoods with disorder. Conversely, residents of neighborhoods with concentrated
+
+disadvantage swiftly act upon street disorder in better-off neighborhoods but not in
+
+disadvantaged neighborhoods. These tendencies to react to the presence of physical disorder on
+
+the street are also contingent on burglars’ potential familiarity with the target environment.
+
+Conclusions We highlight the importance of larger neighborhood structural characteristics and
+
+their interactions with spatial knowledge and <mark style="background-color: orange; font-weight: bold;">environmental</mark> conditions such as visual signs of
+
+disorder, in criminal decision making. Physical disorder is not uniformly indicative of decay
+
+across neighborhoods and offenders. This divergent decision-making may also partially explain
+
+<mark style="background-color: lightcoral; font-weight: bold;">spatial heterogeneity</mark> of crime. Moreover, spatial knowledge is most effective in triggering or
+
+deterring actions in places that are categorically different from offenders’ residential spaces.
+
+
+
+
+                                                  2
+ Divergent Decision-Making in Context                                                  Cai et al. 2024
+
+
+
+
+Keywords: <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Burglary</mark></mark>, crime location choice, social context, physical disorder, mobility,
+
+concentrated disadvantage, street view images
+
+
+
+INTRODUCTION
+
+Understanding how criminals make location choice has been central to criminology research.
+
+Despite the extensive literature along the social disorganization tradition, the larger social
+
+context remains divorced from criminal decision-making processes (Sampson 2012; Thomas et
+
+al. 2022). Following the rational choice perspective in criminology and routine activities <mark style="background-color: lightcoral; font-weight: bold;">Theory</mark>
+
+(Cornish & Clark 1986; Cohen & Felson 1979), extant literature predominantly focuses on the
+
+decision-making process of criminals at the individual level (Bernasco & Nieuwbeerta <mark style="background-color: lightcoral; font-weight: bold;">2005</mark>;
+
+Ruiter <mark style="background-color: lightcoral; font-weight: bold;">2017</mark>). This lack of attention to social context is also true in decision science scholarship
+
+outside of criminology. Increasingly, however, social scientists have come to acknowledge the
+
+role of social context in individual choices, including residential and activity location choices
+
+(Bruch & Feinberg 2017; Krysan & Crowder 2017). Prior criminology studies have
+
+demonstrated that structural conditions of neighborhoods such as concentrated disadvantaged
+
+shape the ways in which individuals weigh rewards, risks, and costs when making criminal
+
+decisions (Thomas et al. 2022). To date, research explicitly examining how social contextual
+
+conditions factor into actual criminal location choices remains scarce.
+
+       The present study explicitly considers the impact of meso-level social context on
+
+burglars’ choice of target neighborhoods. In particular, we examine the concentrated
+
+disadvantage of both residential and potential target neighborhoods: depending on the residential
+
+neighborhood, burglars may assemble different decision rules; and the set of rules actually
+
+
+
+
+                                                  3
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+activated may also vary by the target neighborhood under consideration. We ask whether
+
+burglars’ assessment of physical disorder in making burglary location choice differs by the level
+
+of neighborhood concentrated disadvantage. We additionally introduce <mark style="background-color: plum; font-weight: bold;">mobility flows</mark> between
+
+neighborhoods as a proxy for burglars’ spatial knowledge of or familiarity with the potential
+
+target neighborhood. We draw on a range of unique data sources, including <mark style="background-color: orange; font-weight: bold;">Police arrest records</mark>,
+
+mobile phone mobility big data, and massive street view images. Our findings suggest that
+
+burglars’ choice preference and the potential spatial knowledge pool they can draw from are not
+
+random, but rather structured by the conditions of their residential neighborhoods. Whereas
+
+burglars residing in non-disadvantaged neighborhoods (Non-Dis) are not sensitive to physical
+
+disorder in Non-Dis target neighborhoods, they strongly avoid disadvantaged (Dis) targets with
+
+disorder, particularly as their potential spatial knowledge of the target increases. Conversely,
+
+Dis-residing burglars strongly favor Non-Dis targets with the presence of disorder. This
+
+preference grows drastically as they gain more familiarity with the target neighborhood.
+
+
+
+BACKGROUND
+
+Crime Location Choice: Theory and Prior Findings
+
+Describing and explaining where offenders commit crime has a long tradition in criminology. A
+
+number of theories have been proposed to understand how criminals make location choices in
+
+space and time, including routine activity theory and crime pattern theory (Cohen and Felson
+
+1979; Brantingham and Brantingham 1981). Routine activity theory contends that crime is likely
+
+to occur when motivated offenders converge with potential targets in the absence of capable
+
+guardianship (Cohen and Felson 1979). Combined with the rational choice perspective in
+
+criminology (Cornish and Clarke 1986), students of routine activity theory assume that the
+
+
+
+
+                                                 4
+ Divergent Decision-Making in Context                                                    Cai et al. 2024
+
+
+convergence of the crime triangle is a result of motivated offenders’ rational mental calculation
+
+of each potential offense event. On average, individual offenders are responsive to risks, costs,
+
+and rewards in offending. Assuming criminal motivation, criminals are more likely to target
+
+routine locations where a crime can be committed with low cost, minimal risk, and high reward.
+
+Even premediated criminal offenses that do not occur during the offenders’ everyday activities
+
+are nonetheless informed by spatial and nonspatial knowledge gathered during otherwise non-
+
+criminal routine activities. In the words of the original routine activity theory, “illegal activities
+
+feed upon the legal activities of everyday life” (Cohen and Felson 1979: p588). Recent work
+
+along this line suggests that the mobility pattern of the general population, irrespective of
+
+criminality, provides a “spatial template” for criminals’ journey to crime (Boivin & D’Elia 2017;
+
+Song et al. 2019).
+
+        Building upon routine activity theory and rational choice perspective, Brantingham and
+
+Brantingham (<mark style="background-color: lightcoral; font-weight: bold;">2016</mark>) proposed crime pattern theory, elucidating the spatial elements in criminals’
+
+decision making. According to crime pattern theory, all people have routine activities that shape
+
+their spatial knowledge. The space of routine activities—activity space—is determined by a
+
+network of nodes, such as home, workplace, school, and third place, linked by paths between
+
+them. Within and around these nodes and paths, people develop their highly idiosyncratic spatial
+
+awareness space, defined as “the area normally within visual range of the activity space.” (2016:
+
+p5), outside of which people generally have limited knowledge. People typically are more
+
+informed about the space in and around key activity nodes because of heavier and repeated
+
+routine activities therein—exhibiting nested micro movement patterns (2016). As such, the
+
+theory predicts that crime occurs at places where criminals’ awareness space overlaps with crime
+
+
+
+
+                                                   5
+ Divergent Decision-Making in Context                                                Cai et al. 2024
+
+
+opportunities. The distribution of crime follows a distance decay or pathway model from inside
+
+offenders’ key nodes.
+
+       Crime pattern theory further posits that the <mark style="background-color: lightcoral; font-weight: bold;">urban</mark> backcloth—the arrangement of street
+
+network, land use, and urban functions—are crucial for understanding mobility and the
+
+distribution of crime. Due to the abundance of crime opportunities, certain locations are
+
+exploited more often by would-be offenders, known as crime generators and crime attractors.
+
+Crime generators are easily accessible places with large population flows and ensuing elevated
+
+crime opportunities. They result from “the summative combination of awareness and activity
+
+spaces of large numbers of people acting in the course of daily routines” (p12). Examples include
+
+shopping precincts, <mark style="background-color: lightcoral; font-weight: bold;">sports stadiums</mark>, and public transport stations. Crime attractors are places
+
+with a known reputation for crime opportunities to which motivated offenders are drawn. These
+
+emerge as a result of knowledge accumulated from prior experience and social networks. Typical
+
+crime attractors would include bars and drug markets. Places that neither create additional
+
+opportunities nor attract offenders are known as crime neutral areas.
+
+       While long articulated in criminological theories, direct tests of criminal decision-making
+
+processes were not done until 2005 when Bernasco and Nieuwbeerta applied discrete choice
+
+framework, a formal methodological approach widely employed in microeconomics to
+
+criminology. The method quickly gained popularity and has become the dominant paradigm for
+
+studying how criminals choose where to offend. Recent empirical evidence suggests that
+
+offenders are more likely to offend near former homes (Bernasco and Kooistra 2010; Lammers et
+
+al 2015), homes of family members (Menting et al. 2016), and prior offense locations (Bernasco
+
+2010). Criminals’ offending pattern generally follows a distance decay function in space, with
+
+distance indicative of time and monetary cost from home (Chamberlain et al. 2023). Further
+
+
+
+
+                                                 6
+ Divergent Decision-Making in Context                                                Cai et al. 2024
+
+
+evidence indicates that they are stopped by physical barriers and facilitated by connectors (Xiao
+
+et al. 2020).
+
+
+
+The Social Context of Criminal Decision Making
+
+So far, most studies on crime location choice take a person-centered approach, focusing on
+
+factors internal to individual criminals (Thomas et al. 2022). Recent scholarship has begun to
+
+address variations in choice preference in criminal decision making (see Ruiter 2017 for a
+
+review). Yet, researchers have not considered social contextual factors as an influence on
+
+criminals’ decision making. This is surprising given the long tradition in urban sociology and
+
+criminology that emphasizes the social and ecological contextual role of neighborhoods in
+
+various individual behaviors and outcomes, beginning with the early Chicago School (Park &
+
+Burgess [1925] 2019; Shaw & McKay 1942) and reiterated in more recent seminal work by
+
+Sampson (2012) and Matsueda (<mark style="background-color: lightcoral; font-weight: bold;">2013</mark>). Prior literature suggests that neighborhood contextual
+
+factors may factor into offenders’ subjective perceptions of and preferences for risks, costs, and
+
+rewards (Matsueda 2013; Thomas et al. 2022), which in turn result in divergent decision-making
+
+patterns across criminals of different neighborhood contexts. Recent development in decision
+
+science have outlined that human decision making is characterized by biases and the frequent use
+
+of heuristics (Kahneman <mark style="background-color: lightcoral; font-weight: bold;">2011</mark>; Thaler & Sunstein 2021; Bruch & Feinberg 2017). As we argue
+
+below, social context is one major source from which biases and heuristics are routinely
+
+developed and practiced.
+
+
+
+Concentrated disadvantage as a social context
+
+
+
+
+                                                 7
+ Divergent Decision-Making in Context                                                             Cai et al. 2024
+
+
+In particular, urban sociology and criminology scholarship has highlighted neighborhood
+
+disadvantage along multiple social and economic dimensions, i.e., concentrated disadvantage, as
+
+an encompassing social context that shape individuals’ subjective perceptions and behaviors,
+
+including involvement in crime (Sampson 2012). The social context of concentrated
+
+disadvantage shapes would-be offenders’ perception of risk, cost, and rewards associated with
+
+criminal offenses as well as potential choice set to target, consciously and unconsciously
+
+(Thomas et al. 2022). While there is extensive literature on how individual behaviors condition
+
+on neighborhood characteristics—including the social disorganization tradition (Shaw & McKay
+
+1942; Bursik & Gramick 1993; Sampson et al. <mark style="background-color: lightcoral; font-weight: bold;">1997</mark>) and broken windows theory (Wilson &
+
+Kelling 1982), the extant literature has not explicitly distinguished between social context as
+
+decision-makers’ origin (i.e., as residents) or destination/target (i.e., as visitors or potential
+
+perpetrators).1 Prior work has established that visitors, employees, and residents carry different
+
+meaning for the local social ecology and that they may behave differently depending on their
+
+relation to the neighborhood context (Jacobs 1961; Anderson 2010; Song et al. 2021). Here, we
+
+synthesize existing perspectives into two channels through which social context shapes
+
+individual decision-making: social context as origin and social context as destination.
+
+
+
+Social context as origin
+
+Research in the social disorganization tradition posits that the absence or weakening of local
+
+institutions associated with socio-economic disadvantage, residential turnover, and population
+
+heterogeneity—factors often overlap with concentrated disadvantage—result in a social and
+
+institutional isolation from the larger “mainstream” society (Wilson 1987), and a higher crime
+
+
+1
+ When offenders target their home neighborhood for criminal offense, they are subject to the same residential
+neighborhood social context.
+
+
+                                                         8
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+rate (Shaw & McKay 1942). Criminals from disadvantaged areas thus adopt different decision
+
+rules than their counterparts from non-disadvantaged areas.
+
+
+       First, residential concentrated disadvantage shapes offenders’ perception of and
+
+preference for monetary and social rewards associated with crime. Due to the scarcity of
+
+legitimate economic opportunities and the uniform social deprivation and isolation (Wilson
+
+1996), along with the prevalence of delinquent behaviors (Shaw & McKay 1942; Kornhauser
+
+1978) and the absence of robust local social institutions of social control (Sampson 2012) in
+
+neighborhoods of concentrated disadvantage, criminal behaviors are frequently perceived as
+
+viable or even attractive alternatives. This perception increases the likelihood that offenders will
+
+act upon criminal opportunities as they arise. This is also consistent with the subculture
+
+perspective. In disadvantaged neighborhoods where a local subculture that normalizes crime is
+
+more likely to emerge, offenders may gain respect and social status through their involvement in
+
+criminal acts (Katz 1988; Anderson 1999; Venkatesh 2006). Even for youth with a middle-class
+
+family background, constant contextual exposure to street orientations—much more likely to be
+
+the case in disadvantaged neighborhoods—make them subject to a range of choices, leaving
+
+some seduced by the criminal lifestyle (Pattillo 1999).
+
+
+       Second, residential concentrated disadvantage shapes offenders’ perceived arrest risk and
+
+social costs from offense. In neighborhoods of concentrated disadvantage, the local institutions
+
+of social control are eroded (Bursik & Grasmick 1993; Sampson & Groves 1989), compromising
+
+the likelihood that informal social costs are imposed to sanction crime and deviance. As such,
+
+law-breaking carries less negative consequences in the local social network, is more tolerated
+
+and less likely to be socially stigmatized (Harding 2009). In addition, prior studies have found
+
+that residents of disadvantaged neighborhoods are less likely to intervene or report crime
+
+
+                                                  9
+ Divergent Decision-Making in Context                                                                 Cai et al. 2024
+
+
+incidents (Sampson 2012; Baumer <mark style="background-color: lightcoral; font-weight: bold;">2002</mark>), and that reported crimes are less likely to result in an
+
+arrest in such neighborhoods (Petersen 2017). Given that offenders strongly favor locations
+
+homophilous to their own neighborhood,2 it follows that offenders from disadvantaged
+
+neighborhoods may, on average, perceive a lower arrest risk and associated social costs from
+
+their criminal involvement at home and beyond.
+
+
+
+
+Social context as destination
+
+While the residential social context shapes would-be offenders’ baseline system of criminal
+
+decision-making, offenders may engage different evaluation rules contingent on the
+
+neighborhood under consideration. In <mark style="background-color: orange; font-weight: bold;">other</mark> words, criminals’ decision rules developed in their
+
+residential context may interact with the conditions of the target context. Given the often-short
+
+journey to crime (Bernasco 2010), the strong distance decay pattern of human mobility (Hipp
+
+2016), and spatial and network spillover (Graif et al. 2019), the extant literature has not made
+
+explicit distinction between social contexts of origin and destination/target. The former concerns
+
+about the emergence of criminal motivations and criminals in the local area, while the latter
+
+focuses on the realization (or the lack thereof) of criminal acts in space. The social
+
+disorganization and collective efficacy theory (Shaw & McKay 1942; Sampson 2012) articulates
+
+theoretical pathways of both, but the distinctions are not explicitly made. The significant body of
+
+research discussing the relationship between local social ecology and crime rates primarily
+
+
+
+
+2
+  The same can be said to residents of concentrated disadvantage at large. A significant body of literature reveals that
+individuals from neighborhoods of concentrated disadvantage, particularly in segregated Black <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">Communities</mark></mark>,
+commonly have a limited geographic horizon and strict mental boundaries of routine activities (Anderson 2022;
+Wilson 1987; Cai et al. 2024).
+
+
+                                                          10
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+assumes a destination approach, including broken windows theory (Wilson & Kelling 1982) and
+
+eyes on the street perspective (Jacobs 1961).
+
+         Broken windows theory contends that neighborhood crime is often co-present with high
+
+levels of physical disorder such as <mark style="background-color: lightcoral; font-weight: bold;">litter</mark>, <mark style="background-color: orange; font-weight: bold;">Graffiti</mark>, and broken windows (Skogan 1990; Wilson &
+
+Kelling 1982), in part because physical disorder and crime share common origins (Sampson &
+
+Raudenbush 1999). Visual cues of physical disorder in the neighborhood often signal to the
+
+public, particularly would-be offenders, that the area is not well-maintained or surveilled, anti-
+
+social behavior is tolerated and expected, and behavioral consequences of crime and deviance are
+
+minimal. The eyes on the street perspective predicts that the informal natural surveillance
+
+produced by local shopkeepers, frequent street users and watchers strongly deters crime and
+
+incivility (Jacobs 1961). Depending on the level of commercial activities and street watching and
+
+local ability to handle strangers, streets are equipped with varying levels of “eyes on the street”
+
+to discourage crime, particularly overt and severe crimes that are observable in the public space
+
+(Browning & Jackson 2013). Social disorganization theory and collective efficacy theory also
+
+primarily concerns the capacity of local institutions and residents to create strong social
+
+cohesion, mutual trust, informal social control, and willingness to intervene on behalf of the
+
+common good to maintain social order and prevent crime (Sampson et al. 1997). As discussed
+
+above, crime pattern theory claims that the concentration of crime attractors and generators
+
+increases criminal opportunities in the local and surrounding areas (Brantingham & Brantingham
+
+2018).
+
+         However, these broken windows, natural surveillance, social cohesion and trust, and
+
+criminal opportunities may carry different meaning depending on other dimensions of the target
+
+neighborhood context under consideration. For instance, while the presence of physical disorder
+
+
+
+
+                                                 11
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+in non-disadvantaged neighborhoods indicates reduced informal social control against crime,
+
+similar visual cues in disadvantaged neighborhoods may additionally represent a lack of
+
+economically viable targets. Moreover, over-policing in areas of concentrated disadvantage
+
+(Fagan et al. 2010; Kirk 2008) can make offending in these neighborhoods riskier and costlier
+
+compared to similar non-disadvantaged neighborhoods.
+
+       Less discussed in the literature is the further complication by the interaction between
+
+conditions of destination neighborhood and offenders’ background (e.g., residential context).
+
+Consider the case of physical disorder: offenders from disadvantaged neighborhoods may react
+
+negatively to disorder in disadvantaged target neighborhoods but become strongly attracted to
+
+similar signs in non-disadvantaged target neighborhoods. In contrast, offenders from non-
+
+disadvantaged neighborhoods may be more likely to avoid disadvantaged neighborhoods with
+
+disorder and respond moderately to disorder in non-disadvantaged neighborhoods, as factors
+
+such as social costs and risks (e.g., the presence of mutual contact and level of surveillance)
+
+weigh in more heavily. Empirical work exploring this interaction remains scarce. One study
+
+illustrates that local burglars show a stronger preference for local-majority communities than
+
+migrant burglars in a major Chinese city (Xiao et al. 2020).
+
+
+
+
+The role of spatial knowledge
+
+While the above discussion articulates the ways in which the decision-making process varies
+
+across the combination of place of origin and place of destination, it implicitly assumes a
+
+scenario of complete information, where would-be offenders are fully aware of the conditions
+
+and nuances of all potential destinations before making a choice. Criminal location literature and
+
+decision science literature more broadly has long noted this problem (Bruch & Swait 2019;
+
+
+
+                                                 12
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+Ruiter 2017). We argue that the interaction between residential and target neighborhood is
+
+moderated by potential spatial knowledge offenders have. In other words, would-be offenders
+
+from (non-)disadvantaged neighborhoods will exhibit a preference or avoidance for certain
+
+characteristics in target neighborhoods, more so if they are familiar with those neighborhoods.
+
+Crime pattern theory asserts that criminals search for targets within the space of which they have
+
+spatial knowledge accumulated during routine activities (i.e., awareness space, Brantingham &
+
+Brantingham 2008). Crime is likely to occur when offenders’ awareness space intersects with
+
+criminal opportunities.
+
+       However, obtaining the history of criminals’ activity space locations is challenging
+
+(Rossmo et al. 2012; Bernasco 2019). Prior studies following the routine activity theory
+
+approach suggest that the mobility of offenders resembles mobility of the general population
+
+(Cohen & Felson 1979) and that the mobility flows of the general population provide a spatial
+
+template for offenders’ routine activity space and their offending patterns (Felson & Boivin
+
+2015; Boivin & Felson 2018). This is true for opportunistic and premeditated crimes, both
+
+drawing heavily on prior spatial knowledge from routine activities (Song et al. 2019). Offenders
+
+residing in neighborhood i are more likely to develop spatial knowledge of neighborhood j if
+
+there exist substantial mobility flows between neighborhoods i and j. First, given the relative
+
+population homogeneity within small geographic units such as neighborhoods, residents,
+
+regardless of criminal motivation, potentially share similar routine activity locations. Prior
+
+research has long noted the strong homophily based on shared backgrounds such as identities and
+
+social class in inter-personal and inter-organizational ties (McPherson et al. <mark style="background-color: lightcoral; font-weight: bold;">2001</mark>; Graif et al.
+
+2017) and activity locations (Mears & Bhati 2006; Wang et al. 2018). Second, even if residents
+
+do not visit neighborhood j themselves, the constant flows of their neighbors commuting (e.g.,
+
+
+
+
+                                                 13
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+family members, colleagues, next door neighbors) between the neighborhood pairs likely help
+
+them build spatial knowledge about neighborhood j over time due to shared networks and
+
+information channels (e.g., local newspaper, organizations). In addition to the pre-existing
+
+selection into neighborhoods, convergence of knowledge and behavior among people of shared
+
+physical space has been reported across various life domains, such as neighborhood knowledge,
+
+norms, and engagement (Jacobs 1961; Putnam 2000), health behaviors (Kobus 2003), and
+
+misinformation (Forati & Ghose 2021).
+
+       Indeed, taking this spatial template approach, prior studies show that daily mobility flows
+
+of the larger population are strongly associated with the number of local crime (Felson & Boivin
+
+2015; Boivin & Felson 2018; Graif et al. 2017; Graif et al. 2019; Levy et al. 2020), crime trips
+
+(Boivin & D’Elia 2017) and criminal location choices (Song et al. 2019).
+
+
+
+Summary
+
+Despite the longstanding social disorganization tradition, criminal location choice literature has
+
+rarely considered structural influence from offenders’ social context such as their residential
+
+neighborhood. Recent decision science scholarship acknowledges that human choices are
+
+characterized by heuristics and biases limitations (Thaler & Sunstein 2021; Kahneman 2011) as
+
+well as social contextual constraints (Bruch & Feinberg 2017). Offenders residing in
+
+disadvantaged neighborhoods may exhibit daily activities patterns and criminal decision rules
+
+starkly different from their counterparts from non-disadvantaged neighborhoods. This divergence
+
+likely arises from their differential evaluations of risks, costs, and rewards associated with crime,
+
+which in turn condition on their backgrounds—importantly, their residential social context.
+
+Furthermore, offenders may vary their criminal decision rules when considering different types
+
+
+
+
+                                                 14
+ Divergent Decision-Making in Context                                                              Cai et al. 2024
+
+
+of target neighborhoods: disadvantaged and non-disadvantaged, as the presence of certain
+
+features such as physical disorder may carry different meanings for their criminal offenses. In
+
+addition, this combination of residential and target neighborhood conditions is moderated by the
+
+spatial knowledge pool offenders have. Both criminology theories and empirical evidence
+
+suggest that mobility flows of the general population reasonably approximate offenders’ spatial
+
+template and subsequent crime template.
+
+        So far, no research has explicitly examined the residential social context or the
+
+combination of residential and target context as an independent influence on criminal location
+
+choice. Using physical disorder as an example, the present study considers how burglars make
+
+location choices. It further explores how the social context of concentrated disadvantage at both
+
+residential and target neighborhoods shape such decisions, and how spatial knowledge moderates
+
+the relationship. To do so, we integrate actual burglary arrests, mobile phone mobility big data,
+
+physical disorder derived from computer vision-processed street view images, and point of
+
+interest data.
+
+
+
+CURRENT STUDY
+
+Data and Measures
+
+Study Area and Unit of Analysis
+
+The present study focuses on the city of ZG in southeast <mark style="background-color: yellow; font-weight: bold;">China</mark>. 3 With a total population
+
+exceeding 5 million, the subtropical city is one of the largest and most developed cities of China.
+
+We focus on the central urban area of the city where the majority of population reside and
+
+commute and where street view images are available.
+
+
+3
+ Access to crime data was granted by the security bureau of <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">ZG city</mark></mark> on the condition that the real name of the city
+would not be revealed in publications.
+
+
+                                                        15
+ Divergent Decision-Making in Context                                                               Cai et al. 2024
+
+
+         We use communities (juweihui or cunweihui) as the unit of analysis. Communities are
+
+the smallest administrative unit where population census and major survey data are collected.
+
+These communities with relatively high resident homogeneity are comparable to prior studies in
+
+terms of geographic and population <mark style="background-color: lightcoral; font-weight: bold;">sizes</mark> (Bernasco and Block 2009; Song et al. 2019). There are
+
+a total of 2,643 communities in the ZG region, with an average geographic area of 2.813km2.
+
+After excluding communities without street view images, we have 1,<mark style="background-color: lightblue; font-weight: bold;">652</mark> spatially contiguous
+
+communities in the analytical sample, with an average size of 0.958km2 and an average
+
+population of 5,<mark style="background-color: lightblue; font-weight: bold;">957</mark>.
+
+Data
+
+In this study, we combine police arrest data, mobile phone mobility data, street view images, POI
+
+data, and <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Census data</mark></mark>. The police arrest data record the actual burglary cases between 2017 and
+
+2018 in the city of ZG. For each arrested burglar, we have information on their residential
+
+neighborhood and the target neighborhood.
+
+         To measure the spatial knowledge between neighborhoods, we obtain mobility flows
+
+from mobile phone usage for the whole month of October 2019 from China Unicom Inc, a major
+
+telecom provider in China. The provider has a market share of 24% in the city of ZG.4 The
+
+location information of phone users is registered when a phone call, text, or data-use request is
+
+made. During the observation period, 5,367,239 unique users made 325 million trips. On
+
+average, each user generated 2.56 trips per day. The individual level data is then aggregate to
+
+communities by China Unicom. Based on this, we construct a mobility flow matrix between all
+
+communities in the city of ZG. We then normalize the flow sizes to capture the relative strength
+
+
+4
+  China Unicom Inc. is one of the three largest state-owned telecom operators, alongside China Mobile and China
+Telecom. While detailed socio-demographic data on the users of each telecom company are not publicly available,
+there is no evidence to suggest that the users of China Unicom are systematically different from non-users. Like its
+counterparts, China Unicom offers a wide range of services for the diverse general population in China.
+
+
+                                                         16
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+of connections. To do so, we calculate the relative size of each outgoing flow as a percentage of
+
+the total outgoing flows of the <mark style="background-color: yellow; font-weight: bold;">community</mark> of origin. Because the mobility flows are highly right-
+
+skewed, with many neighborhoods having no routine flows between one another, we take the
+
+logarithm of the flows.
+
+        We obtain <mark style="background-color: orange; font-weight: bold;">Point of interest data</mark> of 2016 in the city of ZG to account for common crime
+
+generators and attractors noted in the literature for burglary (Bernasco & Nieuwbeerta 2005;
+
+Xiao et al. 2020): <mark style="background-color: plum; font-weight: bold;">bus stops</mark>, <mark style="background-color: plum; font-weight: bold;">subway stations</mark>, <mark style="background-color: plum; font-weight: bold;">parks</mark>, and entertainment venues (karaoke bars,
+
+bars, cinemas, and Internet cafes).
+
+        Community-level socio-demographic characteristics come from the 2010 sixth national
+
+census of China. Specifically, we include variables of population (log), proportion of high-rise
+
+residential buildings (9 floors or higher), and proportion of buildings built after 2000. High-rise
+
+buildings are often associated with increased security measures against burglary (Gu et al. 2016).
+
+In 1998, China abolished the social welfare housing policy. Homes built after this period thus
+
+have a higher average price (Xiao et al. 2020). To would-be burglars, newer homes are thus more
+
+lucrative.
+
+        To measure physical disorder on the street, we use <mark style="background-color: orange; font-weight: bold;">Street view images from Baidu Map</mark>
+
+(https://map.baidu.com), a major map service provider in mainland China. We set sampling
+
+points with 100-meter intervals on the OpenStreetMap road network of ZG City. All street view
+
+images within a 10-meter buffer around each sampling point are crawled from Baidu Map API
+
+(https://lbsyun.baidu.com/faq/api?title=viewstatic). We set the vertical angle to 20 degrees to
+
+mimic human eye perspective. Images from four horizonal angles of 0, 90, 180, and 270 degrees
+
+are collected to provide a more comprehensive picture of the street setting. For the street view
+
+images collected, we apply object detection methods (YOLOv7) to extract three most common
+
+
+
+
+                                                 17
+ Divergent Decision-Making in Context                                                           Cai et al. 2024
+
+
+types of physical disorder: litter, graffiti, and street encroachment (e.g., piles of debris, street
+
+vendors blocking the street) (Sampson & Raudenbush 1999). Because of the high correlation
+
+between the three both conceptually and numerically, we take the average of the three
+
+standardized disorder measures to create a composite observed physical disorder metric. In
+
+addition to these objective measures of physical disorder, we calculate the perceived disorder
+
+from the images as a more comprehensive assessment of overall physical disorder. We first have
+
+volunteer raters evaluate the overall disorder of street images and then apply image regression to
+
+train and infer perceived disorder of all street view images. Figure 1 illustrates the process of
+
+collecting and processing street view images. Full methodological details are explained in Zhang
+
+et al. (2024). Because street view images are only available in urban areas, we focus our
+
+attention on the contiguous urban areas in the city of ZG with a meaningful coverage of street
+
+view images. A total of 107,858 street view images <mark style="background-color: lightcoral; font-weight: bold;">recorded</mark> between 2015 and 2019 are used,
+
+covering 1,652 urban neighborhoods in the city of ZG. 5
+
+                                          <Figure 1 about HERE>
+
+        Following prior studies (Bernasco & Nieuwbeerta 2005; Chamberlain et al. 2023), we
+
+also control for the distance between burglars’ residential community and potential targets using
+
+Euclidean distance.
+
+
+
+Neighborhood Concentrated Disadvantage
+
+We construct neighborhood concentrated disadvantage based on the following seven
+
+neighborhood conditions: unemployment rate, low educational attainment (high school or lower),
+
+share of non-locals, overcrowding, share of renters, average rent price, and access to tap water,
+
+
+5
+ We use a five-year period to maximize the number of <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: lightcoral; font-weight: bold;">street segments</mark></mark> covered by street view images. For segments
+with multiple images during the period, we calculate the average physical disorder score across all years.
+
+
+                                                      18
+ Divergent Decision-Making in Context                                                   Cai et al. 2024
+
+
+bath, and kitchen. Any neighborhoods with lower-than-average values on at least five out of the
+
+seven dimensions are considered neighborhoods of concentrated disadvantage.
+
+
+
+Discrete Choice Analysis
+
+We model burglars’ target location choice using a <mark style="background-color: lightgreen; font-weight: bold;">Conditional Logit</mark> specification where a
+
+burglar’s decision of where to offend depends on an array of factors involving the characteristics
+
+of both the residential and potential target neighborhoods. The approach has been widely used in
+
+criminal decision making, residential choice, and activity space location choice literature
+
+(Bernasco & Nieuwbeerta 2005; Bruch & Swait 2019; Cai et al. 2024). Under this
+
+methodological framework, each burglar faces a number of potential target communities, each
+
+with a different utility. The burglar is then supposed to evaluate the utility of all alternatives. The
+
+utility of each individual community of potential choice is given by
+
+                                          𝑈𝑖𝑗 = 𝛽′ 𝑧𝑖𝑗 + 𝑒𝑖𝑗
+
+where 𝑧𝑖𝑗 are the attributes associated with alternative communities j for individual i and 𝛽′ are
+
+the corresponding coefficients. 𝑒𝑖𝑗 is the random error term in the utility function. Specifically,
+
+this study considers the following attributes in burglars’ spatial choices:
+
+          𝛽′ 𝑧𝑖𝑗 = 𝛽1𝑔(𝑖) 𝐶𝐷𝑗 + 𝛽2𝑔(𝑖) 𝑀𝑖𝑗 + 𝛽3𝑔(𝑖) 𝑃𝐷𝑗 + 𝛽4𝑔(𝑖) 𝐶𝑗 + 𝛽5𝑔(𝑖) 𝐷𝑖𝑗 + 𝛽6𝑔(𝑖) 𝐼𝑖𝑗
+
+where 𝐶𝐷𝑗 is binary indicator of whether the potential destination j is a neighborhood of
+
+concentrated disadvantage. 𝑀𝑖𝑗 is the normalized mobility flow between neighborhood of origin
+
+i and potential destination j. 𝑃𝐷𝑗 is the level of physical disorder in neighborhood j. 𝐶𝑗 includes
+
+all the control variables. 𝐷𝑖𝑗 represents the Euclidean distance between i and j. Interaction terms
+
+between neighborhood concentrated disadvantage, mobility flows, and physical disorder 𝐼𝑖𝑗 are
+
+also included.
+
+
+                                                  19
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+        The <mark style="background-color: lightgreen; font-weight: bold;"><mark style="background-color: lightgreen; font-weight: bold;">Conditional logit model</mark></mark> assumes that decision-makers pick the alternative with the
+
+highest utility (McFadden 1978). Specifically, the probability of a burglar i choosing an
+
+alternative j is given by
+                                                            ′
+                                                         𝑒 𝛽 𝑧𝑖𝑗
+                                    𝑃𝑟𝑜𝑏(𝑌𝑖 = 𝑗) =              ′
+                                                      ∑𝐽𝑗=1 𝑒 𝛽 𝑧𝑖𝑗
+
+where 𝑌𝑖 is the community chosen by burglar i, and 𝑧𝑖𝑗 are again the attributes of alternative
+
+communities with 𝛽′ being the corresponding effect size.
+
+        All parameters are estimated separately for two groups such that parameters are free to
+
+vary across context: burglars residing in neighborhoods with concentrated disadvantage and
+
+burglar residing in non-disadvantaged neighborhoods.
+
+
+
+FINDINGS
+
+Descriptive Analysis
+
+Table 1 reports the descriptive statistics. There were 1,972 burglary cases in the central city
+
+during 2017 and 2018. Figure 2 shows the relative geographic distribution of burglary incidents
+
+in the city of ZG. An equal-area cartogram is used to de-identify the specific communities and
+
+the city. During the study period, the majority of communities do not experience any burglary
+
+victimization. High concentrations of burglary cases are found in the periphery of the city.
+
+16.59% of the 1,652 urban communities are classified as neighborhoods with concentrated
+
+disadvantage. On average, 30.40% residential buildings were built after 2000 and 17.78% are
+
+high-rises. The average numbers of subway stations, bus stops, parks, and entertainment venues
+
+are 0.07, 2.93, 0.63, and 1.27, respectively. Table 4 in Appendix report dyad level descriptive
+
+statistics and correlations.
+
+
+
+
+                                                 20
+ Divergent Decision-Making in Context                                                Cai et al. 2024
+
+
+                                     <Table 1 about HERE>
+
+                                     <Figure 2 about HERE>
+
+       In the mobility flow network, we find strong descriptive evidence for network homophily
+
+in terms of neighborhood concentrated disadvantage. For an average disadvantaged
+
+neighborhood, 29.84% of the non-home neighborhoods its residents visit most frequently (i.e.,
+
+the highest outdegree flow) are also disadvantaged. For an average non-disadvantaged, only
+
+14.62% of their most frequent non-home trip locations are in disadvantaged neighborhoods.
+
+
+
+Choice Models
+
+Table 2 shows the choice models predicting burglars’ target choice, stratified by their residential
+
+concentrated disadvantage. Three-way interactions for concentrated disadvantage, physical
+
+disorder, and mobility flows of the destination neighborhood are included, which are the key
+
+focus of the current analysis (models without mobility flow interactions are reported in Appendix
+
+Table 4). For interpretation, we summarize the marginal effects of two groups of neighborhood
+
+physical disorder—observed physical disorder and perceived disorder—on the likelihood of
+
+being targeted for burglary, conditioned on the neighborhood mobility flows (as a proxy for
+
+burglars’ potential spatial knowledge) in Table 3.
+
+                                     <Table 2 about HERE>
+
+       Table 3 reveals a clear pattern of diverging selection criteria among burglars of different
+
+residential backgrounds. Burglars from non-disadvantaged (Non-Dis) communities favor the
+
+presence of physical disorder in Non-Dis communities of which they have no spatial knowledge
+
+(OR=1.270, p<0.001). As their potential spatial knowledge of destination communities increase
+
+to 1 (with mobility flow between the origin/residence (O) and destination/target (D) reaching
+
+
+
+
+                                                21
+ Divergent Decision-Making in Context                                                Cai et al. 2024
+
+
+1.718% of the total flows originating from the burglar’s residential community), their preference
+
+for Non-Dis destinations with visible physical disorder reduces (OR=1.184, p<0.001). With O-D
+
+mobility flow of over 6.389%, Non-Dis burglars are not significantly attracted to Non-Dis
+
+destinations with physical disorder. When considering disadvantaged (Dis) destinations, Non-Dis
+
+burglars exhibit a contrasting preference pattern. Specifically, as their spatial knowledge of Dis
+
+destinations increases, they strongly avoid Dis communities with physical disorder. Their odds
+
+ratio of picking such Dis communities are 0.842 (n.s.), 0.564 (p<0.01), and 0.378 (p<0.01) with
+
+0, 1.718, and 6.389% mobility flows.
+
+       Burglars from Dis communities clearly deviate from the patterns reported above for Non-
+
+Dis burglars. Overall, they show a preference for Non-Dis destinations with physical disorder
+
+and a dislike for Dis destinations with physical disorder. At no spatial knowledge, Dis-residing
+
+burglars’ odds ratio of picking Non-Dis communities is 1.372 (p<0.001). The <mark style="background-color: plum; font-weight: bold;">odds ratios</mark>
+
+increase considerably to 1.840 (p<0.001) at moderate flows and to 2.467 (p<0.001) at significant
+
+flows. Their lack of tendency to pick Dis destinations, however, does not fluctuate meaningfully
+
+with the growth of potential spatial knowledge, with odds ratios marginally decreasing from
+
+0.698 (p<0.05) to 0.662 (p<0.01) to 0.628 (p<0.01).
+
+       We observe highly similar patterns for the marginal effects of perceived disorder across
+
+both burglar groups. Non-Dis burglars are significantly attracted to Non-Dis communities with
+
+greater perceived disorder, which is indicative of burglary opportunities (OR=1.<mark style="background-color: lightblue; font-weight: bold;">158</mark>, p<0.001).
+
+But as they build spatial knowledge, their tendency to pick such communities diminishes:
+
+OR=1.085 (p<0.05) at moderate mobility flows and OR=1.017 (n.s.) at significant flows. Non-
+
+Dis burglars avoid Dis communities with more perceived disorder for burglary, and this
+
+avoidance grows drastically as they have more potential spatial knowledge of the destination,
+
+
+
+
+                                                 22
+ Divergent Decision-Making in Context                                                   Cai et al. 2024
+
+
+reaching 0.<mark style="background-color: lightblue; font-weight: bold;">524</mark> (p<0.001) odds ratio at moderate flows and 0.296 (p<0.001) at high flows.
+
+Regarding Dis-residing burglars, they react positively to perceived disorder in Non-Dis
+
+communities, with odds ratios growing from 1.208 (p<0.01) at no spatial knowledge, to 1.376
+
+(p<0.05) at moderate knowledge, and 1.567 (p<0.1) at high knowledge. On the contrary, Dis-
+
+residing burglars react negatively to perceived disorder in Dis communities, but to a much lesser
+
+extent than their Non-Dis-residing counterparts. The odds ratios of Dis burglars picking Dis
+
+communities with perceived disorder drop from 0.815 (n.s.) at no spatial knowledge, to 0.751
+
+(p<0.01) at moderate knowledge, to 0.692 (p<0.01) at high knowledge.
+
+                                       <Table 3 about HERE>
+
+                                      <Figure 3 about HERE>
+
+       Figure 3 provides a visual illustration of the marginal effects discussed above.
+
+Specifically, panels a and b represent the effect of observed physical disorder by spatial
+
+knowledge of potential destinations, stratified by burglar’s residential conditions, i.e., whether
+
+residing in a community with concentrated disadvantage or not. Estimates are based on models
+
+M1 and M2. Panels c and d show the effect of perceived disorder based on models M3 and M4.
+
+According to Figure 3-a and 3-b, both Non-Dis- and Dis-residing burglars show a preference for
+
+Non-Dis targets with disorder, particularly visual clues of physical disorder such as litter, graffiti,
+
+and road encroachment. However, as the potential spatial knowledge about target neighborhood
+
+increases, their tendency towards Non-Dis communities diverge. Non-Dis-residing burglars are
+
+generally indifferent towards disorder in Non-Dis communities with a marginal decreasing
+
+pattern as they gain greater spatial knowledge; in contrast, Dis-residing burglars react positively
+
+and strongly towards disorder in Non-Dis communities as they know the community better.
+
+Figure 3-c and 3-d show burglars’ decision preference when considering Dis targets. We see
+
+
+
+
+                                                  23
+ Divergent Decision-Making in Context                                                  Cai et al. 2024
+
+
+divergent rules again among burglars with different residential conditions: Both dislike the
+
+presence of disorder in Dis communities, increasingly as they have greater knowledge about the
+
+target. In particular, Non-Dis-residing burglars respond more strongly by avoiding targeting Dis
+
+communities with the presence of disorder.
+
+       Regarding other covariates, we assess the role of distance, key socio-demographic
+
+characteristics, and common crime attractors and generators. The likelihood of a community
+
+being targeted for burglary reduces as its distance from burglar’s home increases, more so for
+
+Non-Dis-residing burglars (reduces by a factor of 0.325 and 0.326, p<0.001) than Dis-residing
+
+burglars (OR ranges between 0.<mark style="background-color: lightblue; font-weight: bold;">299</mark> and 0.<mark style="background-color: lightblue; font-weight: bold;">300</mark>, p<0.001). More populated destination
+
+communities are also more likely to be targeted, with one unit increase in the population
+
+logarithm leading to 98.6%-100.9% higher odds for Non-Dis-residing burglars (p<0.001) and
+
+78.7%-82.2% higher odds for Dis-residing burglars (p<0.001). The presence of post-2000 newer
+
+buildings strongly predicts burglary risk for both groups of burglars with OR over 2.4 (p<0.001).
+
+In comparison, buildings over 9 floors are associated with lower risk of burglary, particularly for
+
+burglars from disadvantaged communities (OR=0.177, p<0.001). Burglars from non-
+
+disadvantaged communities also strongly dislike communities with a higher proportion of tall
+
+buildings but to a lesser extent (reduces by a factor of 0.361-0.365, p<0.001).
+
+       Transportation facilitations function as crime generators with one more subway station
+
+increasing the risk of being targeted by 20% among Non-Dis burglars (p<0.05) and over 80%
+
+among Dis burglars (p<0.001). Bus stops also significantly increases burglary risk by 1.2% and
+
+1.6% among Non-Dis and Dis burglars, respectively, for each additional bus stop (p<0.001).
+
+This is unsurprising given that Dis-residing burglars are on average poorer and that public
+
+transportation accessibility is an important cost factor in their mental calculation. Parks are
+
+
+
+
+                                                 24
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+related to a marginally elevated risk of burglary only for Dis-residing burglars (OR=0.05).
+
+Entertainment venues—karaoke bars, Internet cafes, bars, and cinemas—positively predict
+
+burglary among Non-Dis-residing burglars only, with each additional venue bringing about 4%
+
+higher odds (p<0.001) to the local area.
+
+
+
+CONCLUSION
+
+In the past few decades, there has been an exponential growth of decision research across
+
+disciplines in social sciences, including Nobel-winning work on heuristics and biases (Kahneman
+
+2011) and “nudge” (Thaler and Sunstein 2021): people are typically not aware of all the potential
+
+alternatives available and even if they do, they do not have the mental power to compare the
+
+absolute merits of each. While equally interested in decision making behaviors and their
+
+implications for collective outcomes (Coleman 1994), sociologists are largely absent in recent
+
+progress (Bruch & Feinberg 2017), in part because social context—the dimension sociologists
+
+care deeply about—is typically missing from the equation in existing decision literature. In the
+
+study of criminal location choice, whereas the rational choice framework has been extensively
+
+applied, the attention to social context as an influence on choice remains limited. In this study,
+
+we argue that a significant part of the heuristics and biases employed by offenders are developed
+
+and habitually practiced in the context of residential neighborhood; that is, offenders from
+
+different residential conditions behave systematically differently in their criminal decision-
+
+making. Furthermore, their baseline decision rules may interact with the actual neighborhood
+
+being evaluated.
+
+       In this study, we consider concentrated disadvantage of burglars’ residential community
+
+as the social context shaping offending choices. Indeed, we find that burglars residing in
+
+
+
+
+                                                 25
+ Divergent Decision-Making in Context                                                Cai et al. 2024
+
+
+disadvantaged neighborhoods behave differently from those from non-disadvantaged
+
+neighborhoods. Whereas burglars from non-disadvantaged neighborhoods respond negatively
+
+towards the presence of disorder, burglars from disadvantaged neighborhoods react more
+
+positively to visual signs of disorder. These confirm prior research that highlights the relevance
+
+of larger neighborhood structural characteristics in criminal decisions (Thomas et al. 2022;
+
+Matsueda 2013), through shaping offenders’ assessment of risks, costs, and rewards associated
+
+with crime.
+
+       We further underline the previously overlooked interaction between the neighborhood
+
+conditions of origin/residential and destination/target in criminal location choice. Burglars from
+
+disadvantaged contexts are positive towards the presence of physical disorder only when
+
+considering non-disadvantaged target neighborhoods. They appear indifferent to disorder in
+
+disadvantaged targets. In the same vein, non-disadvantage-residing burglars strongly avoid
+
+targets with visual signs of disorder, but only in disadvantaged target neighborhoods. This
+
+highlights the nuanced multi-faceted nature of neighborhood social ecology. Physical disorder or
+
+other conditions are not uniformly indicative of the same level of decay across neighborhoods.
+
+This is in line with Sampson and Raudenbush’s (1999) finding that disorder is only moderated
+
+associated with crime, a pattern they attribute to disorder and crime sharing “the same
+
+explanatory process” from structural conditions of concentrated disadvantage and collective
+
+efficacy (p608). While we do not have measures of collective efficacy, our results suggest that
+
+local concentrated disadvantage alone is not sufficient in explaining criminal offending choices.
+
+The combination of offenders’ residential and target neighborhood conditions shapes how
+
+interpretations of visual signs of disorder unfold in criminal location choices. These observed
+
+diverging decision-making patterns may also additionally explain the widely noted spatial
+
+
+
+
+                                                26
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+heterogeneity of crime in urban spaces since the early Chicago School. Moreover, we argue that
+
+physical disorder may be evaluated relative to other alternatives in the choice set, a direction we
+
+hope future research can take.
+
+       Our results also show that spatial knowledge moderates the above relationship between
+
+social contexts and physical disorder with its role most effective in triggering or deterring actions
+
+in places that are categorically different from their residential space. As spatial knowledge
+
+increases, whereas non-disadvantage-residing burglars react strongly to the presence of disorder
+
+in disadvantaged communities by avoiding them, disadvantage-residing burglars instead react
+
+strongly to disorder in non-disadvantaged communities by acting upon potential opportunities.
+
+This finding is in line with predictions from crime opportunity theories (Cohen & Felson 1979;
+
+Brantingham & Brantingham 2008) as well as other commonly observed human behavioral
+
+patterns (Thaler & Sunstein 2021). For places that offenders are used to, such as neighborhoods
+
+similar to their own, they may be able to draw on their prior knowledge and infer the meaning of
+
+disorder more accurately, thus the limited effect of spatial knowledge. This could also be related
+
+to the strong network homophily and co-offending patterns among offenders with similar
+
+backgrounds (Graif et al. 2019; Papachristos & Bastomski 2018). Conversely, for places
+
+categorically different from their routine activity locations and awareness spaces, offenders may
+
+rely more heavily on stereotypes and guess the implications of certain environmental features
+
+(Krysan & Crowder 2017). In the latter case, greater spatial knowledge from routine activities
+
+and social networks may be more effective guiding their criminal choices.
+
+       Our study has several limitations that deserve future inquiries. First, although this study
+
+illustrates neighborhood concentrated disadvantage as an encompassing social context, there are
+
+other key neighborhood structural conditions that shape offenders’ decision-making process.
+
+
+
+
+                                                 27
+ Divergent Decision-Making in Context                                                 Cai et al. 2024
+
+
+Characteristics such as social cohesion, ecological networks, and collective efficacy may also
+
+affect ways in which of residents conduct daily social interactions and develop behavioral
+
+patterns (Sampson et al. 1997; Browning et al. 2017). These could be the potential mechanisms
+
+behind the divergent decisions by neighborhood concentrated disadvantage observed in this
+
+study. We hope future studies can explicitly test these mechanisms. Relatedly, we suspect that
+
+individual-level disadvantage may further interact with neighborhood contextual disadvantage to
+
+affect individual perceptions of risks, costs, and rewards. Due to data restrictions, we are not able
+
+to get individual demographics of the offenders. We encourage future studies to consider other
+
+dimensions of structural conditions as well as potential ways contextual factors interact with
+
+individual characteristics.
+
+       Second, we approximate criminals’ spatial knowledge of other neighborhoods based on
+
+routine mobility flows between neighborhoods, assuming that the mobility patterns of the
+
+general population provide a spatial template for criminals. However, they are not direct
+
+measures of offenders’ true underlying spatial knowledge and choice set they can draw from.
+
+This assumption thus runs the risk of ecological fallacy (Robinson 1950). Given the challenge of
+
+measuring offenders’ travel history (Rossmo et al. 2012; Bernasco 2019), the mobility of the
+
+general population as a spatial template approach still offers important insights to the crime
+
+location choice literature with its strong theoretical underpinnings (Cohen & Felson 1979;
+
+Brantingham & Brantingham 2016) and empirical support (Boivin & Felson 2018; Song et al.
+
+2019; Bernasco 2019). Future research should examine the extent to which criminals’ behavioral
+
+patterns deviate from those of the public and whether specific mobility patterns by age and class
+
+provide more accurate spatial templates for respective offender groups.
+
+
+
+
+                                                 28
+ Divergent Decision-Making in Context                                                    Cai et al. 2024
+
+
+        Third, physical disorder from street view images is aggregated to communities in this
+
+study. However, disaggregating the unit of analysis to smaller units is not computationally
+
+viable. Further analysis decomposing the variance in physical disorder into image-level and
+
+community-level components reveals that up to 0.<mark style="background-color: lightblue; font-weight: bold;">283</mark> of the variance lies at the community
+
+level. Combined with the relatively high homogeneity in population composition and built
+
+environment, we argue that the risk of modifiable geographic unit area problem is limited.
+
+        Last, by focusing on arrested burglars, the present study cannot make inference about
+
+location choices of burglars who were not arrested and offenders of other types of crime. It is
+
+possible that their offenses involve different mental calculations. But we believe that their
+
+location choices are also subject to similar social contextual processes. We leave this task of
+
+result generalizability to future studies.
+
+
+
+
+REFERENCE
+
+Anderson, E. (1999). Code of the Street: Decency, <mark style="background-color: orange; font-weight: bold;">violence</mark>, and the Moral Life of the Inner City. New
+
+        <mark style="background-color: yellow; font-weight: bold;">York</mark>: WW Norton & Company.
+
+Anderson, E. (2011). The Cosmopolitan Canopy: Race and Civility in Everyday Life. New York: WW
+
+        Norton & Company.
+
+Anderson, E. (2022). Black in White Space: The Enduring Impact of Color in Everyday Life. Chicago:
+
+        University of Chicago Press.
+
+Baumer, E. P. (2002). Neighborhood Disadvantage and Police Notification by Victims of Violence.
+
+        Criminology, 40(3), 579–616. https://doi.org/10.1111/j.1745-9125.2002.tb00967.x
+
+Bernasco W. (2010). A Sentimental Journey to Crime: Effects of Residential History on Crime Location
+
+        Choice. Criminology 48(2):389–416. https://doi.org/10.1111/j.1745-9125.2010.00190.x
+
+
+
+
+                                                  29
+ Divergent Decision-Making in Context                                                     Cai et al. 2024
+
+Bernasco, W., & Block, R. (2009). Where Offenders Choose to Attack: A Discrete Choice Model of
+
+        Robberies in Chicago. Criminology, 47(1), 93-130. https://doi.org/10.1111/j.1745-
+
+        9125.2009.00140.x
+
+Bernasco, W., & Kooistra, T. (2010). Effects of Residential History on Commercial Robbers’ crime
+
+        Location Choices. European Journal of Criminology, 7(4), 251-265.
+
+        https://doi.org/10.1177/1477370810363372
+
+Bernasco, W., & Nieuwbeerta, P. (2005). How Do Residential Burglars Select Target Areas? A New
+
+        Approach to the Analysis of Criminal Location Choice. British Journal of Criminology, 45(3),
+
+        296-315. https://doi.org/10.1093/bjc/azh070
+
+Bernasco, W. (2019). Adolescent Offenders' Current Whereabouts Predict Locations of Their Future
+
+        Crimes. PLoS One, 14(1), e0210733. https://doi.org/10.1371/journal.pone.0210733
+
+Boivin, R., & D’Elia, M. (2017). A Network of Neighborhoods: Predicting Crime Trips in A Large
+
+        Canadian City. Journal of Research in Crime and Delinquency, 54(6), 824-846.
+
+        https://doi.org/10.1177/0022427817705935
+
+Boivin, R., & Felson, M. (2018). Crimes by Visitors Versus Crimes by Residents: The Influence of
+
+        Visitor Inflows. Journal of Quantitative Criminology, 34, 465-480.
+
+        https://doi.org/10.1007/s10940-017-9341-1
+
+Brantingham, P. L. and Brantingham, P. J. (1981) ‘Notes on the Geometry of Crime’, in P. J.
+
+        Brantingham and P. L. Brantingham (eds.) Environmental Criminology, Prospect Heights IL,
+
+        Waveland Press, pp. 27 – 54.
+
+Brantingham, P. J., & Brantingham, P. L. (2016). The geometry of crime and crime pattern theory.
+
+        In Environmental criminology and crime analysis (pp. 117-135). Routledge.
+
+Browning, C. R., & Jackson, A. L. (2013). The social ecology of public space: Active streets and violent
+
+        crime in urban neighborhoods. Criminology, 51(4), 1009-1043. https://doi.org/10.1111/1745-
+
+        9125.12026
+
+
+
+
+                                                    30
+ Divergent Decision-Making in Context                                                      Cai et al. 2024
+
+Browning, C. R., Calder, C. A., Soller, B., Jackson, A. L., & Dirlam, J. (2017). Ecological Networks and
+
+        Neighborhood Social Organization. American Journal of Sociology, 122(6), 1939-1988.
+
+        https://doi.org/10.1086/691261
+
+Browning, C. R., Tarrence, J., Calder, C. A., Pinchak, N. P., & Boettner, B. (2022). Geographic Isolation,
+
+        Compelled Mobility, and Everyday Exposure to Neighborhood Racial Composition among Urban
+
+        Youth. American Journal of Sociology, 128(3), 914-961. https://doi.org/10.1086/721666
+
+Bruch, E., & Feinberg, F. (2017). Decision-making Processes in Social Contexts. Annual Review of
+
+        Sociology, 43(1), 207-227. https://doi.org/10.1146/annurev-soc-060116-053622
+
+Bruch, E., & Swait, J. (2019). Choice Set Formation in Residential Mobility and Its Implications for
+
+        Segregation Dynamics. Demography, 56(5), 1665-1692. https://doi.org/10.1007/s13524-019-
+
+        00810-5
+
+Bursik, R. J., Jr., & Grasmick, H. G. (1993). Neighborhoods and crime: The dimensions of effective
+
+        neighborhood control. Lexington Books.
+
+Cai, L., Browning, C., & Anselin, L. (2024). The Social Context of Spatial Choice: Activity Locations and
+
+        Residential Segregation. Center for Open Science. https://doi.org/10.31219/osf.io/xh7aj
+
+Chamberlain, A. W., Boggess, L. N., & Fisher, T. (2023). Traveling Alone or Together? Neighborhood
+
+        Context on Individual and Group Juvenile and Adult Burglary Decisions. Crime &
+
+        Delinquency, 69(11), 2075-2101. https://doi.org/10.1177/00111287211067177
+
+Coleman, J. S. (1994). Foundations of Social Theory. Cambridge, MA: Harvard University Press.
+
+Cohen, L. E., & Felson, M. (1979) Social Change and Crime Rate Trends: A Routine Activity Approach.
+
+        American Sociological Review. 44:588–608.
+
+Cornish, D. B., & Clarke, R. V. (eds) (1986) The Reasoning Criminal: Rational Choice Perspectives on
+
+        Offending. New York: Springer.
+
+Fagan, J., Geller, A., Davies, G., & West, V. (2010). Street Stops and Broken Windows Revisited. Race,
+
+        Ethnicity, and Policing, 309-348. https://doi.org/10.18574/nyu/9780814776155.003.0013
+
+
+
+
+                                                    31
+ Divergent Decision-Making in Context                                                     Cai et al. 2024
+
+Felson, M., & Boivin, R. (2015). Daily Crime Flows within a City. Crime Science, 4, 1-10.
+
+        https://doi.org/10.1186/s40163-015-0039-0
+
+Forati, A. M., & Ghose, R. (2021). Geospatial Analysis of Misinformation in COVID-19 Related
+
+        Tweets. Applied Geography, 133, 102473. https://doi.org/10.1016/j.apgeog.2021.102473
+
+Graif, C., Lungeanu, A., & Yetter, A. M. (2017). Neighborhood Isolation in Chicago: Violent Crime
+
+        Effects on Structural Isolation and Homophily in Inter-Neighborhood Commuting
+
+        Networks. Social Networks, 51, 40-59. https://doi.org/10.1016/j.socnet.2017.01.007
+
+Graif, C., Freelin, B. N., Kuo, Y. H., Wang, H., Li, Z., & Kifer, D. (2021). Network Spillovers and
+
+        Neighborhood Crime: A Computational Statistics Analysis of Employment-based Networks of
+
+        Neighborhoods. Justice Quarterly, 38(2), 344-374.
+
+        https://doi.org/10.1080/07418825.2019.1602160
+
+Gu, J., Zhou, S., & Yan, X. (2016). Research on Characteristics of Urban Burglary Based on Family in
+
+        Guangzhou. Human Geography, 31(5), 87-92.
+
+Harding, D. J. (2009). Violence, Older Peers, and the Socialization of Adolescent Boys in Disadvantaged
+
+        Neighborhoods. American Sociological Review, 74(3), 445–464.
+
+        https://doi.org/10.1177/000312240907400306
+
+Jacobs, J. (1961) The Death and Life of Great American Cities. New York: Random <mark style="background-color: yellow; font-weight: bold;">house</mark>.
+
+Kahneman, D. (2011). Thinking, Fast and Slow. New York: Farrar, Straus and Giroux.
+
+Katz, J. (1988). Seductions of Crime: Moral and Sensual Attractions in Doing Evil. Basic Books.
+
+Kirk, D. S. (2012). Residential Change as a Turning Point in the Life Course of Crime: Desistance or
+
+        Temporary Cessation? Criminology, 50(2), 329–<mark style="background-color: lightblue; font-weight: bold;">358</mark>. https://doi.org/10.1111/j.1745-
+
+        9125.2011.00262.x
+
+Kobus, K. (2003). Peers and Adolescent Smoking. Addiction, 98, 37-55. https://doi.org/10.1046/j.1360-
+
+        0443.98.s1.4.x
+
+Kornhauser, R. R. (1975). Social Sources of Delinquency: An Appraisal of Analytic Models. Chicago: The
+
+        University of Chicago.
+
+
+                                                    32
+ Divergent Decision-Making in Context                                                    Cai et al. 2024
+
+Krysan, M., & Crowder, K. (2017). Cycle of Segregation: Social Processes and Residential Stratification.
+
+        New York: Russell Sage Foundation.
+
+Lammers M, Menting B, Ruiter S, Bernasco W. 2015. Biting Once, Twice: The Influence of Prior on
+
+        Subsequent Crime Location Choice. Criminology 53(3):309–29. https://doi.org/10.1111/1745-
+
+        9125.12071
+
+Levy, B. L., Phillips, N. E., & Sampson, R. J. (2020). Triple Disadvantage: Neighborhood Networks of
+
+        Everyday Urban Mobility and Violence in US Cities. American Sociological Review, 85(6), 925-
+
+        956. https://doi.org/10.1177/0003122420972323
+
+Matsueda, R. L. (2013). The Macro-Micro Problem in Criminology Revisited. The Criminologist, 38(1),
+
+        1–7.
+
+McFadden, D. (1978). Modeling the Choice of Residential Location. Transportation Research Record,
+
+        673, 72–77.
+
+McPherson, M., Smith-Lovin, L., & Cook, J. M. (2001). Birds of a Feather: Homophily in Social
+
+        Networks. Annual Review of Sociology, 27(1), 415-444.
+
+        https://doi.org/10.1146/annurev.soc.27.1.415
+
+Mears, D. P., & Bhati, A. S. (2006). No Community is an Island: The Effects of Resource Deprivation on
+
+        Urban Violence in Spatially and Socially Proximate Communities. Criminology, 44(3), 509-<mark style="background-color: lightblue; font-weight: bold;">548</mark>.
+
+        https://doi.org/10.1111/j.1745-9125.2006.00056.x
+
+Menting B, Lammers M, Ruiter S, Bernasco W. 2016. Family Matters: Effects of Family Members’
+
+        Residential Areas on Crime Location Choice. Criminology 54(3):413–33.
+
+        https://doi.org/10.1111/1745-9125.12109
+
+Papachristos, A. V., & Bastomski, S. (2018). Connected in Crime: The Enduring Effect of Neighborhood
+
+        Networks on the Spatial Patterning of Violence. American Journal of Sociology, <mark style="background-color: lightblue; font-weight: bold;">124</mark>(2), 517-568.
+
+        https://doi.org/10.1086/699217
+
+Park, R. E., & Burgess, E. W. ([1925] 2019). The City. Chicago: The University of Chicago Press.
+
+
+
+
+                                                  33
+ Divergent Decision-Making in Context                                                   Cai et al. 2024
+
+Pattillo, M. (1999). Black Picket Fences: Privilege and Peril among the Black Middle Class. Chicago:
+
+       The University of Chicago Press.
+
+Petersen, N. (2017). Neighbourhood Context and Unsolved Murders: The Social Ecology of Homicide
+
+       Investigations. Policing & Society, 27(4), 372–392.
+
+       https://doi.org/10.1080/10439463.2015.1063629
+
+Putnam, R. D. (2000). Bowling Alone: The Collapse and Revival of American Community. Simon
+
+       Schuster.
+
+Rossmo, D Kim, Yongmei Lu and T Bernie Fang. 2012. "Spatial-Temporal Crime Paths." Pp. 38-64 in
+
+       Patterns, Prevention, and Geometry of Crime: Routledge.
+
+Ruiter, S. (2017). Crime Location Choice. The Oxford Handbook of Offender Decision Making, 398-<mark style="background-color: lightblue; font-weight: bold;">420</mark>.
+
+Sampson, R. J. (2012). Great American City: Chicago and the Enduring Neighborhood Effect. Chicago:
+
+       The University of Chicago Press.
+
+Sampson, R. J., & Groves, W. B. (1989). Community Structure and Crime: Testing Social
+
+       Disorganization Theory. American Journal of Sociology, 94(4), 774-802.
+
+       https://doi.org/10.1086/229068
+
+Sampson, R. J., & Raudenbush, S. W. (1999). Systematic Social Observation of Public Spaces: A New
+
+       Look at Disorder in Urban Neighborhoods. American Journal of Sociology, <mark style="background-color: lightblue; font-weight: bold;">105</mark>(3), 603–651.
+
+       https://doi.org/10.1086/210356
+
+Sampson, R. J., Raudenbush, S. W., & Earls, F. (1997). Neighborhoods and Violent Crime: A Multilevel
+
+       Study of Collective Efficacy. Science, 277(5328), 918-924.
+
+       https://doi.org/10.1126/science.277.5328.918
+
+Shaw, C. R., & McKay, H. D. (1942). Juvenile Delinquency and Urban Areas. Chicago: The University
+
+       of Chicago Press.
+
+Skogan, W. G. (1990). Disorder and Decline: Crime and the Spiral of Decay in American
+
+       Neighborhoods. University of California Press.
+
+
+
+
+                                                  34
+ Divergent Decision-Making in Context                                                       Cai et al. 2024
+
+Song, G., Bernasco, W., Liu, L., Xiao, L., Zhou, S., & Liao, W. (2019). Crime Feeds on Legal Activities:
+
+        Daily Mobility Flows Help to Explain Thieves’ Target Location Choices. Journal of Quantitative
+
+        Criminology, 35, 831-854. https://doi.org/10.1007/s10940-019-09406-z
+
+Song, G., Zhang, Y., Bernasco, W., Cai, L., Liu, L., Qin, B., & Chen, P. (2021). Residents, Employees
+
+        and Visitors: Effects of Three Types of Ambient Population on <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Theft</mark></mark> on Weekdays and
+
+        Weekends in Beijing, China. Journal of Quantitative Criminology, 1-39.
+
+        https://doi.org/10.1007/s10940-021-09538-1
+
+Thaler, R. H., & Sunstein, C. R. (2021). Nudge: The Final Edition. New York: Penguin.
+
+Thomas, K. J., Baumer, E. P., & Loughran, T. A. (2022). Structural Predictors of Choice: Testing a
+
+        Multilevel Rational Choice Theory of Crime. Criminology, 60(4), 606-636.
+
+        https://doi.org/10.1111/1745-9125.12314
+
+Venkatesh, S. A. (2006). Off the Books: The Underground Economy of the Urban Poor. Cambridge, MA:
+
+        Harvard University Press.
+
+Wang, Q., Phillips, N. E., Small, M. L., & Sampson, R. J. (2018). Urban Mobility and Neighborhood
+
+        Isolation in America’s 50 Largest Cities. Proceedings of the National Academy of
+
+        Sciences, 115(30), 7735-7740. https://doi.org/10.1073/pnas.1802537115
+
+Wilson, J. Q., & Kelling, G. L. (1982). Broken Windows. Atlantic Monthly, 249(3), 29–38.
+
+Wilson, W. J. (2012). The Truly Disadvantaged: The Inner City, the Underclass, and Public Policy.
+
+        Chicago: The University of Chicago Press.
+
+Xiao, L., Ruiter, S., Liu, L., Song, G., & Zhou, S. (2021). Burglars Blocked by Barriers? The Impact of
+
+        Physical and Social Barriers on Residential Burglars' Target Location Choices in
+
+        China. Computers, Environment and Urban Systems, 86, 101582.
+
+        https://doi.org/10.1016/j.compenvurbsys.2020.101582
+
+Zhang, Y., Cai, L., Song, G., & You, Y. (2024). Causal Effect of Small Businesses on Street Theft:
+
+        Evidence from a Natural Experiment of the Beijing Cleanup Campaign. Journal of Quantitative
+
+        Criminology, 1-34. https://doi.org/10.1007/s10940-024-09586-3
+
+
+                                                    35
+ Divergent Decision-Making in Context                                         Cai et al. 2024
+
+
+Tables
+
+Table 1. Descriptive Statistics
+ Variables                                  Mean (Percentage)                 SD
+ Outcome
+    Burglary Cases                                1972                         -
+
+ Neighborhood Conditions (N=1652)
+   Concentrated Disadvantage                    16.586%                        -
+   Physical Disorder Sub-indicators
+     Litter (%Area)                               0.164                      0.209
+     Graffiti (%Area)                             0.<mark style="background-color: lightblue; font-weight: bold;">369</mark>                      0.472
+     Road Encroachment (%Area)                    1.021                      1.060
+   Observed Physical Disorder1                      0                        0.670
+   Perceived Disorder                             3.391                      0.855
+
+ Controls (N=1,652)
+    Socio-Economic
+      Population (log)                           8.467                       0.703
+      %Bldgs Post-2000                          30.397%                        -
+      %Bldgs 9 Floors or Higher                 17.782%                        -
+    POIs
+      #Subway Stations                         0.071                         0.279
+      #Bus Stops                               2.931                         4.571
+      #Parks                                   0.633                         4.074
+      #Entertainment Venues                    1.274                         2.293
+                                        1 Sum of standardized scores of sub-indicators.
+ Note:
+
+
+
+
+                                       36
+    Divergent Decision-Making in Context                                                                                   Cai et al. 2024
+
+   Table 2. Conditional Logit Models Predicting Burglary Choice
+                                                                 Observed Physical Disorder                     Perceived Disorder
+                                                                  M1                   M2                    M3                   M4
+                                                                 Non-                                       Non-
+                                   Residential Context                           Disadvantaged                              Disadvantaged
+                                                             Disadvantaged                              Disadvantaged
+
+Target Context (ref. = Non-Disadvantaged)
+  Disadvantaged                                                     1.003              1.119                 0.986                 1.100
+                                                                   (0.096)            (0.181)               (0.096)               (0.181)
+Spatial Knowledge (Flow, log)                                     1.992***           2.508***              2.002***              2.510***
+                                                                   (0.077)            (0.411)               (0.077)               (0.417)
+Disorder
+   Observed Physical Disorder                                     1.270***           1.372***
+                                                                   (0.056)            (0.114)
+  Perceived Disorder                                                                                       1.158***               1.208**
+                                                                                                            (0.044)               (0.<mark style="background-color: lightblue; font-weight: bold;">088</mark>)
+Two-Way Interactions
+  Disadvantaged × Flow                                            1.634***            0.737*               1.943***               0.766†
+                                                                   (0.204)            (0.108)               (0.270)               (0.115)
+  Disadvantaged × Observed Physical Disorder                      0.663***           0.508***
+                                                                   (0.077)            (0.099)
+  Disadvantaged × Perceived Disorder                                                                        0.801*                0.674**
+                                                                                                            (0.071)               (0.098)
+  Flow × Observed Physical Disorder                               0.933*              1.341†
+                                                                  (0.032)             (0.232)
+  Flow × Perceived Disorder                                                                                 0.937**                1.139
+                                                                                                            (0.023)               (0.146)
+Three-Way Interactions
+  Disadvantaged × Flow × Observed Physical Disorder                0.718              0.707†
+                                                                  (0.146)             (0.143)
+  Disadvantaged × Flow × Perceived Disorder                                                                0.603***                0.809
+                                                                                                            (0.082)               (0.113)
+Controls
+  Distance (log)                                                  0.326***           0.300***              0.325***              0.299***
+                                                                   (0.010)            (0.021)               (0.010)               (0.020)
+  Population (log)                                                1.986***           1.787***              2.009***              1.822***
+                                                                   (0.086)            (0.163)               (0.088)               (0.166)
+  Prop. Post-2000 Bldgs                                           2.400***           2.407***              2.412***              2.409***
+                                                                   (0.241)            (0.489)               (0.243)               (0.496)
+  Prop. Bldgs 9 floors or higher                                  0.361***           0.177***              0.365***              0.177***
+                                                                   (0.047)            (0.054)               (0.050)               (0.057)
+  POIs
+   #Subway Stations                                             1.211*               1.843***                1.207*              1.904***
+                                                                (0.099)               (0.275)                (0.101)               (0.288)
+    #Bus Stops                                                 1.012***              1.016***               1.012***              1.016**
+                                                                (0.002)               (0.005)                (0.002)               (0.006)
+    #Parks                                                       1.005                1.011*                 1.005†                1.011*
+                                                                (0.003)               (0.005)                (0.003)               (0.005)
+    #Entertainment Venues                                      1.040***               0.952†                1.040***               0.950†
+                                                                (0.007)               (0.028)                (0.007)               (0.027)
+N                                                                1600                   372                   1600                   372
+McFadden Pseudo R2                                               0.247                 0.231                  0.248                 0.230
+<mark style="background-color: plum; font-weight: bold;">AIC</mark>                                                           17884.101              4268.796              17868.841             4276.985
+<mark style="background-color: plum; font-weight: bold;">BIC</mark>                                                           17964.767              4327.579              17949.507             4335.769
+Note:                                                       P-values from two-tailed hypothesis tests: †p<0.1; *p<0.05; **p<0.01; ***p<0.001.
+                                                                                                           Robust standard errors in paratheses.
+
+
+
+
+                                                                            1
+ Divergent Decision-Making in Context                                                             Cai et al. 2024
+
+Table 3. Marginal Effects of Physical Disorder by Neighborhood Context and Spatial Knowledge/Mobility Flows
+                                    Residential: ND Residential: ND        Residential: D    Residential: D
+                                      Target: ND          Target: D         Target: ND         Target: D
+ Effect of Observed Physical Disorder
+    Mobility Flow = 0                   1.270***            0.842            1.372***            0.698*
+    Mobility Flow = 1                   1.184***           0.564**           1.840***           0.662**
+    Mobility Flow = 2                     1.105            0.378**            2.467**            0.628*
+
+ Effect of Perceived Disorder
+    Mobility Flow = 0                   1.158***              0.928               1.208**                 0.815
+    Mobility Flow = 1                    1.085*             0.524***               1.376*                0.751**
+    Mobility Flow = 2                     1.017             0.296***               1.567†                0.692**
+ Note:
+                            The marginal effects hold log(mobility flow+1) at 0, 1, 2 (i.e., flow = 0, e-1, e2-1).
+                        P-values are based on two-tailed hypothesis tests: †p<0.1; *p<0.05; **p<0.01; ***p<0.001.
+                                                    Confidence interval calculated based on robust standard errors.
+
+
+
+
+                                                         2
+ Divergent Decision-Making in Context                                                  Cai et al. 2024
+
+
+Figures
+
+Figure 1. Measurement framework for mean level of objective and perceived physical disorder
+
+
+
+
+                                                  1
+ Divergent Decision-Making in Context                      Cai et al. 2024
+
+Figure 2. Cartogram of Burglary Cases in the City of ZG
+
+
+
+
+                                                  1
+ Divergent Decision-Making in Context                                                   Cai et al. 2024
+
+Figure 3. Marginal Effects of Objective and Perceived Physical Disorder by Destination Type and Spatial
+Knowledge/Mobility Flow Strength, Odds Ratios
+
+
+
+
+                                                   1
+ tistics and correlations (1,972*1,652)
+                      Mean (SD)          1        2        3        4        5        6        7         8         9         10        11
+                      2.729 (0.738)
+                      8.467 (0.702)      -0.001
+                      0.<mark style="background-color: lightblue; font-weight: bold;">304</mark> (0.294)      0.057    0.202
+    Higher            0.178 (0.269)      -0.092   0.024    0.427
+                      0.071 (0.279)      -0.034   0.004    0.037    0.087
+                      2.931 (4.570)      0.107    0.344    0.246    -0.123   0.152
+                      0.633 (4.073)      0.004    0.068    0.026    -0.032   0.038    0.077
+nues                  1.274 (2.292)      0.036    0.268    0.082    -0.015   0.170    0.312    0.027
+vantage (<mark style="background-color: lightgreen; font-weight: bold;">Yes</mark>=1)       0.166 (0.372)      0.010    -0.097   -0.066   -0.226   -0.020   -0.010   0.004     -0.067
+Disorder1             0.<mark style="background-color: lightblue; font-weight: bold;">000</mark> (0.669)      0.011    0.115    -0.022   -0.224   -0.070   -0.008   0.023     0.012     0.161
+2
+                      3.391 (0.854)      0.062    0.088    -0.045   -0.<mark style="background-color: lightcoral; font-weight: bold;">332</mark>   -0.138   0.017    -0.011    -0.014    0.175     0.669
+g)                    0.038 (0.138)      -0.407   0.114    0.083    -0.030   0.097    0.181    0.042     0.<mark style="background-color: lightblue; font-weight: bold;">120</mark>     -0.001 0.019        0.002
+                                                                                                1 Sum of standardized scores of sub-indicators.
+  Predicting Burglary Choice without Mobility Flow Interactions
+                                                             Observed Physical Disorder                                   Perceived Disorder
+                                                           M1                          M2                          M3                          M4
+                       Residential Context        Non-Disadvantaged              Disadvantaged              Non-Disadvantaged             Disadvantaged
+
+ntaged)
+                                                      1.<mark style="background-color: lightblue; font-weight: bold;">182</mark>*                        0.912                         1.213*                          0.931
+                                                      (0.096)                      (0.143)                        (0.100)                        (0.145)
+log)                                                 1.952***                     1.868***                       1.949***                       1.880***
+                                                      (0.072)                      (0.167)                        (0.072)                        (0.168)
+
+                                                     1.216***                     1.480***
+                                                      (0.052)                      (0.112)
+                                                                                                                 1.108**                        1.268***
+                                                                                                                 (0.038)                         (0.087)
+
+al Disorder                                          0.627***                     0.412***
+                                                      (0.069)                      (0.<mark style="background-color: lightblue; font-weight: bold;">078</mark>)
+er                                                                                                               0.713***                       0.559***
+                                                                                                                  (0.058)                        (0.067)
+
+                                                     0.321***                     0.282***                       0.320***                       0.282***
+                                                      (0.010)                      (0.018)                        (0.010)                        (0.018)
+                                                     2.006***                     1.806***                       2.026***                       1.828***
+                                                      (0.086)                      (0.162)                        (0.087)                        (0.163)
+                                                     2.439***                     2.534***                       2.471***                       2.545***
+                                                      (0.245)                      (0.506)                        (0.252)                        (0.516)
+                                                     0.361***                     0.156***                       0.359***                       0.<mark style="background-color: lightblue; font-weight: bold;">165</mark>***
+                                                      (0.047)                      (0.048)                        (0.049)                        (0.053)
+
+                                                      1.221*                      1.<mark style="background-color: lightblue; font-weight: bold;">890</mark>***                        1.<mark style="background-color: lightblue; font-weight: bold;">233</mark>*                        1.935***
+                                                      (0.099)                      (0.283)                        (0.101)                        (0.<mark style="background-color: lightblue; font-weight: bold;">291</mark>)
+                                                     1.013***                     1.018***                       1.013***                       1.018***
+                                                      (0.002)                      (0.004)                        (0.002)                        (0.004)
+                                                       1.005                       1.012*                          1.005                         1.012*
+                                                      (0.003)                      (0.005)                        (0.003)                        (0.005)
+                                                     1.038***                       0.955                        1.038***                         0.955
+                                                      (0.007)                      (0.027)                        (0.007)                        (0.027)
+                                                       1600                          372                           1600                            372
+                                                       0.246                        0.229                          0.246                          0.228
+                                                     17895.88                     4272.091                      17900.728                       4279.024
+                                                    17960.413                     4319.117                      17965.261                       4326.051
+                                                                               P-values from two-tailed hypothesis tests: †p<0.1; *p<0.05; **p<0.01; ***p<0.001.
+                                                                                                                              Robust standard errors in paratheses.
+</div>
+      </body>
+      </html>

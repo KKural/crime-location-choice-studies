@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+        <title>Highlighted: 32_do_migrant_and_native_robbers_target_different_places</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; }
+          .header { background: #f0f0f0; padding: 20px; margin-bottom: 20px; }
+          .legend { background: #fff; border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+          .legend-item { display: inline-block; margin-right: 20px; }
+          .content { white-space: pre-wrap; }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h1>Highlighted PDF: 32_do_migrant_and_native_robbers_target_different_places</h1>
+          <p>Processed on: 2025-08-19</p>
+          <p>Total highlighted terms: 79</p>
+        </div>
+        
+        <div class="legend">
+          <h3>Legend:</h3>
+          <div class="legend-item"><mark style="background-color: yellow;">Geographic</mark></div>
+          <div class="legend-item"><mark style="background-color: lightblue;">Quantitative</mark></div>
+          <div class="legend-item"><mark style="background-color: lightgreen;">Methods</mark></div>
+          <div class="legend-item"><mark style="background-color: orange;">Crime-related</mark></div>
+          <div class="legend-item"><mark style="background-color: plum;">Statistical</mark></div>
+          <div class="legend-item"><mark style="background-color: lightcoral;">Other</mark></div>
+        </div>
+        
+        <div class="content">              International Journal of
+              Geo-Information
+
+Article
+Do Migrant and Native Robbers Target Different Places?
+Dongping Long                and Lin Liu *
+
+                                           Center of GeoInformatics for Public Security, School of Geography and Remote Sensing, Guangzhou University,
+                                           Guangzhou 510006, <mark style="background-color: yellow; font-weight: bold;">China</mark>; longdp@gzhu.edu.cn
+                                           * Correspondence: lin.liu@uc.edu
+
+
+                                           Abstract: The spatial pattern of crime has been a central theme of criminological research. Recently,
+                                           the spatial variation in the crime location choice of offenders by different population groups has
+                                           been gaining more attention. This study addresses the issue of whether the spatial distribution of
+                                           migrant robbers’ crime location choices is different from those of native robbers. Further, what factors
+                                           contribute to such differences? Using a kernel density estimation and the discrete spatial choice
+                                           modeling, we combine the offender data, <mark style="background-color: orange; font-weight: bold;">POI data</mark>, and <mark style="background-color: orange; font-weight: bold;">Mobile phone data</mark> to explain the crime
+                                           location choice of the street robbers who committed offenses and were arrested from 2012 to <mark style="background-color: lightcoral; font-weight: bold;">2016</mark> in
+                                           <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">ZG city</mark></mark>, China. The results demonstrate that the crime location choices between migrant robbers and
+                                           native robbers have obvious spatial differences. Migrant robbers tend to choose the labor-intensive
+                                           industrial cluster, while native robbers prefer the old <mark style="background-color: lightcoral; font-weight: bold;">urban</mark> areas and urban villages. Wholesale
+                                           markets, <mark style="background-color: lightcoral; font-weight: bold;">sports stadiums</mark>, transportation hubs, and <mark style="background-color: plum; font-weight: bold;">subway stations</mark> only affect migrant robbers’
+                                           crime location choices, but not native robbers’. These results may be attributable to the different
+                                           spatial awareness between migrant robbers and native robbers. The implications of the findings for
+                                           criminological <mark style="background-color: lightcoral; font-weight: bold;">Theory</mark> and crime prevention are discussed.
+
+
+                                 Keywords: crime location choice; <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">street <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Robbery</mark></mark></mark></mark>; spatial difference; China
+         
+
+Citation: Long, D.; Liu, L. Do
+Migrant and Native Robbers Target
+Different Places? ISPRS Int. J. Geo-Inf.   1. Introduction
+2021, 10, 771. https://doi.org/                  Understanding how offenders choose crime location is a classic criminological prob-
+10.3390/ijgi10110771
+                                           lem [1,2]. Research demonstrates that the spatial distribution of crime is heterogeneous [3–7].
+                                           Consequently, several theories have been proposed to explain the spatial patterns of of-
+Academic Editor: Wolfgang Kainz
+                                           fenders’ crime location choices. For example, routine activity theory asserts that the
+                                           <mark style="background-color: orange; font-weight: bold;">environmental</mark> factors play a key role in forming the distribution of crime by promoting the
+Received: 18 September 2021
+                                           convergence in time and space of a motivated offender with suitable and unguarded vic-
+Accepted: 12 November 2021
+Published: 12 November 2021
+                                           tims or targets [8]. However, existing studies on the crime location choice of street robbers
+                                           mainly aim to explain their spatial pattern by various influencing factors [2,9–13], and rarely
+                                           estimate the acute difference of selection resulting from the different population groups.
+Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+                                                 Meanwhile, numerous studies have demonstrated that the different population groups
+published maps and institutional affil-
+                                           have different activity spaces in the interaction between geospatial and human behav-
+iations.                                   ior [14–17]. In <mark style="background-color: orange; font-weight: bold;">other</mark> words, human spatial behavior displays different distribution in
+                                           Hukou (<mark style="background-color: lightcoral; font-weight: bold;">household registration</mark> system), age, gender, ethnicity, occupation, culture, and
+                                           other individuals’ socioeconomic attributes, and even shows some degree of bias. The
+                                           same is probably true for offenders, as offending generally takes up only a small part
+                                           of their routine activities [18]. A growing body of research has shown that the various
+Copyright: © 2021 by the authors.
+                                           environmental factors affect offenders’ crime location choices [10,19–27]. Simultaneously,
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+                                           according to the geometry of crime in crime pattern theory [10,28], offenders are more likely
+distributed under the terms and
+                                           to commit offenses within their awareness spaces because they know these areas. In the
+conditions of the Creative Commons         real society, however, offenders may have different perceptions or cognition of the ambient
+Attribution (CC BY) license (https://      environment due to the differences of individual attributes and socioeconomic attributes
+creativecommons.org/licenses/by/           such as Hukou, age, gender, culture, and ethnicity, thus forming their different awareness
+4.0/).                                     spaces and prompting them to commit crimes in different places. However, this is still
+
+
+
+ISPRS Int. J. Geo-Inf. 2021, 10, 771. https://doi.org/10.3390/ijgi10110771                                       https://www.mdpi.com/journal/ijgi
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                            2 of 16
+
+
+
+
+                                       unclear to the group of offenders of different attributes, especially for migrant offenders
+                                       and native offenders, whether their spatial awareness is inconsistent has yet to be verified.
+                                       In addition, crime does not occur randomly, and the crime location choices of offenders
+                                       follow predictable patterns, which reflect the decision-making processes common to human
+                                       spatial behavior. In the context of crime research and application, understanding these
+                                       processes at the individual level can enable research to inform policing strategies: Where
+                                       is an offender more likely to commit a crime next? Who is more likely to commit a crime
+                                       in that location [29]? The pooling of individual preferences for crime creates differences
+                                       between groups. Thus, conducting a comparative analysis of crime groups may provide
+                                       insight into the particularities or differences between groups, and the consequent crime
+                                       prevention and control countermeasures.
+                                            At present, based on offenders’ individual-level attributes, some studies have analyzed
+                                       their criminal behavior. For example, in terms of the journey to crime, the existing literature
+                                       has found that individual <mark style="background-color: orange; font-weight: bold;">social</mark> and economic attributes such as offender’s age, gender,
+                                       and race have different influences on their crime travel distance [30–33]. Pettiway found
+                                       that female offenders tend to travel longer distances than male offenders in Philadelphia,
+                                       America [34]. Xiao et al. concluded that older offenders travel over longer distances to
+                                       commit <mark style="background-color: orange; font-weight: bold;">burglaries</mark> than younger offenders in ZG City, China [30]. In respect of offenders’
+                                       residential locations, Hesseling confirmed that more experienced and older offenders reside
+                                       predominantly in lower-social status <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">neighborhoods</mark></mark> [35]. Liu et al. demonstrated that
+                                       the spatial pattern of adult migrant burglars varies largely from those of juvenile migrant
+                                       burglars [36]. Among the literature on the crime location choices of offenders, however, the
+                                       difference by individual attributes in offenders’ crime location choice is seldom analyzed.
+                                       To date, the only associated published study is Feng et al. [17]. Using a negative binomial
+                                       regression model in ZG city, China, Feng et al.’s study found that there is a spatial difference
+                                       between migrant offenders and native offenders in committing violent crimes, i.e., migrant
+                                       offenders’ crime location choices are more clustered outside the old town, whereas those
+                                       of native offenders are more scattered in the whole study area. Therefore, it is reasonable
+                                       to assume that the Hukou attributes may be an important factor influencing the spatial
+                                       distribution of offenders’ crime location choices.
+                                            However, little is known about spatial differences between migrant offenders and
+                                       native offenders in committing street robberies in Chinese society. As we all know, China
+                                       has experienced large-scale internal migration in the past four decades. The rapidly
+                                       growing urban population, especially the immigrant population in cities, is the primary
+                                       social concern on public safety that China is facing in recent decades. Notably, one of the
+                                       negative consequences of the influx of massive internal migration into cities is the increase
+                                       in urban crime [17]. The foothold of Chinese internal migrants is different from that of
+                                       international immigrants. The former arrives in another domestic city for employment,
+                                       and the latter moves to another country mainly for settlement. Internal migrants in China
+                                       are restricted by the institutional barriers of the household registration system (also known
+                                       as Hukou) [37,38], and they are difficult to enjoy benefits or rights such as health care and
+                                       education as native residents. Since China’s economic reform in the late 1970s, the system
+                                       has gradually relaxed its control over the geographical mobility of internal immigrants
+                                       in the country. At the same time, to meet the demand for employment opportunities in
+                                       special economic zones or big cities, a significant number of migrants have shifted from
+                                       rural to urban areas or from underdeveloped to developed regions. It has been argued that
+                                       increasing crime is related to the migrant population [39]. According to a public report of
+                                       China’s National Bureau of Statistics, from 2006 to 2010, the crime rate of migrants increased
+                                       by 21.7% compared to <mark style="background-color: lightcoral; font-weight: bold;">2001</mark>–<mark style="background-color: lightcoral; font-weight: bold;">2005</mark> [40]. Furthermore, official statistics in the past decade
+                                       reveal a higher level of crime among migrants in big Chinese cities [41]. Recent researches
+                                       have shown that the proportion of migrants is criminogenic in China’s coastal provinces
+                                       where most of the major cities are located [42]. On the contrary, native residents are rarely
+                                       mentioned in the statistical analysis of crime [17]. Therefore, based on the interaction
+                                       between potential victims, motivated offenders, and the environment, and comparative
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                         3 of 16
+
+
+
+
+                                       analysis of the crime patterns of migrant offenders and native offenders remains to be
+                                       explored in China. For better understanding, we need to specifically point out that migrant
+                                       offenders register in one city but live in another city, while native offenders register and
+                                       live in the same city. These two residential groups are distinguished by the different Hukou
+                                       statuses.
+                                             In sum, the present study seeks to contribute to the knowledge about the crime spatial
+                                       patterns of migrant robbers and native robbers. Using data on the ZG City of China, we
+                                       set out to answer two questions: whether the spatial distribution of migrant offenders’
+                                       crime location choices is different from those of native robbers, and what are the main
+                                       contributing factors?
+
+                                       2. Theories and Prior Findings
+                                            Many theoretical approaches can be taken to understand the crime location choice.
+                                       Consequently, drawing on concepts and empirical findings from environmental criminol-
+                                       ogy and the ecology literature, we briefly identify the primary criminological theories and
+                                       empirical evidence that bears the most relevance for the topics discussed: crime pattern
+                                       theory, the routine activity approach, and social disorganization theory.
+
+                                       2.1. Crime Pattern Theory
+                                             Crime pattern theory explains the issue of where offenders commit their crimes [18].
+                                       It argues that crime is most likely to occur in areas where the activity space coincides
+                                       between the potential offenders and the potential targets [28]. In other words, it explains
+                                       that there are two necessary conditions for a crime to be committed in a given location: the
+                                       place must provide an opportunity for crime, and the potential offender would have to
+                                       be aware of the location and the opportunity [20]. Consequently, crime can occur where
+                                       criminal opportunity and spatial awareness overlap. Since offenders’ conscious space is
+                                       maintained and developed in their daily activities, offenders commit crimes in or near the
+                                       places they frequent. For example, researches on the journey to crime provide support for
+                                       crime pattern theory, showing that offenders usually commit most of their crimes close to
+                                       their home location [43,44].
+                                             Crime pattern theory focuses on the change in criminal opportunities. It puts particu-
+                                       lar emphasis on the interaction between offenders, victims or targets, and guardians, and
+                                       the interaction between people and the environment is of great importance to the occur-
+                                       rence of crime [17]. Accordingly, some research sheds light on offenders’ crime location
+                                       choices by analyzing the influence of the ambient population [45–48], built environment
+                                       (crime generators and attractor) [49–51], and crime prevention (crime detractors) [2,51–53].
+                                       Generally, potential victims are represented by the ambient population, criminal activities
+                                       are triggered by crime generators and attractors but inhibited by crime prevention.
+                                             However, the awareness spaces of migrant offenders may be different from those
+                                       of native offenders. Some of the migrants may not have lived in the city very long, so
+                                       they have limited familiarity with the city and confined social networks [17,36]. Native
+                                       offenders, on the other hand, have been living in the city for a long time. They are more
+                                       familiar with the city and may have developed a wider social network. The difference in
+                                       social network and awareness space may lead to a difference in target selection between
+                                       the native robbers and migrant robbers.
+
+                                       2.2. Routine Activity Theory
+                                            Drawing on human ecology theories, routine activity theory suggests that for a crime
+                                       to occur in a certain location, a motivated offender must encounter a suitable and un-
+                                       guarded target and that this convergence will be a function of the routine activities of
+                                       offenders, potential victims, and guardians [8]. It considers how people’s activities in
+                                       day-to-day affect their awareness spaces and, for offenders, how this affects their crime
+                                       location choices when committing a crime [50,54,55]. As a result of engaging in everyday
+                                       activities, offenders (or others) are considered to form mental maps to represent the daily
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                           4 of 16
+
+
+
+
+                                       activity nodes where they frequently visit, and the pathways that they must travel to move
+                                       from one activity node to another, and their surrounding area [54,55].
+                                            Routine activity theory focuses on the changes in crime opportunities that influence
+                                       the occurrence of criminal activities, that is, assumes the likelihood of crime is influenced
+                                       by the routine activities of different individuals (families or friends) and emphasizes the
+                                       crucial role of daily activity nodes in the criminal process. Typically routine activity nodes
+                                       include a person’s home, workplace, recreation places, etc., and it is the environmental
+                                       background that determines their distribution in space [54].
+                                            Some routine activity nodes such as transportation hubs and subway stations or other
+                                       places will be shared by many people, and thus encapsulated in their awareness spaces, but
+                                       others will be more unique to particular individuals [11]. For example, the nodes of daily
+                                       activity between migrant robbers and native robbers may be different and form different
+                                       awareness spaces in which they choose to commit robberies in different places.
+
+                                       2.3. Social Disorganization Theory
+                                             Social disorganization theory is frequently used to explicate crimes triggered by
+                                       changes in the social environment, and it concerns how the social composition of neigh-
+                                       borhoods makes them deter or promote criminal behavior [56,57]. Many researchers have
+                                       demonstrated that at the heart of this theory is the notion of social cohesion, which mo-
+                                       tivates residents to adopt a collective effectiveness approach to intervene and prevent
+                                       crime [22,58,59]. Existing studies demonstrate that social cohesion is more likely to occur
+                                       in neighborhoods with stable demographics in which residents can form good social rela-
+                                       tionships [60–62], and in which residents of homogenous neighborhoods are more likely to
+                                       share comparable goals and faith [22,63].
+                                             Theories of social disorganization have explained the mechanism of crime from three
+                                       perspectives. First, close social relationships among neighbors can create collective efficacy
+                                       to decrease opportunities for crime [61]. For instance, inhabitants can exercise informal
+                                       control over others living in the neighborhood, reducing the likelihood of their participation
+                                       in the crime [22]. Second, neighborhoods with high <mark style="background-color: orange; font-weight: bold;">socioeconomic heterogeneity</mark> or a large
+                                       proportion of immigrant residents are less likely to jointly resist criminal activity due to a
+                                       lack of cohesion among residents from very different socioeconomic backgrounds [22,58].
+                                       For example, Liu et al. discovered that the urban villages and old urban areas in ZG
+                                       City, China, are the main “hunting grounds” for criminals because of the high mobility of
+                                       the population and the high socioeconomic heterogeneity of residents in these areas [64].
+                                       Finally, offenders’ perceptions of social cohesion may influence their decisions about where
+                                       to commit crimes [22]. For example, Bernasco et al. argue that social cohesion may act as a
+                                       deterrent that deters offenders from targeting a particular neighborhood [65].
+                                             Some studies from non-Western contexts demonstrated that migrant offenders mainly
+                                       reside in urban villages [36], and also shows that urban villages in Chinese cities are
+                                       associated with declining public safety and deteriorating social order [66]. The migrant
+                                       population does not enjoy the same rights as the native population because of the re-
+                                       strictions of the household registration system. This restriction has led to poor social
+                                       integration between the migrants and the natives. The past four decades have witnessed
+                                       an unprecedented wave of rural migrants to the city for employment in China. These
+                                       migrants are often in a disadvantaged position in terms of employment and earnings.
+                                       These disadvantages, coupled with the poor integration, might drive some migrants to
+                                       commit crimes.
+                                             Although various theories focus on neighborhood social processes, environmen-
+                                       tal criminology asserts that the physical environment plays a central role by shaping
+                                       people’s activity patterns and the opportunities for crime. Therefore, in this paper, the
+                                       built environment is also used to explain spatial differences in crime location choices
+                                       between migrant and native robbers, while the social environment, ambient population,
+                                       and crime prevention and control as well as journey to crime are integrated into the model
+                                       as control variables.
+              grant and native robbers, while the social environment, ambient population, and crime
+             prevention and control as well as journey to crime are integrated into the model as control
+             variables.
+ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                               5 of 16
+             3. Materials and Methods
+             3.1. Study Area
+                               3. Materials and Methods
+                  ZG City—one      of the largest cities in Southeast China [19]. In 2018, the resident pop-
+                               3.1. Study Area
+             ulation was 14.9 million, and the GDP of the city was 2.30 trillion with an annual growth
+                                     ZG City—one of the largest cities in Southeast China [19]. In 2018, the resident
+             rate of 6.50%. Due   to the influx of large numbers of immigrants, ZG City has become the
+                               population was 14.9 million, and the GDP of the city was 2.30 trillion with an annual
+             best place for study   on rate
+                               growth   the of
+                                             crime      Due to choice
+                                                     location
+                                                6.50%.                    of of
+                                                                             street
+                                                                 the influx     largerobbers
+                                                                                      numbersunder     different
+                                                                                               of immigrants,   ZGhouse-
+                                                                                                                    City has
+                               attributes.
+             hold registrationbecome               studyforarea
+                                             Theplace
+                                         the best                consists
+                                                             study   on the of  1971location
+                                                                             crime    neighborhoods      (Figure
+                                                                                             choice of street     1) with
+                                                                                                              robbers under
+             an average area ofdifferent  household
+                                  1.62 square        registration attributes. The study area consists of <mark style="background-color: lightblue; font-weight: bold;">1971</mark> neighborhoods
+                                                 kilometers.
+                                       (Figure 1) with an average area of <mark style="background-color: lightblue; font-weight: bold;">1.62 square kilometers</mark>.
+
+
+
+
+                                   Figure 1. Schematic diagram of the study area, ZG City.
+             Figure 1. Schematic diagram   of the study area, ZG City.
+                                       3.2. Crime Data and Independent Variables
+             3.2. Crime Data and Independent   Variables
+                                   The data used in this paper include the arrest data and neighborhood characteristics
+                  The data used         ZG City.
+                               datainofthis   paperTheinclude      of data
+                                                        first type the     is thedata
+                                                                        arrest             dataneighborhood
+                                                                                    arrestand    of street robbers incharacteristics
+                                                                                                                       ZG City from 2012
+                               to 2016 provided by ZG City’s Public Security Department. These data <mark style="background-color: lightcoral; font-weight: bold;">recorded</mark> detailed
+             data of ZG City. The first type of data is the arrest data of street robbers in ZG City from
+                               individual information of street robbers and their case information. Individual information
+                               such asby
+             2012 to 2016 provided                City’s Public
+                                             ZG gender,
+                                         name,                        Security
+                                                             ethnicity, household   Department.
+                                                                                        address, dateThese         andrecorded
+                                                                                                                data
+                                                                                                         of birth,       educationde-level
+                                  street robbers;ofcase
+             tailed individualofinformation            street   robberssuch
+                                                            information     andastheir       of theinformation.
+                                                                                      timecase       robbery, addressIndividual
+                                                                                                                         of robberyin-and
+             formation such as    name, at
+                               residence       the timeethnicity,
+                                             gender,      of the robbery,   as well asaddress,
+                                                                       household                       of a crime,
+                                                                                          the object date                 of crime,
+                                                                                                                   placeand
+                                                                                                             of birth,               tools
+                                                                                                                                educa-
+                               of robbers;
+             tion level of street crime, means  case   crime, and amount
+                                                    of information       suchofaslost    <mark style="background-color: orange; font-weight: bold;">property</mark>
+                                                                                      time    of the    money. A address
+                                                                                                     orrobbery,    total of 11,455  arrest
+                                                                                                                                of rob-
+                               records within 8 districts of ZG city from 2012 to 2016, excluding 2285 records of street
+             bery and residence     at the
+                               robbers   whosetime    of the robbery,
+                                                   residence    was outside  asthe
+                                                                                 well     as the
+                                                                                      study    area object
+                                                                                                     and 1310    a crime,
+                                                                                                              of records  withplace   of
+                                                                                                                                 no fixed
+             crime, tools of crime,    means
+                               residence          of crime,
+                                            or unknown          and amount
+                                                            residence,  leaving 7860of lost    property
+                                                                                          records           or 7124
+                                                                                                    involving   money.streetArobbers.
+                                                                                                                               total ofFor
+             11,455 arrest records   within
+                               robbery          8 districts
+                                          groups,    this paperof ZG   city
+                                                                  refers  to from
+                                                                             Bernasco 2012 et to
+                                                                                              al.2016,   excluding
+                                                                                                  [10,19,67],           2285
+                                                                                                               and treats     records
+                                                                                                                            each  robbery
+                               group    as  a separate    decision-maker,     i.e.,  one  robber
+             of street robbers whose residence was outside the study area and 1310 records with no  is randomly    extracted   from  each
+                               robbery group to construct the sample, while a single robber directly constructs the sample,
+                                 unknown
+             fixed residence orresulting         residence, leaving <mark style="background-color: lightblue; font-weight: bold;">7860</mark> records involving 7124 street robbers.
+                                           in 4358 street robbers included in the individual attribute table (Table 1).
+             For robbery groups, this paper refers to Bernasco et al. [10,19,67], and treats each robbery
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                                          6 of 16
+
+
+
+
+                                       Table 1. The basic situation of street robbery cases is based on the arrest data. (N = 4358).
+
+                                          Number of People
+                                                                      Arrested Records           Number of Cases             Cases Proportion
+                                           Involved Cases
+                                                    1                        2646                        2646                      60.72%
+                                                    2                        1758                         879                      20.17%
+                                                    3                        1209                         403                       9.25%
+                                                    4                         812                         203                       4.66%
+                                                    5                         565                         113                       2.59%
+                                                   ≥6                        870                         114                        2.62%
+                                                  Total                      7860                        4358                       100%
+
+
+                                             In this study, we selected the domicile attributes of street robbers in the individual
+                                       attribute table to study the spatial differences in crime location choices of street robbers
+                                       with different household registration attributes. Street robbers in the study area were
+                                       predominantly out-of-town, with 3650 individuals, or 83.75%, while 708 individuals were
+                                       native, or 16.25% (Table 2). In addition, we should point out that in the discrete spatial
+                                       choice model of this paper, 708 samples will be randomly selected from 3650 migrant
+                                       robbers so that the sample size can be matched with that of local robbers, which in turn
+                                       facilitates a comparative analysis of migrant and local robbers’ crime location choices. This
+                                       is because a larger sample size will result in a smaller p-value given that the standard error
+                                       remains unchanged.
+
+                                       Table 2. Descriptive statistical analysis of household registration attributes of street robbers.
+
+                                             Household Registration of Street Robbers                Number of People             Proportion
+                                                            Migrant robbers                                  3650                   83.75%
+                                                            Native robbers                                    708                   16.25%
+                                                             Total robbers                                   4358                    100%
+                                       Note: Migrant robbers are those whose household registration is not in ZG City, while native robbers are those
+                                       whose household registration is within ZG City.
+
+                                             The second type of data is a dataset coupled with individual factors (distance of
+                                       journey to crime variables) and key neighborhood factors, including 2014 POI data (point
+                                       coordinates), 2014 <mark style="background-color: orange; font-weight: bold;">traffic</mark> road network vector map data, 2015 bus stop data (point coordi-
+                                       nates) crawled based on <mark style="background-color: orange; font-weight: bold;">Baidu API</mark>, within one week of 12 to 18 May 2016 ZG City’s mobile
+                                       phone data and the sixth <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Census data</mark></mark> of ZG city in 2010 (Table 3). For built environment
+                                       characteristics, (1) Malls and supermarkets, (2) Grocers, (3) Wholesale markets, (4) Bars
+                                       and clubs, (5) Sports stadiums, (6) High <mark style="background-color: orange; font-weight: bold;">schools</mark>, (7) <mark style="background-color: plum; font-weight: bold;">ATMs</mark> and <mark style="background-color: plum; font-weight: bold;">banks</mark>, (8) Carparks, (9) Bus
+                                       stops, (10) Transportation hubs, (11) Subway stations, (12) Density of road network were
+                                       selected; for social environment characteristics, (13) Proportion of migrants, (14) Proportion
+                                       of youngsters, (15) Socioeconomic heterogeneity. It should be noted that although some
+                                       studies related to social disorganization theory also control for family disruption and
+                                       poverty [68,69], data on these aspects are not available for this research, so they are not
+                                       included as control variables in the discrete spatial choice models. The ambient population
+                                       selected (16) Daily human mobility, the crime prevention selected (17) Detection rate, and
+                                       the individual factor selected (18) Distance of journey to crime. In this paper, the attributes
+                                       of the built environment are used as explanatory variables, while the variables of social
+                                       environment, ambient population, crime prevention, and crime travel aspects are incorpo-
+                                       rated into the model as control variables (Table 3). In addition, the distance of journey to
+                                       crime is expressed in terms of Euclidean distances by referring to studies by [19,20], such
+                                       as calculating the distance from the street robber’s residence to each neighborhood center.
+                                       At the same time, these studies also showed that the attractiveness of the crime location is
+                                       an exponential function of its distance to the place of residence [19,20]. Therefore, to make
+                                       it linear, the model in this study also takes the logarithm of the value of the distance of
+                                       journey to crime. In addition, the above variables passed the multicollinearity test.
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                                     7 of 16
+
+
+
+
+                                       Table 3. Description of variables for comparative analyses of the crime location choices of street
+                                       robbers with different household registration attributes.
+
+                                        Variables                      Calculation Method
+                                        Explanatory variables
+                                        Malls and supermarkets         Number of malls and supermarkets in the neighborhood
+                                        Grocers                        Number of grocers in the neighborhood
+                                        Wholesale markets              Number of wholesale markets in the neighborhood
+                                        Bars and clubs                 Number of bars and clubs in the neighborhood
+                                        Sports stadiums                Number of sports stadiums in the neighborhood
+                                        High schools                   Number of high schools
+                                        ATMs and banks                 Number of ATMs and banks in the neighborhood
+                                        Carparks                       Number of carparks in the neighborhood
+                                        <mark style="background-color: plum; font-weight: bold;">bus stops</mark>                      Number of bus stops in the neighborhood
+                                        Transportation hubs            Number of transportation hubs in the neighborhood
+                                        Subway stations                Number of subway stations in the neighborhood
+                                                                       The total length of roads in the neighborhood/Total area of the
+                                        Density of road network
+                                                                       neighborhood
+                                        Control variables
+                                                                       Total number of the migrant in the neighborhood/Total number of people
+                                        Proportion of migrants
+                                                                       in the neighborhood
+                                                                       Total number of the youngster in the neighborhood/Total number of
+                                        Proportion of youngsters
+                                                                       people in the neighborhood
+                                        Socioeconomic heterogeneity    Qualitative difference index of different housing property groups
+                                                                       Number of flow crowd in the neighborhood/Total area of the
+                                        Daily human mobility
+                                                                       neighborhood
+                                        Detection rate                 Total number of cases resolved/Total number of case reports
+                                        Distance of journey to crime   The distance of street robbers’ residence from crime location
+
+
+                                       3.3. Discrete Spatial Choice Modeling
+                                             Discrete spatial choice modeling is widely used to analyze the selection behavior
+                                       in microeconomics [19,65]. Based on the theory of stochastic utility, it assumes that a
+                                       decision-maker must choose a discrete set of choices while assessing the relative utility of
+                                       each alternative [70]. Considering that crime location choice is similar to the above choice,
+                                       Bernasco and Nieuwbeerta introduced the method to the study of crime and verified the
+                                       crime location choice of burglaries in <mark style="background-color: yellow; font-weight: bold;">The Hague</mark>, the <mark style="background-color: yellow; font-weight: bold;">Netherlands</mark> [65]. Subsequently,
+                                       some studies used this method to analyze a range of crimes. For example, Johnson et al.
+                                       examined the crime location choice of vehicle thieves in Dorset, England [22]. Bernasco
+                                       et al. recently examined the difference of time in the crime location choice of street robbers
+                                       in <mark style="background-color: yellow; font-weight: bold;">Chicago</mark>, USA [20]. Long et al. examined the crime location choice of street robbers in
+                                       ZG city, China [19]. All of these studies are based on the aspect of criminals and tested
+                                       whether their crime location choices were influenced by a series of factors.
+                                             This study will refer to the above studies and use the <mark style="background-color: lightgreen; font-weight: bold;">Conditional Logit</mark> selection models
+                                       in the Discrete Spatial Choice Modeling to calculate. In the case of the control of variables of
+                                       the social environment, ambient population, crime prevention, and crime travel, according
+                                       to the utility maximization hypothesis, street robbers with different household registration
+                                       attributes will choose the neighborhood with the greatest benefit on their crimes. The
+                                       utility function is calculated as follows:
+
+                                                                               Uij = β i xij + ε ij ,                                       (1)
+
+                                       where Uij is the expected utility of street robber i robbing in neighborhood j. The xij is the
+                                       value of the interpretive variables associated with street robber i and neighborhood j. The
+                                       β i is the coefficient estimation vector for street robber i. Moreover, the ε ij is the random
+                                       error of models.
+                                              The utility function can be estimated based on the Conditional Logit Selection models.
+                                       Therefore, the formula for calculating the robbery probability of street robbers i in the
+                                       neighborhood j is as follows:
+                                                                                               e βi xij
+                                                                          Prob(Yi = j) =                  ,                                 (2)
+                                                                                              ∑k e βi xik
+                                  dom error of models.
+                                       The utility function can be estimated based on the Conditional Logit Selection mo
+                                 els. Therefore, the formula for calculating the robbery probability of street robbers i in
+                                 neighborhood j is as follows:
+ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                           8 of 16
+                                                                                            𝛽 𝑥
+                                                                                           𝑒 𝑖 𝑖𝑗
+                                                                     𝑃𝑟𝑜𝑏(𝑌𝑖 = 𝑗) =                    ,
+                                                                                         ∑𝑘 𝑒 𝛽𝑖 𝑥𝑖𝑘
+                            where Yi is the choice of street robber i. Models calculations were done under <mark style="background-color: lightgreen; font-weight: bold;"><mark style="background-color: lightgreen; font-weight: bold;"><mark style="background-color: lightgreen; font-weight: bold;">STATA</mark></mark> 13.0</mark>
+                      where  Yi is the choice of street robber i. Models calculations were done under Stata 1
+                           software.
+                      software.
+                            4. Results Analysis
+                            4.1. Spatial Distribution Characteristics of Crime Location Choice
+                      4. Results Analysis
+                                  Figure 2a–c shows the spatial distribution of the crime location choices of all migrant
+                            robbersDistribution
+                      4.1. Spatial              Characteristics
+                                   (3650), randomly              of Crime
+                                                    selected migrant       Location
+                                                                     robbers          Choice
+                                                                             (708), and native robbers (708), respec-
+                            tively, and
+                            Figure        it can
+                                       2a–c               thatspatial
+                                                 be seenthe
+                                               shows            there are obvious spatial
+                                                                        distribution         the crimebetween
+                                                                                          of differences    location migrant robbers
+                                                                                                                       choices   of all migr
+                            and native robbers. From Figure 2a, there is a crime hotspot area “M”, which is located
+                      robbers (3650), randomly selected migrant robbers (708), and native robbers (708), resp
+                            in the leather goods industry cluster area of ZG City; and the area with a higher value
+                            of and
+                      tively,  kernel itdensity
+                                         can be(or seen    that
+                                                      called      there
+                                                               crime      are obvious
+                                                                      sub-hotspot)          spatial
+                                                                                      is located       differences
+                                                                                                   in the neighborhoodbetween     migrant r
+                                                                                                                          where the
+                            and native
+                      bers railway     stationrobbers.    From Figure
+                                                and the province     (or city)2a,
+                                                                               busthere    is a crime
+                                                                                    transportation         hotspot
+                                                                                                        hubs         areain“M”,
+                                                                                                              are located          which is
+                                                                                                                             ZG city
+                      catedand    thesurrounding
+                              in its    leather goodsneighborhoods,          well as the
+                                                             industryascluster       area urban
+                                                                                             of ZG village areaand
+                                                                                                        City;   in the middle
+                                                                                                                     the  areaofwith
+                                                                                                                                  the a hig
+                      value“ZH”    district.
+                              of kernel      density (or called crime sub-hotspot) is located in the neighborhood wh
+                                  Meanwhile, a comparison between Figure 2a,b suggests that the crime location choice
+                      the railway
+                            of the 3560   migrantand
+                                       station           theisprovince
+                                                    robbers                  (or city)
+                                                                 similar to those of thebus     transportation
+                                                                                          708 randomly              hubs are
+                                                                                                           selected migrant     located in
+                                                                                                                             robbers.
+                      city and   its surrounding
+                            For example,                  neighborhoods,
+                                               both Figures    show the sameas      well
+                                                                                  hot   spotasinthe   urbanM,village
+                                                                                                  location      and botharea  in the
+                                                                                                                                  the middle
+                                                                                                                           show
+                      the “ZH”      district.spatial pattern. Thus, the set of 708 randomly selected migrant robbers is
+                            same general
+                            representative of all the migrant robbers.
+
+
+
+
+                                                      Figure 2. Cont.
+       Int.Int.
+   ISPRS
+ISPRS          J. Geo-Inf.
+           J. Geo-Inf.     2021,
+                       2021,  10,10,
+                                  771771                                                                                                  9 of916of 16
+
+
+
+
+      Figure  2. Kernel
+         Figure          density
+                 2. Kernel        estimation
+                            density           of of
+                                     estimation  street  robbers’
+                                                    street robbers’crime    locationchoices.
+                                                                     crimelocation   choices.((a–c)    respectivelyrepresent
+                                                                                                                     representthe
+                                                                                               ((a–c)respectively              the spatial
+                                                                                                                                    spatial dis-
+         distribution of crime location choices for all migrant robbers, randomly selected migrant robbers, and native robbers. The The
+      tribution  of crime  location  choices for all migrant   robbers,  randomly     selected migrant    robbers,  and  native  robbers.
+      data provider
+         data provider  requestedfor
+                      requested        confidentiality of
+                                   forconfidentiality     the place
+                                                       of the                   “pinyin”
+                                                                     names,soso“pinyin”
+                                                              placenames,                  codes
+                                                                                         codes  areare used
+                                                                                                    used     as substitutes).
+                                                                                                          as substitutes).
+
+                                                Meanwhile, a comparison between Figure 2a,b suggests that the crime location choice
+                                           of the 3560 migrant robbers is similar to those of the 708 randomly selected migrant rob-
+                                           bers. For example, both Figures show the same hot spot in location M, and both show the
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                                         10 of 16
+
+
+
+
+                                            Figure 2c shows a hotspot area “N” where the native robbers commit their crimes,
+                                       which is located the southwest corner, also the old urban area, of the “XY” district, and
+                                       the urban village and old urban area in the northwest corner of “ZH” district. The former
+                                       area is the business district full of stores and a dense flow of people, such as toys, seafood,
+                                       stationery, and grocery stores along the “YD” Road, and stores along the street and com-
+                                       prehensive shopping malls such as clothing, footwear, department stores, jewelry stores,
+                                       and <mark style="background-color: plum; font-weight: bold;">restaurants</mark> along “BJ” Road; while the latter is dominated by residential functions and
+                                       cultural and educational functions.
+                                            According to the above, the crime hotspots of crime location choice between migrant
+                                       robbers and native robbers are different. Migrant robbers tend to choose the labor-intensive
+                                       industrial and wholesale clusters, while the preference of native robbers is for old urban
+                                       areas and urban villages.
+
+                                       4.2. Comparative Analyses of Spatial Differences in Crime Location Choice
+                                             In Model 1, a subset of 708 immigrant robbers (the sampling model is consistent with
+                                       the overall model for migrant robbers) was randomly selected for comparison with the
+                                       708 native robbers in Model 2. The OR value, Z value, and significance level (p-value) of
+                                       each factor were obtained by conditional logit regression analysis of the crime location
+                                       choice and their influencing factors of street robbers with different household registration
+                                       attributes (Table 4). In the discrete spatial choice modeling, the OR value of the variable is
+                                       greater than 1 for positive influence, and it is larger to indicate a greater positive influence;
+                                       OR value less than 1 for negative influence, and it is smaller to indicate a greater negative
+                                       influence. From Table 4, we can see that the Pseudo R2 of both migrant robbers (Model 1)
+                                       and native robbers (Model 2) are greater than 0.25, which indicates that the two models fit
+                                       perfectly and they have strong explanatory power.
+
+                                 Table 4. Evaluation results of migrant robbers and native robbers in ZG City.
+
+                                                     Migrant Robbers (Model 1)                               Native Robbers (Model 2)
+              Variables
+                                           OR              Z        [95% Conf. Interval]            OR             Z         [95% Conf. Interval]
+     Explanatory variables
+    Malls and supermarkets               1.247 ***       8.70            1.19        1.31        1.028 ***      4.07             1.01       1.04
+            Grocers                      1.017 **        3.04            1.00        1.04         1.033 *       2.16             1.00       1.06
+       Wholesale markets                 1.147 ***       5.09            1.09        1.21          1.018        1.00             0.98       1.05
+         Bars and clubs                  1.024 ***       4.57            1.01        1.05         1.051 *       2.55             1.01       1.09
+        Sports stadiums                  0.816 **        −3.05           0.72        0.93          1.016        1.01             0.99       1.05
+          High schools                   1.129 ***       3.68            1.06        1.20        1.<mark style="background-color: lightblue; font-weight: bold;">124</mark> **       3.27             1.05       1.21
+        ATMs and banks                     1.051         1.11            0.96        1.15          0.981        −1.96            0.96       1.00
+           Carparks                      1.025 ***       4.46            1.01        1.04        1.017 ***      4.56             1.01       1.03
+           Bus stops                     1.099 **        3.25            1.04        1.16        1.046 ***      7.08             1.03       1.06
+      Transportation hubs                1.052 **        3.38            1.02        1.08          1.018        0.19             0.84       1.23
+        Subway stations                  1.038 ***       4.26            1.03        1.05          1.022        0.65             0.96       1.09
+    Density of road network              0.739 ***       −3.97           0.64        0.86        0.929 ***      −6.11            0.91       0.95
+        Control variables
+     Proportion of migrant               1.043 ***       4.78            1.03        1.06        0.377 ***      −3.99            0.23       0<mark style="background-color: plum; font-weight: bold;">.61</mark>
+    Proportion of youngster               1.086 *        2.64            1.00        1.21          0.<mark style="background-color: lightblue; font-weight: bold;">984</mark>        −0.03            0.36       2.65
+  Socioeconomic heterogeneity              1.042         0.81            0.94        1.15          1.<mark style="background-color: lightblue; font-weight: bold;">000</mark>         0.02            0.96       1.05
+     Daily human mobility                  0.984        −0.23            0.86        1.13          1.003         0.07            0.93       1.08
+         Detection rate                   1.096 *        2.42            1.07        1.27          1.035         0.11            0.54       1.97
+          Log distance                   0.<mark style="background-color: lightblue; font-weight: bold;">105</mark> ***      −52.14           0.10        0.11        0.115 ***      −67.96           0.11       0.12
+           Pseudo R2                                             0.502                                                   0.526
+               Note: * <mark style="background-color: plum; font-weight: bold;">p < 0.05</mark>, ** <mark style="background-color: plum; font-weight: bold;">p < 0.01</mark>, *** p < 0.001; the 708 samples in Model 1 were randomly selected from 3650 migrant robbers.
+
+                                             From Table 4, it can be seen that the OR of wholesale markets influence on the crime
+                                       location choice of migrant robbers is 1.147, with a p-value of 0.000 less than 0.001, which
+                                       is statistically significant, while the OR of influence on the crime location choice of native
+                                       robbers is 1.018 with a p-value of 0.318 greater than 0.05, which is not statistically significant.
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                             11 of 16
+
+
+
+
+                                       Therefore, wholesale markets have a significant positive effect on the crime location choices
+                                       of migrant robbers, but not for native robbers’ crime location choices.
+                                             In Model 1 and Model 2, the OR for the effect of sports stadiums on the crime location
+                                       choice of migrant robbers is 0.816, with a p-value of 0.002 less than 0.01, which is statistically
+                                       significant. The OR for the effect on the crime location choice of native robbers is 1.016,
+                                       with a p-value of 0.314 greater than 0.05, which is not statistically significant. Hence, there
+                                       is a significant negative effect of sports stadiums on migrant robbers’ crime location choices,
+                                       while the effect on the crime location choices of native robbers, although positive, is not
+                                       significant.
+                                             The OR values for the influence of transportation hubs and subway stations on the
+                                       crime location choice of migrant robbers are respectively 1.052 and 1.038, with p-values less
+                                       than 0.01 and 0.000, i.e., both were statistically significant. And the OR value of the same
+                                       influences on the crime location choice of native robbers are respectively 1.018 and 1.022,
+                                       with p-values greater than 0.05, i.e., both were not statistically significant. Consequently,
+                                       transportation hubs and subway stations have significant positive influences on migrant
+                                       robbers’ crime location choices, but not for native robbers.
+                                             Meantime, it is necessary to point out some variables that have similar effects on both
+                                       migrant and native robbers. Table 4 contains OR values and confidence intervals regarding
+                                       the following six typically routine activity nodes: malls and supermarkets, grocers, bars
+                                       and clubs, high schools, carparks, bus stops. All of them have a significant positive effect
+                                       on the crime location choices of both migrant and native robbers. In addition, the OR
+                                       values for the effect of density of road networks on the crime location choice of migrant
+                                       robbers and native robbers are less than 1, with p-values all less than 0.000, i.e., both were
+                                       statistically significant. Therefore, there is a significant negative effect of the density of
+                                       road networks on migrant and native robbers’ crime location choices.
+                                             In terms of control variables, for example, the OR values for the influence of the
+                                       proportion of migrants on the crime location choice of migrant robbers and native robbers
+                                       are respectively 1.043 and 0.377, and both had statistically significant p-values of 0.000 less
+                                       than 0.001. Thus, the proportion of migrants have a significant positive effect on the crime
+                                       location choices of migrant robbers, but a significant negative effect on native robbers’
+                                       crime location choices. Finally, there is a significant negative influence of the distance of
+                                       journey to crime on migrant and native robbers’ crime location choices.
+                                             In summary, controlling other variables constant, the spatial differences in crime
+                                       location choices between migrant robbers and native robbers are mainly affected differently
+                                       by wholesale markets, sports stadiums, transportation hubs, and subway stations. That
+                                       is, wholesale markets, sports stadiums, transportation hubs, and subway stations have
+                                       significant influences on the crime location choice of migrant robbers, while they have no
+                                       significant influences on the crime location choice of native robbers.
+
+                                       5. Discussion and Conclusions
+                                            Street robbery seriously affects public safety and lifestyles. The comparative research
+                                       between native and migrant street robbers can find out the difference of crime location
+                                       choice among them, providing insight for targeted crime prevention and control strategies.
+                                       There exist obvious spatial differences in crime location choices between migrant robbers
+                                       and native robbers. Migrant robbers tend to choose the labor-intensive industrial clusters,
+                                       while native robbers tend to choose the old urban areas and urban villages. Spatial differ-
+                                       ences in crime location choices between migrant robbers and local robbers are differentially
+                                       affected by some factors in the built environment, controlling for other variables. Wholesale
+                                       markets, sports stadiums, transportation hubs, and subway stations only affect migrant
+                                       robbers’ crime location choices, but not native robbers’. These results may be attributable
+                                       to the different spatial awareness between migrant robbers and native robbers.
+                                            The wholesale markets are one of the main reasons for the spatial differences in crime
+                                       location choices between migrant robbers and native robbers. Wholesale markets have
+                                       such environmental characteristics as a strong ability to aggregate elements and relatively
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                           12 of 16
+
+
+
+
+                                       loose management. Our study found that wholesale markets seem to increase the odds
+                                       of committing a crime by a larger degree for migrant robbers than they do for native
+                                       robbers, due to their different awareness space. According to crime pattern theory [20],
+                                       the wholesale markets provide more opportunities for robbery, and the potential migrant
+                                       robbers may already be aware of the place and the opportunity because most of them
+                                       may live and work near the markets due to lower rent. A wholesale market is typically
+                                       a crowded place with heavy traffic and many people. It has a huge daily throughput
+                                       of goods, requiring tens of thousands of employees for shipping and handling. These
+                                       low-earning positions are mostly filled by migrants [17]. A large number of merchants
+                                       make transactions, some of which are based on cash. Robbers can find a suitable target
+                                       fairly easily, and escape into the crowd after a robbery [2,10]. Wholesale markets are not
+                                       only convenient for them to “lurk and hide”, but also an ideal “hunting ground”.
+                                             For local robbers, although the wholesale markets have a positive effect on their target
+                                       places, it was not statistically significant. There are two possible explanations for this.
+                                       First, wholesale markets gather in neighborhoods that contain a large migrant population,
+                                       which also includes potential migrant offenders. Thus, the activity space of the migrant
+                                       population in a neighborhood suppressed or reduced those of native robbers. In other
+                                       words, the more migrant population in a neighborhood, then the main activity in that
+                                       neighborhood are dominated by migrants and relatively less by native groups. This point
+                                       can be supported by the control variable of the proportion of migrants in Table 4. In
+                                       this paper, we find that the migrant proportion coefficient on target places is significantly
+                                       positive for migrant robbers, yet significantly negative for native robbers. Second, native
+                                       robbers have been living in ZG City for a long time, and have a wider social network
+                                       and greater familiarity with ZG City. While wholesale markets present substantial crime
+                                       opportunities, other venues can provide criminal opportunities as well. According to
+                                       routine activity theory, some typically routine activity nodes include a person’s home,
+                                       workplace, recreation places, etc. [54]. As a result, local robbers, are more likely to rob in
+                                       neighborhoods with more malls and supermarkets, grocers, bars and clubs, high schools,
+                                       carparks, and bus stations than in neighborhoods with more wholesale markets.
+                                             Sports stadiums also contribute to the spatial differences in the crime location choices
+                                       between migrant robbers and native robbers. Sports stadiums are typically well maintained
+                                       and with natural surveillance [71,72], which is more likely to deter the influx of migrant
+                                       criminals, who tend to be less familiar with the surroundings. However, native robbers are
+                                       familiar with the sports stadiums and their surroundings (or paths) that they frequent or
+                                       are near their homes. Thus, native robbers are more inclined to go near sports stadiums to
+                                       find criminal opportunities.
+                                             Although crime prevention and control in the surrounding area of the sports stadiums
+                                       will be improved during the opening hours, especially during the events, the influx of
+                                       people will create more opportunities for native robbers to commit crimes because they may
+                                       seize the opportunity to take advantage of the situation if they encounter some attractive
+                                       targets in their familiar environment, and later slip away along the familiar paths. In
+                                       addition, the insignificant result of the effect of sports stadiums on native robbers is likely
+                                       to be an effect caused by the turnover between event and non-event periods, which will be
+                                       verified in future studies.
+                                             There is more evidence that migrant robbers and native robbers may form differ-
+                                       ent consciousness spaces. Results show that transportation hubs and subway stations
+                                       affect the choice of crime locations between migrant robbers and native robbers. Due
+                                       to the affordability, these facilities are used more often by migrants, including migrant
+                                       offenders [11].
+                                             Transportation hubs and subway stations are always the high-risk areas for robbery
+                                       cases with the characteristics such as crowded flows around and relatively complicated
+                                       scenes [10,49]. For migrant robbers living in ZG City, their activities spaces are usually
+                                       limited [17,36]. In other words, they may have a more familiar perception (awareness
+                                       space) of the transportation hubs and subway stations, where they frequently travel to and
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                               13 of 16
+
+
+
+
+                                       from compared to other places or sites outside their place of residence or work, and they
+                                       believe there will be many opportunities for crime, and therefore they will be biased to go
+                                       there to find suitable targets for robbery (as shown in Table 4 in Model 1, the transportation
+                                       hubs and subway stations with larger OR values). For native robbers, who were born and
+                                       lived in ZG City, as mentioned above, they have more activities spaces to move around
+                                       as well as social networks. So they are inclined to commit crimes in lifestyle and leisure
+                                       type places, for example, malls and markets, grocers, bars and clubs, high schools, and
+                                       bus stations.
+                                             Besides, it is worth noting that we found that other typically routine activity nodes
+                                       such as malls and supermarkets, grocers, bars and clubs, high schools, carparks, and
+                                       bus stops have a similar effect on migrant robbers and local robbers’ target places. In
+                                       other words, migrant and native robbers’ preference for neighborhoods with the above six
+                                       typically routine activity nodes without significant difference. Finally, our findings suggest
+                                       that migrant and native robbers all prefer areas closer to their residence, which is consistent
+                                       with previous studies that do not distinguish individual household registration [19,20].
+                                             In summary, the differences in the functional and environmental characteristics of
+                                       wholesale markets, sports stadiums, transportation hubs, subway stations, and other places
+                                       are the main reasons for the spatial differences in crime location choices between migrant
+                                       robbers and native robbers. In other words, the preference of crime location choice between
+                                       them is determined by the difference of the functional or environmental characteristics
+                                       of these places that are attractive to them, as well as their different awareness space in
+                                       these places, resulting in different crime location choice preferences. Alternatively, such
+                                       spatial differences may also be determined by differences in their characteristics, behavioral
+                                       preferences, social experiences, and means of committing crimes. Migrant victims may
+                                       be less inclined to report their victimization incidences, leading to under-representation
+                                       of the offenders tied to these incidences. Previous studies have reported such under-
+                                       representation issues. For example, based on an official source (police) and an unofficial
+                                       source (hospital) from Campinas, Brazil, Melo et al. found rapes have different spatial
+                                       patterns, as only a few rapes are reported to the authorities [73]. The representativeness of
+                                       the data needs to be validated in future studies.
+                                             Based on the findings of this paper, it is recommended that crime prevention and
+                                       control should be strengthened by the deployment of security facilities in wholesale mar-
+                                       kets, sports stadiums, <mark style="background-color: lightcoral; font-weight: bold;">unoccupied rental rooms</mark>, <mark style="background-color: lightcoral; font-weight: bold;">and small hotels</mark>, especially those in urban
+                                       villages or near the wholesale markets.
+
+                                       Author Contributions: Conceptualization, Dongping Long and Lin Liu; methodology, Dongping Long;
+                                       software, Dongping Long; validation, Dongping Long and Lin Liu; formal analysis, Dongping Long and
+                                       Lin Liu; investigation, Dongping Long and Lin Liu; resources, Lin Liu; data curation, Dongping Long;
+                                       writing—original draft preparation, Dongping Long and Lin Liu; writing—review and editing,
+                                       Dongping Long and Lin Liu; visualization, Dongping Long; supervision, Lin Liu; project adminis-
+                                       tration, Dongping Long and Lin Liu; funding acquisition, Dongping Long and Lin Liu. All authors
+                                       have read and agreed to the published version of the manuscript.
+                                       Funding: This research was funded by the National Natural Science Foundation of China under
+                                       a Young Scientists Fund (No. 41901172), a Key Program (No. 41531178), and the Natural Science
+                                       Foundation of Guangdong Province (No. 2014A030312010).
+                                       Institutional Review Board Statement: Not applicable.
+                                       Informed Consent Statement: Not applicable.
+                                       <mark style="background-color: lightcoral; font-weight: bold;">Data availability</mark> Statement: Because the agreement is limited, crime data and mobile phone data
+                                       do not allow to disclose the source and details. POI data and traffic road network vector map
+                                       data is from <mark style="background-color: orange; font-weight: bold;">Daodaotong Map</mark> (https://www.ritu.cn/, accessed on 6 November 2021), social and
+                                       economic data are from the official website of the <mark style="background-color: orange; font-weight: bold;">National Bureau of Statistics of China</mark> (http:
+                                       //www.stats.gov.cn/tjsj/pcsj/rkpc/6rp/indexch.htm, accessed on 6 November 2021).
+                                       Conflicts of Interest: The authors declare no conflict of interest.
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                               14 of 16
+
+
+
+
+References
+1.    Townsley, M.; Birks, D.; Bernasco, W.; Ruiter, S.; Johnson, S.D.; White, G.; Baum, S. Burglar Target Selection: A Cross-national
+      Comparison. J. Res. Crime Delinq. 2015, 52, 3–31. [CrossRef]
+2.    Long, D.; Liu, L.; Feng, J.; Zhou, S.; Jing, F. Assessing the Influence of Prior on Subsequent Street Robbery Location Choices: A
+      Case Study in ZG City, China. Sustainability 2018, 10, 1818. [CrossRef]
+3.    He, Z.; Deng, M.; Cai, J.; Xie, Z.; Guan, Q.; Yang, C. Mining spatiotemporal association patterns from complex geographic
+      phenomena. Int. J. Geogr. Inf. Sci. 2020, 34, 1162–1187. [CrossRef]
+4.    Eck, J.E.; Weisburd, D. Crime and Place; Criminal Justice Press: Monsey, NY, USA, 1995; Volume 4, pp. 1–34.
+5.    Weisburd, D.; Bernasco, W.; Bruinsma, G.J.N. Putting Crime in Its Place: Units of Analysis in Geographic Criminology; Springer: New
+      <mark style="background-color: yellow; font-weight: bold;">York</mark>, NY, USA, 2009; pp. 1–254.
+6.    Jiang, C.; Liu, L.; Qin, X.; Zhou, S.; Liu, K. Discovering Spatial-Temporal Indication of Crime Association (STICA). ISPRS Int. J.
+      Geo-Inf. 2021, 10, 67. [CrossRef]
+7.    Wang, Z.; Zhang, H. Construction, Detection, and Interpretation of Crime Patterns over Space and Time. ISPRS Int. J. Geo-Inf.
+      2020, 9, 339. [CrossRef]
+8.    Cohen, L.E.; Felson, M. Social change and crime rate trends: A routine activity approach. Am. Sociol Rev. 1979, 44, 588–608.
+      [CrossRef]
+9.    Xu, C.; Liu, L.; Zhou, S.H.; Ye, X.Y. The spatio-temporal patterns of street robbery in DP peninsula. Acta Geogrephica Sin. <mark style="background-color: lightcoral; font-weight: bold;">2013</mark>, 68,
+      1714–1723. [CrossRef]
+10.   Bernasco, W.; Block, R.; Ruiter, S. Go where the money is: Modeling street robbers’ location choices. J. Econ. Geogr. 2012, 13,
+      119–143. [CrossRef]
+11.   Bernasco, W.; Block, R. Where offenders choose to attack: A discrete choice model of robberies in Chicago. Criminology 2009, 47,
+      93–130. [CrossRef]
+12.   Deakin, J.; Smithson, H.; Spencer, J.; Medina-Ariza, J. Taxing on the streets: Understanding the methods and process of street
+      robbery. Crime Prev. <mark style="background-color: yellow; font-weight: bold;">community</mark> Saf. 2007, 9, 52–67. [CrossRef]
+13.   Tang, Y.; Zhu, X.; Guo, W.; Ye, X.; Hu, T.; Fan, Y.; Zhang, F. Non-Homogeneous Diffusion of Residential Crime in Urban China.
+      Sustainability <mark style="background-color: lightcoral; font-weight: bold;">2017</mark>, 9, 934. [CrossRef]
+14.   Wang, D.; Li, F.; Chai, Y. Activity Spaces and Sociospatial Segregation in Beijing. Urban. Geogr. 2012, 33, 256–277. [CrossRef]
+15.   Luan, X.; Cheng, L.; Song, Y.; Zhao, J. Better understanding the choice of travel mode by urban residents: New insights from the
+      catchment areas of rail transit stations. Sustain. Cities Soc. 2020, 53, 1–14. [CrossRef]
+16.   Tan, Y.; Chai, Y.; Chen, Z. Social—Contextual exposure of ethnic groups in urban China: From residential place to activity space.
+      Popul. Space Place 2019, 25, e2248. [CrossRef]
+17.   Feng, J.; Liu, L.; Long, D.; Liao, W. An Examination of Spatial Differences between Migrant and Native Offenders in Committing
+      Violent Crimes in a Large Chinese City. ISPRS Int. J. Geo-Inf. 2019, 8, 119. [CrossRef]
+18.   Brantingham, P.L.; Brantingham, P.L. Nodes, paths, and edge considerations on the complexity of crime and the physical
+      environment. J. Environ. Psychol. 1993, 13, 3–28. [CrossRef]
+19.   Long, D.; Liu, L.; Xu, M.; Feng, J.; Chen, J.; He, L. Ambient population and surveillance cameras: The guardianship role in street
+      robbers’ crime location choice. Cities 2021, 115, 103223. [CrossRef]
+20.   Bernasco, W.; Ruiter, S.; Block, R. Do Street Robbery Location Choices Vary Over Time of Day or Day of Week? A Test in Chicago.
+      J. Res. Crime Delinq. 2017, 54, 244–275. [CrossRef]
+21.   Boivin, R. Routine activity, population(s) and crime: <mark style="background-color: lightcoral; font-weight: bold;">spatial heterogeneity</mark> and conflicting Propositions about the neighborhood
+      crime-population link. Appl. Geogr. 2018, 95, 79–87. [CrossRef]
+22.   Johnson, S.D.; Summers, L. Testing Ecological Theories of Offender Spatial Decision Making Using a Discrete Choice Model.
+      Crime Delinq. 2015, 61, 454–480. [CrossRef]
+23.   Liu, L.; Lan, M.; Eck, J.E.; Kang, E.L. Assessing the effects of bus stop relocation on street robbery. Comput. Environ. Urban. Syst.
+      2020, 80, 101455. [CrossRef]
+24.   Liu, L.; Zhou, H.; Lan, M.; Wang, Z. Linking Luojia 1-01 nightlight imagery to urban crime. Appl. Geogr. 2020, 125, 102267.
+      [CrossRef]
+25.   Long, D.; Liu, L.; Feng, J.; Song, G.; He, Z.; Cao, J. Comparisons of the community environment effects on <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Burglary</mark></mark> and
+      outdoor-<mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Theft</mark></mark>: A case study of ZH peninsula in ZG city. Aata Geogr. Sin. 2017, 72, 341–355. [CrossRef]
+26.   Xu, R.; Xiong, X.; Abramson, M.J.; Li, S.; Guo, Y. Association between ambient temperature and sex offense: A case-crossover
+      study in seven large US cities, 2007–2017. Sustain. Cities Soc. 2021, 69, 102828. [CrossRef]
+27.   He, Z.; Deng, M.; Xie, Z.; Wu, L.; Chen, Z.; Pei, T. Discovering the joint influence of urban facilities on crime occurrence using
+      spatial co-location pattern mining. Cities 2020, 99, 102612. [CrossRef]
+28.   Brantingham, P.J.; Brantingham, P.L. Environmental Criminology; Sage Publications: Beverly Hills, CA, USA, 1981; pp. 27–54.
+29.   Curtis-Ham, S.; Bernasco, W.; Medvedev, O.N.; Polaschek, D. A framework for estimating crime location choice based on
+      awareness space. Crime Sci. 2020, 9, 1–14. [CrossRef]
+30.   Xiao, L.; Liu, L.; Song, G.; Ruiter, S.; Zhou, S. Journey-to-Crime Distances of Residential Burglars in China Disentangled: Origin
+      and Destination Effects. ISPRS Int. J. Geo-Inf. 2018, 7, 325. [CrossRef]
+31.   Andresen, M.A.; Frank, R.; Felson, M. Age and the distance to crime. Criminol. Crim. Justice 2014, 14, 314–333. [CrossRef]
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                                   15 of 16
+
+
+
+
+32.   Chainey, S.; Austin, B.; Holland, F. <mark style="background-color: yellow; font-weight: bold;">London</mark> Borough of Harrow: Insights into the Analysis and Patterns of Offender Journeys to Crime;
+      InfoTech Enterprises Europe: London, UK, 2001.
+33.   Bichler, G.; Christie-Merrall, J.; Sechrest, D. Examining Juvenile Delinquency within Activity Space: Building a Context for
+      Offender Travel Patterns. J. Res. Crime Delinq. <mark style="background-color: lightcoral; font-weight: bold;">2011</mark>, 48, 472–506. [CrossRef]
+34.   Pettiway, L.E. Copping crack: The travel behavior of crack users. Justice Q. 1995, 12, 499–<mark style="background-color: lightblue; font-weight: bold;">524</mark>. [CrossRef]
+35.   Hesseling, R.B.P. Using Data on Offender Mobility in Ecological Research. J. Quant. Criminol 1992, 8, 95–112. [CrossRef]
+36.   Liu, L.; Feng, J.; Ren, F.; Xiao, L. Examining the relationship between neighborhood environment and residential locations of
+      juvenile and adult migrant burglars in China. Cities 2018, 82, 10–18. [CrossRef]
+37.   Han, D. The Hukou System and China’s Rural Development. J. Dev. Areas 1999, 33, 355–378. [CrossRef]
+38.   Zhu, L. The Hukou System of the People’s Republic of China: A Critical Appraisal under International Standards of Internal
+      Movement and Residence. Chin. J. Int. Law 2003, 2, 519–565. [CrossRef]
+39.   Curran, D.J. Economic reform, the floating population, and crime: The transformation of social control in China. J. Contemp. Crim.
+      Justice 1998, 14, <mark style="background-color: lightblue; font-weight: bold;">262</mark>–280. [CrossRef]
+40.   Qi, Z. Rural to urban migration, crime, and sentencing disparities in Guangdong, China. Int. J. Law Crime Justice 2020, 63, 1–12.
+      [CrossRef]
+41.   Shen, Y.; Zhong, H. Rural-to-Urban Migration and Juvenile Delinquency in Urban China: A Social Control Perspective. Asian J.
+      Criminol. 2018, 13, 207–229. [CrossRef]
+42.   Li, Y. Spatio-Temporal Change of Crime at Provincial Scale in China—Since the Economic Reform. Asian J. Criminol. 2017, 12,
+      303–340. [CrossRef]
+43.   Rossmo, D.K. Geographic Profiling; CRC Press: Boca Raton, FL, USA, 2000.
+44.   Townsley, M.; Sidebottom, A. All offenders are equal, but some are more equal than others: Variation in journeys to crime
+      between offenders. Criminology 2010, 48, 897–917. [CrossRef]
+45.   Andresen, M.A. The Ambient Population and Crime Analysis. Prof. Geogr. 2011, 63, <mark style="background-color: lightblue; font-weight: bold;">193</mark>–212. [CrossRef]
+46.   Hanaoka, K. New insights on relationships between street crimes and ambient population: Use of hourly population data
+      estimated from mobile phone users locations. Environ. Plan. B Plan. Des. 2018, 45, 295–311. [CrossRef]
+47.   Hipp, J.R.; Bates, C.; Lichman, M.; Smyth, P. Using Social Media to Measure Temporal Ambient Population: Does it Help Explain
+      Local Crime Rates? Justice Q. 2019, 36, 718–748. [CrossRef]
+48.   Song, G.; Liu, L.; Bernasco, W.; Xiao, L.; Zhou, S.; Liao, W. Testing Indicators of Risk Populations for <mark style="background-color: orange; font-weight: bold;">Theft from the person</mark> across
+      Space and Time: The Significance of Mobility and Outdoor Activity. Ann. Am. Assoc. Geogr. 2018, 108, 1370–1388. [CrossRef]
+49.   Bernasco, W.; Block, R. Robberies in Chicago: A Block-Level Analysis of the Influence of Crime Generators, Crime Attractors, and
+      Offender Anchor Points. J. Res. Crime Delinq. 2011, 48, 33–57. [CrossRef]
+50.   Brantingham, P.L.; Brantingham, P.J. Criminality of place: Crime generators and crime attractors. Eur. J. Crim. Policy Res. 1995, 3,
+      5–26. [CrossRef]
+51.   Kinney, J.B.; Brantingham, P.L.; Wuschke, K.; Kirk, M.G.; Brantingham, P.J. Crime Attractors, Generators and Detractors: Land
+      Use and Urban Crime Opportunities. Built Environ. 2008, 34, 62–74. [CrossRef]
+52.   Benson, B.L. The allocation of police. In Handbook on the Economics of Crime; Benson, B.L., Zimmerman, P.R., Eds.; Edward Elgar:
+      Cheltenham, UK, 2010; pp. 184–217.
+53.   Byeon, J.; Kim, I.; Lee, D. Protest and property crime: Political use of police resources and the deterrence of crime. Public Choice
+      2018, 175, 181–196. [CrossRef]
+54.   Brantingham, P.L.; Brantingham, P.J. Environment, routine and situation: Toward a pattern theory of crime. In Routine Activity
+      and Rational Choice: Advances in Criminological Theory; Clarke, R.V., Felson, R., Eds.; Transaction Publishers: New Brunswick, NJ,
+      USA, 1993; Volume 5, pp. 259–294.
+55.   Johnson, S.D. How do offenders choose where to offend Perspectives from animal foraging. Leg. Criminol. Psych. 2014, 19,
+      193–210. [CrossRef]
+56.   Shaw, C.R.; McKay, H.D. Juvenile Delinquency and Urban Areas: A Study of Rates of Delinquency in Relation to Differential Characteristics
+      of Local <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">Communities</mark></mark> in American Cities; University of Chicago Press: Chicago, IL, USA, 1942.
+57.   Bursik, R.J. Social disorganization and theories of crime delinquency: Problems and prospects. Criminology 1988, 26, 519–552.
+      [CrossRef]
+58.   Hirschfield, A.; Bowers, K.J. The Effect of Social Cohesion on Levels of Recorded Crime in Disadvantaged Areas. Urban Stud.
+      <mark style="background-color: lightcoral; font-weight: bold;">1997</mark>, 34, 1275–1295. [CrossRef]
+59.   Sampson, R.J.; Raudenbush, S.W.; Earls, F.J. Neighborhoods and Violent Crime: A Multilevel Study of Collective Efficacy. Science
+      1997, 277, 918–924. [CrossRef]
+60.   Coleman, J.S. Social Capital in the Creation of Human Capital. Am. J. Sociol. 1988, 94, 95–121. [CrossRef]
+61.   Weisburd, D.; Groff, E.R.; Yang, S. Understanding and Controlling Hot Spots of Crime: The Importance of Formal and Informal
+      Social Controls. Prev. Sci. 2014, 15, 31–43. [CrossRef]
+62.   Braga, A.A.; Clarke, R.V. Explaining High-Risk Concentrations of Crime in the City: Social Disorganization, Crime Opportunities,
+      and Important Next Steps. J. Res. Crime Delinq. 2014, 51, 480–498. [CrossRef]
+63.   Galster, G.; Santiago, A. Neighbourhood ethnic composition and outcomes for low-income Latino and African American children.
+      Urban. Stud. 2017, 54, 482–<mark style="background-color: lightblue; font-weight: bold;">500</mark>. [CrossRef]
+ ISPRS Int. J. Geo-Inf. 2021, 10, 771                                                                                              16 of 16
+
+
+
+
+64.   Liu, L.; Zhang, C.; Feng, J.; Xiao, L.; He, Z.; Zhou, S. The spatial-temporal distribution and influencing factors of fraud crime in
+      ZG city, China. Acta Geogr. Sin. 2017, 72, 315–328.
+65.   Bernasco, W.; Nieuwbeerta, P. How do residential burglars select target areas? A new approach to the analysis of criminal location
+      choice. Br. J. Criminol. 2005, 45, 296–315. [CrossRef]
+66.   Song, Y.; Zenou, Y.; Ding, C. Let’s Not Throw the Baby Out with the Bath Water: The Role of Urban Villages in Housing Rural
+      Migrants in China. Urban. Stud. 2008, 45, 313–330. [CrossRef]
+67.   Xiao, L.; Ruiter, S.; Liu, L.; Song, G.; Zhou, S. Burglars blocked by barriers? The impact of physical and social barriers on
+      residential burglars’ target location choices in China. Comput. Environ. Urban. Syst. 2021, 86, 101582. [CrossRef]
+68.   Sampson, R.J.; Groves, W.B. Community Structure and Crime: Testing Social-Disorganization. Am. J. Sociol. 1989, 94, 156–174.
+      [CrossRef]
+69.   Cahill, M.E.; Mulligan, G.F. The Determinants of Crime in Tucson, Arizona. Urban. Geogr. 2003, 24, 582–610. [CrossRef]
+70.   Townsley, M.; Birks, D.; Ruiter, S.; Bernasco, W.; White, G. Target Selection Models with Preference Variation Between Offenders.
+      J. Quant. Criminol. 2016, 32, <mark style="background-color: lightblue; font-weight: bold;">283</mark>–<mark style="background-color: lightblue; font-weight: bold;">304</mark>. [CrossRef]
+71.   Johnson, S.D.; Bowers, K.J. Permeability and Burglary Risk: Are Cul-de-Sacs Safer? J. Quant. Criminol. 2010, 26, 89–111. [CrossRef]
+72.   Jacobs, J. The Death and Life of Great American Cities; Random <mark style="background-color: yellow; font-weight: bold;">house</mark>: New York, NY, USA, 1961.
+73.   Melo, S.N.; Boivin, R.; Morselli, C. Spatial dark figures of rapes: (In)Consistencies across police and hospital data. J. Environ.
+      Psychol. 2020, 68, 101393. [CrossRef]
+</div>
+      </body>
+      </html>

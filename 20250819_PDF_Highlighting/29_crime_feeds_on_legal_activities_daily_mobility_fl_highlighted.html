@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+        <title>Highlighted: 29_crime_feeds_on_legal_activities_daily_mobility_fl</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; }
+          .header { background: #f0f0f0; padding: 20px; margin-bottom: 20px; }
+          .legend { background: #fff; border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+          .legend-item { display: inline-block; margin-right: 20px; }
+          .content { white-space: pre-wrap; }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h1>Highlighted PDF: 29_crime_feeds_on_legal_activities_daily_mobility_fl</h1>
+          <p>Processed on: 2025-08-19</p>
+          <p>Total highlighted terms: 96</p>
+        </div>
+        
+        <div class="legend">
+          <h3>Legend:</h3>
+          <div class="legend-item"><mark style="background-color: yellow;">Geographic</mark></div>
+          <div class="legend-item"><mark style="background-color: lightblue;">Quantitative</mark></div>
+          <div class="legend-item"><mark style="background-color: lightgreen;">Methods</mark></div>
+          <div class="legend-item"><mark style="background-color: orange;">Crime-related</mark></div>
+          <div class="legend-item"><mark style="background-color: plum;">Statistical</mark></div>
+          <div class="legend-item"><mark style="background-color: lightcoral;">Other</mark></div>
+        </div>
+        
+        <div class="content">Journal of Quantitative Criminology (2019) 35:831–854
+https://doi.org/10.1007/s10940-019-09406-z
+
+    ORIGINAL PAPER
+
+
+
+Crime Feeds on Legal Activities: Daily <mark style="background-color: plum; font-weight: bold;">mobility flows</mark> Help
+to Explain Thieves’ Target Location Choices
+
+Guangwen Song1 · Wim Bernasco2,3                · Lin Liu1,4 · Luzi Xiao1 · Suhong Zhou5 ·
+Weiwei Liao5
+
+Published online: 13 February 2019
+© The Author(s) 2019
+
+
+Abstract
+Objective According to routine activity <mark style="background-color: lightcoral; font-weight: bold;">Theory</mark> and crime pattern theory, crime feeds on
+the legal routine activities of offenders and unguarded victims. Based on this assumption,
+the present study investigates whether daily mobility flows of the <mark style="background-color: lightcoral; font-weight: bold;">urban</mark> population help
+predict where individual thieves commit crimes.
+Methods Geocoded tracks of mobile phones are used to estimate the intensity of popula-
+tion mobility between pairs of <mark style="background-color: lightblue; font-weight: bold;">1616</mark> <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">Communities</mark></mark> in a large city in <mark style="background-color: yellow; font-weight: bold;">China</mark>. Using data on
+<mark style="background-color: lightblue; font-weight: bold;">3436</mark> police-<mark style="background-color: lightcoral; font-weight: bold;">recorded</mark> thefts from the person, we apply discrete choice models to assess
+whether mobility flows help explain where offenders go to perpetrate crime.
+Results Accounting for the presence of crime generators and distance to the offender’s
+home location, we find that the stronger a <mark style="background-color: yellow; font-weight: bold;">community</mark> is connected by population flows to
+where the offender lives, the larger its probability of being targeted.
+Conclusions The mobility flow measure is a useful addition to the estimated effects of dis-
+tance and crime generators. It predicts the locations of thefts much better than the presence
+of crime generators does. However, it does not replace the role of distance, suggesting that
+offenders are more spatially restricted than others, or that even within their activity spaces
+they prefer to offend near their homes.
+
+Keywords Crime location choice · <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Theft</mark></mark> from the person</mark> · Mobility · Routine activities ·
+China
+
+
+
+
+* Lin Liu
+  Lin.Liu@uc.edu
+1
+      Center of Geo‑Informatics for Public Security, School of Geographical Sciences, Guangzhou
+      University, Guangzhou, China
+2
+      <mark style="background-color: yellow; font-weight: bold;">Netherlands</mark> Institute for the Study of Crime and Law Enforcement (NSCR), P.O.
+      Box 713041008BH, <mark style="background-color: yellow; font-weight: bold;">Amsterdam</mark>, The Netherlands
+3
+      Department of Spatial Economics, School of Business and Economics, Vrije Universiteit
+      Amsterdam, Amsterdam, The Netherlands
+4
+      Department of Geography, University of Cincinnati, Cincinnati, OH, USA
+5
+      Center of Integrated Geographic Information Analysis, School of Geography and Planning, Sun
+      Yat-sen University, Guangzhou, China
+
+
+                                                                                              13
+                                                                                      Vol.:(0123456789)
+ 832                                             Journal of Quantitative Criminology (2019) 35:831–854
+
+
+Introduction
+
+Opportunity theories of crime assume that most crimes take place while the victims and
+the offenders are involved in non-criminal routine activities. Even crimes that are premed-
+itated and that are not perpetrated during the offenders’ routine activities, are neverthe-
+less supposed to be informed by what offenders heard, saw, read or picked up otherwise
+during non-criminal daily routines. In their introduction of routine activity theory, Cohen
+and Felson (1979) summarize this position by stating that “illegal activities feed upon the
+legal activities of everyday life” (p. 588). In outlining crime pattern theory, Brantingham
+and Brantingham (2008) take the same position by stating that “what shapes non-criminal
+activities helps shape criminal activities” (p. 79). The present study aims to test this key
+assumption of opportunity theories. To do so, it puts front stage the daily mobility flows
+of the urban population as measured by the tracks of mobile phones and assesses whether
+these mobility flows help predict where individual thieves commit crimes. The key ques-
+tion is thus one that precisely describes the criminal location choice approach (Bernasco
+and Nieuwbeerta <mark style="background-color: lightcoral; font-weight: bold;">2005</mark>): Given the home location of an offender motivated to commit a
+crime and given the locations of all potential targets, can we understand and predict where
+the offender commits the offense? Whereas prior crime location studies have included only
+the home-target distance (and occasionally also measures of physical and <mark style="background-color: orange; font-weight: bold;">social</mark> barriers) to
+explain crime location choice (Ruiter <mark style="background-color: lightcoral; font-weight: bold;">2017</mark>), the present study explores whether the expla-
+nation can be improved by considering the movement patterns of the general population as
+a ‘spatial template’ for the journey to crime.
+
+
+
+Background
+
+In trying to understand and predict where individual offenders go to commit crimes, it is
+important to consider their journey to crime, which links their home location to where
+they commit crime (Rengert 2004). Two empirical observations seem undisputed. The
+first observation is that the frequency of crime displays distance decay: it decreases with
+the distance from the offender’s home (Rossmo 2000). The median distance between
+the offender’s home and the crime location is no more than a mile, with some variation
+observed across crime types and offender categories (Townsley and Sidebottom 2010).
+Research in human geography has demonstrated that distance decay also characterizes non-
+criminal routine activities like working, visiting friends or shopping. The distribution of
+daily human travel distances, including presumably those of offenders, follows a power law
+function: Most of our trips are over short distances whereas occasionally we take longer
+trips (Gonzalez et al. 2008). Thus, legal and illegal trips both display a distance decay pat-
+tern. Although distance from home is not an explicit element of opportunity theories, its
+empirical relevance is evident.
+    The second undisputed observation about crime locations is that crime is geographi-
+cally concentrated at and around crime generators, micro-places where many people
+converge on a regular basis to pursue similar or complementary activities (Brantingham
+and Brantingham 1995). Crime generators include transit stations, shopping centers,
+<mark style="background-color: orange; font-weight: bold;">schools</mark>, sports venues, entertainment areas and <mark style="background-color: orange; font-weight: bold;">other</mark> types of facilities. Crime genera-
+tors produce crime for two reasons. First, because they are popular destinations for many
+legal activities, they are known to a large proportion of the population, including poten-
+tial offenders. They are an element of their activity space. Second, these micro-places
+
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                       833
+
+
+often provide specific opportunities for crime, especially when they are being visited
+by large crowds of people. For example, shops provide opportunities for shoplifters,
+distracted passengers at <mark style="background-color: plum; font-weight: bold;">subway stations</mark> are easy targets for pickpockets, and intoxi-
+cated patrons leaving bars are vulnerable for <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Robbery</mark></mark> (Bernasco and Block <mark style="background-color: lightcoral; font-weight: bold;">2011</mark>). In
+sum, crime generators produce crime because they are widely known and because they
+provide abundant opportunities. Empirical evidence thus demonstrates that offenders
+generally commit crimes around busy places located within at most a few miles from
+their homes, depending on the crime type, the size of the city and the convenience of
+available transportation.
+   These two observations on distance decay and crime generators, however, do not deter-
+mine with much precision where individual offenders perpetrate their crimes. The area
+within one mile of an offender’s home already covers 3.14 square miles. The area within
+two miles covers no less than 12.57 square miles. Distance does not tell us in which direc-
+tion offenders prefer to go. Moreover, most urban landscapes contain a multitude of busy
+places within a few miles from anywhere.
+   Therefore, understanding where offenders commit crimes requires more than the two
+‘stylized facts’ about distance decay and crime generators. As emphasized in the opening
+lines of this article, opportunity theories of crime assert that most crimes are perpetrated
+during, or are informed by, routine activities pursued without explicit criminal intentions.
+Thus, to better understand where offenders commit crimes, we need measures to inform us
+about their whereabouts during their legal daily routine activities.
+   Unfortunately, systematic information about the places that offenders visit during non-
+criminal daily routines is not easily available. Only two small-scale studies have addressed
+the daily mobility of offenders. Rossmo et al. (2012) used data of an electronic monitor-
+ing system that tracked continuously in real-time the whereabouts of parolees and offend-
+ers on bail under community supervision. Griffiths et al. (2017) used <mark style="background-color: orange; font-weight: bold;">Mobile phone data</mark>
+records of terrorists to track their visits to different locations and to examine their visiting
+frequency distributions in the months preceding the attack they were involved in.
+   Fortunately, however, the mobility patterns of the general population provide a template
+for the daily mobility of offenders, and as a direct consequence for their journeys-to-crime
+(Boivin and D’Elia 2017). The mobility patterns of the population could thus help pre-
+dict where offenders commit crimes, one of the main aims of this study. We measure the
+whereabouts of a large fraction of the population of a huge city in China by geo-tracking
+their mobile phones during a full day. This allows us to measure daily mobility flows of the
+general population as a proxy measure of the daily mobility of the offender population, and
+to include this measure as a covariate in a model of crime location choice, together with
+distance and the presence of crime generators.
+   Research on crime and law enforcement in China receives increasing scholarly attention
+internationally. The cultural distance between China and western industrialized countries
+presents an excellent opportunity to test whether theories developed in western industrial-
+ized countries can be generalized to other contexts, in particular China. This opportunity
+also applies to <mark style="background-color: orange; font-weight: bold;">environmental</mark> criminology, because its main theoretical frameworks—
+routine activity theory and crime pattern theory—have been developed and tested almost
+exclusively in a western context. A recent exception is a study by Long et al. (2018), who
+demonstrated that urban street robbers in China tend to return to locations of their prior
+offences to commit subsequent robberies, confirming prior findings from the United King-
+dom and The Netherlands. Another exception is a study showing that Chinese burglars who
+live in communities with a higher average rent, a denser road network and a higher percent-
+age of local residents, commit <mark style="background-color: orange; font-weight: bold;">burglaries</mark> at shorter distances from their homes (Xiao et al.
+
+                                                                                    13
+ 834                                            Journal of Quantitative Criminology (2019) 35:831–854
+
+
+2018). However, Chinese studies in environmental criminology are still rare, and one of the
+contributions of the present paper is to add to this developing literature.
+    In the present paper, we focus exclusively on ‘theft from the person’ or TFP, a non-vio-
+lent <mark style="background-color: orange; font-weight: bold;">property</mark> offense committed in public or semi-public places, excluding burglaries and
+thefts from vehicles. Although simple theft is a common crime, it has mostly been ignored
+in the crime location choice literature.
+
+Research Question
+
+In sum, the main research question of the present study is whether daily mobility flows
+of the general population, as measured by tracked mobile phone data, help us explain and
+predict where individual offenders commit thefts from the person. If the answer is positive,
+an additional question is whether the inclusion of mobility flows adds to the effects of the
+distance and crime generators, or rather replaces them. In other words, we are interested
+in the extent to which the effects of mobility flows substitute or complement the effects of
+distance and of crime generators.
+    Our findings not only add to the testing and development of opportunity theories, they
+also contribute to a growing body of research that aims to test in other cultures and on
+other continents crime theories that have been developed in the USA, Europe and Aus-
+tralia. With its high pace of urbanization and economic, cultural and social change, China
+seems like an excellent context to test and further develop opportunity theories of crime.
+
+
+Theory and Prior Findings
+
+The present section will provide a brief overview of the role of distance decay, awareness
+space and crime generators in the literature on crime location choice. It will subsequently
+address the potential role of the daily mobility of the urban population in modeling and
+understanding where offenders commit thefts from the person.
+
+Crime Location Choice
+
+Crime location choice refers to an offender’s choice of where to perpetrate a crime (two
+recent reviews are Bernasco and Ruiter 2014; Ruiter 2017). The discrete spatial choice
+model was introduced by Bernasco and Nieuwbeerta (2005) as a method to analyze
+crime location choices using individual-level offender data. The model is rooted in a for-
+mal theory of discrete choice known as random utility maximization in micro-economics
+that is consistent with rational choice as applied to offending criminology (Bernasco et al.
+2017b; Cornish and Clarke 1986). The theory asserts that offenders choose crime locations
+rationally, selecting those locations that maximize their expected rewards and minimize
+their expected costs and risks. For example, residential burglars would be expected to tar-
+get accessible areas that are affluent and where formal and informal guardianship is low
+(Bernasco and Nieuwbeerta 2005), and street robbers would by hypothesized to seek select
+crime locations nearby their own homes where they are likely to encounter vulnerable vic-
+tims who carry cash or other valuables (Bernasco et al. <mark style="background-color: lightcoral; font-weight: bold;">2013</mark>). These and other factors
+assumed to affect crime location choice will be discussed below, in sections “Distance and
+Awareness Space” to “Mobility Flows”, with a special focus of offenders committing theft
+from the person.
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                      835
+
+
+Distance and Awareness Space
+
+Of all factors that affect crime location choices, distance is by far the most influential. All
+sixteen crime location choice studies reviewed by Ruiter (2017) included a strong and sig-
+nificant negative effect of distance on crime. The theoretical meaning of distance is disput-
+able, as it could be a merely proxy measure for other concepts, such as the cost of travel.
+    In support of the argument that the time and money costs of travel are more funda-
+mental factors than distance, some studies have demonstrated the crime-reducing effects
+of physical barriers other than distance. Clare et al. (2009) studied the role of barriers and
+connectors on destinations chosen by Australian burglars and found them to have a strong
+influence on offenders’ decisions on where to commit burglaries. Peeters and Elffers (2010)
+assessed the extent to which highways, railroads, <mark style="background-color: plum; font-weight: bold;">parks</mark> and canals reduce the number of
+crime trips across these physical barriers, but found only a small effect. Townsley et al.
+(2015) demonstrated that for adult offenders, but not for minor offenders, the accessibility
+of a target via the street network increased its likelihood of becoming a target of theft from
+a vehicle.
+    Distance might also be considered a proxy measure of the offenders’ awareness space.
+Because all human mobility, both legal and illegal, displays distance decay, their routine
+activities help shape their awareness space (Brantingham and Brantingham 2008). Offend-
+ers are generally more familiar with places nearby their residence than with more distant
+places. As a consequence, they must be more knowledgeable of criminal opportunities in
+nearby places than in distant places. Indeed, some location choice research has suggested
+that offenders are much more likely to offend within their own awareness space than else-
+where. Arguing that for various reasons offenders might still be familiar with their former
+areas of residence, it has been demonstrated that they are more likely to offend near their
+former homes than elsewhere (Bernasco and Kooistra 2010; Lammers et al. 2015; Menting
+et al. <mark style="background-color: lightcoral; font-weight: bold;">2016</mark>). It has also been established that they are more likely to offend near the homes
+of family members (Menting et al. 2016).
+    Offenders may also be familiar with places of prior criminal experiences. They have
+a tendency to return to places where they previously committed crimes (Bernasco et al.
+2015; Lammers et al. 2015), a finding congruent with previous explanations of repeat vic-
+timization and near repeat victimization based on victimization data only (Johnson et al.
+2007; Townsley et al. 2003).
+    Establishing a reduced <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">Burglary</mark></mark> risk in properties along cul-de-sacs, Johnson and Bow-
+ers (2010) suggested that their reduced permeability might make cul-the-sacs unfamiliar
+places for non-residents, including most potential motivated offenders. Frith et al. (2017)
+use the physical layout of the street network to generate alternative measures of offender
+spatial awareness, finding the reduced accessibility in the street network reduces the likeli-
+hood of <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: lightcoral; font-weight: bold;">street segments</mark></mark> being targeted.
+    In sum, prior research has empirically demonstrated that offenders prefer nearby loca-
+tions and locations that are part of their awareness space, and thus both proximity and spa-
+tial awareness are important criteria in offenders’ location choices.
+
+
+
+Crime Generators
+
+Crime generators and crime attractors are concepts in crime pattern theory that poten-
+tially play an important role in crime location choices. They are facilities that have
+
+
+                                                                                   13
+ 836                                             Journal of Quantitative Criminology (2019) 35:831–854
+
+
+elevated levels of crime because they bring together crowds either continuously or at
+certain moments during the day or the week (Brantingham and Brantingham 1995;
+Kinney et al. 2008). Crime generators are places and facilities where all kinds of peo-
+ple go to perform legal daily activities. Crime attractors have been defined as places
+and facilities that have a reputation of providing opportunities for crime, which makes
+them particularly attractive to motivated offenders (and unattractive to some potential
+victims) (Brantingham and Brantingham 1995). Because crime attractors share many
+features with crime generators, and because the reputational element in their definition
+may be difficult to evaluate objectively, especially in the context of a non-western cul-
+ture, in this paper we will subsume crime attractors under the more general label of
+crime generators.
+   Although it may be impossible to enumerate all types of facilities that can operate as
+crime generators, some stand out as being particularly attractive for some types of crime,
+and they will be discussed in the present section. We describe elements common to certain
+classes of facility, although even amongst the same class (e.g. bars) there exists consider-
+able heterogeneity making some of them risky places but others not (Eck et al. 2007).
+   High schools have been associated with elevated crime rates in part because of the
+assumption that the students are more likely than people of younger or older ages to be
+involved in crime as offenders or victims. A concentration of adolescents around high
+schools would possibly generate a concentration of crime before and after school hours
+(Roncek and Faggiani 1985; Roncek and LoBosco 1983). Near elementary schools, oppor-
+tunities for TFP are abundant when it is crowded because parents, grandparents and other
+caretakers drop off the children in the morning, and also when they pick them up later in
+the afternoon.
+   Research on <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">street robbery</mark></mark> has demonstrated that proximity to small scale businesses,
+including grocery stores, corner stores, gas stations, barber shops and fast-food restau-
+rants, increases the risk of street robbery (Bernasco and Block 2011; Bernasco et al. 2017a;
+Haberman and Ratcliffe 2015). To the extent that these are the types of businesses where
+cash payments are more common than non-cash payment modes, customers may be likely
+to carry cash. Because street robbery and TFP are similar offenses in terms of location
+(public space) and preferred items to steal (concealable, removable, available, valuable,
+enjoyable and disposable, see Clarke 1999; Wellsmith and Burrell 2005), these businesses
+might also function as crime generators for TFP. For similar reasons, <mark style="background-color: plum; font-weight: bold;">banks</mark> and <mark style="background-color: plum; font-weight: bold;">ATMs</mark>
+have been shown to have the same effect (Haberman and Ratcliffe 2015).
+   The criminogenic effects of bars and other types of alcohol outlets have been demon-
+strated repeatedly to generate not only violent crimes but also property crime, in particular
+robbery, and mostly likely because of intoxicated patrons might be easy targets for robbers
+and thieves (Bernasco and Block 2011; Conrow et al. 2015; Groff 2011; Roncek and Maier
+1991).
+   Especially during rush hours, transit stations (bus stations, subway stations) are crowded
+places that offer opportunities for theft, in part because travelers may be distracted and
+not vigilant in their attempts to find the way to their destinations. Many studies have con-
+firmed that crime rates are elevated in and around transit stations (Bernasco and Block
+2011; Block and Block 1999; Block and Davis 1996; Clarke et al. 1996; Haberman and
+Ratcliffe 2015; Qin and Liu 2016).
+   In sum, the extant literature provides empirical evidence for the fact that locations where
+people congregate, often in large crowds, are more likely to be selected as crime sites by
+motivated robbers and thieves. This is particularly true for locations with functions that
+potentially indicate larger benefits or the presence of vulnerable and non-vigilant victims.
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                        837
+
+
+Social Disorganization
+
+Social disorganization has been identified as a community attribute that can apply to geo-
+graphic areas of various <mark style="background-color: lightcoral; font-weight: bold;">sizes</mark> (e.g. <mark style="background-color: lightcoral; font-weight: bold;">street blocks</mark>, <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">neighborhoods</mark></mark> or districts). Although not a
+true crime generator (crime generators are facilities with a specific function), it is an observ-
+able attribute of communities that attracts offenders, because it provides them with oppor-
+tunities to offend under the veil of anonymity and with low risks of bystander intervention.
+    In the extant literature, which mostly covers cities in the <mark style="background-color: yellow; font-weight: bold;">United States</mark> and in other
+western industrialized countries, social disorganization is defined as the inability of local
+communities to realize the common values of their residents or solve commonly experi-
+enced problems, such as local crime (Kornhauser 1978), and has theoretically and empiri-
+cally been associated with concentrated socio-economic disadvantage, residential mobil-
+ity, and <mark style="background-color: plum; font-weight: bold;">ethnic heterogeneity</mark> (Bursik 1988; Sampson et al. <mark style="background-color: lightcoral; font-weight: bold;">1997</mark>). However, in the Chinese
+context, social disorganization and concentrated disadvantage in cities have been associ-
+ated primarily with concentrations of non-local migrants (Zhang et al. 2007b), who have
+recently migrated into the city and lack a Hukou status (Hou 2010). Hukou is a household
+registration system in China that separates locals and ‘nonlocals’ in the allocation of public
+resources (Song et al. 2018c). It allows registered individuals—locals, who have Hukou
+status—to apply for public welfare services with respect to housing, education and medical
+insurance. It is challenging for nonlocals to obtain the Hukou status and thereby get access
+to these welfare facilities, especially for rural workers who have migrated to the city and
+have experienced segregation from locals, poverty and reduced well-being (Du et al. 2017).
+Similar to measures of ethnic heterogeneity in the Western case, concentration of ‘nonlo-
+cal’ residents has become an important indicator of social disorganization and crime risk in
+contemporary research in China (Liu et al. 2018; Zhang et al. 2007b).
+
+
+
+Mobility Flows
+
+According to opportunity theories of crime, the mobility of offenders is conditioned by the
+mobility of the general population (Cohen and Felson 1979). In other words, as offend-
+ers move around the city they will generally follow the footsteps of the population and go
+where everyone else goes (Boivin and D’Elia 2017). Thus, as we argue below, criminal
+activities and legal activities share some common rules.
+   Most people who live in urban areas, including offenders, travel on a daily basis in
+order to pursue activities that are distributed in space, such as work, shopping or leisure.
+However, the mobility of persons is not random. Instead, people are constrained by cer-
+tain spatial and temporal conditions (Hägerstrand 1970; Miller 2005). Research in social
+geography has demonstrated that patterns of mobility are strongly related to personal
+attributes. Hanson and Hanson (1981) used a transportation survey to study the relation-
+ship between socio-demographic characteristics and travel patterns, and found that gen-
+der, education, and income affected individual travel patterns. Their findings have been
+replicated in subsequent research. Schwanen et al. (2008) used activity diaries from <mark style="background-color: lightblue; font-weight: bold;">420</mark>
+adults in 270 households in Columbus (Ohio, USA) and found that women face more
+constraints on their routine activities than men do. In response to questions about how
+easily they could change their activities (e.g. laundry, cooking, paid labor) to another
+location or time of day, women reported their activities to be less flexible than men,
+both in time and space. Zhou et al. (2015) compared the out-of-home activity spaces of
+
+
+                                                                                     13
+ 838                                            Journal of Quantitative Criminology (2019) 35:831–854
+
+
+low and high income groups in Guangzhou (China), and concluded that the segregation
+between both groups not only applies to where they live, but also to the places and areas
+they visit during daily routine activities.
+   Recently, the accessibility of large volumes of geo-referenced mobile phone data
+has provided researchers with promising opportunities to study daily mobility patterns
+(Kwan 2016). Song et al. (2010b) used data of phone users and showed daily mobility
+to be very predictable. Gonzalez et al. (2008) also used tracking data of phone users,
+and found that human trajectories show a high degree of temporal and spatial regularity,
+each person being characterized by an individual travel distance and a high probability
+to return to a few highly frequented locations.
+   Similar patterns seem to characterize the mobility of offenders. Griffiths et al. (2017)
+used mobile phone data records of offenders involved in four different UK-based ter-
+rorist plots, in the months preceding their attacks. They found that the offenders visited
+only a very limited number of places, and pursued their activities mainly close to their
+home or safe <mark style="background-color: yellow; font-weight: bold;">house</mark> location. This pattern resembles the mobility pattern of the gen-
+eral population. Ratcliffe (2006) demonstrated that spatiotemporal patterns of property
+crime are strongly influenced by the temporal constraints experienced by the young peo-
+ple who committed these crimes, and that these temporal constraints are very similar to
+the constraints that non-offenders are subjected to.
+   These findings are in line with the opportunity theories of crime (Brantingham and
+Brantingham 2008; Cohen and Felson 1979), which also assert that offenders’ crime
+journeys are not very different from the journeys they make when not perpetrating
+crimes. This seems not only plausible for crimes that took place in response to unex-
+pected opportunities or provocations, but also for crimes that were premeditated. In case
+of premeditated crimes, one would expect the offenders to use their pre-existing spatial
+knowledge to select the target and to escape the crime scene after the offence.
+   Two studies addressed the relation between the mobility of offenders and the mobility
+of the general population. Felson and Boivin (2015) formulated a ‘funneling hypothesis’
+asserting that daily mobility flows of an urban population determine where crimes take
+place. They used a large-scale (N = <mark style="background-color: lightblue; font-weight: bold;">165</mark>,<mark style="background-color: lightblue; font-weight: bold;">000</mark>) transportation survey to estimate the daily
+numbers of people visiting each of the 506 neighborhoods of a large city in Eastern Canada
+for purposes of work, shopping, recreation and education. The volumes of both violent and
+property crime in a neighborhood were strongly associated with the number of trips (for
+work, shopping or recreation) having the neighborhood as their destination.
+   An even more convincing argument is provided by another study that used the same
+transportation survey in the same study area. Rather than modeling crime volumes per
+neighborhood, Boivin and D’Elia (2017) modeled the crime trip volumes between all pairs
+of the 506 neighborhoods (i.e., how many crimes were perpetrated in neighborhood j that
+were committed by offenders living in neighborhood i, for all 506 i and j). One of their pre-
+dictors was an estimate of (non-crime) trip volumes between the 506 neighborhoods. Their
+results indicated that both for violent and property crime and both for crime committed
+by youths and by adults, the volume on non-crime trips between two neighborhoods was
+significantly positively associated with the number of crime trips between these two neigh-
+borhoods. This finding suggests that the mobility patterns of general population provide a
+template of ‘funnel’ for the mobility of offenders, including their journeys-to-crime.
+   Building on this finding, in the present study we investigate whether, in addition to dis-
+tance and crime generators, daily mobility flows of the urban population help predict where
+individual thieves commit crimes. As described in the next section, daily mobility flows are
+measured using anonymized tracks of mobile phone users in the general population.
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                                   839
+
+
+Data and Methods
+
+Study Area and Spatial Unit of Analysis
+
+The data for the present research originates from <mark style="background-color: yellow; font-weight: bold;"><mark style="background-color: yellow; font-weight: bold;">ZG city</mark></mark>,1 a city located in southeast
+China. ZG City has a total population in excess of 5 million, and is one of the largest and
+most developed cities of China. It belongs to the subtropical zone and the temperature fluc-
+tuates between 15 and 32 °C, so there is no extreme cold or hot weather and seasonal vari-
+ations do not affect mobility.
+    The study area is located in the central part of ZG City, and covers more than 3000 km2.
+The daily mobility pattern of the urban population is a key variable in the present research.
+Because commuting volumes and distances in China are strongly and positively related to
+size and prosperity of cities (Engelfriet and Koomen 2017), the choice of ZG city assures
+that we study a city with a highly mobile population.
+    The census unit was chosen as the spatial unit of analysis because <mark style="background-color: yellow; font-weight: bold;">Census units</mark> have a
+size similar to those in comparable studies (Bernasco and Block 2009; Clare et al. 2009;
+Menting et al. 2016), because census units are approximately equally sized, and because
+in the study area they are relatively homogenous in terms of population composition. In
+addition, a practical advantage is that the use of census units does not force us to estimate
+spillover effects (effects of attributes of nearby units on crime in a focal unit) which is a
+requirement if small units of analysis are used, such as <mark style="background-color: yellow; font-weight: bold;">census blocks</mark> or street blocks (Ber-
+nasco et al. 2013; Groff and Lockwood 2014).
+    Using census units as spatial units of analysis implies that we aggregate numbers of
+crime generators to the census unit level, and thus sum the numbers of schools, <mark style="background-color: plum; font-weight: bold;">restaurants</mark>,
+<mark style="background-color: plum; font-weight: bold;">bus stops</mark> and other facilities per census unit. This is not just a practical necessity because
+all relevant theoretical constructs must be aligned to the same spatial resolution, it is also
+legitimized by the observation that crime generators produce mobility flows and presence
+of people in the streets where they are located and in their wider environments.
+    The size of census units is 1.62 km2 on average (standard error 2.99 km2, minimum
+0.02 km2, maximum 31.30 km2). The mean population is <mark style="background-color: lightblue; font-weight: bold;">5956</mark> (standard error 4706, mini-
+mum 245, maximum 51,450). The study area comprises 1891 census units in total, of
+which 275 are not included in the analysis because the lack mobility data due to limited
+coverage of the GSM mobile phone network, leaving 1616 census units in the analysis. In
+the section on mobile phone data, we explain why we use census units to locate the cell
+towers.
+    Distances between census units are the Euclidian distances in kilometers. For use in
+the analysis, per offence we calculated the distances between the census unit where the
+offender lived and all other census units in the study area. Following Menting et al. (2016)
+and other prior crime location choice studies, the distance to the offender’s own census unit
+of residence was defined as the average distance between two random points in the census
+unit, which approximately equals half the square root of the size of the area (Ghosh 1951).
+A total of 595 incidents (17.3%) were committed in the same census unit as where the
+offenders lived. The average distance of the 3436 crime trips was 5.02 km and their stand-
+ard deviation is 6.43.
+
+
+
+1
+  Access to crime data was granted by the police authorities on the condition that the real name of the city
+would not be mentioned in publications.
+
+
+                                                                                               13
+ 840                                                    Journal of Quantitative Criminology (2019) 35:831–854
+
+
+Crime Data: Theft from the Person
+
+Registered crime data were obtained from the police authorities of ZG City. All crime data
+are recorded incidents of theft from the person (TFP) in which at least one offender was
+arrested and prosecuted. It includes the date of the incident and the home addresses of the
+offenders and the location where the offence was committed.
+    TFP is a very common offence in China and elsewhere. It covers theft and attempted
+theft of items (e.g. cash, phone) directly from the victim without the use or threat of phys-
+ical force. TFP includes both snatch theft—in which the victim is aware of the act—as
+stealth theft—in which the victim is unaware of it (e.g. <mark style="background-color: orange; font-weight: bold;">pickpocketing</mark>). TFP does not
+include thefts with ‘break and enter’, like residential or commercial burglary, or theft from
+closed vehicles. Theft from the person targets people rather than buildings, vehicles or
+other objects. It is therefore a very appropriate crime type to explore the relation between
+the mobility of the general population and the target choice of offenders.
+    Because the home location of the offender is an essential element of the model, the
+data used in this study contain only detected cases, i.e. cases where a suspect was arrested,
+identified and prosecuted. The clearance rate of theft from the person in ZG City was 5.2%
+in 2014, which implies that approximately 1 in every 20 thefts leads to the arrest of an
+offender.
+    In the original dataset, there were 10,<mark style="background-color: lightblue; font-weight: bold;">276</mark> cases of TFP committed by 12,670 offenders
+between <mark style="background-color: lightcoral; font-weight: bold;">June 1st</mark>, 2014 and May 30th 2016. The month of February in both 2015 and 2016
+was excluded, because during this the Chinese Spring Festival takes place, and a large pro-
+portion of the population leaves ZG city to celebrate the lunar new year with their families
+in their hometowns. This temporary change might alter the regular mobility patterns of
+both offenders and potential victims.
+    Because data on the daily mobility patterns of the urban population was only availa-
+ble on weekdays, only TFPs on weekdays were selected for the analysis. Unfortunately,
+as in many other studies (e.g., Vandeviver et al. 2015) a substantive percentage of cases
+had to be excluded from the analysis for lack of geographic detail. In 6118 cases either no
+offender address or no TFP location was available. After selections, the remaining 4019
+offences committed on weekdays and with valid location information were committed by
+4798 offenders in total. The fact that offenders outnumber offences implies that some TFPs
+are committed by co-offending groups.2 Because estimation results might be biased if
+offences committed by multiple co-offenders would incorrectly be analyzed as if they were
+independent observations, and in line with recommendations in the crime location choice
+literature (Bernasco and Nieuwbeerta 2005; Townsley et al. 2015) only solitary offending
+was selected for inclusion in the analysis,3 leaving for the analysis 3436 cases of TFP.4
+
+
+
+
+2
+  Of the 4798 TFP offenders, 4730 (98.6%) were involved in a single TFP, 55 were involved in 2 TFPs, 6
+were involved in 3 TFPs, 5 in 4 TFPs, 1 in 5 TFPs and another 1 was involved in 17 TFPs.
+3
+  Of the 4019 TFPs, 3436 (85.0%) were committed by a single offender, 423 (10.5%) where committed by
+two offenders, and 92 (2.3%) were committed by three offenders. The remaining TFPs were committed by
+offender groups of sizes 4–10.
+4
+  By way of robustness check we also estimated an alternative, in which only a single offender was selected
+randomly from a co-offending group, and including in the analysis. The resulting estimates were very simi-
+lar to those on solitary offenders reported here, and can be obtained from the authors.
+
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                     841
+
+
+Crime Generators
+
+The list of potential crime generators is sheer endless, but included are those facilities
+that seem most relevant based on the extant literature and taking into account the Chinese
+context: the numbers of primary schools, middle schools, hospitals, basic stores, markets,
+supermarkets, restaurants, cinemas, bars, banks, subway stations and bus stops per cen-
+sus unit. All of them are so-called ‘point of interests’ (POIs) that were purchased from
+Daodaotong, a mapping and navigation company, which provides the original map data
+for China’s largest search engine (Zheng and Zhou 2017). These POIs in ZG city were col-
+lected in 2014.
+    Primary schools include kindergartens and elementary schools. Potential TFP victims
+are not the pupils but the adults (usually parents or grandparents) who gather near the gates
+of schools around the school exit hour to pick up their children. Most middle school stu-
+dents are not picked up by their parents and would be potential TFP victims themselves, as
+the middle schools are also very crowded at school exit hours, creating opportunities for
+TFP. As presented in the descriptive statistics in Table 1, there are 1.28 primary schools
+and 0.36 middle schools on average per census unit.
+    Hospitals refer to general hospitals, which in China are always busy places. Basic stores
+include shops for daily supplements and for clothes. With an average of 5.22 per census
+unit they are quite common. Markets comprise open air markets as well as ‘integrated mar-
+kets’ that mainly sell food. Banks include both banking business offices and automated
+teller machines (ATMs). Restaurants, cinemas and bars are popular entertainment facilities
+that attract crowds, and subway stations and bus stops attract large volumes of people who
+are in transit. As for public transportation, each census unit has 3.19 bus stops but only
+0.07 subway stations on average.
+    In addition to counting crime generators that are facilities, we also calculated the popu-
+lation heterogeneity for each <mark style="background-color: yellow; font-weight: bold;">census tract</mark>. In the Chinese context, segregation does not fol-
+low racial or ethnic lines as they do in many western countries. In Chinese cities, the main
+attribute that distinguishes locals from non-locals is their Hukou status. Non-local com-
+munities where few residents have local Hukou status are generally characterized by high
+levels of anonymity, weak social attachments among residents and serious social disorder
+problems. Across all census units the mean proportion of non-locals is 0.34.
+    Table 1 also contains a correlation matrix of the crime generator variables. The cor-
+relations between the crime generator counts are low. The only one stronger than 0.50 is
+the correlation between the number of restaurants and the number of supermarkets. As a
+consequence, there is no reason for concern about collinearity issues.
+
+Mobile Phone Data
+
+To measure population mobility across the study area, we use the tracked data of mobile
+phone users. There is a burgeoning literature using mobile phone location tracking to study
+the movement patterns and travel behavior of human populations (Asakura and Iryo 2007;
+Yang et al. 2014). An advantage of mobile phone data over transportation surveys is that
+mobile phone data are not forced into a specific origin–destination format that restricts the
+measurement to start and end locations. Mobile phones monitor the location of the popula-
+tion continuously without assuming origins, destinations or intentionality. Another advan-
+tage is that the measures are taken automatically and unobtrusively and do not require
+active participation of research subjects.
+
+
+                                                                                  13
+                                                                                                                                                                                         842
+
+
+
+
+13
+     Table 1  Descriptive statistics and correlations of census unit characteristics (counts of crime generators and % nonlocals)
+                        Mean      SD       Min     Max     1         2         3         4         5         6         7            8         9        10       11        12       13
+
+     Primary schools     1.280     1.321    0      8       1
+     Middle schools      0.357     0.732    0      5       0.208*    1
+     Hospitals           0.216     0.551    0      4       0.072*    0.113*    1
+     Basics stores       5.224    18.111    0      313     0.086*    0.045     0.102*    1
+     Markets             0.368     0.695    0      8       0.243*    0.092*    0.080*    0.079*    1
+     Supermarkets        1.530     2.640    0      25      0.362*    0.<mark style="background-color: lightblue; font-weight: bold;">140</mark>*    0.034*    0.148*    0.307*    1
+     Restaurants        11.152    13.835    0      122     0.396*    0.253*    0.139*    0.322*    0.280*    0.544*    1
+     Cinemas             0.036     0.196    0      2       0.004     0.018     − 0.015   0.237*    0.021     0.034     0.<mark style="background-color: lightblue; font-weight: bold;">120</mark>*       1
+     Bars                0.<mark style="background-color: lightblue; font-weight: bold;">193</mark>     0.666    0      11      0.140*    0.029     0.126*    0.<mark style="background-color: lightblue; font-weight: bold;">105</mark>*    0.070*    0.052*    0.324*       0.051*    1
+     Banks               1.835     2.724    0      42      0.217*    0.<mark style="background-color: lightblue; font-weight: bold;">142</mark>*    0.111*    0.247*    0.140*    0.209*    0.448*       0.140*    0.224*   1
+     Subway stations     0.074     0.285    0      3       0.007     0.033     0.012     0.038     0.062*    0.032     0.141*       0.119*    0.052*   0.281*   1
+     Bus stops           3.188     4.605    0      102     0.297*    0.191*    0.081*    0.084*    0.<mark style="background-color: lightblue; font-weight: bold;">150</mark>*    0.406*    0.428*       0.100*    0.080*   0.<mark style="background-color: lightblue; font-weight: bold;">291</mark>*   0.142*    1
+     Non-locals (%)      0.340     0.236    0      0.974   0.217*    0.070*    − 0.022   0.096*    0.261*    0.460*    0.319*       − 0.006   − 0.02   0.098*   − 0.019   0.266*   1
+
+     SD standard deviation
+     *<mark style="background-color: plum; font-weight: bold;">p < 0.05</mark> (two-sided)
+                                                                                                                                                                                        Journal of Quantitative Criminology (2019) 35:831–854
+ Journal of Quantitative Criminology (2019) 35:831–854                                                   843
+
+
+    The data of the locations of mobile phone users in this research was provided by a major
+mobile phone service provider in China that has a market share of 22.5% (Chong et al.
+2015). Song et al. (2018a) used the mobile phone users’ data from the same provider to
+measure ambient populations, and argued that there are no major systematic differences
+between the customers of different mobile phone providers, which suggest that our sample
+of mobile phone users is representative for the general population in ZG City. Like Xu
+et al. (2016) using mobile phone data of 1 day to measure activities, our mobile phone data
+contains tracking information of the routes taken by the mobile phones on the network
+hour by hour on Wednesday, December 28, 2016, a fairly regular day in ZG city.
+    In this single day, there were 2994 million users for whom a total of 30,632 million
+locations were recorded by the telecom provider. Note that cellular signaling data involves
+any behavior that creates a relation with the cell signal tower, such as Internet search, mes-
+saging and voice calls. Multiple times per minute the 4G phone network determines which
+of its phone towers is nearest to the mobile phone, if the phone is being used.
+    The tracking points are location estimates based on the census units where the phone
+towers are located that provide network communication services. The reception area of a
+tower varies from as little as a few meters in central area to a few kilometers in suburban
+areas, resulting in some uncertainty about the user’s precise location (Song et al. 2010a).
+    In ZG city, the distribution of towers is of high density. The mean distance of a tower
+to the nearest tower is 136.4 meters, with a standard deviance of 255.8 (Min: 0.0; Max:
+5535.1; 50%: 48.3 m; 75%: 137.6 m; 95%: <mark style="background-color: lightblue; font-weight: bold;">589</mark>.4 m). The average size of the 1616 cen-
+sus units is 1.62 km2. It can be deducted that most of the service area of the cell tower is
+located within one census unit. Therefore, it seems acceptable to allocate the locations of
+cell phones to the census units where the tower is located that they are connecting to.
+    To protect the privacy of the mobile phone users, the telecom company gave us access to
+an aggregated dataset that did not include all measured location points.5 Instead, it includes
+for each mobile phone and for each hour, the location of the cell tower that has been the
+nearest tower most of the time during that hour. For example, if between 2 pm and 3 pm a
+mobile phone has been near tower A for 20 min, near tower B for 30 min and near tower C
+for 10 min, the estimated location between 2 pm and 3 pm is the location of tower B.
+    The aggregated dataset contains for each user 10.2 cell tower hours/locations on aver-
+age. Half of the users had more than 7 h/locations. During the remaining hours, the phone
+users were either sleeping, performing activities during which they did not use their phone
+(e.g., work, school, travel) or moving outside the areas covered by the network. Although
+an average number of just over 10 space–time measures per respondent may appear to be a
+sparse measure of mobility, it probably implies that the recorded locations are places where
+the phone users spend nontrivial amounts of time and therefore correspond to meaningful
+activity nodes. Moreover, an average of 10 locations may cover most of the phone users’
+activity spaces. According to empirical findings on human mobility based mobile phone
+trajectories, humans have a strong tendency to return to places they visited before. At any
+point in time, the number of familiar locations an individual visits is limited to approxi-
+mately 25 locations (Alessandretti et al. 2018), and they spend more than 80% of their
+time in their 10 most frequented locations (Gonzalez et al. 2008; Song et al. 2010a). In a
+subsequent aggregation procedure that we ourselves implemented, each phone tower loca-
+tion was assigned to the census unit in which it was located. The result is a data file that
+
+
+5
+  Even at this level of spatial resolution, only four spatio-temporal points are enough to uniquely identify
+95% of the phone users (Montjoye et al. 2013).
+
+
+                                                                                               13
+ <mark style="background-color: lightblue; font-weight: bold;">844</mark>                                             Journal of Quantitative Criminology (2019) 35:831–854
+
+
+records for each mobile phone user and per hour in which of the 1616 census units they
+were located.
+
+
+Calculation of Mobility Streams
+
+The resulting information was subsequently used to construct a measure of the volume of
+mobility flows between all pairs of census units. The measure is defined as the number of
+unique mobile phone users that visited both census units on the same day. Mobility flows
+were calculated by summing phone users over all pairs of census units. The result is a
+square matrix of census units containing the number of mobile phone users that visited
+both census units on a single day.
+    Our use of mobile phone locations diverges from how prior studies on crime in Lon-
+don (Bogomolov et al. 2014) and in Osaka, <mark style="background-color: yellow; font-weight: bold;">Japan</mark> (Hanaoka 2018) have used such data in
+research on crime. These prior studies used mobile phone users’ locations as a measure
+of how many people were present at a specific location at a specific day or time, which
+has been referred to as the size of the ambient population or the actual population at risk.
+Other studies have measured the ambient population with other data sources, such as the
+Landscan Global Population database (Andresen 2006; Andresen and Jenion 2010), geo-
+references Twitter messages (Malleson and Andresen 2015), or public transportation trans-
+action data (Song et al. 2018b). Our measure is different from measures of ambient popula-
+tion because it measures how many people visit two different locations during a single day.
+It thus measures mobility, not just presence.
+    By linking all census units where a specific mobile phone was observed during the day,
+we construct a measure of observed mobility between pairs of census units: the mobility
+between census units A and B is the number of mobile phone users visiting both census
+unit A and census unit B on the same day (irrespective of how frequent and how long the
+visits are). The average across all pairs of census units is 466 individuals, with a standard
+deviation of 16.54. In the analyses, we only use pairs in which at least one of the census
+units included the home location of a TFP offender, and therefore all other pairs are dis-
+carded. Although the distribution is positively skewed, the number of pairs with a zero
+mobility flow is limited. Almost half (47.7%) of the 0.5 × 1616 × 1615 ≈ 1.3 million census
+unit pairs had a zero mobility flow (meaning that nobody of the 2.9 million users visited
+both locations on the same day). For those pairs that were included in the analysis (because
+they included at least one offender’s census unit of residence), this percentage was 37.7%.
+    Finally, to arrive at a measure that could represent the likelihood of an offender living
+in census unit A to offend in census unit B, we define the relative mobility between A and
+B. The relative mobility is a percentage calculated as the ratio of the mobility flow and the
+total number of mobile phone users visiting the home census unit of the offender on a sin-
+gle day (also irrespective of frequency and duration), and multiplying the result by 100. It
+is hypothesized that the probability of an offender living in area A will offend in area B is
+proportional to the percentage of visitors to A who also visited B (the relative mobility flow
+from B to A is therefore different form the relative mobility flow from A to B). By using
+the relative measure we standardize for the total number of people visiting the census units
+
+
+
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                                    845
+
+
+                                 Mobility flow A-B
+                                         400
+
+
+
+
+                                          F (A→B) = .4
+                                                                 Census Unit B (target)
+                    Census Unit A
+
+                       (N=1000)                                  Census Unit C (target)
+                                          F(A→C) = .9
+
+
+
+                                           <mark style="background-color: lightblue; font-weight: bold;">900</mark>
+                                  Mobility flow A-C
+
+Fig. 1  Conceptual model of relative mobility flow with a numerical example. F(A → B) is defined as num-
+ber of people visiting both A and B on the same day (400), divided by the total number visiting A on the
+same day (N = 1000). F(A → C) = 900/1000 = 0.9. F F(A → A) = 1
+
+
+where the offenders live.6 A stylized example is shown in Fig. 1. Suppose that an offender
+lives in census unit A and there are only two other locations, census units B and C. Our
+aim is to assess whether the relative mobility between census units A and B and the rela-
+tive mobility between census units A and C impact the probability of the offender selecting
+either census unit B or C, and our best guess is that these location choice probabilities are
+proportional to the relative mobility flows, i.e. to 400/1000 and 900/1000 respectively. It
+should be emphasized that the mobility between two census units (for example A and C)
+does not mean that the mobile phone users must live in either census unit A or census unit
+C. They can also be two of the users’ other activity nodes.
+   In the models, to account for the fact that the distributions of both distance and relative
+mobility are positively skewed, their logarithms are taken (after adding a value of 1 to the
+relative mobility to prevent taking the undefined logarithm of 0).
+   As most human mobility is over short distances and the frequency of trips decreases
+with distance (Gonzalez et al. 2008), we should expect the volume of mobility between
+census units to be inversely related to their distance. This is indeed the case, although the
+correlation is far from perfect: after taking logarithms it is − 0.37.
+
+Models
+
+Following the large majority of previous location choice studies, we used the conditional
+logit model to analyze the role of distance, crime generators and daily population mobility
+in the offenders’ choice of locations for committing TFP. The <mark style="background-color: lightgreen; font-weight: bold;"><mark style="background-color: lightgreen; font-weight: bold;"><mark style="background-color: lightgreen; font-weight: bold;">Conditional Logit</mark> model</mark></mark> is
+easy to estimate and consistent with random utility maximization theory (McFadden <mark style="background-color: lightblue; font-weight: bold;">1973</mark>).
+As Bernasco (2010) provided a fairly extensive treatment of the model in the context of
+
+
+
+
+6
+  Empirically, models including (the logarithm of) the absolute mobility flow as a covariate yielded very
+similar results as models (the logarithm of) the relative mobility flow. Conceptually, the relative measure is
+superior as it accounts for the ‘centrality’ of the offender’s census unit of residence.
+
+
+                                                                                                 13
+ 846                                                  Journal of Quantitative Criminology (2019) 35:831–854
+
+
+crime location choice, here we confine ourselves to a brief summary, using terms that fit
+our application to TFP in ZG City.
+   According to the model, a decision-maker i (the TFP offender) choses a single alterna-
+tive n (a census unit) from a set of 1616 mutually exclusive alternatives (census units). The
+offender determines the level of utility Uin that he or she would derive from targeting each
+potential census unit, and chooses the census unit that will provide most utility. The utility
+level Uin is a linear function of the characteristics of the census units (or their logarithms):
+                        Uin = 𝛽D log(Din ) + 𝛽F log(Fin ) + 𝜷 X Xn + 𝜀in
+where Uin is the utility that offender i would derive from census unit n, Din is the distance
+between the home census unit of offender i and census unit n, Fin is the relative mobility
+flow between the home census unit of offender i and census unit n, and Xn is a matrix rep-
+resenting the other characteristics of the census units (number of primary schools, number
+of bus stops, etc.). The βD, βF, and βX are the parameters associated with the logarithm of
+distance, the logarithm of relative mobility flow, and the other variables in the equation,
+respectively. They are estimated based on the actual location choices observed, and their
+estimated values indicate the impact of the characteristics on the outcome of the offender’s
+location decision. The term εin is an error term that reflects unmeasured other choice cri-
+teria affecting Uin. If the error term is Extreme Value Type II distributed, it can be derived
+that the probability that offender i chooses census unit n equals:
+
+                                     e𝛽D log(Din )+𝛽F log(Fin )+𝜷 X Xn
+                            Pin = ∑1,616
+                                   j=1
+                                          e𝛽D log(Djn )+𝛽F log(Fjn )+𝜷 X Xn
+
+    In presenting our results, we include the estimated coefficients expressed as <mark style="background-color: plum; font-weight: bold;">odds ratios</mark>
+(i.e., transformed into ­eβ), the corresponding z-value and an indicator of the level of statis-
+tical significance of the coefficients. The independent variables haven’t been standardized
+because the unstandardized results are easier to interpret and because the aim is not to
+compare effect sizes across the independent variables. We present the results of two alter-
+native models. The first model includes the distance as well as the crime generators, but
+not the mobility measure derived from the mobile phone locations. The second model is
+identical to the first model, but with the mobility measure included.
+    The estimated coefficients are most easily interpreted when they are transformed into
+odds ratios (ORs). ORs with values between 0 and 1 indicate negative effects: a one-unit
+increase in the independent variable (e.g. number of bus stops) decreases the odds of vic-
+timization by a factor equal to the OR. OR values above 1 represent positive effects: a one-
+unit increase in the independent variable increases the odds by a factor equal to the OR. To
+judge relative fit between multiple models, we use MdFadden’s Pseudo R       ­ 2, the Akaike’s
+information criterion (<mark style="background-color: plum; font-weight: bold;">AIC</mark>) and the Bayesian information criterion (<mark style="background-color: plum; font-weight: bold;">BIC</mark>) as benchmarks.
+Larger values of the Pseudo R   ­ 2 and smaller values of the AIC and the BIC indicate better
+model fits.
+
+
+Findings
+
+In Table 2 we present the estimation results of the two models. In Model 1, the presence of
+schools, markets and bars is not significant. All other facilities, appear to function as crime
+generators. This also applies to the proportion of nonlocal residents, which we assume
+
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                                      847
+
+
+Table 2  Results of conditional logit model of the choice of census unit to commit theft from the person
+Variables                                     Model 1                              Model 2
+                                              Odds ratio        z                  Odds ratio      z
+
+Crime generators
+ Primary school                               1.002             0.110              0.993           − 0.450
+ Middle school                                0.961             − 1.670            0.959           − 1.750
+ Hospital                                     1.135***          4.430              1.125***        4.030
+ Basics stores                                1.004***          6.340              1.004***        6.590
+ Market                                       1.055*            2.510              1.039           1.730
+ Supermarket                                  1.027***          5.310              1.025***        4.750
+ Restaurant                                   1.018***          14.540             1.016***        12.980
+ Cinema                                       1.154*            2.020              1.149           1.940
+ Bar                                          1.008             0.360              1.014           0.690
+ Bank                                         1.031***          8.200              1.030***        7.780
+ Subway station                               1.570***          10.340             1.565***        10.120
+ Bus stop                                     1.031***          19.580             1.029***        17.410
+Social disorganization
+ Nonlocal proportion                          1.<mark style="background-color: lightblue; font-weight: bold;">198</mark>*            2.020              1.138           1.430
+ Distance (ln(km))                            0.178***          − 117.040          0.217***        − 69.470
+ Relative Mobility flow(ln)                   –                 –                  1.292***        11.040
+Model information
+ Pseudo ­R2                                   0.298                                0.301
+ AIC                                          35,649.27                            35,512.87
+ BIC                                          35,838.69                            35,715.81
+ # Observations (TFPs × census units)         5,552,576                            5,552,576
+ # Thefts from the person (TFPs)              3436                                 3436
+ # Census units                               1616                                 1616
+
+***p < 0.001, **<mark style="background-color: plum; font-weight: bold;">p < 0.01</mark>,*p < 0.05 (two-tailed, based on robust standard errors)
+
+
+
+reflects a relative social disorganization that increases the risk of being targeted by the TFP
+offenders. As all other estimates are significant and have values above 1, the presence of
+these facilities in a census unit significantly increases the likelihood that it is selected for
+committing a TFP.
+    Subway stations, cinemas and hospitals are large-scale facilities and also seem to
+have the largest effects: with one more subway station, cinema or hospital in the census
+unit, the odds of being chosen increases by 57.0, 15.4 and 13.5% respectively. In terms
+of effect size, the other facilities (basic stores, restaurants, bars and bus stops) are less
+influential, which must be related to their smaller scales. A one-unit increase in the
+proportion of non-locals in the census units (being the difference between nobody
+being non-local and everybody being nonlocal) increases the odds of the unit being
+targeted by 19.8%. Proximity (the logarithm of distance) has a very strong positive
+effect on the offender’s choice of a target area: the closer to the offender’s home, the
+more likely a census unit is to be chosen as a crime site.
+    Model 2 extends Model 1 by taking into account the population mobility between
+census units. In line with the hypothesis, the odds that an offender selects a census
+
+
+                                                                                                13
+ 848                                                    Journal of Quantitative Criminology (2019) 35:831–854
+
+
+Table 3  Pseudo ­R2 of conditional logit models with (1) crime generators only, (2) relative mobility flows
+only and (3) distance only, (4) distance and relative mobility flow, 3436 thefts from the person and 1616
+census units
+
+Model          (1)                       (2)                  (3)                    (4)
+               Crime generators and      Relative mobility    Distance (ln) only     Distance (ln) and
+               social disorganization    flow (ln) only                              relative mobility flow
+                                                                                     (ln)
+
+Pseudo ­R2          0.045                     0.193                0.260                  0.270
+AIC            48,518.13                 40,998.54            37,554.39              37,044.98
+BIC            48,694.02                 41,012.07            37,567.92              37,072.04
+
+
+
+
+unit as a crime location significantly increases with the strength of mobility between
+this census unit and his or her own census unit. The finding suggests that the mobil-
+ity volume does indeed reflect offenders’ whereabouts. We expected that the inclusion
+of population mobility would capture a considerable proportion of the legal and ille-
+gal whereabouts of offenders, and thereby attenuate the effect of distance. Indeed, the
+inclusion of the mobility measure does reduce the effect of distance, as it is weaker in
+Model 2 (odds ratio = 0.217) than in Model 1 (odds ratio = 0.178). The attenuation is
+limited, however, and distance remains an important predictor of location choice in its
+own right.
+   The inclusion of population mobility flow hardly affects the values and significance
+levels of the other estimates, as they are similar in Models 1 and 2. The main changes
+are that the effects of the presence of markets, cinemas and the proportion of nonlocals
+are smaller and lose significance in Model 2.
+   In terms of the model fit, the improvement is not that significant. Pseudo ­R2 of
+Model 2 is 0.301, which is within rounding error of the Pseudo ­R2 value of 0.298
+observed in Model 1. However, with decreases larger than 120, the differences in both
+the AIC and the BIC from Model 1 to Model 2 are significant,.
+   As shown in Table 3, we further estimated four more parsimonious models to test
+how each of the theoretical constructs—crime generators and social disorganization,
+distance, mobility flows, and the combination of distance and mobility flows—would
+predict TFP locations in isolation of the other constructs in Table 2. The values of
+Pseudo ­R2, AIC and BIC show that in terms of model fit, distance outperforms mobil-
+ity flow, but both distance and mobility flow fare much better than crime generators.
+In other words, knowing the census units of all crime generators in ZG City hardly
+helps us predict where an individual offender will perpetrate a TFP, while knowing the
+locations in ZG City visited by people who also visited the offender’s census unit of
+residence provides a much better prediction. According to the R    ­ 2 criterion, however,
+distance still generates the best prediction. Although statistically significant, the addi-
+tion of mobility only marginally improves model fit.
+
+
+
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                       849
+
+
+Conclusion and Discussion
+
+Routine activity theory and crime pattern theory are opportunity theories of crime. Their
+key assumption is that crime feeds on legal activities, either because offenders encounter
+unforeseen criminal opportunities while engaged in legal routine activities, or because their
+routine activities inform them about criminal opportunities that they exploit at a later point
+in time.
+    The present study was inspired by this assumption. Its purpose was to explore whether
+knowledge of the daily mobility pattern of the population across urban space furthers the
+explanation of where offenders choose to commit thefts from the person.
+    Based on unobtrusively recorded locations of anonymized mobile phones of a large pro-
+portion of the population, we created a mobility matrix between all pairs of the 1616 cen-
+sus units in a large city in China, and demonstrated that, after accounting for distance and
+the presence of crime generators, offenders were indeed more likely to offend in census
+units with large mobility flows connected to their area of residence.
+    This finding provides support for opportunity theories of crime, as it suggests that to a
+considerable degree the ‘journey-to-crime’ follows the mobility of the general population.
+An offender living in a particular area will commit crime in a target area with a probability
+that is proportional to the relative mobility of the population between the two areas, i.e. to
+the number of people that visit both areas as a percentage of those visiting his or her home
+area. However, theoretically, it should be emphasized that the mobility flow measure in
+itself does not add a new element to the crime equation. It should be interpreted as a useful
+correction on the estimated effects of distance and crime generators. In the next paragraph
+we explain why.
+    Distance is an imperfect measure of the friction that constrains the mobility between
+two locations. Greater distance reduces mobility, but there are more factors affecting the
+friction between locations. In addition to distance, physical barriers (such as rivers and rail-
+road tracks) and social barriers (such as cultural and language differences between the two
+locations) may further increase these constraints, while connectors (like high-speed trains,
+cultural similarity or a shared language) may reduce it. Because our mobility measure
+based on mobile phone locations represents actual mobility, it could easily pick up some of
+the variation created by barriers and connectors that are not captured by distance. Further-
+more, with travel distance fixed, the mobility measure did contribute to explaining where
+offenders went to commit TFP.
+    With regard to crime generators, a similar issue of unobserved heterogeneity arises,
+because it is likely that in our analysis we missed some facilities that function as crime
+generators, such as beaches, sport stadiums or city parks. In addition, we may have missed
+some variability within the same crime generator category (e.g., some bars may be more
+‘risky’ than other bars, see Eck et al. 2007). If we did miss some types of crime generators,
+or if we missed some variability within a single crime generator category, the mobility
+measure is likely to capture this omission by attributing the effect of this facilitator to the
+mobility measure. From the comparison between the effects it appears that in the predic-
+tion of theft from the person, the mobility measure performs much better than the presence
+of crime generators.
+    The fact that mobility can easily pick up effects of omitted variables made us expect
+that the inclusion of mobility would significantly reduce the independent effect of dis-
+tance. As a matter of fact, we would not have been surprised to see the mobility measure
+completely take over the distance effect. This expectation is not confirmed, however,
+
+
+                                                                                    13
+ 850                                             Journal of Quantitative Criminology (2019) 35:831–854
+
+
+because the effect of distance remains dominant even after including mobility flows in
+the equation. This finding may suggest that even within their activity space, thieves still
+have a preference for relatively nearby targets. It might also be a signal that the mobil-
+ity of the general population does not perfectly align with the mobility of the offender
+population. Possibly, some or most offenders have routine activities and spatial patterns
+that are different from those of non-offenders. In particular, their daily mobility patterns
+might be more spatially constrained than those of the general population, as this could
+also explain why the effect of distance remains dominant even after including the mobil-
+ity measure in the equation. Therefore, our findings provide a specific interpretation of
+the claim of routine activity theory that “illegal activities feed upon the legal activities
+of everyday life”. Our findings suggest that illegal activities do indeed feed upon the
+legal activities of the general population, but also that offenders are more constrained by
+their limited action radius than other members of the population.
+   Core variable estimates like those of distance and most crime generators seem to
+function in line with what we know from other studies (Ruiter 2017). Distance is the
+key factor that prevents offenders from selecting targets away from their homes, and the
+presence of crime generators is the key factor that attracts crime. Furthermore, in terms
+of model fit, the Pseudo R ­ 2 of our models is just around 0.30, a value that is comparable
+to the ones reported in other studies of crime location choices.
+   Nevertheless, there are also some differences with results of the effects of crime
+generators reported in the literature. Elsewhere, the presence of high schools has been
+shown attract offenders in cases of robbery and <mark style="background-color: orange; font-weight: bold;">theft from vehicle</mark> (Bernasco and Block
+2009; Townsley et al. 2015) while our results indicate the opposite for TFP. It is not
+immediately clear whether the cultural context, the type of crime or other factors explain
+this discrepancy. One possible explanation is that Chinese schools tend to be tightly
+managed (with entry controls) and most require students to wear uniforms, making them
+less attractive than the schools in U.S.A and other Western countries. Bars do not seem
+to impact TFP crime location choices. A likely reason is that bars are not as popular in
+China as they are in Western countries, and few Chinese would consider going to bars
+for leisure. The proportion of nonlocals is a special measure that specifically applies
+to the Chinese social environment. It does not seem to be a major importance for TFP
+location choices.
+   As any study, ours is limited in various ways, and some caveats must be made. First, our
+analysis ignores temporal variation. We did not include the timing of thefts from the person
+or the timing of population mobility flows. Neither did we take into account variation in
+opening hours of facilities during the day. <mark style="background-color: lightcoral; font-weight: bold;">In future work</mark>, the inclusion of temporal vari-
+ation in both crime and population mobility will provide a better testbed for opportunity
+theories, because it allows researchers not only to verify that crimes are more likely to
+happen at certain time of the day, but also to test whether location choices of theft from the
+person are driven by the same choice criteria in the morning as in the evening (van Sleeu-
+wen et al. 2018). Because mobile phone activity logs include time stamps that tell us not
+only where people are, but also when they are there, population mobility flows can also be
+distinguished by time of day. In fact, a next generation of research could add time use data
+collected with surveys (Haberman and Ratcliffe 2015) or with smartphone apps (Ruiter and
+Bernasco 2018) to enrich the available data by measuring what type of activity individuals
+are involved in (e.g. traveling, working, shopping), presumably affecting their victimization
+risk.
+   Second, we did not explore any differences between co-offending and single offending.
+The members of co-offending groups were excluded from the analysis, as they may live in
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                                     851
+
+
+different communities, and therefore their spatial decisions are much more complex than
+those of solitary offenders (see Lammers 2017).
+   Third, only the data of 4G users of one mobile phone network provider is available in
+our research. Although the 4G network is very popular in China, the sample of users whose
+phones were tracked may not be fully representative of the population of ZG City.
+   Fourth, only theft from the person was studied here. This is a ‘street’ crime character-
+ized by a low rate of reporting to the police (Zhang et al. 2007a). To what extent popula-
+tion mobility flows impact the spatial behavior of those who commit other types of crimes,
+including crimes against static targets, such as burglary, remains an open question. The
+approach adopted here, in particular the use of cell phone data to measure population
+mobility, might prove useful in in future research that addresses this question.
+   The abovementioned caveats should not dwarf the contributions of the present study.
+In addition to applying a new mobility measure based on tracking the locations of indi-
+vidual cell phones, this study contains two other new elements to the discrete crime loca-
+tion choice framework. It has been the first to apply the framework in the Chinese context,
+and it has been the first to apply it to theft from the person. The findings demonstrate that
+Chinese offenders committing theft from the person decide on target areas in ways that
+resemble the choices made by burglars and robbers and other types of offenders elsewhere
+in the world. This may be viewed as tentative evidence that the underlying opportunity
+theory could be applicable not only in the industrialized world, but also in other countries.
+
+Acknowledgements This work has been supported by the China Scholarship Council (CSC).
+
+Funding The fund was provided by Key Program of National Natural Science Foundation of China (Grant
+No. 41531178), Research Team Program of Natural Science Foundation of Guangdong Province, China
+(Grant No. 2014A030312010), National Science Fund for Excellent Young Scholars (Grant No. 41522104),
+National Key R&D Program of China (Grant Nos. 2018YFB0505500, 2018YFB0505503) and Key Project
+of Science and Technology Program of Guangzhou City, China (Grant No. 201804020016).
+
+Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0 Interna-
+tional License (http://creat​iveco​mmons​.org/licen​ses/by/4.0/), which permits unrestricted use, distribution,
+and reproduction in any medium, provided you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons license, and indicate if changes were made.
+
+
+
+
+References
+Alessandretti L, Sapiezynski P, Sekara V, Lehmann S, Baronchelli A (2018) Evidence for a conserved quan-
+     tity in human mobility. Nat Hum Behav 2:485–491
+Andresen MA (2006) Crime measures and the spatial analysis of criminal activity. Br J Criminol
+     46:258–285
+Andresen MA, Jenion GW (2010) Ambient populations and the calculation of crime rates and risk. Secur J
+     23:114–133
+Asakura Y, Iryo T (2007) Analysis of tourist behaviour based on the tracking data collected using a mobile
+     communication instrument. Transp Res A Policy Pract 41:684–690
+Bernasco W (2010) Modeling micro-level crime location choice: application of the discrete choice frame-
+     work to crime at places. J Quant Criminol 26:113–138
+Bernasco W, Block R (2009) Where offenders choose to attack: a discrete choice model of robberies in Chi-
+     cago. Criminology 47:93–130
+Bernasco W, Block R (2011) Robberies in <mark style="background-color: yellow; font-weight: bold;">Chicago</mark>: a block-level analysis of the influence of crime genera-
+     tors, crime attractors and offender anchor points. J Res Crime Delinq 48:33–57
+Bernasco W, Kooistra T (2010) Effects of residential history on commercial robbers’ crime location choices.
+     Eur J Criminol 7:251–265
+
+
+
+                                                                                                 13
+ 852                                                     Journal of Quantitative Criminology (2019) 35:831–854
+
+
+Bernasco W, Nieuwbeerta P (2005) How do residential burglars select target areas? a new approach to the
+      analysis of criminal location choice. Br J Criminol 45:296–315
+Bernasco W, Ruiter S (2014) Crime location choice. In: Bruinsma GJN, Weisburd D (eds) Encyclopedia of
+      criminology and criminal justice. Springer, New <mark style="background-color: yellow; font-weight: bold;">York</mark>, pp 691–699
+Bernasco W, Block R, Ruiter S (2013) Go where the money is: modeling street robbers’ location choices. J
+      Econ Geogr 13:119–143
+Bernasco W, Johnson SD, Ruiter S (2015) Learning where to offend: effects of past on future burglary loca-
+      tions. Appl Geogr 60:120–129
+Bernasco W, Ruiter S, Block R (2017a) Do street robbery location choices vary over time of day or day of
+      week? A test in Chicago. J Res Crime Delinq 54:244–275
+Bernasco W, Van Gelder J-L, Elffers H (2017b) The Oxford handbook of offender decision making. Oxford
+      University Press, New York
+Block R, Block CR (1999) Risky places: a comparison of the environs of rapid transit stations in Chicago
+      and the Bronx. In: Mollenkopf JB (ed) Analyzing crime patterns: frontiers of practice. Sage, Thousand
+      Oaks, pp 137–152
+Block R, Davis S (1996) The environs of rapid transit stations: a focus for street crime or just another risky
+      place? In: Clarke RV (ed) Preventing mass transit crime. Criminal Justice Press, Monsey, NY, pp
+      237–257
+Bogomolov A, Lepri B, Staiano J, Oliver N, Pianesi F, Pentland A (2014) Once upon a crime: towards
+      crime prediction from demographics and mobile data. Paper presented at the proceedings of the 16th
+      international conference on multimodal interaction, Istanbul, Turkey. http://dx.doi.org/10.1145/26632​
+      04.26632​54
+Boivin R, D’Elia M (2017) A network of neighborhoods: predicting crime trips in a large Canadian city. J
+      Res Crime Delinq 54:824–846
+Brantingham PJ, Brantingham PL (1995) Criminality of place: crime generators and crime attractors. Eur J
+      Crim Policy Res 3:5–26
+Brantingham PJ, Brantingham PL (2008) Crime pattern theory. Built Environ 34(1):62–74
+Bursik RJ Jr (1988) Social disorganization and theories of crime and delinquency: problems and prospects.
+      Criminology 26:519–551
+Chong SC, Teoh WMY, Qi Y (2015) Comparing customer satisfaction with China mobile and China tel-
+      ecom services: an empirical study. J Dev Areas 49:247–<mark style="background-color: lightblue; font-weight: bold;">262</mark>
+Clare J, Fernandez J, Morgan F (2009) Formal evaluation of the impact of barriers and connectors on resi-
+      dential burglars’ macro-level offending location choices. Aust N Z J Criminol 42:139–<mark style="background-color: lightblue; font-weight: bold;">158</mark>
+Clarke RV (1999) Hot products: understanding, anticipating and reducing demand for stolen goods. Home
+      Office, <mark style="background-color: yellow; font-weight: bold;">London</mark>
+Clarke RV, Belanger M, Eastman JA (1996) Where angels fear to tread: a test in the New York city subway
+      of the robbery/density hypothesis. In: Clarke RV (ed) Preventing mass transit crime. Criminal Justice
+      Press, Monsey, NY, pp 217–235
+Cohen LE, Felson M (1979) Social change and crime rate trends: a routine activity approach. Am Sociol
+      Rev 44:588–608
+Conrow L, Aldstadt J, Mendoza NS (2015) A spatio-temporal analysis of on-premises alcohol outlets and
+      violent crime events in Buffalo, NY. Appl Geogr 58:198–205
+Cornish DB, Clarke RV (eds) (1986) The reasoning criminal: rational choice perspectives on offending.
+      Springer, New York
+Du H, Li SM, Hao P (2017) ‘Anyway, you are an outsider’: temporary migrants in urban China. Urban Stud
+      55(14):3185–3201
+Eck JE, Clarke RVG, Guerette RT (2007) Risky facilities: crime concentration in homogeneous sets of
+      establishments and facilities. In: Farrell G, Bowers KJ, Johnson SD, Townsley MT (eds) Imagination
+      for crime prevention: essays in honour of ken pease. Criminal Justice Press, Monsey, NY, pp 225–264
+Engelfriet L, Koomen E (2017) The impact of urban form on commuting in large Chinese cities. Transpor-
+      tation 45(5):1269–1295
+Felson M, Boivin R (2015) Daily crime flows within a city. Crime Sci 4:31
+Frith MJ, Johnson SD, Fry HM (2017) Role of the street network in Burglars’ spatial decision-making.
+      Criminology 55:344–376
+Ghosh B (1951) Random distances within a rectangle and between two rectangles. Bull Calcutta Math Soc
+      43:17–24
+Gonzalez MC, Hidalgo CA, Barabasi A-L (2008) Understanding individual human mobility patterns.
+      Nature 453:779–782
+Griffiths G, Johnson SD, Chetty K (2017) UK-based terrorists’ antecedent behavior: a spatial and temporal
+      analysis. Appl Geogr 86:274–282
+
+
+
+13
+ Journal of Quantitative Criminology (2019) 35:831–854                                                 853
+
+
+Groff ER (2011) Exploring ‘near’: characterizing the spatial extent of drinking place influence on crime.
+     Aust N Z J Criminol 44:156–<mark style="background-color: lightblue; font-weight: bold;">179</mark>
+Groff ER, Lockwood B (2014) Criminogenic facilities and crime across street segments in philadelphia:
+     uncovering evidence about the spatial extent of facility influence. J Res Crime Delinq 51:277–314
+Haberman CP, Ratcliffe JH (2015) Testing for temporally differentiated relationships among potentially
+     criminogenic places and census block street robbery counts. Criminology 53:457–483
+Hägerstrand T (1970) What about people in regional science? Pap Reg Sci 24:6–21
+Hanaoka K (2018) New insights on relationships between street crimes and ambient population: use of
+     hourly population data estimated from mobile phone users’ locations. Environ Plan B Urban Anal
+     City Sci 45:295–311
+Hanson S, Hanson P (1981) The travel-activity patterns of urban residents: dimensions and relationships
+     to sociodemographic characteristics. Econ Geogr 57:<mark style="background-color: lightcoral; font-weight: bold;">332</mark>–347
+Hou S (2010) Communities, crime and social capital in contemporary China. China J 8:239–241
+Johnson SD, Bowers KJ (2010) Permeability and burglary risk: are cul-de-sacs safer? J Quant Criminol
+     26:89–111
+Johnson SD, Bernasco W, Bowers KJ, Elffers H, Ratcliffe J, Rengert G, Townsley MT (2007) Space-
+     time patterns of risk: a cross national assessment of <mark style="background-color: orange; font-weight: bold;"><mark style="background-color: orange; font-weight: bold;">residential burglary</mark></mark> victimization. J Quant
+     Criminol 23:<mark style="background-color: lightblue; font-weight: bold;">201</mark>–219
+Kinney JB, Brantingham PL, Wuschke K, Kirk MG, Brantingham PJ (2008) Crime attractors, generators
+     and detractors: land use and urban crime opportunities. Built Environ 34:62–74
+Kornhauser RR (1978) Social sources of delinquency. University of Chicago Press, Chicago
+Kwan MP (2016) Algorithmic geographies: big data, algorithmic uncertainty, and the production of geo-
+     graphic knowledge. Ann Am Assoc Geogr 106:274–282
+Lammers M (2017) Co-offenders’ crime location choice: do co-offending groups commit crimes in their
+     shared awareness space? Br J Criminol 58:1193–1211
+Lammers M, Menting B, Ruiter S, Bernasco W (2015) Biting once, twice: the influece of prior on subse-
+     quent crime location choice. Criminology 53:309–329
+Liu L, Feng J, Ren F, Xiao L (2018) Examining the relationship between neighborhood environment and
+     residential locations of juvenile and adult migrant burglars in China. Cities 82:10–18
+Long D, Liu L, Feng J, Zhou S, Jing F (2018) Assessing the influence of prior on subsequent street rob-
+     bery location choices: a case study in ZG city, China. Sustainability 10:1818
+Malleson N, Andresen MA (2015) The impact of using social media data in crime rate calculations:
+     shifting hot spots and changing spatial patterns. Cartogr Geogr Inf Sci 42:112–121
+McFadden D (1973) Conditional logit analysis of qualitative choice behavior. In: Zarembka P (ed) Fron-
+     tiers in econometrics. Academic Press, New York, pp 105–142
+Menting B, Lammers M, Ruiter S, Bernasco W (2016) Family matters: effects of family members’ resi-
+     dential areas on crime location choice. Criminology 54:413–433
+Miller HJ (2005) Necessary space—time conditions for human interaction. Environ Plan 32:381–401
+Montjoye YAD, Hidalgo CA, Verleysen M, Blondel VD (2013) Unique in the crowd: the privacy bounds
+     of human mobility. Sci Rep 3:1376
+Peeters MP, Elffers H (2010) Do physical barriers affect urban crime trips? The effects of a highway, a
+     railroad, a park or a canal on the flow of crime in <mark style="background-color: yellow; font-weight: bold;">The Hague</mark>. Crime Patterns Anal 3:38–49
+Qin X, Liu L (2016) Evaluating the relationships of bus transit with street and off-street robberies. Prof
+     Geogr 68:227–237
+Ratcliffe JH (2006) A temporal constraint theory to explain opportunity-based spatial offending patterns.
+     J Res Crime Delinq 43:261–291
+Rengert G (2004) The journey to crime. In: Bruinsma G, Elffers H, Willem J, de Keijser J (eds) Punish-
+     ment, places, and perpetrators: developments in criminology and criminal justice research. Willan
+     Publishing, Milton, pp 169–181
+Roncek DW, Faggiani D (1985) High schools and crime: a replication. Sociol Q 26:491–505
+Roncek DW, LoBosco A (1983) The effect of high schools on crime in the neighborhood. Soc Sci Q
+     64:598–613
+Roncek DW, Maier PA (1991) Bars, blocks, and crimes revisited: linking the theory of routine activities
+     to the empiricism of “hot spots”. Criminology 29:725–753
+Rossmo DK (2000) Geographic profiling. CRC Press, Boca Raton
+Rossmo DK, Lu Y, Fang TB (2012) Spatial-temporal crime paths. In: Andresen MA, Kinney JB (eds)
+     Patterns, prevention, and geometry of crime. Routledge, New York, pp 16–42
+Ruiter S (2017) Crime location choice: state of the art and avenues for future research. In: Bernasco W,
+     Van Gelder J-L, Elffers H (eds) The Oxford handbook of offender decision making. Oxford Univer-
+     sity Press, Oxford, pp 398–420
+
+
+
+                                                                                             13
+ 854                                                    Journal of Quantitative Criminology (2019) 35:831–854
+
+
+Ruiter S, Bernasco W (2018) Is travel actually risky? A study of situational causes of victimization.
+     Crime Sci 7:10
+Sampson RJ, Raudenbush SW, Earls F (1997) Neighborhoods and violent crime: a multilevel study of
+     collective efficacy. Science 277:918–924
+Schwanen T, Kwan M-P, Ren F (2008) How fixed is fixed? Gendered rigidity of space–time constraints
+     and geographies of everyday activities. Geoforum 39:2109–2121
+Song C, Koren T, Wang P, Barabási A (2010a) Modelling the scaling properties of human mobility. Nat
+     Phys 6:818–823
+Song C, Qu Z, Blumm N, Barabási AL (2010b) Limits of predictability in human mobility. Science
+     327:1018
+Song G, Liu L, Bernasco W, Xiao L, Zhou S, Liao W (2018a) Testing indicators of risk populations for
+     theft from the person across space and time: the significance of mobility and outdoor activity. Ann Am
+     Assoc Geogr 108:1–19
+Song G, Liu L, Bernasco W, Xiao L, Zhou S, Liao W (2018b) Testing indicators of risk populations for
+     theft from the person across space and time: the significance of mobility and outdoor activity. Ann Am
+     Assoc Geogr 108:1370–1388
+Song G, Liu L, Bernasco W, Zhou S, Xiao L, Long D (2018c) Theft from the person in urban China: assess-
+     ing the diurnal effects of opportunity and social ecology. Habitat Int 78:1–106
+Townsley MT, Sidebottom A (2010) All offenders are equal, but some are more equal than others: variation
+     in journeys to crime between offenders. Criminology 48:897–917
+Townsley MT, Homel R, Chaseling J (2003) Infectious burglaries: a test of the near repeat hypothesis. Br J
+     Criminol 43:615–633
+Townsley MT, Birks D, Bernasco W, Ruiter S, Johnson SD, White G, Baum S (2015) Burglar target selec-
+     tion: a cross-national comparison. J Res Crime Delinq 52:3–31
+van Sleeuwen SEM, Ruiter S, Menting B (2018) A time for a crime: temporal aspects of repeat offenders’
+     crime location choices. J Res Crime Delinq 55:538–568
+Vandeviver C, Neutens T, Daele SV, Geurts D, Beken TV (2015) A discrete spatial choice model of bur-
+     glary target selection at the house-level. Appl Geogr 64:24–34
+Wellsmith M, Burrell A (2005) The influence of purchase price and ownership levels on theft targets: the
+     example of domestic burglary. Br J Criminol 45:741–764
+Xiao L, Liu L, Song G, Ruiter S, Zhou S (2018) Journey-to-crime distances of residential burglars in china
+     disentangled: origin and destination effects. ISPRS Int J Geo-Inf 7:325
+Xu Y, Shaw SL, Zhao Z, Yin L, Lu F, Chen J, Fang Z, Li Q (2016) Another tale of two cities: under-
+     standing human activity space using actively tracked cellphone location data. Ann Am Assoc Geogr
+     106:489–502
+Yang Y, Tian L, Yeh AGO, Li QQ (2014) Zooming into individuals to understand the collective: a review of
+     trajectory-based travel behaviour studies. Travel Behav Soc 1:69–78
+Zhang L, Messner SF, Liu J (2007a) An exploration of the determinants of reporting crime to the police in
+     the city of Tianjin, China. Criminology 45:959–<mark style="background-color: lightblue; font-weight: bold;">984</mark>
+Zhang L, Messner SF, Liu J (2007b) A multilevel analysis of the risk of household burglary in the city of
+     Tianjin, China. Br J Criminol 47:918–937
+Zheng Z, Zhou S (2017) Scaling laws of spatial visitation frequency: applications for trip frequency predic-
+     tion. Comput Environ Urban Syst 64:332–343
+Zhou S, Deng L, Kwan MP, Yan R (2015) Social and spatial differentiation of high and low income groups’
+     out-of-home activities in Guangzhou, China. Cities 45:81–90
+
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and
+institutional affiliations.
+
+
+
+
+13
+</div>
+      </body>
+      </html>
