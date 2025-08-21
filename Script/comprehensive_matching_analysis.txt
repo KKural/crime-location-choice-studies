@@ -1,0 +1,224 @@
+COMPREHENSIVE CSV-PDF MATCHING ANALYSIS RESULTS
+==================================================
+
+Overall Match Rate: 55.0% (77/140)
+
+
+VARIABLE: Country
+Raw Value: Belgium
+Match Rate: 50.0% (1/2)
+Matches:
+  FOUND: 'Belgium' (Word) - 11 instances on pages [1, 2, 3, 9]
+
+VARIABLE: City
+Raw Value: Ghent
+Match Rate: 50.0% (1/2)
+Matches:
+  FOUND: 'Ghent' (Word) - 7 instances on pages [1, 3, 6, 10]
+
+VARIABLE: Total_Study_Area_Size
+Raw Value: 3000 km²
+Match Rate: 50.0% (1/2)
+Matches:
+  NOT FOUND: '3000 km²' (Original)
+  FOUND: '3000' (Number) - 1 instances on pages [3]
+
+VARIABLE: Spatial_Unit_Name
+Raw Value: house
+Match Rate: 50.0% (1/2)
+Matches:
+  FOUND: 'house' (Word) - 142 instances on pages [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+VARIABLE: Unit_Size
+Raw Value: Not specified (the unit size is a single house, but no specific measurement like area or dimension i...
+Match Rate: 55.6% (10/18)
+Matches:
+  NOT FOUND: 'Not specified (the unit size is a single house, but no specific measurement like area or dimension is provided)' (Original)
+  FOUND: 'Not' (Word) - 43 instances on pages [1, 2, 4, 6, 7, 8, 9, 10]
+  NOT FOUND: 'specified' (Word)
+  FOUND: 'the' (Word) - 661 instances on pages [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  FOUND: 'unit' (Word) - 13 instances on pages [1, 2, 8, 11]
+  FOUND: 'size' (Word) - 20 instances on pages [2, 3, 4, 6, 7, 8, 9]
+  FOUND: 'single' (Word) - 6 instances on pages [2, 4, 6]
+  FOUND: 'house' (Word) - 142 instances on pages [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  FOUND: 'but' (Word) - 57 instances on pages [1, 2, 4, 5, 6, 8, 9, 10, 11]
+  NOT FOUND: 'specific' (Word)
+  NOT FOUND: 'measurement' (Word)
+  FOUND: 'like' (Word) - 40 instances on pages [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  FOUND: 'area' (Word) - 43 instances on pages [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  NOT FOUND: 'dimension' (Word)
+  FOUND: 'provided' (Word) - 3 instances on pages [6, 8, 10]
+  NOT FOUND: 'the unit size is a single house, but no specific measurement like area or dimension is provided' (Parenthetical)
+  NOT FOUND: 'Not specified (the unit size is a single house' (Split)
+  NOT FOUND: 'but no specific measurement like area or dimension is provided)' (Split)
+
+VARIABLE: Number_of_Units
+Raw Value: 503,589
+Match Rate: 75.0% (3/4)
+Matches:
+  FOUND: '503,589' (Number) - 4 instances on pages [2, 4, 6, 7]
+  FOUND: '503' (Split) - 5 instances on pages [2, 4, 6, 7]
+  FOUND: '589' (Split) - 4 instances on pages [2, 4, 6, 7]
+
+VARIABLE: Crime_Incidents
+Raw Value: 650
+Match Rate: 50.0% (1/2)
+Matches:
+  FOUND: '650' (Number) - 12 instances on pages [1, 4, 5, 6, 7]
+
+VARIABLE: Crime_Type
+Raw Value: Residential burglary
+Match Rate: 100.0% (3/3)
+Matches:
+  FOUND: 'Residential burglary' (Original) - 3 instances on pages [11]
+  FOUND: 'Residential' (Word) - 25 instances on pages [1, 2, 3, 4, 6, 10, 11]
+  FOUND: 'burglary' (Word) - 62 instances on pages [1, 2, 3, 4, 6, 7, 8, 9, 10, 11]
+
+VARIABLE: Data_Sources
+Raw Value: Belgian Federal Police; Belgian Land Registry
+Match Rate: 77.8% (7/9)
+Matches:
+  NOT FOUND: 'Belgian Federal Police; Belgian Land Registry' (Original)
+  FOUND: 'Belgian' (Word) - 11 instances on pages [1, 2, 3, 4, 5, 8]
+  FOUND: 'Federal' (Word) - 4 instances on pages [1, 3]
+  FOUND: 'Police' (Word) - 10 instances on pages [1, 3, 4, 9]
+  FOUND: 'Land' (Word) - 33 instances on pages [1, 2, 3, 4, 5, 7, 10, 11]
+  FOUND: 'Registry' (Word) - 7 instances on pages [3, 4, 5, 9]
+  FOUND: 'Belgian Federal Police' (Split) - 3 instances on pages [1, 3]
+  FOUND: 'Belgian Land Registry' (Split) - 4 instances on pages [3, 4, 5]
+
+VARIABLE: Model_Type
+Raw Value: Conditional Logit Model
+Match Rate: 66.7% (4/6)
+Matches:
+  FOUND: 'Conditional Logit Model' (ModelName) - 13 instances on pages [4, 6, 7, 8]
+  FOUND: 'Conditional' (Word) - 11 instances on pages [4, 6, 7, 8, 11]
+  FOUND: 'Logit' (Word) - 12 instances on pages [4, 6, 7, 8, 10, 11]
+  FOUND: 'Model' (Word) - 50 instances on pages [1, 2, 4, 6, 7, 8, 10, 11]
+
+VARIABLE: Independent_Variables
+Raw Value: 1. Built_surface_area
+2. Presence_of_garage
+3. Central_heating_and/or_air-conditioning_system
+4. ...
+Match Rate: 70.0% (7/10)
+Matches:
+  NOT FOUND: '1. Built_surface_area
+2. Presence_of_garage
+3. Central_heating_and/or_air-conditioning_system
+4. Distance_from_offender's_home
+5. Construction_type
+6. Number_of_floors
+7. Presence_of_rooftop_living_floor' (Original)
+  FOUND: '1.' (Number) - 14 instances on pages [1, 2, 3, 4, 6, 7, 8, 10, 11]
+  FOUND: '2.' (Number) - 11 instances on pages [2, 4, 5, 6, 9, 10, 11]
+  FOUND: '3.' (Number) - 12 instances on pages [3, 4, 5, 6, 7, 8, 9, 10, 11]
+  FOUND: '4.' (Number) - 9 instances on pages [5, 6, 11]
+  FOUND: '5.' (Number) - 13 instances on pages [1, 4, 5, 6, 10, 11]
+  FOUND: '6.' (Number) - 11 instances on pages [4, 5, 7, 8, 10, 11]
+  FOUND: '7.' (Number) - 7 instances on pages [5, 8, 9, 10]
+  NOT FOUND: '1. Built_surface_area
+2. Presence_of_garage
+3. Central_heating_and/or_air' (Split)
+  NOT FOUND: 'conditioning_system
+4. Distance_from_offender's_home
+5. Construction_type
+6. Number_of_floors
+7. Presence_of_rooftop_living_floor' (Split)
+
+VARIABLE: Software_Used
+Raw Value: R version 3.0.2, ICTCE 5.5.0
+Match Rate: 85.7% (6/7)
+Matches:
+  NOT FOUND: 'R version 3.0.2, ICTCE 5.5.0' (Original)
+  FOUND: '3.0.2' (Number) - 1 instances on pages [6]
+  FOUND: '5.5.0' (Number) - 1 instances on pages [6]
+  FOUND: 'version' (Word) - 2 instances on pages [6, 10]
+  FOUND: 'ICTCE' (Word) - 1 instances on pages [6]
+  FOUND: 'R version 3.0.2' (Split) - 2 instances on pages [6]
+  FOUND: 'ICTCE 5.5.0' (Split) - 1 instances on pages [6]
+
+VARIABLE: Model_Fit_Statistics
+Raw Value: Pseudo R²: 0.15
+- Likelihood ratio test statistic: 8.714; Δdf = 2; p = 0.013
+Match Rate: 50.0% (9/18)
+Matches:
+  NOT FOUND: 'Pseudo R²: 0.15
+- Likelihood ratio test statistic: 8.714; Δdf = 2; p = 0.013' (Original)
+  FOUND: '0.15' (Number) - 2 instances on pages [7, 8]
+  FOUND: '8.714' (Number) - 1 instances on pages [8]
+  FOUND: '2' (Number) - 345 instances on pages [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  FOUND: '0.013' (Number) - 1 instances on pages [8]
+  FOUND: 'Pseudo' (Word) - 3 instances on pages [7, 8]
+  FOUND: 'Likelihood' (Word) - 31 instances on pages [2, 3, 4, 6, 7, 8, 9]
+  FOUND: 'ratio' (Word) - 25 instances on pages [1, 2, 6, 7, 8, 10, 11]
+  FOUND: 'test' (Word) - 9 instances on pages [4, 7, 8, 10]
+  FOUND: 'statistic' (Word) - 10 instances on pages [3, 4, 5, 8, 10, 11]
+  NOT FOUND: 'Pseudo R²: 0.15
+- Likelihood ratio test statistic: 8.714' (Split)
+  NOT FOUND: 'Δdf = 2' (Split)
+  NOT FOUND: 'p = 0.013' (Split)
+  NOT FOUND: 'Pseudo R²' (Split)
+  NOT FOUND: '0.15
+- Likelihood ratio test statistic' (Split)
+  NOT FOUND: '8.714; Δdf = 2; p = 0.013' (Split)
+  NOT FOUND: 'Pseudo R²: 0.15' (Split)
+  NOT FOUND: 'Likelihood ratio test statistic: 8.714; Δdf = 2; p = 0.013' (Split)
+
+VARIABLE: Coefficients
+Raw Value: Construction type (semi-detached vs. terraced): Odds ratio = 0.72 (28% decrease)
+- Presence of a ga...
+Match Rate: 41.8% (23/55)
+Matches:
+  NOT FOUND: 'Construction type (semi-detached vs. terraced): Odds ratio = 0.72 (28% decrease)
+- Presence of a garage: Odds ratio = 0.80 (20% decrease)
+- Central heating/air-conditioning system: Odds ratio = 0.68 (32% decrease)
+- Distance from offender's home: Odds ratio = 0.79 (21% decrease per kilometer)' (Original)
+  NOT FOUND: '0.72' (Number)
+  NOT FOUND: '28%' (Number)
+  NOT FOUND: '0.80' (Number)
+  NOT FOUND: '20%' (Number)
+  FOUND: '0.68' (Number) - 1 instances on pages [7]
+  NOT FOUND: '32%' (Number)
+  FOUND: '0.79' (Number) - 3 instances on pages [7, 8]
+  NOT FOUND: '21%' (Number)
+  FOUND: 'Construction' (Word) - 8 instances on pages [5, 6, 8, 9]
+  FOUND: 'type' (Word) - 7 instances on pages [5, 6, 8, 9]
+  FOUND: 'semi' (Word) - 9 instances on pages [5, 6, 7, 8, 9]
+  FOUND: 'detached' (Word) - 14 instances on pages [5, 6, 7, 8, 9]
+  FOUND: 'terraced' (Word) - 13 instances on pages [1, 3, 5, 6, 7, 8, 9]
+  FOUND: 'Odds' (Word) - 14 instances on pages [1, 7, 8]
+  FOUND: 'ratio' (Word) - 25 instances on pages [1, 2, 6, 7, 8, 10, 11]
+  FOUND: 'decrease' (Word) - 8 instances on pages [1, 7, 8, 9]
+  FOUND: 'Presence' (Word) - 7 instances on pages [6, 8, 9, 10]
+  FOUND: 'garage' (Word) - 14 instances on pages [1, 5, 7, 8]
+  FOUND: 'Central' (Word) - 21 instances on pages [1, 3, 5, 7, 8, 9]
+  FOUND: 'heating' (Word) - 21 instances on pages [1, 5, 7, 8, 9]
+  FOUND: 'air' (Word) - 16 instances on pages [1, 3, 4, 5, 7, 8, 9, 11]
+  FOUND: 'conditioning' (Word) - 13 instances on pages [1, 5, 7, 8, 9]
+  FOUND: 'system' (Word) - 17 instances on pages [1, 2, 5, 8, 9, 11]
+  FOUND: 'Distance' (Word) - 31 instances on pages [2, 3, 4, 5, 6, 7, 8, 11]
+  FOUND: 'from' (Word) - 42 instances on pages [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  FOUND: 'offender' (Word) - 90 instances on pages [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  FOUND: 'home' (Word) - 26 instances on pages [1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  FOUND: 'per' (Word) - 76 instances on pages [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  FOUND: 'kilometer' (Word) - 1 instances on pages [8]
+  NOT FOUND: 'semi-detached vs. terraced' (Parenthetical)
+  NOT FOUND: '28% decrease' (Parenthetical)
+  NOT FOUND: '20% decrease' (Parenthetical)
+  NOT FOUND: '32% decrease' (Parenthetical)
+  NOT FOUND: '21% decrease per kilometer' (Parenthetical)
+  NOT FOUND: 'Construction type (semi-detached vs. terraced)' (Split)
+  NOT FOUND: 'Odds ratio = 0.72 (28% decrease)
+- Presence of a garage' (Split)
+  NOT FOUND: 'Odds ratio = 0.80 (20% decrease)
+- Central heating/air-conditioning system' (Split)
+  NOT FOUND: 'Odds ratio = 0.68 (32% decrease)
+- Distance from offender's home' (Split)
+  NOT FOUND: 'Odds ratio = 0.79 (21% decrease per kilometer)' (Split)
+  NOT FOUND: 'Construction type (semi' (Split)
+  NOT FOUND: 'detached vs. terraced): Odds ratio = 0.72 (28% decrease)' (Split)
+  NOT FOUND: 'Presence of a garage: Odds ratio = 0.80 (20% decrease)' (Split)
+  NOT FOUND: 'Central heating/air' (Split)
+  NOT FOUND: 'conditioning system: Odds ratio = 0.68 (32% decrease)' (Split)
+  NOT FOUND: 'Distance from offender's home: Odds ratio = 0.79 (21% decrease per kilometer)' (Split)

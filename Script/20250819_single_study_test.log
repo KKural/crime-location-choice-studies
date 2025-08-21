@@ -1,0 +1,187 @@
+2025-08-19 13:45:15,601 - INFO - === SINGLE STUDY HIGHLIGHTING TEST ===
+2025-08-19 13:45:15,601 - INFO - Loading data from ../20250819_Analysis & Results/20250819_combined_dataset.csv
+2025-08-19 13:45:15,676 - INFO - Loaded 51 studies from CSV
+2025-08-19 13:45:15,678 - INFO - Testing Study 1: A Discrete Spatial Choice Model Of Burglary Target...
+2025-08-19 13:45:15,679 - INFO - Found exact Study_ID match: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf
+2025-08-19 13:45:15,685 - INFO - Extracted 57 terms from study:
+2025-08-19 13:45:15,686 - INFO -   Geographic: ['Belgium', 'Ghent', '000 km²']
+2025-08-19 13:45:15,688 - INFO -   Spatial_Units: ['house', 'Not specified (the unit size is a single house', 'but no specific measurement like area or dimension is provided)', '503', '589', 'Not specified', 'No (the study uses data at the house level within the province of East Flanders without aggregating from smaller administrative units)']
+2025-08-19 13:45:15,688 - INFO -   Unit_Selection: ['The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection. This choice addresses the modifiable areal unit problem', 'reduces aggregation bias', 'and more accurately measures the environment in which offenders operate. Theoretically', 'it aligns with the nature of burglary', 'which involves selecting a specific house to commit the crime.', 'Theory', 'previous research', 'and data availability', 'The study was limited by the lack of data on apartments', 'which are a significant portion of potential targets.\r\n- Data availability issues included the removal of plots due to multiple dwellings and coding errors.\r\n- The study area was constrained to houses only due to the limitations of the Belgian Land Registry data.', 'Estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations (327', '332', '850).\r\n- The model required access to all choice-specific characteristics', 'adding to the computational burden.\r\n- A sampling strategy was used to reduce the number of alternatives', 'but even this was not sufficient for standard desktop computers.\r\n- The dataset and buffer memory requirements exceeded typical desktop capabilities', 'necessitating the use of high-performance computing infrastructure.', 'Neighborhoods: Previous studies used neighborhoods as a spatial unit of analysis', 'but this was rejected due to methodological concerns such as the modifiable areal unit problem and aggregation bias.\r\n- Postal code areas: Similar to neighborhoods', 'postal code areas were considered but rejected for the same methodological reasons.']
+2025-08-19 13:45:15,689 - INFO -   Data_Collection: ['2006-2012 (crime data)', '2013 (Land Registry data)', 'Belgian Federal Police', 'Belgian Land Registry']
+2025-08-19 13:45:15,690 - INFO -   Crime_Info: ['Residential burglary', 'Single crime type', '650']
+2025-08-19 13:45:15,699 - INFO -   Methodology: ['The authors discuss the Modifiable Areal Unit Problem (MAUP) by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. They emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', "which are components of the MAUP. This approach is seen as providing a more accurate measurement of the environment relevant to offenders' actions.", 'No sensitivity analysis performed.', 'Use fine-grained spatial units of analysis', 'such as the house level', "to align with offenders' decision-making processes and reduce aggregation bias.\r\n- Prefer smaller spatial units over larger ones for more accurate environmental measurement.\r\n- Explore available house-level data to improve or challenge current findings.\r\n- Consider multiple levels of spatial aggregation", 'such as neighborhoods or municipalities', 'in addition to the house level.\r\n- Apply nested logit models to account for multiple levels of spatial aggregation.']
+2025-08-19 13:45:15,706 - INFO - Processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-19 13:53:20,587 - INFO - === SINGLE STUDY HIGHLIGHTING TEST ===
+2025-08-19 13:53:20,589 - INFO - Loading data from ../20250819_Analysis & Results/20250819_combined_dataset.csv
+2025-08-19 13:53:20,644 - INFO - Loaded 51 studies from CSV
+2025-08-19 13:53:20,644 - INFO - Testing Study 1: A Discrete Spatial Choice Model Of Burglary Target...
+2025-08-19 13:53:20,648 - INFO - Found exact Study_ID match: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf
+2025-08-19 13:53:20,648 - INFO - Extracted 57 terms from study:
+2025-08-19 13:53:20,648 - INFO -   Country: ['Belgium']
+2025-08-19 13:53:20,652 - INFO -   City: ['Ghent']
+2025-08-19 13:53:20,652 - INFO -   Total_Study_Area_Size: ['000 km²']
+2025-08-19 13:53:20,652 - INFO -   Spatial_Unit_Name: ['house']
+2025-08-19 13:53:20,653 - INFO -   Unit_Size: ['Not specified (the unit size is a single house', 'but no specific measurement like area or dimension is provided)']
+2025-08-19 13:53:20,653 - INFO -   Number_of_Units: ['503', '589']
+2025-08-19 13:53:20,654 - INFO -   Average_Population_per_Unit: ['Not specified']
+2025-08-19 13:53:20,654 - INFO -   Spatial_Aggregation: ['No (the study uses data at the house level within the province of East Flanders without aggregating from smaller administrative units)']
+2025-08-19 13:53:20,655 - INFO -   Unit_Selection_Rationale: ['The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection. This choice addresses the modifiable areal unit problem', 'reduces aggregation bias', 'and more accurately measures the environment in which offenders operate. Theoretically', 'it aligns with the nature of burglary', 'which involves selecting a specific house to commit the crime.']
+2025-08-19 13:53:20,655 - INFO -   Rationale_Category: ['Theory', 'previous research', 'and data availability']
+2025-08-19 13:53:20,655 - INFO -   Data_Limitations: ['The study was limited by the lack of data on apartments', 'which are a significant portion of potential targets.\r\n- Data availability issues included the removal of plots due to multiple dwellings and coding errors.\r\n- The study area was constrained to houses only due to the limitations of the Belgian Land Registry data.']
+2025-08-19 13:53:20,656 - INFO -   Computational_Constraints: ['Estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations (327', '332', '850).\r\n- The model required access to all choice-specific characteristics', 'adding to the computational burden.\r\n- A sampling strategy was used to reduce the number of alternatives', 'but even this was not sufficient for standard desktop computers.\r\n- The dataset and buffer memory requirements exceeded typical desktop capabilities', 'necessitating the use of high-performance computing infrastructure.']
+2025-08-19 13:53:20,656 - INFO -   Alternative_Units: ['Neighborhoods: Previous studies used neighborhoods as a spatial unit of analysis', 'but this was rejected due to methodological concerns such as the modifiable areal unit problem and aggregation bias.\r\n- Postal code areas: Similar to neighborhoods', 'postal code areas were considered but rejected for the same methodological reasons.']
+2025-08-19 13:53:20,656 - INFO -   Data_Collection_Period: ['2006-2012 (crime data)', '2013 (Land Registry data)']
+2025-08-19 13:53:20,656 - INFO -   Data_Sources: ['Belgian Federal Police', 'Belgian Land Registry']
+2025-08-19 13:53:20,657 - INFO -   Crime_Type: ['Residential burglary']
+2025-08-19 13:53:20,657 - INFO -   Crime_Type_Group: ['Single crime type']
+2025-08-19 13:53:20,657 - INFO -   Crime_Incidents: ['650']
+2025-08-19 13:53:20,657 - INFO -   Model_Type: ['Conditional Logit Model']
+2025-08-19 13:53:20,659 - INFO -   Independent_Variables: ['1. Built_surface_area\r\n2. Presence_of_garage\r\n3. Central_heating_and', "or_air-conditioning_system\r\n4. Distance_from_offender's_home\r\n5. Construction_type\r\n6. Number_of_floors\r\n7. Presence_of_rooftop_living_floor"]
+2025-08-19 13:53:20,665 - INFO -   Coefficients: ['Construction type (semi-detached vs. terraced): Odds ratio = 0.72 (28% decrease)\r\n- Presence of a garage: Odds ratio = 0.80 (20% decrease)\r\n- Central heating', "air-conditioning system: Odds ratio = 0.68 (32% decrease)\r\n- Distance from offender's home: Odds ratio = 0.79 (21% decrease per kilometer)"]
+2025-08-19 13:53:20,665 - INFO -   Confidence_Intervals: ['Not mentioned (the paper does not provide specific numerical values for the confidence intervals)']
+2025-08-19 13:53:20,666 - INFO -   Effect_Sizes: ['Distance: OR = 0.79 (21% decrease in odds for every kilometer further away)\r\n- Construction type: Semi-detached vs. Terraced: OR = 0.72 (28% decrease in odds)\r\n- Presence of garage: OR = 0.80 (20% decrease in odds)\r\n- Central heating', 'air-conditioning: OR = 0.68 (32% decrease in odds)']
+2025-08-19 13:53:20,666 - INFO -   Software_Used: ['R version 3.0.2', 'ICTCE 5.5.0']
+2025-08-19 13:53:20,666 - INFO -   MAUP_Discussion: ['The authors discuss the Modifiable Areal Unit Problem (MAUP) by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. They emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', "which are components of the MAUP. This approach is seen as providing a more accurate measurement of the environment relevant to offenders' actions."]
+2025-08-19 13:53:20,666 - INFO -   Sensitivity_Analysis: ['No sensitivity analysis performed.']
+2025-08-19 13:53:20,667 - INFO -   Future_Suggestions: ['Use fine-grained spatial units of analysis', 'such as the house level', "to align with offenders' decision-making processes and reduce aggregation bias.\r\n- Prefer smaller spatial units over larger ones for more accurate environmental measurement.\r\n- Explore available house-level data to improve or challenge current findings.\r\n- Consider multiple levels of spatial aggregation", 'such as neighborhoods or municipalities', 'in addition to the house level.\r\n- Apply nested logit models to account for multiple levels of spatial aggregation.']
+2025-08-19 13:53:20,670 - INFO - Processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-19 13:58:33,543 - INFO - === SINGLE STUDY HIGHLIGHTING TEST ===
+2025-08-19 13:58:33,545 - INFO - Loading data from ../20250819_Analysis & Results/20250819_combined_dataset.csv
+2025-08-19 13:58:33,617 - INFO - Loaded 51 studies from CSV
+2025-08-19 13:58:33,620 - INFO - Testing Study 1: A Discrete Spatial Choice Model Of Burglary Target...
+2025-08-19 13:58:33,623 - INFO - Found exact Study_ID match: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf
+2025-08-19 13:58:33,626 - INFO - Extracted 57 terms from study:
+2025-08-19 13:58:33,627 - INFO -   Country: ['Belgium']
+2025-08-19 13:58:33,628 - INFO -   City: ['Ghent']
+2025-08-19 13:58:33,628 - INFO -   Total_Study_Area_Size: ['000 km²']
+2025-08-19 13:58:33,629 - INFO -   Spatial_Unit_Name: ['house']
+2025-08-19 13:58:33,629 - INFO -   Unit_Size: ['Not specified (the unit size is a single house', 'but no specific measurement like area or dimension is provided)']
+2025-08-19 13:58:33,630 - INFO -   Number_of_Units: ['503', '589']
+2025-08-19 13:58:33,630 - INFO -   Average_Population_per_Unit: ['Not specified']
+2025-08-19 13:58:33,631 - INFO -   Spatial_Aggregation: ['No (the study uses data at the house level within the province of East Flanders without aggregating from smaller administrative units)']
+2025-08-19 13:58:33,632 - INFO -   Unit_Selection_Rationale: ['The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection. This choice addresses the modifiable areal unit problem', 'reduces aggregation bias', 'and more accurately measures the environment in which offenders operate. Theoretically', 'it aligns with the nature of burglary', 'which involves selecting a specific house to commit the crime.']
+2025-08-19 13:58:33,633 - INFO -   Rationale_Category: ['Theory', 'previous research', 'and data availability']
+2025-08-19 13:58:33,633 - INFO -   Data_Limitations: ['The study was limited by the lack of data on apartments', 'which are a significant portion of potential targets.\r\n- Data availability issues included the removal of plots due to multiple dwellings and coding errors.\r\n- The study area was constrained to houses only due to the limitations of the Belgian Land Registry data.']
+2025-08-19 13:58:33,634 - INFO -   Computational_Constraints: ['Estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations (327', '332', '850).\r\n- The model required access to all choice-specific characteristics', 'adding to the computational burden.\r\n- A sampling strategy was used to reduce the number of alternatives', 'but even this was not sufficient for standard desktop computers.\r\n- The dataset and buffer memory requirements exceeded typical desktop capabilities', 'necessitating the use of high-performance computing infrastructure.']
+2025-08-19 13:58:33,635 - INFO -   Alternative_Units: ['Neighborhoods: Previous studies used neighborhoods as a spatial unit of analysis', 'but this was rejected due to methodological concerns such as the modifiable areal unit problem and aggregation bias.\r\n- Postal code areas: Similar to neighborhoods', 'postal code areas were considered but rejected for the same methodological reasons.']
+2025-08-19 13:58:33,635 - INFO -   Data_Collection_Period: ['2006-2012 (crime data)', '2013 (Land Registry data)']
+2025-08-19 13:58:33,635 - INFO -   Data_Sources: ['Belgian Federal Police', 'Belgian Land Registry']
+2025-08-19 13:58:33,636 - INFO -   Crime_Type: ['Residential burglary']
+2025-08-19 13:58:33,636 - INFO -   Crime_Type_Group: ['Single crime type']
+2025-08-19 13:58:33,636 - INFO -   Crime_Incidents: ['650']
+2025-08-19 13:58:33,636 - INFO -   Model_Type: ['Conditional Logit Model']
+2025-08-19 13:58:33,637 - INFO -   Independent_Variables: ['1. Built_surface_area\r\n2. Presence_of_garage\r\n3. Central_heating_and', "or_air-conditioning_system\r\n4. Distance_from_offender's_home\r\n5. Construction_type\r\n6. Number_of_floors\r\n7. Presence_of_rooftop_living_floor"]
+2025-08-19 13:58:33,709 - INFO -   Coefficients: ['Construction type (semi-detached vs. terraced): Odds ratio = 0.72 (28% decrease)\r\n- Presence of a garage: Odds ratio = 0.80 (20% decrease)\r\n- Central heating', "air-conditioning system: Odds ratio = 0.68 (32% decrease)\r\n- Distance from offender's home: Odds ratio = 0.79 (21% decrease per kilometer)"]
+2025-08-19 13:58:33,710 - INFO -   Confidence_Intervals: ['Not mentioned (the paper does not provide specific numerical values for the confidence intervals)']
+2025-08-19 13:58:33,710 - INFO -   Effect_Sizes: ['Distance: OR = 0.79 (21% decrease in odds for every kilometer further away)\r\n- Construction type: Semi-detached vs. Terraced: OR = 0.72 (28% decrease in odds)\r\n- Presence of garage: OR = 0.80 (20% decrease in odds)\r\n- Central heating', 'air-conditioning: OR = 0.68 (32% decrease in odds)']
+2025-08-19 13:58:33,710 - INFO -   Software_Used: ['R version 3.0.2', 'ICTCE 5.5.0']
+2025-08-19 13:58:33,710 - INFO -   MAUP_Discussion: ['The authors discuss the Modifiable Areal Unit Problem (MAUP) by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. They emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', "which are components of the MAUP. This approach is seen as providing a more accurate measurement of the environment relevant to offenders' actions."]
+2025-08-19 13:58:33,711 - INFO -   Sensitivity_Analysis: ['No sensitivity analysis performed.']
+2025-08-19 13:58:33,711 - INFO -   Future_Suggestions: ['Use fine-grained spatial units of analysis', 'such as the house level', "to align with offenders' decision-making processes and reduce aggregation bias.\r\n- Prefer smaller spatial units over larger ones for more accurate environmental measurement.\r\n- Explore available house-level data to improve or challenge current findings.\r\n- Consider multiple levels of spatial aggregation", 'such as neighborhoods or municipalities', 'in addition to the house level.\r\n- Apply nested logit models to account for multiple levels of spatial aggregation.']
+2025-08-19 13:58:33,711 - INFO - Variables with NO terms: ['Number_of_Data_Sources', 'Number_of_Variables']
+2025-08-19 13:58:33,745 - INFO - Processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-19 14:04:43,963 - INFO - === SINGLE STUDY HIGHLIGHTING TEST ===
+2025-08-19 14:04:43,963 - INFO - Loading data from ../20250819_Analysis & Results/20250819_combined_dataset.csv
+2025-08-19 14:04:44,017 - INFO - Loaded 51 studies from CSV
+2025-08-19 14:04:44,019 - INFO - Testing Study 1: A Discrete Spatial Choice Model Of Burglary Target...
+2025-08-19 14:04:44,021 - INFO - Found exact Study_ID match: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf
+2025-08-19 14:04:44,023 - INFO - Extracted 130 terms from study:
+2025-08-19 14:04:44,023 - INFO -   Country: ['Belgium']
+2025-08-19 14:04:44,023 - INFO -   City: ['Ghent']
+2025-08-19 14:04:44,026 - INFO -   Total_Study_Area_Size: ['3,000 km²', '3000 km²']
+2025-08-19 14:04:44,026 - INFO -   Spatial_Unit_Name: ['house']
+2025-08-19 14:04:44,027 - INFO -   Unit_Size: 4 variants - ['Not specified (the unit size is a single house', 'not specified the unit size is a single house', 'but no specific measurement like area or dimension is provided)']...
+2025-08-19 14:04:44,027 - INFO -   Number_of_Units: ['503,589', '503589']
+2025-08-19 14:04:44,027 - INFO -   Average_Population_per_Unit: ['Not specified']
+2025-08-19 14:04:44,028 - INFO -   Spatial_Aggregation: ['No (the study uses data at the house level within the province of East Flanders without aggregating from smaller administrative units)', 'no the study uses data at the house level within the province of east flanders without aggregating from smaller administrative units', 'East Flanders without aggregating from smaller administrative units']
+2025-08-19 14:04:44,028 - INFO -   Unit_Selection_Rationale: 8 variants - ['The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection. This choice addresses the modifiable areal unit problem', 'The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection', 'This choice addresses the modifiable areal unit problem']...
+2025-08-19 14:04:44,028 - INFO -   Rationale_Category: ['Theory, previous research, and data availability', 'theory previous research and data availability']
+2025-08-19 14:04:44,028 - INFO -   Data_Limitations: 6 variants - ['The study was limited by the lack of data on apartments', 'which are a significant portion of potential targets.', '- Data availability issues included the removal of plots due to multiple dwellings and coding errors.']...
+2025-08-19 14:04:44,029 - INFO -   Computational_Constraints: 15 variants - ['Estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations (327', 'estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations 327', 'Estimating the conditional logit model was computationally infeasible due to the large number of decision']...
+2025-08-19 14:04:44,029 - INFO -   Alternative_Units: 6 variants - ['Neighborhoods: Previous studies used neighborhoods as a spatial unit of analysis', 'Neighborhoods', 'Previous studies used neighborhoods as a spatial unit of analysis']...
+2025-08-19 14:04:44,030 - INFO -   Data_Collection_Period: ['2006-2012 (crime data), 2013 (Land Registry data)', '2006-2012 crime data 2013 land registry data']
+2025-08-19 14:04:44,030 - INFO -   Data_Sources: ['Belgian Federal Police', 'Belgian Land Registry']
+2025-08-19 14:04:44,030 - INFO -   Crime_Type: ['Residential burglary']
+2025-08-19 14:04:44,030 - INFO -   Crime_Type_Group: ['Single crime type']
+2025-08-19 14:04:44,033 - INFO -   Crime_Incidents: ['650']
+2025-08-19 14:04:44,033 - INFO -   Model_Type: ['Conditional Logit Model']
+2025-08-19 14:04:44,034 - INFO -   Independent_Variables: 8 variants - ['1. Built_surface_area', '2. Presence_of_garage', '3. Central_heating_and']...
+2025-08-19 14:04:44,038 - INFO -   Coefficients: 17 variants - ['Construction type (semi-detached vs. terraced): Odds ratio = 0.72 (28% decrease)', 'construction type semi-detached vs. terraced: odds ratio = 0.72 28% decrease', 'Construction type']...
+2025-08-19 14:04:44,038 - INFO -   Confidence_Intervals: ['Not mentioned (the paper does not provide specific numerical values for the confidence intervals)', 'not mentioned the paper does not provide specific numerical values for the confidence intervals', 'Not mentioned']
+2025-08-19 14:04:44,038 - INFO -   Effect_Sizes: 17 variants - ['Distance: OR = 0.79 (21% decrease in odds for every kilometer further away)', 'distance: or = 0.79 21% decrease in odds for every kilometer further away', 'Distance']...
+2025-08-19 14:04:44,038 - INFO -   Software_Used: ['R version 3.0.2, ICTCE 5.5.0', 'r version 3.0.2 ictce 5.5.0']
+2025-08-19 14:04:44,039 - INFO -   MAUP_Discussion: 6 variants - ['The authors discuss the Modifiable Areal Unit Problem (MAUP) by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. They emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', 'the authors discuss the modifiable areal unit problem maup by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. they emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', 'The authors discuss the Modifiable Areal Unit Problem']...
+2025-08-19 14:04:44,039 - INFO -   Sensitivity_Analysis: ['No sensitivity analysis performed.']
+2025-08-19 14:04:44,039 - INFO -   Future_Suggestions: 12 variants - ['Use fine-grained spatial units of analysis', 'such as the house level', "to align with offenders' decision-making processes and reduce aggregation bias."]...
+2025-08-19 14:04:44,039 - INFO - Variables with NO terms: ['Number_of_Data_Sources', 'Number_of_Variables']
+2025-08-19 14:04:44,044 - INFO - Processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-19 14:06:35,112 - INFO - === SINGLE STUDY HIGHLIGHTING TEST ===
+2025-08-19 14:06:35,112 - INFO - Loading data from ../20250819_Analysis & Results/20250819_combined_dataset.csv
+2025-08-19 14:06:35,257 - INFO - Loaded 51 studies from CSV
+2025-08-19 14:06:35,259 - INFO - Testing Study 1: A Discrete Spatial Choice Model Of Burglary Target...
+2025-08-19 14:06:35,259 - INFO - Found exact Study_ID match: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf
+2025-08-19 14:06:35,261 - INFO - Extracted 130 terms from study:
+2025-08-19 14:06:35,279 - INFO -   Country: ['Belgium']
+2025-08-19 14:06:35,280 - INFO -   City: ['Ghent']
+2025-08-19 14:06:35,280 - INFO -   Total_Study_Area_Size: ['3,000 km²', '3000 km²']
+2025-08-19 14:06:35,280 - INFO -   Spatial_Unit_Name: ['house']
+2025-08-19 14:06:35,280 - INFO -   Unit_Size: 4 variants - ['Not specified (the unit size is a single house', 'not specified the unit size is a single house', 'but no specific measurement like area or dimension is provided)']...
+2025-08-19 14:06:35,280 - INFO -   Number_of_Units: ['503,589', '503589']
+2025-08-19 14:06:35,282 - INFO -   Average_Population_per_Unit: ['Not specified']
+2025-08-19 14:06:35,282 - INFO -   Spatial_Aggregation: ['No (the study uses data at the house level within the province of East Flanders without aggregating from smaller administrative units)', 'no the study uses data at the house level within the province of east flanders without aggregating from smaller administrative units', 'East Flanders without aggregating from smaller administrative units']
+2025-08-19 14:06:35,282 - INFO -   Unit_Selection_Rationale: 8 variants - ['The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection. This choice addresses the modifiable areal unit problem', 'The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection', 'This choice addresses the modifiable areal unit problem']...
+2025-08-19 14:06:35,284 - INFO -   Rationale_Category: ['Theory, previous research, and data availability', 'theory previous research and data availability']
+2025-08-19 14:06:35,286 - INFO -   Data_Limitations: 6 variants - ['The study was limited by the lack of data on apartments', 'which are a significant portion of potential targets.', '- Data availability issues included the removal of plots due to multiple dwellings and coding errors.']...
+2025-08-19 14:06:35,288 - INFO -   Computational_Constraints: 15 variants - ['Estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations (327', 'estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations 327', 'Estimating the conditional logit model was computationally infeasible due to the large number of decision']...
+2025-08-19 14:06:35,288 - INFO -   Alternative_Units: 6 variants - ['Neighborhoods: Previous studies used neighborhoods as a spatial unit of analysis', 'Neighborhoods', 'Previous studies used neighborhoods as a spatial unit of analysis']...
+2025-08-19 14:06:35,288 - INFO -   Data_Collection_Period: ['2006-2012 (crime data), 2013 (Land Registry data)', '2006-2012 crime data 2013 land registry data']
+2025-08-19 14:06:35,288 - INFO -   Data_Sources: ['Belgian Federal Police', 'Belgian Land Registry']
+2025-08-19 14:06:35,289 - INFO -   Crime_Type: ['Residential burglary']
+2025-08-19 14:06:35,289 - INFO -   Crime_Type_Group: ['Single crime type']
+2025-08-19 14:06:35,289 - INFO -   Crime_Incidents: ['650']
+2025-08-19 14:06:35,290 - INFO -   Model_Type: ['Conditional Logit Model']
+2025-08-19 14:06:35,290 - INFO -   Independent_Variables: 8 variants - ['1. Built_surface_area', '2. Presence_of_garage', '3. Central_heating_and']...
+2025-08-19 14:06:35,296 - INFO -   Coefficients: 17 variants - ['Construction type (semi-detached vs. terraced): Odds ratio = 0.72 (28% decrease)', 'construction type semi-detached vs. terraced: odds ratio = 0.72 28% decrease', 'Construction type']...
+2025-08-19 14:06:35,297 - INFO -   Confidence_Intervals: ['Not mentioned (the paper does not provide specific numerical values for the confidence intervals)', 'not mentioned the paper does not provide specific numerical values for the confidence intervals', 'Not mentioned']
+2025-08-19 14:06:35,297 - INFO -   Effect_Sizes: 17 variants - ['Distance: OR = 0.79 (21% decrease in odds for every kilometer further away)', 'distance: or = 0.79 21% decrease in odds for every kilometer further away', 'Distance']...
+2025-08-19 14:06:35,297 - INFO -   Software_Used: ['R version 3.0.2, ICTCE 5.5.0', 'r version 3.0.2 ictce 5.5.0']
+2025-08-19 14:06:35,297 - INFO -   MAUP_Discussion: 6 variants - ['The authors discuss the Modifiable Areal Unit Problem (MAUP) by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. They emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', 'the authors discuss the modifiable areal unit problem maup by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. they emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', 'The authors discuss the Modifiable Areal Unit Problem']...
+2025-08-19 14:06:35,298 - INFO -   Sensitivity_Analysis: ['No sensitivity analysis performed.']
+2025-08-19 14:06:35,298 - INFO -   Future_Suggestions: 12 variants - ['Use fine-grained spatial units of analysis', 'such as the house level', "to align with offenders' decision-making processes and reduce aggregation bias."]...
+2025-08-19 14:06:35,299 - INFO - Variables with NO terms: ['Number_of_Data_Sources', 'Number_of_Variables']
+2025-08-19 14:06:35,305 - INFO - Processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-19 14:12:05,359 - INFO - === SINGLE STUDY HIGHLIGHTING TEST ===
+2025-08-19 14:12:05,360 - INFO - Loading data from ../20250819_Analysis & Results/20250819_combined_dataset.csv
+2025-08-19 14:12:05,435 - INFO - Loaded 51 studies from CSV
+2025-08-19 14:12:05,440 - INFO - Testing Study 1: A Discrete Spatial Choice Model Of Burglary Target...
+2025-08-19 14:12:05,442 - INFO - Found exact Study_ID match: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf
+2025-08-19 14:12:05,445 - INFO - Extracted 130 terms from study:
+2025-08-19 14:12:05,445 - INFO -   Country: ['Belgium']
+2025-08-19 14:12:05,445 - INFO -   City: ['Ghent']
+2025-08-19 14:12:05,448 - INFO -   Total_Study_Area_Size: ['3,000 km²', '3000 km²']
+2025-08-19 14:12:05,448 - INFO -   Spatial_Unit_Name: ['house']
+2025-08-19 14:12:05,449 - INFO -   Unit_Size: 4 variants - ['Not specified (the unit size is a single house', 'not specified the unit size is a single house', 'but no specific measurement like area or dimension is provided)']...
+2025-08-19 14:12:05,450 - INFO -   Number_of_Units: ['503,589', '503589']
+2025-08-19 14:12:05,450 - INFO -   Average_Population_per_Unit: ['Not specified']
+2025-08-19 14:12:05,451 - INFO -   Spatial_Aggregation: ['No (the study uses data at the house level within the province of East Flanders without aggregating from smaller administrative units)', 'no the study uses data at the house level within the province of east flanders without aggregating from smaller administrative units', 'East Flanders without aggregating from smaller administrative units']
+2025-08-19 14:12:05,451 - INFO -   Unit_Selection_Rationale: 8 variants - ['The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection. This choice addresses the modifiable areal unit problem', 'The authors justify the use of the house as the spatial unit of analysis by arguing that it is the smallest and most relevant unit for studying burglary target selection', 'This choice addresses the modifiable areal unit problem']...
+2025-08-19 14:12:05,452 - INFO -   Rationale_Category: ['Theory, previous research, and data availability', 'theory previous research and data availability']
+2025-08-19 14:12:05,452 - INFO -   Data_Limitations: 6 variants - ['The study was limited by the lack of data on apartments', 'which are a significant portion of potential targets.', '- Data availability issues included the removal of plots due to multiple dwellings and coding errors.']...
+2025-08-19 14:12:05,453 - INFO -   Computational_Constraints: 15 variants - ['Estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations (327', 'estimating the conditional logit model was computationally infeasible due to the large number of decision-maker-by-alternative combinations 327', 'Estimating the conditional logit model was computationally infeasible due to the large number of decision']...
+2025-08-19 14:12:05,453 - INFO -   Alternative_Units: 6 variants - ['Neighborhoods: Previous studies used neighborhoods as a spatial unit of analysis', 'Neighborhoods', 'Previous studies used neighborhoods as a spatial unit of analysis']...
+2025-08-19 14:12:05,454 - INFO -   Data_Collection_Period: ['2006-2012 (crime data), 2013 (Land Registry data)', '2006-2012 crime data 2013 land registry data']
+2025-08-19 14:12:05,454 - INFO -   Data_Sources: ['Belgian Federal Police', 'Belgian Land Registry']
+2025-08-19 14:12:05,454 - INFO -   Crime_Type: ['Residential burglary']
+2025-08-19 14:12:05,454 - INFO -   Crime_Type_Group: ['Single crime type']
+2025-08-19 14:12:05,455 - INFO -   Crime_Incidents: ['650']
+2025-08-19 14:12:05,455 - INFO -   Model_Type: ['Conditional Logit Model']
+2025-08-19 14:12:05,455 - INFO -   Independent_Variables: 8 variants - ['1. Built_surface_area', '2. Presence_of_garage', '3. Central_heating_and']...
+2025-08-19 14:12:05,517 - INFO -   Coefficients: 17 variants - ['Construction type (semi-detached vs. terraced): Odds ratio = 0.72 (28% decrease)', 'construction type semi-detached vs. terraced: odds ratio = 0.72 28% decrease', 'Construction type']...
+2025-08-19 14:12:05,517 - INFO -   Confidence_Intervals: ['Not mentioned (the paper does not provide specific numerical values for the confidence intervals)', 'not mentioned the paper does not provide specific numerical values for the confidence intervals', 'Not mentioned']
+2025-08-19 14:12:05,517 - INFO -   Effect_Sizes: 17 variants - ['Distance: OR = 0.79 (21% decrease in odds for every kilometer further away)', 'distance: or = 0.79 21% decrease in odds for every kilometer further away', 'Distance']...
+2025-08-19 14:12:05,517 - INFO -   Software_Used: ['R version 3.0.2, ICTCE 5.5.0', 'r version 3.0.2 ictce 5.5.0']
+2025-08-19 14:12:05,517 - INFO -   MAUP_Discussion: 6 variants - ['The authors discuss the Modifiable Areal Unit Problem (MAUP) by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. They emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', 'the authors discuss the modifiable areal unit problem maup by highlighting that using fine-grained spatial units such as individual houses addresses the issue and reduces aggregation bias. they emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity', 'The authors discuss the Modifiable Areal Unit Problem']...
+2025-08-19 14:12:05,517 - INFO -   Sensitivity_Analysis: ['No sensitivity analysis performed.']
+2025-08-19 14:12:05,517 - INFO -   Future_Suggestions: 12 variants - ['Use fine-grained spatial units of analysis', 'such as the house level', "to align with offenders' decision-making processes and reduce aggregation bias."]...
+2025-08-19 14:12:05,517 - INFO - Variables with NO terms: ['Number_of_Data_Sources', 'Number_of_Variables']
+2025-08-19 14:12:05,557 - INFO - Processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)

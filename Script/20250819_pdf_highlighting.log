@@ -1,0 +1,31 @@
+2025-08-19 13:11:12,784 - INFO - Starting PDF direct highlighting process...
+2025-08-19 13:11:12,784 - INFO - Loading data from 20250819_combined_dataset.csv
+2025-08-19 13:11:12,790 - ERROR - Error loading CSV file: [Errno 2] No such file or directory: '20250819_combined_dataset.csv'
+2025-08-19 13:11:28,864 - INFO - Starting PDF direct highlighting process...
+2025-08-19 13:11:28,864 - INFO - Loading data from ../20250819_combined_dataset.csv
+2025-08-19 13:11:28,876 - ERROR - Error loading CSV file: [Errno 2] No such file or directory: '../20250819_combined_dataset.csv'
+2025-08-19 13:11:56,478 - INFO - Starting PDF direct highlighting process...
+2025-08-19 13:11:56,480 - INFO - Loading data from ../20250819_Analysis & Results/20250819_combined_dataset.csv
+2025-08-19 13:11:56,567 - INFO - Loaded 51 studies from CSV
+2025-08-19 13:11:56,568 - INFO - Extracting terms from dataset...
+2025-08-19 13:11:56,589 - INFO - Extracted 480 unique terms:
+2025-08-19 13:11:56,589 - INFO -   Geographic: 67 terms
+2025-08-19 13:11:56,589 - INFO -   Quantitative: 69 terms
+2025-08-19 13:11:56,589 - INFO -   Methods: 174 terms
+2025-08-19 13:11:56,590 - INFO -   Crime-related: 66 terms
+2025-08-19 13:11:56,590 - INFO -   Statistical: 13 terms
+2025-08-19 13:11:56,590 - INFO -   Other: 91 terms
+2025-08-19 13:11:56,592 - INFO - Found 51 PDF files
+2025-08-19 13:11:56,592 - INFO - 
+Processing PDF 1/51: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf
+2025-08-19 13:11:56,621 - INFO - Processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-19 13:12:26,694 - INFO - Saved highlighted PDF: 01_a_discrete_spatial_choice_model_of_burglary_target_highlighted.pdf
+2025-08-19 13:12:26,702 - ERROR - Error processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf: document closed
+2025-08-19 13:12:26,703 - INFO - 
+Processing PDF 2/51: 02_residential_burglary_target_selection_property_level.pdf
+2025-08-19 13:12:26,751 - INFO - Processing 02_residential_burglary_target_selection_property_level.pdf (8 pages)
+2025-08-19 13:12:48,118 - INFO - Saved highlighted PDF: 02_residential_burglary_target_selection_property_level_highlighted.pdf
+2025-08-19 13:12:48,126 - ERROR - Error processing 02_residential_burglary_target_selection_property_level.pdf: document closed
+2025-08-19 13:12:48,126 - INFO - 
+Processing PDF 3/51: 03_graffiti_writers_choose_locations_that_optimize_exposure.pdf
+2025-08-19 13:12:48,170 - INFO - Processing 03_graffiti_writers_choose_locations_that_optimize_exposure.pdf (27 pages)

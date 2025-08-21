@@ -1,0 +1,51 @@
+2025-08-19 13:36:37,577 - INFO - Starting PDF direct highlighting process (FIRST INSTANCE ONLY)...
+2025-08-19 13:36:37,577 - INFO - Loading data from ../20250819_Analysis & Results/20250819_combined_dataset.csv
+2025-08-19 13:36:37,673 - INFO - Loaded 51 studies from CSV
+2025-08-19 13:36:37,675 - INFO - Extracting terms from dataset...
+2025-08-19 13:36:37,694 - INFO - Extracted 480 unique terms:
+2025-08-19 13:36:37,694 - INFO -   Geographic: 67 terms
+2025-08-19 13:36:37,694 - INFO -   Quantitative: 69 terms
+2025-08-19 13:36:37,694 - INFO -   Methods: 174 terms
+2025-08-19 13:36:37,694 - INFO -   Crime-related: 66 terms
+2025-08-19 13:36:37,694 - INFO -   Statistical: 13 terms
+2025-08-19 13:36:37,694 - INFO -   Other: 91 terms
+2025-08-19 13:36:37,694 - INFO - Found 51 PDF files
+2025-08-19 13:36:37,694 - INFO - 
+Processing PDF 1/51: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf
+2025-08-19 13:36:37,730 - INFO - Processing 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-19 13:37:00,978 - INFO - 
+Processing PDF 2/51: 02_residential_burglary_target_selection_property_level.pdf
+2025-08-19 13:37:01,008 - INFO - Processing 02_residential_burglary_target_selection_property_level.pdf (8 pages)
+2025-08-19 13:37:19,844 - INFO - 
+Processing PDF 3/51: 03_graffiti_writers_choose_locations_that_optimize_exposure.pdf
+2025-08-19 13:37:19,877 - INFO - Processing 03_graffiti_writers_choose_locations_that_optimize_exposure.pdf (27 pages)
+2025-08-19 13:37:40,273 - INFO - 
+Processing PDF 4/51: 04_where_do_dealers_solicit_customers_and_sell_them_drugs.pdf
+2025-08-19 13:37:40,305 - INFO - Processing 04_where_do_dealers_solicit_customers_and_sell_them_drugs.pdf (33 pages)
+2025-08-19 13:38:24,636 - INFO - 
+Processing PDF 5/51: 05_go_where_the_money_is_modeling_street_robbers_lo.pdf
+2025-08-19 13:38:24,781 - INFO - Processing 05_go_where_the_money_is_modeling_street_robbers_lo.pdf (25 pages)
+2025-08-19 13:39:13,501 - INFO - 
+Processing PDF 6/51: 06_do_street_robbery_location_choices_vary_over_time.pdf
+2025-08-19 13:39:13,514 - INFO - Processing 06_do_street_robbery_location_choices_vary_over_time.pdf (32 pages)
+2025-08-19 13:40:05,429 - INFO - 
+Processing PDF 7/51: 07_the usefulness of past crime data as an attractive.pdf
+2025-08-19 13:40:05,433 - INFO - Processing 07_the usefulness of past crime data as an attractive.pdf (14 pages)
+2025-08-19 13:40:28,955 - INFO - 
+Processing PDF 8/51: 08_role_of_the_street_network_in_burglars_spatial_de.pdf
+2025-08-19 13:40:28,958 - INFO - Processing 08_role_of_the_street_network_in_burglars_spatial_de.pdf (33 pages)
+2025-08-19 13:41:12,995 - INFO - 
+Processing PDF 9/51: 09_discrete_choice_analysis_of_spatial_attack_sites_1.pdf
+2025-08-19 13:41:12,998 - INFO - Processing 09_discrete_choice_analysis_of_spatial_attack_sites_1.pdf (20 pages)
+2025-08-19 13:41:45,837 - INFO - 
+Processing PDF 10/51: 10_adolescent_offenders_current_whereabouts_predict.pdf
+2025-08-19 13:41:45,839 - INFO - Processing 10_adolescent_offenders_current_whereabouts_predict.pdf (17 pages)
+2025-08-19 13:42:14,152 - INFO - 
+Processing PDF 11/51: 11_spatial_analysis_with_preference_specification_of.pdf
+2025-08-19 13:42:14,186 - INFO - Processing 11_spatial_analysis_with_preference_specification_of.pdf (14 pages)
+2025-08-19 13:42:55,298 - INFO - 
+Processing PDF 12/51: 12_modelling_the_spatial_decision_making_of_terrorist.pdf
+2025-08-19 13:42:55,332 - INFO - Processing 12_modelling_the_spatial_decision_making_of_terrorist.pdf (35 pages)
+2025-08-19 13:43:37,115 - INFO - 
+Processing PDF 13/51: 13_testing_ecological_theories_of_offender_spatial_de.pdf
+2025-08-19 13:43:37,155 - INFO - Processing 13_testing_ecological_theories_of_offender_spatial_de.pdf (27 pages)
