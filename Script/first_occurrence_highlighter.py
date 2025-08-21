@@ -20,9 +20,96 @@ import logging
 import re
 from typing import Dict, List, Set, Optional
 from datetime import datetime
+from collections import defaultdict
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def rect_iou(a: fitz.Rect, b: fitz.Rect) -> float:
+    """Calculate intersection over union for two rectangles."""
+    inter = a & b
+    if inter.is_empty or inter.x1 <= inter.x0 or inter.y1 <= inter.y0:
+        return 0.0
+    inter_area = inter.get_area()
+    union_area = a.get_area() + b.get_area() - inter_area
+    return inter_area / max(union_area, 1e-9)
+
+HYPHENS = "-\u2010\u2011\u2012\u2013\u2014"
+
+def _norm_for_match(s: str) -> str:
+    """Normalize text for word-by-word matching."""
+    s = s or ""
+    s = re.sub(rf"[{HYPHENS}]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip().lower()
+    return s
+
+def _phrase_tokens(s: str) -> List[str]:
+    """Split phrase into normalized tokens."""
+    return [t for t in _norm_for_match(s).split() if t]
+
+def find_first_occurrence_quads_by_words(page, phrase: str) -> List[fitz.Quad]:
+    """
+    Returns a list of fitz.Quad forming the first full occurrence of `phrase`
+    by matching against page word boxes. Empty list if not found.
+    """
+    target = _phrase_tokens(phrase)
+    if not target:
+        return []
+
+    try:
+        words = page.get_text("words") or []
+    except Exception:
+        return []
+    
+    if not words:
+        return []
+    
+    # Sort in reading order (y, then x)
+    words.sort(key=lambda w: (round(w[1], 1), w[0]))
+    # words[i] = (x0, y0, x1, y1, "text", block, line, word_no)
+
+    # Normalize each word and split hyphenated words into tokens,
+    # but keep the same rect for all tokens that came from the same word box.
+    norm_stream = []  # [(token, rect)]
+    for word_data in words:
+        if len(word_data) < 5:
+            continue
+        x0, y0, x1, y1, wtxt = word_data[:5]
+        try:
+            rect = fitz.Rect(x0, y0, x1, y1)
+        except Exception:
+            continue
+        wnorm = _norm_for_match(wtxt)
+        if not wnorm:
+            continue
+        # split on spaces (hyphens were already converted to spaces)
+        for tok in wnorm.split():
+            if tok:
+                norm_stream.append((tok, rect))
+
+    n = len(norm_stream)
+    m = len(target)
+    i = 0
+    while i <= n - m:
+        got = True
+        quads = []
+        for k in range(m):
+            if i + k >= n:
+                got = False
+                break
+            tok, rect = norm_stream[i + k]
+            if tok != target[k]:
+                got = False
+                break
+            try:
+                quads.append(fitz.Quad(rect))
+            except Exception:
+                got = False
+                break
+        if got and quads:
+            return quads
+        i += 1
+    return []
 
 class FirstOccurrenceHighlighter:
     def __init__(self, study_id=1):
@@ -36,6 +123,17 @@ class FirstOccurrenceHighlighter:
         
         # Track what we've highlighted per variable
         self.seen = set()  # (variable, term_lower)
+        
+        # Policy: Only highlight first occurrence per variable (not per term)
+        self.first_hit_per_variable = True
+        
+        # Configuration flags for exact highlighting behavior
+        self.EXACT_TERMS_ONLY = True           # only search exactly what's in the cell
+        self.MERGE_OVERLAPS = True             # merge if two variables land on the same spot
+        self.OVERLAP_IOU = 0.60                # how similar two rectangles must be to count as "same spot"
+        
+        # Skip these count columns
+        self.skip_columns = {"Number_of_Data_Sources", "Number_of_Variables"}
         
         # Exact 30 columns to process (excluding Supporting_/Reasoning_)
         self.target_columns = {
@@ -329,164 +427,69 @@ class FirstOccurrenceHighlighter:
         return result
 
     def generate_search_terms(self, value, variable: str) -> List[str]:
-        """Generate search terms from cell value with improved processing and anchors."""
-        if pd.isna(value) or str(value).strip() == '':
+        """Exact terms only: use the cell text as-is (with light normalization).
+           Split only where the cell clearly contains multiple items.
+        """
+        if pd.isna(value):
             return []
-        
-        # Normalize the text
-        normalized = self.normalize_text(value)
-        terms = []
-        lower_norm = normalized.lower()
+        raw = str(value).strip()
+        if not raw:
+            return []
 
-        # Variable-specific handling first
-        if variable in ['Data_Sources', 'Software_Used']:
-            # Always split by semicolons (and pipes) regardless of length
-            items = self.split_semicolon_items(normalized)
-            # For software, also split commas because tools often comma-separated
-            if variable == 'Software_Used':
-                extra = []
-                for it in items:
-                    extra.extend([x.strip() for x in it.split(',') if x.strip()])
-                if extra:
-                    items = extra
-            for item in items:
-                item = self.clean_list_numbering(item)
-                terms.extend(self.expand_term_variants(item))
+        s = self.normalize_text(raw)
 
-        elif variable == 'Independent_Variables':
-            items = self.extract_enumerated_items(normalized)
-            for item in items:
-                terms.extend(self.expand_term_variants(item))
+        # Always split these as lists
+        if variable in {"Data_Sources", "Software_Used"}:
+            parts = [p.strip() for p in re.split(r'[;|]', s) if p.strip()]
+            # keep comma-split for Software_Used (versions etc.)
+            if variable == "Software_Used":
+                more = []
+                for p in parts:
+                    more += [x.strip() for x in p.split(',') if x.strip()]
+                parts = more or parts
+            terms = parts
 
-        elif variable == 'Model_Fit_Statistics':
-            # Use anchors only; stitched sentences won't match
-            anchors = ['pseudo r', 'mcfadden', 'likelihood ratio', 'aic', 'bic', 'log-likelihood']
-            terms.extend(anchors)
-
-        elif variable == 'Data_Collection_Period':
-            # Generate range and year anchors with dash variants
-            m = re.search(r'\b((?:19|20)\d{2})\s*[-–—]\s*((?:19|20)\d{2})\b', normalized)
-            if m:
-                y1, y2 = m.group(1), m.group(2)
-                # Range variants
-                ranges = [f"{y1}-{y2}", f"{y1}–{y2}", f"{y1}—{y2}", f"{y1} – {y2}", f"{y1} — {y2}"]
-                terms.extend(ranges)
-                # Individual years
-                terms.extend([y1, y2])
-            else:
-                # Try 'YYYY to YYYY'
-                m2 = re.search(r'\b((?:19|20)\d{2})\s+to\s+((?:19|20)\d{2})\b', normalized, flags=re.IGNORECASE)
-                if m2:
-                    y1, y2 = m2.group(1), m2.group(2)
-                    terms.extend([f"{y1} to {y2}", f"{y1}-{y2}", f"{y1}–{y2}"])
-                else:
-                    # Fallback: add any year-looking tokens
-                    years = re.findall(r'\b(?:19|20)\d{2}\b', normalized)
-                    terms.extend(years)
-
-        elif variable in ['Confidence_Intervals']:
-            # Avoid bare 'CI' to prevent false positives
-            terms.extend(['confidence interval', '95% CI', '95 % CI', '95% confidence'])
-
-        elif variable == 'MAUP_Discussion':
-            terms.extend(['MAUP', 'modifiable areal unit', 'aggregation'])
-
-        elif variable == 'Average_Population_per_Unit':
-            # Use anchors rather than prose
-            terms.extend(['population', 'inhabitants', 'residents'])
-
-        elif variable in ['Data_Limitations', 'Computational_Constraints']:
-            # Extract keywords from summary instead of using full text
-            terms.extend(self.extract_keywords_from_summary(normalized, variable))
-
-        elif variable == 'Alternative_Units':
-            # If colon exists, take left anchor part
-            left = normalized.split(':', 1)[0].strip()
-            if left:
-                terms.extend(self.expand_term_variants(left))
-
-        elif variable == 'Rationale_Category':
-            terms.extend(['theory', 'previous research', 'data availability'])
-
-        elif variable == 'Crime_Type_Group':
-            if 'single' in lower_norm:
-                terms.extend(['burglary', 'residential burglary'])
-            else:
-                terms.append('crime type')
-
-        elif variable == 'Future_Suggestions':
-            # Use anchors typical in suggestion/recommendation sections
-            anchors = [
-                'fine-grained', 'fine grained',
-                'house-level', 'house level',
-                'nested logit', 'nested-logit',
-                'multiple levels', 'multi-level', 'multilevel',
-                'aggregation', 'spatial aggregation',
-                'unit of analysis', 'smaller spatial units',
-            ]
-            # Include dash variants for hyphenated forms
-            for a in anchors:
-                terms.extend(self.expand_term_variants(a))
-
-        elif variable == 'Coefficients':
-            # Short anchors more likely to exist than stitched sentences
-            anchors = [
-                'odds ratio', 'OR', 'coefficient', 'estimate', 'beta', 'SE',
-                'distance', 'terraced', 'semi-detached', 'garage',
-                'central heating', 'air-conditioning', 'construction type',
-            ]
-            for a in anchors:
-                terms.extend(self.expand_term_variants(a))
-
-        elif variable == 'Effect_Sizes':
-            anchors = [
-                'odds ratio', 'OR', 'increase', 'decrease', 'per kilometer', 'km',
-                'percentage', '%',
-            ]
-            for a in anchors:
-                terms.extend(self.expand_term_variants(a))
+        # Enumerated items for variables that are list-like
+        elif variable in {
+            "Independent_Variables","Coefficients","Effect_Sizes",
+            "Alternative_Units","Future_Suggestions","Unit_Selection_Rationale",
+            "Data_Limitations","Computational_Constraints"
+        }:
+            t = s.replace("\n", " ")
+            pat = r'(?:^|\s)(?:\(?\d+[\.\)]|\(?[a-zA-Z][\.\)])\s+(.+?)(?=\s+(?:\(?\d+[\.\)]|\(?[a-zA-Z][\.\)])\s+|$)'
+            items = [m.strip() for m in re.findall(pat, t)]
+            if not items:
+                items = [x.strip() for x in re.split(r'[;•]', t) if x.strip()]
+            terms = items or [s]
 
         else:
-            # Generic handling
-            is_summary = any(phrase in lower_norm for phrase in [
-                'not specified', 'not mentioned', 'the authors', 'the study', 'no sensitivity'
-            ])
-            if is_summary:
-                terms.extend(self.extract_keywords_from_summary(normalized, variable))
-            elif len(normalized) <= 120:
-                terms.extend(self.expand_term_variants(normalized))
-            else:
-                chunks = self.smart_chunk_split(normalized)
-                for chunk in chunks:
-                    clean_chunk = self.clean_list_numbering(chunk)
-                    if len(clean_chunk) >= 5:
-                        terms.extend(self.expand_term_variants(clean_chunk))
-        
-        # Filter hazardous very short tokens and exact bad abbreviations
-        def _filter_terms(var: str, items: List[str]) -> List[str]:
-            bad = {"or", "se", "ci"}
-            allow_short = {"km", "%"}
-            out = []
-            for s in items:
-                raw = s.strip()
-                low = raw.lower()
-                if low in bad:
-                    continue
-                if len(raw) < 3 and low not in allow_short and not re.search(r"\d", raw):
-                    continue
-                out.append(raw)
-            return out
+            # Single exact term
+            terms = [s]
 
-        terms = _filter_terms(variable, terms)
-
-        # De-duplicate terms per variable
-        unique_terms = []
+        # De-dupe per variable, but keep per-variable independence
+        out = []
+        seen_local = set()
         for term in terms:
-            term_key = (variable, term.lower())
-            if term_key not in self.seen:
-                self.seen.add(term_key)
-                unique_terms.append(term)
-        
+            term = term.strip()
+            if not term:
+                continue
+            if term.lower() in seen_local:
+                continue
+            seen_local.add(term.lower())
+
+            # Keep a *space* variant if the CSV uses underscores (your cells sometimes do)
+            if "_" in term:
+                out.append(term.replace("_", " "))
+            out.append(term)   # exact as-is
+
+        # record per-variable de-dup globally
+        unique_terms = []
+        for t in out:
+            key = (variable, t.lower())
+            if key not in self.seen:
+                self.seen.add(key)
+                unique_terms.append(t)
+
         return unique_terms
 
     def load_study_data(self):
@@ -568,6 +571,9 @@ class FirstOccurrenceHighlighter:
             except AttributeError:
                 pass
             
+            # Track placed highlights for overlap detection
+            placed_by_page = defaultdict(list)  # page_num -> [{rect, annot, vars:set(), terms:set()}]
+            
             # Process each variable and its terms
             for variable, terms in variable_terms.items():
                 category = self.variable_categories.get(variable, 'Default')
@@ -579,7 +585,7 @@ class FirstOccurrenceHighlighter:
                 variable_hits = 0
                 first_hit_page = None
                 
-                for term in terms:
+                for term in terms[:2]:  # Cap at 2 terms per variable to reduce false positives
                     found_match = False
                     # Keep a clean copy of the term for searching, and a truncated one for logging
                     search_term = term
@@ -596,36 +602,84 @@ class FirstOccurrenceHighlighter:
                                 print(f"⚠️  WARNING: Page {page_num + 1} may be scanned/OCR needed")
                                 image_only_warning_shown = True
                         
-                        # Search with improved flags and quads
-                        try:
-                            text_instances = page.search_for(search_term, quads=True, hit_max=1, flags=search_flags)
-                        except (TypeError, AttributeError):
-                            # Fallback for older PyMuPDF versions
-                            text_instances = page.search_for(search_term)
-                        
-                        if text_instances:
-                            # Always highlight only the first match to avoid confetti
-                            first = text_instances[0]
-                            rect = getattr(first, 'rect', first)
+                        # Try word-based exact phrase match first (best for full-phrase highlight)
+                        quads = find_first_occurrence_quads_by_words(page, search_term)
+
+                        if not quads:
+                            # Fallback: PyMuPDF search; DO NOT use hit_max=1 (would truncate)
                             try:
-                                # Prefer single-rect highlight to avoid multi-hit annotations
-                                highlight = page.add_highlight_annot(rect)
+                                hits = page.search_for(search_term, quads=True, flags=search_flags)
+                            except (TypeError, AttributeError):
+                                hits = page.search_for(search_term)
+                            # Take only the quads belonging to the first hit
+                            if isinstance(hits, list) and hits:
+                                # If we got rects (no quads), convert the first rect to a quad list
+                                first = hits[0]
+                                if hasattr(first, "rect"):  # it's a Quad
+                                    quads = [first]
+                                else:  # it's a Rect
+                                    quads = [fitz.Quad(first)]
+                            else:
+                                quads = []
+                        
+                        if quads:
+                            # Get bounding rect for overlap detection
+                            if len(quads) == 1:
+                                rect = quads[0].rect
+                            else:
+                                # Combine all quads into a bounding rect
+                                x0 = min(q.ul.x for q in quads)
+                                y0 = min(q.ul.y for q in quads)
+                                x1 = max(q.lr.x for q in quads)
+                                y1 = max(q.lr.y for q in quads)
+                                rect = fitz.Rect(x0, y0, x1, y1)
+                            
+                            # Merge if overlapping an existing highlight on this page
+                            merged = False
+                            if self.MERGE_OVERLAPS:
+                                for ph in placed_by_page[page_num]:
+                                    if rect_iou(rect, ph['rect']) >= self.OVERLAP_IOU:
+                                        # Merge: add this variable to that highlight's info
+                                        ph['vars'].add(variable)
+                                        ph['terms'].add(search_term)
+                                        vars_str = " | ".join(sorted(ph['vars']))
+                                        terms_str = "; ".join(sorted(ph['terms']))[:250]
+                                        ph['annot'].set_info(title=vars_str, content=f"{vars_str}\n{terms_str}")
+                                        ph['annot'].update()
+                                        merged = True
+                                        break
+                            
+                            if merged:
+                                # No new box, but we did satisfy this variable
+                                variable_hits += 1
+                                if first_hit_page is None:
+                                    first_hit_page = page_num + 1
+                                match_details.append({
+                                    'Page': page_num + 1,
+                                    'Variable': variable,
+                                    'Term': search_term,
+                                    'HitsOnPage': 1,
+                                    'Color': color
+                                })
+                                found_match = True
+                                break
+                            
+                            # Otherwise create a new highlight (no icon) - pass ALL quads for the phrase
+                            try:
+                                highlight = page.add_highlight_annot(quads)
                             except Exception:
-                                # Fallback: if rect fails, try with first item as list
-                                try:
-                                    highlight = page.add_highlight_annot([first])
-                                except Exception:
-                                    highlight = page.add_highlight_annot(rect)
+                                # Fallback to the first quad's rect
+                                highlight = page.add_highlight_annot(quads[0].rect)
                             
                             highlight.set_colors(stroke=color)
-                            
-                            # Add small text annotation
-                            note_text = f"{variable}\n{search_term[:250]}"
-                            annotation_point = fitz.Point(rect.x0, rect.y0)
-                            annotation = page.add_text_annot(annotation_point, note_text)
-                            annotation.set_info(content=note_text, title=variable)
-                            annotation.update()
+                            highlight.set_info(title=variable, content=f"{variable}\n{search_term[:250]}")
                             highlight.update()
+                            
+                            # Track this rectangle so we can merge future overlaps
+                            placed_by_page[page_num].append({
+                                'rect': rect, 'annot': highlight,
+                                'vars': {variable}, 'terms': {search_term}
+                            })
                             
                             # Record the match
                             highlights_created += 1
@@ -636,14 +690,17 @@ class FirstOccurrenceHighlighter:
                             match_details.append({
                                 'Page': page_num + 1,
                                 'Variable': variable,
-                                'Term': term,
-                                'HitsOnPage': len(text_instances),
+                                'Term': search_term,
+                                'HitsOnPage': 1,
                                 'Color': color
                             })
                             
                             print(f"   ✅ FOUND: '{log_term}' on page {page_num + 1}")
                             found_match = True
                             break  # Stop after first match in the document
+                    
+                    if found_match and self.first_hit_per_variable:
+                        break  # Break term loop after first variable hit when policy is enabled
                     
                     if not found_match:
                         not_found_terms.append((variable, search_term))
@@ -716,6 +773,11 @@ class FirstOccurrenceHighlighter:
         for column in self.target_columns:
             # Skip Supporting_/Reasoning_ columns explicitly
             if column.startswith('Supporting_') or column.startswith('Reasoning_'):
+                continue
+            
+            # Skip count columns
+            if column in self.skip_columns:
+                print(f"  📋 {column}: skipped (count field)")
                 continue
                 
             if column not in study_data.index:
@@ -816,6 +878,5 @@ def main():
     return success
 
 if __name__ == "__main__":
-    # For direct execution, use defaults
-    highlighter = FirstOccurrenceHighlighter(study_id=1)
-    highlighter.process_study()
+    # Use main() function to handle command line arguments
+    main()
