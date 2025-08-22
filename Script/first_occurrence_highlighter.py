@@ -4,7 +4,11 @@ First-Occurrence Variable Highlighter
 =====================================
 
 Updates to meet exact requirements:
-1. Only 30 target columns (excluding Supporting_/Reasoning_)
+1. Only 30 target columns (excludSKIP_PHRASES = (
+    "not specified", "not mentioned", "no maup discussion",
+    "no sensitivity analysis", "no alternative units",
+    "not applicable", "n/a", "na"
+)g_/Reasoning_)
 2. First occurrence only in entire PDF per term
 3. Exact content with light normalization
 4. 7 original categories + neutral gray
@@ -18,6 +22,7 @@ import fitz
 from pathlib import Path
 import logging
 import re
+import unicodedata
 from typing import Dict, List, Set, Optional
 from datetime import datetime
 from collections import defaultdict
@@ -37,79 +42,158 @@ def rect_iou(a: fitz.Rect, b: fitz.Rect) -> float:
 HYPHENS = "-\u2010\u2011\u2012\u2013\u2014"
 
 def _norm_for_match(s: str) -> str:
-    """Normalize text for word-by-word matching."""
-    s = s or ""
-    s = re.sub(rf"[{HYPHENS}]", " ", s)
+    import unicodedata, re
+    HYPHENS = "-\u2010\u2011\u2012\u2013\u2014"
+    s = unicodedata.normalize("NFKC", str(s or ""))
+    s = s.replace("\u00A0", " ").replace("\u00AD", "")  # nbsp, soft hyphen
+    s = s.translate({0x2018: "'", 0x2019: "'", 0x201C: '"', 0x201D: '"'})  # curly quotes
+    s = (s.replace("ﬁ","fi").replace("ﬂ","fl").replace("ﬀ","ff")
+           .replace("ﬃ","ffi").replace("ﬄ","ffl"))
+    s = re.sub(rf"[{HYPHENS}]", " ", s)                 # hyphen family → space
+    s = re.sub(r"[^0-9A-Za-z.%]+", " ", s)              # keep only letters/digits/%/.
     s = re.sub(r"\s+", " ", s).strip().lower()
     return s
 
-def _phrase_tokens(s: str) -> List[str]:
-    """Split phrase into normalized tokens."""
-    return [t for t in _norm_for_match(s).split() if t]
+def validate_bounding_box(rect: fitz.Rect) -> bool:
+    """Ensure bounding box is valid and non-empty."""
+    if rect.is_empty or rect.x1 <= rect.x0 or rect.y1 <= rect.y0:
+        return False
+    return True
 
-def find_first_occurrence_quads_by_words(page, phrase: str) -> List[fitz.Quad]:
-    """
-    Returns a list of fitz.Quad forming the first full occurrence of `phrase`
-    by matching against page word boxes. Empty list if not found.
-    """
-    target = _phrase_tokens(phrase)
+def _page_word_stream(page) -> list[tuple[str, fitz.Rect]]:
+    """One-time word extraction per page; normalized token + rect."""
+    words = page.get_text("words") or []
+    words.sort(key=lambda w: (round(w[1], 1), w[0]))  # reading order
+    stream = []
+    for x0, y0, x1, y1, text, *_ in words:
+        # Validate coordinates
+        if not all(isinstance(coord, (int, float)) for coord in [x0, y0, x1, y1]):
+            logging.warning(f"Skipping invalid coordinates: {x0}, {y0}, {x1}, {y1}")
+            continue
+        try:
+            r = fitz.Rect(x0, y0, x1, y1)
+            if not validate_bounding_box(r):
+                logging.warning(f"Skipping invalid bounding box: {r}")
+                continue
+            norm = _norm_for_match(text)
+            if not norm or len(norm) <= 1:  # Skip empty or single-character tokens
+                logging.info(f"Skipping invalid or short normalized text for: {text}")
+                continue
+            for tok in norm.split():
+                if len(tok) > 1:  # Ensure token length is valid
+                    logging.debug(f"Adding token: {tok}, Rect: {r}")
+                    stream.append((tok, r))
+        except Exception as e:
+            logging.error(f"Error creating Rect for: {x0}, {y0}, {x1}, {y1} - {e}")
+    return stream
+
+def validate_quad(quad: fitz.Quad) -> bool:
+    """Ensure the quad is valid and non-empty."""
+    # Check for None or empty values
+    if quad is None:
+        return False
+    
+    # Check if any of the points are invalid
+    try:
+        for point in [quad.ul, quad.ur, quad.ll, quad.lr]:
+            if not isinstance(point.x, (int, float)) or not isinstance(point.y, (int, float)):
+                return False
+            if not (0 <= point.x <= 1000) or not (0 <= point.y <= 1000):  # Reasonable bounds check
+                return False
+    except (AttributeError, TypeError):
+        return False
+        
+    # Check for valid rectangle properties
+    try:
+        if quad.rect.is_empty or quad.rect.x1 <= quad.rect.x0 or quad.rect.y1 <= quad.rect.y0:
+            return False
+    except (AttributeError, TypeError):
+        return False
+        
+    return True
+
+def find_first_occurrence_quads_by_words(page, phrase: str) -> list[fitz.Quad]:
+    """Exact phrase match with hyphen/line-break joins (full-span quads)."""
+    target = _norm_for_match(phrase).split()
     if not target:
         return []
 
-    try:
-        words = page.get_text("words") or []
-    except Exception:
-        return []
-    
-    if not words:
-        return []
-    
-    # Sort in reading order (y, then x)
-    words.sort(key=lambda w: (round(w[1], 1), w[0]))
-    # words[i] = (x0, y0, x1, y1, "text", block, line, word_no)
+    stream = getattr(page, "_cached_stream", None)
+    if stream is None:
+        stream = page._cached_stream = _page_word_stream(page)
 
-    # Normalize each word and split hyphenated words into tokens,
-    # but keep the same rect for all tokens that came from the same word box.
-    norm_stream = []  # [(token, rect)]
-    for word_data in words:
-        if len(word_data) < 5:
-            continue
-        x0, y0, x1, y1, wtxt = word_data[:5]
-        try:
-            rect = fitz.Rect(x0, y0, x1, y1)
-        except Exception:
-            continue
-        wnorm = _norm_for_match(wtxt)
-        if not wnorm:
-            continue
-        # split on spaces (hyphens were already converted to spaces)
-        for tok in wnorm.split():
-            if tok:
-                norm_stream.append((tok, rect))
+    n, m = len(stream), len(target)
+    MAX_JOIN = 3  # allow joining up to 3 adjacent tokens for one CSV word
 
-    n = len(norm_stream)
-    m = len(target)
     i = 0
     while i <= n - m:
-        got = True
+        j = i
         quads = []
-        for k in range(m):
-            if i + k >= n:
-                got = False
+        ok = True
+        for t in target:
+            best = None
+            # try consuming 1..MAX_JOIN tokens to equal t when concatenated
+            for k in range(1, MAX_JOIN + 1):
+                if j + k > n:
+                    break
+                joined = "".join(stream[j + p][0] for p in range(k))
+                if joined == t:
+                    best = k
+                    break
+            if best is None:
+                ok = False
                 break
-            tok, rect = norm_stream[i + k]
-            if tok != target[k]:
-                got = False
-                break
-            try:
-                quads.append(fitz.Quad(rect))
-            except Exception:
-                got = False
-                break
-        if got and quads:
+            for p in range(best):
+                try:
+                    rect = stream[j + p][1]
+                    # Additional validation of rectangle coordinates
+                    if not validate_bounding_box(rect):
+                        logging.warning(f"Invalid bounding box for token {stream[j + p][0]}: {rect}")
+                        ok = False
+                        break
+                    
+                    # Ensure coordinates are reasonable before creating quad
+                    if not (0 <= rect.x0 <= rect.x1 <= 1000) or not (0 <= rect.y0 <= rect.y1 <= 1000):
+                        logging.warning(f"Rectangle coordinates out of reasonable bounds: {rect}")
+                        ok = False
+                        break
+                        
+                    # Safe creation of quad with error handling
+                    try:
+                        quad = fitz.Quad(rect)
+                        if validate_quad(quad):
+                            quads.append(quad)
+                        else:
+                            logging.warning(f"Created quad failed validation for token {stream[j + p][0]}: {rect}")
+                            ok = False
+                            break
+                    except Exception as e:
+                        logging.error(f"Error creating Quad for token {stream[j + p][0]} with rect {rect}: {e}")
+                        ok = False
+                        break
+                except Exception as e:
+                    logging.error(f"General error processing token at position {j+p}: {e}")
+                    ok = False
+                    break
+            j += best
+        if ok and quads:
             return quads
         i += 1
     return []
+
+SKIP_PHRASES = (
+    "not specified", "not mentioned", "no maup discussion",
+    "no sensitivity analysis", "no alternative units",
+    "not applicable", "n/a", "na"
+)
+
+def generate_search_terms(raw):
+    s = self.normalize_text(raw)
+    ls = s.lower()
+    if any(p in ls for p in SKIP_PHRASES):
+        return []  # don’t waste time; this wording isn’t in the PDF
+    # ...existing code...
+    return terms
 
 class FirstOccurrenceHighlighter:
     def __init__(self, study_id=1):
@@ -585,7 +669,7 @@ class FirstOccurrenceHighlighter:
                 variable_hits = 0
                 first_hit_page = None
                 
-                for term in terms[:2]:  # Cap at 2 terms per variable to reduce false positives
+                for term in terms:  # no cap — exact terms only
                     found_match = False
                     # Keep a clean copy of the term for searching, and a truncated one for logging
                     search_term = term
@@ -603,90 +687,72 @@ class FirstOccurrenceHighlighter:
                                 image_only_warning_shown = True
                         
                         # Try word-based exact phrase match first (best for full-phrase highlight)
-                        quads = find_first_occurrence_quads_by_words(page, search_term)
+                        quads = []
+                        try:
+                            quads = find_first_occurrence_quads_by_words(page, search_term)
+                        except Exception as e:
+                            logging.error(f"Error in word-based matching for '{search_term}': {e}")
+                            # Continue with fallback methods
 
+                        # First fallback: Use simple PyMuPDF search if word-based matching failed
                         if not quads:
-                            # Fallback: PyMuPDF search; DO NOT use hit_max=1 (would truncate)
                             try:
-                                hits = page.search_for(search_term, quads=True, flags=search_flags)
-                            except (TypeError, AttributeError):
-                                hits = page.search_for(search_term)
-                            # Take only the quads belonging to the first hit
-                            if isinstance(hits, list) and hits:
-                                # If we got rects (no quads), convert the first rect to a quad list
-                                first = hits[0]
-                                if hasattr(first, "rect"):  # it's a Quad
-                                    quads = [first]
-                                else:  # it's a Rect
-                                    quads = [fitz.Quad(first)]
-                            else:
-                                quads = []
+                                hits = page.search_for(search_term, quads=True, 
+                                                     flags=fitz.TEXT_DEHYPHENATE | getattr(fitz, "TEXT_IGNORECASE", 0))
+                                if isinstance(hits, list) and hits:
+                                    first = hits[0]
+                                    if hasattr(first, "rect"):
+                                        quads = [first]
+                                    else:
+                                        try:
+                                            quads = [fitz.Quad(first)]
+                                        except Exception as quad_err:
+                                            logging.error(f"Error creating quad from search hit: {quad_err}")
+                            except (TypeError, AttributeError, Exception) as e:
+                                logging.error(f"Error in basic search for '{search_term}': {e}")
                         
-                        if quads:
-                            # Get bounding rect for overlap detection
-                            if len(quads) == 1:
-                                rect = quads[0].rect
-                            else:
-                                # Combine all quads into a bounding rect
-                                x0 = min(q.ul.x for q in quads)
-                                y0 = min(q.ul.y for q in quads)
-                                x1 = max(q.lr.x for q in quads)
-                                y1 = max(q.lr.y for q in quads)
-                                rect = fitz.Rect(x0, y0, x1, y1)
-                            
-                            # Merge if overlapping an existing highlight on this page
-                            merged = False
-                            if self.MERGE_OVERLAPS:
-                                for ph in placed_by_page[page_num]:
-                                    if rect_iou(rect, ph['rect']) >= self.OVERLAP_IOU:
-                                        # Merge: add this variable to that highlight's info
-                                        ph['vars'].add(variable)
-                                        ph['terms'].add(search_term)
-                                        vars_str = " | ".join(sorted(ph['vars']))
-                                        terms_str = "; ".join(sorted(ph['terms']))[:250]
-                                        ph['annot'].set_info(title=vars_str, content=f"{vars_str}\n{terms_str}")
-                                        ph['annot'].update()
-                                        merged = True
-                                        break
-                            
-                            if merged:
-                                # No new box, but we did satisfy this variable
-                                variable_hits += 1
-                                if first_hit_page is None:
-                                    first_hit_page = page_num + 1
-                                match_details.append({
-                                    'Page': page_num + 1,
-                                    'Variable': variable,
-                                    'Term': search_term,
-                                    'HitsOnPage': 1,
-                                    'Color': color
-                                })
-                                found_match = True
-                                break
-                            
-                            # Otherwise create a new highlight (no icon) - pass ALL quads for the phrase
+                        # Second fallback: If both approaches failed, try rectangle-based highlighting
+                        if not quads:
                             try:
-                                highlight = page.add_highlight_annot(quads)
-                            except Exception:
-                                # Fallback to the first quad's rect
-                                highlight = page.add_highlight_annot(quads[0].rect)
-                            
-                            highlight.set_colors(stroke=color)
-                            highlight.set_info(title=variable, content=f"{variable}\n{search_term[:250]}")
-                            highlight.update()
-                            
-                            # Track this rectangle so we can merge future overlaps
-                            placed_by_page[page_num].append({
-                                'rect': rect, 'annot': highlight,
-                                'vars': {variable}, 'terms': {search_term}
-                            })
-                            
-                            # Record the match
-                            highlights_created += 1
+                                # Simple text search with rectangles
+                                rects = page.search_for(search_term)
+                                if isinstance(rects, list) and rects and rects[0].is_valid:
+                                    # Directly use rectangles for highlighting instead of quads
+                                    rect = rects[0]
+                                    # Skip the quad creation entirely - we'll handle this special case later
+                                    quads = ["USE_RECT_FALLBACK"]
+                                    # Store the rectangle for later use
+                                    page._special_rect = rect
+                            except Exception as e:
+                                logging.error(f"Error in rectangle fallback search for '{search_term}': {e}")
+                        
+                        if not quads:
+                            continue
+                        
+                        # Build a single bounding rect for overlap checks
+                        rect = quads[0].rect if len(quads) == 1 else fitz.Rect(
+                            min(q.ul.x for q in quads), min(q.ul.y for q in quads),
+                            max(q.lr.x for q in quads), max(q.lr.y for q in quads)
+                        )
+                        
+                        # Optional: merge same-spot highlights
+                        merged = False
+                        if self.MERGE_OVERLAPS:
+                            for ph in placed_by_page[page_num]:
+                                if rect_iou(rect, ph["rect"]) >= self.OVERLAP_IOU:
+                                    ph["vars"].add(variable)
+                                    ph["terms"].add(search_term)
+                                    title = " | ".join(sorted(ph["vars"]))
+                                    content = f"{title}\n{'; '.join(sorted(ph['terms']))[:250]}"
+                                    ph["annot"].set_info(title=title, content=content)
+                                    ph["annot"].update()
+                                    merged = True
+                                    break
+                        
+                        if merged:
                             variable_hits += 1
                             if first_hit_page is None:
                                 first_hit_page = page_num + 1
-                            
                             match_details.append({
                                 'Page': page_num + 1,
                                 'Variable': variable,
@@ -694,10 +760,55 @@ class FirstOccurrenceHighlighter:
                                 'HitsOnPage': 1,
                                 'Color': color
                             })
-                            
-                            print(f"   ✅ FOUND: '{log_term}' on page {page_num + 1}")
                             found_match = True
-                            break  # Stop after first match in the document
+                            break
+                        
+                        # Create highlight with ALL quads (full phrase) — no sticky note icon
+                        try:
+                            # Handle special case for rectangle fallback
+                            if quads and quads[0] == "USE_RECT_FALLBACK" and hasattr(page, "_special_rect"):
+                                highlight = page.add_highlight_annot(page._special_rect)
+                                # Clean up the special attribute
+                                delattr(page, "_special_rect")
+                            else:
+                                try:
+                                    highlight = page.add_highlight_annot(quads)
+                                except Exception:
+                                    # If highlighting with quads fails, try the first quad's rectangle
+                                    if quads and hasattr(quads[0], "rect") and quads[0].rect.is_valid:
+                                        highlight = page.add_highlight_annot(quads[0].rect)
+                                    else:
+                                        logging.error(f"Failed to create highlight for '{search_term}' - no valid quads or rectangles")
+                                        continue
+                            
+                            highlight.set_colors(stroke=color)
+                            highlight.set_info(title=variable, content=f"{variable}\n{search_term[:250]}")
+                            highlight.update()
+                            
+                            placed_by_page[page_num].append({
+                                "rect": rect, "annot": highlight, "vars": {variable}, "terms": {search_term}
+                            })
+                        except Exception as e:
+                            logging.error(f"Error creating highlight annotation: {e}")
+                            continue
+                        
+                        # Record the match
+                        highlights_created += 1
+                        variable_hits += 1
+                        if first_hit_page is None:
+                            first_hit_page = page_num + 1
+                        
+                        match_details.append({
+                            "Page": page_num + 1,
+                            "Variable": variable,
+                            "Term": search_term,
+                            "HitsOnPage": 1,
+                            "Color": color
+                        })
+                        
+                        print(f"   ✅ FOUND: '{log_term}' on page {page_num + 1}")
+                        found_match = True
+                        break  # Stop after first match in the document
                     
                     if found_match and self.first_hit_per_variable:
                         break  # Break term loop after first variable hit when policy is enabled

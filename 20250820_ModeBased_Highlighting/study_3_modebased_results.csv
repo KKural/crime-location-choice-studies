@@ -1,0 +1,13 @@
+Page,Variable,Term,Mode,HitsOnPage,Color
+1,Country,Belgium,keyword,1,"(1.0, 0.0, 0.0)"
+1,City,Ghent,keyword,1,"(1.0, 0.0, 0.0)"
+1,Spatial_Unit_Name,Street segments,keyword,1,"(0.0, 0.0, 1.0)"
+1,Number_of_Units,"2,233",exact,1,"(0.0, 1.0, 0.0)"
+1,Data_Collection_Period,November 2017,exact,1,"(1.0, 0.65, 0.0)"
+1,Number_of_Data_Sources,1,exact,1,"(0.0, 1.0, 0.0)"
+1,Crime_Type,Graffiti,keyword,1,"(1.0, 0.65, 0.0)"
+1,Crime_Incidents,"12,655",exact,1,"(0.0, 1.0, 0.0)"
+12,Independent_Variables,Betweenness network centrality,exact,1,"(0.5, 0.0, 0.5)"
+2,Number_of_Variables,14,exact,1,"(0.0, 1.0, 0.0)"
+1,Coefficients,Bars,exact,1,"(0.0, 1.0, 1.0)"
+9,Effect_Sizes,Bars,exact,1,"(0.0, 1.0, 1.0)"
