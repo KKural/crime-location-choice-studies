@@ -1,0 +1,445 @@
+2025-08-25 16:58:49,423 - INFO - 🔍 Processing Study 43
+2025-08-25 16:58:49,568 - INFO - 📖 Opened PDF: Review_articles\43_co-offenders_crime_location_choice.pdf (19 pages)
+2025-08-25 16:58:49,807 - INFO - 📋 Discovered 32 variables to process: ['Alternative_Units', 'Average_Population_per_Unit', 'City', 'City_', 'Coefficients', 'Computational_Constraints', 'Confidence_Intervals', 'Country', 'Crime_Incidents', 'Crime_Type', 'Crime_Type_Group', 'Data_Collection_Period', 'Data_Limitations', 'Data_Sources', 'Effect_Sizes', 'Future_Suggestions', 'Independent_Variables', 'MAUP_Discussion', 'Model_Type', 'Number_of_Data_Sources', 'Number_of_Units', 'Number_of_Variables', 'Sensitivity_Analysis', 'Software_Used', 'Spatial_Aggregation', 'Spatial_Unit_Name', 'State_or_Region', 'Total_Study_Area_Size', 'Unit_Selection_Rationale', 'Unit_Size', '_Model_Fit_Statistics', '_Rationale_Category']
+2025-08-25 16:58:49,807 - DEBUG - 🔄 Processing variable: Country
+2025-08-25 16:58:49,811 - INFO -   🎯 Direct highlighting: Country = 'Netherlands - "In total, 4,654 offenders from the greater Th...'
+2025-08-25 16:58:49,811 - DEBUG -     Search terms: ['Netherlands - "In total, 4,654 offenders from the greater The Hague region', 'Netherlands - "In total, 4,654 offenders from the greater The', 'Netherlands - "In total, 4,654 offenders from the', 'Netherlands - "In total, 4,654 offenders', 'Netherlands - "In total, 4,654 offenders from the greater The Hague region in The Netherlands were studied', 'Netherlands', 'The Hague', '4654']
+2025-08-25 16:58:49,811 - DEBUG - Searching document for: 'Netherlands - "In total, 4,654 offenders from the greater Th...'
+2025-08-25 16:58:50,226 - DEBUG - No matches found for: 'Netherlands - "In total, 4,654 offenders from the ...'
+2025-08-25 16:58:50,226 - DEBUG - Searching document for: 'Netherlands - "In total, 4,654 offenders from the greater Th...'
+2025-08-25 16:58:50,661 - DEBUG - No matches found for: 'Netherlands - "In total, 4,654 offenders from the ...'
+2025-08-25 16:58:50,661 - DEBUG - Searching document for: 'Netherlands - "In total, 4,654 offenders from the...'
+2025-08-25 16:58:51,079 - DEBUG - No matches found for: 'Netherlands - "In total, 4,654 offenders from the...'
+2025-08-25 16:58:51,079 - DEBUG - Searching document for: 'Netherlands - "In total, 4,654 offenders...'
+2025-08-25 16:58:51,756 - DEBUG - No matches found for: 'Netherlands - "In total, 4,654 offenders...'
+2025-08-25 16:58:51,756 - DEBUG - Searching document for: 'Netherlands - "In total, 4,654 offenders from the greater Th...'
+2025-08-25 16:58:51,820 - DEBUG - ✓ Found 'Netherlands - "In total, 4,654...' on page 1
+2025-08-25 16:58:51,828 - INFO -     ✅ 1 highlight created (first occurrence only)
+2025-08-25 16:58:51,840 - DEBUG - 🔄 Processing variable: State_or_Region
+2025-08-25 16:58:51,846 - INFO -   ⚠️  Skipping State_or_Region: empty/short value
+2025-08-25 16:58:51,856 - DEBUG - 🔄 Processing variable: City
+2025-08-25 16:58:51,859 - INFO -   🎯 Direct highlighting: City = 'The Hague...'
+2025-08-25 16:58:51,875 - DEBUG -     Search terms: ['The Hague', "'s-Gravenhage", 'Den Haag']
+2025-08-25 16:58:51,875 - DEBUG - Searching document for: 'The Hague...'
+2025-08-25 16:58:51,880 - DEBUG - ✓ Found 'The Hague...' on page 1
+2025-08-25 16:58:51,885 - INFO -     ✅ 1 highlight created (first occurrence only)
+2025-08-25 16:58:51,914 - DEBUG - 🔄 Processing variable: Crime_Type
+2025-08-25 16:58:51,915 - INFO -   🎯 Direct highlighting: Crime_Type = 'burglary; theft; public disorder crimes; assault...'
+2025-08-25 16:58:51,926 - DEBUG -     Search terms: ['burglary; theft; public disorder crimes; assault']
+2025-08-25 16:58:51,926 - DEBUG - Searching document for: 'burglary; theft; public disorder crimes; assault...'
+2025-08-25 16:58:52,239 - DEBUG - No matches found for: 'burglary; theft; public disorder crimes; assault...'
+2025-08-25 16:58:52,239 - INFO -     ❌ No matches found
+2025-08-25 16:58:52,245 - DEBUG - 🔄 Processing variable: Crime_Incidents
+2025-08-25 16:58:52,245 - INFO -   🎯 Direct highlighting: Crime_Incidents = '6,283...'
+2025-08-25 16:58:52,251 - DEBUG -     Search terms: ['6,283']
+2025-08-25 16:58:52,251 - DEBUG - Searching document for: '6,283...'
+2025-08-25 16:58:52,261 - DEBUG - ✓ Found '6,283...' on page 1
+2025-08-25 16:58:52,266 - INFO -     ✅ 1 highlight created (first occurrence only)
+2025-08-25 16:58:52,267 - DEBUG - 🔄 Processing variable: Model_Type
+2025-08-25 16:58:52,267 - INFO -   🎯 Direct highlighting: Model_Type = 'Conditional Logit Model...'
+2025-08-25 16:58:52,268 - DEBUG -     Search terms: ['Conditional Logit Model']
+2025-08-25 16:58:52,268 - DEBUG - Searching document for: 'Conditional Logit Model...'
+2025-08-25 16:58:52,433 - DEBUG - ✓ Found 'Conditional Logit Model...' on page 9
+2025-08-25 16:58:52,437 - INFO -     ✅ 1 highlight created (first occurrence only)
+2025-08-25 16:58:52,442 - DEBUG - 🔄 Processing variable: Software_Used
+2025-08-25 16:58:52,443 - INFO -   ⚠️  Skipping Software_Used: empty/short value
+2025-08-25 16:58:52,443 - DEBUG - 🔄 Processing variable: Data_Sources
+2025-08-25 16:58:52,443 - INFO -   🎯 Direct highlighting: Data_Sources = 'Police information system of the greater The Hague Police Se...'
+2025-08-25 16:58:52,444 - DEBUG -     Search terms: ['Police information system of the greater The Hague Police Service; Population registration data (BRP); Statistics Netherlands; LISA database']
+2025-08-25 16:58:52,444 - DEBUG - Searching document for: 'Police information system of the greater The Hague Police Se...'
+2025-08-25 16:58:55,074 - DEBUG - No matches found for: 'Police information system of the greater The Hague...'
+2025-08-25 16:58:55,074 - INFO -     ❌ No matches found
+2025-08-25 16:58:55,075 - DEBUG - 🔄 Processing variable: Number_of_Data_Sources
+2025-08-25 16:58:55,474 - DEBUG - 🔄 Processing variable: Data_Collection_Period
+2025-08-25 16:58:55,474 - INFO -   🎯 Direct highlighting: Data_Collection_Period = '2006-2009...'
+2025-08-25 16:58:55,474 - DEBUG -     Search terms: ['2006-2009']
+2025-08-25 16:58:55,474 - DEBUG - Searching document for: '2006-2009...'
+2025-08-25 16:58:55,552 - DEBUG - ✓ Found '2006-2009...' on page 5
+2025-08-25 16:58:55,557 - INFO -     ✅ 1 highlight created (first occurrence only)
+2025-08-25 16:58:55,557 - DEBUG - 🔄 Processing variable: City_
+2025-08-25 16:58:55,557 - INFO -   📝 Quote highlighting: City_
+2025-08-25 16:58:55,558 - DEBUG -     Found 5 quotes in cell
+2025-08-25 16:58:55,674 - DEBUG - Searching document for: 'In total, 4,654 offenders from the greater The Hague region ...'
+2025-08-25 16:58:55,677 - DEBUG - ✓ Found 'In total, 4,654 offenders from...' on page 1
+2025-08-25 16:58:55,681 - DEBUG -     Found with chunk: In total, 4,654 offenders from the greater The Hague region ...
+2025-08-25 16:58:55,770 - DEBUG - Searching document for: 'The dependent variable in this study is the choice of an are...'
+2025-08-25 16:58:55,824 - DEBUG - ✓ Found 'The dependent variable in this...' on page 5
+2025-08-25 16:58:55,828 - DEBUG -     Found with chunk: The dependent variable in this study is the choice of an are...
+2025-08-25 16:58:55,927 - DEBUG - Searching document for: 'The data were analysed using a discrete spatial choice model...'
+2025-08-25 16:58:55,931 - DEBUG - ✓ Found 'The data were analysed using a...' on page 1
+2025-08-25 16:58:55,935 - DEBUG -     Found with chunk: The data were analysed using a discrete spatial choice model...
+2025-08-25 16:58:56,110 - DEBUG - Searching document for: 'The residential history of the offenders was derived from po...'
+2025-08-25 16:58:56,168 - DEBUG - ✓ Found 'The residential history of the...' on page 7
+2025-08-25 16:58:56,170 - DEBUG -     Found with chunk: The residential history of the offenders was derived from po...
+2025-08-25 16:58:56,294 - DEBUG - Searching document for: '"The total of 4,654 offenders had committed 6,283 crimes bet...'
+2025-08-25 16:58:56,709 - DEBUG - No matches found for: '"The total of 4,654 offenders had committed 6,283 ...'
+2025-08-25 16:58:56,709 - DEBUG - Searching document for: '2003 and 2009, 3,612 of which were co-offended...'
+2025-08-25 16:58:57,077 - DEBUG - ✓ Found '2003 and 2009, 3,612 of which ...' on page 13
+2025-08-25 16:58:57,080 - DEBUG -     Found with chunk: 2003 and 2009, 3,612 of which were co-offended...
+2025-08-25 16:58:57,080 - INFO -     ✅ 5 highlights from quotes
+2025-08-25 16:58:57,081 - DEBUG - 🔄 Processing variable: Total_Study_Area_Size
+2025-08-25 16:58:57,081 - INFO -   📝 Quote highlighting: Total_Study_Area_Size
+2025-08-25 16:58:57,081 - DEBUG -     Found 2 quotes in cell
+2025-08-25 16:58:57,176 - DEBUG - Searching document for: 'This region consists of a total of 142 four-digit postal cod...'
+2025-08-25 16:58:57,217 - DEBUG - ✓ Found 'This region consists of a tota...' on page 5
+2025-08-25 16:58:57,220 - DEBUG -     Found with chunk: This region consists of a total of 142 four-digit postal cod...
+2025-08-25 16:58:57,316 - DEBUG - Searching document for: '"The total number of four-digit postal code areas in the dat...'
+2025-08-25 16:58:57,542 - DEBUG - No matches found for: '"The total number of four-digit postal code areas ...'
+2025-08-25 16:58:57,543 - INFO -     ✅ 1 highlights from quotes
+2025-08-25 16:58:57,543 - DEBUG - 🔄 Processing variable: Spatial_Unit_Name
+2025-08-25 16:58:57,543 - INFO -   📝 Quote highlighting: Spatial_Unit_Name
+2025-08-25 16:58:57,543 - DEBUG -     Found 2 quotes in cell
+2025-08-25 16:58:57,641 - DEBUG - Searching document for: 'the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:58:57,802 - DEBUG - ✓ Found 'the spatial unit of analysis t...' on page 15
+2025-08-25 16:58:57,805 - DEBUG -     Found with chunk: the spatial unit of analysis that was used in this study is...
+2025-08-25 16:58:57,914 - DEBUG - Searching document for: '"The dependent variable in this study is the choice of an ar...'
+2025-08-25 16:58:57,963 - DEBUG - ✓ Found '"The dependent variable in thi...' on page 5
+2025-08-25 16:58:57,967 - DEBUG -     Found with chunk: "The dependent variable in this study is the choice of an ar...
+2025-08-25 16:58:57,968 - INFO -     ✅ 2 highlights from quotes
+2025-08-25 16:58:57,968 - DEBUG - 🔄 Processing variable: Unit_Size
+2025-08-25 16:58:57,968 - INFO -   📝 Quote highlighting: Unit_Size
+2025-08-25 16:58:57,969 - DEBUG -     Found 1 quotes in cell
+2025-08-25 16:58:58,088 - DEBUG - Searching document for: 'the four-digit postal code area could be considered a large ...'
+2025-08-25 16:58:58,231 - DEBUG - No matches found for: 'the four-digit postal code area could be considere...'
+2025-08-25 16:58:58,231 - DEBUG -     No match for quote after 1 chunk attempts. Examples: the four-digit postal code area could be...
+2025-08-25 16:58:58,231 - INFO -     ❌ No quote matches found
+2025-08-25 16:58:58,231 - DEBUG - 🔄 Processing variable: Number_of_Units
+2025-08-25 16:58:58,231 - INFO -   📝 Quote highlighting: Number_of_Units
+2025-08-25 16:58:58,232 - DEBUG -     Found 3 quotes in cell
+2025-08-25 16:58:58,365 - DEBUG - Searching document for: 'the choice set consists of 142 four-digit postal code areas ...'
+2025-08-25 16:58:58,462 - DEBUG - ✓ Found 'the choice set consists of 142...' on page 11
+2025-08-25 16:58:58,464 - DEBUG -     Found with chunk: the choice set consists of 142 four-digit postal code areas ...
+2025-08-25 16:58:58,567 - DEBUG - Searching document for: 'The set of alternatives J in this study contains the 142 fou...'
+2025-08-25 16:58:58,659 - DEBUG - ✓ Found 'The set of alternatives J in t...' on page 9
+2025-08-25 16:58:58,661 - DEBUG -     Found with chunk: The set of alternatives J in this study contains the 142 fou...
+2025-08-25 16:58:58,773 - DEBUG - Searching document for: '"The dependent variable in this study is the choice of an ar...'
+2025-08-25 16:58:58,831 - DEBUG - ✓ Found '"The dependent variable in thi...' on page 5
+2025-08-25 16:58:58,834 - DEBUG -     Found with chunk: "The dependent variable in this study is the choice of an ar...
+2025-08-25 16:58:58,834 - INFO -     ✅ 3 highlights from quotes
+2025-08-25 16:58:58,834 - DEBUG - 🔄 Processing variable: Average_Population_per_Unit
+2025-08-25 16:58:58,834 - INFO -   📝 Quote highlighting: Average_Population_per_Unit
+2025-08-25 16:58:58,835 - DEBUG -     Found 1 quotes in cell
+2025-08-25 16:58:59,062 - DEBUG - Searching document for: 'This region consists of a total of 142 four-digit postal cod...'
+2025-08-25 16:58:59,161 - DEBUG - ✓ Found 'This region consists of a tota...' on page 5
+2025-08-25 16:58:59,165 - DEBUG -     Found with chunk: This region consists of a total of 142 four-digit postal cod...
+2025-08-25 16:58:59,165 - INFO -     ✅ 1 highlights from quotes
+2025-08-25 16:58:59,165 - DEBUG - 🔄 Processing variable: Spatial_Aggregation
+2025-08-25 16:58:59,166 - INFO -   📝 Quote highlighting: Spatial_Aggregation
+2025-08-25 16:58:59,166 - DEBUG -     Found 6 quotes in cell
+2025-08-25 16:58:59,426 - DEBUG - Searching document for: 'The data were analysed using a discrete spatial choice model...'
+2025-08-25 16:58:59,430 - DEBUG - ✓ Found 'The data were analysed using a...' on page 1
+2025-08-25 16:58:59,434 - DEBUG -     Found with chunk: The data were analysed using a discrete spatial choice model...
+2025-08-25 16:58:59,612 - DEBUG - Searching document for: 'The dependent variable in this study is the choice of an are...'
+2025-08-25 16:58:59,693 - DEBUG - ✓ Found 'The dependent variable in this...' on page 5
+2025-08-25 16:58:59,697 - DEBUG -     Found with chunk: The dependent variable in this study is the choice of an are...
+2025-08-25 16:58:59,847 - DEBUG - Searching document for: 'This region consists of a total of 142 four-digit postal cod...'
+2025-08-25 16:58:59,914 - DEBUG - ✓ Found 'This region consists of a tota...' on page 5
+2025-08-25 16:58:59,917 - DEBUG -     Found with chunk: This region consists of a total of 142 four-digit postal cod...
+2025-08-25 16:59:00,073 - DEBUG - Searching document for: 'All crime and residential locations were geocoded and alloca...'
+2025-08-25 16:59:00,164 - DEBUG - ✓ Found 'All crime and residential loca...' on page 7
+2025-08-25 16:59:00,167 - DEBUG -     Found with chunk: All crime and residential locations were geocoded and alloca...
+2025-08-25 16:59:00,376 - DEBUG - Searching document for: 'the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:59:00,671 - DEBUG - ✓ Found 'the spatial unit of analysis t...' on page 15
+2025-08-25 16:59:00,675 - DEBUG -     Found with chunk: the spatial unit of analysis that was used in this study is...
+2025-08-25 16:59:00,865 - DEBUG - Searching document for: '"A smaller measurement could have been used, e...'
+2025-08-25 16:59:01,141 - DEBUG - No matches found for: '"A smaller measurement could have been used, e...'
+2025-08-25 16:59:01,141 - INFO -     ✅ 5 highlights from quotes
+2025-08-25 16:59:01,156 - DEBUG - 🔄 Processing variable: Unit_Selection_Rationale
+2025-08-25 16:59:01,158 - INFO -   📝 Quote highlighting: Unit_Selection_Rationale
+2025-08-25 16:59:01,164 - DEBUG -     Found 6 quotes in cell
+2025-08-25 16:59:01,313 - DEBUG - Searching document for: 'the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:59:01,454 - DEBUG - ✓ Found 'the spatial unit of analysis t...' on page 15
+2025-08-25 16:59:01,456 - DEBUG -     Found with chunk: the spatial unit of analysis that was used in this study is...
+2025-08-25 16:59:01,533 - DEBUG - Searching document for: 'However, the four-digit postal code area could be considered...'
+2025-08-25 16:59:01,735 - DEBUG - No matches found for: 'However, the four-digit postal code area could be ...'
+2025-08-25 16:59:01,735 - DEBUG - Searching document for: 'A smaller measurement could have been used, e...'
+2025-08-25 16:59:01,940 - DEBUG - ✓ Found 'A smaller measurement could ha...' on page 15
+2025-08-25 16:59:01,946 - DEBUG -     Found with chunk: A smaller measurement could have been used, e...
+2025-08-25 16:59:02,068 - DEBUG - Searching document for: 'The dependent variable in this study is the choice of an are...'
+2025-08-25 16:59:02,107 - DEBUG - ✓ Found 'The dependent variable in this...' on page 5
+2025-08-25 16:59:02,112 - DEBUG -     Found with chunk: The dependent variable in this study is the choice of an are...
+2025-08-25 16:59:02,295 - DEBUG - Searching document for: 'Since the four-digit postal code areas were designed to have...'
+2025-08-25 16:59:02,354 - DEBUG - ✓ Found 'Since the four-digit postal co...' on page 5
+2025-08-25 16:59:02,356 - DEBUG -     Found with chunk: Since the four-digit postal code areas were designed to have...
+2025-08-25 16:59:02,470 - DEBUG - Searching document for: 'However, using small spatial units of analysis has its downs...'
+2025-08-25 16:59:02,653 - DEBUG - ✓ Found 'However, using small spatial u...' on page 15
+2025-08-25 16:59:02,655 - DEBUG -     Found with chunk: However, using small spatial units of analysis has its downs...
+2025-08-25 16:59:02,800 - DEBUG - Searching document for: '"This problem of choosing the right level of aggregation and...'
+2025-08-25 16:59:02,933 - DEBUG - ✓ Found '"This problem of choosing the ...' on page 15
+2025-08-25 16:59:02,935 - DEBUG -     Found with chunk: "This problem of choosing the right level of aggregation and...
+2025-08-25 16:59:02,935 - INFO -     ✅ 6 highlights from quotes
+2025-08-25 16:59:02,936 - DEBUG - 🔄 Processing variable: _Rationale_Category
+2025-08-25 16:59:02,936 - INFO -   📝 Quote highlighting: _Rationale_Category
+2025-08-25 16:59:02,936 - DEBUG -     Found 4 quotes in cell
+2025-08-25 16:59:03,052 - DEBUG - Searching document for: 'This problem of choosing the right level of aggregation and ...'
+2025-08-25 16:59:03,261 - DEBUG - ✓ Found 'This problem of choosing the r...' on page 15
+2025-08-25 16:59:03,264 - DEBUG -     Found with chunk: This problem of choosing the right level of aggregation and ...
+2025-08-25 16:59:03,346 - DEBUG - Searching document for: 'However, using small spatial units of analysis has its downs...'
+2025-08-25 16:59:03,468 - DEBUG - ✓ Found 'However, using small spatial u...' on page 15
+2025-08-25 16:59:03,471 - DEBUG -     Found with chunk: However, using small spatial units of analysis has its downs...
+2025-08-25 16:59:03,585 - DEBUG - Searching document for: 'the four-digit postal code area could be considered a large ...'
+2025-08-25 16:59:03,836 - DEBUG - No matches found for: 'the four-digit postal code area could be considere...'
+2025-08-25 16:59:03,837 - DEBUG - Searching document for: 'A smaller measurement could have been used, e...'
+2025-08-25 16:59:03,991 - DEBUG - ✓ Found 'A smaller measurement could ha...' on page 15
+2025-08-25 16:59:03,994 - DEBUG -     Found with chunk: A smaller measurement could have been used, e...
+2025-08-25 16:59:04,106 - DEBUG - Searching document for: '"the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:59:04,281 - DEBUG - ✓ Found '"the spatial unit of analysis ...' on page 15
+2025-08-25 16:59:04,285 - DEBUG -     Found with chunk: "the spatial unit of analysis that was used in this study is...
+2025-08-25 16:59:04,286 - INFO -     ✅ 4 highlights from quotes
+2025-08-25 16:59:04,286 - DEBUG - 🔄 Processing variable: Data_Limitations
+2025-08-25 16:59:04,286 - INFO -   📝 Quote highlighting: Data_Limitations
+2025-08-25 16:59:04,287 - DEBUG -     Found 11 quotes in cell
+2025-08-25 16:59:04,418 - DEBUG - Searching document for: 'The data were not specifically sampled to study co-offending...'
+2025-08-25 16:59:04,553 - DEBUG - ✓ Found 'The data were not specifically...' on page 14
+2025-08-25 16:59:04,555 - DEBUG -     Found with chunk: The data were not specifically sampled to study co-offending...
+2025-08-25 16:59:04,648 - DEBUG - Searching document for: 'only police arrest data on cleared offences were used for th...'
+2025-08-25 16:59:04,806 - DEBUG - ✓ Found 'only police arrest data on cle...' on page 14
+2025-08-25 16:59:04,808 - DEBUG -     Found with chunk: only police arrest data on cleared offences were used for th...
+2025-08-25 16:59:04,914 - DEBUG - Searching document for: 'The use of arrest data could be problematic if a large numbe...'
+2025-08-25 16:59:05,045 - DEBUG - ✓ Found 'The use of arrest data could b...' on page 14
+2025-08-25 16:59:05,050 - DEBUG -     Found with chunk: The use of arrest data could be problematic if a large numbe...
+2025-08-25 16:59:05,168 - DEBUG - Searching document for: 'the data are limited to the greater The Hague region (offend...'
+2025-08-25 16:59:05,364 - DEBUG - ✓ Found 'the data are limited to the gr...' on page 15
+2025-08-25 16:59:05,367 - DEBUG -     Found with chunk: the data are limited to the greater The Hague region (offend...
+2025-08-25 16:59:05,471 - DEBUG - Searching document for: 'Areas outside this region could be part of the offenders' aw...'
+2025-08-25 16:59:05,671 - DEBUG - No matches found for: 'Areas outside this region could be part of the off...'
+2025-08-25 16:59:05,672 - DEBUG - Searching document for: 'because they lived there in the past or they regularly visit...'
+2025-08-25 16:59:05,854 - DEBUG - ✓ Found 'because they lived there in th...' on page 15
+2025-08-25 16:59:05,858 - DEBUG -     Found with chunk: because they lived there in the past or they regularly visit...
+2025-08-25 16:59:05,953 - DEBUG - Searching document for: 'Awareness space in this study is measured as the current and...'
+2025-08-25 16:59:06,160 - DEBUG - ✓ Found 'Awareness space in this study ...' on page 15
+2025-08-25 16:59:06,163 - DEBUG -     Found with chunk: Awareness space in this study is measured as the current and...
+2025-08-25 16:59:06,292 - DEBUG - Searching document for: 'the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:59:06,454 - DEBUG - ✓ Found 'the spatial unit of analysis t...' on page 15
+2025-08-25 16:59:06,458 - DEBUG -     Found with chunk: the spatial unit of analysis that was used in this study is...
+2025-08-25 16:59:06,572 - DEBUG - Searching document for: 'the four-digit postal code area could be considered a large ...'
+2025-08-25 16:59:06,739 - DEBUG - No matches found for: 'the four-digit postal code area could be considere...'
+2025-08-25 16:59:06,835 - DEBUG - Searching document for: 'using small spatial units of analysis has its downsides...'
+2025-08-25 16:59:07,027 - DEBUG - ✓ Found 'using small spatial units of a...' on page 15
+2025-08-25 16:59:07,030 - DEBUG -     Found with chunk: using small spatial units of analysis has its downsides...
+2025-08-25 16:59:07,147 - DEBUG - Searching document for: 'the modifiable areal unit problem, are discussed extensively...'
+2025-08-25 16:59:07,306 - DEBUG - ✓ Found 'the modifiable areal unit prob...' on page 15
+2025-08-25 16:59:07,309 - DEBUG -     Found with chunk: the modifiable areal unit problem, are discussed extensively...
+2025-08-25 16:59:07,433 - DEBUG - Searching document for: '"In the current study, it is defined and measured as more th...'
+2025-08-25 16:59:07,644 - DEBUG - No matches found for: '"In the current study, it is defined and measured ...'
+2025-08-25 16:59:07,644 - DEBUG - Searching document for: 'more than one offender being familiar with an area...'
+2025-08-25 16:59:07,851 - DEBUG - No matches found for: 'more than one offender being familiar with an area...'
+2025-08-25 16:59:07,852 - DEBUG - Searching document for: 'However, this can also be done in other ways...'
+2025-08-25 16:59:07,981 - DEBUG - ✓ Found 'However, this can also be done...' on page 15
+2025-08-25 16:59:07,983 - DEBUG -     Found with chunk: However, this can also be done in other ways...
+2025-08-25 16:59:07,983 - INFO -     ✅ 10 highlights from quotes
+2025-08-25 16:59:07,984 - DEBUG - 🔄 Processing variable: Computational_Constraints
+2025-08-25 16:59:07,984 - INFO -   📝 Quote highlighting: Computational_Constraints
+2025-08-25 16:59:07,984 - DEBUG -     Found 5 quotes in cell
+2025-08-25 16:59:08,109 - DEBUG - Searching document for: 'This problem of choosing the right level of aggregation and ...'
+2025-08-25 16:59:08,336 - DEBUG - ✓ Found 'This problem of choosing the r...' on page 15
+2025-08-25 16:59:08,338 - DEBUG -     Found with chunk: This problem of choosing the right level of aggregation and ...
+2025-08-25 16:59:08,415 - DEBUG - Searching document for: 'This means that models that take spatial interdependence int...'
+2025-08-25 16:59:08,603 - DEBUG - ✓ Found 'This means that models that ta...' on page 15
+2025-08-25 16:59:08,606 - DEBUG -     Found with chunk: This means that models that take spatial interdependence int...
+2025-08-25 16:59:08,701 - DEBUG - Searching document for: 'However, using small spatial units of analysis has its downs...'
+2025-08-25 16:59:08,900 - DEBUG - ✓ Found 'However, using small spatial u...' on page 15
+2025-08-25 16:59:08,905 - DEBUG -     Found with chunk: However, using small spatial units of analysis has its downs...
+2025-08-25 16:59:09,006 - DEBUG - Searching document for: 'A smaller measurement could have been used, e...'
+2025-08-25 16:59:09,182 - DEBUG - ✓ Found 'A smaller measurement could ha...' on page 15
+2025-08-25 16:59:09,185 - DEBUG -     Found with chunk: A smaller measurement could have been used, e...
+2025-08-25 16:59:09,305 - DEBUG - Searching document for: '"the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:59:09,494 - DEBUG - ✓ Found '"the spatial unit of analysis ...' on page 15
+2025-08-25 16:59:09,499 - DEBUG -     Found with chunk: "the spatial unit of analysis that was used in this study is...
+2025-08-25 16:59:09,499 - INFO -     ✅ 5 highlights from quotes
+2025-08-25 16:59:09,499 - DEBUG - 🔄 Processing variable: Alternative_Units
+2025-08-25 16:59:09,499 - INFO -   📝 Quote highlighting: Alternative_Units
+2025-08-25 16:59:09,500 - DEBUG -     Found 1 quotes in cell
+2025-08-25 16:59:09,607 - DEBUG - Searching document for: 'the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:59:09,767 - DEBUG - ✓ Found 'the spatial unit of analysis t...' on page 15
+2025-08-25 16:59:09,769 - DEBUG -     Found with chunk: the spatial unit of analysis that was used in this study is...
+2025-08-25 16:59:09,770 - INFO -     ✅ 1 highlights from quotes
+2025-08-25 16:59:09,770 - DEBUG - 🔄 Processing variable: Crime_Type_Group
+2025-08-25 16:59:09,770 - INFO -   📝 Quote highlighting: Crime_Type_Group
+2025-08-25 16:59:09,771 - DEBUG -     Found 3 quotes in cell
+2025-08-25 16:59:09,858 - DEBUG - Searching document for: 'In this model, all crime types are combined...'
+2025-08-25 16:59:10,042 - DEBUG - ✓ Found 'In this model, all crime types...' on page 13
+2025-08-25 16:59:10,048 - DEBUG -     Found with chunk: In this model, all crime types are combined...
+2025-08-25 16:59:10,192 - DEBUG - Searching document for: 'Various crime types are included in the study, the most comm...'
+2025-08-25 16:59:10,280 - DEBUG - ✓ Found 'Various crime types are includ...' on page 7
+2025-08-25 16:59:10,284 - DEBUG -     Found with chunk: Various crime types are included in the study, the most comm...
+2025-08-25 16:59:10,387 - DEBUG - Searching document for: '"Only for burglary and theft, the samples were big enough to...'
+2025-08-25 16:59:10,602 - DEBUG - No matches found for: '"Only for burglary and theft, the samples were big...'
+2025-08-25 16:59:10,602 - INFO -     ✅ 2 highlights from quotes
+2025-08-25 16:59:10,603 - DEBUG - 🔄 Processing variable: Independent_Variables
+2025-08-25 16:59:10,603 - INFO -   📝 Quote highlighting: Independent_Variables
+2025-08-25 16:59:10,604 - DEBUG -     Found 14 quotes in cell
+2025-08-25 16:59:10,703 - DEBUG - Searching document for: 'The discrete spatial choice model testing whether co-offende...'
+2025-08-25 16:59:10,801 - DEBUG - ✓ Found 'The discrete spatial choice mo...' on page 7
+2025-08-25 16:59:10,804 - DEBUG -     Found with chunk: The discrete spatial choice model testing whether co-offende...
+2025-08-25 16:59:10,917 - DEBUG - Searching document for: 'The dependent variable in this study is the choice of an are...'
+2025-08-25 16:59:10,965 - DEBUG - ✓ Found 'The dependent variable in this...' on page 5
+2025-08-25 16:59:10,969 - DEBUG -     Found with chunk: The dependent variable in this study is the choice of an are...
+2025-08-25 16:59:11,065 - DEBUG - Searching document for: 'The independent variables home location, previous home locat...'
+2025-08-25 16:59:11,212 - DEBUG - ✓ Found 'The independent variables home...' on page 9
+2025-08-25 16:59:11,214 - DEBUG -     Found with chunk: The independent variables home location, previous home locat...
+2025-08-25 16:59:11,311 - DEBUG - Searching document for: 'These three independent variables were constructed two times...'
+2025-08-25 16:59:11,468 - DEBUG - No matches found for: 'These three independent variables were constructed...'
+2025-08-25 16:59:11,469 - DEBUG - Searching document for: 'for areas only known by one of the offenders of the group...'
+2025-08-25 16:59:11,564 - DEBUG - ✓ Found 'for areas only known by one of...' on page 9
+2025-08-25 16:59:11,567 - DEBUG -     Found with chunk: for areas only known by one of the offenders of the group...
+2025-08-25 16:59:11,668 - DEBUG - Searching document for: 'The results show that the area where one of the offenders li...'
+2025-08-25 16:59:11,774 - DEBUG - ✓ Found 'The results show that the area...' on page 12
+2025-08-25 16:59:11,777 - DEBUG -     Found with chunk: The results show that the area where one of the offenders li...
+2025-08-25 16:59:11,871 - DEBUG - Searching document for: 'When two or three offenders live in that area, the odds of...'
+2025-08-25 16:59:11,973 - DEBUG - ✓ Found 'When two or three offenders li...' on page 12
+2025-08-25 16:59:11,975 - DEBUG -     Found with chunk: When two or three offenders live in that area, the odds of...
+2025-08-25 16:59:12,088 - DEBUG - Searching document for: 'The difference between these two ORs is also statistically s...'
+2025-08-25 16:59:12,191 - DEBUG - ✓ Found 'The difference between these t...' on page 12
+2025-08-25 16:59:12,193 - DEBUG -     Found with chunk: The difference between these two ORs is also statistically s...
+2025-08-25 16:59:12,299 - DEBUG - Searching document for: 'Both the areas of previous home locations and previous crime...'
+2025-08-25 16:59:12,404 - DEBUG - ✓ Found 'Both the areas of previous hom...' on page 13
+2025-08-25 16:59:12,408 - DEBUG -     Found with chunk: Both the areas of previous home locations and previous crime...
+2025-08-25 16:59:12,543 - DEBUG - Searching document for: 'Moreover, when more offenders of the co-offending group have...'
+2025-08-25 16:59:12,678 - DEBUG - ✓ Found 'Moreover, when more offenders ...' on page 13
+2025-08-25 16:59:12,680 - DEBUG -     Found with chunk: Moreover, when more offenders of the co-offending group have...
+2025-08-25 16:59:12,791 - DEBUG - Searching document for: 'These variables are indicators of crime attractors and crime...'
+2025-08-25 16:59:12,879 - DEBUG - ✓ Found 'These variables are indicators...' on page 7
+2025-08-25 16:59:12,884 - DEBUG -     Found with chunk: These variables are indicators of crime attractors and crime...
+2025-08-25 16:59:12,986 - DEBUG - Searching document for: 'Statistics Netherlands records socio-demographic and socio-e...'
+2025-08-25 16:59:13,068 - DEBUG - ✓ Found 'Statistics Netherlands records...' on page 8
+2025-08-25 16:59:13,072 - DEBUG -     Found with chunk: Statistics Netherlands records socio-demographic and socio-e...
+2025-08-25 16:59:13,162 - DEBUG - Searching document for: 'For the current study, information was obtained for each of ...'
+2025-08-25 16:59:13,235 - DEBUG - ✓ Found 'For the current study, informa...' on page 8
+2025-08-25 16:59:13,238 - DEBUG -     Found with chunk: For the current study, information was obtained for each of ...
+2025-08-25 16:59:13,447 - DEBUG - Searching document for: 'This information, combined with information on the surface o...'
+2025-08-25 16:59:13,572 - DEBUG - ✓ Found 'This information, combined wit...' on page 8
+2025-08-25 16:59:13,576 - DEBUG -     Found with chunk: This information, combined with information on the surface o...
+2025-08-25 16:59:13,783 - DEBUG - Searching document for: '"The LISA database (see Steenbeek et al...'
+2025-08-25 16:59:14,061 - DEBUG - No matches found for: '"The LISA database (see Steenbeek et al...'
+2025-08-25 16:59:14,061 - DEBUG - Searching document for: '2012 for more information on the LISA database), a database ...'
+2025-08-25 16:59:14,320 - DEBUG - No matches found for: '2012 for more information on the LISA database), a...'
+2025-08-25 16:59:14,320 - DEBUG - Searching document for: 'containing information on businesses, was used to obtain yea...'
+2025-08-25 16:59:14,412 - DEBUG - ✓ Found 'containing information on busi...' on page 8
+2025-08-25 16:59:14,415 - DEBUG -     Found with chunk: containing information on businesses, was used to obtain yea...
+2025-08-25 16:59:14,416 - INFO -     ✅ 14 highlights from quotes
+2025-08-25 16:59:14,416 - DEBUG - 🔄 Processing variable: Number_of_Variables
+2025-08-25 16:59:14,416 - INFO -   📝 Quote highlighting: Number_of_Variables
+2025-08-25 16:59:14,417 - DEBUG -     Found 8 quotes in cell
+2025-08-25 16:59:14,534 - DEBUG - Searching document for: 'The discrete spatial choice model testing whether co-offende...'
+2025-08-25 16:59:14,594 - DEBUG - ✓ Found 'The discrete spatial choice mo...' on page 7
+2025-08-25 16:59:14,596 - DEBUG -     Found with chunk: The discrete spatial choice model testing whether co-offende...
+2025-08-25 16:59:14,722 - DEBUG - Searching document for: 'The dependent variable in this study is the choice of an are...'
+2025-08-25 16:59:14,769 - DEBUG - ✓ Found 'The dependent variable in this...' on page 5
+2025-08-25 16:59:14,773 - DEBUG -     Found with chunk: The dependent variable in this study is the choice of an are...
+2025-08-25 16:59:14,856 - DEBUG - Searching document for: 'The independent variables home location, previous home locat...'
+2025-08-25 16:59:14,944 - DEBUG - ✓ Found 'The independent variables home...' on page 9
+2025-08-25 16:59:14,946 - DEBUG -     Found with chunk: The independent variables home location, previous home locat...
+2025-08-25 16:59:15,066 - DEBUG - Searching document for: 'These three independent variables were constructed two times...'
+2025-08-25 16:59:15,418 - DEBUG - No matches found for: 'These three independent variables were constructed...'
+2025-08-25 16:59:15,418 - DEBUG - Searching document for: 'for areas only known by one of the offenders of the group...'
+2025-08-25 16:59:15,553 - DEBUG - ✓ Found 'for areas only known by one of...' on page 9
+2025-08-25 16:59:15,557 - DEBUG -     Found with chunk: for areas only known by one of the offenders of the group...
+2025-08-25 16:59:15,732 - DEBUG - Searching document for: 'The independent variables measure the different areas of the...'
+2025-08-25 16:59:15,912 - DEBUG - ✓ Found 'The independent variables meas...' on page 12
+2025-08-25 16:59:15,918 - DEBUG -     Found with chunk: The independent variables measure the different areas of the...
+2025-08-25 16:59:16,086 - DEBUG - Searching document for: 'The same holds for the variables measuring whether the area ...'
+2025-08-25 16:59:16,263 - DEBUG - ✓ Found 'The same holds for the variabl...' on page 12
+2025-08-25 16:59:16,266 - DEBUG -     Found with chunk: The same holds for the variables measuring whether the area ...
+2025-08-25 16:59:16,382 - DEBUG - Searching document for: 'Table 1 shows the results of the conditional logit model...'
+2025-08-25 16:59:16,489 - DEBUG - ✓ Found 'Table 1 shows the results of t...' on page 12
+2025-08-25 16:59:16,492 - DEBUG -     Found with chunk: Table 1 shows the results of the conditional logit model...
+2025-08-25 16:59:16,573 - DEBUG - Searching document for: '"All described control variables were also analysed in this ...'
+2025-08-25 16:59:16,772 - DEBUG - No matches found for: '"All described control variables were also analyse...'
+2025-08-25 16:59:16,772 - INFO -     ✅ 7 highlights from quotes
+2025-08-25 16:59:16,773 - DEBUG - 🔄 Processing variable: _Model_Fit_Statistics
+2025-08-25 16:59:16,773 - INFO -   📝 Quote highlighting: _Model_Fit_Statistics
+2025-08-25 16:59:16,774 - DEBUG -     Found 5 quotes in cell
+2025-08-25 16:59:16,869 - DEBUG - Searching document for: 'The discrete spatial choice model testing whether co-offende...'
+2025-08-25 16:59:16,958 - DEBUG - ✓ Found 'The discrete spatial choice mo...' on page 7
+2025-08-25 16:59:16,963 - DEBUG -     Found with chunk: The discrete spatial choice model testing whether co-offende...
+2025-08-25 16:59:17,086 - DEBUG - Searching document for: 'The findings of this study are in line with crime pattern th...'
+2025-08-25 16:59:17,217 - DEBUG - ✓ Found 'The findings of this study are...' on page 14
+2025-08-25 16:59:17,219 - DEBUG -     Found with chunk: The findings of this study are in line with crime pattern th...
+2025-08-25 16:59:17,314 - DEBUG - Searching document for: 'The results of the current study therefore might indicate th...'
+2025-08-25 16:59:17,470 - DEBUG - ✓ Found 'The results of the current stu...' on page 14
+2025-08-25 16:59:17,473 - DEBUG -     Found with chunk: The results of the current study therefore might indicate th...
+2025-08-25 16:59:17,577 - DEBUG - Searching document for: 'The difference between these two ORs is also statistically s...'
+2025-08-25 16:59:17,686 - DEBUG - ✓ Found 'The difference between these t...' on page 12
+2025-08-25 16:59:17,691 - DEBUG -     Found with chunk: The difference between these two ORs is also statistically s...
+2025-08-25 16:59:17,805 - DEBUG - Searching document for: '"The results show that the area where one of the offenders l...'
+2025-08-25 16:59:17,910 - DEBUG - ✓ Found '"The results show that the are...' on page 12
+2025-08-25 16:59:17,914 - DEBUG -     Found with chunk: "The results show that the area where one of the offenders l...
+2025-08-25 16:59:17,914 - INFO -     ✅ 5 highlights from quotes
+2025-08-25 16:59:17,915 - DEBUG - 🔄 Processing variable: Coefficients
+2025-08-25 16:59:17,915 - INFO -   📝 Quote highlighting: Coefficients
+2025-08-25 16:59:17,916 - DEBUG -     Found 1 quotes in cell
+2025-08-25 16:59:18,028 - DEBUG - Searching document for: 'The results show that the area where one of the offenders li...'
+2025-08-25 16:59:18,159 - DEBUG - ✓ Found 'The results show that the area...' on page 12
+2025-08-25 16:59:18,164 - DEBUG -     Found with chunk: The results show that the area where one of the offenders li...
+2025-08-25 16:59:18,164 - INFO -     ✅ 1 highlights from quotes
+2025-08-25 16:59:18,165 - DEBUG - 🔄 Processing variable: Confidence_Intervals
+2025-08-25 16:59:18,165 - INFO -   📝 Quote highlighting: Confidence_Intervals
+2025-08-25 16:59:18,166 - DEBUG -     Found 4 quotes in cell
+2025-08-25 16:59:18,317 - DEBUG - Searching document for: 'Moreover, when more offenders of the co-offending group have...'
+2025-08-25 16:59:18,434 - DEBUG - ✓ Found 'Moreover, when more offenders ...' on page 13
+2025-08-25 16:59:18,436 - DEBUG -     Found with chunk: Moreover, when more offenders of the co-offending group have...
+2025-08-25 16:59:18,546 - DEBUG - Searching document for: 'When two or three offenders live in that area, the odds of...'
+2025-08-25 16:59:18,652 - DEBUG - ✓ Found 'When two or three offenders li...' on page 12
+2025-08-25 16:59:18,655 - DEBUG -     Found with chunk: When two or three offenders live in that area, the odds of...
+2025-08-25 16:59:18,772 - DEBUG - Searching document for: 'Both the areas of previous home locations and previous crime...'
+2025-08-25 16:59:18,928 - DEBUG - ✓ Found 'Both the areas of previous hom...' on page 13
+2025-08-25 16:59:18,933 - DEBUG -     Found with chunk: Both the areas of previous home locations and previous crime...
+2025-08-25 16:59:19,030 - DEBUG - Searching document for: '"The results show that the area where one of the offenders l...'
+2025-08-25 16:59:19,174 - DEBUG - ✓ Found '"The results show that the are...' on page 12
+2025-08-25 16:59:19,176 - DEBUG -     Found with chunk: "The results show that the area where one of the offenders l...
+2025-08-25 16:59:19,176 - INFO -     ✅ 4 highlights from quotes
+2025-08-25 16:59:19,177 - DEBUG - 🔄 Processing variable: Effect_Sizes
+2025-08-25 16:59:19,177 - INFO -   📝 Quote highlighting: Effect_Sizes
+2025-08-25 16:59:19,177 - DEBUG -     Found 4 quotes in cell
+2025-08-25 16:59:19,286 - DEBUG - Searching document for: 'The results show that the area where one of the offenders li...'
+2025-08-25 16:59:19,404 - DEBUG - ✓ Found 'The results show that the area...' on page 12
+2025-08-25 16:59:19,407 - DEBUG -     Found with chunk: The results show that the area where one of the offenders li...
+2025-08-25 16:59:19,497 - DEBUG - Searching document for: 'Both the areas of previous home locations and previous crime...'
+2025-08-25 16:59:19,618 - DEBUG - ✓ Found 'Both the areas of previous hom...' on page 13
+2025-08-25 16:59:19,621 - DEBUG -     Found with chunk: Both the areas of previous home locations and previous crime...
+2025-08-25 16:59:19,728 - DEBUG - Searching document for: 'When two or three offenders live in that area, the odds of...'
+2025-08-25 16:59:19,873 - DEBUG - ✓ Found 'When two or three offenders li...' on page 12
+2025-08-25 16:59:19,877 - DEBUG -     Found with chunk: When two or three offenders live in that area, the odds of...
+2025-08-25 16:59:20,002 - DEBUG - Searching document for: '"Moreover, when more offenders of the co-offending group hav...'
+2025-08-25 16:59:20,162 - DEBUG - No matches found for: '"Moreover, when more offenders of the co-offending...'
+2025-08-25 16:59:20,162 - DEBUG - Searching document for: 'or have committed crimes in that area before, the odds incre...'
+2025-08-25 16:59:20,298 - DEBUG - ✓ Found 'or have committed crimes in th...' on page 13
+2025-08-25 16:59:20,302 - DEBUG -     Found with chunk: or have committed crimes in that area before, the odds incre...
+2025-08-25 16:59:20,302 - INFO -     ✅ 4 highlights from quotes
+2025-08-25 16:59:20,303 - DEBUG - 🔄 Processing variable: MAUP_Discussion
+2025-08-25 16:59:20,303 - INFO -   📝 Quote highlighting: MAUP_Discussion
+2025-08-25 16:59:20,303 - DEBUG -     Found 1 quotes in cell
+2025-08-25 16:59:20,414 - DEBUG - Searching document for: 'Furthermore, the spatial unit of analysis that was used in t...'
+2025-08-25 16:59:20,623 - DEBUG - ✓ Found 'Furthermore, the spatial unit ...' on page 15
+2025-08-25 16:59:20,626 - DEBUG -     Found with chunk: Furthermore, the spatial unit of analysis that was used in t...
+2025-08-25 16:59:20,626 - INFO -     ✅ 1 highlights from quotes
+2025-08-25 16:59:20,626 - DEBUG - 🔄 Processing variable: Sensitivity_Analysis
+2025-08-25 16:59:20,626 - INFO -   📝 Quote highlighting: Sensitivity_Analysis
+2025-08-25 16:59:20,626 - DEBUG -     Found 1 quotes in cell
+2025-08-25 16:59:20,758 - DEBUG - Searching document for: 'the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:59:20,945 - DEBUG - ✓ Found 'the spatial unit of analysis t...' on page 15
+2025-08-25 16:59:20,947 - DEBUG -     Found with chunk: the spatial unit of analysis that was used in this study is...
+2025-08-25 16:59:20,947 - INFO -     ✅ 1 highlights from quotes
+2025-08-25 16:59:20,948 - DEBUG - 🔄 Processing variable: Future_Suggestions
+2025-08-25 16:59:20,948 - INFO -   📝 Quote highlighting: Future_Suggestions
+2025-08-25 16:59:20,948 - DEBUG -     Found 5 quotes in cell
+2025-08-25 16:59:21,040 - DEBUG - Searching document for: 'the spatial unit of analysis that was used in this study is...'
+2025-08-25 16:59:21,187 - DEBUG - ✓ Found 'the spatial unit of analysis t...' on page 15
+2025-08-25 16:59:21,189 - DEBUG -     Found with chunk: the spatial unit of analysis that was used in this study is...
+2025-08-25 16:59:21,301 - DEBUG - Searching document for: 'However, using small spatial units of analysis has its downs...'
+2025-08-25 16:59:21,444 - DEBUG - ✓ Found 'However, using small spatial u...' on page 15
+2025-08-25 16:59:21,447 - DEBUG -     Found with chunk: However, using small spatial units of analysis has its downs...
+2025-08-25 16:59:21,551 - DEBUG - Searching document for: 'The above-described limitations offer some pointers for futu...'
+2025-08-25 16:59:21,744 - DEBUG - ✓ Found 'The above-described limitation...' on page 16
+2025-08-25 16:59:21,746 - DEBUG -     Found with chunk: The above-described limitations offer some pointers for futu...
+2025-08-25 16:59:21,853 - DEBUG - Searching document for: 'A last remark in this regard concerns the calculation of the...'
+2025-08-25 16:59:22,013 - DEBUG - ✓ Found 'A last remark in this regard c...' on page 15
+2025-08-25 16:59:22,016 - DEBUG -     Found with chunk: A last remark in this regard concerns the calculation of the...
+2025-08-25 16:59:22,113 - DEBUG - Searching document for: '"This problem of choosing the right level of aggregation and...'
+2025-08-25 16:59:22,277 - DEBUG - ✓ Found '"This problem of choosing the ...' on page 15
+2025-08-25 16:59:22,280 - DEBUG -     Found with chunk: "This problem of choosing the right level of aggregation and...
+2025-08-25 16:59:22,280 - INFO -     ✅ 5 highlights from quotes
+2025-08-25 16:59:22,292 - INFO - ✅ Saved: 20250825_ModeBased_Highlighting\Study_43_ENHANCED_HYBRID_HIGHLIGHTED.pdf
+2025-08-25 16:59:22,295 - INFO - ✨ Total highlights: 92
+2025-08-25 16:59:22,296 - INFO - 📊 Stats - Direct: 5, Quotes: 87, First-only: 92, Skipped: 2

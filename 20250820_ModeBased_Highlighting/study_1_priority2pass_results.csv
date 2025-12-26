@@ -1,0 +1,94 @@
+Page,Variable,Term,Mode,HitsOnPage,Color,Expanded
+1,Supporting_quotes_for__Unit_Size_,This article studies how,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__Unit_Size_,how burglars select a,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__Unit_Size_,select a house to,quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for__Average_Population_per_Unit_,The study area comprises,quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for__Average_Population_per_Unit_,comprises the entire province,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__Spatial_Aggregation_,decision when selecting a residential property as a burglary target.,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__Spatial_Aggregation_,decision when selecting a residential property as a burglary target.,quote,1,"(0.5, 0.5, 0.5)",True
+1,Unit_Selection_Rationale,the house as the,quote,1,"(0.2, 0.4, 1.0)",False
+1,Unit_Selection_Rationale,house as the spatial,quote,1,"(0.2, 0.4, 1.0)",False
+2,Supporting_quotes_for__Unit_Selection_Rationale_,the spatial resolution of existing applications of the approach is not aligned with the outcome of offenders,quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for__Unit_Selection_Rationale_,the spatial resolution of existing applications of the approach is not aligned with the outcome of offenders,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for___Rationale_Category_,The spatial resolution of existing applications of the discrete spatial choice approach to crime target selection does not yet fully align with the theoretical and empirical understanding of burglars,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for___Rationale_Category_,The spatial resolution of existing applications of the discrete spatial choice approach to crime target selection does not yet fully align with the theoretical and empirical understanding of burglars,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for___Rationale_Category_,The spatial resolution of existing applications of the discrete spatial choice approach to crime target selection does not yet fully align with the theoretical and empirical understanding of burglars,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for___Rationale_Category_,The spatial resolution of existing applications of the discrete spatial choice approach to crime target selection does not yet fully align with the theoretical and empirical understanding of burglars,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for___Rationale_Category_,"target selection process, even though burglars ultimately select a house to burglarize.",quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for___Rationale_Category_,"target selection process, even though burglars ultimately select a house to burglarize.",quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for___Rationale_Category_,"Since micro-places more accurately measure the environment in which the offender acts, it is preferable to conduct geospatial criminological research at the most fine-grained spatial resolution available.",quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for___Rationale_Category_,"Since micro-places more accurately measure the environment in which the offender acts, it is preferable to conduct geospatial criminological research at the most fine-grained spatial resolution available.",quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for___Rationale_Category_,"Since micro-places more accurately measure the environment in which the offender acts, it is preferable to conduct geospatial criminological research at the most fine-grained spatial resolution available.",quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for___Rationale_Category_,"Since micro-places more accurately measure the environment in which the offender acts, it is preferable to conduct geospatial criminological research at the most fine-grained spatial resolution available.",quote,1,"(0.5, 0.5, 0.5)",True
+4,Computational_Constraints,the conditional logit model,quote,1,"(0.0, 0.8, 0.8)",False
+6,Computational_Constraints,the conditional logit model,quote,1,"(0.0, 0.8, 0.8)",False
+6,Computational_Constraints,the conditional logit model,quote,1,"(0.0, 0.8, 0.8)",False
+6,Computational_Constraints,the conditional logit model,quote,1,"(0.0, 0.8, 0.8)",False
+6,Computational_Constraints,the conditional logit model,quote,1,"(0.0, 0.8, 0.8)",False
+6,Supporting_quotes_for__Computational_Constraints_,Estimating a conditional logit,quote,1,"(0.5, 0.5, 0.5)",True
+6,Supporting_quotes_for__Computational_Constraints_,a conditional logit model,quote,1,"(0.5, 0.5, 0.5)",True
+6,Supporting_quotes_for__Computational_Constraints_,a conditional logit model,quote,1,"(0.5, 0.5, 0.5)",True
+6,Supporting_quotes_for__Computational_Constraints_,involves an iterative maximum,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__Data_Sources_,target selection process.,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__Data_Sources_,target selection process.,quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for__Data_Sources_,target selection process.,quote,1,"(0.5, 0.5, 0.5)",True
+3,Supporting_quotes_for__Data_Sources_,target selection process.,quote,1,"(0.5, 0.5, 0.5)",True
+9,Supporting_quotes_for__Data_Sources_,target selection process.,quote,1,"(0.5, 0.5, 0.5)",True
+4,Supporting_quotes_for__Data_Sources_,Information on attributes of residential properties in East Flanders was obtained through the Belgian Land Registry.,quote,1,"(0.5, 0.5, 0.5)",True
+4,Supporting_quotes_for__Data_Sources_,Information on attributes of residential properties in East Flanders was obtained through the Belgian Land Registry.,quote,1,"(0.5, 0.5, 0.5)",True
+3,Supporting_quotes_for__Data_Sources_,Recorded crime data for all aggravated burglaries committed between 2006 and 2012 in East Flanders and for which at least one offender is known were acquired from the Belgian Federal Police.,quote,1,"(0.5, 0.5, 0.5)",True
+3,Supporting_quotes_for__Data_Sources_,Recorded crime data for all aggravated burglaries committed between 2006 and 2012 in East Flanders and for which at least one offender is known were acquired from the Belgian Federal Police.,quote,1,"(0.5, 0.5, 0.5)",True
+3,Supporting_quotes_for__Data_Sources_,Recorded crime data for all aggravated burglaries committed between 2006 and 2012 in East Flanders and for which at least one offender is known were acquired from the Belgian Federal Police.,quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__Data_Sources_,"Using data on 650 residential burglaries and on approximately 500,000 residential properties in the Belgian province East Flanders, we consider a discrete spatial choice model of burglary target selection to establish which house-related attributes influence burglars",quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__Data_Sources_,"Using data on 650 residential burglaries and on approximately 500,000 residential properties in the Belgian province East Flanders, we consider a discrete spatial choice model of burglary target selection to establish which house-related attributes influence burglars",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Model_Type_,The estimation results of,quote,1,"(0.5, 0.5, 0.5)",True
+7,Supporting_quotes_for__Model_Type_,bootstrapped conditional logit models,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Model_Type_,bootstrapped conditional logit models,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Model_Type_,conditional logit models are,quote,1,"(0.5, 0.5, 0.5)",True
+1,Independent_Variables,1.,quote,1,"(0.8, 0.2, 0.8)",False
+2,Independent_Variables,1.,quote,1,"(0.8, 0.2, 0.8)",False
+3,Independent_Variables,1.,quote,1,"(0.8, 0.2, 0.8)",False
+3,Independent_Variables,1.,quote,1,"(0.8, 0.2, 0.8)",False
+3,Independent_Variables,1.,quote,1,"(0.8, 0.2, 0.8)",False
+4,Independent_Variables,1.,quote,1,"(0.8, 0.2, 0.8)",False
+4,Independent_Variables,1.,quote,1,"(0.8, 0.2, 0.8)",False
+6,Independent_Variables,1.,quote,1,"(0.8, 0.2, 0.8)",False
+5,Supporting_quotes_for__Independent_Variables_,s home to the alternative is an indicator for perceived effort,quote,1,"(0.5, 0.5, 0.5)",True
+5,Supporting_quotes_for__Independent_Variables_,s home to the alternative is an indicator for perceived effort,quote,1,"(0.5, 0.5, 0.5)",True
+6,Supporting_quotes_for__Independent_Variables_,The number of floors and the presence of a rooftop living floor are risk indicators.,quote,1,"(0.5, 0.5, 0.5)",True
+6,Supporting_quotes_for__Independent_Variables_,The number of floors and the presence of a rooftop living floor are risk indicators.,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Independent_Variables_,"Focusing on the target attributes, three out of six house attributes are significantly related with the likelihood of target selection.",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Independent_Variables_,"Focusing on the target attributes, three out of six house attributes are significantly related with the likelihood of target selection.",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Independent_Variables_,"Focusing on the target attributes, three out of six house attributes are significantly related with the likelihood of target selection.",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Confidence_Intervals_,A line intersecting the dotted line indicates that the effect of the associated parameter is not statistically significant at p < 0.025 (two-sided).,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Confidence_Intervals_,A line intersecting the dotted line indicates that the effect of the associated parameter is not statistically significant at p < 0.025 (two-sided).,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Confidence_Intervals_,A line intersecting the dotted line indicates that the effect of the associated parameter is not statistically significant at p < 0.025 (two-sided).,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Confidence_Intervals_,The ORs describe the amount the odds of a house being selected increase multiplicatively with a one-unit change in the associated independent variable.,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Confidence_Intervals_,The ORs describe the amount the odds of a house being selected increase multiplicatively with a one-unit change in the associated independent variable.,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Confidence_Intervals_,The ORs describe the amount the odds of a house being selected increase multiplicatively with a one-unit change in the associated independent variable.,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Confidence_Intervals_,The ORs describe the amount the odds of a house being selected increase multiplicatively with a one-unit change in the associated independent variable.,quote,1,"(0.5, 0.5, 0.5)",True
+4,Supporting_quotes_for__Effect_Sizes_,s home.,quote,1,"(0.5, 0.5, 0.5)",True
+7,Supporting_quotes_for__Effect_Sizes_,s home.,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,s home.,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,s home.,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,s home.,quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,"Moreover, the odds of a house being burglarized are 32 percent smaller if it is outfitted with a central heating or air-conditioning system compared to houses that are not outfitted with similar systems.",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,"Moreover, the odds of a house being burglarized are 32 percent smaller if it is outfitted with a central heating or air-conditioning system compared to houses that are not outfitted with similar systems.",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,"Moreover, the odds of a house being burglarized are 32 percent smaller if it is outfitted with a central heating or air-conditioning system compared to houses that are not outfitted with similar systems.",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,"Moreover, the odds of a house being burglarized are 32 percent smaller if it is outfitted with a central heating or air-conditioning system compared to houses that are not outfitted with similar systems.",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,"Similarly, the odds of a house with a garage being burglarized are 20 percent smaller than those of a house without a garage.",quote,1,"(0.5, 0.5, 0.5)",True
+8,Supporting_quotes_for__Effect_Sizes_,"Similarly, the odds of a house with a garage being burglarized are 20 percent smaller than those of a house without a garage.",quote,1,"(0.5, 0.5, 0.5)",True
+2,MAUP_Discussion,the Modifiable Areal Unit,quote,1,"(0.8, 0.2, 0.8)",False
+2,MAUP_Discussion,Modifiable Areal Unit Problem,quote,1,"(0.8, 0.2, 0.8)",False
+2,Supporting_quotes_for__MAUP_Discussion_,"In addition, the use",quote,1,"(0.5, 0.5, 0.5)",True
+1,Supporting_quotes_for__MAUP_Discussion_,spatial units of analysis,quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for__MAUP_Discussion_,spatial units of analysis,quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for__MAUP_Discussion_,spatial units of analysis,quote,1,"(0.5, 0.5, 0.5)",True
+2,Supporting_quotes_for__MAUP_Discussion_,spatial units of analysis,quote,1,"(0.5, 0.5, 0.5)",True
+2,Future_Suggestions,such as the house,quote,1,"(0.8, 0.2, 0.8)",False
+1,Country,Belgium,keyword,1,"(1.0, 0.2, 0.2)",False
+1,City,Ghent,keyword,1,"(1.0, 0.2, 0.2)",False
+1,Spatial_Unit_Name,house,keyword,1,"(0.2, 0.4, 1.0)",False
+2,Number_of_Units,"503,589",exact,1,"(0.0, 0.8, 0.2)",False
+1,Crime_Incidents,650,exact,1,"(0.0, 0.8, 0.2)",False
+3,Total_Study_Area_km2,3000,keyword,1,"(0.5, 0.5, 0.5)",False

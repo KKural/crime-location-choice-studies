@@ -1,0 +1,19 @@
+Statistic,Value
+Studies analyzed,49
+Countries represented,9
+Journals involved,27
+Median unit size (km²),1.2
+Mean unit size (km²),1.63293
+Smallest unit (km²),0.000136
+Largest unit (km²),8.48
+Standard deviation (km²),1.91072
+25th percentile (km²),0.265
+75th percentile (km²),2.63
+IQR (km²),2.365
+Skewness,2.108
+Kurtosis,7.929
+Year range,2003 - 2025
+Temporal span (years),22
+Studies with justification (%),100
+Mean total variables,21.9
+Median total variables,21

@@ -1,0 +1,494 @@
+{
+  "summary": {
+    "total_studies": 1,
+    "successful_studies": 1,
+    "total_highlights_created": 22,
+    "total_quotes_processed": 26,
+    "success_rate": 100.0,
+    "total_processing_time": 33.089593172073364,
+    "average_processing_time_per_study": 33.03353810310364
+  },
+  "study_results": [
+    {
+      "study_id": "1",
+      "success": true,
+      "highlights_created": 22,
+      "quotes_found": 26,
+      "processing_time": 33.03353810310364,
+      "output_file": "20250827_Enhanced_Highlighted_PDFs\\Study_1_Enhanced_Highlighted.pdf",
+      "error_message": "",
+      "highlight_details": [
+        {
+          "study_id": "",
+          "variable_name": "Future_Suggestions",
+          "quote_text": "Use finegrained spatial units of analysis, such as the house level, to align with offenders' decisionmaking processes and reduce aggregation bias.\r\n Prefer smaller spatial units over larger ones for more accurate environmental measurement.\r\n Explore available houselevel data to improve or challenge current findings.\r\n Consider multiple levels of spatial aggregation, such as neighborhoods or municipalities, in addition to the house level.\r\n Apply nested logit models to account for multiple levels of spatial aggregation.",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 2.642918348312378
+        },
+        {
+          "study_id": "",
+          "variable_name": "Data_Sources",
+          "quote_text": "Belgian Federal Police\nBelgian Land Registry",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.6147465705871582
+        },
+        {
+          "study_id": "",
+          "variable_name": "Crime_Type_Group",
+          "quote_text": "Single crime type",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.2804574966430664
+        },
+        {
+          "study_id": "",
+          "variable_name": "Spatial_Unit_Name",
+          "quote_text": "house",
+          "found": true,
+          "page_number": 1,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.0063397884368896484
+        },
+        {
+          "study_id": "",
+          "variable_name": "Software_Used",
+          "quote_text": "R version 3.0.2, ICTCE 5.5.0",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.3065619468688965
+        },
+        {
+          "study_id": "",
+          "variable_name": "City",
+          "quote_text": "East Flanders",
+          "found": true,
+          "page_number": 1,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.010002851486206055
+        },
+        {
+          "study_id": "",
+          "variable_name": "Average_Population_per_Unit",
+          "quote_text": "1.5 million",
+          "found": true,
+          "page_number": 2,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.03539085388183594
+        },
+        {
+          "study_id": "",
+          "variable_name": "Independent_Variables",
+          "quote_text": "1. Built_surface_area\n2. Presence_of_garage\n3. Central_heating_and/or_airconditioning_system\n4. Distance_from_offender's_home\n5. Construction_type\n6. Number_of_floors\n7. Presence_of_rooftop_living_floor",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.7559428215026855
+        },
+        {
+          "study_id": "",
+          "variable_name": "Crime_Type",
+          "quote_text": "Residential burglary",
+          "found": true,
+          "page_number": 11,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.4552757740020752
+        },
+        {
+          "study_id": "",
+          "variable_name": "Data_Collection_Period",
+          "quote_text": "20062012 (crime data), 2013 (Land Registry data)",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.3936378955841064
+        },
+        {
+          "study_id": "",
+          "variable_name": "Country",
+          "quote_text": "Belgium",
+          "found": true,
+          "page_number": 1,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.029235124588012695
+        },
+        {
+          "study_id": "",
+          "variable_name": "Crime_Incidents",
+          "quote_text": "650",
+          "found": true,
+          "page_number": 1,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.00800943374633789
+        },
+        {
+          "study_id": "",
+          "variable_name": "Data_Limitations",
+          "quote_text": "Data availability issues included the removal of plots due to multiple dwellings and coding errors.\n The study area was constrained to houses only due to the limitations of the Belgian Land Registry data.",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.4839413166046143
+        },
+        {
+          "study_id": "",
+          "variable_name": "Unit_Size",
+          "quote_text": "Not specified (the unit size is a single house, but no specific measurement like area or dimension is provided)",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.533942699432373
+        },
+        {
+          "study_id": "",
+          "variable_name": "MAUP_Discussion",
+          "quote_text": "The authors discuss the Modifiable Areal Unit Problem (MAUP) by highlighting that using finegrained spatial units such as individual houses addresses the issue and reduces aggregation bias. They emphasize the preference for smaller spatial units over larger ones to minimize aggregation bias and spatial heterogeneity, which are components of the MAUP. This approach is seen as providing a more accurate measurement of the environment relevant to offenders' actions.",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 2.3794748783111572
+        },
+        {
+          "study_id": "",
+          "variable_name": "Total_Study_Area_Size",
+          "quote_text": "3,000 km²",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.7432324886322021
+        },
+        {
+          "study_id": "",
+          "variable_name": "Model_Fit_Statistics",
+          "quote_text": "Pseudo RÂ²: 0.15\r\n Likelihood ratio test statistic: 8.714; Îdf = 2; p = 0.013",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.5881626605987549
+        },
+        {
+          "study_id": "",
+          "variable_name": "Coefficients",
+          "quote_text": "Construction type (semidetached vs. terraced): Odds ratio = 0.72 (28% decrease)\r\n Presence of a garage: Odds ratio = 0.80 (20% decrease)\r\n Central heating/airconditioning system: Odds ratio = 0.68 (32% decrease)\r\n Distance from offender's home: Odds ratio = 0.79 (21% decrease per kilometer)",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.3989973068237305
+        },
+        {
+          "study_id": "",
+          "variable_name": "Sensitivity_Analysis",
+          "quote_text": "No sensitivity analysis performed.",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.29114770889282227
+        },
+        {
+          "study_id": "",
+          "variable_name": "Model_Type",
+          "quote_text": "Conditional Logit Model",
+          "found": true,
+          "page_number": 4,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.0628364086151123
+        },
+        {
+          "study_id": "",
+          "variable_name": "Number_of_Units",
+          "quote_text": "503,589",
+          "found": true,
+          "page_number": 2,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.033525705337524414
+        },
+        {
+          "study_id": "",
+          "variable_name": "Country",
+          "quote_text": "Using data on 650 residential burglaries and on approximately 500,000 residential properties in the Belgian province East Flanders",
+          "found": true,
+          "page_number": 1,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.01115107536315918
+        },
+        {
+          "study_id": "",
+          "variable_name": "City",
+          "quote_text": "The study area comprises the entire province of East Flanders (Belgium)",
+          "found": true,
+          "page_number": 2,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.15216684341430664
+        },
+        {
+          "study_id": "",
+          "variable_name": "Total_Study_Area_Size",
+          "quote_text": "It covers nearly 3,000 kmÂ2 and has a population of approximately 1.5 million",
+          "found": true,
+          "page_number": 3,
+          "confidence": 0.9722873153336729,
+          "match_method": "fuzzy_match",
+          "processing_time": 0.27876949310302734
+        },
+        {
+          "study_id": "",
+          "variable_name": "Spatial_Unit_Name",
+          "quote_text": "the houselevel",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.14345264434814453
+        },
+        {
+          "study_id": "",
+          "variable_name": "Number_of_Units",
+          "quote_text": "503,589 residential properties",
+          "found": true,
+          "page_number": 2,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.038205623626708984
+        },
+        {
+          "study_id": "",
+          "variable_name": "Average_Population_per_Unit",
+          "quote_text": "study area with a population of approximately 1.5 million inhabitants distributed across 12 cities and 53 towns",
+          "found": true,
+          "page_number": 2,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.08063077926635742
+        },
+        {
+          "study_id": "",
+          "variable_name": "Spatial_Aggregation",
+          "quote_text": "the study uses data at the house level within the province of East Flanders without aggregating from smaller administrative units",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.5940122604370117
+        },
+        {
+          "study_id": "",
+          "variable_name": "Rationale_Category",
+          "quote_text": "Since microplaces more accurately measure the environment in which the offender acts, it is preferable to conduct geospatial criminological research at the most finegrained spatial resolution available",
+          "found": true,
+          "page_number": 2,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.17653489112854004
+        },
+        {
+          "study_id": "",
+          "variable_name": "Data_Limitations",
+          "quote_text": "Four plots were removed from the database because they were built with multiple dwellings and we could not unambiguously identify the correct house associated with the land plot. 359 plots were additionally removed because of coding errors in the database",
+          "found": true,
+          "page_number": 4,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.5072050094604492
+        },
+        {
+          "study_id": "",
+          "variable_name": "Computational_Constraints",
+          "quote_text": "Estimating a conditional logit model involves an iterative maximum likelihood process and requires the likelihood function to be computed for each decisionmakerbyalternative combination (BenAkiva & Lerman, 1985). For the current paper, this would be practically infeasible since at least 327,332,850 decisionmaker by-alternative combinations are involved in estimating the models. Even after applying the samplingofalternatives procedure, the size of the decisionmakerbyalternatives dataset as well as the size of buffer memory required to store intermediary estimation results exceeds the limits of most contemporary desktops. Since McFadden (1978a) demonstrated that these models can be consistently estimated on a subset of alternatives provided that the chosen alternative is included and for each choice at least one alternative from the choice set is randomly sampled as well, we randomly sampled a subset of alternatives that was oneeighth the size of the original choice set (Nerella & Bhat, 2004) and repeated this procedure for each chosen alternative. The Ghent University High Performance Computing infrastructure was therefore used to estimate all models",
+          "found": true,
+          "page_number": 6,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 1.182805061340332
+        },
+        {
+          "study_id": "",
+          "variable_name": "Data_Collection_Period",
+          "quote_text": "2006 and 2012",
+          "found": true,
+          "page_number": 3,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.054198503494262695
+        },
+        {
+          "study_id": "",
+          "variable_name": "Data_Sources",
+          "quote_text": "target selection process. Information on attributes of residential properties in East Flanders was obtained through the Belgian Land Registry. Recorded crime data for all aggravated burglaries committed between 2006 and 2012 in East Flanders and for which at least one offender is known were acquired from the Belgian Federal Police. Using data on 650 residential burglaries and on approximately 500,000 residential properties in the Belgian province East Flanders, we consider a discrete spatial choice model of burglary target selection to establish which houserelated attributes influence burglars",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.2153294086456299
+        },
+        {
+          "study_id": "",
+          "variable_name": "Crime_Type",
+          "quote_text": "Using data on 650 residential burglaries",
+          "found": true,
+          "page_number": 1,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.005254983901977539
+        },
+        {
+          "study_id": "",
+          "variable_name": "Crime_Type_Group",
+          "quote_text": "Recorded crime data for all aggravated burglaries committed between 2006 and 2012 in East Flanders and for which at least one offender is known were acquired from the Belgian Federal Police. In total, 650 unique burglars and their burglaries were included in the analysis. The study area comprises the entire province of East Flanders (Belgium), a densely urbanized polycentric study area with a population of approximately 1.5 million inhabitants distributed across 12 cities and 53 towns. Using data on 650 residential burglaries and on approximately 500,000 residential properties in the Belgian province East Flanders, we consider a discrete spatial choice model of burglary target selection to establish which houserelated attributes influence burglars' target selection process. This article studies how burglars select a house to burglarize",
+          "found": true,
+          "page_number": 3,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.41385388374328613
+        },
+        {
+          "study_id": "",
+          "variable_name": "Crime_Incidents",
+          "quote_text": "In total, 650 unique burglars and their burglaries were included in the analysis",
+          "found": true,
+          "page_number": 4,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.373441219329834
+        },
+        {
+          "study_id": "",
+          "variable_name": "Model_Type",
+          "quote_text": "The estimation results of the bootstrapped conditional logit models are summarized in Table 3",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.6823585033416748
+        },
+        {
+          "study_id": "",
+          "variable_name": "Independent_Variables",
+          "quote_text": "s home to the alternative is an indicator for perceived effort The construction type is an indicator for potential effort as well as risk The number of floors and the presence of a rooftop living floor are risk indicators. The estimation results of the bootstrapped conditional logit models are summarized in Table 3 Focusing on the target attributes, three out of six house attributes are significantly related with the likelihood of target selection. Houses have a smaller likelihood of being burglarized if they are semidetached, have a garage and are outfitted with a central heating and/or airconditioning system. The estimated OR of 0.79 for distance is significant and implies that, ceteris paribus, the odds of a house being selected decrease by 21 percent for every kilometer it is further away from the offender",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.2920465469360352
+        },
+        {
+          "study_id": "",
+          "variable_name": "Number_of_Variables",
+          "quote_text": "s home to the alternative is an indicator for perceived effort The construction type is an indicator for potential effort as well as risk The number of floors and the presence of a rooftop living floor are risk indicators. A discrete spatial choice approach is used to study burglars",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.8175637722015381
+        },
+        {
+          "study_id": "",
+          "variable_name": "Model_Fit_Statistics",
+          "quote_text": "With respect to overall model fit, pseudo RÂ2 values associated with conditional logit models are expected to be considerably smaller than RÂ2 values typically observed in the context of ordinary least squares regression models. Values between 0.2 to 0.4 indicate excellent model fit (McFadden, 1978b, p. 307) . The current model's observed pseudo RÂ2 measure of 0.15 suggests an acceptable fit to the data. The overall effect of construction type is significant (likelihood ratio test statistic = 8.714; Îdf = 2; p = 0.013)",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.1178669929504395
+        },
+        {
+          "study_id": "",
+          "variable_name": "Coefficients",
+          "quote_text": "The estimation results of the bootstrapped conditional logit models are summarized in Table 3 . This table presents overall parameter coefficients, overall standard errors and overall odds ratios (ORs). Focusing on the target attributes, three out of six house attributes are significantly related with the likelihood of target selection. Houses have a smaller likelihood of being burglarized if they are semidetached, have a garage and are outfitted with a central heating and/or airconditioning system. The overall effect of construction type is significant (likelihood ratio test statistic = 8.714; Îdf = 2; p = 0.013) and the partial effect of semidetached suggests that burglars prefer terraced houses over semidetached houses. All other things being equal, the odds of a semidetached house being burglarized is 28 percent smaller than the odds for a terraced house. Similarly, the odds of a house with a garage being burglarized are 20 percent smaller than those of a house without a garage. Moreover, the odds of a house being burglarized are 32 percent smaller if it is outfitted with a central heating or airconditioning system compared to houses that are not outfitted with similar systems. The estimated OR of 0.79 for distance is significant and implies that, ceteris paribus, the odds of a house being selected decrease by 21 percent for every kilometer it is further away from the offender's home",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.7002720832824707
+        },
+        {
+          "study_id": "",
+          "variable_name": "Confidence_Intervals",
+          "quote_text": "The horizontal lines represent the 95% confidence intervals associated with the estimated odds ratios. The current model's observed pseudo RÂ2 measure of 0.15 suggests an acceptable fit to the data. A line intersecting the dotted line indicates that the effect of the associated parameter is not statistically significant at p < 0.025 (twosided). The ORs describe the amount the odds of a house being selected increase multiplicatively with a oneunit change in the associated independent variable. The estimation results of the bootstrapped conditional logit models are summarized in Table 3 . This table presents overall parameter coefficients, overall standard errors and overall odds ratios (ORs)",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.2731590270996094
+        },
+        {
+          "study_id": "",
+          "variable_name": "Effect_Sizes",
+          "quote_text": "The estimated OR of 0.79 for distance is significant and implies that, ceteris paribus, the odds of a house being selected decrease by 21 percent for every kilometer it is further away from the offender's home. Moreover, the odds of a house being burglarized are 32 percent smaller if it is outfitted with a central heating or airconditioning system compared to houses that are not outfitted with similar systems. The overall effect of construction type is significant (likelihood ratio test statistic = 8.714; Îdf = 2; p = 0.013) and the partial effect of semidetached suggests that burglars prefer terraced houses over semidetached houses. All other things being equal, the odds of a semidetached house being burglarized is 28 percent smaller than the odds for a terraced house. Similarly, the odds of a house with a garage being burglarized are 20 percent smaller than those of a house without a garage. The ORs describe the amount the odds of a house being selected increase multiplicatively with a oneunit change in the associated independent variable",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 1.415029525756836
+        },
+        {
+          "study_id": "",
+          "variable_name": "Software_Used",
+          "quote_text": "In particular, we ran R version 3.0.2 with ICTCE 5.5.0 on two linked dual socket Intel Xeon X5675 hexacore nodes with 96GB of physical memory. The Ghent University High Performance Computing infrastructure was therefore used to estimate all models",
+          "found": true,
+          "page_number": 6,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.5220942497253418
+        },
+        {
+          "study_id": "",
+          "variable_name": "MAUP_Discussion",
+          "quote_text": "In addition, the use of finegrained spatial units of analysis such as the house that is burglarized has the advantage that it addresses the modifiable areal unit problem and reduces the risk of aggregation bias (Bernasco, Block, & Ruiter, 2012;Oberwittler & WikstrÃ¶m, 2009). Since microplaces more accurately measure the environment in which the offender acts, it is preferable to conduct geospatial criminological research at the most finegrained spatial resolution available. Aggregation bias and spatial heterogeneity may impact the outcome of geospatial criminological research. Whenever possible smaller spatial units of analysis are to be preferred over larger spatial units of analysis (Andresen & Malleson, 2011;Oberwittler & WikstrÃ¶m, 2009)",
+          "found": true,
+          "page_number": 2,
+          "confidence": 1.0,
+          "match_method": "direct_search",
+          "processing_time": 0.13153314590454102
+        },
+        {
+          "study_id": "",
+          "variable_name": "Sensitivity_Analysis",
+          "quote_text": "decision when selecting a residential property as a burglary target. the spatial resolution of existing applications of the approach is not aligned with the outcome of offenders",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.699063777923584
+        },
+        {
+          "study_id": "",
+          "variable_name": "Future_Suggestions",
+          "quote_text": "decision when selecting a residential property as a burglary target. the spatial resolution of existing applications of the approach is not aligned with the outcome of offenders",
+          "found": false,
+          "page_number": -1,
+          "confidence": 0.0,
+          "match_method": "",
+          "processing_time": 0.7561361789703369
+        }
+      ]
+    }
+  ]
+}

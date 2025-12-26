@@ -1,0 +1,33 @@
+2025-08-27 11:07:24,337 - INFO - [setup_logging:170] - Enhanced PDF Highlighter initialized - Log file: 20250827_enhanced_pdf_highlighting.log
+2025-08-27 11:07:24,337 - INFO - [process_multiple_studies:819] - Starting batch processing of 1 studies
+2025-08-27 11:07:24,388 - INFO - [process_multiple_studies:830] - Loaded dataset with 51 rows
+2025-08-27 11:07:24,388 - INFO - [process_multiple_studies:841] - Using 4 threads for parallel processing
+2025-08-27 11:07:24,390 - INFO - [process_single_study:594] - Starting processing for Study 1
+2025-08-27 11:07:24,435 - INFO - [process_single_study:611] - Opened PDF: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-27 11:07:24,528 - INFO - [process_single_study:623] - Processing direct variables for Study 1
+2025-08-27 11:07:28,077 - INFO - [process_single_study:639] -   ✓ Highlighted Spatial_Unit_Name: house...
+2025-08-27 11:07:28,393 - INFO - [process_single_study:639] -   ✓ Highlighted City: East Flanders...
+2025-08-27 11:07:28,429 - INFO - [process_single_study:639] -   ✓ Highlighted Average_Population_per_Unit: 1.5 million...
+2025-08-27 11:07:30,642 - INFO - [process_single_study:639] -   ✓ Highlighted Crime_Type: Residential burglary...
+2025-08-27 11:07:32,109 - INFO - [process_single_study:639] -   ✓ Highlighted Country: Belgium...
+2025-08-27 11:07:32,129 - INFO - [process_single_study:639] -   ✓ Highlighted Crime_Incidents: 650...
+2025-08-27 11:07:41,612 - INFO - [process_single_study:639] -   ✓ Highlighted Model_Type: Conditional Logit Model...
+2025-08-27 11:07:41,645 - INFO - [process_single_study:639] -   ✓ Highlighted Number_of_Units: 503,589...
+2025-08-27 11:07:41,712 - INFO - [process_single_study:642] - Processing supporting quotes for Study 1
+2025-08-27 11:07:57,424 - INFO - [process_single_study:674] - ✅ Successfully processed Study 1
+2025-08-27 11:07:57,424 - INFO - [process_single_study:675] -    Highlights created: 22
+2025-08-27 11:07:57,425 - INFO - [process_single_study:676] -    Processing time: 33.03s
+2025-08-27 11:07:57,426 - INFO - [process_multiple_studies:867] - Progress: 1/1 (100.0%) - Study 1 ✓
+2025-08-27 11:07:57,432 - INFO - [process_multiple_studies:917] - ============================================================
+2025-08-27 11:07:57,432 - INFO - [process_multiple_studies:918] - BATCH PROCESSING COMPLETED
+2025-08-27 11:07:57,433 - INFO - [process_multiple_studies:919] - ============================================================
+2025-08-27 11:07:57,433 - INFO - [process_multiple_studies:920] - Studies processed: 1
+2025-08-27 11:07:57,433 - INFO - [process_multiple_studies:921] - Successful: 1
+2025-08-27 11:07:57,434 - INFO - [process_multiple_studies:922] - Failed: 0
+2025-08-27 11:07:57,434 - INFO - [process_multiple_studies:923] - Success rate: 100.0%
+2025-08-27 11:07:57,434 - INFO - [process_multiple_studies:924] - Total highlights created: 22
+2025-08-27 11:07:57,434 - INFO - [process_multiple_studies:925] - Total quotes processed: 26
+2025-08-27 11:07:57,435 - INFO - [process_multiple_studies:926] - Total processing time: 33.09s
+2025-08-27 11:07:57,435 - INFO - [process_multiple_studies:927] - Average time per study: 33.03s
+2025-08-27 11:07:57,435 - INFO - [process_multiple_studies:928] - Results saved to: 20250827_Enhanced_Highlighted_PDFs\processing_results.json
+2025-08-27 11:07:57,435 - INFO - [process_multiple_studies:929] - ============================================================

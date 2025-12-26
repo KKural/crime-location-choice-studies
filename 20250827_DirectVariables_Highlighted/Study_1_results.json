@@ -1,0 +1,242 @@
+{
+  "study_id": "1",
+  "processing_time": 9.148672,
+  "total_variables_processed": 21,
+  "variables_found": 10,
+  "highlights_created": 10,
+  "success_rate": 47.61904761904761,
+  "output_file": "20250827_DirectVariables_Highlighted\\Study_1_DirectVariables_Highlighted.pdf",
+  "detailed_results": [
+    {
+      "study_id": "1",
+      "variable_name": "Average_Population_per_Unit",
+      "value": "1.5 million",
+      "found": true,
+      "page_number": 2,
+      "highlighted_text": "centric study area with a population of approximately 1.5 million",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(42.5,662.6,293.6,670.5)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "City",
+      "value": "East Flanders",
+      "found": true,
+      "page_number": 1,
+      "highlighted_text": "Belgian province East Flanders, we consider a discrete spatial choice model of burglary target selec...",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(197.2,377.5,552.9,384.6)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Coefficients",
+      "value": "Construction type (semidetached vs. terraced): Odds ratio = 0.72 (28% decrease)\r\n Presence of a gara...",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Country",
+      "value": "Belgium",
+      "found": true,
+      "page_number": 1,
+      "highlighted_text": "Belgium",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(365.3,251.2,388.8,257.5)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Crime_Incidents",
+      "value": "650",
+      "found": true,
+      "page_number": 1,
+      "highlighted_text": "Using data on 650 residential burglaries and on approximately 500,000 residential properties in the",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(197.2,367.9,552.8,375.1)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Crime_Type",
+      "value": "Residential burglary",
+      "found": true,
+      "page_number": 1,
+      "highlighted_text": "A discrete spatial choice model of burglary target selection at the",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(32.8,177.7,456.0,191.1)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Crime_Type_Group",
+      "value": "Single crime type",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Data_Collection_Period",
+      "value": "20062012 (crime data), 2013 (Land Registry data)",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Data_Limitations",
+      "value": "Data availability issues included the removal of plots due to multiple dwellings and coding errors.\n...",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Data_Sources",
+      "value": "Belgian Federal Police\nBelgian Land Registry",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Future_Suggestions",
+      "value": "Use finegrained spatial units of analysis, such as the house level, to align with offenders' decisio...",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Independent_Variables",
+      "value": "1. Built_surface_area\n2. Presence_of_garage\n3. Central_heating_and/or_airconditioning_system\n4. Dist...",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "MAUP_Discussion",
+      "value": "The authors discuss the Modifiable Areal Unit Problem (MAUP) by highlighting that using finegrained ...",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Model_Fit_Statistics",
+      "value": "Pseudo RÂ²: 0.15\r\n Likelihood ratio test statistic: 8.714; Îdf = 2; p = 0.013",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Model_Type",
+      "value": "Conditional Logit Model",
+      "found": true,
+      "page_number": 4,
+      "highlighted_text": "estimated non-linear models such as the conditional logit model",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(42.5,616.3,293.6,624.2)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Number_of_Units",
+      "value": "503,589",
+      "found": true,
+      "page_number": 2,
+      "highlighted_text": "can choose among 503,589 residential properties in a Belgian",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(42.5,380.1,293.6,388.1)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Sensitivity_Analysis",
+      "value": "No sensitivity analysis performed.",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Software_Used",
+      "value": "R version 3.0.2, ICTCE 5.5.0",
+      "found": true,
+      "page_number": 6,
+      "highlighted_text": "therefore used to estimate all models. In particular, we ran R",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(311.5,317.4,562.5,325.3)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Spatial_Unit_Name",
+      "value": "house",
+      "found": true,
+      "page_number": 1,
+      "highlighted_text": "house-level",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(32.8,194.9,106.7,208.3)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Total_Study_Area_Size",
+      "value": "3,000 km²",
+      "found": true,
+      "page_number": 3,
+      "highlighted_text": "3000 km2",
+      "confidence": 1.0,
+      "match_method": "direct_expansion",
+      "bounding_rect": "(354.1,488.9,388.2,496.8)"
+    },
+    {
+      "study_id": "1",
+      "variable_name": "Unit_Size",
+      "value": "Not specified (the unit size is a single house, but no specific measurement like area or dimension i...",
+      "found": false,
+      "page_number": -1,
+      "highlighted_text": "",
+      "confidence": 0.0,
+      "match_method": "",
+      "bounding_rect": ""
+    }
+  ]
+}

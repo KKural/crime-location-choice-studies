@@ -542,6 +542,18 @@ for (col in names(df_combined)) {
 # Save the combined and reorganized data set
 custom_save(df_combined, output_folder, "combined_dataset", readr::write_csv)
 
+# Create a version without reasoning columns (only variables and supporting quotes)
+# Filter out all columns that contain "Reasoning_for"
+columns_to_keep <- names(df_combined)[!grepl("Reasoning_for", names(df_combined))]
+df_combined_no_reasoning <- df_combined[, columns_to_keep]
+
+# Save the dataset without reasoning columns
+custom_save(df_combined_no_reasoning, output_folder, "combined_dataset_no_reasoning", readr::write_csv)
+
+# Make both datasets available as variables for further use
+combined_dataset <- df_combined
+combined_dataset_no_reasoning <- df_combined_no_reasoning
+
 # =============================================================================
 # PDF QUOTE HIGHLIGHTING INTEGRATION
 # =============================================================================

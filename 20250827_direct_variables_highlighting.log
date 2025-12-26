@@ -1,0 +1,53 @@
+2025-08-27 11:27:30,448 - INFO - Direct Variables Highlighter initialized - Log: 20250827_direct_variables_highlighting.log
+2025-08-27 11:27:30,460 - INFO - Processing Study 1
+2025-08-27 11:27:30,539 - INFO - Opened PDF: 01_a_discrete_spatial_choice_model_of_burglary_target.pdf (11 pages)
+2025-08-27 11:27:30,540 - INFO - Processing Average_Population_per_Unit: 4 search terms
+2025-08-27 11:27:30,738 - INFO -   ✓ Highlighted Average_Population_per_Unit on page 2
+2025-08-27 11:27:30,738 - INFO - Processing City: 3 search terms
+2025-08-27 11:27:30,757 - INFO -   ✓ Highlighted City on page 1
+2025-08-27 11:27:30,757 - INFO - Processing Coefficients: 4 search terms
+2025-08-27 11:27:31,657 - INFO -   ✗ Could not find Coefficients
+2025-08-27 11:27:31,657 - INFO - Processing Country: 1 search terms
+2025-08-27 11:27:31,678 - INFO -   ✓ Highlighted Country on page 1
+2025-08-27 11:27:31,679 - INFO - Processing Crime_Incidents: 4 search terms
+2025-08-27 11:27:31,695 - INFO -   ✓ Highlighted Crime_Incidents on page 1
+2025-08-27 11:27:31,695 - INFO - Processing Crime_Type: 4 search terms
+2025-08-27 11:27:31,733 - INFO -   ✓ Highlighted Crime_Type on page 1
+2025-08-27 11:27:31,734 - INFO - Processing Crime_Type_Group: 1 search terms
+2025-08-27 11:27:32,189 - INFO -   ✗ Could not find Crime_Type_Group
+2025-08-27 11:27:32,199 - INFO - Processing Data_Collection_Period: 6 search terms
+2025-08-27 11:27:33,629 - INFO -   ✗ Could not find Data_Collection_Period
+2025-08-27 11:27:33,663 - INFO - Processing Data_Limitations: 3 search terms
+2025-08-27 11:27:34,316 - INFO -   ✗ Could not find Data_Limitations
+2025-08-27 11:27:34,316 - INFO - Processing Data_Sources: 1 search terms
+2025-08-27 11:27:34,559 - INFO -   ✗ Could not find Data_Sources
+2025-08-27 11:27:34,560 - INFO - Processing Future_Suggestions: 6 search terms
+2025-08-27 11:27:36,102 - INFO -   ✗ Could not find Future_Suggestions
+2025-08-27 11:27:36,102 - INFO - Processing Independent_Variables: 1 search terms
+2025-08-27 11:27:36,335 - INFO -   ✗ Could not find Independent_Variables
+2025-08-27 11:27:36,336 - INFO - Processing MAUP_Discussion: 4 search terms
+2025-08-27 11:27:37,382 - INFO -   ✗ Could not find MAUP_Discussion
+2025-08-27 11:27:37,391 - INFO - Processing Model_Fit_Statistics: 1 search terms
+2025-08-27 11:27:37,591 - INFO -   ✗ Could not find Model_Fit_Statistics
+2025-08-27 11:27:37,591 - INFO - Processing Model_Type: 4 search terms
+2025-08-27 11:27:37,828 - INFO -   ✓ Highlighted Model_Type on page 4
+2025-08-27 11:27:37,833 - INFO - Processing Number_of_Units: 6 search terms
+2025-08-27 11:27:37,925 - INFO - Skipping overlapping highlight for Number_of_Units
+2025-08-27 11:27:37,939 - INFO - Skipping overlapping highlight for Number_of_Units
+2025-08-27 11:27:37,976 - INFO -   ✓ Highlighted Number_of_Units on page 2
+2025-08-27 11:27:37,977 - INFO - Processing Sensitivity_Analysis: 1 search terms
+2025-08-27 11:27:38,195 - INFO -   ✗ Could not find Sensitivity_Analysis
+2025-08-27 11:27:38,195 - INFO - Processing Software_Used: 4 search terms
+2025-08-27 11:27:38,809 - INFO -   ✓ Highlighted Software_Used on page 6
+2025-08-27 11:27:38,809 - INFO - Processing Spatial_Unit_Name: 5 search terms
+2025-08-27 11:27:38,828 - INFO -   ✓ Highlighted Spatial_Unit_Name on page 1
+2025-08-27 11:27:38,828 - INFO - Processing Total_Study_Area_Size: 7 search terms
+2025-08-27 11:27:39,194 - INFO -   ✓ Highlighted Total_Study_Area_Size on page 3
+2025-08-27 11:27:39,194 - INFO - Processing Unit_Size: 2 search terms
+2025-08-27 11:27:39,595 - INFO -   ✗ Could not find Unit_Size
+2025-08-27 11:27:39,613 - INFO - ✅ Successfully processed Study 1
+2025-08-27 11:27:39,615 - INFO -    Variables found: 10/21
+2025-08-27 11:27:39,615 - INFO -    Highlights created: 10
+2025-08-27 11:27:39,616 - INFO -    Success rate: 47.6%
+2025-08-27 11:27:39,616 - INFO -    Processing time: 9.15s
+2025-08-27 11:27:39,617 - INFO -    Output: 20250827_DirectVariables_Highlighted\Study_1_DirectVariables_Highlighted.pdf
