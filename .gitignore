@@ -20,3 +20,6 @@ Thumbs.db
 ~$*.pptx
 ~$*.tmp
 *.~*
+
+# Large generated files
+20250825_Analysis & Results/20250825_expanded_quotes_dataset.csv
